@@ -1,1 +1,1 @@
-Use this project to file issues and request features for SystemVerilog/Verilog Code Playground.
+Use this project to file issues, request features, and add wiki documentation for Playground.
