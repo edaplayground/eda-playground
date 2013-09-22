@@ -1,7 +1,8 @@
 ############
 Introduction
 ############
-EDA Playground web application located at http://www.edaplayground.com/
+| EDA Playground web application located at http://www.edaplayground.com/
+| Documentation located at http://eda-playground.readthedocs.org
   
 ********
 Features
