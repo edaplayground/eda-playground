@@ -1,18 +1,8 @@
-.. EDA Playground documentation master file, created by
-   sphinx-quickstart on Sun Sep 22 13:41:23 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-############################
-EDA Playground Documentation
-############################
-
-.. toctree::
-   :maxdepth: 2
-   
-   quick-start
-   faq
-   
+############
+Introduction
+############
+EDA Playground web application located at http://www.edaplayground.com/
+  
 ********
 Features
 ********
@@ -111,7 +101,7 @@ Libraries
 Feature Requests and Bug Fixes
 ******************************
 
-| Request new features and bug fixes here: https://github.com/getvictor/eda-playground/issues
+| Request new features and bug fixes here: https://github.com/getvictor/eda-playground/issues (requires GitHub account).
 | Or `Tweet to @EDAPlayground <https://twitter.com/intent/tweet?screen_name=EDAPlayground>`_
 
 *******
@@ -121,5 +111,3 @@ Credits
 | **EDA Playground** was created in May 2013 by Victor Lyuboslavsky.
 | `EDA Playground on Twitter <https://twitter.com/edaplayground>`_
 | `Victor EDA on LinkedIn <http://www.linkedin.com/company/victor-eda>`_
-
-
