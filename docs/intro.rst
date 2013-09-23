@@ -91,9 +91,9 @@ On private **EDA Playground**
 * All simulators available on public version.
 * Any additional simulators/tools that your company/university has licenses for or developed in-house.
 
-*********
-Libraries
-*********
+*************************
+Libraries & Methodologies
+*************************
 
 * `UVM <http://www.accellera.org/downloads/standards/uvm>`_
 * `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - verify with Python
