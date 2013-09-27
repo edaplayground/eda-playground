@@ -96,6 +96,7 @@ Libraries & Methodologies
 *************************
 
 * `UVM <http://www.accellera.org/downloads/standards/uvm>`_
+    * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
 * `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - verify with Python
 * `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for modules, classes, etc.
 
