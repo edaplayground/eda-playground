@@ -97,6 +97,7 @@ Libraries & Methodologies
 
 * `UVM <http://www.accellera.org/downloads/standards/uvm>`_
 * `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - verify with Python
+* `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for modules, classes, etc.
 
 ******************************
 Feature Requests and Bug Fixes
