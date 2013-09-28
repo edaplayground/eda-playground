@@ -17,9 +17,11 @@ designed for small prototypes and examples.
 * Save your code snippets. Share your code and simulation results with a web link. Perfect for web forum discussions or emails.
   Great for asking questions or sharing your knowledge.
 * Quickly try something out
-    * Try out a SystemVerilog feature before using it on your project.
-    * Try out a library that you're thinking of using.
-    * Modify another engineer's shared code and re-run it.
+
+  * Try out a SystemVerilog feature before using it on your project.
+  * Try out a library that you're thinking of using.
+  * Modify another engineer's shared code and re-run it.
+
 * Eliminate environment differences. Since the code always executes in the same environment, everyone will see the same result 
   on a subsequent re-run.
 * Browse and use a large repository of working code examples and templates.
@@ -80,7 +82,9 @@ On public `EDA Playground -- The FREE Verilog IDE <http://www.edaplayground.com>
 ==================================================================================
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
-    * Version 0.10.0 (devel) supports several SystemVerilog features.
+
+  * Version 0.10.0 (devel) supports several SystemVerilog features.
+
 * `GPL Cver <http://sourceforge.net/projects/gplcver/>`_
 * `VeriWell <http://sourceforge.net/projects/veriwell/>`_
 * `Questa <http://www.mentor.com/products/fv/questa/>`_ (compile only)
@@ -96,9 +100,18 @@ Libraries & Methodologies
 *************************
 
 * `UVM <http://www.accellera.org/downloads/standards/uvm>`_
-    * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
-* `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - verify with Python
-* `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for modules, classes, etc.
+
+  * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
+
+* `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - a coroutine based cosimulation library for writing
+  VHDL and Verilog testbenches in Python
+
+  * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
+
+* `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for Verilog/SystemVerilog
+  modules, classes, etc.
+
+  * `SVUnit on SourceForge <http://sourceforge.net/projects/svunit/>`_
 
 ******************************
 Feature Requests and Bug Fixes
