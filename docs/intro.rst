@@ -87,7 +87,7 @@ On public `EDA Playground -- The FREE Verilog IDE <http://www.edaplayground.com>
 
 * `GPL Cver <http://sourceforge.net/projects/gplcver/>`_
 * `VeriWell <http://sourceforge.net/projects/veriwell/>`_
-* `Questa <http://www.mentor.com/products/fv/questa/>`_ (compile only)
+* `Questa SIM <http://www.mentor.com/products/fv/questa/>`_ (compile only)
 
 On private **EDA Playground**
 =============================
