@@ -5,7 +5,7 @@ Introduction
 | Documentation located at http://eda-playground.readthedocs.org
   
 ********
-Features
+Overview
 ********
 
 **EDA Playground** gives engineers immediate hands-on exposure to simulating Verilog/SystemVerilog/VHDL.
@@ -30,9 +30,9 @@ designed for small prototypes and examples.
    :alt: Playground
    :width: 100%
 
-**************
-Usage Examples
-**************
+****************
+Example Usecases
+****************
 * **Quick prototyping** -- try out syntax or a library/language feature before using it in a large code base.
 * When **asking questions on** `Stack Overflow <http://stackoverflow.com/>`_ or other online forums, attach a link to the 
   code and simulation results. Results from a private EDA Playground deployment can also be posted on

@@ -10,5 +10,6 @@ Table of Contents:
    
    intro
    quick-start
+   settings
    code-examples
    faq
