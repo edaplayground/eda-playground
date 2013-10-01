@@ -153,6 +153,12 @@ Copy
 This button shows up for everyone when viewing a saved playground. Clicking on it creates a new copy of the current playground.
 The copy will be complitely separate from the original, and it will have its own link that can be shared with others.
 
+Share
+=====
+
+This button only shows up for saved playgrounds. It displays a modal pop-up with a static link to the current playground.
+Also, it displays buttons for sharing on Twitter, Facebook, or LinkedIn.
+
 About
 =====
 
