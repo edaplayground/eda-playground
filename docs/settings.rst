@@ -8,6 +8,8 @@ Sidebar Options
 
 EDA Playground provides many options that can be configured for running your code.
 
+.. _languages-libraries-options-label:
+
 Languages & Libraries
 =====================
 
@@ -49,6 +51,8 @@ When testbench language is *Python 2.7*, the following verification environments
 
 * cocotb 0.3
 * cocotb 0.2
+
+.. _tools-simulators-options-label:
 
 Tools & Simulators
 ==================

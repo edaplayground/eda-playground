@@ -76,7 +76,9 @@ What Users are Saying
 Tools & Simulators
 ******************
 
-The following simulators can be used.
+:ref:`Tools & Simulators Options <tools-simulators-options-label>`
+
+Available tools and simulators:
 
 On public `EDA Playground -- The FREE Verilog IDE <http://www.edaplayground.com>`_
 ==================================================================================
@@ -98,6 +100,10 @@ On private **EDA Playground**
 *************************
 Libraries & Methodologies
 *************************
+
+:ref:`Languages & Libraries Options <languages-libraries-options-label>`
+
+Available libraries and methodologies:
 
 * `UVM <http://www.accellera.org/downloads/standards/uvm>`_
 
