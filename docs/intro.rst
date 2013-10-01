@@ -76,7 +76,7 @@ What Users are Saying
 Tools & Simulators
 ******************
 
-:ref:`Tools & Simulators Options <tools-simulators-options-label>`
+For settings and options documentation, see :ref:`Tools & Simulators Options <tools-simulators-options-label>`
 
 Available tools and simulators:
 
@@ -101,7 +101,7 @@ On private **EDA Playground**
 Libraries & Methodologies
 *************************
 
-:ref:`Languages & Libraries Options <languages-libraries-options-label>`
+For settings and options documentation, see :ref:`Languages & Libraries Options <languages-libraries-options-label>`
 
 Available libraries and methodologies:
 
