@@ -105,14 +105,19 @@ For settings and options documentation, see :ref:`Languages & Libraries Options 
 
 Available libraries and methodologies:
 
-* `UVM <http://www.accellera.org/downloads/standards/uvm>`_
-
-  * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
-
 * `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - a coroutine based cosimulation library for writing
   VHDL and Verilog testbenches in Python
 
   * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
+
+* OVL - Open Verification Library
+
+  * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
+  * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
+
+* `UVM <http://www.accellera.org/downloads/standards/uvm>`_
+
+  * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
 
 * `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for Verilog/SystemVerilog
   modules, classes, etc.
