@@ -40,7 +40,8 @@ Other Libraries
 ---------------
 
 When testbench language is *Verilog/SystemVerilog*, other Verilog libraries can be used for both the design and testbench.
-These libraries may be used along with UVM. Multiple libraries may be selected at the same time. Available libraries:
+These libraries may be used along with UVM. Multiple libraries may be selected at the same time.
+*Ctrl+Click* to select multiple libraries. Available libraries:
 
 * OVL 2.7
 * SVUnit 2.5
