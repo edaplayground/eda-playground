@@ -126,6 +126,48 @@ Links code examples created on EDA Playground. Some examples may have additional
 
 .. image:: _static/examples.png
 
+****************
+Editor Shortcuts
+****************
+
+The following editor shortcuts are enabled by default. Note that the shortcuts are different for PC and MAC users. ::
+
+    // For All
+    keyMap.basic = {
+      "Left": "goCharLeft", "Right": "goCharRight", "Up": "goLineUp", "Down": "goLineDown",
+      "End": "goLineEnd", "Home": "goLineStartSmart", "PageUp": "goPageUp", "PageDown": "goPageDown",
+      "Delete": "delCharAfter", "Backspace": "delCharBefore", "Tab": "defaultTab", "Shift-Tab": "indentAuto",
+      "Enter": "newlineAndIndent", "Insert": "toggleOverwrite"
+    };
+    
+    // For PC
+    keyMap.pcDefault = {
+      "Ctrl-A": "selectAll", "Ctrl-D": "deleteLine", "Ctrl-Z": "undo", "Shift-Ctrl-Z": "redo", "Ctrl-Y": "redo",
+      "Ctrl-Home": "goDocStart", "Alt-Up": "goDocStart", "Ctrl-End": "goDocEnd", "Ctrl-Down": "goDocEnd",
+      "Ctrl-Left": "goGroupLeft", "Ctrl-Right": "goGroupRight", "Alt-Left": "goLineStart", "Alt-Right": "goLineEnd",
+      "Ctrl-Backspace": "delGroupBefore", "Ctrl-Delete": "delGroupAfter", "Ctrl-F": "find",
+      "Ctrl-G": "findNext", "Shift-Ctrl-G": "findPrev",
+      "Ctrl-[": "indentLess", "Ctrl-]": "indentMore",
+      fallthrough: "basic"
+    };
+    
+    // For MAC
+    keyMap.macDefault = {
+      "Cmd-A": "selectAll", "Cmd-D": "deleteLine", "Cmd-Z": "undo", "Shift-Cmd-Z": "redo", "Cmd-Y": "redo",
+      "Cmd-Up": "goDocStart", "Cmd-End": "goDocEnd", "Cmd-Down": "goDocEnd", "Alt-Left": "goGroupLeft",
+      "Alt-Right": "goGroupRight", "Cmd-Left": "goLineStart", "Cmd-Right": "goLineEnd", "Alt-Backspace": "delGroupBefore",
+      "Ctrl-Alt-Backspace": "delGroupAfter", "Alt-Delete": "delGroupAfter", "Cmd-F": "find",
+      "Cmd-G": "findNext", "Shift-Cmd-G": "findPrev",
+      "Cmd-[": "indentLess", "Cmd-]": "indentMore",
+      fallthrough: ["basic", "emacsy"]
+    };
+    keyMap.emacsy = {
+      "Ctrl-F": "goCharRight", "Ctrl-B": "goCharLeft", "Ctrl-P": "goLineUp", "Ctrl-N": "goLineDown",
+      "Alt-F": "goWordRight", "Alt-B": "goWordLeft", "Ctrl-A": "goLineStart", "Ctrl-E": "goLineEnd",
+      "Ctrl-V": "goPageDown", "Shift-Ctrl-V": "goPageUp", "Ctrl-D": "delCharAfter", "Ctrl-H": "delCharBefore",
+      "Alt-D": "delWordAfter", "Alt-Backspace": "delWordBefore", "Ctrl-K": "killLine", "Ctrl-T": "transposeChars"
+    };
+
 *******
 Buttons
 *******
