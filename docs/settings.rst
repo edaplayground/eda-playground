@@ -14,19 +14,21 @@ Languages & Libraries
 =====================
 
 This section allows selection of coding languages and the available libraries for those languages.
-Currently, the design (right editor pane) must be Verilog/SystemVerilog.
 
 .. image:: _static/languages_libraries_1.png
 
 .. image:: _static/languages_libraries_2.png
 
-Testbench
----------
+.. image:: _static/languages_libraries_3.png
 
-The testbench (left editor pane) may be written using one of these languages:
+Testbench + Design
+------------------
 
-* Verilog/SystemVerilog
-* Python 2.7
+The testbench (left editor pane) and design (right editor pane) may be written using one of these languages:
+
+* Verilog/SystemVerilog for both
+* Python 2.7 for testbench, and Verilog/SystemVerilog for design
+* Python 2.7 for both
 
 UVM / OVM
 ---------
@@ -49,10 +51,14 @@ These libraries may be used along with UVM. Multiple libraries may be selected a
 Methodology
 -----------
 
-When testbench language is *Python 2.7*, the following verification environments are available:
+When testbench language is *Python 2.7* and design language is *Verilog/SystemVerilog*, the following verification environments are available:
 
 * cocotb 0.3
 * cocotb 0.2
+
+When testbench and design language is *Python 2.7*, the following methodologies are available:
+
+* MyHDL 0.8
 
 .. _tools-simulators-options-label:
 
@@ -96,6 +102,12 @@ This simulator will only do the compile step. The run step is currently not avai
 
 Additional command-line *compile options* may be specified in the bottom textbox.
 
+Python
+------
+
+This is a standard Python compiler. It is used when both testbench and design are written in *Python*.
+Currently, no additional options are available for Python.
+
 Details
 =======
 
@@ -122,7 +134,7 @@ view this playground. When unchecked, only the creator will be able to view the 
 Examples
 ========
 
-Links code examples created on EDA Playground. Some examples may have additional documentation provided in the *(docs)* link.
+Links to code examples created on EDA Playground. Some examples may have additional documentation provided in the *(docs)* link.
 
 .. image:: _static/examples.png
 
@@ -210,4 +222,4 @@ Also, it displays buttons for sharing on Twitter, Facebook, or LinkedIn.
 About
 =====
 
-Link to EDA Playground documentation.
+Links to EDA Playground documentation (these pages).

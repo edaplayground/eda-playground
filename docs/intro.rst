@@ -90,11 +90,12 @@ On public `EDA Playground -- The FREE Verilog IDE <http://www.edaplayground.com>
 * `GPL Cver <http://sourceforge.net/projects/gplcver/>`_
 * `VeriWell <http://sourceforge.net/projects/veriwell/>`_
 * `Questa SIM <http://www.mentor.com/products/fv/questa/>`_ (compile only)
+* `Python Compiler <http://www.python.org/>`_
 
 On private **EDA Playground**
 =============================
 
-* All simulators available on public version.
+* All simulators/tools available on public version.
 * Any additional simulators/tools that your company/university has licenses for or developed in-house.
 
 *************************
@@ -109,6 +110,11 @@ Available libraries and methodologies:
   VHDL and Verilog testbenches in Python
 
   * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
+
+* `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
+
+  * `MyHDL Manual <http://www.myhdl.org/doc/current/>`_
+  * `MyHDL on Bitbucket <https://bitbucket.org/jandecaluwe/myhdl>`_
 
 * OVL - Open Verification Library
 
