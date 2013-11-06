@@ -58,7 +58,7 @@ What Users are Saying
    someone compile and debug errors. I would highly recommend others to use it if they are asking SV
    related questions."
 
-   -- Ricardo Goto, MTS Design Engineer at AMD (using private deployment)
+   -- Ricardo Goto, Verification Engineer (using private deployment)
 
    "I work in a large environment where compiles and sims take a considerable amount of time. When I'm
    developing/debugging, sometimes I want to use Verilog/SystemVerilog syntax that I have not used before.
