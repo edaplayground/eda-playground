@@ -1,14 +1,15 @@
 ############
 Introduction
 ############
-| EDA Playground web application located at http://www.edaplayground.com/
-| Documentation located at http://eda-playground.readthedocs.org
+| *EDA Playground* web application located at http://www.edaplayground.com/
+| *EDA Playground* documentation located at http://eda-playground.readthedocs.org
+| *EPWave* documentation located at http://epwave.readthedocs.org
   
 ********
 Overview
 ********
 
-**EDA Playground** gives engineers immediate hands-on exposure to simulating Verilog/SystemVerilog/VHDL.
+EDA Playground gives engineers immediate hands-on exposure to simulating Verilog/SystemVerilog/VHDL.
 All you need is a web browser. The goal is to accelerate learning of design/testbench development with 
 easier code sharing, and with simpler access to simulators and libraries. EDA Playground is specifically 
 designed for small prototypes and examples.

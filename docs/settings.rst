@@ -223,3 +223,8 @@ About
 =====
 
 Links to EDA Playground documentation (these pages).
+
+Apps
+====
+
+Shows links to other apps available on EDA Playground, such as EPWave.
