@@ -68,6 +68,14 @@ Tools & Simulators
 For running the code, several tools/simulators may be selected. Many simulators have additional options that may be specified.
 Any options needed for languages and libraries will automatically be included.
 
+Open EPWave after run
+---------------------
+
+Checking this option will open EPWave wave viewer in a new window after the simulation run completes (pop-ups must be enabled).
+It is available for all simulators that have a run step.
+
+  .. image:: _static/openEpwaveCheckbox.png
+
 Icarus Verilog
 --------------
 

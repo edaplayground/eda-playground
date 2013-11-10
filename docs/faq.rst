@@ -12,8 +12,7 @@ EPWave (EDA Playground Wave) is the first web browser-based wave viewer. It is p
 Can I view the waves from my EDA Playground sim using EPWaves?
 **************************************************************
 
-This feature is coming very soon. You will be able to simulate on EDA Playground, and, after the simulation completes, an EPWave window
-will open with the waves.
+Yes, see :ref:`loading-waves-from-playground`
 
 *********************************************
 Why can't I run a sim with UVM/OVM libraries?

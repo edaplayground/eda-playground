@@ -15,6 +15,7 @@ easier code sharing, and with simpler access to simulators and libraries. EDA Pl
 designed for small prototypes and examples.
 
 * With a simple click, run your code and see console output in real time. Pick another simulator version and run it again.
+* View waves for your simulation using `EPWave <http://epwave.readthedocs.org>`_ browser-based wave viewer.
 * Save your code snippets. Share your code and simulation results with a web link. Perfect for web forum discussions or emails.
   Great for asking questions or sharing your knowledge.
 * Quickly try something out

@@ -67,3 +67,27 @@ This Quick Start is intended for users of http://www.edaplayground.com.
       data[1b]: 2c
 
 #. Optional. Click *Copy* to save a personal version of the modified *RAM* code, including the simulation results.
+
+.. _loading-waves-from-playground:
+
+*********************************
+Loading Waves from EDA Playground
+*********************************
+
+You can run a simulation on EDA Playground and load the resulting waves in EPWave.
+
+* Go to your code on EDA Playground. For example: `RAM Design and Test <http://www.edaplayground.com/s/example/9>`_
+* Make sure your code contains appropriate function calls to create a \*.vcd file. For example:
+
+  .. code-block:: verilog
+
+     initial begin
+       $dumpfile("dump.vcd");
+       $dumpvars(1);
+     end
+  
+* Select a simulator and check the **Open EPWave after run** checkbox. (Not all simulators may have this run option.)
+
+  .. image:: _static/openEpwaveCheckbox.png
+
+* Click **Run**. After the run completes, the resulting waves will load in a new EPWave window. (Pop-ups must be enabled.)
