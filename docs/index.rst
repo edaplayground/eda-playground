@@ -2,7 +2,6 @@
 EDA Playground Documentation
 ############################
 | *EDA Playground* web application located at http://www.edaplayground.com/
-| *EPWave* documentation located at http://epwave.readthedocs.org
 
 .. raw:: html
 
