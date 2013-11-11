@@ -4,7 +4,11 @@ Introduction
 | *EDA Playground* web application located at http://www.edaplayground.com/
 | *EDA Playground* documentation located at http://eda-playground.readthedocs.org
 | *EPWave* documentation located at http://epwave.readthedocs.org
-  
+
+.. raw:: html
+
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/NXlqdrYga9M?vq=hd720" frameborder="0" allowfullscreen></iframe>
+
 ********
 Overview
 ********
