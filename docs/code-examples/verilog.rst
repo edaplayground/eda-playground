@@ -9,3 +9,4 @@ Verilog Code Examples
    ripple-carry-counter
    display-system-task
    define-text-macros
+   ports
