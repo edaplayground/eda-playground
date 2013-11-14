@@ -10,3 +10,4 @@ Verilog Code Examples
    display-system-task
    define-text-macros
    ports
+   full-adder
