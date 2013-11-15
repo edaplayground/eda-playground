@@ -11,3 +11,5 @@ Verilog Code Examples
    define-text-macros
    ports
    full-adder
+   blocking
+   always
