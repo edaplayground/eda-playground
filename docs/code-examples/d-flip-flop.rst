@@ -2,7 +2,7 @@
 D Flip-Flop (DFF)
 #################
 
-Code located at: `D Flip-Flop <http://www.edaplayground.com/s/example/8>`_
+Code located at: `Verilog D Flip-Flop <http://www.edaplayground.com/s/example/8>`_
 
 This example demonstrates the design and verification of a simple D flip-flop
 (`Wikipedia link <https://en.wikipedia.org/wiki/D_flip_flop#D_flip-flop>`_).

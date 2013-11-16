@@ -2,7 +2,7 @@
 $display System Task
 ####################
 
-Code located at: `$display System Task <http://www.edaplayground.com/s/example/352>`_
+Code located at: `Verilog $display System Task <http://www.edaplayground.com/s/example/352>`_
 
 .. raw:: html
 

@@ -2,7 +2,7 @@
 Port Declaration & Connection
 #############################
 
-Code located at: `Ports for Ripple Carry Counter <http://www.edaplayground.com/s/example/365>`_
+Code located at: `Verilog Module Ports for Ripple Carry Counter <http://www.edaplayground.com/s/example/365>`_
 
 .. raw:: html
 

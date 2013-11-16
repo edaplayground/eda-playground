@@ -2,7 +2,7 @@
 always @ event wait
 ###################
 
-Code located at: `always @ event wait <http://www.edaplayground.com/s/example/381>`_
+Code located at: `Verilog always @ event wait <http://www.edaplayground.com/s/example/381>`_
 
 .. raw:: html
 

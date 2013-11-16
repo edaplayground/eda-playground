@@ -2,7 +2,7 @@
 \`define Text Macros
 ####################
 
-Code located at: `\`define Text Macros <http://www.edaplayground.com/s/example/356>`_
+Code located at: `Verilog \`define Text Macros <http://www.edaplayground.com/s/example/356>`_
 
 .. raw:: html
 

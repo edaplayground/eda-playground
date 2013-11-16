@@ -2,7 +2,7 @@
 Ripple Carry Full Adder
 #######################
 
-Code located at: `Ripple Carry Full Adder <http://www.edaplayground.com/s/example/368>`_
+Code located at: `Verilog Ripple Carry Full Adder <http://www.edaplayground.com/s/example/368>`_
 
 .. raw:: html
 

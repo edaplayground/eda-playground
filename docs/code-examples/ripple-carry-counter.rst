@@ -2,7 +2,7 @@
 Ripple Carry Counter
 ####################
 
-Code located at: `Ripple Carry Counter <http://www.edaplayground.com/s/example/351>`_
+Code located at: `Verilog Ripple Carry Counter <http://www.edaplayground.com/s/example/351>`_
 
 .. raw:: html
 

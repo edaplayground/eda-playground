@@ -2,7 +2,7 @@
 Blocking and Nonblocking Assignments
 ####################################
 
-Code located at: `Blocking and Nonblocking Assignments <http://www.edaplayground.com/s/example/380>`_
+Code located at: `Verilog Blocking and Nonblocking Assignments <http://www.edaplayground.com/s/example/380>`_
 
 .. raw:: html
 
