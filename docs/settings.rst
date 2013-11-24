@@ -116,6 +116,26 @@ Python
 This is a standard Python compiler. It is used when both testbench and design are written in *Python*.
 Currently, no additional options are available for Python.
 
+Yosys
+-----
+
+Yosis is a synthesis tool for performing logical synthesis and creating a netlist.
+It will use `ABC <https://github.com/cliffordwolf/yosys>`_ to synethesize for a sample cell library.
+
+Yosys will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
+Currently, no additional options are available for Yosys.
+
+VTR
+---
+
+Verilog-to-Routing is a complete physical design flow that includes elaboration, logical sysnthesis, FPGA technology mapping,
+packing, placement, and routing. The recommended architecture file *k6_frac_N10_mem32K_40nm.xml* is used for the flow.
+In addition, route channel width is set at a high *100* to ensure no routing issues with dense designs.
+
+VTR will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
+Currently, no additional options are available for VTR.
+
+
 Details
 =======
 

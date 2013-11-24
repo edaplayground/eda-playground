@@ -83,10 +83,11 @@ Tools & Simulators
 
 For settings and options documentation, see :ref:`Tools & Simulators Options <tools-simulators-options-label>`
 
-Available tools and simulators:
+Available tools and simulators are below. EDA Playground can support many different tools.
+`Contact us <http://www.victoreda.com>`_ to add your EDA tool to EDA Playground.
 
-On public `EDA Playground -- The FREE Verilog IDE <http://www.edaplayground.com>`_
-==================================================================================
+Simulators
+==========
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
@@ -97,11 +98,19 @@ On public `EDA Playground -- The FREE Verilog IDE <http://www.edaplayground.com>
 * `Questa SIM <http://www.mentor.com/products/fv/questa/>`_ (compile only)
 * `Python Compiler <http://www.python.org/>`_
 
-On private **EDA Playground**
-=============================
+Synthesis Tools
+===============
 
-* All simulators/tools available on public version.
-* Any additional simulators/tools that your company/university has licenses for or developed in-house.
+NOTE: The synthesis tools will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
+
+* `Yosys <http://www.clifford.at/yosys/>`_
+* `The Verilog-to-Routing (VTR) Project <http://code.google.com/p/vtr-verilog-to-routing/>`_
+
+On private EDA Playground
+=========================
+
+EDA Playground may be deployed on a private company/university network. For such a private deployment, any additional simulators/tools
+may be added. The company/university must have licenses for the commercial tools to be added.
 
 *************************
 Libraries & Methodologies
