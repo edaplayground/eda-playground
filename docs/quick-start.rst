@@ -91,3 +91,11 @@ You can run a simulation on EDA Playground and load the resulting waves in EPWav
   .. image:: _static/openEpwaveCheckbox.png
 
 * Click **Run**. After the run completes, the resulting waves will load in a new EPWave window. (Pop-ups must be enabled.)
+
+***********************************
+Verilog Synthesis on EDA Playground
+***********************************
+
+.. raw:: html
+
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?vq=hd720" frameborder="0" allowfullscreen></iframe>
