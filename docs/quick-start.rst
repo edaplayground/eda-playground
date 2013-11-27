@@ -9,12 +9,12 @@ This Quick Start is intended for users of http://www.edaplayground.com.
 #. In either the *Design* or *Testbench* window pane, type in the following code:
 
    .. code-block:: verilog
-   
+
       module test;
         initial
           $display("Hello World!");
       endmodule
-   
+
    (Note: The code in the right *Design* pane is compiled first, followed by code in the left *Testbench* pane.)
 
 #. Click
@@ -28,7 +28,7 @@ This Quick Start is intended for users of http://www.edaplayground.com.
    A run typically takes 1-5 seconds, depending on network traffic and simulator. Near the bottom of result output, you should see:
 
    ::
-   
+
       Hello World!
 
 #. Now, let's save our good work. Type in a descriptive name in the *Details* area on the left.
@@ -50,7 +50,7 @@ This Quick Start is intended for users of http://www.edaplayground.com.
 #. On the left editor pane, before the **end** of **initial** block, add the following:
 
    .. code-block:: verilog
-   
+
        write_enable = 1;
        data_write = 8'h2C;
        toggle_clk_write;
@@ -63,7 +63,7 @@ This Quick Start is intended for users of http://www.edaplayground.com.
 #. Run the sim. In the results you should see this new message:
 
    ::
-   
+
       data[1b]: 2c
 
 #. Optional. Click *Copy* to save a personal version of the modified *RAM* code, including the simulation results.
@@ -85,7 +85,7 @@ You can run a simulation on EDA Playground and load the resulting waves in EPWav
        $dumpfile("dump.vcd");
        $dumpvars(1);
      end
-  
+
 * Select a simulator and check the **Open EPWave after run** checkbox. (Not all simulators may have this run option.)
 
   .. image:: _static/openEpwaveCheckbox.png
@@ -98,4 +98,4 @@ Verilog Synthesis on EDA Playground
 
 .. raw:: html
 
-  <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?list=SPScWdLzHpkAeTnJGDXHupc5WC-8Kjt5Ue&vq=hd720" frameborder="0" allowfullscreen></iframe>

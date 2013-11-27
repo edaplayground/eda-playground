@@ -12,9 +12,10 @@ Table of Contents:
 
 .. toctree::
    :maxdepth: 3
-   
+
    intro
    quick-start
    settings
+   yosys-circuit-diagrams
    code-examples
    faq
