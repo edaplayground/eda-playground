@@ -119,11 +119,22 @@ Currently, no additional options are available for Python.
 Yosys
 -----
 
+.. image:: _static/yosys.png
+   :align: right
+
 Yosis is a synthesis tool for performing logical synthesis and creating a netlist.
-It will use `ABC <https://github.com/cliffordwolf/yosys>`_ to synethesize for a sample cell library.
+It supports using `ABC <http://www.eecs.berkeley.edu/~alanmi/abc/abc.htm>`_ to synthesize for a sample cell library.
 
 Yosys will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
-Currently, no additional options are available for Yosys.
+UVM/OVM/Methodology/Libraries selections are also ignored.
+
+The following synthesis options are available:
+
+* *use ABC with cell library* - synthesize for a demo cell library using `ABC <http://www.eecs.berkeley.edu/~alanmi/abc/abc.htm>`_
+* *memory -nomap* - skip *memory_map* step
+* *fsm -nomap* - skip *fsm_map* step
+* *skip FSM step*
+* *Show diagram after run* - open the generated circuit diagram after synthesis flow completes (pop-ups must be enabled).
 
 VTR
 ---
@@ -133,6 +144,7 @@ packing, placement, and routing. The recommended architecture file *k6_frac_N10_
 In addition, route channel width is set at a high *100* to ensure no routing issues with dense designs.
 
 VTR will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
+UVM/OVM/Methodology/Libraries selections are also ignored.
 Currently, no additional options are available for VTR.
 
 
@@ -179,7 +191,7 @@ The following editor shortcuts are enabled by default. Note that the shortcuts a
       "Delete": "delCharAfter", "Backspace": "delCharBefore", "Tab": "defaultTab", "Shift-Tab": "indentAuto",
       "Enter": "newlineAndIndent", "Insert": "toggleOverwrite"
     };
-    
+
     // For PC
     keyMap.pcDefault = {
       "Ctrl-A": "selectAll", "Ctrl-D": "deleteLine", "Ctrl-Z": "undo", "Shift-Ctrl-Z": "redo", "Ctrl-Y": "redo",
@@ -190,7 +202,7 @@ The following editor shortcuts are enabled by default. Note that the shortcuts a
       "Ctrl-[": "indentLess", "Ctrl-]": "indentMore",
       fallthrough: "basic"
     };
-    
+
     // For MAC
     keyMap.macDefault = {
       "Cmd-A": "selectAll", "Cmd-D": "deleteLine", "Cmd-Z": "undo", "Shift-Cmd-Z": "redo", "Cmd-Y": "redo",

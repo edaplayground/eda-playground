@@ -13,8 +13,8 @@ Overview
 ********
 
 EDA Playground gives engineers immediate hands-on exposure to simulating Verilog/SystemVerilog/VHDL.
-All you need is a web browser. The goal is to accelerate learning of design/testbench development with 
-easier code sharing, and with simpler access to simulators and libraries. EDA Playground is specifically 
+All you need is a web browser. The goal is to accelerate learning of design/testbench development with
+easier code sharing, and with simpler access to simulators and libraries. EDA Playground is specifically
 designed for small prototypes and examples.
 
 * With a simple click, run your code and see console output in real time. Pick another simulator version and run it again.
@@ -27,7 +27,7 @@ designed for small prototypes and examples.
   * Try out a library that you're thinking of using.
   * Modify another engineer's shared code and re-run it.
 
-* Eliminate environment differences. Since the code always executes in the same environment, everyone will see the same result 
+* Eliminate environment differences. Since the code always executes in the same environment, everyone will see the same result
   on a subsequent re-run.
 * Browse and use a large repository of working code examples and templates.
 
@@ -39,7 +39,7 @@ designed for small prototypes and examples.
 Example Usecases
 ****************
 * **Quick prototyping** -- try out syntax or a library/language feature before using it in a large code base.
-* When **asking questions on** `Stack Overflow <http://stackoverflow.com/>`_ or other online forums, attach a link to the 
+* When **asking questions on** `Stack Overflow <http://stackoverflow.com/>`_ or other online forums, attach a link to the
   code and simulation results. Results from a private EDA Playground deployment can also be posted on
   `www.edaplayground.com <http://www.edaplayground.com>`_
 * Use during **technical interviews** to test candidates' Verilog/SystemVerilog coding skills.
@@ -57,7 +57,11 @@ What Users are Saying
    colleague or a support person. Also, a very useful follow-up tool for post-training help among students or between
    instructor and students. Simple, easy, useful."
 
-   -- Hemendra Talesara, Verification Technologist at Synapse Design Automation Inc. 
+   -- Hemendra Talesara, Verification Technologist at Synapse Design Automation Inc.
+
+   "I think EDA Playground is awesome! Great resource to learn without the hassle of setting up tools!"
+
+   -- Alan Langman, Engineering Consultant
 
    "EDA Playground is sooo useful for interviews. I got a lot more feedback from being able to watch
    someone compile and debug errors. I would highly recommend others to use it if they are asking SV
@@ -104,6 +108,9 @@ Synthesis Tools
 NOTE: The synthesis tools will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
 
 * `Yosys <http://www.clifford.at/yosys/>`_
+
+  * `Yosys on GitHub <https://github.com/cliffordwolf/yosys>`_
+
 * `The Verilog-to-Routing (VTR) Project <http://code.google.com/p/vtr-verilog-to-routing/>`_
 
 On private EDA Playground
