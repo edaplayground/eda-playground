@@ -27,8 +27,8 @@ Testbench + Design
 The testbench (left editor pane) and design (right editor pane) may be written using one of these languages:
 
 * Verilog/SystemVerilog for both
-* Python 2.7 for testbench, and Verilog/SystemVerilog for design
-* Python 2.7 for both
+* Python for testbench, and Verilog/SystemVerilog for design
+* Python for both
 
 UVM / OVM
 ---------
@@ -51,14 +51,15 @@ These libraries may be used along with UVM. Multiple libraries may be selected a
 Methodology
 -----------
 
-When testbench language is *Python 2.7* and design language is *Verilog/SystemVerilog*, the following verification environments are available:
+When testbench language is *Python* and design language is *Verilog/SystemVerilog*, the following verification environments are available:
 
 * cocotb 0.3
 * cocotb 0.2
 
-When testbench and design language is *Python 2.7*, the following methodologies are available:
+When testbench and design language is *Python*, the following methodologies are available:
 
 * MyHDL 0.8
+* Migen X
 
 .. _tools-simulators-options-label:
 
@@ -90,6 +91,8 @@ Additional command-line *compile options* and *run options* may be specified in 
 
 An example of custom compile and run options is here: http://www.edaplayground.com/s/4/202
 
+Note: When using Migen co-simulation, the compile/run options are not available.
+
 GPL Cver
 --------
 
@@ -113,7 +116,7 @@ Additional command-line *compile options* may be specified in the bottom textbox
 Python
 ------
 
-This is a standard Python compiler. It is used when both testbench and design are written in *Python*.
+This is a standard Python compiler. It is only used for MyHDL when both testbench and design are written in *Python*.
 Currently, no additional options are available for Python.
 
 Yosys

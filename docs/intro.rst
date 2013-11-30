@@ -137,6 +137,10 @@ Available libraries and methodologies:
   * `MyHDL Manual <http://www.myhdl.org/doc/current/>`_
   * `MyHDL on Bitbucket <https://bitbucket.org/jandecaluwe/myhdl>`_
 
+* `Migen <https://migen.readthedocs.org/en/latest>`_ - a Python toolbox for building complex digital hardware
+
+  * `Migen on GitHub <https://github.com/m-labs/migen>`_
+
 * OVL - Open Verification Library
 
   * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
