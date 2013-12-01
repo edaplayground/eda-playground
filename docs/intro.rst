@@ -140,6 +140,7 @@ Available libraries and methodologies:
 * `Migen <https://migen.readthedocs.org/en/latest>`_ - a Python toolbox for building complex digital hardware
 
   * `Migen on GitHub <https://github.com/m-labs/migen>`_
+  * `Migen from M-Labs <http://milkymist.org/3/migen.html>`_
 
 * OVL - Open Verification Library
 
