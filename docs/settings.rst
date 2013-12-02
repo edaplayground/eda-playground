@@ -56,10 +56,22 @@ When testbench language is *Python* and design language is *Verilog/SystemVerilo
 * cocotb 0.3
 * cocotb 0.2
 
+.. _migen-options-label:
+
 When testbench and design language is *Python*, the following methodologies are available:
 
 * MyHDL 0.8
 * Migen X
+
+Migen
+-----
+
+Before running synthesis on a Migen design, the *Top class* corresponding to the top module must be specified.
+The *Top class* is the class instantiation to use when converting the Migen design to Verilog. Some examples:
+
+* ``MyModule()``
+* ``Divisor(4)``
+* ``MyMemory(16, 2**12, init=list(range(20)))``
 
 .. _tools-simulators-options-label:
 
