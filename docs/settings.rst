@@ -153,7 +153,8 @@ The following synthesis options are available:
 
 When using Yosys with Migen, the *Top class* must be specified, which is used to convert Migen design to Verilog.
 
-When using Yosys with MyHDL, the *Testbench* pane must contain code to convert MyHDL design to Verilog **design.v** file. Thus, when running
+When using Yosys with MyHDL, the *Testbench* pane must contain code to convert MyHDL design to a Verilog file.
+The Verilog file must have suffix *.v*, and can be named anything EXCEPT *tb_\** or a Verilog reserved keyword. Thus, when running
 Yosys on MyHDL code, the *Testbench* code will be run first before synthesis.
 
 VTR
