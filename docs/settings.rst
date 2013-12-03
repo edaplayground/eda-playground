@@ -151,6 +151,11 @@ The following synthesis options are available:
 * *skip FSM step*
 * *Show diagram after run* - open the generated circuit diagram after synthesis flow completes (pop-ups must be enabled).
 
+When using Yosys with Migen, the *Top class* must be specified, which is used to convert Migen design to Verilog.
+
+When using Yosys with MyHDL, the *Testbench* pane must contain code to convert MyHDL design to Verilog **design.v** file. Thus, when running
+Yosys on MyHDL code, the *Testbench* code will be run first before synthesis.
+
 VTR
 ---
 
@@ -161,6 +166,8 @@ In addition, route channel width is set at a high *100* to ensure no routing iss
 VTR will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
 UVM/OVM/Methodology/Libraries selections are also ignored.
 Currently, no additional options are available for VTR.
+
+Currently, VTR cannot be used with MyHDL or Migen.
 
 
 Details
