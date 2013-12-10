@@ -12,9 +12,9 @@ Introduction
 Overview
 ********
 
-EDA Playground gives engineers immediate hands-on exposure to simulating Verilog/SystemVerilog/VHDL.
+EDA Playground gives engineers immediate hands-on exposure to simulating SystemVerilog, Verilog, VHDL, and other HDLs.
 All you need is a web browser. The goal is to accelerate learning of design/testbench development with
-easier code sharing, and with simpler access to simulators and libraries. EDA Playground is specifically
+easier code sharing, and with simpler access to EDA tools and libraries. EDA Playground is specifically
 designed for small prototypes and examples.
 
 * With a simple click, run your code and see console output in real time. Pick another simulator version and run it again.
@@ -40,14 +40,13 @@ Example Usecases
 ****************
 * **Quick prototyping** -- try out syntax or a library/language feature before using it in a large code base.
 * When **asking questions on** `Stack Overflow <http://stackoverflow.com/>`_ or other online forums, attach a link to the
-  code and simulation results. Results from a private EDA Playground deployment can also be posted on
-  `www.edaplayground.com <http://www.edaplayground.com>`_
-* Use during **technical interviews** to test candidates' Verilog/SystemVerilog coding skills.
+  code and simulation results.
+* Use during **technical interviews** to test candidates' SystemVerilog/Verilog coding and debug skills.
 * **Run anywhere**. When away from your work machine, you can still try a quick prototype on EDA Playground.
-* Try verifying using **different verification frameworks**: UVM, plain Verilog, or Python.
-* Create a **Verilog lab** for young engineers, with the Verilog code hosted on EDA Playground.
+* Try verifying using **different verification frameworks**: UVM, SVUnit, plain Verilog, or Python.
+* Create an **HDL and Verification Lab** for young engineers, with the code hosted on EDA Playground.
   Students can work from home at their own pace, and run the lab samples on EDA Playground.
-* Quickly check whether your code is **synthesizable** or emulator-friendly. (Private deployment only.)
+* Quickly check whether your code is **synthesizable** or emulator-friendly.
 
 *********************
 What Users are Saying
@@ -93,6 +92,10 @@ Available tools and simulators are below. EDA Playground can support many differ
 Simulators
 ==========
 
+* `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
+
+  * ModelSim supports SystemVerilog, UVM/OVM, and SVUnit (except for SV coverage, SV assertions, and SV randomization)
+
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
   * Version 0.10.0 (devel) supports several SystemVerilog features.
@@ -127,10 +130,24 @@ For settings and options documentation, see :ref:`Languages & Libraries Options 
 
 Available libraries and methodologies:
 
-* `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - a coroutine based cosimulation library for writing
-  VHDL and Verilog testbenches in Python
+* `UVM - Universal Verification Methodology <http://www.accellera.org/downloads/standards/uvm>`_
 
-  * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
+  * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
+
+* `OVM - Open Verification Methodology <https://verificationacademy.com/topics/verification-methodology>`_
+
+  * `OVM 2.1.2 Class Reference <https://verificationacademy.com/verification-methodology-reference/ovmworld/docs_2.1.2/html/index.html>`_
+  * `OVM 2.1.2 User Guide <http://www.specman-verification.com/source_bank/ovm-2.1.2/ovm-2.1.2/OVM_UserGuide.pdf>`_
+
+* `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for Verilog/SystemVerilog
+  modules, classes, etc.
+
+  * `SVUnit on SourceForge <http://sourceforge.net/projects/svunit/>`_
+
+* OVL - Open Verification Library
+
+  * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
+  * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
 
 * `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
 
@@ -142,24 +159,10 @@ Available libraries and methodologies:
   * `Migen on GitHub <https://github.com/m-labs/migen>`_
   * `Migen from M-Labs <http://milkymist.org/3/migen.html>`_
 
-* OVL - Open Verification Library
+* `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - a coroutine based cosimulation library for writing
+  VHDL and Verilog testbenches in Python
 
-  * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
-  * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
-
-* `UVM <http://www.accellera.org/downloads/standards/uvm>`_
-
-  * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
-
-* `OVM <https://verificationacademy.com/topics/verification-methodology>`_
-
-  * `OVM 2.1.2 Class Reference <https://verificationacademy.com/verification-methodology-reference/ovmworld/docs_2.1.2/html/index.html>`_
-  * `OVM 2.1.2 User Guide <http://www.specman-verification.com/source_bank/ovm-2.1.2/ovm-2.1.2/OVM_UserGuide.pdf>`_
-
-* `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for Verilog/SystemVerilog
-  modules, classes, etc.
-
-  * `SVUnit on SourceForge <http://sourceforge.net/projects/svunit/>`_
+  * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
 
 ***************************************
 Support, Feature Requests and Bug Fixes

@@ -37,12 +37,13 @@ When testbench language is *Verilog/SystemVerilog*, a UVM or OVM library can be 
 The following libraries are available:
 
 * UVM 1.1d
+* OVM 2.1.2
 
 Other Libraries
 ---------------
 
 When testbench language is *Verilog/SystemVerilog*, other Verilog libraries can be used for both the design and testbench.
-These libraries may be used along with UVM. Multiple libraries may be selected at the same time.
+These libraries may be used along with UVM/OVM. Multiple libraries may be selected at the same time.
 *Ctrl+Click* to select multiple libraries. Available libraries:
 
 * OVL 2.7
@@ -89,6 +90,16 @@ It is available for all simulators that have a run step.
 
   .. image:: _static/openEpwaveCheckbox.png
 
+ModelSim
+--------
+
+.. image:: _static/modelsim.png
+   :align: right
+
+Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
+
+*ModelSim* compile options are prepopulated with **-timescale 1ns/1ns -mfcu +acc=rmb -sv**
+
 Icarus Verilog
 --------------
 
@@ -121,7 +132,7 @@ Questa SIM
 .. image:: _static/questa.png
    :align: right
 
-This simulator will only do the compile step. The run step is currently not available.
+This simulator will ONLY DO THE COMPILE step. The run step is currently not available.
 
 Additional command-line *compile options* may be specified in the bottom textbox.
 
