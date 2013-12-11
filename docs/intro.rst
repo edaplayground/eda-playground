@@ -94,7 +94,8 @@ Simulators
 
 * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
 
-  * ModelSim supports SystemVerilog, UVM/OVM, and SVUnit (except for SV coverage, SV assertions, and SV randomization)
+  * ModelSim supports SystemVerilog, UVM/OVM, and SVUnit
+  * :ref:`modelsim-uvm`
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
