@@ -17,6 +17,8 @@ This section allows selection of coding languages and the available libraries fo
 
 .. image:: _static/languages_libraries_1.png
 
+.. image:: _static/languages_libraries_4.png
+
 .. image:: _static/languages_libraries_2.png
 
 .. image:: _static/languages_libraries_3.png
@@ -27,30 +29,43 @@ Testbench + Design
 The testbench (left editor pane) and design (right editor pane) may be written using one of these languages:
 
 * Verilog/SystemVerilog for both
+* VHDL for both
 * Python for testbench, and Verilog/SystemVerilog for design
 * Python for both
 
-UVM / OVM
----------
+UVM / OVM (SystemVerilog)
+-------------------------
 
-When testbench language is *Verilog/SystemVerilog*, a UVM or OVM library can be used for both the design and testbench.
+When language is *Verilog/SystemVerilog*, a UVM or OVM library can be used for both the design and testbench.
 The following libraries are available:
 
 * UVM 1.1d
 * OVM 2.1.2
 
-Other Libraries
----------------
+Other Libraries (SystemVerilog/Verilog)
+---------------------------------------
 
-When testbench language is *Verilog/SystemVerilog*, other Verilog libraries can be used for both the design and testbench.
+When language is *Verilog/SystemVerilog*, other Verilog libraries can be used for both the design and testbench.
 These libraries may be used along with UVM/OVM. Multiple libraries may be selected at the same time.
 *Ctrl+Click* to select multiple libraries. Available libraries:
 
 * OVL 2.7
 * SVUnit 2.5
 
-Methodology
------------
+Libraries (VHDL)
+----------------
+
+When language is *VHDL*, the following VHDL libraries can be used for both design and testbench.
+
+* OVL 2.7
+
+Top entity (VHDL)
+-----------------
+
+When language is *VHDL*, the top entity of the design must be specified before running a simulation.
+
+Methodology (Python + Verilog or Python only)
+---------------------------------------------
 
 When testbench language is *Python* and design language is *Verilog/SystemVerilog*, the following verification environments are available:
 
@@ -65,7 +80,7 @@ When testbench and design language is *Python*, the following methodologies are 
 * Migen X
 
 Migen
------
+^^^^^
 
 Before running synthesis on a Migen design, the *Top class* corresponding to the top module must be specified.
 The *Top class* is the class instantiation to use when converting the Migen design to Verilog. Some examples:
@@ -98,7 +113,15 @@ ModelSim
 
 Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
 
-*ModelSim* compile options are prepopulated with **-timescale 1ns/1ns -mfcu +acc=rmb -sv**
+ModelSim Compile Options for SystemVerilog/Verilog
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For SystemVerilog and Verilog simulations, *ModelSim* compile options are prepopulated with **-timescale 1ns/1ns -mfcu +acc=rmb -sv**
+
+ModelSim Compile Options for VHDL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For VHDL simulations, *ModelSim* compile options are prepopulated with **-2008**
 
 Icarus Verilog
 --------------

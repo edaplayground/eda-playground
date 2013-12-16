@@ -12,7 +12,7 @@ EPWave (EDA Playground Wave) is the first web browser-based wave viewer. It is p
 Can I view the waves from my EDA Playground sim using EPWaves?
 **************************************************************
 
-Yes, see :ref:`loading-waves-from-playground`
+Yes, waves are supported for all languages, frameworks, and libraries. See :ref:`loading-waves-from-playground`
 
 *************************************************
 What are the resource limits for running my code?
@@ -48,11 +48,13 @@ Currently, most of SystemVerilog language is supported on **EDA Playground**, wh
 
 We are working with simulator vendors to offer limited public access to commercial SystemVerilog features.
 
+Also see :ref:`modelsim-uvm`
+
 ******************
 Is VHDL supported?
 ******************
 
-VHDL support is coming soon.
+Yes, VHDL is supported.
 
 *********************************************************************************
 How do I get a private deployment of **EDA Playground** at my company/university?

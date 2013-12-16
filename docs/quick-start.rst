@@ -76,6 +76,9 @@ Loading Waves from EDA Playground
 
 You can run a simulation on EDA Playground and load the resulting waves in EPWave.
 
+Loading Waves for SystemVerilog and Verilog Simulations
+-------------------------------------------------------
+
 * Go to your code on EDA Playground. For example: `RAM Design and Test <http://www.edaplayground.com/s/example/9>`_
 * Make sure your code contains appropriate function calls to create a \*.vcd file. For example:
 
@@ -91,6 +94,16 @@ You can run a simulation on EDA Playground and load the resulting waves in EPWav
   .. image:: _static/openEpwaveCheckbox.png
 
 * Click **Run**. After the run completes, the resulting waves will load in a new EPWave window. (Pop-ups must be enabled.)
+
+Loading Waves for VHDL Simulations
+----------------------------------
+
+* Check the **Open EPWave after run** checkbox.
+* Specify the **Top entity** to simulate.
+* Click **Run**. After the run completes, the resulting waves will load in a new EPWave window. (Pop-ups must be enabled.)
+
+  * The waves for all signals in the specified **Top entity** and any of its components will be dumped.
+  * In EPWave window, click **Get Signals** to select the signals to view.
 
 ***********************************
 Verilog Synthesis on EDA Playground

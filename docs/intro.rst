@@ -94,7 +94,7 @@ Simulators
 
 * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
 
-  * ModelSim supports SystemVerilog, UVM/OVM, and SVUnit
+  * ModelSim supports SystemVerilog (with UVM/OVM and SVUnit libraries), and VHDL.
   * :ref:`modelsim-uvm`
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
@@ -103,7 +103,7 @@ Simulators
 
 * `GPL Cver <http://sourceforge.net/projects/gplcver/>`_
 * `VeriWell <http://sourceforge.net/projects/veriwell/>`_
-* `Questa SIM <http://www.mentor.com/products/fv/questa/>`_ (compile only)
+* `Questa SIM <http://www.mentor.com/products/fv/questa/>`_ (SystemVerilog compile only)
 * `Python Compiler <http://www.python.org/>`_
 
 Synthesis Tools
@@ -145,7 +145,7 @@ Available libraries and methodologies:
 
   * `SVUnit on SourceForge <http://sourceforge.net/projects/svunit/>`_
 
-* OVL - Open Verification Library
+* OVL - Open Verification Library (for Verilog and VHDL)
 
   * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
   * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
