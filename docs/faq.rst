@@ -54,7 +54,7 @@ Also see :ref:`modelsim-uvm`
 Is VHDL supported?
 ******************
 
-Yes, VHDL is supported.
+Yes, VHDL is supported. VHDL example: http://www.edaplayground.com/s/example/615
 
 *********************************************************************************
 How do I get a private deployment of **EDA Playground** at my company/university?
@@ -74,4 +74,4 @@ I have more questions. How do I get support?
 If you see a bug, however minor, please create a new issue at https://github.com/getvictor/eda-playground/issues
 or `Tweet to @EDAPlayground <https://twitter.com/intent/tweet?screen_name=EDAPlayground>`_
 
-For simulator support, please contact the appropriate simulator vendors.
+For simulator support, please contact the appropriate simulator vendor.

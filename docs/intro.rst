@@ -103,7 +103,6 @@ Simulators
 
 * `GPL Cver <http://sourceforge.net/projects/gplcver/>`_
 * `VeriWell <http://sourceforge.net/projects/veriwell/>`_
-* `Questa SIM <http://www.mentor.com/products/fv/questa/>`_ (SystemVerilog compile only)
 * `Python Compiler <http://www.python.org/>`_
 
 Synthesis Tools

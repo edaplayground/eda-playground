@@ -149,16 +149,6 @@ VeriWell
 
 Currently, no additional options for this simulator are available.
 
-Questa SIM
-----------
-
-.. image:: _static/questa.png
-   :align: right
-
-This simulator will ONLY DO THE COMPILE step. The run step is currently not available.
-
-Additional command-line *compile options* may be specified in the bottom textbox.
-
 Python
 ------
 
