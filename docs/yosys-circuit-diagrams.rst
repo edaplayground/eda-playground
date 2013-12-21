@@ -28,4 +28,4 @@ The `Yosys <http://www.clifford.at/yosys/>`_ synthesis flow can create circuit d
   on one side and individual connections on the other side. When such boxes are connected to each other or to a
   cell port, the connections have little diamonds on the ends instead of arrows. That's because its not an actual
   connection in the sense of the internal RTLIL netlist format.
-
+* For a more detailed explanation, see `Yosys Application Note 011: Interactive Design Investigation <http://www.clifford.at/yosys/files/yosys_appnote_011_design_investigation.pdf>`_
