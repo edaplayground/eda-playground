@@ -2,6 +2,35 @@
 Settings & Buttons
 ##################
 
+.. _adding-files-label:
+
+************
+Adding Files
+************
+
+EDA Playground supports up to 10 files. The files may be HDL source files, or text files to be used as inputs to the testbench.
+
+.. image:: _static/add_tab.png
+
+To add a file, click the **+** sign in the testbench or design pane. The filename may not contain special characters.
+
+.. raw:: html
+
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/Cku5JlN6kQ4?vq=hd720" frameborder="0" allowfullscreen></iframe>
+
+* For *SystemVerilog*, use *include* statements such as the following to include the added source files in the compile:
+
+  ::
+
+     `include "adpcm_seq_item.svh"
+
+* For *VHDL*, all files with the **.vhd** and **.vhdl** extensions are automatically included in the compile.
+* For *Python*, use *import* statements:
+
+  .. code:: python
+
+     from design import *
+
 ***************
 Sidebar Options
 ***************
