@@ -14,6 +14,8 @@ EDA Playground supports up to 10 files. The files may be HDL source files, or te
 
 To add a file, click the **+** sign in the testbench or design pane. The filename may not contain special characters.
 
+To rename a file, double click the tab name. (The initial *testbench* and *design* files cannot be renamed.)
+
 .. raw:: html
 
   <iframe width="1280" height="720" src="//www.youtube.com/embed/Cku5JlN6kQ4?vq=hd720" frameborder="0" allowfullscreen></iframe>
