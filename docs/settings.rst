@@ -319,10 +319,7 @@ Save
 Save the current playground, including code, bottom 200 lines of results, and options. Once the playground is saved, the page
 reloads. The location specified in the address bar is a static link to this playground -- this link can be shared with others.
 
-Update
-======
-
-This button shows up for the creator of the saved playground. Clicking on it updates the currently saved playground.
+If the playground has been saved previously, clicking on *Save* updates the currently saved playground.
 The static link does not change.
 
 Copy
