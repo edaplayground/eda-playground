@@ -4,8 +4,16 @@
 Using UVM with ModelSim
 #######################
 
-ModelSim 10.1d supports all SystemVerilog/Verilog features except SystemVerilog assertions/coverage, ``program`` blocks, and the
-``randomize`` method. Out of those, only the ``randomize`` method is used by the UVM library.
+ModelSim 10.1d supports all SystemVerilog/Verilog features except:
+
+* SystemVerilog assertions
+* SystemVerilog coverage
+* ``randomize`` method
+* ``program`` blocks
+
+  * Dave Rich from Mentor does not recomment the use of ``program`` blocks for any user: http://go.mentor.com/programblocks
+
+Out of the above, only the ``randomize`` method is used by the UVM library.
 
 UVM can be used with ModelSim 10.1d as long as the following coding style adjustments are followed:
 
