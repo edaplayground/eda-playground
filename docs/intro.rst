@@ -94,7 +94,7 @@ Simulators
 
 * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
 
-  * ModelSim supports SystemVerilog (with UVM/OVM and SVUnit libraries), and VHDL.
+  * ModelSim supports most of SystemVerilog (including UVM/OVM and SVUnit libraries), and VHDL.
   * :ref:`modelsim-uvm`
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
