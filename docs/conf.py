@@ -106,7 +106,7 @@ html_theme = 'bootstrap'
 # documentation.
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    # 'navbar_title': "EDA Playground",
+    'navbar_title': " ",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Site",
@@ -177,7 +177,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = "logo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
