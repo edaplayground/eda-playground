@@ -169,13 +169,22 @@ Support, Feature Requests and Bug Fixes
 ***************************************
 
 | Support available on `EDA Playground forum <https://groups.google.com/forum/#!forum/eda-playground>`_
-| Request new features and bug fixes here: https://github.com/getvictor/eda-playground/issues (requires GitHub account).
-| Or `Tweet to @EDAPlayground <https://twitter.com/intent/tweet?screen_name=EDAPlayground>`_
+| Or open a bug here: https://github.com/getvictor/eda-playground/issues (requires GitHub account).
+
+.. _social-media-label:
+
+*********************
+News and Site Updates
+*********************
+New features are frequently being added to EDA Playground. Follow the updates on your favorite social media site:
+
+* `@EDAPlayground on Twitter <https://twitter.com/edaplayground>`_
+* `Victor EDA on LinkedIn <http://www.linkedin.com/company/victor-eda>`_
+* `EDA Playground on Facebook <https://facebook.com/edaplayground>`_
+* `EDA Playground on Google+ <https://plus.google.com/+Edaplayground_EPWave>`_
 
 *******
 Credits
 *******
 
-| **EDA Playground** was created in May 2013 by Victor Lyuboslavsky.
-| `EDA Playground on Twitter <https://twitter.com/edaplayground>`_
-| `Victor EDA on LinkedIn <http://www.linkedin.com/company/victor-eda>`_
+**EDA Playground** was created in May 2013 by Victor Lyuboslavsky.
