@@ -14,9 +14,9 @@ Can I view the waves from my EDA Playground sim using EPWaves?
 
 Yes, waves are supported for all languages, frameworks, and libraries. See :ref:`loading-waves-from-playground`
 
-**********************************************************
-How do I get updates about new features on EDA Playground?
-**********************************************************
+*******************************************************
+How do I get updates about new EDA Playground features?
+*******************************************************
 New features are frequently being added to EDA Playground. Follow the updates on your favorite social media site:
 
 * `@EDAPlayground on Twitter <https://twitter.com/edaplayground>`_
@@ -81,7 +81,7 @@ I have more questions. How do I get support?
 **EDA Playground** is actively being improved. If you need help or have suggestions, support is available on
 `EDA Playground forum <https://groups.google.com/forum/#!forum/eda-playground>`_
 
-If you see a bug, however minor, please create post on the forum or
+If you see a bug, however minor, please post on the forum or
 file a new issue at https://github.com/getvictor/eda-playground/issues (requires GitHub account)
 
 For simulator support, please contact the appropriate simulator vendor.
