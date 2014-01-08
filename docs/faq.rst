@@ -14,6 +14,8 @@ Can I view the waves from my EDA Playground sim using EPWaves?
 
 Yes, waves are supported for all languages, frameworks, and libraries. See :ref:`loading-waves-from-playground`
 
+.. _social-media-label:
+
 *******************************************************
 How do I get updates about new EDA Playground features?
 *******************************************************

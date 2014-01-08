@@ -171,8 +171,6 @@ Support, Feature Requests and Bug Fixes
 | Support available on `EDA Playground forum <https://groups.google.com/forum/#!forum/eda-playground>`_
 | Or open a bug here: https://github.com/getvictor/eda-playground/issues (requires GitHub account).
 
-.. _social-media-label:
-
 *********************
 News and Site Updates
 *********************
