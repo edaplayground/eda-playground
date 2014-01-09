@@ -2,6 +2,16 @@
 FAQ
 ###
 
+*****************************************
+How do I start a blank playground design?
+*****************************************
+Click the EDA Playground logo in the top left. (Before doing that, please ensure that your existing code edits are saved.)
+
+*******************************************************************************
+How do I modify one of the examples? How do I modify someone else's playground?
+*******************************************************************************
+After making code edits, you can save your own version by clicking **Copy**.
+
 ***************
 What is EPWave?
 ***************
