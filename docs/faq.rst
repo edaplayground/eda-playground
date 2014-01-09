@@ -5,7 +5,8 @@ FAQ
 *****************************************
 How do I start a blank playground design?
 *****************************************
-Click the EDA Playground logo in the top left. (Before doing that, please ensure that your existing code edits are saved.)
+When working on code at http://www.edaplayground.com, you can start a blank design by clicking the EDA Playground logo in the top left.
+(Before doing that, please ensure that your existing code edits are saved.)
 
 *******************************************************************************
 How do I modify one of the examples? How do I modify someone else's playground?
