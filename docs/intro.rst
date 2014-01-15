@@ -62,23 +62,20 @@ What Users are Saying
 
    -- Alan Langman, Engineering Consultant
 
+   "I’ve used it a few times now to just check out some issues related to SV syntax and it’s been a big timesaver!"
+
+   -- Eric White, MTS Design Engineer at AMD
+
    "EDA Playground is sooo useful for interviews. I got a lot more feedback from being able to watch
    someone compile and debug errors. I would highly recommend others to use it if they are asking SV
    related questions."
 
-   -- Ricardo Goto, Verification Engineer (using private deployment)
+   -- Ricardo Goto, Verification Engineer
 
-   "I work in a large environment where compiles and sims take a considerable amount of time. When I'm
-   developing/debugging, sometimes I want to use Verilog/SystemVerilog syntax that I have not used before.
-   (Examples: wild equality, binding to the same port multiple times.) I don't want to stick my code into
-   the environment and hope that the the feature works like I think it does.
-   Instead, I first do a quick prototype on EDA Playground."
+   "I have recommended to use EDAPlayground.com to my team and am also trying to use it more for my debug.
+   I find EDAPlayground.com is much easier than logging into my Unix machines."
 
-   -- Design Verification Engineer (using private deployment)
-
-   "I’ve used it a few times now to just check out some issues related to SV syntax and it’s been a big timesaver!"
-
-   -- Eric White, MTS Design Engineer at AMD (using private deployment)
+   -- Subhash Bhogadi, Verification Consultant
 
 ******************
 Tools & Simulators

@@ -136,6 +136,15 @@ It is available for all simulators that have a run step.
 
   .. image:: _static/openEpwaveCheckbox.png
 
+Download files after run
+------------------------
+
+Checking this option will download the run directory as a ZIP file after the simulation run (pop-ups must be enabled).
+The simulation run does not have to be successful for the download to occur. The ZIP file will include all the code files as
+well as any generated files such as wave dumps, log files, etc.
+
+  .. image:: _static/downloadFilesCheckbox.png
+
 ModelSim
 --------
 
