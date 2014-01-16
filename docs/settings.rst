@@ -145,6 +145,8 @@ well as any generated files such as wave dumps, log files, etc.
 
   .. image:: _static/downloadFilesCheckbox.png
 
+YouTube video: `How to download code and results from EDA Playground <http://www.youtube.com/watch?v=MZh0-Bz5TwI&hd=1>`_
+
 ModelSim
 --------
 
