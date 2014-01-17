@@ -1,0 +1,205 @@
+Section: Mandatory uvm_object Constructors
+
+Topic: Why uvm_object constructors are now mandatory
+
+The UVM recommends that the following constructor be specified for any class
+extended from <uvm_object>:
+
+| class my_obj extends uvm_object;
+|     ...
+|     `uvm_object_utils(my_obj)
+|
+|     function new(string name = "my_obj")
+|       super.new(name);
+|       ...
+|     endfunction
+|     ...
+| endclass
+
+However, in UVM 1.0 and UVM 1.1, the presence of such a constructor were not enforced
+by the library and they were technically optional.
+If no constructor was specified, a default constructor was provided by SystemVerilog:
+
+| class my_obj extends uvm_object;
+|     ...
+|     `uvm_object_utils(my_obj)
+|
+|     function new();
+|     endfunction
+|     ...
+| endclass
+
+Note the important difference: in the default constructor, there is no ~name~ argument.
+Because the factory could not rely on the presence of that argument,
+<uvm_object> instances were created by calling ~new()~ without any arguments
+and subsequently setting the object instance name using <uvm_object::set_name>.
+
+| obj = new();
+| if (name != "") obj.set_name(name);
+
+In most cases, this difference was not significant.
+However, for any class that makes use of the value of the ~name~ argument
+in the constructor,
+
+| class my_obj extends uvm_object;
+|     your_obj sub;
+|
+|     `uvm_object_utils(my_obj)
+|
+|     function new(string name = "my_obj")
+|       super.new(name);
+|       sub = your_obj::type_id::create({name,".sub"});
+|     endfunction
+|     ...
+| endclass
+
+a difference in behavior was observed between
+instantiating an object directly:
+
+| my_obj o = new("o");
+
+and instantiating an object via the
+factory:
+
+| my_obj o = my_obj::type_id::create("o");
+
+The difference could have been worked around by
+overriding the <uvm_object::set_name()> method to
+percolate the effect of the name change.
+However, that work-around was often impossible or too late.
+In the examples above, the former creates an instance of ~your_obj~ named "o.sub"
+whereas the latter creates an instance named "my_obj.sub".
+It made it impossible to control the sub-object factory based on the
+parent object name.
+
+Instantiating coverage group is another example where the work-around did not work.
+Coverage groups cannot be renamed and
+must be instantiated in the encapsulating object's constructor.
+The following example would create coverage groups that are always named "my_obj"
+when using the object factory.
+
+| class my_obj extends uvm_object;
+|     covergroup my_cg(string name);
+|        option.name = name;
+|        ...
+|     endgroup
+|
+|     `uvm_object_utils(my_obj)
+|
+|     function new(string name = "my_obj")
+|       super.new(name);
+|       my_cg = new(name);
+|     endfunction
+|     ...
+| endclass
+
+Because the object factory is such a fundamental element of UVM,
+it is important that it be able to rely on the presence of a ~name~ argument
+in object constructors.
+
+
+In UVM 1.2, the UVM object factory now requires that uvm_object have a
+constructor with a name argument.  Should this constructor be missing,
+a syntax error will be issued. 
+However, because much of the factory code is hidden in the utility macros,
+the syntax error may not point to the ultimate cause of the problem
+and may be confusing the diagnose.
+
+For example, this simple file
+
+| `include "uvm_macros.svh"
+| program test;
+| 
+| import uvm_pkg::*;
+| 
+| class my_obj extends uvm_object;
+|    `uvm_object_utils(my_obj)
+| endclass
+|
+| endprogram
+
+will produce the following error
+messages:
+
+Questa:
+
+| TBD
+
+IUS:
+
+|file: test.sv
+|`uvm_object_utils(my_obj)
+|                        |
+|ncvlog: *E,TOOMAC (test.sv,8|24): too many actual arguments [10.2.2][10.3(IEEE)].
+
+
+VCS:
+
+| Error-[TMAFTC] Too many arguments to function/task call
+| $UVM_HOME/src/base/uvm_registry.svh, 197
+| "my_obj::new(name)"
+|   The above function/task call is done with more arguments than needed.
+| 
+| 
+| Error-[TMAFTC] Too many arguments to function/task call
+| test.sv, 6
+| "my_obj::new(name)"
+|   The above function/task call is done with more arguments than needed.
+
+When using VCS, ignore the first message reported in uvm_registry.svh
+and focus on the subsequent one identifying the invalid constructor being called.
+The reported line number will be on the ~endclass~ token of the class
+that is missing the required constructor.
+
+
+Topic: Code migration script
+
+Suitable constructors may be automatically added to classes that are missing them
+by using the ~add_uvm_object_new.pl~ script.
+The following command will update all SystemVerilog source files
+located in the current working directory and any sub-directory:
+
+| % add_uvm_object_new.pl --write
+
+See the ~--help~ command-line option for more details.
+
+The script may not be able to automatically identify all classes
+with missing constructors,
+or users may prefer to manually modify their source files.
+The script is also unable to fix unsuitable constructors;
+those will need to be fixed manually.
+Because the error is a compile-time error, it will be easy to identify
+any remaining changes that are required.
+
+
+Topic: Migrating code using UVM 1.2
+
+To ease the process of migrating code to UVM 1.2,
+the old (incorrect) behavior remain available.
+To restore the old behavior, it is necessary to define
+the `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR symbol when compiling the UVM library:
+
+| % ... +define+UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR uvm_pkg.sv
+
+Users must be aware that this may result in difference in behavior in code that
+now relies on the correct implementation of the UVM object factory.
+
+
+Topic: Migrating code using UVM 1.1
+
+In UVM 1.1a-d, the behavior of the UVM object factory
+has its previous (if incorrect) behavior by default.
+The correct factory behavior can be turned on by defining
+the `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR symbol when compiling the UVM library.
+
+| % ... +define+UVM_OBJECT_MUST_HAVE_CONSTRUCTOR uvm_pkg.sv
+
+
+Topic: What will happen in UVM 1.3?
+
+In UVM 1.3, the UVM object factory will have the corrected behavior *ONLY*.
+The old (incorrect) behavior will no longer remain available.
+
+This is to encourage users to migrate their code forward
+and enable VIP providers to eventually rely on the correct
+behavior of the UVM object factory.
