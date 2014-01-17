@@ -130,6 +130,9 @@ Available libraries and methodologies:
 * `UVM - Universal Verification Methodology <http://www.accellera.org/downloads/standards/uvm>`_
 
   * `UVM 1.2 RC1 Class Reference <_static/uvm-1.2/index.html>`_
+
+    * :ref:`Modifications made to UVM 1.2 RC1 for ModelSim <uvm-1.2-modelsim>`
+
   * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
 
 * `OVM - Open Verification Methodology <https://verificationacademy.com/topics/verification-methodology>`_
