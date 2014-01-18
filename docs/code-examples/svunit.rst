@@ -1,6 +1,6 @@
-############################################
-SystemVerilog Unit Testing (SVUnit) Examples
-############################################
+##########################################################
+SystemVerilog Unit Testing (SVUnit) Tutorials and Examples
+##########################################################
 
 .. toctree::
    :maxdepth: 1

@@ -1,10 +1,10 @@
-#####################
-Verilog Code Examples
-#####################
+##############################
+Verilog Tutorials and Examples
+##############################
 
 .. toctree::
    :maxdepth: 1
-   
+
    d-flip-flop
    ripple-carry-counter
    display-system-task

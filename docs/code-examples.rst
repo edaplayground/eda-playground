@@ -1,9 +1,12 @@
-#############
-Code Examples
-#############
+###########################
+Tutorials and Code Examples
+###########################
 
 .. toctree::
    :maxdepth: 2
 
-   code-examples/svunit
    code-examples/verilog
+   code-examples/system-verilog
+   code-examples/uvm
+   code-examples/svunit
+   code-examples/cocotb

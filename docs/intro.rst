@@ -131,6 +131,7 @@ Available libraries and methodologies:
 
   * `UVM 1.2 RC1 Class Reference <_static/uvm-1.2/index.html>`_
 
+    * `What's New in UVM 1.2 <http://www.youtube.com/watch?v=V2l4lBlsh7k&list=SPScWdLzHpkAdYPk_jgxRgOPisTm3-7U6A>`_ on YouTube
     * :ref:`Modifications made to UVM 1.2 RC1 for ModelSim <uvm-1.2-modelsim>`
 
   * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
