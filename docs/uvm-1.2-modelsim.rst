@@ -1,16 +1,16 @@
 .. _uvm-1.2-modelsim:
 
-######################################################
-Changes Made to UVM 1.2 RC1 to work with ModelSim 1.1d
-######################################################
+#######################################################
+Changes Made to UVM 1.2 RC1 to work with ModelSim 10.1d
+#######################################################
 
-In **uvm_svcmd_dpi.c**:
+Modified line in **uvm_svcmd_dpi.c**:
 
 .. code-block:: c
 
    const char *uvm_dpi_get_next_arg_c (int init) {
 
-At the bottom of **uvm_pool.svh**:
+Added to the bottom of **uvm_pool.svh**:
 
 .. code-block:: verilog
 
