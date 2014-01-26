@@ -335,11 +335,15 @@ reloads. The location specified in the address bar is a static link to this play
 If the playground has been saved previously, clicking on *Save* updates the currently saved playground.
 The static link does not change.
 
+If you modified a code example but did not save, you'll see an asterisk in the *Save* button.
+
 Copy
 ====
 
 This button shows up for everyone when viewing a saved playground. Clicking on it creates a new copy of the current playground.
 The copy will be complitely separate from the original, and it will have its own link that can be shared with others.
+
+If you modified a code example but did not save, you'll see an asterisk in the *Copy* button.
 
 Share
 =====
