@@ -12,13 +12,9 @@ EDA Playground supports up to 10 files. The files may be HDL source files, or te
 
 .. image:: _static/add_tab.png
 
-To add a file, click the **+** sign in the testbench or design pane. The filename may not contain special characters.
+To add a file, click the **+** sign in the testbench or design pane. Then create a new file or upload an existing file. The filename may not contain special characters.
 
-To rename a file, double click the tab name. (The initial *testbench* and *design* files cannot be renamed.)
-
-.. raw:: html
-
-  <iframe width="1280" height="720" src="//www.youtube.com/embed/Cku5JlN6kQ4?vq=hd720" frameborder="0" allowfullscreen></iframe>
+**Simulating code with multiple files**
 
 * For *SystemVerilog*, use *include* statements such as the following to include the added source files in the compile:
 
@@ -32,6 +28,12 @@ To rename a file, double click the tab name. (The initial *testbench* and *desig
   .. code:: python
 
      from design import *
+
+To rename a file, double click the tab name. (The initial *testbench* and *design* files cannot be renamed.)
+
+.. raw:: html
+
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/Cku5JlN6kQ4?vq=hd720" frameborder="0" allowfullscreen></iframe>
 
 ***************
 Sidebar Options
