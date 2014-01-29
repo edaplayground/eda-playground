@@ -351,6 +351,13 @@ Share
 This button only shows up for saved playgrounds. It displays a modal pop-up with a static link to the current playground.
 Also, it displays buttons for sharing on Twitter, Facebook, or LinkedIn.
 
+Collaborate
+===========
+
+Allows real-time collaborations where multiple users can edit code simultaneously.
+
+`Real-Time Collaboration Intro <http://www.youtube.com/watch?v=UJ0jIvEU_Fo&hd=1>`_ on YouTube.
+
 About
 =====
 
