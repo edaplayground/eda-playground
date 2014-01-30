@@ -157,6 +157,8 @@ ModelSim
 
 Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
 
+The **Run Time** option can be used to specify the number of timesteps for the simulation to run. By default, the simulation runs forever until it hits a breakpoint or *$finish*.
+
 ModelSim Compile Options for SystemVerilog/Verilog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -323,11 +325,15 @@ The user must be logged in to **save** or **run** playground code. Playground co
 Run
 ===
 
+Shortcut: **Ctrl+Enter**
+
 Run the current code using the selected tool/simulator and options. The code runs on the EDA Playground server and the results are
 printed in the bottom *Results* pane.
 
 Save
 ====
+
+Shortcut: **Ctrl+S**
 
 Save the current playground, including code, bottom 200 lines of results, and options. Once the playground is saved, the page
 reloads. The location specified in the address bar is a static link to this playground -- this link can be shared with others.
