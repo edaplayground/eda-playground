@@ -195,6 +195,13 @@ VeriWell
 
 Currently, no additional options for this simulator are available.
 
+C++
+---
+
+This is a *g++* Linux compiler for C++. It is used for C++ and SystemC runs.
+
+Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
+
 Python
 ------
 

@@ -100,6 +100,11 @@ Simulators
 
 * `GPL Cver <http://sourceforge.net/projects/gplcver/>`_
 * `VeriWell <http://sourceforge.net/projects/veriwell/>`_
+
+Compilers
+=========
+
+* `C++ Compiler <http://gcc.gnu.org/>`_
 * `Python Compiler <http://www.python.org/>`_
 
 Synthesis Tools
@@ -150,6 +155,8 @@ Available libraries and methodologies:
 
   * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
   * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
+
+* `SystemC <http://www.accellera.org/downloads/standards/systemc>`_ - system level design and simulation in C++
 
 * `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
 
