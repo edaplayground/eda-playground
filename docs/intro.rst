@@ -12,7 +12,7 @@ Introduction
 Overview
 ********
 
-EDA Playground gives engineers immediate hands-on exposure to simulating SystemVerilog, Verilog, VHDL, and other HDLs.
+EDA Playground gives engineers immediate hands-on exposure to simulating SystemVerilog, Verilog, VHDL, C++/SystemC, and other HDLs.
 All you need is a web browser. The goal is to accelerate learning of design/testbench development with
 easier code sharing, and with simpler access to EDA tools and libraries. EDA Playground is specifically
 designed for small prototypes and examples.
