@@ -42,7 +42,8 @@ void push_data(int lvl,char *entry, int cmd) {
 
 // walk one level (potentially recursive)
 void walk_level(int lvl, int argc, char**argv,int cmd) {
-    for(int idx=0; ((lvl==0) && idx<argc) || ((lvl>0) && (*argv));idx++,argv++) {
+    int idx;
+    for(idx=0; ((lvl==0) && idx<argc) || ((lvl>0) && (*argv));idx++,argv++) {
       if(strcmp(*argv, "-f") && strcmp(*argv, "-F")) {
 	push_data(lvl,*argv,cmd);	
       } else {
@@ -54,7 +55,7 @@ void walk_level(int lvl, int argc, char**argv,int cmd) {
     }
 }
 
-const char *uvm_dpi_get_next_arg_c (int init=0) {
+const char *uvm_dpi_get_next_arg_c (int init) {
 	s_vpi_vlog_info info;
 	static int idx=0;
 

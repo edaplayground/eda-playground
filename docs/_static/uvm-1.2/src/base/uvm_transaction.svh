@@ -419,7 +419,7 @@ virtual class uvm_transaction extends uvm_object;
   // For more information, see the general discussion for <uvm_transaction>.
   // See <uvm_event> for details on the event API.
   //
-  uvm_event#() begin_event;
+  uvm_event#(uvm_object) begin_event;
 
   // Variable: end_event
   //
@@ -440,7 +440,7 @@ virtual class uvm_transaction extends uvm_object;
   //|  item.end_event.wait_on();
   //|  ...
   // 
-  uvm_event#() end_event;
+  uvm_event#(uvm_object) end_event;
 
   //----------------------------------------------------------------------------
   //
@@ -665,7 +665,7 @@ endfunction
 // ---------
 
 function void uvm_transaction::accept_tr (time accept_time = 0);
-  uvm_event#() e;
+  uvm_event#(uvm_object) e;
 
   if(accept_time != 0)
     this.accept_time = accept_time;

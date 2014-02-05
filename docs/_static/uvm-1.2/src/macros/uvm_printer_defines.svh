@@ -114,7 +114,7 @@
     int curr, max__; max__=0; curr=0; \
     if(P!=null) p__ = P; \
     else p__ = uvm_default_printer; \
-    foreach(F[i]) max__ = i+1; \
+    max__ = $right(F)+1; \
 //    max__=$size(F); \
     p__.print_array_header (`"F`", max__,`"T``(integral)`"); \
     k__ = p__.knobs; \

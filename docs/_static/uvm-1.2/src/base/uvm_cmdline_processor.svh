@@ -421,7 +421,8 @@ class uvm_cmdline_processor extends uvm_report_object;
     // This is functionally equivilent to calling the following in your 
     // test:
     //
-    //| uvm_factory f = uvm_factory::get();
+    //| uvm_coreservice_t cs = uvm_coreservice_t::get();
+    //| uvm_factory f = cs.get_factory();
     //| uvm_config_db#(uvm_object_wrapper)::set(this,
     //|                                         "path.to.sequencer.main_phase",
     //|                                         "default_sequence",

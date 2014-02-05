@@ -224,10 +224,10 @@ virtual class uvm_recorder extends uvm_object;
       stream = get_stream();
       
       m_is_closed = 0;
-      if(p)
+      if(p != null)
       	s=p.get_randstate();
       m_stream_dap = new("stream_dap");
-      if(p)
+      if(p != null)
       	p.set_randstate(s);
       m_warn_null_stream = 1;
       if (m_ids_by_recorder.exists(this))

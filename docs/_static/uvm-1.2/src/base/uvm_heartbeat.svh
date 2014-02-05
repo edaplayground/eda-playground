@@ -59,7 +59,7 @@ class uvm_heartbeat extends uvm_object;
   protected uvm_component   m_cntxt;
   protected uvm_heartbeat_modes   m_mode;
   protected uvm_component   m_hblist[$];
-  protected uvm_event#()       m_event;
+  protected uvm_event#(uvm_object)       m_event;
   protected bit             m_started;
   protected event           m_stop_event;
 
@@ -117,7 +117,7 @@ class uvm_heartbeat extends uvm_object;
   // trigger event, then the monitoring is not started. Monitoring can be 
   // started by explicitly calling <start>.
 
-  function void set_heartbeat (uvm_event#() e, ref uvm_component comps[$]);
+  function void set_heartbeat (uvm_event#(uvm_object) e, ref uvm_component comps[$]);
     uvm_object c;
     foreach(comps[i]) begin
       c = comps[i];
@@ -166,7 +166,7 @@ class uvm_heartbeat extends uvm_object;
   // running and ~e~ is specifying a different trigger event from the
   // current event.
 
-  function void start (uvm_event#() e=null);
+  function void start (uvm_event#(uvm_object) e=null);
     if(m_event == null && e == null) begin
       m_cntxt.uvm_report_warning("NOEVNT", { "start() was called for: ",
         get_name(), " with a null trigger and no currently set trigger" },

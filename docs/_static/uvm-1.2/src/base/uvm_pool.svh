@@ -342,6 +342,6 @@ typedef class uvm_barrier;
 typedef class uvm_event;
 
 typedef uvm_object_string_pool #(uvm_barrier) uvm_barrier_pool;
-typedef uvm_object_string_pool #(uvm_event) uvm_event_pool;
+typedef uvm_object_string_pool #(uvm_event#(uvm_object)) uvm_event_pool;
 
 

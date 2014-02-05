@@ -126,9 +126,10 @@ class uvm_objection extends uvm_report_object;
 
   function new(string name="");
     uvm_cmdline_processor clp;
-    uvm_coreservice_t cs_ = uvm_coreservice_t::get();
+    uvm_coreservice_t cs_ ;
     string trace_args[$];
     super.new(name);
+    cs_ = uvm_coreservice_t::get();
     m_top  = cs_.get_root();
      
     set_report_verbosity_level(m_top.get_report_verbosity_level());

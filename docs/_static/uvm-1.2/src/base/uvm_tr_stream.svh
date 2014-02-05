@@ -215,10 +215,10 @@ virtual class uvm_tr_stream extends uvm_object;
       db = get_db();
       m_is_closed = 0;
       p = process::self();
-      if(p)
+      if(p != null)
       	s = p.get_randstate();
       m_cfg_dap = new("cfg_dap");
-      if(p)
+      if(p != null)
       	p.set_randstate(s);
       m_warn_null_cfg = 1;
       if (m_ids_by_stream.exists(this))
@@ -414,7 +414,7 @@ virtual class uvm_tr_stream extends uvm_object;
    // identical to the built-in handles.
    //
    // This is an implementation detail of the UVM library, which allows
-   // for vendors to (optionally) put vendor-specific mehods into the library.
+   // for vendors to (optionally) put vendor-specific methods into the library.
    virtual function integer m_get_handle();
       return get_handle();
    endfunction : m_get_handle

@@ -17,36 +17,101 @@
 //   permissions and limitations under the License.
 //----------------------------------------------------------------------
 
-// abstract visitor class
-// visit() will be invoked for every node of the visited structure
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_visitor #(NODE)
+//
+// The uvm_visitor class provides an abstract base class for a visitor. The visitor 
+// visits instances of type NODE. For general information regarding the visitor pattern
+// see http://en.wikipedia.org/wiki/Visitor_pattern
+// 
+//------------------------------------------------------------------------------
+
 virtual class uvm_visitor#(type NODE=uvm_component) extends uvm_object;
 	function new (string name = "");
 		super.new(name);
 	endfunction 
+	// Function: begin_v
+  	//
+  	// This method will be invoked by the visitor before the first NODE is visited
+	
 	virtual function void begin_v(); endfunction
+	
+	// Function: end_v
+  	//
+  	// This method will be invoked by the visitor after the last NODE is visited
+		
 	virtual function void end_v(); endfunction
 
+	// Function: visit
+  	//
+  	// This method will be invoked by the visitor for every visited ~node~ of the provided structure.
+  	// The user is expected to provide the own functionality in this function.
+  	//
+  	//| class count_nodes_visitor#(type T=uvm_component) extends uvm_visitor#(T); 
+  	//| 	function new (string name = "");
+	//|	       super.new(name);
+	//|     endfunction 
+	//| 	local int cnt;
+	//|     virtual function void begin_v(); cnt = 0; endfunction
+	//| 	virtual function void end_v(); `uvm_info("TEXT",$sformatf("%d elements",cnt),UVM_NONE) endfunction
+	//| 	virtual function void visit(T node); cnt++; endfunction
+	//|	endclass
 	pure virtual function void visit(NODE node);
 endclass
 
-// a wrapper which can return the immediate children for an instance of type STRUCTURE
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_structure_proxy #(STRUCTURE)
+//
+// The uvm_structure_proxy is a wrapper and provides a set of elements 
+// of the STRUCTURE to the caller on demand. This is to decouple the retrieval of 
+// the STRUCTUREs subelements from the actual function being invoked on STRUCTURE
+// 
+//------------------------------------------------------------------------------
+
 virtual class uvm_structure_proxy#(type STRUCTURE=uvm_component) extends uvm_object;
 	function new (string name = "");
 		super.new(name);
 	endfunction     
+	// Function: get_immediate_children
+  	//
+  	// This method will be return in ~children~ a set of the direct subelements of ~s~
+		
 	pure virtual function void get_immediate_children(STRUCTURE s, ref STRUCTURE children[$]);
 endclass    
 
-// the visitor adapter traverses the nodes of STRUCTURE and invokes
-// the visitor's visit() function for every visited node
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_visitor_adapter #(STRUCTURE,uvm_visitor#(STRUCTURE))
+//
+// The visitor adaptor traverses all nodes of the STRUCTURE and will invoke visitor.visit() on every node.
+// 
+//------------------------------------------------------------------------------
+
 virtual class uvm_visitor_adapter#(type STRUCTURE=uvm_component,VISITOR=uvm_visitor#(STRUCTURE)) extends uvm_object;
+	// Function: accept()
+  	//
+  	// Calling this function will traverse through ~s~ (and every subnode of ~s~). For each node found 
+  	// ~v~.visit(node) will be invoked. The children of ~s~ are recursively determined 
+  	// by invoking ~p~.get_immediate_children().~invoke_begin_end~ determines whether the visitors begin/end functions 
+  	// should be invoked prior to traversal.
+	
 	pure virtual function void accept(STRUCTURE s, VISITOR v,uvm_structure_proxy#(STRUCTURE) p, bit invoke_begin_end=1);
 	function new (string name = "");
 		super.new(name);
 	endfunction 
 endclass
 
-// top down traversal visits the parent before the direct children
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_top_down_visitor_adapter
+//
+// This uvm_top_down_visitor_adapter traverses the STRUCTURE ~s~ (and will invoke the visitor) in a hierarchical fashion.
+// During traversal ~s~ will be visited before all subnodes of ~s~ will be visited.
+// 
+//------------------------------------------------------------------------------
+
 class uvm_top_down_visitor_adapter#(type STRUCTURE=uvm_component,VISITOR=uvm_visitor#(STRUCTURE)) extends 
 	uvm_visitor_adapter#(STRUCTURE,VISITOR);
 	function new (string name = "");
@@ -70,7 +135,15 @@ class uvm_top_down_visitor_adapter#(type STRUCTURE=uvm_component,VISITOR=uvm_vis
 	endfunction
 endclass
 
-// bottom traversal visits the direct children before the parent
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_bottom_up_visitor_adapter
+//
+// This uvm_bottom_up_visitor_adapter traverses the STRUCTURE ~s~ (and will invoke the visitor) in a hierarchical fashion.
+// During traversal all children of node ~s~ will be visited ~s~ will be visited.
+// 
+//------------------------------------------------------------------------------
+
 class uvm_bottom_up_visitor_adapter#(type STRUCTURE=uvm_component,VISITOR=uvm_visitor#(STRUCTURE)) extends 
 	uvm_visitor_adapter#(STRUCTURE,VISITOR);
 	function new (string name = "");
@@ -94,7 +167,14 @@ class uvm_bottom_up_visitor_adapter#(type STRUCTURE=uvm_component,VISITOR=uvm_vi
 	endfunction
 endclass
 
-// visits all nodes with a distance N from the root first before visiting nodes with a distance (N+1)
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_by_level_visitor_adapter
+//
+// This uvm_by_level_visitor_adapter traverses the STRUCTURE ~s~ (and will invoke the visitor) in a hierarchical fashion.
+// During traversal will visit all direct children of ~s~ before all grand-children are visited. 
+//------------------------------------------------------------------------------
+
 class uvm_by_level_visitor_adapter#(type STRUCTURE=uvm_component,VISITOR=uvm_visitor#(STRUCTURE)) extends 
 	uvm_visitor_adapter#(STRUCTURE,VISITOR);
 	function new (string name = "");
@@ -124,7 +204,13 @@ class uvm_by_level_visitor_adapter#(type STRUCTURE=uvm_component,VISITOR=uvm_vis
 	endfunction
 endclass
 
-// simple component traversal   
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_component_proxy
+//
+// The class is providing the proxy to extract the direct subcomponents of ~s~ 
+//------------------------------------------------------------------------------
+
 class uvm_component_proxy extends uvm_structure_proxy#(uvm_component);
 	virtual function void get_immediate_children(STRUCTURE s, ref STRUCTURE children[$]);   
 		s.get_children(children);   
@@ -135,19 +221,33 @@ class uvm_component_proxy extends uvm_structure_proxy#(uvm_component);
 	endfunction 
 endclass
 
-	
-  // local function to check the name constraints on component names
-  // a legal name
-  // - allowed charset "A-z:_0-9[](){}-: "
-  // - whitespace-as-is, no-balacing delimiter semantic, no escape sequences
-  // - path delimiter not allowed anywhere in the name
-  //   
-  // the check is coded here as a function to complete it in a single function call
-  // otherwise save/restore issues with the used dpi could occur
+
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_component_name_check_visitor 
+//
+// This specialized visitor analyze the naming of the current component. The established rule set
+// ensures that a component.get_full_name() is parsable, unique, printable to order to avoid any ambiguities 
+// when messages are being emitted.
+// 
+// ruleset a legal name is composed of
+// - allowed charset "A-z:_0-9[](){}-: "
+// - whitespace-as-is, no-balacing delimiter semantic, no escape sequences
+// - path delimiter not allowed anywhere in the name
+//   
+// the check is coded here as a function to complete it in a single function call
+// otherwise save/restore issues with the used dpi could occur
+//------------------------------------------------------------------------------
+
   
 class uvm_component_name_check_visitor extends uvm_visitor#(uvm_component);
 	local uvm_root _root;
 
+	// Function: get_name_constraint
+  	//
+  	// This method should return a regex for what is being considered a valid/good component name.
+  	// The visitor will check all component names using this regex and report failing names
+		
 	virtual function string get_name_constraint();
 		return "^[][[:alnum:](){}_:-]([][[:alnum:](){} _:-]*[][[:alnum:](){}_:-])?$";
 	endfunction

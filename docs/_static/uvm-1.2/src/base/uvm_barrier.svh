@@ -37,7 +37,7 @@ class uvm_barrier extends uvm_object;
   local  int       num_waiters;
   local  bit       at_threshold;
   local  bit       auto_reset;
-  local  uvm_event#() m_event;
+  local  uvm_event#(uvm_object) m_event;
 
 
   // Function: new

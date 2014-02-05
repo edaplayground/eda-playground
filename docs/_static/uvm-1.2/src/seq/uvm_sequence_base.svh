@@ -207,7 +207,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Waits until the sequence reaches one of the given ~state~. If the sequence
   // is already in one of the state, this method returns immediately.
   //
-  //| wait_for_sequence_state(STOPPED|FINISHED);
+  //| wait_for_sequence_state(UVM_STOPPED|UVM_FINISHED);
 
   task wait_for_sequence_state(int unsigned state_mask);
     wait (m_sequence_state & state_mask);

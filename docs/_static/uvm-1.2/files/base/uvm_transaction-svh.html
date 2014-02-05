@@ -431,16 +431,26 @@ endtask: do_item</pre></blockquote>
 
  <!--CONTENT index=25 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_transaction.begin_event" href="../../src/base/uvm_transaction.svh">begin_event</a></h3>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_event#() begin_event
-  </td></tr></table></blockquote><div class=CBody><p>A <a href="uvm_event-svh.html#uvm_event" class=LClass id=link84 onMouseOver="ShowTip(event, 'tt27', 'link84')" onMouseOut="HideTip('tt27')">uvm_event</a> that is triggered when this transaction&rsquo;s actual execution on the bus begins, typically as a result of a driver calling <a href="uvm_component-svh.html#uvm_component.begin_tr" class=LMethod id=link85 onMouseOver="ShowTip(event, 'tt28', 'link85')" onMouseOut="HideTip('tt28')">uvm_component::begin_tr</a>.&nbsp; Processes that wait on this event will block until the transaction has begun.</p><p>For more information, see the general discussion for <a href="#uvm_transaction" class=LClass id=link86 onMouseOver="ShowTip(event, 'tt3', 'link86')" onMouseOut="HideTip('tt3')">uvm_transaction</a>.&nbsp; See <a href="uvm_event-svh.html#uvm_event" class=LClass id=link87 onMouseOver="ShowTip(event, 'tt27', 'link87')" onMouseOut="HideTip('tt27')">uvm_event</a> for details on the event API.</p></div></div></div>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>uvm_event#(</td>      <td class=PParameter nowrap>uvm_object</td>
+      <td class=PAfterParameters nowrap>) begin_event</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+<div class=CBody><p>A <a href="uvm_event-svh.html#uvm_event" class=LClass id=link84 onMouseOver="ShowTip(event, 'tt27', 'link84')" onMouseOut="HideTip('tt27')">uvm_event</a> that is triggered when this transaction&rsquo;s actual execution on the bus begins, typically as a result of a driver calling <a href="uvm_component-svh.html#uvm_component.begin_tr" class=LMethod id=link85 onMouseOver="ShowTip(event, 'tt28', 'link85')" onMouseOut="HideTip('tt28')">uvm_component::begin_tr</a>.&nbsp; Processes that wait on this event will block until the transaction has begun.</p><p>For more information, see the general discussion for <a href="#uvm_transaction" class=LClass id=link86 onMouseOver="ShowTip(event, 'tt3', 'link86')" onMouseOut="HideTip('tt3')">uvm_transaction</a>.&nbsp; See <a href="uvm_event-svh.html#uvm_event" class=LClass id=link87 onMouseOver="ShowTip(event, 'tt27', 'link87')" onMouseOut="HideTip('tt27')">uvm_event</a> for details on the event API.</p></div></div></div>
 
 
 
 
  <!--CONTENT index=26 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_transaction.end_event" href="../../src/base/uvm_transaction.svh">end_event</a></h3>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_event#() end_event
-  </td></tr></table></blockquote><div class=CBody><p>A <a href="uvm_event-svh.html#uvm_event" class=LClass id=link88 onMouseOver="ShowTip(event, 'tt27', 'link88')" onMouseOut="HideTip('tt27')">uvm_event</a> that is triggered when this transaction&rsquo;s actual execution on the bus ends, typically as a result of a driver calling <a href="uvm_component-svh.html#uvm_component.end_tr" class=LMethod id=link89 onMouseOver="ShowTip(event, 'tt30', 'link89')" onMouseOut="HideTip('tt30')">uvm_component::end_tr</a>.&nbsp; Processes that wait on this event will block until the transaction has ended.</p><p>For more information, see the general discussion for <a href="#uvm_transaction" class=LClass id=link90 onMouseOver="ShowTip(event, 'tt3', 'link90')" onMouseOut="HideTip('tt3')">uvm_transaction</a>.&nbsp; See <a href="uvm_event-svh.html#uvm_event" class=LClass id=link91 onMouseOver="ShowTip(event, 'tt27', 'link91')" onMouseOut="HideTip('tt27')">uvm_event</a> for details on the event API.</p><blockquote><pre>virtual task my_sequence::body();
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>uvm_event#(</td>      <td class=PParameter nowrap>uvm_object</td>
+      <td class=PAfterParameters nowrap>) end_event</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+<div class=CBody><p>A <a href="uvm_event-svh.html#uvm_event" class=LClass id=link88 onMouseOver="ShowTip(event, 'tt27', 'link88')" onMouseOut="HideTip('tt27')">uvm_event</a> that is triggered when this transaction&rsquo;s actual execution on the bus ends, typically as a result of a driver calling <a href="uvm_component-svh.html#uvm_component.end_tr" class=LMethod id=link89 onMouseOver="ShowTip(event, 'tt30', 'link89')" onMouseOut="HideTip('tt30')">uvm_component::end_tr</a>.&nbsp; Processes that wait on this event will block until the transaction has ended.</p><p>For more information, see the general discussion for <a href="#uvm_transaction" class=LClass id=link90 onMouseOver="ShowTip(event, 'tt3', 'link90')" onMouseOut="HideTip('tt3')">uvm_transaction</a>.&nbsp; See <a href="uvm_event-svh.html#uvm_event" class=LClass id=link91 onMouseOver="ShowTip(event, 'tt27', 'link91')" onMouseOut="HideTip('tt27')">uvm_event</a> for details on the event API.</p><blockquote><pre>virtual task my_sequence::body();
  ...
  start_item(item);    \
  item.randomize();     } `uvm_do(item)
@@ -571,8 +581,13 @@ Sets this transaction&rsquo;s numeric identifier to id. </div></div><div class=C
   </td></tr></table></blockquote>Returns this transaction&rsquo;s numeric identifier, which is -1 if not set explicitly by <i>set_transaction_id</i>.</div></div><div class=CToolTip id="tt25"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>const uvm_event_pool events = new
   </td></tr></table></blockquote>The event pool instance for this transaction. </div></div><div class=CToolTip id="tt26"><div class=CVariable>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_event#() begin_event
-  </td></tr></table></blockquote>A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus begins, typically as a result of a driver calling uvm_component::begin_tr. </div></div><div class=CToolTip id="tt27"><div class=CClass>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>uvm_event#(</td>      <td class=PParameter nowrap>uvm_object</td>
+      <td class=PAfterParameters nowrap>) begin_event</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus begins, typically as a result of a driver calling uvm_component::begin_tr. </div></div><div class=CToolTip id="tt27"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_event_base extends uvm_object
   </td></tr></table></blockquote>The uvm_event class is a wrapper class around the SystemVerilog event construct. </div></div><div class=CToolTip id="tt28"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
@@ -605,8 +620,13 @@ Sets this transaction&rsquo;s numeric identifier to id. </div></div><div class=C
       </table></td></tr>
     </table></blockquote>
 This function marks the start of a transaction, <i>tr</i>, by this component. </div></div><div class=CToolTip id="tt29"><div class=CVariable>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_event#() end_event
-  </td></tr></table></blockquote>A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus ends, typically as a result of a driver calling uvm_component::end_tr. </div></div><div class=CToolTip id="tt30"><div class=CMethod>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>uvm_event#(</td>      <td class=PParameter nowrap>uvm_object</td>
+      <td class=PAfterParameters nowrap>) end_event</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus ends, typically as a result of a driver calling uvm_component::end_tr. </div></div><div class=CToolTip id="tt30"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters nowrap>function void end_tr (</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>

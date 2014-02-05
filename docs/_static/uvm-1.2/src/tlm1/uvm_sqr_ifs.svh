@@ -247,5 +247,6 @@ virtual class uvm_sqr_if_base #(type T1=uvm_object, T2=T1);
 
   virtual function bit is_auto_item_recording_enabled();
     uvm_report_error("is_auto_item_recording_enabled", `UVM_SEQ_ITEM_FUNCTION_ERROR, UVM_NONE);
+    return 0;
   endfunction
 endclass

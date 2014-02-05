@@ -149,13 +149,13 @@ class uvm_default_coreservice_t extends uvm_coreservice_t;
 	           process p = process::self();
 	           uvm_text_tr_database tx_db;
 	           string s;
-	           if(p)
+	           if(p != null)
 	           	s = p.get_randstate();
 	           	
 	           tx_db = new("default_tr_database");
                tr_database = tx_db;
               
-              if(p)
+              if(p != null)
               	p.set_randstate(s);
            end
            return tr_database;
@@ -181,7 +181,7 @@ class uvm_default_coreservice_t extends uvm_coreservice_t;
 	endfunction 
 
 	virtual function uvm_root get_root();
-		return uvm_root::get();
+		return uvm_root::m_uvm_get_root();
 	endfunction
 	
 	local uvm_visitor#(uvm_component) _visitor;

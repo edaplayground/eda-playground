@@ -64,8 +64,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
   </td></tr></table></blockquote>If path is UVM_BACKDOOR, this member specifies the abstraction kind for the backdoor access, e.g. </div></div><div class=CToolTip id="tt24"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int begin_elements = 5
   </td></tr></table></blockquote>Defines the number of elements at the head of a list to print. </div></div><div class=CToolTip id="tt25"><div class=CVariable>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_event#() begin_event
-  </td></tr></table></blockquote>A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus begins, typically as a result of a driver calling uvm_component::begin_tr. </div></div><div class=CToolTip id="tt26"><div class=CVariable>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>uvm_event#(</td>      <td class=PParameter nowrap>uvm_object</td>
+      <td class=PAfterParameters nowrap>) begin_event</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus begins, typically as a result of a driver calling uvm_component::begin_tr. </div></div><div class=CToolTip id="tt26"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit big_endian = 1
   </td></tr></table></blockquote>This bit determines the order that integral data is packed (using pack_field, pack_field_int, pack_time, or pack_real) and how the data is unpacked from the pack array (using unpack_field, unpack_field_int, unpack_time, or unpack_real). </div></div><div class=CToolTip id="tt27"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string bin_radix = &quot;'b&quot;
@@ -128,8 +133,13 @@ Observed bus transactions of type <i>BUSTYPE</i> are received from this port and
   </td></tr></table></blockquote>A flag to enable report count summary for each ID</div></div><div class=CToolTip id="tt46"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int end_elements = 5
   </td></tr></table></blockquote>This defines the number of elements at the end of a list that should be printed.</div></div><div class=CToolTip id="tt47"><div class=CVariable>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_event#() end_event
-  </td></tr></table></blockquote>A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus ends, typically as a result of a driver calling uvm_component::end_tr. </div></div><div class=CToolTip id="tt48"><div class=CVariable>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>uvm_event#(</td>      <td class=PParameter nowrap>uvm_object</td>
+      <td class=PAfterParameters nowrap>) end_event</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+A uvm_event that is triggered when this transaction&rsquo;s actual execution on the bus ends, typically as a result of a driver calling uvm_component::end_tr. </div></div><div class=CToolTip id="tt48"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>rand bit [63:0] end_offset
   </td></tr></table></blockquote>Last address of managed space</div></div><div class=CToolTip id="tt49"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>const uvm_event_pool events = new
@@ -445,7 +455,7 @@ This export provides access to this sequencer&rsquo;s implementation of the sequ
   </td></tr></table></blockquote>The tree printer is a global object that can be used with uvm_object::do_print to get multi-line tree style printing.</div></div><div class=CToolTip id="tt177"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>parameter int UVM_HDL_MAX_WIDTH = `UVM_HDL_MAX_WIDTH
   </td></tr></table></blockquote>Sets the maximum size bit vector for backdoor access. </div></div><div class=CToolTip id="tt178"><div class=CVariable>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>const uvm_root uvm_top = uvm_root::m_uvm_get_root()
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>const uvm_root uvm_top = uvm_root::get()
   </td></tr></table></blockquote>This is the top-level that governs phase execution and provides component search interface. </div></div><!--END_ND_TOOLTIPS-->
 
 

@@ -1426,7 +1426,8 @@ function void uvm_sequencer_base::start_phase_sequence(uvm_phase phase);
   uvm_resource_pool            rp = uvm_resource_pool::get();
   uvm_resource_types::rsrc_q_t rq;
   uvm_sequence_base            seq;
-  uvm_factory                  f = uvm_factory::get();
+  uvm_coreservice_t cs = uvm_coreservice_t::get();
+  uvm_factory                  f = cs.get_factory();
   
   // Has a default sequence been specified?
   rq = rp.lookup_name({get_full_name(), ".", phase.get_name(), "_phase"},
@@ -1630,12 +1631,11 @@ task uvm_sequencer_base::start_default_sequence();
     return;
   end
   
-  `uvm_warning("UVM_DEPRECATED",{"Starting (deprecated) default sequence '",default_sequence,
+	`uvm_warning("UVM_DEPRECATED",{"Starting (deprecated) default sequence '",default_sequence,
      "' on sequencer '",get_full_name(),
      "'. See documentation for uvm_sequencer_base::start_phase_sequence() for information on ",
      "starting default sequences in UVM."})
 
-  if(sequences.size() != 0) begin
     //create the sequence object
     if (!$cast(m_seq, factory.create_object_by_name(default_sequence, 
                                             get_full_name(), default_sequence))) 
@@ -1656,14 +1656,13 @@ task uvm_sequencer_base::start_default_sequence();
       uvm_report_warning("STRDEFSEQ", "Failed to randomize sequence");
     end
     m_seq.start(this);
-  end
 endtask
 
 
 // get_seq_kind
 // ------------
 // Returns an int seq_kind correlating to the sequence of type type_name
-// in the sequencer���s sequence library. If the named sequence is not
+// in the sequencers sequence library. If the named sequence is not
 // registered a SEQNF warning is issued and -1 is returned.
 
 function int uvm_sequencer_base::get_seq_kind(string type_name);
@@ -1686,8 +1685,8 @@ endfunction
 // The seq_kind int may be obtained using the get_seq_kind() method.
 
 function uvm_sequence_base uvm_sequencer_base::get_sequence(int req_kind);
-
-  uvm_factory factory = uvm_factory::get();
+  uvm_coreservice_t cs = uvm_coreservice_t::get();                         
+  uvm_factory factory = cs.get_factory();
   uvm_sequence_base m_seq ;
   string m_seq_type;
 

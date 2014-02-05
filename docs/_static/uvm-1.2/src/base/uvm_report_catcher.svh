@@ -694,11 +694,7 @@ virtual class uvm_report_catcher extends uvm_callback;
     string s;
     string q[$];
     if(do_report) begin
-      q.push_back("\n");   
-      q.push_back("--- UVM Report catcher Summary ---");
-      q.push_back("");   
-      q.push_back("");
-  
+      q.push_back("\n--- UVM Report catcher Summary ---\n\n\n");
       q.push_back($sformatf("Number of demoted UVM_FATAL reports  :%5d\n", m_demoted_fatal));
       q.push_back($sformatf("Number of demoted UVM_ERROR reports  :%5d\n", m_demoted_error));
       q.push_back($sformatf("Number of demoted UVM_WARNING reports:%5d\n", m_demoted_warning));

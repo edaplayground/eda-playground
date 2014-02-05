@@ -123,6 +123,7 @@ static int uvm_hdl_set_vlog_partsel(char *path, p_vpi_vecval value, PLI_INT32 fl
     }
     return 1;
   }
+  return 0;
 }
 
 

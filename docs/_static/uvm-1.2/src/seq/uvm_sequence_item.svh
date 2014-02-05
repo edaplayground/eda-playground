@@ -333,9 +333,10 @@ class uvm_sequence_item extends uvm_transaction;
   // then the global reporter will be used.
 
   virtual function uvm_report_object uvm_get_report_object();
-    if(m_sequencer == null)
-      return uvm_root::get();
-    else 
+    if(m_sequencer == null) begin
+      uvm_coreservice_t cs = uvm_coreservice_t::get();
+       return cs.get_root();
+    end else 
       return m_sequencer;
   endfunction
 

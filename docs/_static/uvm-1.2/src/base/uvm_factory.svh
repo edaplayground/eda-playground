@@ -69,8 +69,30 @@ endclass
 //
 
 virtual class uvm_factory;
+
+  // Group: Retrieving the factory
+
+ 
+  // Function: get
+  // Static accessor for <uvm_factory>
+  //
+  // The static accessor is provided as a convenience wrapper
+  // around retrieving the factory via the <uvm_coreservice_t::get_factory>
+  // method.
+  //
+  // | // Using the uvm_coreservice_t:
+  // | uvm_coreservice_t cs;
+  // | uvm_factory f;
+  // | cs = uvm_coreservice_t::get();
+  // | f = cs.get_factory();
+  //
+  // | // Not using the uvm_coreservice_t:
+  // | uvm_factory f;
+  // | f = uvm_factory::get();
+  //         
   static function uvm_factory get();
-	  	uvm_coreservice_t s = uvm_coreservice_t::get();
+	  	uvm_coreservice_t s;
+	  	s = uvm_coreservice_t::get();
 	  	return s.get_factory();
   endfunction	
   
@@ -1481,7 +1503,9 @@ function uvm_object_wrapper uvm_default_factory::find_override_by_type(uvm_objec
   uvm_object_wrapper override;
   uvm_factory_override lindex;
   
-  uvm_factory_queue_class qc = m_inst_override_queues[requested_type];
+  uvm_factory_queue_class qc;
+  qc = m_inst_override_queues.exists(requested_type) ?
+       m_inst_override_queues[requested_type] : null;
 
   foreach (m_override_info[index]) begin
     if ( //index != m_override_info.size()-1 &&
@@ -1607,7 +1631,8 @@ function void uvm_default_factory::print (int all_types=1);
       qs.push_back("No instance overrides are registered with this factory\n");
     else begin
       foreach(sorted_override_queues[j]) begin
-        uvm_factory_queue_class qc = sorted_override_queues[j];
+        uvm_factory_queue_class qc;
+        qc = sorted_override_queues[j];
         for (int i=0; i<qc.queue.size(); ++i) begin
           if (qc.queue[i].orig_type_name.len() > max1)
             max1=qc.queue[i].orig_type_name.len();
@@ -1630,7 +1655,8 @@ function void uvm_default_factory::print (int all_types=1);
                                  dash.substr(1,max3)));
 
       foreach(sorted_override_queues[j]) begin
-        uvm_factory_queue_class qc = sorted_override_queues[j];
+        uvm_factory_queue_class qc;
+        qc = sorted_override_queues[j];
         for (int i=0; i<qc.queue.size(); ++i) begin
           qs.push_back($sformatf("  %0s%0s  %0s%0s",qc.queue[i].orig_type_name,
                  space.substr(1,max1-qc.queue[i].orig_type_name.len()),
@@ -1675,7 +1701,6 @@ function void uvm_default_factory::print (int all_types=1);
   if (all_types >= 1 && m_type_names.first(key)) begin
     bit banner;
     qs.push_back($sformatf("\nAll types registered with the factory: %0d total\n",m_types.num()));
-    qs.push_back("(types without type names will not be printed)\n");
     do begin
       // filter out uvm_ classes (if all_types<2) and non-types (lookup strings)
       if (!(all_types < 2 && uvm_is_match("uvm_*",

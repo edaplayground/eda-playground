@@ -397,7 +397,8 @@ initial begin
 
 
  <!--CONTENT index=31 -->
-<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.+uvm_set_default_sequence" href="../../src/base/uvm_cmdline_processor.svh">+uvm_set_default_sequence</a></h3><div class=CBody><p>The <i>+uvm_set_default_sequence=&lt;seqr&gt;,&lt;phase&gt;,&lt;type&gt;</i> plusarg allows the user to define a default sequence from the command line, using the <i>typename</i> of that sequence.&nbsp;  For example:</p><blockquote><pre>&lt;sim command&gt; +uvm_set_default_sequence=path.to.sequencer,main_phase,seq_type</pre></blockquote><p>This is functionally equivilent to calling the following in your test:</p><blockquote><pre>uvm_factory f = uvm_factory::get();
+<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.+uvm_set_default_sequence" href="../../src/base/uvm_cmdline_processor.svh">+uvm_set_default_sequence</a></h3><div class=CBody><p>The <i>+uvm_set_default_sequence=&lt;seqr&gt;,&lt;phase&gt;,&lt;type&gt;</i> plusarg allows the user to define a default sequence from the command line, using the <i>typename</i> of that sequence.&nbsp;  For example:</p><blockquote><pre>&lt;sim command&gt; +uvm_set_default_sequence=path.to.sequencer,main_phase,seq_type</pre></blockquote><p>This is functionally equivilent to calling the following in your test:</p><blockquote><pre>uvm_coreservice_t cs = uvm_coreservice_t::get();
+uvm_factory f = cs.get_factory();
 uvm_config_db#(uvm_object_wrapper)::set(this,
                                         &quot;path.to.sequencer.main_phase&quot;,
                                         &quot;default_sequence&quot;,
