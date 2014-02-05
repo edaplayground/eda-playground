@@ -9,4 +9,5 @@ Tutorials and Code Examples
    code-examples/system-verilog
    code-examples/uvm
    code-examples/svunit
+   code-examples/vhdl
    code-examples/cocotb
