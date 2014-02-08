@@ -61,32 +61,32 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#UVM_Version_Ladder" >UVM Version Ladder</a></td><td class=SDescription></td></tr>
   <!-- index=12 -->
 
-<tr class="SMacro SIndent2"><td class=SEntry><a href="#UVM_POST_VERSION_1_1" >UVM_POST_VERSION_1_1</a></td><td class=SDescription>Indicates that this version of the UVM came after the 1.1 version. </td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMacro SIndent2"><td class=SEntry><a href="#UVM_POST_VERSION_1_1" >UVM_POST_VERSION_1_1</a></td><td class=SDescription>Indicates that this version of the UVM came after the 1.1 versions, including the various 1.1 fix revisions.</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
 
 
  <!--CONTENT index=1 -->
-<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="UVM_Revision_Values" href="../../src/macros/uvm_version_defines.svh">UVM Revision Values</a></h3><div class=CBody><p>These macros provide the current values for the <i>MAJOR</i>, <i>MINOR</i>, and optionally the <i>FIX</i> revision.</p><h4 class=CHeading>Example with UVM version 1.2</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>UVM_MAJOR_REV</td><td class=CDLDescription>&rsquo;1&rsquo;</td></tr><tr><td class=CDLEntry>UVM_MINOR_REV</td><td class=CDLDescription>&rsquo;2&rsquo;</td></tr><tr><td class=CDLEntry>UVM_FIX_REV</td><td class=CDLDescription>&rsquo;undefined&rsquo;</td></tr></table><h4 class=CHeading>Example with UVM version 1.1b</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>UVM_MAJOR_REV</td><td class=CDLDescription>&rsquo;1&rsquo;</td></tr><tr><td class=CDLEntry>UVM_MINOR_REV</td><td class=CDLDescription>&rsquo;1&rsquo;</td></tr><tr><td class=CDLEntry>UVM_FIX_REV</td><td class=CDLDescription>&rsquo;b&rsquo;</td></tr></table></div></div></div>
+<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="UVM_Revision_Values" href="../../src/macros/uvm_version_defines.svh">UVM Revision Values</a></h3><div class=CBody><p>These macros provide the current values for the <i>MAJOR</i>, <i>MINOR</i>, and optionally the <i>FIX</i> revision.</p><h4 class=CHeading>Example with UVM version 1.2</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>UVM_MAJOR_REV</td><td class=CDLDescription>&rsquo;1&rsquo;</td></tr><tr><td class=CDLEntry>UVM_MINOR_REV</td><td class=CDLDescription>&rsquo;2&rsquo;</td></tr><tr><td class=CDLEntry>UVM_FIX_REV</td><td class=CDLDescription>&rsquo;undefined&rsquo;</td></tr></table><h4 class=CHeading>Example with UVM version 1.1a</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>UVM_MAJOR_REV</td><td class=CDLDescription>&rsquo;1&rsquo;</td></tr><tr><td class=CDLEntry>UVM_MINOR_REV</td><td class=CDLDescription>&rsquo;1&rsquo;</td></tr><tr><td class=CDLEntry>UVM_FIX_REV</td><td class=CDLDescription>&rsquo;a&rsquo;</td></tr></table></div></div></div>
 
 
 
 
  <!--CONTENT index=2 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_MAJOR_REV" href="../../src/macros/uvm_version_defines.svh">UVM_MAJOR_REV</a></h3><div class=CBody><p>Defines the MAJOR revision number.</p><p>For UVM version 1.2d, the MAJOR revision number is &lsquo;1&rsquo;</p><blockquote><pre>`define UVM_MAJOR_REV 1</pre></blockquote></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_MAJOR_REV" href="../../src/macros/uvm_version_defines.svh">UVM_MAJOR_REV</a></h3><div class=CBody><p>Defines the MAJOR revision number.</p><p>For UVM version 1.2, the MAJOR revision number is &lsquo;1&rsquo;</p><blockquote><pre>`define UVM_MAJOR_REV 1</pre></blockquote></div></div></div>
 
 
 
 
  <!--CONTENT index=3 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_MINOR_REV" href="../../src/macros/uvm_version_defines.svh">UVM_MINOR_REV</a></h3><div class=CBody><p>Defines the MINOR revision number.</p><p>For UVM version 1.2d, the MINOR revision number is &lsquo;2&rsquo;</p><blockquote><pre>`define UVM_MINOR_REV 2</pre></blockquote></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_MINOR_REV" href="../../src/macros/uvm_version_defines.svh">UVM_MINOR_REV</a></h3><div class=CBody><p>Defines the MINOR revision number.</p><p>For UVM version 1.2, the MINOR revision number is &lsquo;2&rsquo;</p><blockquote><pre>`define UVM_MINOR_REV 2</pre></blockquote></div></div></div>
 
 
 
 
  <!--CONTENT index=4 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_FIX_REV" href="../../src/macros/uvm_version_defines.svh">UVM_FIX_REV</a></h3><div class=CBody><p>(Optionally) Defines the FIX revision letter.</p><p>For UVM version 1.2d, the FIX revision letter is &lsquo;d&rsquo;</p><p><i>As there is no FIX revision letter for UVM 1.2, UVM_FIX_REV is not defined in this release.</i></p></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_FIX_REV" href="../../src/macros/uvm_version_defines.svh">UVM_FIX_REV</a></h3><div class=CBody><p>(Optionally) Defines the FIX revision letter.</p><p>For the first &ldquo;X.Y&rdquo; release of the UVM, there is no FIX revision letter.&nbsp;  In these cases, the UVM_FIX_REV is left undefined.</p><p>For any subsequent &ldquo;X.Y&rdquo; fix releases, the UVM_FIX_REV value is set to the appropriate fix release letter.</p><h4 class=CHeading>Example</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>1.1</td><td class=CDLDescription>First release, UVM_FIX_REV is undefined</td></tr><tr><td class=CDLEntry>1.1a</td><td class=CDLDescription>Fix release, UVM_FIX_REV is &lsquo;a&rsquo;</td></tr></table></div></div></div>
 
 
 
@@ -138,7 +138,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=12 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_POST_VERSION_1_1" href="../../src/macros/uvm_version_defines.svh">UVM_POST_VERSION_1_1</a></h3><div class=CBody><p>Indicates that this version of the UVM came after the 1.1 version.&nbsp;  This macro will be defined for this and all future revisions of the UVM library.</p><blockquote><pre>`define UVM_POST_VERSION_1_1</pre></blockquote></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="UVM_POST_VERSION_1_1" href="../../src/macros/uvm_version_defines.svh">UVM_POST_VERSION_1_1</a></h3><div class=CBody><p>Indicates that this version of the UVM came after the 1.1 versions, including the various 1.1 fix revisions.</p><p>The first UVM version wherein this macro is defined is 1.2, and the macro will continue to be defined for all future revisions of the UVM library.</p><blockquote><pre>`define UVM_POST_VERSION_1_1</pre></blockquote></div></div></div>
 
 </div><!--Content-->
 

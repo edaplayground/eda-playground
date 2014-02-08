@@ -2,6 +2,7 @@
 //   Copyright 2007-2010 Mentor Graphics Corporation
 //   Copyright 2007-2010 Cadence Design Systems, Inc. 
 //   Copyright 2010-2011 Synopsys, Inc.
+//   Copyright 2014      NVIDIA Corporation
 //   All Rights Reserved Worldwide
 //
 //   Licensed under the Apache License, Version 2.0 (the
@@ -33,16 +34,16 @@
 //  UVM_MINOR_REV - '2'
 //  UVM_FIX_REV - 'undefined'
 //
-// Example with UVM version 1.1b:
+// Example with UVM version 1.1a:
 //  UVM_MAJOR_REV - '1'
 //  UVM_MINOR_REV - '1'
-//  UVM_FIX_REV - 'b'
+//  UVM_FIX_REV - 'a'
 //
 
 // Macro: UVM_MAJOR_REV
 // Defines the MAJOR revision number.
 //
-// For UVM version 1.2d, the MAJOR revision number is '1'
+// For UVM version 1.2, the MAJOR revision number is '1'
 //
 // | `define UVM_MAJOR_REV 1
 `define UVM_MAJOR_REV 1
@@ -50,7 +51,7 @@
 // Macro: UVM_MINOR_REV
 // Defines the MINOR revision number.
 //
-// For UVM version 1.2d, the MINOR revision number is '2'
+// For UVM version 1.2, the MINOR revision number is '2'
 //
 // | `define UVM_MINOR_REV 2
 `define UVM_MINOR_REV 2
@@ -58,10 +59,19 @@
 // Macro: UVM_FIX_REV
 // (Optionally) Defines the FIX revision letter.
 //
-// For UVM version 1.2d, the FIX revision letter is 'd'
+// For the first "X.Y" release of the UVM, there is no
+// FIX revision letter.  In these cases, the UVM_FIX_REV
+// is left undefined.
 //
-// ~As there is no FIX revision letter for UVM 1.2, UVM_FIX_REV
-// is not defined in this release.~
+// For any subsequent "X.Y" fix releases, the UVM_FIX_REV
+// value is set to the appropriate fix release letter.
+//
+// Example:
+// 1.1 - First release, UVM_FIX_REV is undefined
+// 1.1a - Fix release, UVM_FIX_REV is 'a'
+
+// Include this in the comment when the FIX rev is present:
+// | `define UVM_FIX_REV a
 
 //`define UVM_FIX_REV a
 
@@ -127,8 +137,11 @@
 
 // Macro: UVM_POST_VERSION_1_1
 // Indicates that this version of the UVM came after the
-// 1.1 version.  This macro will be defined for this and all future
-// revisions of the UVM library.
+// 1.1 versions, including the various 1.1 fix revisions.  
+//
+// The first UVM version wherein this macro is defined is
+// 1.2, and the macro will continue to be defined
+// for all future revisions of the UVM library.
 //
 // | `define UVM_POST_VERSION_1_1
 `define UVM_POST_VERSION_1_1
