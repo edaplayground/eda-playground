@@ -22,7 +22,7 @@
 //------------------------------------------------------------------------------
 
 // Class: uvm_simple_lock_dap
-// Provides a 'Get-To-Lock' Data Access Policy.
+// Provides a 'Simple Lock' Data Access Policy.
 //
 // The 'Simple Lock' Data Access Policy allows for any number of 'sets',
 // so long as the value is not 'locked'.  The value can be retrieved using
@@ -58,8 +58,8 @@ class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);
    // Function: set
    // Updates the value stored within the DAP.
    //
-   // ~set~ will result in an error if the value has
-   // already been retrieved via a call to ~get~.
+   // ~set~ will result in an error if the DAP has
+   // been locked.
    virtual function void set(T value);
       if (m_locked)
         `uvm_error("UVM/SIMPLE_LOCK_DAP/SAG",
@@ -75,7 +75,7 @@ class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);
    //
    // ~try_set~ will return a '1' if the value was successfully
    // updated, or a '0' if the value can not be updated due
-   // to ~get~ having been called.  No errors will be reported
+   // to the DAP being locked.  No errors will be reported
    // if ~try_set~ fails.
    virtual function bit try_set(T value);
       if (m_locked)
@@ -87,16 +87,14 @@ class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);
    endfunction : try_set
    
    // Function: get
-   // Returns the current value stored within the DAP, and 'locks' the DAP.
+   // Returns the current value stored within the DAP
    //
-   // After a 'get', the value contained within the DAP can not
-   // be changed.
    virtual  function T get();
       return m_value;
    endfunction : get
 
    // Function: try_get
-   // Retrieves the current value stored within the DAP, and 'locks' the DAP.
+   // Retrieves the current value stored within the DAP
    //
    // ~try_get~ will always return 1.
    virtual function bit try_get(output T value);
@@ -109,7 +107,7 @@ class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);
    // Function: lock
    // Locks the data value
    //
-   // The data value can not be updated while locked.
+   // The data value can not be updated via <set> or <try_set> while locked.
    function void lock();
       m_locked = 1;
    endfunction : lock

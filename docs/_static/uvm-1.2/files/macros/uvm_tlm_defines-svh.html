@@ -31,8 +31,8 @@ endclass</pre></blockquote><p>There are times, however, when you need more than 
 `uvm_put_imp_decl(_2)
 
 class my_put_imp#(type T=int) extends uvm_component;
-   uvm_put_imp_1#(T) put_imp1;
-   uvm_put_imp_2#(T) put_imp2;
+   uvm_put_imp_1#(T,my_put_imp#(T)) put_imp1;
+   uvm_put_imp_2#(T,my_put_imp#(T)) put_imp2;
    ...
    function void put_1 (input T t);
      //puts comming into put_imp1

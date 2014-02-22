@@ -33,7 +33,7 @@ endclass</pre></blockquote>
   <!-- index=0 -->
 
 <tr class="SSMethod"><td class=SEntry><a href="#uvm_sequence_library" id=link7 onMouseOver="ShowTip(event, 'tt7', 'link7')" onMouseOut="HideTip('tt7')">uvm_sequence_library</a></td><td class=SDescription>The <i>uvm_sequence_library</i> is a sequence that contains a list of registered sequence types. </td></tr>
-  <!-- index=23 -->
+  <!-- index=21 -->
 
 <tr class="SSMethod SMarked"><td class=SEntry><a href="#uvm_sequence_library_cfg" id=link8 onMouseOver="ShowTip(event, 'tt8', 'link8')" onMouseOut="HideTip('tt8')">uvm_sequence_library_cfg</a></td><td class=SDescription>A convenient container class for configuring all the sequence library parameters using a single <i>set</i> command.</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
@@ -147,22 +147,6 @@ uvm_config_db #(uvm_sequence_base)::set(null,
 
 
  <!--CONTENT index=11 -->
-<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.seqs_distrib" href="../../src/seq/uvm_sequence_library.svh">seqs_distrib</a></h3>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected int seqs_distrib[string] = '{default:0}
-  </td></tr></table></blockquote><div class=CBody></div></div></div>
-
-
-
-
- <!--CONTENT index=12 -->
-<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.sequences" href="../../src/seq/uvm_sequence_library.svh">sequences</a></h3>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected uvm_object_wrapper sequences[$]
-  </td></tr></table></blockquote><div class=CBody><p>The container of all registered sequence types.&nbsp; For <a href="#uvm_sequence_library.sequence_count" class=LVariable id=link20 onMouseOver="ShowTip(event, 'tt18', 'link20')" onMouseOut="HideTip('tt18')">sequence_count</a> times, this sequence library will randomly select and execute a sequence from this list of sequence types.</p></div></div></div>
-
-
-
-
- <!--CONTENT index=13 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.select_sequence" href="../../src/seq/uvm_sequence_library.svh">select_sequence</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -172,18 +156,18 @@ uvm_config_db #(uvm_sequence_base)::set(null,
       <td class=PAfterParameters nowrap>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Generates an index used to select the next sequence to execute.&nbsp; Overrides must return a value between 0 and <i>max</i>, inclusive.&nbsp; Used only for <a href="../base/uvm_object_globals-svh.html#UVM_SEQ_LIB_USER" class=LConstant id=link21 onMouseOver="ShowTip(event, 'tt13', 'link21')" onMouseOut="HideTip('tt13')">UVM_SEQ_LIB_USER</a> selection mode.&nbsp; The default implementation returns 0, incrementing on successive calls, wrapping back to 0 when reaching <i>max</i>.</p></div></div></div>
+<div class=CBody><p>Generates an index used to select the next sequence to execute.&nbsp; Overrides must return a value between 0 and <i>max</i>, inclusive.&nbsp; Used only for <a href="../base/uvm_object_globals-svh.html#UVM_SEQ_LIB_USER" class=LConstant id=link20 onMouseOver="ShowTip(event, 'tt13', 'link20')" onMouseOut="HideTip('tt13')">UVM_SEQ_LIB_USER</a> selection mode.&nbsp; The default implementation returns 0, incrementing on successive calls, wrapping back to 0 when reaching <i>max</i>.</p></div></div></div>
 
 
 
 
- <!--CONTENT index=14 -->
+ <!--CONTENT index=12 -->
 <div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.Sequence_registration" href="../../src/seq/uvm_sequence_library.svh">Sequence registration</a></h3></div></div>
 
 
 
 
- <!--CONTENT index=15 -->
+ <!--CONTENT index=13 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.add_typewide_sequence" href="../../src/seq/uvm_sequence_library.svh">add_typewide_sequence</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -197,7 +181,7 @@ uvm_config_db #(uvm_sequence_base)::set(null,
 
 
 
- <!--CONTENT index=16 -->
+ <!--CONTENT index=14 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.add_typewide_sequences" href="../../src/seq/uvm_sequence_library.svh">add_typewide_sequences</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -211,7 +195,7 @@ uvm_config_db #(uvm_sequence_base)::set(null,
 
 
 
- <!--CONTENT index=17 -->
+ <!--CONTENT index=15 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.add_sequence" href="../../src/seq/uvm_sequence_library.svh">add_sequence</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -225,7 +209,7 @@ uvm_config_db #(uvm_sequence_base)::set(null,
 
 
 
- <!--CONTENT index=18 -->
+ <!--CONTENT index=16 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.add_sequences" href="../../src/seq/uvm_sequence_library.svh">add_sequences</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -239,7 +223,7 @@ uvm_config_db #(uvm_sequence_base)::set(null,
 
 
 
- <!--CONTENT index=19 -->
+ <!--CONTENT index=17 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.remove_sequence" href="../../src/seq/uvm_sequence_library.svh">remove_sequence</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -253,7 +237,7 @@ uvm_config_db #(uvm_sequence_base)::set(null,
 
 
 
- <!--CONTENT index=20 -->
+ <!--CONTENT index=18 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.get_sequences" href="../../src/seq/uvm_sequence_library.svh">get_sequences</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -263,12 +247,12 @@ uvm_config_db #(uvm_sequence_base)::set(null,
       <td class=PAfterParameters nowrap>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Append to the provided <i>seq_types</i> array the list of registered <a href="#uvm_sequence_library.sequences" class=LVariable id=link22 onMouseOver="ShowTip(event, 'tt19', 'link22')" onMouseOut="HideTip('tt19')">sequences</a>.</p></div></div></div>
+<div class=CBody><p>Append to the provided <i>seq_types</i> array the list of registered &lt;sequences&gt;.</p></div></div></div>
 
 
 
 
- <!--CONTENT index=21 -->
+ <!--CONTENT index=19 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.init_sequence_library" href="../../src/seq/uvm_sequence_library.svh">init_sequence_library</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function void init_sequence_library()
   </td></tr></table></blockquote><div class=CBody><p>All subtypes of this class must call init_sequence_library in its constructor.</p></div></div></div>
@@ -276,7 +260,7 @@ uvm_config_db #(uvm_sequence_base)::set(null,
 
 
 
- <!--CONTENT index=22 -->
+ <!--CONTENT index=20 -->
 <div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_library.uvm_sequence_library_utils" href="../../src/seq/uvm_sequence_library.svh">uvm_sequence_library_utils</a></h3><div class=CBody><p>All subtypes of this class must invoke the `uvm_sequence_library_utils macro.</p><blockquote><pre>class my_seq_lib extends uvm_sequence_library #(my_item);
   `uvm_object_utils(my_seq_lib)
   `uvm_sequence_library_utils(my_seq_lib)
@@ -290,7 +274,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=23 -->
+ <!--CONTENT index=21 -->
 <div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_sequence_library_cfg" href="../../src/seq/uvm_sequence_library.svh">uvm_sequence_library_cfg</a></h2><div class=CBody><p>A convenient container class for configuring all the sequence library parameters using a single <i>set</i> command.</p><blockquote><pre>uvm_sequence_library_cfg cfg;
 cfg = new(&quot;seqlib_cfg&quot;, UVM_SEQ_LIB_RANDC, 1000, 2000);
 
@@ -299,11 +283,11 @@ uvm_config_db #(uvm_sequence_library_cfg)::set(null,
                                    &quot;default_sequence.config&quot;,
                                    cfg);</pre></blockquote>
 
-<!--START_ND_SUMMARY index=23-->
+<!--START_ND_SUMMARY index=21-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
-  <!-- index=23 -->
+  <!-- index=21 -->
 
-<tr class="SClass"><td colspan=2 class=SEntry><a href="#uvm_sequence_library_cfg" id=link25 onMouseOver="ShowTip(event, 'tt8', 'link25')" onMouseOut="HideTip('tt8')">uvm_sequence_library_cfg</a></td></tr>
+<tr class="SClass"><td colspan=2 class=SEntry><a href="#uvm_sequence_library_cfg" id=link23 onMouseOver="ShowTip(event, 'tt8', 'link23')" onMouseOut="HideTip('tt8')">uvm_sequence_library_cfg</a></td></tr>
 <tr class=SMain><td colspan=2 class=SWideDescription>A convenient container class for configuring all the sequence library parameters using a single <i>set</i> command.</td></tr>
 
   <!-- HIERARCHY -->
@@ -311,8 +295,8 @@ uvm_config_db #(uvm_sequence_library_cfg)::set(null,
   <tr class="SPrototype SIndent1"><td colspan=2 class=SDescription>
       <div class=ClassHierarchy>
         <table border=0 cellspacing=0 cellpadding=0>
-          <tr><td><div class=CHParent><div class=CHEntry><a href="../base/uvm_misc-svh.html#uvm_void" class=LGeneric id=link23 onMouseOver="ShowTip(event, 'tt1', 'link23')" onMouseOut="HideTip('tt1')">uvm_void</a></div></div></td></tr>
-          <tr><td><div class=CHParent><div class=CHEntry><a href="../base/uvm_object-svh.html#uvm_object" class=LClass id=link24 onMouseOver="ShowTip(event, 'tt2', 'link24')" onMouseOut="HideTip('tt2')">uvm_object</a></div></div></td></tr>
+          <tr><td><div class=CHParent><div class=CHEntry><a href="../base/uvm_misc-svh.html#uvm_void" class=LGeneric id=link21 onMouseOver="ShowTip(event, 'tt1', 'link21')" onMouseOut="HideTip('tt1')">uvm_void</a></div></div></td></tr>
+          <tr><td><div class=CHParent><div class=CHEntry><a href="../base/uvm_object-svh.html#uvm_object" class=LClass id=link22 onMouseOver="ShowTip(event, 'tt2', 'link22')" onMouseOut="HideTip('tt2')">uvm_object</a></div></div></td></tr>
           <tr><td><div class=CHCurrent><div class=CHEntry>uvm_sequence_library_cfg</div></div></td></tr>
         </table>
       </div>
@@ -392,11 +376,7 @@ Generates an index used to select the next sequence to execute. </div></div><div
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function void init_sequence_library()
   </td></tr></table></blockquote>All subtypes of this class must call init_sequence_library in its constructor.</div></div><div class=CToolTip id="tt16"><div class=CConstant>Random cyclic sequence selection</div></div><div class=CToolTip id="tt17"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_sequence_lib_mode selection_mode
-  </td></tr></table></blockquote>Specifies the mode used to select sequences for execution</div></div><div class=CToolTip id="tt18"><div class=CVariable>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>rand int unsigned sequence_count = 10
-  </td></tr></table></blockquote>Specifies the number of sequences to execute when this sequence library is started. </div></div><div class=CToolTip id="tt19"><div class=CVariable>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected uvm_object_wrapper sequences[$]
-  </td></tr></table></blockquote>The container of all registered sequence types. </div></div><!--END_ND_TOOLTIPS-->
+  </td></tr></table></blockquote>Specifies the mode used to select sequences for execution</div></div><!--END_ND_TOOLTIPS-->
 
 <script language=JavaScript><!--
 if (browserType) {if (browserVer) {document.write("</div>"); }document.write("</div>");}// --></script></body></html>

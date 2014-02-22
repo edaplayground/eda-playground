@@ -404,7 +404,7 @@ virtual class uvm_transaction extends uvm_object;
   // Variable: events
   //
   // The event pool instance for this transaction. This pool is used to track
-  // various The <begin_event>
+  // various milestones: by default, begin, accept, and end
 
   const uvm_event_pool events = new;
 

@@ -182,139 +182,139 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.resolve_bindings" id=link67 onMouseOver="ShowTip(event, 'tt67', 'link67')" onMouseOut="HideTip('tt67')">resolve_bindings</a></td><td class=SDescription>Processes all port, export, and imp connections. </td></tr>
   <!-- index=45 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.check_config_usage" id=link68 onMouseOver="ShowTip(event, 'tt68', 'link68')" onMouseOut="HideTip('tt68')">check_config_usage</a></td><td class=SDescription>Check all configuration settings in a components configuration table to determine if the setting has been used, overridden or not used. </td></tr>
+<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Configuration_Interface" >Configuration Interface</a></td><td class=SDescription>Components can be designed to be user-configurable in terms of its topology (the type and number of children it has), mode of operation, and run-time parameters (knobs). </td></tr>
   <!-- index=46 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.apply_config_settings" id=link69 onMouseOver="ShowTip(event, 'tt69', 'link69')" onMouseOut="HideTip('tt69')">apply_config_settings</a></td><td class=SDescription>Searches for all config settings matching this component&rsquo;s instance path. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.check_config_usage" id=link68 onMouseOver="ShowTip(event, 'tt68', 'link68')" onMouseOut="HideTip('tt68')">check_config_usage</a></td><td class=SDescription>Check all configuration settings in a components configuration table to determine if the setting has been used, overridden or not used. </td></tr>
   <!-- index=47 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.print_config_settings" id=link70 onMouseOver="ShowTip(event, 'tt70', 'link70')" onMouseOut="HideTip('tt70')">print_config_settings</a></td><td class=SDescription>Called without arguments, print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set(). </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.apply_config_settings" id=link69 onMouseOver="ShowTip(event, 'tt69', 'link69')" onMouseOut="HideTip('tt69')">apply_config_settings</a></td><td class=SDescription>Searches for all config settings matching this component&rsquo;s instance path. </td></tr>
   <!-- index=48 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_config" id=link71 onMouseOver="ShowTip(event, 'tt71', 'link71')" onMouseOut="HideTip('tt71')">print_config</a></td><td class=SDescription>Print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set() and exports to the resources pool. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_config_settings" id=link70 onMouseOver="ShowTip(event, 'tt70', 'link70')" onMouseOut="HideTip('tt70')">print_config_settings</a></td><td class=SDescription>Called without arguments, print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set(). </td></tr>
   <!-- index=49 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.print_config_with_audit" id=link72 onMouseOver="ShowTip(event, 'tt72', 'link72')" onMouseOut="HideTip('tt72')">print_config_with_audit</a></td><td class=SDescription>Operates the same as print_config except that the audit bit is forced to 1. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.print_config" id=link71 onMouseOver="ShowTip(event, 'tt71', 'link71')" onMouseOut="HideTip('tt71')">print_config</a></td><td class=SDescription>Print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set() and exports to the resources pool. </td></tr>
   <!-- index=50 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_config_matches" id=link73 onMouseOver="ShowTip(event, 'tt73', 'link73')" onMouseOut="HideTip('tt73')">print_config_matches</a></td><td class=SDescription>Setting this static variable causes uvm_config_db#(T)::get() to print info about matching configuration settings as they are being applied.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_config_with_audit" id=link72 onMouseOver="ShowTip(event, 'tt72', 'link72')" onMouseOut="HideTip('tt72')">print_config_with_audit</a></td><td class=SDescription>Operates the same as print_config except that the audit bit is forced to 1. </td></tr>
   <!-- index=51 -->
 
-<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Objection_Interface" >Objection Interface</a></td><td class=SDescription>These methods provide object level hooks into the <a href="uvm_objection-svh.html#uvm_objection" class=LClass id=link74 onMouseOver="ShowTip(event, 'tt74', 'link74')" onMouseOut="HideTip('tt74')">uvm_objection</a> mechanism.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_component.print_config_matches" id=link73 onMouseOver="ShowTip(event, 'tt73', 'link73')" onMouseOut="HideTip('tt73')">print_config_matches</a></td><td class=SDescription>Setting this static variable causes uvm_config_db#(T)::get() to print info about matching configuration settings as they are being applied.</td></tr>
   <!-- index=52 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.raised" id=link75 onMouseOver="ShowTip(event, 'tt75', 'link75')" onMouseOut="HideTip('tt75')">raised</a></td><td class=SDescription>The <i>raised</i> callback is called when this or a descendant of this component instance raises the specfied <i>objection</i>. </td></tr>
+<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Objection_Interface" >Objection Interface</a></td><td class=SDescription>These methods provide object level hooks into the <a href="uvm_objection-svh.html#uvm_objection" class=LClass id=link74 onMouseOver="ShowTip(event, 'tt74', 'link74')" onMouseOut="HideTip('tt74')">uvm_objection</a> mechanism.</td></tr>
   <!-- index=53 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.dropped" id=link76 onMouseOver="ShowTip(event, 'tt76', 'link76')" onMouseOut="HideTip('tt76')">dropped</a></td><td class=SDescription>The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specfied <i>objection</i>. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.raised" id=link75 onMouseOver="ShowTip(event, 'tt75', 'link75')" onMouseOut="HideTip('tt75')">raised</a></td><td class=SDescription>The <i>raised</i> callback is called when this or a descendant of this component instance raises the specfied <i>objection</i>. </td></tr>
   <!-- index=54 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.all_dropped" id=link77 onMouseOver="ShowTip(event, 'tt77', 'link77')" onMouseOut="HideTip('tt77')">all_dropped</a></td><td class=SDescription>The <i>all_droppped</i> callback is called when all objections have been dropped by this component and all its descendants. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.dropped" id=link76 onMouseOver="ShowTip(event, 'tt76', 'link76')" onMouseOut="HideTip('tt76')">dropped</a></td><td class=SDescription>The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specfied <i>objection</i>. </td></tr>
   <!-- index=55 -->
 
-<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Factory_Interface" >Factory Interface</a></td><td class=SDescription>The factory interface provides convenient access to a portion of UVM&rsquo;s <a href="uvm_factory-svh.html#uvm_factory" class=LClass id=link78 onMouseOver="ShowTip(event, 'tt78', 'link78')" onMouseOut="HideTip('tt78')">uvm_factory</a> interface. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.all_dropped" id=link77 onMouseOver="ShowTip(event, 'tt77', 'link77')" onMouseOut="HideTip('tt77')">all_dropped</a></td><td class=SDescription>The <i>all_droppped</i> callback is called when all objections have been dropped by this component and all its descendants. </td></tr>
   <!-- index=56 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.create_component" id=link79 onMouseOver="ShowTip(event, 'tt79', 'link79')" onMouseOut="HideTip('tt79')">create_component</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.create_component_by_name" class=LMethod id=link80 onMouseOver="ShowTip(event, 'tt80', 'link80')" onMouseOut="HideTip('tt80')">uvm_factory::create_component_by_name</a>, this method calls upon the factory to create a new child component whose type corresponds to the preregistered type name, <i>requested_type_name</i>, and instance name, <i>name</i>. </td></tr>
+<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Factory_Interface" >Factory Interface</a></td><td class=SDescription>The factory interface provides convenient access to a portion of UVM&rsquo;s <a href="uvm_factory-svh.html#uvm_factory" class=LClass id=link78 onMouseOver="ShowTip(event, 'tt78', 'link78')" onMouseOut="HideTip('tt78')">uvm_factory</a> interface. </td></tr>
   <!-- index=57 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.create_object" id=link81 onMouseOver="ShowTip(event, 'tt81', 'link81')" onMouseOut="HideTip('tt81')">create_object</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.create_object_by_name" class=LMethod id=link82 onMouseOver="ShowTip(event, 'tt82', 'link82')" onMouseOut="HideTip('tt82')">uvm_factory::create_object_by_name</a>, this method calls upon the factory to create a new object whose type corresponds to the preregistered type name, <i>requested_type_name</i>, and instance name, <i>name</i>. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.create_component" id=link79 onMouseOver="ShowTip(event, 'tt79', 'link79')" onMouseOut="HideTip('tt79')">create_component</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.create_component_by_name" class=LMethod id=link80 onMouseOver="ShowTip(event, 'tt80', 'link80')" onMouseOut="HideTip('tt80')">uvm_factory::create_component_by_name</a>, this method calls upon the factory to create a new child component whose type corresponds to the preregistered type name, <i>requested_type_name</i>, and instance name, <i>name</i>. </td></tr>
   <!-- index=58 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_type_override_by_type" id=link83 onMouseOver="ShowTip(event, 'tt83', 'link83')" onMouseOut="HideTip('tt83')">set_type_override_by_type</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_type_override_by_type" class=LMethod id=link84 onMouseOver="ShowTip(event, 'tt84', 'link84')" onMouseOut="HideTip('tt84')">uvm_factory::set_type_override_by_type</a>, this method registers a factory override for components and objects created at this level of hierarchy or below. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.create_object" id=link81 onMouseOver="ShowTip(event, 'tt81', 'link81')" onMouseOut="HideTip('tt81')">create_object</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.create_object_by_name" class=LMethod id=link82 onMouseOver="ShowTip(event, 'tt82', 'link82')" onMouseOut="HideTip('tt82')">uvm_factory::create_object_by_name</a>, this method calls upon the factory to create a new object whose type corresponds to the preregistered type name, <i>requested_type_name</i>, and instance name, <i>name</i>. </td></tr>
   <!-- index=59 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_inst_override_by_type" id=link85 onMouseOver="ShowTip(event, 'tt85', 'link85')" onMouseOut="HideTip('tt85')">set_inst_override_by_type</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_inst_override_by_type" class=LMethod id=link86 onMouseOver="ShowTip(event, 'tt86', 'link86')" onMouseOut="HideTip('tt86')">uvm_factory::set_inst_override_by_type</a>, this method registers a factory override for components and objects created at this level of hierarchy or below. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_type_override_by_type" id=link83 onMouseOver="ShowTip(event, 'tt83', 'link83')" onMouseOut="HideTip('tt83')">set_type_override_by_type</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_type_override_by_type" class=LMethod id=link84 onMouseOver="ShowTip(event, 'tt84', 'link84')" onMouseOut="HideTip('tt84')">uvm_factory::set_type_override_by_type</a>, this method registers a factory override for components and objects created at this level of hierarchy or below. </td></tr>
   <!-- index=60 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_type_override" id=link87 onMouseOver="ShowTip(event, 'tt87', 'link87')" onMouseOut="HideTip('tt87')">set_type_override</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_type_override_by_name" class=LMethod id=link88 onMouseOver="ShowTip(event, 'tt88', 'link88')" onMouseOut="HideTip('tt88')">uvm_factory::set_type_override_by_name</a>, this method configures the factory to create an object of type <i>override_type_name</i> whenever the factory is asked to produce a type represented by <i>original_type_name</i>. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_inst_override_by_type" id=link85 onMouseOver="ShowTip(event, 'tt85', 'link85')" onMouseOut="HideTip('tt85')">set_inst_override_by_type</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_inst_override_by_type" class=LMethod id=link86 onMouseOver="ShowTip(event, 'tt86', 'link86')" onMouseOut="HideTip('tt86')">uvm_factory::set_inst_override_by_type</a>, this method registers a factory override for components and objects created at this level of hierarchy or below. </td></tr>
   <!-- index=61 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_inst_override" id=link89 onMouseOver="ShowTip(event, 'tt89', 'link89')" onMouseOut="HideTip('tt89')">set_inst_override</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_inst_override_by_name" class=LMethod id=link90 onMouseOver="ShowTip(event, 'tt90', 'link90')" onMouseOut="HideTip('tt90')">uvm_factory::set_inst_override_by_name</a>, this method registers a factory override for components created at this level of hierarchy or below. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_type_override" id=link87 onMouseOver="ShowTip(event, 'tt87', 'link87')" onMouseOut="HideTip('tt87')">set_type_override</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_type_override_by_name" class=LMethod id=link88 onMouseOver="ShowTip(event, 'tt88', 'link88')" onMouseOut="HideTip('tt88')">uvm_factory::set_type_override_by_name</a>, this method configures the factory to create an object of type <i>override_type_name</i> whenever the factory is asked to produce a type represented by <i>original_type_name</i>. </td></tr>
   <!-- index=62 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_override_info" id=link91 onMouseOver="ShowTip(event, 'tt91', 'link91')" onMouseOut="HideTip('tt91')">print_override_info</a></td><td class=SDescription>This factory debug method performs the same lookup process as create_object and create_component, but instead of creating an object, it prints information about what type of object would be created given the provided arguments.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_inst_override" id=link89 onMouseOver="ShowTip(event, 'tt89', 'link89')" onMouseOut="HideTip('tt89')">set_inst_override</a></td><td class=SDescription>A convenience function for <a href="uvm_factory-svh.html#uvm_factory.set_inst_override_by_name" class=LMethod id=link90 onMouseOver="ShowTip(event, 'tt90', 'link90')" onMouseOut="HideTip('tt90')">uvm_factory::set_inst_override_by_name</a>, this method registers a factory override for components created at this level of hierarchy or below. </td></tr>
   <!-- index=63 -->
 
-<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Hierarchical_Reporting_Interface" >Hierarchical Reporting Interface</a></td><td class=SDescription>This interface provides versions of the set_report_* methods in the <a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link92 onMouseOver="ShowTip(event, 'tt3', 'link92')" onMouseOut="HideTip('tt3')">uvm_report_object</a> base class that are applied recursively to this component and all its children.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_override_info" id=link91 onMouseOver="ShowTip(event, 'tt91', 'link91')" onMouseOut="HideTip('tt91')">print_override_info</a></td><td class=SDescription>This factory debug method performs the same lookup process as create_object and create_component, but instead of creating an object, it prints information about what type of object would be created given the provided arguments.</td></tr>
   <!-- index=64 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_id_verbosity_hier" id=link93 onMouseOver="ShowTip(event, 'tt92', 'link93')" onMouseOut="HideTip('tt92')">set_report_id_verbosity_hier</a></td><td class=SDescription></td></tr>
+<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Hierarchical_Reporting_Interface" >Hierarchical Reporting Interface</a></td><td class=SDescription>This interface provides versions of the set_report_* methods in the <a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link92 onMouseOver="ShowTip(event, 'tt3', 'link92')" onMouseOut="HideTip('tt3')">uvm_report_object</a> base class that are applied recursively to this component and all its children.</td></tr>
   <!-- index=65 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_severity_id_verbosity_hier" id=link94 onMouseOver="ShowTip(event, 'tt93', 'link94')" onMouseOut="HideTip('tt93')">set_report_severity_id_verbosity_hier</a></td><td class=SDescription>These methods recursively associate the specified verbosity with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_id_verbosity_hier" id=link93 onMouseOver="ShowTip(event, 'tt92', 'link93')" onMouseOut="HideTip('tt92')">set_report_id_verbosity_hier</a></td><td class=SDescription></td></tr>
   <!-- index=66 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_severity_action_hier" id=link95 onMouseOver="ShowTip(event, 'tt94', 'link95')" onMouseOut="HideTip('tt94')">set_report_severity_action_hier</a></td><td class=SDescription></td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_severity_id_verbosity_hier" id=link94 onMouseOver="ShowTip(event, 'tt93', 'link94')" onMouseOut="HideTip('tt93')">set_report_severity_id_verbosity_hier</a></td><td class=SDescription>These methods recursively associate the specified verbosity with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair. </td></tr>
   <!-- index=67 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_id_action_hier" id=link96 onMouseOver="ShowTip(event, 'tt95', 'link96')" onMouseOut="HideTip('tt95')">set_report_id_action_hier</a></td><td class=SDescription></td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_severity_action_hier" id=link95 onMouseOver="ShowTip(event, 'tt94', 'link95')" onMouseOut="HideTip('tt94')">set_report_severity_action_hier</a></td><td class=SDescription></td></tr>
   <!-- index=68 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_severity_id_action_hier" id=link97 onMouseOver="ShowTip(event, 'tt96', 'link97')" onMouseOut="HideTip('tt96')">set_report_severity_id_action_hier</a></td><td class=SDescription>These methods recursively associate the specified action with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_id_action_hier" id=link96 onMouseOver="ShowTip(event, 'tt95', 'link96')" onMouseOut="HideTip('tt95')">set_report_id_action_hier</a></td><td class=SDescription></td></tr>
   <!-- index=69 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_default_file_hier" id=link98 onMouseOver="ShowTip(event, 'tt97', 'link98')" onMouseOut="HideTip('tt97')">set_report_default_file_hier</a></td><td class=SDescription></td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_severity_id_action_hier" id=link97 onMouseOver="ShowTip(event, 'tt96', 'link97')" onMouseOut="HideTip('tt96')">set_report_severity_id_action_hier</a></td><td class=SDescription>These methods recursively associate the specified action with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair. </td></tr>
   <!-- index=70 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_severity_file_hier" id=link99 onMouseOver="ShowTip(event, 'tt98', 'link99')" onMouseOut="HideTip('tt98')">set_report_severity_file_hier</a></td><td class=SDescription></td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_default_file_hier" id=link98 onMouseOver="ShowTip(event, 'tt97', 'link98')" onMouseOut="HideTip('tt97')">set_report_default_file_hier</a></td><td class=SDescription></td></tr>
   <!-- index=71 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_id_file_hier" id=link100 onMouseOver="ShowTip(event, 'tt99', 'link100')" onMouseOut="HideTip('tt99')">set_report_id_file_hier</a></td><td class=SDescription></td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_severity_file_hier" id=link99 onMouseOver="ShowTip(event, 'tt98', 'link99')" onMouseOut="HideTip('tt98')">set_report_severity_file_hier</a></td><td class=SDescription></td></tr>
   <!-- index=72 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_severity_id_file_hier" id=link101 onMouseOver="ShowTip(event, 'tt100', 'link101')" onMouseOut="HideTip('tt100')">set_report_severity_id_file_hier</a></td><td class=SDescription>These methods recursively associate the specified FILE descriptor with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_id_file_hier" id=link100 onMouseOver="ShowTip(event, 'tt99', 'link100')" onMouseOut="HideTip('tt99')">set_report_id_file_hier</a></td><td class=SDescription></td></tr>
   <!-- index=73 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_verbosity_level_hier" id=link102 onMouseOver="ShowTip(event, 'tt101', 'link102')" onMouseOut="HideTip('tt101')">set_report_verbosity_level_hier</a></td><td class=SDescription>This method recursively sets the maximum verbosity level for reports for this component and all those below it. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.set_report_severity_id_file_hier" id=link101 onMouseOver="ShowTip(event, 'tt100', 'link101')" onMouseOut="HideTip('tt100')">set_report_severity_id_file_hier</a></td><td class=SDescription>These methods recursively associate the specified FILE descriptor with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair. </td></tr>
   <!-- index=74 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.pre_abort" id=link103 onMouseOver="ShowTip(event, 'tt102', 'link103')" onMouseOut="HideTip('tt102')">pre_abort</a></td><td class=SDescription>This callback is executed when the message system is executing a <a href="uvm_object_globals-svh.html#UVM_EXIT" class=LConstant id=link104 onMouseOver="ShowTip(event, 'tt103', 'link104')" onMouseOut="HideTip('tt103')">UVM_EXIT</a> action. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.set_report_verbosity_level_hier" id=link102 onMouseOver="ShowTip(event, 'tt101', 'link102')" onMouseOut="HideTip('tt101')">set_report_verbosity_level_hier</a></td><td class=SDescription>This method recursively sets the maximum verbosity level for reports for this component and all those below it. </td></tr>
   <!-- index=75 -->
 
-<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Recording_Interface" >Recording Interface</a></td><td class=SDescription>These methods comprise the component-based transaction recording interface. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.pre_abort" id=link103 onMouseOver="ShowTip(event, 'tt102', 'link103')" onMouseOut="HideTip('tt102')">pre_abort</a></td><td class=SDescription>This callback is executed when the message system is executing a <a href="uvm_object_globals-svh.html#UVM_EXIT" class=LConstant id=link104 onMouseOver="ShowTip(event, 'tt103', 'link104')" onMouseOut="HideTip('tt103')">UVM_EXIT</a> action. </td></tr>
   <!-- index=76 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.accept_tr" id=link105 onMouseOver="ShowTip(event, 'tt104', 'link105')" onMouseOut="HideTip('tt104')">accept_tr</a></td><td class=SDescription>This function marks the acceptance of a transaction, <i>tr</i>, by this component. </td></tr>
+<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Recording_Interface" >Recording Interface</a></td><td class=SDescription>These methods comprise the component-based transaction recording interface. </td></tr>
   <!-- index=77 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.do_accept_tr" id=link106 onMouseOver="ShowTip(event, 'tt105', 'link106')" onMouseOut="HideTip('tt105')">do_accept_tr</a></td><td class=SDescription>The <a href="#uvm_component.accept_tr" class=LMethod id=link107 onMouseOver="ShowTip(event, 'tt104', 'link107')" onMouseOut="HideTip('tt104')">accept_tr</a> method calls this function to accommodate any user-defined post-accept action. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.accept_tr" id=link105 onMouseOver="ShowTip(event, 'tt104', 'link105')" onMouseOut="HideTip('tt104')">accept_tr</a></td><td class=SDescription>This function marks the acceptance of a transaction, <i>tr</i>, by this component. </td></tr>
   <!-- index=78 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.begin_tr" id=link108 onMouseOver="ShowTip(event, 'tt106', 'link108')" onMouseOut="HideTip('tt106')">begin_tr</a></td><td class=SDescription>This function marks the start of a transaction, <i>tr</i>, by this component. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.do_accept_tr" id=link106 onMouseOver="ShowTip(event, 'tt105', 'link106')" onMouseOut="HideTip('tt105')">do_accept_tr</a></td><td class=SDescription>The <a href="#uvm_component.accept_tr" class=LMethod id=link107 onMouseOver="ShowTip(event, 'tt104', 'link107')" onMouseOut="HideTip('tt104')">accept_tr</a> method calls this function to accommodate any user-defined post-accept action. </td></tr>
   <!-- index=79 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.begin_child_tr" id=link109 onMouseOver="ShowTip(event, 'tt107', 'link109')" onMouseOut="HideTip('tt107')">begin_child_tr</a></td><td class=SDescription>This function marks the start of a child transaction, <i>tr</i>, by this component. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.begin_tr" id=link108 onMouseOver="ShowTip(event, 'tt106', 'link108')" onMouseOut="HideTip('tt106')">begin_tr</a></td><td class=SDescription>This function marks the start of a transaction, <i>tr</i>, by this component. </td></tr>
   <!-- index=80 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.do_begin_tr" id=link110 onMouseOver="ShowTip(event, 'tt108', 'link110')" onMouseOut="HideTip('tt108')">do_begin_tr</a></td><td class=SDescription>The <a href="#uvm_component.begin_tr" class=LMethod id=link111 onMouseOver="ShowTip(event, 'tt106', 'link111')" onMouseOut="HideTip('tt106')">begin_tr</a> and <a href="#uvm_component.begin_child_tr" class=LMethod id=link112 onMouseOver="ShowTip(event, 'tt107', 'link112')" onMouseOut="HideTip('tt107')">begin_child_tr</a> methods call this function to accommodate any user-defined post-begin action. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.begin_child_tr" id=link109 onMouseOver="ShowTip(event, 'tt107', 'link109')" onMouseOut="HideTip('tt107')">begin_child_tr</a></td><td class=SDescription>This function marks the start of a child transaction, <i>tr</i>, by this component. </td></tr>
   <!-- index=81 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.end_tr" id=link113 onMouseOver="ShowTip(event, 'tt109', 'link113')" onMouseOut="HideTip('tt109')">end_tr</a></td><td class=SDescription>This function marks the end of a transaction, <i>tr</i>, by this component. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.do_begin_tr" id=link110 onMouseOver="ShowTip(event, 'tt108', 'link110')" onMouseOut="HideTip('tt108')">do_begin_tr</a></td><td class=SDescription>The <a href="#uvm_component.begin_tr" class=LMethod id=link111 onMouseOver="ShowTip(event, 'tt106', 'link111')" onMouseOut="HideTip('tt106')">begin_tr</a> and <a href="#uvm_component.begin_child_tr" class=LMethod id=link112 onMouseOver="ShowTip(event, 'tt107', 'link112')" onMouseOut="HideTip('tt107')">begin_child_tr</a> methods call this function to accommodate any user-defined post-begin action. </td></tr>
   <!-- index=82 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.do_end_tr" id=link114 onMouseOver="ShowTip(event, 'tt110', 'link114')" onMouseOut="HideTip('tt110')">do_end_tr</a></td><td class=SDescription>The <a href="#uvm_component.end_tr" class=LMethod id=link115 onMouseOver="ShowTip(event, 'tt109', 'link115')" onMouseOut="HideTip('tt109')">end_tr</a> method calls this function to accommodate any user-defined post-end action. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.end_tr" id=link113 onMouseOver="ShowTip(event, 'tt109', 'link113')" onMouseOut="HideTip('tt109')">end_tr</a></td><td class=SDescription>This function marks the end of a transaction, <i>tr</i>, by this component. </td></tr>
   <!-- index=83 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.record_error_tr" id=link116 onMouseOver="ShowTip(event, 'tt111', 'link116')" onMouseOut="HideTip('tt111')">record_error_tr</a></td><td class=SDescription>This function marks an error transaction by a component. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.do_end_tr" id=link114 onMouseOver="ShowTip(event, 'tt110', 'link114')" onMouseOut="HideTip('tt110')">do_end_tr</a></td><td class=SDescription>The <a href="#uvm_component.end_tr" class=LMethod id=link115 onMouseOver="ShowTip(event, 'tt109', 'link115')" onMouseOut="HideTip('tt109')">end_tr</a> method calls this function to accommodate any user-defined post-end action. </td></tr>
   <!-- index=84 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.record_event_tr" id=link117 onMouseOver="ShowTip(event, 'tt112', 'link117')" onMouseOut="HideTip('tt112')">record_event_tr</a></td><td class=SDescription>This function marks an event transaction by a component.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.record_error_tr" id=link116 onMouseOver="ShowTip(event, 'tt111', 'link116')" onMouseOut="HideTip('tt111')">record_error_tr</a></td><td class=SDescription>This function marks an error transaction by a component. </td></tr>
   <!-- index=85 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.get_tr_stream" id=link118 onMouseOver="ShowTip(event, 'tt113', 'link118')" onMouseOut="HideTip('tt113')">get_tr_stream</a></td><td class=SDescription>Returns a tr stream with <i>this</i> component&rsquo;s full name as a scope.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.record_event_tr" id=link117 onMouseOver="ShowTip(event, 'tt112', 'link117')" onMouseOut="HideTip('tt112')">record_event_tr</a></td><td class=SDescription>This function marks an event transaction by a component.</td></tr>
   <!-- index=86 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.free_tr_stream" id=link119 onMouseOver="ShowTip(event, 'tt114', 'link119')" onMouseOut="HideTip('tt114')">free_tr_stream</a></td><td class=SDescription>Frees the internal references associated with <i>stream</i>.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.get_tr_stream" id=link118 onMouseOver="ShowTip(event, 'tt113', 'link118')" onMouseOut="HideTip('tt113')">get_tr_stream</a></td><td class=SDescription>Returns a tr stream with <i>this</i> component&rsquo;s full name as a scope.</td></tr>
   <!-- index=87 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_component.print_enabled" id=link120 onMouseOver="ShowTip(event, 'tt115', 'link120')" onMouseOut="HideTip('tt115')">print_enabled</a></td><td class=SDescription>This bit determines if this component should automatically be printed as a child of its parent object.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.free_tr_stream" id=link119 onMouseOver="ShowTip(event, 'tt114', 'link119')" onMouseOut="HideTip('tt114')">free_tr_stream</a></td><td class=SDescription>Frees the internal references associated with <i>stream</i>.</td></tr>
   <!-- index=88 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.tr_database" id=link121 onMouseOver="ShowTip(event, 'tt116', 'link121')" onMouseOut="HideTip('tt116')">tr_database</a></td><td class=SDescription>Specifies the <a href="uvm_tr_database-svh.html#uvm_tr_database" class=LClass id=link122 onMouseOver="ShowTip(event, 'tt117', 'link122')" onMouseOut="HideTip('tt117')">uvm_tr_database</a> object to use for <a href="#uvm_component.begin_tr" class=LMethod id=link123 onMouseOver="ShowTip(event, 'tt106', 'link123')" onMouseOut="HideTip('tt106')">begin_tr</a> and other methods in the <a href="#uvm_component.Recording_Interface" class=LGroup id=link124 onMouseOver="ShowTip(event, 'tt118', 'link124')" onMouseOut="HideTip('tt118')">Recording Interface</a>. </td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_component.print_enabled" id=link120 onMouseOver="ShowTip(event, 'tt115', 'link120')" onMouseOut="HideTip('tt115')">print_enabled</a></td><td class=SDescription>This bit determines if this component should automatically be printed as a child of its parent object.</td></tr>
   <!-- index=89 -->
 
-<tr class="SGeneric SIndent2"><td class=SEntry><a href="#uvm_component.the_following_is_VERY_expensive.Needs_refactoring.Should" >the following is VERY expensive.&nbsp; Needs refactoring.&nbsp; Should</a></td><td class=SDescription>get config only for the specific field names in &lsquo;field_array&rsquo;. </td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.tr_database" id=link121 onMouseOver="ShowTip(event, 'tt116', 'link121')" onMouseOut="HideTip('tt116')">tr_database</a></td><td class=SDescription>Specifies the <a href="uvm_tr_database-svh.html#uvm_tr_database" class=LClass id=link122 onMouseOver="ShowTip(event, 'tt117', 'link122')" onMouseOut="HideTip('tt117')">uvm_tr_database</a> object to use for <a href="#uvm_component.begin_tr" class=LMethod id=link123 onMouseOver="ShowTip(event, 'tt106', 'link123')" onMouseOut="HideTip('tt106')">begin_tr</a> and other methods in the <a href="#uvm_component.Recording_Interface" class=LGroup id=link124 onMouseOver="ShowTip(event, 'tt118', 'link124')" onMouseOut="HideTip('tt118')">Recording Interface</a>. </td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -903,6 +903,12 @@ if (comp.get_first_child(name))
 
 
  <!--CONTENT index=45 -->
+<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_component.Configuration_Interface" href="../../src/base/uvm_component.svh">Configuration Interface</a></h3><div class=CBody><p>Components can be designed to be user-configurable in terms of its topology (the type and number of children it has), mode of operation, and run-time parameters (knobs).&nbsp; The configuration interface accommodates this common need, allowing component composition and state to be modified without having to derive new classes or new class hierarchies for every configuration scenario.</p></div></div></div>
+
+
+
+
+ <!--CONTENT index=46 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.check_config_usage" href="../../src/base/uvm_component.svh">check_config_usage</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -920,7 +926,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=46 -->
+ <!--CONTENT index=47 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.apply_config_settings" href="../../src/base/uvm_component.svh">apply_config_settings</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -935,7 +941,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=47 -->
+ <!--CONTENT index=48 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.print_config_settings" href="../../src/base/uvm_component.svh">print_config_settings</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -959,7 +965,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=48 -->
+ <!--CONTENT index=49 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.print_config" href="../../src/base/uvm_component.svh">print_config</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -979,7 +985,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=49 -->
+ <!--CONTENT index=50 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.print_config_with_audit" href="../../src/base/uvm_component.svh">print_config_with_audit</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -995,7 +1001,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=50 -->
+ <!--CONTENT index=51 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_component.print_config_matches" href="../../src/base/uvm_component.svh">print_config_matches</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>static bit print_config_matches
   </td></tr></table></blockquote><div class=CBody><p>Setting this static variable causes uvm_config_db#(T)::get() to print info about matching configuration settings as they are being applied.</p></div></div></div>
@@ -1003,13 +1009,13 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=51 -->
+ <!--CONTENT index=52 -->
 <div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_component.Objection_Interface" href="../../src/base/uvm_component.svh">Objection Interface</a></h3><div class=CBody><p>These methods provide object level hooks into the <a href="uvm_objection-svh.html#uvm_objection" class=LClass id=link166 onMouseOver="ShowTip(event, 'tt74', 'link166')" onMouseOut="HideTip('tt74')">uvm_objection</a> mechanism.</p></div></div></div>
 
 
 
 
- <!--CONTENT index=52 -->
+ <!--CONTENT index=53 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.raised" href="../../src/base/uvm_component.svh">raised</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1029,7 +1035,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=53 -->
+ <!--CONTENT index=54 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.dropped" href="../../src/base/uvm_component.svh">dropped</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1049,7 +1055,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=54 -->
+ <!--CONTENT index=55 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.all_dropped" href="../../src/base/uvm_component.svh">all_dropped</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1069,13 +1075,13 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=55 -->
+ <!--CONTENT index=56 -->
 <div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_component.Factory_Interface" href="../../src/base/uvm_component.svh">Factory Interface</a></h3><div class=CBody><p>The factory interface provides convenient access to a portion of UVM&rsquo;s <a href="uvm_factory-svh.html#uvm_factory" class=LClass id=link167 onMouseOver="ShowTip(event, 'tt78', 'link167')" onMouseOut="HideTip('tt78')">uvm_factory</a> interface.&nbsp; For creating new objects and components, the preferred method of accessing the factory is via the object or component wrapper (see <a href="uvm_registry-svh.html#uvm_component_registry#(T,Tname)" class=LClass id=link168 onMouseOver="ShowTip(event, 'tt124', 'link168')" onMouseOut="HideTip('tt124')">uvm_component_registry #(T,Tname)</a> and <a href="uvm_registry-svh.html#uvm_object_registry#(T,Tname)" class=LClass id=link169 onMouseOver="ShowTip(event, 'tt125', 'link169')" onMouseOut="HideTip('tt125')">uvm_object_registry #(T,Tname)</a>).&nbsp; The wrapper also provides functions for setting type and instance overrides.</p></div></div></div>
 
 
 
 
- <!--CONTENT index=56 -->
+ <!--CONTENT index=57 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.create_component" href="../../src/base/uvm_component.svh">create_component</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1092,7 +1098,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=57 -->
+ <!--CONTENT index=58 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.create_object" href="../../src/base/uvm_component.svh">create_object</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1113,7 +1119,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=58 -->
+ <!--CONTENT index=59 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_type_override_by_type" href="../../src/base/uvm_component.svh">set_type_override_by_type</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1139,7 +1145,7 @@ endfunction</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=59 -->
+ <!--CONTENT index=60 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_inst_override_by_type" href="../../src/base/uvm_component.svh">set_inst_override_by_type</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1178,7 +1184,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=60 -->
+ <!--CONTENT index=61 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_type_override" href="../../src/base/uvm_component.svh">set_type_override</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1203,7 +1209,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=61 -->
+ <!--CONTENT index=62 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_inst_override" href="../../src/base/uvm_component.svh">set_inst_override</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1225,7 +1231,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=62 -->
+ <!--CONTENT index=63 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.print_override_info" href="../../src/base/uvm_component.svh">print_override_info</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1245,13 +1251,13 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=63 -->
+ <!--CONTENT index=64 -->
 <div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_component.Hierarchical_Reporting_Interface" href="../../src/base/uvm_component.svh">Hierarchical Reporting Interface</a></h3><div class=CBody><p>This interface provides versions of the set_report_* methods in the <a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link187 onMouseOver="ShowTip(event, 'tt3', 'link187')" onMouseOut="HideTip('tt3')">uvm_report_object</a> base class that are applied recursively to this component and all its children.</p><p>When a report is issued and its associated action has the LOG bit set, the report will be sent to its associated FILE descriptor.</p></div></div></div>
 
 
 
 
- <!--CONTENT index=64 -->
+ <!--CONTENT index=65 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_id_verbosity_hier" href="../../src/base/uvm_component.svh">set_report_id_verbosity_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1267,7 +1273,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=65 -->
+ <!--CONTENT index=66 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_severity_id_verbosity_hier" href="../../src/base/uvm_component.svh">set_report_severity_id_verbosity_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1285,7 +1291,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=66 -->
+ <!--CONTENT index=67 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_severity_action_hier" href="../../src/base/uvm_component.svh">set_report_severity_action_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1301,7 +1307,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=67 -->
+ <!--CONTENT index=68 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_id_action_hier" href="../../src/base/uvm_component.svh">set_report_id_action_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1317,7 +1323,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=68 -->
+ <!--CONTENT index=69 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_severity_id_action_hier" href="../../src/base/uvm_component.svh">set_report_severity_id_action_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1335,7 +1341,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=69 -->
+ <!--CONTENT index=70 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_default_file_hier" href="../../src/base/uvm_component.svh">set_report_default_file_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1349,7 +1355,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=70 -->
+ <!--CONTENT index=71 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_severity_file_hier" href="../../src/base/uvm_component.svh">set_report_severity_file_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1365,7 +1371,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=71 -->
+ <!--CONTENT index=72 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_id_file_hier" href="../../src/base/uvm_component.svh">set_report_id_file_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1381,7 +1387,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=72 -->
+ <!--CONTENT index=73 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_severity_id_file_hier" href="../../src/base/uvm_component.svh">set_report_severity_id_file_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1399,7 +1405,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=73 -->
+ <!--CONTENT index=74 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.set_report_verbosity_level_hier" href="../../src/base/uvm_component.svh">set_report_verbosity_level_hier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1413,7 +1419,7 @@ endclass</pre></blockquote></div></div></div>
 
 
 
- <!--CONTENT index=74 -->
+ <!--CONTENT index=75 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.pre_abort" href="../../src/base/uvm_component.svh">pre_abort</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function void pre_abort
   </td></tr></table></blockquote><div class=CBody><p>This callback is executed when the message system is executing a <a href="uvm_object_globals-svh.html#UVM_EXIT" class=LConstant id=link192 onMouseOver="ShowTip(event, 'tt103', 'link192')" onMouseOut="HideTip('tt103')">UVM_EXIT</a> action.&nbsp; The exit action causes an immediate termination of the simulation, but the pre_abort callback hook gives components an opportunity to provide additional information to the user before the termination happens.&nbsp; For example, a test may want to executed the report function of a particular component even when an error condition has happened to force a premature termination you would write a function like:</p><blockquote><pre>function void mycomponent::pre_abort();
@@ -1423,13 +1429,13 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=75 -->
+ <!--CONTENT index=76 -->
 <div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_component.Recording_Interface" href="../../src/base/uvm_component.svh">Recording Interface</a></h3><div class=CBody><p>These methods comprise the component-based transaction recording interface.&nbsp; The methods can be used to record the transactions that this component &ldquo;sees&rdquo;, i.e. produces or consumes.</p><p>The API and implementation are subject to change once a vendor-independent use-model is determined.</p></div></div></div>
 
 
 
 
- <!--CONTENT index=76 -->
+ <!--CONTENT index=77 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.accept_tr" href="../../src/base/uvm_component.svh">accept_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1447,7 +1453,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=77 -->
+ <!--CONTENT index=78 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.do_accept_tr" href="../../src/base/uvm_component.svh">do_accept_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1461,7 +1467,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=78 -->
+ <!--CONTENT index=79 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.begin_tr" href="../../src/base/uvm_component.svh">begin_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1497,7 +1503,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=79 -->
+ <!--CONTENT index=80 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.begin_child_tr" href="../../src/base/uvm_component.svh">begin_child_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1533,7 +1539,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=80 -->
+ <!--CONTENT index=81 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.do_begin_tr" href="../../src/base/uvm_component.svh">do_begin_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1551,7 +1557,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=81 -->
+ <!--CONTENT index=82 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.end_tr" href="../../src/base/uvm_component.svh">end_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1575,7 +1581,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=82 -->
+ <!--CONTENT index=83 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.do_end_tr" href="../../src/base/uvm_component.svh">do_end_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1591,7 +1597,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=83 -->
+ <!--CONTENT index=84 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.record_error_tr" href="../../src/base/uvm_component.svh">record_error_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1627,7 +1633,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=84 -->
+ <!--CONTENT index=85 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.record_event_tr" href="../../src/base/uvm_component.svh">record_event_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1663,7 +1669,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=85 -->
+ <!--CONTENT index=86 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.get_tr_stream" href="../../src/base/uvm_component.svh">get_tr_stream</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1683,7 +1689,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=86 -->
+ <!--CONTENT index=87 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.free_tr_stream" href="../../src/base/uvm_component.svh">free_tr_stream</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
@@ -1697,7 +1703,7 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=87 -->
+ <!--CONTENT index=88 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_component.print_enabled" href="../../src/base/uvm_component.svh">print_enabled</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit print_enabled = 1
   </td></tr></table></blockquote><div class=CBody><p>This bit determines if this component should automatically be printed as a child of its parent object.</p><p>By default, all children are printed.&nbsp; However, this bit allows a parent component to disable the printing of specific children.</p></div></div></div>
@@ -1705,16 +1711,10 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 
 
 
- <!--CONTENT index=88 -->
+ <!--CONTENT index=89 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_component.tr_database" href="../../src/base/uvm_component.svh">tr_database</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_tr_database tr_database
   </td></tr></table></blockquote><div class=CBody><p>Specifies the <a href="uvm_tr_database-svh.html#uvm_tr_database" class=LClass id=link208 onMouseOver="ShowTip(event, 'tt117', 'link208')" onMouseOut="HideTip('tt117')">uvm_tr_database</a> object to use for <a href="#uvm_component.begin_tr" class=LMethod id=link209 onMouseOver="ShowTip(event, 'tt106', 'link209')" onMouseOut="HideTip('tt106')">begin_tr</a> and other methods in the <a href="#uvm_component.Recording_Interface" class=LGroup id=link210 onMouseOver="ShowTip(event, 'tt118', 'link210')" onMouseOut="HideTip('tt118')">Recording Interface</a>.&nbsp; Default is <a href="uvm_coreservice-svh.html#uvm_coreservice_t.get_default_tr_database" class=LMethod id=link211 onMouseOver="ShowTip(event, 'tt133', 'link211')" onMouseOut="HideTip('tt133')">uvm_coreservice_t::get_default_tr_database</a>.</p></div></div></div>
-
-
-
-
- <!--CONTENT index=89 -->
-<div class="CGeneric"><div class=CTopic><h3 class=CTitle><a name="uvm_component.the_following_is_VERY_expensive.Needs_refactoring.Should" href="../../src/base/uvm_component.svh">the following is VERY expensive.&nbsp; Needs refactoring.&nbsp; Should</a></h3><div class=CBody><p>get config only for the specific field names in &lsquo;field_array&rsquo;.&nbsp; That&rsquo;s because the resource pool is organized first by field name.&nbsp; Can further optimize by encoding the value for each &lsquo;field_array&rsquo; entry to indicate string, uvm_bitstream_t, or object.&nbsp; That way, we call &lsquo;get&rsquo; for specific fields of specific types rather than the search-and-cast approach here.</p></div></div></div>
 
 </div><!--Content-->
 
@@ -2849,7 +2849,7 @@ The do_record method is the user-definable hook called by the record method. </d
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_tr_stream extends uvm_object
   </td></tr></table></blockquote>The <i>uvm_tr_stream</i> base class is a representation of a stream of records within a uvm_tr_database.</div></div><div class=CToolTip id="tt133"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>pure virtual function uvm_tr_database get_default_tr_database()
-  </td></tr></table></blockquote>returns the current default record database</div></div><!--END_ND_TOOLTIPS-->
+  </td></tr></table></blockquote>intended to return the current default record database</div></div><!--END_ND_TOOLTIPS-->
 
 <script language=JavaScript><!--
 if (browserType) {if (browserVer) {document.write("</div>"); }document.write("</div>");}// --></script></body></html>

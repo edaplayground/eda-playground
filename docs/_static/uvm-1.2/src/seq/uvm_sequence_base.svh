@@ -531,7 +531,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // See <uvm_sequencer_base::start_phase_sequence> for more information.
   //
   // Internally, the <uvm_sequence_base> uses a <uvm_get_to_lock_dap> to 
-  // protect the starting phase value from being modified after
+  // protect the starting phase value from being modified 
   // after the reference has been read.  Once the sequence has ended 
   // its execution (either via natural termination, or being killed),
   // then the starting phase value can be modified again.
@@ -544,7 +544,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Sets the 'starting phase'.
   //
   // Internally, the <uvm_sequence_base> uses a <uvm_get_to_lock_dap> to 
-  // protect the starting phase value from being modified after
+  // protect the starting phase value from being modified 
   // after the reference has been read.  Once the sequence has ended 
   // its execution (either via natural termination, or being killed),
   // then the starting phase value can be modified again.
@@ -595,7 +595,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // its execution (either via natural termination, or being killed),
   // then the ~automatic_phase_objection~ value can be modified again.
   //
-  // NOTE: Never set the automatic phase objection bit to '1' if your sequence
+  // NEVER set the automatic phase objection bit to '1' if your sequence
   // runs with a forever loop inside of the body, as the objection will
   // never get dropped!
   function void set_automatic_phase_objection(bit value);

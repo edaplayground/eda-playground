@@ -676,6 +676,7 @@ virtual class uvm_recorder extends uvm_object;
   //
   //
   virtual function integer check_handle_kind (string htype, integer handle);
+     return 0;
   endfunction
   
   

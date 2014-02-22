@@ -31,6 +31,21 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
   <!-- index=2 -->
 
 <tr class="SSMethod SMarked"><td class=SEntry><a href="#uvm_config_db" id=link4 onMouseOver="ShowTip(event, 'tt1', 'link4')" onMouseOut="HideTip('tt1')">uvm_config_db</a></td><td class=SDescription>All of the functions in uvm_config_db#(T) are static, so they must be called using the :: operator. </td></tr>
+  <!-- index=8 -->
+
+<tr class="SSection"><td class=SEntry><a href="#Types" >Types</a></td><td class=SDescription></td></tr>
+  <!-- index=9 -->
+
+<tr class="SGeneric"><td class=SEntry><a href="#uvm_config_int" >uvm_config_int</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_bitstream_t)</td></tr>
+  <!-- index=10 -->
+
+<tr class="SGeneric SMarked"><td class=SEntry><a href="#uvm_config_string" >uvm_config_string</a></td><td class=SDescription>Convenience type for uvm_config_db#(string)</td></tr>
+  <!-- index=11 -->
+
+<tr class="SGeneric"><td class=SEntry><a href="#uvm_config_object" >uvm_config_object</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_object)</td></tr>
+  <!-- index=12 -->
+
+<tr class="SGeneric SMarked"><td class=SEntry><a href="#uvm_config_wrapper" >uvm_config_wrapper</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_object_wrapper)</td></tr>
   <!-- index=13 -->
 
 <tr class="SSMethod"><td class=SEntry><a href="#uvm_config_db_options" >uvm_config_db_options</a></td><td class=SDescription>Provides a namespace for managing options for the configuration DB facility. </td></tr></table></div></div><!--END_ND_SUMMARY-->
@@ -98,22 +113,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_config_db.exists" id=link11 onMouseOver="ShowTip(event, 'tt6', 'link11')" onMouseOut="HideTip('tt6')">exists</a></td><td class=SDescription>Check if a value for <i>field_name</i> is available in <i>inst_name</i>, using component <i>cntxt</i> as the starting search point. </td></tr>
   <!-- index=7 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_config_db.wait_modified" id=link12 onMouseOver="ShowTip(event, 'tt7', 'link12')" onMouseOut="HideTip('tt7')">wait_modified</a></td><td class=SDescription>Wait for a configuration setting to be set for <i>field_name</i> in <i>cntxt</i> and <i>inst_name</i>. </td></tr>
-  <!-- index=8 -->
-
-<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_config_db.Types" >Types</a></td><td class=SDescription></td></tr>
-  <!-- index=9 -->
-
-<tr class="SType SIndent2"><td class=SEntry><a href="#uvm_config_db.uvm_config_int" >uvm_config_int</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_bitstream_t)</td></tr>
-  <!-- index=10 -->
-
-<tr class="SType SIndent2 SMarked"><td class=SEntry><a href="#uvm_config_db.uvm_config_string" >uvm_config_string</a></td><td class=SDescription>Convenience type for uvm_config_db#(string)</td></tr>
-  <!-- index=11 -->
-
-<tr class="SType SIndent2"><td class=SEntry><a href="#uvm_config_db.uvm_config_object" >uvm_config_object</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_object)</td></tr>
-  <!-- index=12 -->
-
-<tr class="SType SIndent2 SMarked"><td class=SEntry><a href="#uvm_config_db.uvm_config_wrapper" >uvm_config_wrapper</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_object_wrapper)</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_config_db.wait_modified" id=link12 onMouseOver="ShowTip(event, 'tt7', 'link12')" onMouseOut="HideTip('tt7')">wait_modified</a></td><td class=SDescription>Wait for a configuration setting to be set for <i>field_name</i> in <i>cntxt</i> and <i>inst_name</i>. </td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -216,31 +216,50 @@ set_config_object(...) =&gt; uvm_config_db#(uvm_object)::set(cntxt,...)</pre></b
 
 
  <!--CONTENT index=8 -->
-<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_config_db.Types" href="../../src/base/uvm_config_db.svh">Types</a></h3></div></div>
+<div class="CSection"><div class=CTopic><h2 class=CTitle><a name="Types" href="../../src/base/uvm_config_db.svh">Types</a></h2><div class=CBody>
+
+<!--START_ND_SUMMARY index=8-->
+<div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
+  <!-- index=8 -->
+
+<tr class="SSection"><td class=SEntry><a href="#Types" >Types</a></td><td class=SDescription></td></tr>
+  <!-- index=9 -->
+
+<tr class="SGeneric SIndent1"><td class=SEntry><a href="#uvm_config_int" >uvm_config_int</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_bitstream_t)</td></tr>
+  <!-- index=10 -->
+
+<tr class="SGeneric SIndent1 SMarked"><td class=SEntry><a href="#uvm_config_string" >uvm_config_string</a></td><td class=SDescription>Convenience type for uvm_config_db#(string)</td></tr>
+  <!-- index=11 -->
+
+<tr class="SGeneric SIndent1"><td class=SEntry><a href="#uvm_config_object" >uvm_config_object</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_object)</td></tr>
+  <!-- index=12 -->
+
+<tr class="SGeneric SIndent1 SMarked"><td class=SEntry><a href="#uvm_config_wrapper" >uvm_config_wrapper</a></td><td class=SDescription>Convenience type for uvm_config_db#(uvm_object_wrapper)</td></tr></table></div></div><!--END_ND_SUMMARY-->
+</div></div></div>
 
 
 
 
  <!--CONTENT index=9 -->
-<div class="CType"><div class=CTopic><h3 class=CTitle><a name="uvm_config_db.uvm_config_int" href="../../src/base/uvm_config_db.svh">uvm_config_int</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(uvm_bitstream_t)</p></div></div></div>
+<div class="CGeneric"><div class=CTopic><h3 class=CTitle><a name="uvm_config_int" href="../../src/base/uvm_config_db.svh">uvm_config_int</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(uvm_bitstream_t)</p><blockquote><pre>typedef uvm_config_db#(uvm_bitstream_t) uvm_config_int;</pre></blockquote></div></div></div>
 
 
 
 
  <!--CONTENT index=10 -->
-<div class="CType"><div class=CTopic><h3 class=CTitle><a name="uvm_config_db.uvm_config_string" href="../../src/base/uvm_config_db.svh">uvm_config_string</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(string)</p></div></div></div>
+<div class="CGeneric"><div class=CTopic><h3 class=CTitle><a name="uvm_config_string" href="../../src/base/uvm_config_db.svh">uvm_config_string</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(string)</p><blockquote><pre>typedef uvm_config_db#(string) uvm_config_string;</pre></blockquote></div></div></div>
 
 
 
 
  <!--CONTENT index=11 -->
-<div class="CType"><div class=CTopic><h3 class=CTitle><a name="uvm_config_db.uvm_config_object" href="../../src/base/uvm_config_db.svh">uvm_config_object</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(uvm_object)</p></div></div></div>
+<div class="CGeneric"><div class=CTopic><h3 class=CTitle><a name="uvm_config_object" href="../../src/base/uvm_config_db.svh">uvm_config_object</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(uvm_object)</p><blockquote><pre>typedef uvm_config_db#(uvm_object) uvm_config_object;</pre></blockquote></div></div></div>
 
 
 
 
  <!--CONTENT index=12 -->
-<div class="CType"><div class=CTopic><h3 class=CTitle><a name="uvm_config_db.uvm_config_wrapper" href="../../src/base/uvm_config_db.svh">uvm_config_wrapper</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(uvm_object_wrapper)</p></div></div></div>
+<div class="CGeneric"><div class=CTopic><h3 class=CTitle><a name="uvm_config_wrapper" href="../../src/base/uvm_config_db.svh">uvm_config_wrapper</a></h3><div class=CBody><p>Convenience type for uvm_config_db#(uvm_object_wrapper)</p><blockquote><pre>typedef uvm_config_db#(uvm_object_wrapper) uvm_config_wrapper;</pre></blockquote></div></div></div>
 
 
 

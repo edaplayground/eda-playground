@@ -292,7 +292,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMacro SIndent2 SMarked"><td class=SEntry><a href="#`uvm_unpack_enum" >`uvm_unpack_enum</a></td><td class=SDescription>Unpack an enumeration value, which requires its type be specified.</td></tr>
   <!-- index=89 -->
 
-<tr class="SMacro SIndent2"><td class=SEntry><a href="#`uvm_unpack_string" >`uvm_unpack_string</a></td><td class=SDescription>Pack a string variable.</td></tr>
+<tr class="SMacro SIndent2"><td class=SEntry><a href="#`uvm_unpack_string" >`uvm_unpack_string</a></td><td class=SDescription>Unpack a string variable.</td></tr>
   <!-- index=90 -->
 
 <tr class="SMacro SIndent2 SMarked"><td class=SEntry><a href="#`uvm_unpack_real" >`uvm_unpack_real</a></td><td class=SDescription>Unpack a variable of type real.</td></tr>
@@ -697,13 +697,13 @@ endclass</pre></blockquote><p>Each `uvm_field_* macro is named according to the 
 
 
  <!--CONTENT index=55 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_field_aa_int_key" href="../../src/macros/uvm_object_defines.svh">`uvm_field_aa_int_key</a></h3><div class=CBody><p>Implements the data operations for an associative array of integral types indexed by any integral key data type.</p><blockquote><pre>`uvm_field_aa_int_key(long unsigned,ARG,FLAG)</pre></blockquote><p><i>KEY</i> is the data type of the integral key, <i>ARG</i> is the name of a property that is an associative array of integrals, and <i>FLAG</i> is a bitwise OR of one or more flag settings as described in <a href="#Field_Macros" class=LGroup id=link57 onMouseOver="ShowTip(event, 'tt7', 'link57')" onMouseOut="HideTip('tt7')">Field Macros</a> above.</p></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_field_aa_int_key" href="../../src/macros/uvm_object_defines.svh">`uvm_field_aa_int_key</a></h3><div class=CBody><p>Implements the data operations for an associative array of integral types indexed by any integral key data type.</p><blockquote><pre>`uvm_field_aa_int_key(KEY,ARG,FLAG)</pre></blockquote><p><i>KEY</i> is the data type of the integral key, <i>ARG</i> is the name of a property that is an associative array of integrals, and <i>FLAG</i> is a bitwise OR of one or more flag settings as described in <a href="#Field_Macros" class=LGroup id=link57 onMouseOver="ShowTip(event, 'tt7', 'link57')" onMouseOut="HideTip('tt7')">Field Macros</a> above.</p></div></div></div>
 
 
 
 
  <!--CONTENT index=56 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_field_aa_int_enumkey" href="../../src/macros/uvm_object_defines.svh">`uvm_field_aa_int_enumkey</a></h3><div class=CBody><p>Implements the data operations for an associative array of integral types indexed by any enumeration key data type.</p><blockquote><pre>`uvm_field_aa_int_longint_unsigned(ARG,FLAG)</pre></blockquote><p><i>ARG</i> is the name of a property that is an associative array of integrals with <i>longint unsigned</i> key, and <i>FLAG</i> is a bitwise OR of one or more flag settings as described in <a href="#Field_Macros" class=LGroup id=link58 onMouseOver="ShowTip(event, 'tt7', 'link58')" onMouseOut="HideTip('tt7')">Field Macros</a> above.</p></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_field_aa_int_enumkey" href="../../src/macros/uvm_object_defines.svh">`uvm_field_aa_int_enumkey</a></h3><div class=CBody><p>Implements the data operations for an associative array of integral types indexed by any enumeration key data type.</p><blockquote><pre>`uvm_field_aa_int_enumkey(KEY, ARG,FLAG)</pre></blockquote><p><i>KEY</i> is the enumeration type of the key, <i>ARG</i> is the name of a property that is an associative array of integrals, and <i>FLAG</i> is a bitwise OR of one or more flag settings as described in <a href="#Field_Macros" class=LGroup id=link58 onMouseOver="ShowTip(event, 'tt7', 'link58')" onMouseOut="HideTip('tt7')">Field Macros</a> above.</p></div></div></div>
 
 
 
@@ -739,19 +739,19 @@ endclass</pre></blockquote><p>Each `uvm_field_* macro is named according to the 
 
 
  <!--CONTENT index=62 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_record_real" href="../../src/macros/uvm_object_defines.svh">`uvm_record_real</a></h3><div class=CBody><blockquote><pre>`uvm_record_real(NAME,VALUE)</pre></blockquote><p>The <i>`uvm_record_real</i> macro takes the same arguments as the &lt;uvm_recorder::record_real&gt; method.</p><p>The default implementation will pass the name/value pair to <a href="#`uvm_record_attribute" class=LMacro id=link72 onMouseOver="ShowTip(event, 'tt12', 'link72')" onMouseOut="HideTip('tt12')">`uvm_record_attribute</a> if enabled, otherwise the information will be passed to <a href="../base/uvm_recorder-svh.html#uvm_recorder.record_field_real" class=LMethod id=link73 onMouseOver="ShowTip(event, 'tt15', 'link73')" onMouseOut="HideTip('tt15')">uvm_recorder::record_field_real</a>.</p></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_record_real" href="../../src/macros/uvm_object_defines.svh">`uvm_record_real</a></h3><div class=CBody><blockquote><pre>`uvm_record_real(NAME,VALUE)</pre></blockquote><p>The <i>`uvm_record_real</i> macro takes the same arguments as the <a href="../base/uvm_recorder-svh.html#uvm_recorder.record_field_real" class=LMethod id=link72 onMouseOver="ShowTip(event, 'tt15', 'link72')" onMouseOut="HideTip('tt15')">uvm_recorder::record_field_real</a> method.</p><p>The default implementation will pass the name/value pair to <a href="#`uvm_record_attribute" class=LMacro id=link73 onMouseOver="ShowTip(event, 'tt12', 'link73')" onMouseOut="HideTip('tt12')">`uvm_record_attribute</a> if enabled, otherwise the information will be passed to <a href="../base/uvm_recorder-svh.html#uvm_recorder.record_field_real" class=LMethod id=link74 onMouseOver="ShowTip(event, 'tt15', 'link74')" onMouseOut="HideTip('tt15')">uvm_recorder::record_field_real</a>.</p></div></div></div>
 
 
 
 
  <!--CONTENT index=63 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_record_field" href="../../src/macros/uvm_object_defines.svh">`uvm_record_field</a></h3><div class=CBody><p>Macro for recording arbitrary name-value pairs into a transaction recording database.&nbsp; Requires a valid transaction handle, as provided by the <a href="../base/uvm_transaction-svh.html#uvm_transaction.begin_tr" class=LMethod id=link74 onMouseOver="ShowTip(event, 'tt16', 'link74')" onMouseOut="HideTip('tt16')">uvm_transaction::begin_tr</a> and <a href="../base/uvm_component-svh.html#uvm_component.begin_tr" class=LMethod id=link75 onMouseOver="ShowTip(event, 'tt17', 'link75')" onMouseOut="HideTip('tt17')">uvm_component::begin_tr</a> methods.</p><blockquote><pre>`uvm_record_field(NAME, VALUE)</pre></blockquote><p>The default implementation will pass the name/value pair to <a href="#`uvm_record_attribute" class=LMacro id=link76 onMouseOver="ShowTip(event, 'tt12', 'link76')" onMouseOut="HideTip('tt12')">`uvm_record_attribute</a> if enabled, otherwise the information will be passed to <a href="../base/uvm_recorder-svh.html#uvm_recorder.record_generic" class=LMethod id=link77 onMouseOver="ShowTip(event, 'tt9', 'link77')" onMouseOut="HideTip('tt9')">uvm_recorder::record_generic</a>, with the <i>VALUE</i> being converted to a string using &ldquo;%p&rdquo; notation.</p><blockquote><pre>recorder.record_generic(NAME,$sformatf(&quot;%p&quot;,VALUE));</pre></blockquote></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_record_field" href="../../src/macros/uvm_object_defines.svh">`uvm_record_field</a></h3><div class=CBody><p>Macro for recording arbitrary name-value pairs into a transaction recording database.&nbsp; Requires a valid transaction handle, as provided by the <a href="../base/uvm_transaction-svh.html#uvm_transaction.begin_tr" class=LMethod id=link75 onMouseOver="ShowTip(event, 'tt16', 'link75')" onMouseOut="HideTip('tt16')">uvm_transaction::begin_tr</a> and <a href="../base/uvm_component-svh.html#uvm_component.begin_tr" class=LMethod id=link76 onMouseOver="ShowTip(event, 'tt17', 'link76')" onMouseOut="HideTip('tt17')">uvm_component::begin_tr</a> methods.</p><blockquote><pre>`uvm_record_field(NAME, VALUE)</pre></blockquote><p>The default implementation will pass the name/value pair to <a href="#`uvm_record_attribute" class=LMacro id=link77 onMouseOver="ShowTip(event, 'tt12', 'link77')" onMouseOut="HideTip('tt12')">`uvm_record_attribute</a> if enabled, otherwise the information will be passed to <a href="../base/uvm_recorder-svh.html#uvm_recorder.record_generic" class=LMethod id=link78 onMouseOver="ShowTip(event, 'tt9', 'link78')" onMouseOut="HideTip('tt9')">uvm_recorder::record_generic</a>, with the <i>VALUE</i> being converted to a string using &ldquo;%p&rdquo; notation.</p><blockquote><pre>recorder.record_generic(NAME,$sformatf(&quot;%p&quot;,VALUE));</pre></blockquote></div></div></div>
 
 
 
 
  <!--CONTENT index=64 -->
-<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="Packing_Macros" href="../../src/macros/uvm_object_defines.svh">Packing Macros</a></h3><div class=CBody><p>The packing macros assist users who implement the <a href="../base/uvm_object-svh.html#uvm_object.do_pack" class=LMethod id=link78 onMouseOver="ShowTip(event, 'tt3', 'link78')" onMouseOut="HideTip('tt3')">uvm_object::do_pack</a> method.&nbsp; They help ensure that the pack operation is the exact inverse of the unpack operation.&nbsp; See also <a href="#Unpacking_Macros" class=LGroup id=link79 onMouseOver="ShowTip(event, 'tt18', 'link79')" onMouseOut="HideTip('tt18')">Unpacking Macros</a>.</p><blockquote><pre>virtual function void do_pack(uvm_packer packer);
+<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="Packing_Macros" href="../../src/macros/uvm_object_defines.svh">Packing Macros</a></h3><div class=CBody><p>The packing macros assist users who implement the <a href="../base/uvm_object-svh.html#uvm_object.do_pack" class=LMethod id=link79 onMouseOver="ShowTip(event, 'tt3', 'link79')" onMouseOut="HideTip('tt3')">uvm_object::do_pack</a> method.&nbsp; They help ensure that the pack operation is the exact inverse of the unpack operation.&nbsp; See also <a href="#Unpacking_Macros" class=LGroup id=link80 onMouseOver="ShowTip(event, 'tt18', 'link80')" onMouseOut="HideTip('tt18')">Unpacking Macros</a>.</p><blockquote><pre>virtual function void do_pack(uvm_packer packer);
   `uvm_pack_int(cmd)
   `uvm_pack_int(addr)
   `uvm_pack_array(data)
@@ -845,7 +845,7 @@ endfunction</pre></blockquote><p>The &lsquo;N&rsquo; versions of these macros ta
 
 
  <!--CONTENT index=79 -->
-<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="Unpacking_Macros" href="../../src/macros/uvm_object_defines.svh">Unpacking Macros</a></h3><div class=CBody><p>The unpacking macros assist users who implement the <a href="../base/uvm_object-svh.html#uvm_object.do_unpack" class=LMethod id=link80 onMouseOver="ShowTip(event, 'tt4', 'link80')" onMouseOut="HideTip('tt4')">uvm_object::do_unpack</a> method.&nbsp; They help ensure that the unpack operation is the exact inverse of the pack operation.&nbsp; See also <a href="#Packing_Macros" class=LGroup id=link81 onMouseOver="ShowTip(event, 'tt19', 'link81')" onMouseOut="HideTip('tt19')">Packing Macros</a>.</p><blockquote><pre>virtual function void do_unpack(uvm_packer packer);
+<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="Unpacking_Macros" href="../../src/macros/uvm_object_defines.svh">Unpacking Macros</a></h3><div class=CBody><p>The unpacking macros assist users who implement the <a href="../base/uvm_object-svh.html#uvm_object.do_unpack" class=LMethod id=link81 onMouseOver="ShowTip(event, 'tt4', 'link81')" onMouseOut="HideTip('tt4')">uvm_object::do_unpack</a> method.&nbsp; They help ensure that the unpack operation is the exact inverse of the pack operation.&nbsp; See also <a href="#Packing_Macros" class=LGroup id=link82 onMouseOver="ShowTip(event, 'tt19', 'link82')" onMouseOut="HideTip('tt19')">Packing Macros</a>.</p><blockquote><pre>virtual function void do_unpack(uvm_packer packer);
   `uvm_unpack_enum(cmd,cmd_t)
   `uvm_unpack_int(addr)
   `uvm_unpack_array(data)
@@ -909,7 +909,7 @@ endfunction</pre></blockquote><p>The &lsquo;N&rsquo; versions of these macros ta
 
 
  <!--CONTENT index=89 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_unpack_string" href="../../src/macros/uvm_object_defines.svh">`uvm_unpack_string</a></h3><div class=CBody><p>Pack a string variable.</p><blockquote><pre>`uvm_unpack_string(VAR)</pre></blockquote></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_unpack_string" href="../../src/macros/uvm_object_defines.svh">`uvm_unpack_string</a></h3><div class=CBody><p>Unpack a string variable.</p><blockquote><pre>`uvm_unpack_string(VAR)</pre></blockquote></div></div></div>
 
 
 

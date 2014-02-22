@@ -2,7 +2,7 @@
 //   Copyright 2007-2011 Mentor Graphics Corporation
 //   Copyright 2007-2011 Cadence Design Systems, Inc.
 //   Copyright 2010-2011 Synopsys, Inc.
-//   Copyright 2013      NVIDIA Corporation
+//   Copyright 2013-2014 NVIDIA Corporation
 //   Copyright 2013      Cisco Systems, Inc.
 //   All Rights Reserved Worldwide
 //
@@ -2551,7 +2551,7 @@ endfunction \
 // Implements the data operations for an associative array of integral
 // types indexed by any integral key data type. 
 //
-//|  `uvm_field_aa_int_key(long unsigned,ARG,FLAG)
+//|  `uvm_field_aa_int_key(KEY,ARG,FLAG)
 //
 // ~KEY~ is the data type of the integral key, ~ARG~ is the name of a property 
 // that is an associative array of integrals, and ~FLAG~ is a bitwise OR of one 
@@ -2570,11 +2570,11 @@ endfunction \
 // Implements the data operations for an associative array of integral
 // types indexed by any enumeration key data type. 
 //
-//|  `uvm_field_aa_int_longint_unsigned(ARG,FLAG)
+//|  `uvm_field_aa_int_enumkey(KEY, ARG,FLAG)
 //
-// ~ARG~ is the name of a property that is an associative array of integrals
-// with ~longint unsigned~ key, and ~FLAG~ is a bitwise OR of one or more
-// flag settings as described in <Field Macros> above.
+// ~KEY~ is the enumeration type of the key, ~ARG~ is the name of a property 
+// that is an associative array of integrals, and ~FLAG~ is a bitwise OR of one 
+// or more flag settings as described in <Field Macros> above.
 
 `define uvm_field_aa_int_enumkey(KEY, ARG, FLAG) \
   begin \
@@ -3419,7 +3419,7 @@ endfunction \
 //| `uvm_record_real(NAME,VALUE)
 //
 // The ~`uvm_record_real~ macro takes the same arguments as
-// the <uvm_recorder::record_real> method.
+// the <uvm_recorder::record_field_real> method.
 //
 // The default implementation will pass the name/value pair to
 // <`uvm_record_attribute> if enabled, otherwise the information
@@ -3756,35 +3756,12 @@ endfunction \
 
 // Macro: `uvm_unpack_string
 //
-// Pack a string variable.
+// Unpack a string variable.
 //
 //| `uvm_unpack_string(VAR)
 //
-`ifndef INCA
 `define uvm_unpack_string(VAR) \
-    begin \
-    bit [7:0] chr__; \
-    VAR = ""; \
-    do begin \
-      chr__ = packer.m_bits[packer.count+:8]; \
-      packer.count += 8; \
-      if (chr__ != 0) \
-        VAR = {VAR, string'(chr__)}; \
-    end while (chr__ != 0); \
-    end
-`else
-`define uvm_unpack_string(VAR) \
-    begin \
-    bit [7:0] chr__; \
-    VAR = ""; \
-    do begin \
-      chr__ = packer.m_bits[packer.count+:8]; \
-      packer.count += 8; \
-      if (chr__ != 0) \
-        VAR=$sformatf("%s%s",VAR,chr__); \
-    end while (chr__ != 0); \
-    end
-`endif
+  VAR = packer.unpack_string();
 
 // Macro: `uvm_unpack_real
 //

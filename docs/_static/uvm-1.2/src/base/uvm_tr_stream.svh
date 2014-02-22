@@ -494,6 +494,7 @@ virtual class uvm_tr_stream extends uvm_object;
    protected virtual function uvm_recorder do_open_recorder(string name,
                                                             time   open_time,
                                                             string type_name);
+      return null;
    endfunction : do_open_recorder
 
 endclass : uvm_tr_stream

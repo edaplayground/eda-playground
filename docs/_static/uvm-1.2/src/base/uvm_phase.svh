@@ -472,7 +472,7 @@ class uvm_phase extends uvm_object;
   //---------------
   // Group: Jumping
   //---------------
-
+  
   // Force phases to jump forward or backward in a schedule
   //
   // A phasing domain can execute a jump from its current phase to any other.
@@ -517,7 +517,7 @@ class uvm_phase extends uvm_object;
   // it does not set a jump_phase to go to after the phase ends.
   extern function void end_prematurely() ;
 
-  // Function: jump_all
+  // Function- jump_all
   //
   // Make all schedules jump to a specified ~phase~, even if the jump target is local.
   // The jump happens to all phase schedules that contain the jump-to ~phase~,
@@ -745,8 +745,6 @@ class uvm_phase_cb extends uvm_callback;
   // An extension may interact with the phase,
   // such as raising the phase objection to prolong the phase,
   // in a manner that is consistent with the current phase state.
-  // Except when in the ~READY_TO_END~ state,
-  // any thread forked in the callback will not be killed when the phase ends.
   //
   // By default, the callback method does nothing.
   // Unless otherwise specified, modifying the  phase transition descriptor has
@@ -763,7 +761,7 @@ endclass
 //
 //------------------------------------------------------------------------------
 //
-// Convenience type for the uvm_callbacks#(uvm_phase, uvm_callback) class.
+// Convenience type for the uvm_callbacks#(uvm_phase, uvm_phase_cb) class.
 //
 typedef uvm_callbacks#(uvm_phase, uvm_phase_cb) uvm_phase_cb_pool;
 

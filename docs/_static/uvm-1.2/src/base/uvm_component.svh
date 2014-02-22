@@ -774,9 +774,8 @@ virtual class uvm_component extends uvm_report_object;
   extern function string massage_scope(string scope);
 
 
-`ifndef UVM_NO_DEPRECATED
   //----------------------------------------------------------------------------
-  // Group- Configuration Interface
+  // Group: Configuration Interface
   //----------------------------------------------------------------------------
   //
   // Components can be designed to be user-configurable in terms of its
@@ -787,6 +786,8 @@ virtual class uvm_component extends uvm_report_object;
   // every configuration scenario. 
   //
   //----------------------------------------------------------------------------
+
+`ifndef UVM_NO_DEPRECATED
 
   static bit m_config_deprecated_warned;
 
@@ -3162,7 +3163,7 @@ function void uvm_component::apply_config_settings (bit verbose=0);
   if(verbose)
     uvm_report_info("CFGAPL","applying configuration settings", UVM_NONE);
 
-  // Note: the following is VERY expensive. Needs refactoring. Should
+  // The following is VERY expensive. Needs refactoring. Should
   // get config only for the specific field names in 'field_array'.
   // That's because the resource pool is organized first by field name.
   // Can further optimize by encoding the value for each 'field_array' 
@@ -3199,42 +3200,51 @@ function void uvm_component::apply_config_settings (bit verbose=0);
       uvm_report_info("CFGAPL",$sformatf("applying configuration to field %s", name),UVM_NONE);
 
     begin
-    uvm_resource#(uvm_bitstream_t) rbs;
-    if($cast(rbs, r))
-      set_int_local(name, rbs.read(this));
-    else begin
-      uvm_resource#(int) ri;
-      if($cast(ri, r))
-        set_int_local(name, ri.read(this));
-      else begin
-        uvm_resource#(int unsigned) riu;
-        if($cast(riu, r))
-          set_int_local(name, riu.read(this));
-        else begin
-          uvm_resource#(string) rs;
-          if($cast(rs, r))
-            set_string_local(name, rs.read(this));
+       uvm_resource#(uvm_integral_t) rit;
+       if ($cast(rit, r))
+         set_int_local(name, rit.read(this));
+       else begin
+          uvm_resource#(uvm_bitstream_t) rbs;
+          if($cast(rbs, r))
+            set_int_local(name, rbs.read(this));
           else begin
-             uvm_resource#(uvm_config_object_wrapper) rcow;
-             if ($cast(rcow, r)) begin
-                uvm_config_object_wrapper cow = rcow.read();
-                set_object_local(name, cow.obj, cow.clone);
-             end
+             uvm_resource#(int) ri;
+             if($cast(ri, r))
+               set_int_local(name, ri.read(this));
              else begin
-                uvm_resource#(uvm_object) ro;
-                if($cast(ro, r)) begin
-                  set_object_local(name, ro.read(this), 0);
-                end 
-                else if (verbose) begin
-                  uvm_report_info("CFGAPL", $sformatf("field %s has an unsupported type", name), UVM_NONE);
-                end
-             end
-          end
-        end
-      end
+                uvm_resource#(int unsigned) riu;
+                if($cast(riu, r))
+                  set_int_local(name, riu.read(this));
+                else begin
+                   uvm_resource#(uvm_active_passive_enum) rap;
+                   if ($cast(rap, r))
+                     set_int_local(name, rap.read(this));
+                   else begin
+                      uvm_resource#(string) rs;
+                      if($cast(rs, r))
+                        set_string_local(name, rs.read(this));
+                      else begin
+                         uvm_resource#(uvm_config_object_wrapper) rcow;
+                         if ($cast(rcow, r)) begin
+                         uvm_config_object_wrapper cow = rcow.read();
+                            set_object_local(name, cow.obj, cow.clone);
+                         end
+                         else begin
+                            uvm_resource#(uvm_object) ro;
+                            if($cast(ro, r)) begin
+                               set_object_local(name, ro.read(this), 0);
+                            end 
+                            else if (verbose) begin
+                               uvm_report_info("CFGAPL", $sformatf("field %s has an unsupported type", name), UVM_NONE);
+                            end
+                         end // else: !if($cast(rcow, r))
+                      end // else: !if($cast(rs, r))
+                   end // else: !if($cast(rap, r))
+                end // else: !if($cast(riu, r))
+             end // else: !if($cast(ri, r))
+          end // else: !if($cast(rbs, r))
+       end // else: !if($cast(rit, r))
     end
-    end
-
   end
 
   __m_uvm_status_container.field_array.delete();

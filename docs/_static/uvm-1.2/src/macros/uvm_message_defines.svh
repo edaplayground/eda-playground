@@ -168,7 +168,7 @@
 
 
 
-// MACRO- `uvm_info_context
+// MACRO: `uvm_info_context
 //
 //| `uvm_info_context(ID, MSG, VERBOSITY, RO)
 //
@@ -183,7 +183,7 @@
    end
 
 
-// MACRO- `uvm_warning_context
+// MACRO: `uvm_warning_context
 //
 //| `uvm_warning_context(ID, MSG, RO)
 //
@@ -198,7 +198,7 @@
    end
 
 
-// MACRO- `uvm_error_context
+// MACRO: `uvm_error_context
 //
 //| `uvm_error_context(ID, MSG, RO)
 //
@@ -213,7 +213,7 @@
    end
 
 
-// MACRO- `uvm_fatal_context
+// MACRO: `uvm_fatal_context
 //
 //| `uvm_fatal_context(ID, MSG, RO)
 //

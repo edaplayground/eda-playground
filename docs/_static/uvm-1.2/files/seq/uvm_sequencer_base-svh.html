@@ -69,7 +69,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_sequencer_base.start_phase_sequence" id=link11 onMouseOver="ShowTip(event, 'tt11', 'link11')" onMouseOut="HideTip('tt11')">start_phase_sequence</a></td><td class=SDescription>Start the default sequence for this phase, if any. </td></tr>
   <!-- index=7 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_sequencer_base.stop_phase_sequence(uvm_phase_phase)" id=link12 onMouseOver="ShowTip(event, 'tt12', 'link12')" onMouseOut="HideTip('tt12')">stop_phase_sequence(uvm_phase phase)</a></td><td class=SDescription>Stop the default sequence for this phase, if any exists, and it is still executing.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_sequencer_base.stop_phase_sequence" id=link12 onMouseOver="ShowTip(event, 'tt12', 'link12')" onMouseOut="HideTip('tt12')">stop_phase_sequence</a></td><td class=SDescription>Stop the default sequence for this phase, if any exists, and it is still executing.</td></tr>
   <!-- index=8 -->
 
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_sequencer_base.wait_for_grant" id=link13 onMouseOver="ShowTip(event, 'tt13', 'link13')" onMouseOut="HideTip('tt13')">wait_for_grant</a></td><td class=SDescription>This task issues a request for the specified sequence. </td></tr>
@@ -117,7 +117,10 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_sequencer_base.wait_for_sequences" id=link27 onMouseOver="ShowTip(event, 'tt26', 'link27')" onMouseOut="HideTip('tt26')">wait_for_sequences</a></td><td class=SDescription>Waits for a sequence to have a new item available. </td></tr>
   <!-- index=23 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_sequencer_base.send_request" id=link28 onMouseOver="ShowTip(event, 'tt27', 'link28')" onMouseOut="HideTip('tt27')">send_request</a></td><td class=SDescription>Derived classes implement this function to send a request item to the sequencer, which will forward it to the driver. </td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_sequencer_base.send_request" id=link28 onMouseOver="ShowTip(event, 'tt27', 'link28')" onMouseOut="HideTip('tt27')">send_request</a></td><td class=SDescription>Derived classes implement this function to send a request item to the sequencer, which will forward it to the driver. </td></tr>
+  <!-- index=24 -->
+
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_sequencer_base.set_max_zero_time_wait_relevant_count" id=link29 onMouseOver="ShowTip(event, 'tt28', 'link29')" onMouseOut="HideTip('tt28')">set_max_zero_time_wait_relevant_count</a></td><td class=SDescription>Can be called at any time to change the maximum number of times wait_for_relevant() can be called by the sequencer in zero time before an error is declared. </td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -170,7 +173,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters nowrap>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>When the sequencer arbitration mode is set to UVM_SEQ_ARB_USER (via the <a href="#uvm_sequencer_base.set_arbitration" class=LMethod id=link29 onMouseOver="ShowTip(event, 'tt9', 'link29')" onMouseOut="HideTip('tt9')">set_arbitration</a> method), the sequencer will call this function each time that it needs to arbitrate among sequences.</p><p>Derived sequencers may override this method to perform a custom arbitration policy.&nbsp; The override must return one of the entries from the avail_sequences queue, which are indexes into an internal queue, arb_sequence_q.&nbsp; The</p><p>The default implementation behaves like UVM_SEQ_ARB_FIFO, which returns the entry at avail_sequences[0].</p></div></div></div>
+<div class=CBody><p>When the sequencer arbitration mode is set to UVM_SEQ_ARB_USER (via the <a href="#uvm_sequencer_base.set_arbitration" class=LMethod id=link30 onMouseOver="ShowTip(event, 'tt9', 'link30')" onMouseOut="HideTip('tt9')">set_arbitration</a> method), the sequencer will call this function each time that it needs to arbitrate among sequences.</p><p>Derived sequencers may override this method to perform a custom arbitration policy.&nbsp; The override must return one of the entries from the avail_sequences queue, which are indexes into an internal queue, arb_sequence_q.&nbsp; The</p><p>The default implementation behaves like UVM_SEQ_ARB_FIFO, which returns the entry at avail_sequences[0].</p></div></div></div>
 
 
 
@@ -217,7 +220,7 @@ uvm_resource_db #(uvm_sequence_base)::set({get_full_name(), &quot;.myseqr.main_p
 
 
  <!--CONTENT index=7 -->
-<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequencer_base.stop_phase_sequence(uvm_phase_phase)" href="../../src/seq/uvm_sequencer_base.svh">stop_phase_sequence(uvm_phase phase)</a></h3>
+<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequencer_base.stop_phase_sequence" href="../../src/seq/uvm_sequencer_base.svh">stop_phase_sequence</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters nowrap>virtual function void stop_phase_sequence(</td>      <td class=PType nowrap>uvm_phase&nbsp;</td>
@@ -403,7 +406,7 @@ uvm_resource_db #(uvm_sequence_base)::set({get_full_name(), &quot;.myseqr.main_p
  <!--CONTENT index=21 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequencer_base.get_arbitration" href="../../src/seq/uvm_sequencer_base.svh">get_arbitration</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function UVM_SEQ_ARB_TYPE get_arbitration()
-  </td></tr></table></blockquote><div class=CBody><p>Return the current arbitration mode set for this sequencer.&nbsp; See <a href="#uvm_sequencer_base.set_arbitration" class=LMethod id=link30 onMouseOver="ShowTip(event, 'tt9', 'link30')" onMouseOut="HideTip('tt9')">set_arbitration</a> for a list of possible modes.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Return the current arbitration mode set for this sequencer.&nbsp; See <a href="#uvm_sequencer_base.set_arbitration" class=LMethod id=link31 onMouseOver="ShowTip(event, 'tt9', 'link31')" onMouseOut="HideTip('tt9')">set_arbitration</a> for a list of possible modes.</p></div></div></div>
 
 
 
@@ -411,7 +414,7 @@ uvm_resource_db #(uvm_sequence_base)::set({get_full_name(), &quot;.myseqr.main_p
  <!--CONTENT index=22 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequencer_base.wait_for_sequences" href="../../src/seq/uvm_sequencer_base.svh">wait_for_sequences</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual task wait_for_sequences()
-  </td></tr></table></blockquote><div class=CBody><p>Waits for a sequence to have a new item available.&nbsp; Uses <a href="../base/uvm_globals-svh.html#uvm_wait_for_nba_region" class=LMethod id=link31 onMouseOver="ShowTip(event, 'tt28', 'link31')" onMouseOut="HideTip('tt28')">uvm_wait_for_nba_region</a> to give a sequence as much time as possible to deliver an item before advancing time.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Waits for a sequence to have a new item available.&nbsp; Uses <a href="../base/uvm_globals-svh.html#uvm_wait_for_nba_region" class=LMethod id=link32 onMouseOver="ShowTip(event, 'tt29', 'link32')" onMouseOut="HideTip('tt29')">uvm_wait_for_nba_region</a> to give a sequence as much time as possible to deliver an item before advancing time.</p></div></div></div>
 
 
 
@@ -435,7 +438,21 @@ uvm_resource_db #(uvm_sequence_base)::set({get_full_name(), &quot;.myseqr.main_p
       <td class=PAfterParameters nowrap>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Derived classes implement this function to send a request item to the sequencer, which will forward it to the driver.&nbsp;  If the rerandomize bit is set, the item will be randomized before being sent to the driver.</p><p>This function may only be called after a <a href="#uvm_sequencer_base.wait_for_grant" class=LMethod id=link32 onMouseOver="ShowTip(event, 'tt13', 'link32')" onMouseOut="HideTip('tt13')">wait_for_grant</a> call.</p></div></div></div>
+<div class=CBody><p>Derived classes implement this function to send a request item to the sequencer, which will forward it to the driver.&nbsp;  If the rerandomize bit is set, the item will be randomized before being sent to the driver.</p><p>This function may only be called after a <a href="#uvm_sequencer_base.wait_for_grant" class=LMethod id=link33 onMouseOver="ShowTip(event, 'tt13', 'link33')" onMouseOut="HideTip('tt13')">wait_for_grant</a> call.</p></div></div></div>
+
+
+
+
+ <!--CONTENT index=24 -->
+<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequencer_base.set_max_zero_time_wait_relevant_count" href="../../src/seq/uvm_sequencer_base.svh">set_max_zero_time_wait_relevant_count</a></h3>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>virtual function void set_max_zero_time_wait_relevant_count(</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap>new_val</td>
+      <td class=PAfterParameters nowrap>)</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+<div class=CBody><p>Can be called at any time to change the maximum number of times wait_for_relevant() can be called by the sequencer in zero time before an error is declared.&nbsp;  The default maximum is 10.</p></div></div></div>
 
 </div><!--Content-->
 
@@ -617,6 +634,14 @@ Removes any locks and grabs obtained by the specified sequence_ptr.</div></div><
       </table></td></tr>
     </table></blockquote>
 Derived classes implement this function to send a request item to the sequencer, which will forward it to the driver. </div></div><div class=CToolTip id="tt28"><div class=CMethod>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters nowrap>virtual function void set_max_zero_time_wait_relevant_count(</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap>new_val</td>
+      <td class=PAfterParameters nowrap>)</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+Can be called at any time to change the maximum number of times wait_for_relevant() can be called by the sequencer in zero time before an error is declared. </div></div><div class=CToolTip id="tt29"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>task uvm_wait_for_nba_region
   </td></tr></table></blockquote>Callers of this task will not return until the NBA region, thus allowing other processes any number of delta cycles (#0) to settle out before continuing. </div></div><!--END_ND_TOOLTIPS-->
 

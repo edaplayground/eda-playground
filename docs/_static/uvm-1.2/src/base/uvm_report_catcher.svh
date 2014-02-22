@@ -303,7 +303,7 @@ virtual class uvm_report_catcher extends uvm_callback;
 
   // Function: set_context
   //
-  // Change the context of the message to ~context~. Any other
+  // Change the context of the message to ~context_str~. Any other
   // report catchers will see the modified value.
 
   protected function void set_context(string context_str);
@@ -686,7 +686,7 @@ virtual class uvm_report_catcher extends uvm_callback;
 
   // Function: summarize
   //
-  // This function is called automatically by <uvm_report_server::summarize()>.
+  // This function is called automatically by <uvm_report_server::report_summarize()>.
   // It prints the statistics for the active catchers.
 
 

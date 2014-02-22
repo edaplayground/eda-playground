@@ -525,7 +525,7 @@ class uvm_report_message extends uvm_object;
 
   // Function: print
   //
-  // The uvm_report_messge implements the uvm_object::do_print() such that
+  // The uvm_report_message implements <uvm_object::do_print()> such that
   // uvm_report_message::print() method provides UVM printer formatted output
   // of the message.  A snippet of example output is shown here:
   //

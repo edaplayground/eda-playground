@@ -47,8 +47,7 @@ endclass
 //------------------------------------------------------------------------------
 //
 // As the name implies, uvm_factory is used to manufacture (create) UVM objects
-// and components. Only one instance of the factory is present in a given
-// simulation (termed a singleton). Object and component types are registered
+// and components. Object and component types are registered
 // with the factory using lightweight proxies to the actual objects and
 // components being created. The <uvm_object_registry #(T,Tname)> and
 // <uvm_component_registry #(T,Tname)> class are used to proxy <uvm_objects>
@@ -65,9 +64,14 @@ endclass
 //   if at all. Further, the name-based interface is not portable across
 //   simulators when used with parameterized classes.
 //
+//
+// The ~uvm_factory~ is an abstract class which declares many of its methods
+// as ~pure virtual~.  The UVM uses the <uvm_default_factory> class
+// as its default factory implementation.
+//   
 // See <Usage> section for details on configuring and using the factory.
 //
-
+  
 virtual class uvm_factory;
 
   // Group: Retrieving the factory
@@ -315,24 +319,22 @@ virtual class uvm_factory;
   pure  virtual function void print (int all_types=1);
 endclass 
     
-
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_default_factory
+//
+//------------------------------------------------------------------------------
+//
+// Default implementation of the UVM factory.
+   
 class uvm_default_factory extends uvm_factory;
 
   // Group: Registering Types
 
   // Function: register
   //
-  // Registers the given proxy object, ~obj~, with the factory. The proxy object
-  // is a lightweight substitute for the component or object it represents. When
-  // the factory needs to create an object of a given type, it calls the proxy's
-  // create_object or create_component method to do so.
-  //
-  // When doing name-based operations, the factory calls the proxy's
-  // get_type_name method to match against the ~requested_type_name~ argument in
-  // subsequent calls to <create_component_by_name> and <create_object_by_name>.
-  // If the proxy object's get_type_name method returns the empty string,
-  // name-based lookup is effectively disabled.
-
+  // Registers the given proxy object, ~obj~, with the factory.
+   
   extern virtual function void register (uvm_object_wrapper obj);
 
 
@@ -349,29 +351,7 @@ class uvm_default_factory extends uvm_factory;
   //
   // Configures the factory to create an object of the override's type whenever
   // a request is made to create an object of the original type using a context
-  // that matches ~full_inst_path~. The original type is typically a super class
-  // of the override type.
-  //
-  // When overriding by type, the ~original_type~ and ~override_type~ are
-  // handles to the types' proxy objects. Preregistration is not required.
-  //
-  // When overriding by name, the ~original_type_name~ typically refers to a
-  // preregistered type in the factory. It may, however, be any arbitrary
-  // string. Future calls to any of the create_* methods with the same string
-  // and matching instance path will produce the type represented by
-  // ~override_type_name~, which must be preregistered with the factory.
-  //
-  // The ~full_inst_path~ is matched against the contentation of
-  // {~parent_inst_path~, ".", ~name~} provided in future create requests. The
-  // ~full_inst_path~ may include wildcards (* and ?) such that a single
-  // instance override can be applied in multiple contexts. A ~full_inst_path~
-  // of "*" is effectively a type override, as it will match all contexts.
-  //
-  // When the factory processes instance overrides, the instance queue is
-  // processed in order of override registrations, and the first override
-  // match prevails. Thus, more specific overrides should be registered
-  // first, followed by more general overrides.
-
+  // that matches ~full_inst_path~. 
   extern virtual function
       void set_inst_override_by_name (string original_type_name,
                                       string override_type_name,
@@ -389,21 +369,8 @@ class uvm_default_factory extends uvm_factory;
   //
   // Configures the factory to create an object of the override's type whenever
   // a request is made to create an object of the original type, provided no
-  // instance override applies. The original type is typically a super class of
-  // the override type.
-  //
-  // When overriding by type, the ~original_type~ and ~override_type~ are
-  // handles to the types' proxy objects. Preregistration is not required.
-  //
-  // When overriding by name, the ~original_type_name~ typically refers to a
-  // preregistered type in the factory. It may, however, be any arbitrary
-  // string. Future calls to any of the create_* methods with the same string
-  // and matching instance path will produce the type represented by
-  // ~override_type_name~, which must be preregistered with the factory.
-  //
-  // When ~replace~ is 1, a previous override on ~original_type_name~ is
-  // replaced, otherwise a previous override, if any, remains intact.
-
+  // instance override applies.
+   
   extern virtual function
       void set_type_override_by_name (string original_type_name,
                                       string override_type_name,
@@ -437,39 +404,8 @@ class uvm_default_factory extends uvm_factory;
   // Function: create_component_by_name
   //
   // Creates and returns a component or object of the requested type, which may
-  // be specified by type or by name. A requested component must be derived
-  // from the <uvm_component> base class, and a requested object must be derived
-  // from the <uvm_object> base class.
-  //
-  // When requesting by type, the ~requested_type~ is a handle to the type's
-  // proxy object. Preregistration is not required.
-  //
-  // When requesting by name, the ~request_type_name~ is a string representing
-  // the requested type, which must have been registered with the factory with
-  // that name prior to the request. If the factory does not recognize the
-  // ~requested_type_name~, an error is produced and a null handle returned.
-  //
-  // If the optional ~parent_inst_path~ is provided, then the concatenation,
-  // {~parent_inst_path~, ".",~name~}, forms an instance path (context) that
-  // is used to search for an instance override. The ~parent_inst_path~ is
-  // typically obtained by calling the <uvm_component::get_full_name> on the
-  // parent.
-  //
-  // If no instance override is found, the factory then searches for a type
-  // override.
-  //
-  // Once the final override is found, an instance of that component or object
-  // is returned in place of the requested type. New components will have the
-  // given ~name~ and ~parent~. New objects will have the given ~name~, if
-  // provided.
-  //
-  // Override searches are recursively applied, with instance overrides taking
-  // precedence over type overrides. If ~foo~ overrides ~bar~, and ~xyz~
-  // overrides ~foo~, then a request for ~bar~ will produce ~xyz~. Recursive
-  // loops will result in an error, in which case the type returned will be
-  // that which formed the loop. Using the previous example, if ~bar~
-  // overrides ~xyz~, then ~bar~ is returned after the error is issued.
-
+  // be specified by type or by name.
+   
   extern virtual function
       uvm_component create_component_by_name (string requested_type_name,  
                                               string parent_inst_path="",
@@ -488,11 +424,7 @@ class uvm_default_factory extends uvm_factory;
   // Function: debug_create_by_name
   //
   // These methods perform the same search algorithm as the create_* methods,
-  // but they do not create new objects. Instead, they provide detailed
-  // information about what type of object it would return, listing each
-  // override that was applied to arrive at the result. Interpretation of the
-  // arguments are exactly as with the create_* methods.
-
+  // but they do not create new objects. 
   extern virtual function
       void debug_create_by_name (string requested_type_name,
                                  string parent_inst_path="",
@@ -508,10 +440,8 @@ class uvm_default_factory extends uvm_factory;
   // Function: find_override_by_name
   //
   // These methods return the proxy to the object that would be created given
-  // the arguments. The ~full_inst_path~ is typically derived from the parent's
-  // instance path and the leaf name of the object to be created, i.e.
-  // { parent.get_full_name(), ".", name }.
-
+  // the arguments.
+   
   extern virtual function
       uvm_object_wrapper find_override_by_name (string requested_type_name,
                                                 string full_inst_path);
@@ -524,12 +454,6 @@ class uvm_default_factory extends uvm_factory;
   // Prints the state of the uvm_factory, including registered types, instance
   // overrides, and type overrides.
   //
-  // When ~all_types~ is 0, only type and instance overrides are displayed. When
-  // ~all_types~ is 1 (default), all registered user-defined types are printed as
-  // well, provided they have names associated with them. When ~all_types~ is 2,
-  // the UVM types (prefixed with uvm_) are included in the list of registered
-  // types.
-
   extern  virtual function void print (int all_types=1);
 
 

@@ -3,6 +3,7 @@
 //   Copyright 2007-2010 Mentor Graphics Corporation
 //   Copyright 2007-2011 Cadence Design Systems, Inc.
 //   Copyright 2010 Synopsys, Inc.
+//   Copyright 2014 NVIDIA Corportation
 //   All Rights Reserved Worldwide
 //
 //   Licensed under the Apache License, Version 2.0 (the
@@ -22,9 +23,9 @@
 
 //------------------------------------------------------------------------------
 //
-// CLASS: uvm_event
+// CLASS: uvm_event_base
 //
-// The uvm_event class is a wrapper class around the SystemVerilog event
+// The uvm_event_base class is an abstract wrapper class around the SystemVerilog event
 // construct.  It provides some additional services such as setting callbacks
 // and maintaining the number of waiters.
 //
@@ -239,6 +240,16 @@ virtual class uvm_event_base extends uvm_object;
 
 endclass
 
+
+//------------------------------------------------------------------------------
+//
+// CLASS: uvm_event#(T)
+//
+// The uvm_event class is an extension of the abstract uvm_event_base class.  
+// 
+// The optional parameter ~T~ allows the user to define a data type which
+// can be passed during an event trigger.
+//------------------------------------------------------------------------------
 
 class uvm_event#(type T=uvm_object) extends uvm_event_base;
 

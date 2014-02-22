@@ -3,7 +3,7 @@
 //   Copyright 2007-2011 Mentor Graphics Corporation
 //   Copyright 2007-2011 Cadence Design Systems, Inc.
 //   Copyright 2010-2011 Synopsys, Inc.
-//   Copyright 2013      NVIDIA Corporation
+//   Copyright 2013-2014 NVIDIA Corporation
 //   All Rights Reserved Worldwide
 //
 //   Licensed under the Apache License, Version 2.0 (the
@@ -499,7 +499,7 @@ function automatic void uvm_split_string (string str, byte sep, ref string value
   end
 endfunction
 
-// Class: uvm_enum_wrapper
+// Class: uvm_enum_wrapper#(T)
 
 // The ~uvm_enum_wrapper#(T)~ class is a utility mechanism provided
 // as a convenience to the end user.  It provides a ~from_name~

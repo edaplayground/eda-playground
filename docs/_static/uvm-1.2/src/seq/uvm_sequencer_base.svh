@@ -2,7 +2,7 @@
 //   Copyright 2007-2011 Mentor Graphics Corporation
 //   Copyright 2007-2011 Cadence Design Systems, Inc. 
 //   Copyright 2010-2011 Synopsys, Inc.
-//   Copyright 2013      NVIDIA Corporation
+//   Copyright 2013-2014 NVIDIA Corporation
 //   All Rights Reserved Worldwide
 //
 //   Licensed under the Apache License, Version 2.0 (the
@@ -168,7 +168,7 @@ class uvm_sequencer_base extends uvm_component;
 
   extern virtual function void start_phase_sequence(uvm_phase phase);
 
-  // Function: stop_phase_sequence(uvm_phase phase)
+  // Function: stop_phase_sequence
   //
   // Stop the default sequence for this phase, if any exists, and it
   // is still executing.
@@ -360,7 +360,7 @@ class uvm_sequencer_base extends uvm_component;
                                             uvm_sequence_item t,
                                             bit rerandomize = 0);
 
-  // Function set_max_zero_time_wait_relevant_count
+  // Function: set_max_zero_time_wait_relevant_count
   //
   // Can be called at any time to change the maximum number of times 
   // wait_for_relevant() can be called by the sequencer in zero time before

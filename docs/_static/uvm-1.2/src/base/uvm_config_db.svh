@@ -1,6 +1,7 @@
 //----------------------------------------------------------------------
 //   Copyright 2011 Cypress Semiconductor
 //   Copyright 2010-2011 Mentor Graphics Corporation
+//   Copyright 2014 NVIDIA Corporation
 //   All Rights Reserved Worldwide
 //
 //   Licensed under the Apache License, Version 2.0 (the
@@ -304,32 +305,38 @@ class uvm_config_db#(type T=int) extends uvm_resource_db#(T);
 
 endclass
 
+// Section: Types
+   
 //----------------------------------------------------------------------
-// Type: uvm_config_int
+// Topic: uvm_config_int
 //
 // Convenience type for uvm_config_db#(uvm_bitstream_t)
 //
+//| typedef uvm_config_db#(uvm_bitstream_t) uvm_config_int;
 typedef uvm_config_db#(uvm_bitstream_t) uvm_config_int;
 
 //----------------------------------------------------------------------
-// Type: uvm_config_string
+// Topic: uvm_config_string
 //
 // Convenience type for uvm_config_db#(string)
 //
+//| typedef uvm_config_db#(string) uvm_config_string;
 typedef uvm_config_db#(string) uvm_config_string;
 
 //----------------------------------------------------------------------
-// Type: uvm_config_object
+// Topic: uvm_config_object
 //
 // Convenience type for uvm_config_db#(uvm_object)
 //
+//| typedef uvm_config_db#(uvm_object) uvm_config_object;
 typedef uvm_config_db#(uvm_object) uvm_config_object;
 
 //----------------------------------------------------------------------
-// Type: uvm_config_wrapper
+// Topic: uvm_config_wrapper
 //
 // Convenience type for uvm_config_db#(uvm_object_wrapper)
 //
+//| typedef uvm_config_db#(uvm_object_wrapper) uvm_config_wrapper;   
 typedef uvm_config_db#(uvm_object_wrapper) uvm_config_wrapper;
 
 
