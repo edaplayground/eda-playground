@@ -76,6 +76,11 @@ What Users are Saying
    I find EDAPlayground.com is much easier than logging into my Unix machines."
 
    -- Subhash Bhogadi, Verification Consultant
+   
+   "I just wanted to thank you a lot for creating EDA Playground. I've been using it a lot lately together with
+   StackOverflow and it makes asking and answering questions much easier."
+   
+   -- Tudor Timisescu, System Verification Engineer at Infineon Technologies
 
 ******************
 Tools & Simulators
