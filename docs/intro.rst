@@ -76,10 +76,10 @@ What Users are Saying
    I find EDAPlayground.com is much easier than logging into my Unix machines."
 
    -- Subhash Bhogadi, Verification Consultant
-   
+
    "I just wanted to thank you a lot for creating EDA Playground. I've been using it a lot lately together with
    StackOverflow and it makes asking and answering questions much easier."
-   
+
    -- Tudor Timisescu, System Verification Engineer at Infineon Technologies
 
 ******************
@@ -159,6 +159,10 @@ Available libraries and methodologies:
 
   * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
   * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
+
+* `svlib <http://www.verilab.com/resources/svlib/>`_ - A Programmer's Utility Library for SystemVerilog
+
+  * :download:`svlib User Guide <_static/svlib-userguide-0.2.pdf>`
 
 * `SystemC <http://www.accellera.org/downloads/standards/systemc>`_ - system level design and simulation in C++
 
