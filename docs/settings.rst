@@ -72,6 +72,7 @@ UVM / OVM (SystemVerilog)
 When language is *Verilog/SystemVerilog*, a UVM or OVM library can be used for both the design and testbench.
 The following libraries are available:
 
+* UVM 1.2
 * UVM 1.1d
 * OVM 2.1.2
 
@@ -84,6 +85,8 @@ These libraries may be used along with UVM/OVM. Multiple libraries may be select
 
 * OVL 2.7
 * SVUnit 2.5
+* ClueLib 0.1.0
+* svlib 0.2
 
 Libraries (VHDL)
 ----------------
@@ -102,6 +105,7 @@ Methodology (Python + Verilog or Python only)
 
 When testbench language is *Python* and design language is *Verilog/SystemVerilog*, the following verification environments are available:
 
+* cocotb 0.4
 * cocotb 0.3
 * cocotb 0.2
 

@@ -160,6 +160,10 @@ Available libraries and methodologies:
   * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
   * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
 
+* `ClueLib <https://github.com/cluelogic/cluelib>`_ - A generic class library in SystemVerilog
+
+  * `ClueLib API Documentation <http://cluelogic.com/tools/cluelib/api/framed_html/index.html>`_
+
 * `svlib <http://www.verilab.com/resources/svlib/>`_ - A Programmer's Utility Library for SystemVerilog
 
   * :download:`svlib User Guide <_static/svlib-userguide-0.2.pdf>`
