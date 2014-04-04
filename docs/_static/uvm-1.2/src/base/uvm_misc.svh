@@ -21,10 +21,11 @@
 //   permissions and limitations under the License.
 //------------------------------------------------------------------------------
 
+// File: Miscellaneous Structures
 
 //------------------------------------------------------------------------------
 //
-// Topic: uvm_void
+// Class: uvm_void
 //
 // The ~uvm_void~ class is the base class for all UVM classes. It is an abstract
 // class with no data members or functions. It allows for generic containers of
@@ -459,7 +460,7 @@ function string uvm_leaf_scope (string full_name, byte scope_separator = ".");
   if(bracket_match != "" && bracket_match != full_name[full_name.len()-1])
     bracket_match = "";
 
-  for(pos=full_name.len()-1; pos!=0; --pos) begin
+  for(pos=full_name.len()-1; pos>0; --pos) begin
     if(full_name[pos] == bracket_match) bmatches++;
     else if(full_name[pos] == scope_separator) begin
       bmatches--;

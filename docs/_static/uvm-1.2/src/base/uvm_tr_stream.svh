@@ -546,7 +546,7 @@ class uvm_text_tr_stream extends uvm_tr_stream;
    endfunction : do_open
 
    // Function: do_close
-   // Callback triggered via <uvm_tr_database::close_stream>.
+   // Callback triggered via <uvm_tr_stream::close>.
    protected virtual function void do_close();
       if (m_text_db.open_db())
         $fdisplay(m_text_db.m_file,
@@ -559,7 +559,7 @@ class uvm_text_tr_stream extends uvm_tr_stream;
    endfunction : do_close
       
    // Function: do_free
-   // Callback triggered via <uvm_tr_database::free_stream>.
+   // Callback triggered via <uvm_tr_stream::free>.
    //
    protected virtual function void do_free();
       if (m_text_db.open_db())

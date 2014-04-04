@@ -176,7 +176,7 @@ endclass
 // standard TLM interfaces. They can be found in the ../src/tlm/ directory.
 // For the TLM interfaces, the IF parameter is always <uvm_tlm_if_base #(T1,T2)>.
 //
-// Just before <uvm_component::end_of_elaboration>, an internal
+// Just before <uvm_component::end_of_elaboration_phase>, an internal
 // <uvm_component::resolve_bindings> process occurs, after which each port and
 // export holds a list of all imps connected to it via hierarchical connections
 // to other ports and exports. In effect, we are collapsing the port's fanout,
@@ -226,7 +226,7 @@ virtual class uvm_port_base #(type IF=uvm_void) extends IF;
   //
   // By default, the parent/child relationship of any port being connected to
   // this port is not checked. This can be overridden by configuring the
-  // port's ~check_connection_relationships~ bit via <uvm_config_int::set()>. See
+  // port's ~check_connection_relationships~ bit via ~uvm_config_int::set()~. See
   // <connect> for more information.
 
   function new (string name,
@@ -425,7 +425,7 @@ virtual class uvm_port_base #(type IF=uvm_void) extends IF;
   //
   // If any relationship check is violated, a warning is issued.
   //
-  // Note- the <uvm_component::connect> method is related to but not the same
+  // Note- the <uvm_component::connect_phase> method is related to but not the same
   // as this method. The component's connect method is a phase callback where
   // port's connect method calls are made.
 

@@ -35,7 +35,7 @@
 // interfaces.
 //
 // Resources are stored in a resource database so that each resource can
-// be retrieved by name or by type. The databse has both a name table
+// be retrieved by name or by type. The database has both a name table
 // and a type table and each resource is entered into both. The database
 // is globally accessible.
 //
@@ -88,7 +88,7 @@
 // <uvm_resource#(T)>: parameterized resource container.  This class
 // includes the interfaces for reading and writing each resource.
 // Because the class is parameterized, all the access functions are type
-// sace.
+// safe.
 //
 // <uvm_resource_pool>: the resource database. This is a singleton
 // class object.
@@ -365,13 +365,13 @@ virtual class uvm_resource_base extends uvm_object;
   // are treated as glob expressions. They are converted from glob 
   // notation to regular expression notation internally.  Regular expression 
   // compilation and matching as well as glob-to-regular expression 
-  // conversion are handled by three DPI functions:
+  // conversion are handled by two DPI functions:
   // 
   //|    function int uvm_re_match(string re, string str);
   //|    function string uvm_glob_to_re(string glob);
   // 
   // uvm_re_match both compiles and matches the regular expression.
-  // of the matching is done using regular expressions, so globs are
+  // All of the matching is done using regular expressions, so globs are
   // converted to regular expressions and then processed.
 
 
@@ -602,7 +602,7 @@ endclass
 // resource pool contains two associative arrays, one with name as the
 // key and one with the type handle as the key.  Each associative array
 // contains a queue of resources.  Each resource has a regular
-// expression that represents the set of scopes over with it is visible.
+// expression that represents the set of scopes over which it is visible.
 //
 //|  +------+------------+                          +------------+------+
 //|  | name | rsrc queue |                          | rsrc queue | type |
@@ -880,9 +880,10 @@ class uvm_resource_pool;
 
     // Does an entry in the name map exist with the specified name?
     // If not, then we're done
-    if((rpterr && !spell_check(name)) || (!rpterr && !rtab.exists(name))) begin
-      return q;
-    end
+    if(!rtab.exists(name)) begin
+	    if(rpterr) void'(spell_check(name));	
+		return q;
+    end	
 
     rsrc = null;
     rq = rtab[name];

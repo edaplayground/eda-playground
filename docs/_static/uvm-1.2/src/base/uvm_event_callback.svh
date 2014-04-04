@@ -28,7 +28,7 @@ typedef class uvm_event;
 // CLASS: uvm_event_callback
 //
 // The uvm_event_callback class is an abstract class that is used to create
-// callback objects which may be attached to <uvm_events>. To use, you
+// callback objects which may be attached to <uvm_event#(T)>s. To use, you
 // derive a new class and override any or both <pre_trigger> and <post_trigger>.
 //
 // Callbacks are an alternative to using processes that wait on events. When a
@@ -58,7 +58,7 @@ virtual class uvm_event_callback#(type T=uvm_object) extends uvm_object;
   // post-trigger callback is not called. This provides a way for a callback
   // to prevent the event from triggering.
   //
-  // In the function, ~e~ is the <uvm_event> that is being triggered, and ~data~
+  // In the function, ~e~ is the <uvm_event#(T)> that is being triggered, and ~data~
   // is the optional data associated with the event trigger.
 
   virtual function bit pre_trigger (uvm_event#(T) e, T data);
@@ -73,7 +73,7 @@ virtual class uvm_event_callback#(type T=uvm_object) extends uvm_object;
   // functionality.
   //
   //
-  // In the function, ~e~ is the <uvm_event> that is being triggered, and ~data~
+  // In the function, ~e~ is the <uvm_event#(T)> that is being triggered, and ~data~
   // is the optional data associated with the event trigger.
 
   virtual function void post_trigger (uvm_event#(T) e, T data);

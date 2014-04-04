@@ -401,7 +401,7 @@
 //
 // |`uvm_info_context_end
 //
-// This macro pair operates identically to i<`uvm_info_begin>/<`uvm_info_end>, but 
+// This macro pair operates identically to <`uvm_info_begin>/<`uvm_info_end>, but 
 // requires that the context, or <uvm_report_object> in which the message is printed
 // be explicitly supplied as a macro argument.
 //
@@ -422,7 +422,7 @@
 //
 // |`uvm_warning_context_end
 //
-// This macro pair operates identically to i<`uvm_warning_begin>/<`uvm_warning_end>, but 
+// This macro pair operates identically to <`uvm_warning_begin>/<`uvm_warning_end>, but 
 // requires that the context, or <uvm_report_object> in which the message is printed
 // be explicitly supplied as a macro argument.
 //
@@ -466,7 +466,7 @@
 //
 // |`uvm_fatal_context_end
 //
-// This macro pair operates identically to i<`uvm_fatal_begin>/<`uvm_fatal_end>, but 
+// This macro pair operates identically to <`uvm_fatal_begin>/<`uvm_fatal_end>, but 
 // requires that the context, or <uvm_report_object> in which the message is printed
 // be explicitly supplied as a macro argument.
 //

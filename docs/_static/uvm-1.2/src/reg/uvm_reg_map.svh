@@ -587,7 +587,7 @@ class uvm_reg_map extends uvm_object;
    // a register or field against the current value in its mirror
    // and report any discrepancy.
    // This effectively combines the functionality of the
-   // <uvm_reg::read()> and <uvm_reg::mirror(UVM_CHECK)> method.
+   // <uvm_reg::read()> and ~uvm_reg::mirror(UVM_CHECK)~ method.
    // This mode is useful when the register model is used passively.
    //
    // When ~on~ is ~FALSE~, no check is made against the mirrored value.
@@ -1013,11 +1013,14 @@ function void uvm_reg_map::add_submap (uvm_reg_map child_map,
                    "' because it does not have a parent block"})
         return;
      end
-     if (get_parent() != child_blk.get_parent()) begin
+     while((child_blk!=null) && (child_blk.get_parent() != get_parent()))
+	     	child_blk = child_blk.get_parent();
+     
+     if (child_blk==null) begin
         `uvm_error("RegModel",
           {"Submap '",child_map.get_full_name(),"' may not be added to this ",
           "address map, '", get_full_name(),"', as the submap's parent block, '",
-          child_blk.get_full_name(),"', is not a child of this map's parent block, '",
+          child_blk.get_full_name(),"', is neither this map's parent block nor a descendent of this map's parent block, '",
           m_parent.get_full_name(),"'"})
       return;
      end

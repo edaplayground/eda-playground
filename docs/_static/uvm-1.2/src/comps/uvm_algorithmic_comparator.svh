@@ -20,7 +20,7 @@
 //   permissions and limitations under the License.
 //------------------------------------------------------------------------------
 
-// Group: Comparators
+// File: Algorithmic Comparator
 //
 // A common function of testbenches is to compare streams of transactions for
 // equivalence. For example, a testbench may compare a stream of transactions

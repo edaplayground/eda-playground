@@ -202,7 +202,7 @@ virtual class uvm_reg extends uvm_object;
    // parent block is used.
    //
    // Whether a register field can be read or written depends on both the field's
-   // configured access policy (see <uvm_reg_field::configure>) and the register's
+   // configured access policy (refer to <uvm_reg_field::configure>) and the register's
    // accessibility rights in the map being used to access the field. 
    //
    // If an address map is specified and

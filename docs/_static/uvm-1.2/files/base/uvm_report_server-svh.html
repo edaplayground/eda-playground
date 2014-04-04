@@ -117,15 +117,17 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.set_max_quit_count" href="../../src/base/uvm_report_server.svh">set_max_quit_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_max_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void set_max_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>count,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>overridable</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p><i>count</i> is the maximum number of <i>UVM_QUIT</i> actions the uvm_report_server will tolerate before before invoking client.die(). when <i>overridable</i> = 0 is passed, the set quit count cannot be changed again</p></div></div></div>
@@ -145,9 +147,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.set_quit_count" href="../../src/base/uvm_report_server.svh">set_quit_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>quit_count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>quit_count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>sets the current number of <i>UVM_QUIT</i> actions already passed through this uvm_report_server</p></div></div></div>
@@ -167,11 +171,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.set_severity_count" href="../../src/base/uvm_report_server.svh">set_severity_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>sets the count of already passed messages with severity <i>severity</i> to <i>count</i></p></div></div></div>
@@ -183,9 +189,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.get_severity_count" href="../../src/base/uvm_report_server.svh">get_severity_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function int get_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function int get_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>returns the count of already passed messages with severity <i>severity</i></p></div></div></div>
@@ -197,11 +205,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.set_id_count" href="../../src/base/uvm_report_server.svh">set_id_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>sets the count of already passed messages with <i>id</i> to <i>count</i></p></div></div></div>
@@ -213,9 +223,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.get_id_count" href="../../src/base/uvm_report_server.svh">get_id_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function int get_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function int get_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>returns the count of already passed messages with <i>id</i></p></div></div></div>
@@ -227,10 +239,12 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.get_id_set" href="../../src/base/uvm_report_server.svh">get_id_set</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_id_set(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_id_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>returns the set of id&rsquo;s already used by this uvm_report_server</p></div></div></div>
@@ -242,10 +256,12 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.get_severity_set" href="../../src/base/uvm_report_server.svh">get_severity_set</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_severity_set(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_severity_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>returns the set of severities&rsquo;s already used by this uvm_report_server</p></div></div></div>
@@ -257,9 +273,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.set_message_database" href="../../src/base/uvm_report_server.svh">set_message_database</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_message_database(</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
-      <td class=PParameter nowrap>database</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_message_database(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
+      <td class=PParameter nowrap width=100%>database</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>sets the <a href="uvm_tr_database-svh.html#uvm_tr_database" class=LClass id=link23 onMouseOver="ShowTip(event, 'tt13', 'link23')" onMouseOut="HideTip('tt13')">uvm_tr_database</a> used for recording messages</p></div></div></div>
@@ -279,9 +297,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.do_copy" href="../../src/base/uvm_report_server.svh">do_copy</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void do_copy (</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>rhs</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void do_copy (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>rhs</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>copies all message statistic severity,id counts to the dest uvm_report_server the copy is cummulative (only items from the source are transfered, already existing entries are not deleted, existing entries/counts are overridden when they exist in the source set)</p></div></div></div>
@@ -333,10 +353,12 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.report_summarize" href="../../src/base/uvm_report_server.svh">report_summarize</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void report_summarize(</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
-      <td class=PParameter nowrap>file</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void report_summarize(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
+      <td class=PParameter nowrap width=100%>file</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Outputs statistical information on the reports issued by this central report server.&nbsp; This information will be sent to the command line if <i>file</i> is 0, or to the file descriptor <i>file</i> if it is not 0.</p><p>The run_test method in uvm_top calls this method.</p></div></div></div>
@@ -348,9 +370,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_server.set_server" href="../../src/base/uvm_report_server.svh">set_server</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_server(</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
-      <td class=PParameter nowrap>server</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function void set_server(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
+      <td class=PParameter nowrap width=100%>server</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Sets the global report server to use for reporting.</p><p>This method is provided as a convenience wrapper around setting the report server via the <a href="uvm_coreservice-svh.html#uvm_coreservice_t.set_report_server" class=LMethod id=link25 onMouseOver="ShowTip(event, 'tt21', 'link25')" onMouseOut="HideTip('tt21')">uvm_coreservice_t::set_report_server</a> method.</p><p>In addition to setting the server this also copies the severity/id counts from the current report_server to the new one</p><blockquote><pre>// Using the uvm_coreservice_t:
@@ -541,11 +565,13 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.new" href="../../src/base/uvm_report_server.svh">new</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;uvm_report_server&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Creates an instance of the class.</p></div></div></div>
@@ -593,15 +619,17 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.set_max_quit_count" href="../../src/base/uvm_report_server.svh">set_max_quit_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_max_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void set_max_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>count,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>overridable</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Get or set the maximum number of COUNT actions that can be tolerated before an UVM_EXIT action is taken.&nbsp; The default is 0, which specifies no maximum.</p></div></div></div>
@@ -621,9 +649,11 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.set_quit_count" href="../../src/base/uvm_report_server.svh">set_quit_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>quit_count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void set_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>quit_count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody></div></div></div>
@@ -665,9 +695,11 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.get_severity_count" href="../../src/base/uvm_report_server.svh">get_severity_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody></div></div></div>
@@ -679,11 +711,13 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.set_severity_count" href="../../src/base/uvm_report_server.svh">set_severity_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void set_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody></div></div></div>
@@ -695,9 +729,11 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.incr_severity_count" href="../../src/base/uvm_report_server.svh">incr_severity_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void incr_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void incr_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody></div></div></div>
@@ -723,9 +759,11 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.get_id_count" href="../../src/base/uvm_report_server.svh">get_id_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody></div></div></div>
@@ -737,11 +775,13 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.set_id_count" href="../../src/base/uvm_report_server.svh">set_id_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void set_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody></div></div></div>
@@ -753,9 +793,11 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.incr_id_count" href="../../src/base/uvm_report_server.svh">incr_id_count</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void incr_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void incr_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Set, get, or increment the counter for reports with the given id.</p></div></div></div>
@@ -773,9 +815,11 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.set_message_database" href="../../src/base/uvm_report_server.svh">set_message_database</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_message_database(</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
-      <td class=PParameter nowrap>database</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_message_database(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
+      <td class=PParameter nowrap width=100%>database</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>sets the <a href="uvm_tr_database-svh.html#uvm_tr_database" class=LClass id=link55 onMouseOver="ShowTip(event, 'tt13', 'link55')" onMouseOut="HideTip('tt13')">uvm_tr_database</a> used for recording messages</p></div></div></div>
@@ -801,11 +845,13 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.execute_report_message" href="../../src/base/uvm_report_server.svh">execute_report_message</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void execute_report_message(</td>      <td class=PType nowrap>uvm_report_message&nbsp;</td>
-      <td class=PParameter nowrap>report_message,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>composed_message</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void execute_report_message(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_message&nbsp;</td>
+      <td class=PParameter nowrap width=100%>report_message,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>composed_message</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Processes the provided message per the actions contained within.</p><p>Expert users can overload this method to customize action processing.</p></div></div></div>
@@ -839,10 +885,12 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_report_server.report_summarize" href="../../src/base/uvm_report_server.svh">report_summarize</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void report_summarize(</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
-      <td class=PParameter nowrap>file</td>
+      <td class=PBeforeParameters colspan=4>virtual function void report_summarize(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
+      <td class=PParameter nowrap width=100%>file</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Outputs statistical information on the reports issued by this central report server.&nbsp; This information will be sent to the command line if <i>file</i> is 0, or to the file descriptor <i>file</i> if it is not 0.</p><p>The run_test method in uvm_top calls this method.</p></div></div></div>
@@ -857,15 +905,17 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
   </td></tr></table></blockquote>Default implementation of the UVM report server.</div></div><div class=CToolTip id="tt2"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_max_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void set_max_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>count,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>overridable</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <i>count</i> is the maximum number of <i>UVM_QUIT</i> actions the uvm_report_server will tolerate before before invoking client.die(). </div></div><div class=CToolTip id="tt3"><div class=CMethod>
@@ -873,9 +923,11 @@ rs = uvm_report_server::get_server();</pre></blockquote></div></div></div>
   </td></tr></table></blockquote>returns the currently configured max quit count</div></div><div class=CToolTip id="tt4"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>quit_count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>quit_count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 sets the current number of <i>UVM_QUIT</i> actions already passed through this uvm_report_server</div></div><div class=CToolTip id="tt5"><div class=CMethod>
@@ -883,63 +935,77 @@ sets the current number of <i>UVM_QUIT</i> actions already passed through this u
   </td></tr></table></blockquote>returns the current number of <i>UVM_QUIT</i> actions already passed through this server</div></div><div class=CToolTip id="tt6"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 sets the count of already passed messages with severity <i>severity</i> to <i>count</i></div></div><div class=CToolTip id="tt7"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function int get_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function int get_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the count of already passed messages with severity <i>severity</i></div></div><div class=CToolTip id="tt8"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 sets the count of already passed messages with <i>id</i> to <i>count</i></div></div><div class=CToolTip id="tt9"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function int get_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function int get_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the count of already passed messages with <i>id</i></div></div><div class=CToolTip id="tt10"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_id_set(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_id_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the set of id&rsquo;s already used by this uvm_report_server</div></div><div class=CToolTip id="tt11"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_severity_set(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_severity_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the set of severities&rsquo;s already used by this uvm_report_server</div></div><div class=CToolTip id="tt12"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_message_database(</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
-      <td class=PParameter nowrap>database</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_message_database(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
+      <td class=PParameter nowrap width=100%>database</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 sets the uvm_tr_database used for recording messages</div></div><div class=CToolTip id="tt13"><div class=CClass>
@@ -949,9 +1015,11 @@ sets the uvm_tr_database used for recording messages</div></div><div class=CTool
   </td></tr></table></blockquote>returns the uvm_tr_database used for recording messages</div></div><div class=CToolTip id="tt15"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void do_copy (</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>rhs</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void do_copy (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>rhs</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 copies all message statistic severity,id counts to the dest uvm_report_server the copy is cummulative (only items from the source are transfered, already existing entries are not deleted, existing entries/counts are overridden when they exist in the source set)</div></div><div class=CToolTip id="tt16"><div class=CMethod>
@@ -985,18 +1053,22 @@ Processes the provided message per the actions contained within.</div></div><div
 Constructs the actual string sent to the file or command line from the severity, component name, report id, and the message itself.</div></div><div class=CToolTip id="tt18"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void report_summarize(</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
-      <td class=PParameter nowrap>file</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void report_summarize(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
+      <td class=PParameter nowrap width=100%>file</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Outputs statistical information on the reports issued by this central report server. </div></div><div class=CToolTip id="tt19"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_server(</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
-      <td class=PParameter nowrap>server</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function void set_server(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
+      <td class=PParameter nowrap width=100%>server</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Sets the global report server to use for reporting.</div></div><div class=CToolTip id="tt20"><div class=CMethod>
@@ -1004,9 +1076,11 @@ Sets the global report server to use for reporting.</div></div><div class=CToolT
   </td></tr></table></blockquote>Gets the global report server used for reporting.</div></div><div class=CToolTip id="tt21"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_report_server(</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
-      <td class=PParameter nowrap>server</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_report_server(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
+      <td class=PParameter nowrap width=100%>server</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 intended to set the central report server to <i>server</i></div></div><div class=CToolTip id="tt22"><div class=CMethod>
@@ -1022,11 +1096,13 @@ intended to set the central report server to <i>server</i></div></div><div class
   </td></tr></table></blockquote>A flag to add a terminator in the messages, e.g.</div></div><div class=CToolTip id="tt28"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;uvm_report_server&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Creates an instance of the class.</div></div><div class=CToolTip id="tt29"><div class=CMethod>
@@ -1034,15 +1110,17 @@ Creates an instance of the class.</div></div><div class=CToolTip id="tt29"><div 
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt30"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_max_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void set_max_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>count,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>overridable</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get or set the maximum number of COUNT actions that can be tolerated before an UVM_EXIT action is taken. </div></div><div class=CToolTip id="tt31"><div class=CMethod>
@@ -1050,9 +1128,11 @@ Get or set the maximum number of COUNT actions that can be tolerated before an U
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt32"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_quit_count(</td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>quit_count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void set_quit_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>quit_count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt33"><div class=CMethod>
@@ -1064,27 +1144,33 @@ Get or set the maximum number of COUNT actions that can be tolerated before an U
   </td></tr></table></blockquote>If is_quit_count_reached returns 1, then the quit counter has reached the maximum.</div></div><div class=CToolTip id="tt36"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt37"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void set_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt38"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void incr_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void incr_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt39"><div class=CMethod>
@@ -1092,35 +1178,43 @@ Get or set the maximum number of COUNT actions that can be tolerated before an U
   </td></tr></table></blockquote>Set, get, or increment the counter for the given severity, or reset all severity counters to 0.</div></div><div class=CToolTip id="tt40"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt41"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void set_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>count</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void set_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>count</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt42"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void incr_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void incr_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Set, get, or increment the counter for reports with the given id.</div></div><div class=CToolTip id="tt43"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_message_database(</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
-      <td class=PParameter nowrap>database</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_message_database(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
+      <td class=PParameter nowrap width=100%>database</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 sets the uvm_tr_database used for recording messages</div></div><div class=CToolTip id="tt44"><div class=CMethod>
@@ -1128,11 +1222,13 @@ sets the uvm_tr_database used for recording messages</div></div><div class=CTool
   </td></tr></table></blockquote>returns the uvm_tr_database used for recording messages</div></div><div class=CToolTip id="tt45"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void execute_report_message(</td>      <td class=PType nowrap>uvm_report_message&nbsp;</td>
-      <td class=PParameter nowrap>report_message,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>composed_message</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void execute_report_message(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_message&nbsp;</td>
+      <td class=PParameter nowrap width=100%>report_message,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>composed_message</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Processes the provided message per the actions contained within.</div></div><div class=CToolTip id="tt46"><div class=CMethod>
@@ -1154,10 +1250,12 @@ Processes the provided message per the actions contained within.</div></div><div
 Constructs the actual string sent to the file or command line from the severity, component name, report id, and the message itself.</div></div><div class=CToolTip id="tt47"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void report_summarize(</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
-      <td class=PParameter nowrap>file</td>
+      <td class=PBeforeParameters colspan=4>virtual function void report_summarize(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
+      <td class=PParameter nowrap width=100%>file</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Outputs statistical information on the reports issued by this central report server. </div></div><!--END_ND_TOOLTIPS-->

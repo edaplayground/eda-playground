@@ -77,9 +77,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_visitor#(NODE).visit" href="../../src/base/uvm_traversal.svh">visit</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void visit(</td>      <td class=PType nowrap>NODE&nbsp;</td>
-      <td class=PParameter nowrap>node</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void visit(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>NODE&nbsp;</td>
+      <td class=PParameter nowrap width=100%>node</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>This method will be invoked by the visitor for every visited <i>node</i> of the provided structure.&nbsp; The user is expected to provide the own functionality in this function.</p><blockquote><pre>class count_nodes_visitor#(type T=uvm_component) extends uvm_visitor#(T);
@@ -125,13 +127,15 @@ endclass</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_structure_proxy#(STRUCTURE).get_immediate_children" href="../../src/base/uvm_traversal.svh">get_immediate_children</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_immediate_children(</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_immediate_children(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>STRUCTURE&nbsp;</td>
-      <td class=PParameter nowrap>s,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PParameter nowrap width=100%>s,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>STRUCTURE&nbsp;</td>
-      <td class=PParameter nowrap>children[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>children[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>This method will be return in <i>children</i> a set of the direct subelements of <i>s</i></p></div></div></div>
@@ -169,23 +173,25 @@ endclass</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_visitor_adapter#(STRUCTURE,uvm_visitor#(STRUCTURE)).accept" href="../../src/base/uvm_traversal.svh">accept()</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void accept(</td>      <td class=PType nowrap>STRUCTURE&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void accept(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>STRUCTURE&nbsp;</td>
       <td class=PParameter nowrap>s,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>VISITOR&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>VISITOR&nbsp;</td>
       <td class=PParameter nowrap>v,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_structure_proxy#(STRUCTURE)&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_structure_proxy#(STRUCTURE)&nbsp;</td>
       <td class=PParameter nowrap>p,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>invoke_begin_end</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Calling this function will traverse through <i>s</i> (and every subnode of <i>s</i>).&nbsp; For each node found <i>v</i>.visit(node) will be invoked.&nbsp; The children of <i>s</i> are recursively determined by invoking <i>p</i>.get_immediate_children().~invoke_begin_end~ determines whether the visitors begin/end functions should be invoked prior to traversal.</p></div></div></div>
@@ -492,49 +498,57 @@ This uvm_bottom_up_visitor_adapter traverses the STRUCTURE <i>s</i> (and will in
 This uvm_by_level_visitor_adapter traverses the STRUCTURE <i>s</i> (and will invoke the visitor) in a hierarchical fashion. </div></div><div class=CToolTip id="tt4"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>class uvm_component_proxy extends uvm_structure_proxy#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=2>class uvm_component_proxy extends uvm_structure_proxy#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 The class is providing the proxy to extract the direct subcomponents of <i>s</i></div></div><div class=CToolTip id="tt5"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>class uvm_component_name_check_visitor extends uvm_visitor#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=2>class uvm_component_name_check_visitor extends uvm_visitor#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This specialized visitor analyze the naming of the current component. </div></div><div class=CToolTip id="tt6"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_immediate_children(</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_immediate_children(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>STRUCTURE&nbsp;</td>
-      <td class=PParameter nowrap>s,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PParameter nowrap width=100%>s,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>STRUCTURE&nbsp;</td>
-      <td class=PParameter nowrap>children[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>children[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This method will be return in <i>children</i> a set of the direct subelements of <i>s</i></div></div><div class=CToolTip id="tt7"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void accept(</td>      <td class=PType nowrap>STRUCTURE&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void accept(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>STRUCTURE&nbsp;</td>
       <td class=PParameter nowrap>s,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>VISITOR&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>VISITOR&nbsp;</td>
       <td class=PParameter nowrap>v,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_structure_proxy#(STRUCTURE)&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_structure_proxy#(STRUCTURE)&nbsp;</td>
       <td class=PParameter nowrap>p,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>invoke_begin_end</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Calling this function will traverse through <i>s</i> (and every subnode of <i>s</i>). </div></div><div class=CToolTip id="tt8"><div class=CMethod>

@@ -31,7 +31,7 @@ endclass
 //
 // CLASS: uvm_tlm_fifo_base #(T)
 //
-// This class is the base for <uvm_tlm_fifo #(T)>. It defines the TLM exports 
+// This class is the base for <uvm_tlm_fifo#(T)>. It defines the TLM exports 
 // through which all transaction-based FIFO operations occur. It also defines
 // default implementations for each inteface method provided by these exports.
 //

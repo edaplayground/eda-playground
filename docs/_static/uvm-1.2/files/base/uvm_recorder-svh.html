@@ -51,7 +51,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
   <tr class="SPrototype SIndent1"><td colspan=2 class=SDescription>
       <div class=ClassHierarchy>
         <table border=0 cellspacing=0 cellpadding=0>
-          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_misc-svh.html#uvm_void" class=LGeneric id=link5 onMouseOver="ShowTip(event, 'tt5', 'link5')" onMouseOut="HideTip('tt5')">uvm_void</a></div></div></td></tr>
+          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_misc-svh.html#uvm_void" class=LClass id=link5 onMouseOver="ShowTip(event, 'tt5', 'link5')" onMouseOut="HideTip('tt5')">uvm_void</a></div></div></td></tr>
           <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_object-svh.html#uvm_object" class=LClass id=link6 onMouseOver="ShowTip(event, 'tt6', 'link6')" onMouseOut="HideTip('tt6')">uvm_object</a></div></div></td></tr>
           <tr><td><div class=CHCurrent><div class=CHEntry>uvm_recorder</div></div></td></tr>
         </table>
@@ -249,11 +249,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.close" href="../../src/base/uvm_recorder.svh">close</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void close(</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void close(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
       <td class=PParameter nowrap>close_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Closes this recorder.</p><p>Closing a recorder marks the end of the transaction in the stream.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>close_time</td><td class=CDLDescription>Optional time to record as the closing time of this transaction.</td></tr></table><p>This method will trigger a <a href="#uvm_recorder.do_close" class=LMethod id=link54 onMouseOver="ShowTip(event, 'tt33', 'link54')" onMouseOut="HideTip('tt33')">do_close</a> call.</p></div></div></div>
@@ -265,11 +267,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.free" href="../../src/base/uvm_recorder.svh">free</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void free(</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void free(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
       <td class=PParameter nowrap>close_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Frees this recorder</p><p>Freeing a recorder indicates that the stream and database can release any references to the recorder.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>close_time</td><td class=CDLDescription>Optional time to record as the closing time of this transaction.</td></tr></table><p>If a recorder has not yet been closed (via a call to <a href="#uvm_recorder.close" class=LMethod id=link55 onMouseOver="ShowTip(event, 'tt15', 'link55')" onMouseOut="HideTip('tt15')">close</a>), then <a href="#uvm_recorder.close" class=LMethod id=link56 onMouseOver="ShowTip(event, 'tt15', 'link56')" onMouseOut="HideTip('tt15')">close</a> will automatically be called, and passed the <i>close_time</i>.&nbsp;  If the recorder has already been closed, then the <i>close_time</i> will be ignored.</p><p>This method will trigger a <a href="#uvm_recorder.do_free" class=LMethod id=link57 onMouseOver="ShowTip(event, 'tt34', 'link57')" onMouseOut="HideTip('tt34')">do_free</a> call.</p></div></div></div>
@@ -327,9 +331,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.get_recorder_from_handle" href="../../src/base/uvm_recorder.svh">get_recorder_from_handle</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_recorder get_recorder_from_handle(</td>      <td class=PType nowrap>integer&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function uvm_recorder get_recorder_from_handle(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Static accessor, returns a recorder reference for a given unique id.</p><p>If no recorder exists with the given <i>id</i>, or if the recorder with that <i>id</i> has been freed, then <i>null</i> is returned.</p><p>This method can be used to access the recorder associated with a <i>begin_tr</i> call from <a href="uvm_transaction-svh.html#uvm_transaction" class=LClass id=link58 onMouseOver="ShowTip(event, 'tt43', 'link58')" onMouseOut="HideTip('tt43')">uvm_transaction</a> or <a href="uvm_component-svh.html#uvm_component" class=LClass id=link59 onMouseOver="ShowTip(event, 'tt44', 'link59')" onMouseOut="HideTip('tt44')">uvm_component</a>.</p><blockquote><pre>integer handle = tr.begin_tr();
@@ -351,23 +357,25 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.record_field" href="../../src/base/uvm_recorder.svh">record_field</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_field(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void record_field(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>size,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_NORADIX</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an integral field (less than or equal to 4096 bits).</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Name of the field</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value of the field to record.</td></tr><tr><td class=CDLEntry>size</td><td class=CDLDescription>Number of bits of the field which apply (Usually obtained via $bits).</td></tr><tr><td class=CDLEntry>radix</td><td class=CDLDescription>The <a href="uvm_object_globals-svh.html#uvm_radix_enum" class=LType id=link60 onMouseOver="ShowTip(event, 'tt45', 'link60')" onMouseOut="HideTip('tt45')">uvm_radix_enum</a> to use.</td></tr></table><p>This method will trigger a <a href="#uvm_recorder.do_record_field" class=LMethod id=link61 onMouseOver="ShowTip(event, 'tt35', 'link61')" onMouseOut="HideTip('tt35')">do_record_field</a> call.</p></div></div></div>
@@ -379,23 +387,25 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.record_field_int" href="../../src/base/uvm_recorder.svh">record_field_int</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_field_int(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void record_field_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>size,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_NORADIX</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an integral field (less than or equal to 64 bits).</p><p>This optimized version of <a href="#uvm_recorder.record_field" class=LMethod id=link62 onMouseOver="ShowTip(event, 'tt8', 'link62')" onMouseOut="HideTip('tt8')">record_field</a> is useful for sizes up to 64 bits.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Name of the field</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value of the field to record</td></tr><tr><td class=CDLEntry>size</td><td class=CDLDescription>Number of bits of the wfield which apply (Usually obtained via $bits).</td></tr><tr><td class=CDLEntry>radix</td><td class=CDLDescription>The <a href="uvm_object_globals-svh.html#uvm_radix_enum" class=LType id=link63 onMouseOver="ShowTip(event, 'tt45', 'link63')" onMouseOut="HideTip('tt45')">uvm_radix_enum</a> to use.</td></tr></table><p>This method will trigger a <a href="#uvm_recorder.do_record_field_int" class=LMethod id=link64 onMouseOver="ShowTip(event, 'tt36', 'link64')" onMouseOut="HideTip('tt36')">do_record_field_int</a> call.</p></div></div></div>
@@ -407,11 +417,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.record_field_real" href="../../src/base/uvm_recorder.svh">record_field_real</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_field_real(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>real&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_field_real(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a real field.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Name of the field</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value of the field to record</td></tr></table><p>This method will trigger a <a href="#uvm_recorder.do_record_field_real" class=LMethod id=link65 onMouseOver="ShowTip(event, 'tt37', 'link65')" onMouseOut="HideTip('tt37')">do_record_field_real</a> call.</p></div></div></div>
@@ -423,11 +435,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.record_object" href="../../src/base/uvm_recorder.svh">record_object</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_object(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an object field.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Name of the field</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Object to record</td></tr></table><p>The implementation must use the <a href="#uvm_recorder.recursion_policy" class=LVariable id=link66 onMouseOver="ShowTip(event, 'tt12', 'link66')" onMouseOut="HideTip('tt12')">recursion_policy</a> and <a href="#uvm_recorder.identifier" class=LVariable id=link67 onMouseOver="ShowTip(event, 'tt11', 'link67')" onMouseOut="HideTip('tt11')">identifier</a> to determine exactly what should be recorded.</p></div></div></div>
@@ -439,11 +453,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.record_string" href="../../src/base/uvm_recorder.svh">record_string</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_string(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_string(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a string field.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Name of the field</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value of the field</td></tr></table></div></div></div>
@@ -455,11 +471,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.record_time" href="../../src/base/uvm_recorder.svh">record_time</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_time(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_time(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a time field.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Name of the field</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value of the field</td></tr></table></div></div></div>
@@ -471,19 +489,21 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.record_generic" href="../../src/base/uvm_recorder.svh">record_generic</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_generic(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void record_generic(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>type_name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a name/value pair, where <i>value</i> has been converted to a string.</p><h4 class=CHeading>For example</h4><blockquote><pre>recorder.record_generic(&quot;myvar&quot;,&quot;var_type&quot;, $sformatf(&quot;%0d&quot;,myvar), 32);</pre></blockquote><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Name of the field</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value of the field</td></tr><tr><td class=CDLEntry>type_name</td><td class=CDLDescription><i>optional</i> Type name of the field</td></tr></table></div></div></div>
@@ -517,13 +537,15 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_open" href="../../src/base/uvm_recorder.svh">do_open</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_open(</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
-      <td class=PParameter nowrap>stream,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>open_time,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_open(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
+      <td class=PParameter nowrap width=100%>stream,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>open_time,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Callback triggered via <a href="uvm_tr_stream-svh.html#uvm_tr_stream.open_recorder" class=LMethod id=link73 onMouseOver="ShowTip(event, 'tt14', 'link73')" onMouseOut="HideTip('tt14')">uvm_tr_stream::open_recorder</a>.</p><p>The <i>do_open</i> callback can be used to initialize any internal state within the recorder, as well as providing a location to record any initial information.</p></div></div></div>
@@ -535,9 +557,11 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_close" href="../../src/base/uvm_recorder.svh">do_close</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_close(</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>close_time</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_close(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>close_time</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Callback triggered via <a href="#uvm_recorder.close" class=LMethod id=link74 onMouseOver="ShowTip(event, 'tt15', 'link74')" onMouseOut="HideTip('tt15')">close</a>.</p><p>The <i>do_close</i> callback can be used to set internal state within the recorder, as well as providing a location to record any closing information.</p></div></div></div>
@@ -557,15 +581,17 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_record_field" href="../../src/base/uvm_recorder.svh">do_record_field</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_field(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_field(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an integral field (less than or equal to 4096 bits).</p><p><i>Mandatory</i> Backend implementation of <a href="#uvm_recorder.record_field" class=LMethod id=link76 onMouseOver="ShowTip(event, 'tt8', 'link76')" onMouseOut="HideTip('tt8')">record_field</a></p></div></div></div>
@@ -577,15 +603,17 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_record_field_int" href="../../src/base/uvm_recorder.svh">do_record_field_int</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_field_int(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_field_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an integral field (less than or equal to 64 bits).</p><p><i>Mandatory</i> Backend implementation of <a href="#uvm_recorder.record_field_int" class=LMethod id=link77 onMouseOver="ShowTip(event, 'tt23', 'link77')" onMouseOut="HideTip('tt23')">record_field_int</a></p></div></div></div>
@@ -597,11 +625,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_record_field_real" href="../../src/base/uvm_recorder.svh">do_record_field_real</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_field_real(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>real&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_field_real(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a real field.</p><p><i>Mandatory</i> Backend implementation of <a href="#uvm_recorder.record_field_real" class=LMethod id=link78 onMouseOver="ShowTip(event, 'tt24', 'link78')" onMouseOut="HideTip('tt24')">record_field_real</a></p></div></div></div>
@@ -613,11 +643,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_record_object" href="../../src/base/uvm_recorder.svh">do_record_object</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_object(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an object field.</p><p><i>Mandatory</i> Backend implementation of <a href="#uvm_recorder.record_object" class=LMethod id=link79 onMouseOver="ShowTip(event, 'tt25', 'link79')" onMouseOut="HideTip('tt25')">record_object</a></p></div></div></div>
@@ -629,11 +661,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_record_string" href="../../src/base/uvm_recorder.svh">do_record_string</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_string(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_string(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a string field.</p><p><i>Mandatory</i> Backend implementation of <a href="#uvm_recorder.record_string" class=LMethod id=link80 onMouseOver="ShowTip(event, 'tt26', 'link80')" onMouseOut="HideTip('tt26')">record_string</a></p></div></div></div>
@@ -645,11 +679,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_record_time" href="../../src/base/uvm_recorder.svh">do_record_time</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_time(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_time(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a time field.</p><p><i>Mandatory</i> Backend implementation of <a href="#uvm_recorder.record_time" class=LMethod id=link81 onMouseOver="ShowTip(event, 'tt27', 'link81')" onMouseOut="HideTip('tt27')">record_time</a></p></div></div></div>
@@ -661,13 +697,15 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_recorder.do_record_generic" href="../../src/base/uvm_recorder.svh">do_record_generic</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_generic(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_generic(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a name/value pair, where <i>value</i> has been converted to a string.</p><p><i>Mandatory</i> Backend implementation of <a href="#uvm_recorder.record_generic" class=LMethod id=link82 onMouseOver="ShowTip(event, 'tt28', 'link82')" onMouseOut="HideTip('tt28')">record_generic</a></p></div></div></div>
@@ -676,7 +714,7 @@ end</pre></blockquote></div></div></div>
 
 
  <!--CONTENT index=40 -->
-<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_text_recorder" href="../../src/base/uvm_recorder.svh">uvm_text_recorder</a></h2><div class=CBody><p>The <i>uvm_text_recorder</i> is the default recorder implementation for the <a href="uvm_tr_database-svh.html#uvm_text_tr_database" class=LClass id=link102 onMouseOver="ShowTip(event, 'tt3', 'link102')" onMouseOut="HideTip('tt3')">uvm_text_tr_database</a>.</p>
+<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_text_recorder" href="../../src/base/uvm_recorder.svh">uvm_text_recorder</a></h2><div class=CBody><p>The <i>uvm_text_recorder</i> is the default recorder implementation for the <a href="uvm_tr_database-svh.html#uvm_text_tr_database" class=LClass id=link104 onMouseOver="ShowTip(event, 'tt3', 'link104')" onMouseOut="HideTip('tt3')">uvm_text_tr_database</a>.</p>
 
 <!--START_ND_SUMMARY index=40-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
@@ -690,7 +728,7 @@ end</pre></blockquote></div></div></div>
   <tr class="SPrototype SIndent1"><td colspan=2 class=SDescription>
       <div class=ClassHierarchy>
         <table border=0 cellspacing=0 cellpadding=0>
-          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_misc-svh.html#uvm_void" class=LGeneric id=link83 onMouseOver="ShowTip(event, 'tt5', 'link83')" onMouseOut="HideTip('tt5')">uvm_void</a></div></div></td></tr>
+          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_misc-svh.html#uvm_void" class=LClass id=link83 onMouseOver="ShowTip(event, 'tt5', 'link83')" onMouseOut="HideTip('tt5')">uvm_void</a></div></div></td></tr>
           <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_object-svh.html#uvm_object" class=LClass id=link84 onMouseOver="ShowTip(event, 'tt6', 'link84')" onMouseOut="HideTip('tt6')">uvm_object</a></div></div></td></tr>
           <tr><td><div class=CHParent><div class=CHEntry><a href="#uvm_recorder" class=LClass id=link85 onMouseOver="ShowTip(event, 'tt1', 'link85')" onMouseOut="HideTip('tt1')">uvm_recorder</a></div></div></td></tr>
           <tr><td><div class=CHCurrent><div class=CHEntry>uvm_text_recorder</div></div></td></tr>
@@ -717,40 +755,40 @@ end</pre></blockquote></div></div></div>
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_open" id=link89 onMouseOver="ShowTip(event, 'tt47', 'link89')" onMouseOut="HideTip('tt47')">do_open</a></td><td class=SDescription>Callback triggered via <a href="uvm_tr_stream-svh.html#uvm_tr_stream.open_recorder" class=LMethod id=link90 onMouseOver="ShowTip(event, 'tt14', 'link90')" onMouseOut="HideTip('tt14')">uvm_tr_stream::open_recorder</a>.</td></tr>
   <!-- index=44 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_close" id=link91 onMouseOver="ShowTip(event, 'tt48', 'link91')" onMouseOut="HideTip('tt48')">do_close</a></td><td class=SDescription>Callback triggered via &lt;close&gt;.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_close" id=link91 onMouseOver="ShowTip(event, 'tt48', 'link91')" onMouseOut="HideTip('tt48')">do_close</a></td><td class=SDescription>Callback triggered via <a href="#uvm_recorder.close" class=LMethod id=link92 onMouseOver="ShowTip(event, 'tt15', 'link92')" onMouseOut="HideTip('tt15')">uvm_recorder::close</a>.</td></tr>
   <!-- index=45 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_free" id=link92 onMouseOver="ShowTip(event, 'tt49', 'link92')" onMouseOut="HideTip('tt49')">do_free</a></td><td class=SDescription>Callback triggered via &lt;free&gt;.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_free" id=link93 onMouseOver="ShowTip(event, 'tt49', 'link93')" onMouseOut="HideTip('tt49')">do_free</a></td><td class=SDescription>Callback triggered via <a href="#uvm_recorder.free" class=LMethod id=link94 onMouseOver="ShowTip(event, 'tt16', 'link94')" onMouseOut="HideTip('tt16')">uvm_recorder::free</a>.</td></tr>
   <!-- index=46 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_field" id=link93 onMouseOver="ShowTip(event, 'tt50', 'link93')" onMouseOut="HideTip('tt50')">do_record_field</a></td><td class=SDescription>Records an integral field (less than or equal to 4096 bits).</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_field" id=link95 onMouseOver="ShowTip(event, 'tt50', 'link95')" onMouseOut="HideTip('tt50')">do_record_field</a></td><td class=SDescription>Records an integral field (less than or equal to 4096 bits).</td></tr>
   <!-- index=47 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_record_field_int" id=link94 onMouseOver="ShowTip(event, 'tt51', 'link94')" onMouseOut="HideTip('tt51')">do_record_field_int</a></td><td class=SDescription>Records an integral field (less than or equal to 64 bits).</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_record_field_int" id=link96 onMouseOver="ShowTip(event, 'tt51', 'link96')" onMouseOut="HideTip('tt51')">do_record_field_int</a></td><td class=SDescription>Records an integral field (less than or equal to 64 bits).</td></tr>
   <!-- index=48 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_field_real" id=link95 onMouseOver="ShowTip(event, 'tt52', 'link95')" onMouseOut="HideTip('tt52')">do_record_field_real</a></td><td class=SDescription>Record a real field.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_field_real" id=link97 onMouseOver="ShowTip(event, 'tt52', 'link97')" onMouseOut="HideTip('tt52')">do_record_field_real</a></td><td class=SDescription>Record a real field.</td></tr>
   <!-- index=49 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_record_object" id=link96 onMouseOver="ShowTip(event, 'tt53', 'link96')" onMouseOut="HideTip('tt53')">do_record_object</a></td><td class=SDescription>Record an object field.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_record_object" id=link98 onMouseOver="ShowTip(event, 'tt53', 'link98')" onMouseOut="HideTip('tt53')">do_record_object</a></td><td class=SDescription>Record an object field.</td></tr>
   <!-- index=50 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_string" id=link97 onMouseOver="ShowTip(event, 'tt54', 'link97')" onMouseOut="HideTip('tt54')">do_record_string</a></td><td class=SDescription>Records a string field.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_string" id=link99 onMouseOver="ShowTip(event, 'tt54', 'link99')" onMouseOut="HideTip('tt54')">do_record_string</a></td><td class=SDescription>Records a string field.</td></tr>
   <!-- index=51 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_record_time" id=link98 onMouseOver="ShowTip(event, 'tt55', 'link98')" onMouseOut="HideTip('tt55')">do_record_time</a></td><td class=SDescription>Records a time field.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.do_record_time" id=link100 onMouseOver="ShowTip(event, 'tt55', 'link100')" onMouseOut="HideTip('tt55')">do_record_time</a></td><td class=SDescription>Records a time field.</td></tr>
   <!-- index=52 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_generic" id=link99 onMouseOver="ShowTip(event, 'tt56', 'link99')" onMouseOut="HideTip('tt56')">do_record_generic</a></td><td class=SDescription>Records a name/value pair, where <i>value</i> has been converted to a string.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.do_record_generic" id=link101 onMouseOver="ShowTip(event, 'tt56', 'link101')" onMouseOut="HideTip('tt56')">do_record_generic</a></td><td class=SDescription>Records a name/value pair, where <i>value</i> has been converted to a string.</td></tr>
   <!-- index=53 -->
 
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_text_recorder.Implementation_Specific_API" >Implementation Specific API</a></td><td class=SDescription></td></tr>
   <!-- index=54 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.write_attribute" id=link100 onMouseOver="ShowTip(event, 'tt57', 'link100')" onMouseOut="HideTip('tt57')">write_attribute</a></td><td class=SDescription>Outputs an integral attribute to the textual log</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_recorder.write_attribute" id=link102 onMouseOver="ShowTip(event, 'tt57', 'link102')" onMouseOut="HideTip('tt57')">write_attribute</a></td><td class=SDescription>Outputs an integral attribute to the textual log</td></tr>
   <!-- index=55 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.write_attribute_int" id=link101 onMouseOver="ShowTip(event, 'tt58', 'link101')" onMouseOut="HideTip('tt58')">write_attribute_int</a></td><td class=SDescription>Outputs an integral attribute to the textual log</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_recorder.write_attribute_int" id=link103 onMouseOver="ShowTip(event, 'tt58', 'link103')" onMouseOut="HideTip('tt58')">write_attribute_int</a></td><td class=SDescription>Outputs an integral attribute to the textual log</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -760,11 +798,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.new" href="../../src/base/uvm_recorder.svh">new</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;unnamed-uvm_text_recorder&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Constructor</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>Instance name</td></tr></table></div></div></div>
@@ -782,16 +822,18 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_open" href="../../src/base/uvm_recorder.svh">do_open</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_open(</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
-      <td class=PParameter nowrap>stream,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>open_time,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_open(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
+      <td class=PParameter nowrap width=100%>stream,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>open_time,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Callback triggered via <a href="uvm_tr_stream-svh.html#uvm_tr_stream.open_recorder" class=LMethod id=link103 onMouseOver="ShowTip(event, 'tt14', 'link103')" onMouseOut="HideTip('tt14')">uvm_tr_stream::open_recorder</a>.</p><p>Text-backend specific implementation.</p></div></div></div>
+<div class=CBody><p>Callback triggered via <a href="uvm_tr_stream-svh.html#uvm_tr_stream.open_recorder" class=LMethod id=link105 onMouseOver="ShowTip(event, 'tt14', 'link105')" onMouseOut="HideTip('tt14')">uvm_tr_stream::open_recorder</a>.</p><p>Text-backend specific implementation.</p></div></div></div>
 
 
 
@@ -800,12 +842,14 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_close" href="../../src/base/uvm_recorder.svh">do_close</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_close(</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>close_time</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_close(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>close_time</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Callback triggered via &lt;close&gt;.</p><p>Text-backend specific implementation.</p></div></div></div>
+<div class=CBody><p>Callback triggered via <a href="#uvm_recorder.close" class=LMethod id=link106 onMouseOver="ShowTip(event, 'tt15', 'link106')" onMouseOut="HideTip('tt15')">uvm_recorder::close</a>.</p><p>Text-backend specific implementation.</p></div></div></div>
 
 
 
@@ -813,7 +857,7 @@ end</pre></blockquote></div></div></div>
  <!--CONTENT index=45 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_free" href="../../src/base/uvm_recorder.svh">do_free</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected virtual function void do_free()
-  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via &lt;free&gt;.</p><p>Text-backend specific implementation.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_recorder.free" class=LMethod id=link107 onMouseOver="ShowTip(event, 'tt16', 'link107')" onMouseOut="HideTip('tt16')">uvm_recorder::free</a>.</p><p>Text-backend specific implementation.</p></div></div></div>
 
 
 
@@ -822,15 +866,17 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_record_field" href="../../src/base/uvm_recorder.svh">do_record_field</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_field(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_field(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an integral field (less than or equal to 4096 bits).</p><p>Text-backend specific implementation.</p></div></div></div>
@@ -842,15 +888,17 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_record_field_int" href="../../src/base/uvm_recorder.svh">do_record_field_int</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_field_int(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_field_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records an integral field (less than or equal to 64 bits).</p><p>Text-backend specific implementation.</p></div></div></div>
@@ -862,11 +910,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_record_field_real" href="../../src/base/uvm_recorder.svh">do_record_field_real</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_field_real(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>real&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_field_real(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Record a real field.</p><p>Text-backened specific implementation.</p></div></div></div>
@@ -878,14 +928,16 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_record_object" href="../../src/base/uvm_recorder.svh">do_record_object</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_object(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Record an object field.</p><p>Text-backend specific implementation.</p><p>The method uses &lt;identifier&gt; to determine whether or not to record the object instance id, and &lt;recursion_policy&gt; to determine whether or not to recurse into the object.</p></div></div></div>
+<div class=CBody><p>Record an object field.</p><p>Text-backend specific implementation.</p><p>The method uses <i>identifier</i> to determine whether or not to record the object instance id, and <i>recursion_policy</i> to determine whether or not to recurse into the object.</p></div></div></div>
 
 
 
@@ -894,11 +946,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_record_string" href="../../src/base/uvm_recorder.svh">do_record_string</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_string(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_string(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a string field.</p><p>Text-backend specific implementation.</p></div></div></div>
@@ -910,11 +964,13 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_record_time" href="../../src/base/uvm_recorder.svh">do_record_time</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_time(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_time(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a time field.</p><p>Text-backend specific implementation.</p></div></div></div>
@@ -926,13 +982,15 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.do_record_generic" href="../../src/base/uvm_recorder.svh">do_record_generic</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_generic(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_generic(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Records a name/value pair, where <i>value</i> has been converted to a string.</p><p>Text-backend specific implementation.</p></div></div></div>
@@ -950,23 +1008,25 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.write_attribute" href="../../src/base/uvm_recorder.svh">write_attribute</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void write_attribute(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void write_attribute(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>nm,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>integer&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
       <td class=PParameter nowrap>numbits</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>$bits(uvm_bitstream_t)</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Outputs an integral attribute to the textual log</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>nm</td><td class=CDLDescription>Name of the attribute</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value</td></tr><tr><td class=CDLEntry>radix</td><td class=CDLDescription>Radix of the output</td></tr><tr><td class=CDLEntry>numbits</td><td class=CDLDescription>number of valid bits</td></tr></table></div></div></div>
@@ -978,23 +1038,25 @@ end</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_recorder.write_attribute_int" href="../../src/base/uvm_recorder.svh">write_attribute_int</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void write_attribute_int(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void write_attribute_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>nm,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>integer&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
       <td class=PParameter nowrap>numbits</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>$bits(uvm_bitstream_t)</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Outputs an integral attribute to the textual log</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>nm</td><td class=CDLDescription>Name of the attribute</td></tr><tr><td class=CDLEntry>value</td><td class=CDLDescription>Value</td></tr><tr><td class=CDLEntry>radix</td><td class=CDLDescription>Radix of the output</td></tr><tr><td class=CDLEntry>numbits</td><td class=CDLDescription>number of valid bits</td></tr></table></div></div></div>
@@ -1012,30 +1074,34 @@ end</pre></blockquote></div></div></div>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>class uvm_text_tr_database extends uvm_tr_database
   </td></tr></table></blockquote>The <i>uvm_text_tr_database</i> is the default implementation for the uvm_tr_database. </div></div><div class=CToolTip id="tt4"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_tr_stream extends uvm_object
-  </td></tr></table></blockquote>The <i>uvm_tr_stream</i> base class is a representation of a stream of records within a uvm_tr_database.</div></div><div class=CToolTip id="tt5"><div class=CGeneric>The <i>uvm_void</i> class is the base class for all UVM classes. </div></div><div class=CToolTip id="tt6"><div class=CClass>
+  </td></tr></table></blockquote>The <i>uvm_tr_stream</i> base class is a representation of a stream of records within a uvm_tr_database.</div></div><div class=CToolTip id="tt5"><div class=CClass>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_void
+  </td></tr></table></blockquote>The <i>uvm_void</i> class is the base class for all UVM classes. </div></div><div class=CToolTip id="tt6"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_object extends uvm_void
   </td></tr></table></blockquote>The uvm_object class is the base class for all UVM data and hierarchical classes. </div></div><div class=CToolTip id="tt7"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_radix_enum default_radix = UVM_HEX
   </td></tr></table></blockquote>This is the default radix setting if record_field is called without a radix.</div></div><div class=CToolTip id="tt8"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_field(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void record_field(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>size,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_NORADIX</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an integral field (less than or equal to 4096 bits).</div></div><div class=CToolTip id="tt9"><div class=CVariable>
@@ -1051,39 +1117,45 @@ Records an integral field (less than or equal to 4096 bits).</div></div><div cla
   </td></tr></table></blockquote>Returns a reference to the stream which created this record.</div></div><div class=CToolTip id="tt14"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_recorder open_recorder(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_recorder open_recorder(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
       <td class=PParameter nowrap>open_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>type_name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Marks the opening of a new transaction recorder on the stream.</div></div><div class=CToolTip id="tt15"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void close(</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void close(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
       <td class=PParameter nowrap>close_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Closes this recorder.</div></div><div class=CToolTip id="tt16"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void free(</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void free(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
       <td class=PParameter nowrap>close_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Frees this recorder</div></div><div class=CToolTip id="tt17"><div class=CMethod>
@@ -1099,89 +1171,103 @@ Frees this recorder</div></div><div class=CToolTip id="tt17"><div class=CMethod>
   </td></tr></table></blockquote>Returns a unique ID for this recorder.</div></div><div class=CToolTip id="tt22"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_recorder get_recorder_from_handle(</td>      <td class=PType nowrap>integer&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function uvm_recorder get_recorder_from_handle(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Static accessor, returns a recorder reference for a given unique id.</div></div><div class=CToolTip id="tt23"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_field_int(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void record_field_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>size,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_NORADIX</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an integral field (less than or equal to 64 bits).</div></div><div class=CToolTip id="tt24"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_field_real(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>real&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_field_real(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a real field.</div></div><div class=CToolTip id="tt25"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_object(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an object field.</div></div><div class=CToolTip id="tt26"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_string(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_string(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a string field.</div></div><div class=CToolTip id="tt27"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_time(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function void record_time(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a time field.</div></div><div class=CToolTip id="tt28"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void record_generic(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void record_generic(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>type_name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a name/value pair, where <i>value</i> has been converted to a string.</div></div><div class=CToolTip id="tt29"><div class=CMethod>
@@ -1191,21 +1277,25 @@ Records a name/value pair, where <i>value</i> has been converted to a string.</d
   </td></tr></table></blockquote>Provides a tool-specific handle which is compatible with `uvm_record_attribute.</div></div><div class=CToolTip id="tt32"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_open(</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
-      <td class=PParameter nowrap>stream,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>open_time,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_open(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
+      <td class=PParameter nowrap width=100%>stream,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>open_time,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Callback triggered via uvm_tr_stream::open_recorder.</div></div><div class=CToolTip id="tt33"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_close(</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>close_time</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_close(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>close_time</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Callback triggered via close.</div></div><div class=CToolTip id="tt34"><div class=CMethod>
@@ -1213,89 +1303,105 @@ Callback triggered via close.</div></div><div class=CToolTip id="tt34"><div clas
   </td></tr></table></blockquote>Callback triggered via free.</div></div><div class=CToolTip id="tt35"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_field(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_field(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an integral field (less than or equal to 4096 bits).</div></div><div class=CToolTip id="tt36"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_field_int(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_field_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an integral field (less than or equal to 64 bits).</div></div><div class=CToolTip id="tt37"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_field_real(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>real&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_field_real(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a real field.</div></div><div class=CToolTip id="tt38"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_object(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an object field.</div></div><div class=CToolTip id="tt39"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_string(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_string(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a string field.</div></div><div class=CToolTip id="tt40"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_time(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_time(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a time field.</div></div><div class=CToolTip id="tt41"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual protected function void do_record_generic(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual protected function void do_record_generic(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a name/value pair, where <i>value</i> has been converted to a string.</div></div><div class=CToolTip id="tt42"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void do_record (</td>      <td class=PType nowrap>uvm_recorder&nbsp;</td>
-      <td class=PParameter nowrap>recorder</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void do_record (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_recorder&nbsp;</td>
+      <td class=PParameter nowrap width=100%>recorder</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 The do_record method is the user-definable hook called by the record method. </div></div><div class=CToolTip id="tt43"><div class=CClass>
@@ -1305,157 +1411,181 @@ The do_record method is the user-definable hook called by the record method. </d
   </td></tr></table></blockquote>The uvm_component class is the root base class for UVM components. </div></div><div class=CToolTip id="tt45"><div class=CType>Specifies the radix to print or record in.</div></div><div class=CToolTip id="tt46"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;unnamed-uvm_text_recorder&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Constructor</div></div><div class=CToolTip id="tt47"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_open(</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
-      <td class=PParameter nowrap>stream,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>open_time,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_open(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
+      <td class=PParameter nowrap width=100%>stream,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>open_time,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Callback triggered via uvm_tr_stream::open_recorder.</div></div><div class=CToolTip id="tt48"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_close(</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>close_time</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_close(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>close_time</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Callback triggered via close.</div></div><div class=CToolTip id="tt49"><div class=CMethod>
+Callback triggered via uvm_recorder::close.</div></div><div class=CToolTip id="tt49"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected virtual function void do_free()
-  </td></tr></table></blockquote>Callback triggered via free.</div></div><div class=CToolTip id="tt50"><div class=CMethod>
+  </td></tr></table></blockquote>Callback triggered via uvm_recorder::free.</div></div><div class=CToolTip id="tt50"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_field(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_field(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an integral field (less than or equal to 4096 bits).</div></div><div class=CToolTip id="tt51"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_field_int(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_field_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records an integral field (less than or equal to 64 bits).</div></div><div class=CToolTip id="tt52"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_field_real(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>real&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_field_real(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Record a real field.</div></div><div class=CToolTip id="tt53"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_object(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Record an object field.</div></div><div class=CToolTip id="tt54"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_string(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_string(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a string field.</div></div><div class=CToolTip id="tt55"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_time(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_time(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a time field.</div></div><div class=CToolTip id="tt56"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>protected virtual function void do_record_generic(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>protected virtual function void do_record_generic(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Records a name/value pair, where <i>value</i> has been converted to a string.</div></div><div class=CToolTip id="tt57"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void write_attribute(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void write_attribute(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>nm,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_bitstream_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>integer&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
       <td class=PParameter nowrap>numbits</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>$bits(uvm_bitstream_t)</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Outputs an integral attribute to the textual log</div></div><div class=CToolTip id="tt58"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void write_attribute_int(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void write_attribute_int(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>nm,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_integral_t&nbsp;</td>
       <td class=PParameter nowrap>value,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
       <td class=PParameter nowrap>radix,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>integer&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
       <td class=PParameter nowrap>numbits</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>$bits(uvm_bitstream_t)</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Outputs an integral attribute to the textual log</div></div><!--END_ND_TOOLTIPS-->

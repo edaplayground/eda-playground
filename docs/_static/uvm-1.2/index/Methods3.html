@@ -21,15 +21,17 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class=CToolTip id="tt316"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual task generate_stimulus(</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual task generate_stimulus(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
       <td class=PParameter nowrap>t</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>max_count</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Generate up to max_count transactions of type T. </div></div><div class=CToolTip id="tt317"><div class=CMethod>
@@ -37,19 +39,21 @@ Generate up to max_count transactions of type T. </div></div><div class=CToolTip
   </td></tr></table></blockquote>Returns the singleton instance of this type. </div></div><div class=CToolTip id="tt318"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function bit get(</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>static function bit get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>uvm_component&nbsp;</td>
-      <td class=PParameter nowrap>cntxt,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap></td>
+      <td class=PParameter nowrap width=100%>cntxt,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>inst_name,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap></td>
+      <td class=PParameter nowrap width=100%>inst_name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>field_name,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>inout&nbsp;</td>
+      <td class=PParameter nowrap width=100%>field_name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>inout&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the value for <i>field_name</i> in <i>inst_name</i>, using component <i>cntxt</i> as the starting search point. </div></div><div class=CToolTip id="tt319"><div class=CMethod>
@@ -63,67 +67,79 @@ Get the value for <i>field_name</i> in <i>inst_name</i>, using component <i>cntx
   </td></tr></table></blockquote>Returns the singleton instance of this type. </div></div><div class=CToolTip id="tt323"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function T get (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>key</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function T get (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>key</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the object item at the given string <i>key</i>.</div></div><div class=CToolTip id="tt324"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function T get (</td>      <td class=PType nowrap>KEY&nbsp;</td>
-      <td class=PParameter nowrap>key</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function T get (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>KEY&nbsp;</td>
+      <td class=PParameter nowrap width=100%>key</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the item with the given <i>key</i>.</div></div><div class=CToolTip id="tt325"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function T get (</td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>index</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function T get (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>index</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the item at the given <i>index</i>.</div></div><div class=CToolTip id="tt326"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_data_t get(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_data_t get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>fname</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>lineno</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the desired value of the fields in the register.</div></div><div class=CToolTip id="tt327"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_data_t get(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_data_t get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>fname</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>lineno</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the desired value of the field</div></div><div class=CToolTip id="tt328"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_data_t get(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_data_t get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>fname</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>lineno</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the next value from the abstract FIFO, but does not pop it. </div></div><div class=CToolTip id="tt329"><div class=CMethod>
@@ -133,10 +149,12 @@ Returns the next value from the abstract FIFO, but does not pop it. </div></div>
   </td></tr></table></blockquote>Static accessor for uvm_root.</div></div><div class=CToolTip id="tt331"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>task get (</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>task get (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>REQ&nbsp;</td>
-      <td class=PParameter nowrap>t</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>t</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Retrieves the next available item from a sequence.</div></div><div class=CToolTip id="tt332"><div class=CMethod>
@@ -148,27 +166,33 @@ Retrieves the next available item from a sequence.</div></div><div class=CToolTi
   </td></tr></table></blockquote>Returns the current value stored within the DAP</div></div><div class=CToolTip id="tt335"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual task get(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual task get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>T1&nbsp;</td>
-      <td class=PParameter nowrap>t</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>t</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Retrieves the next available item from a sequence. </div></div><div class=CToolTip id="tt336"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual task get(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual task get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>T2&nbsp;</td>
-      <td class=PParameter nowrap>t</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>t</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides a new transaction of type T.</div></div><div class=CToolTip id="tt337"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function real get_abstime(</td>      <td class=PType nowrap>real&nbsp;</td>
-      <td class=PParameter nowrap>secs</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function real get_abstime(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
+      <td class=PParameter nowrap width=100%>secs</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the current canonical time value, in the number of specified time unit, reguardless of the current timescale of the caller.</div></div><div class=CToolTip id="tt338"><div class=CMethod>
@@ -176,41 +200,49 @@ Return the current canonical time value, in the number of specified time unit, r
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt339"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function string get_access(</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function string get_access(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the access policy of the memory when written and read via an address map.</div></div><div class=CToolTip id="tt340"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function string get_access(</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function string get_access(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the access policy of the field</div></div><div class=CToolTip id="tt341"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function string get_access(</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function string get_access(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the access policy of the virtual register array when written and read via an address map.</div></div><div class=CToolTip id="tt342"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function string get_access(</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function string get_access(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the access policy of the virtual field register when written and read via an address map.</div></div><div class=CToolTip id="tt343"><div class=CMethod>
@@ -222,11 +254,13 @@ Returns the access policy of the virtual field register when written and read vi
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt346"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_adapter get_adapter (</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_adapter get_adapter (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Gets the bus adapter for the bus associated with this map. </div></div><div class=CToolTip id="tt347"><div class=CMethod>
@@ -234,25 +268,29 @@ Gets the bus adapter for the bus associated with this map. </div></div><div clas
   </td></tr></table></blockquote>Get the number of bytes in the smallest addressable unit in the map. </div></div><div class=CToolTip id="tt348"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_address(</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_addr_t get_address(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
       <td class=PParameter nowrap>offset</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the base external physical address of a memory location</div></div><div class=CToolTip id="tt349"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_address (</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_addr_t get_address (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the base external physical address of this register</div></div><div class=CToolTip id="tt350"><div class=CMethod>
@@ -260,72 +298,82 @@ Returns the base external physical address of this register</div></div><div clas
   </td></tr></table></blockquote>Get the value of the m_address variable</div></div><div class=CToolTip id="tt351"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_address(</td>      <td class=PTypePrefix nowrap>longint&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function uvm_reg_addr_t get_address(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>longint&nbsp;</td>
       <td class=PType nowrap>unsigned&nbsp;</td>
       <td class=PParameter nowrap>idx,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap></td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the base external physical address of a virtual register</div></div><div class=CToolTip id="tt352"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function int get_addresses(</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=6>virtual function int get_addresses(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
       <td class=PParameter nowrap>offset</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap></td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
       <td class=PParameter nowrap>addr[]</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Identifies the external physical address(es) of a memory location</div></div><div class=CToolTip id="tt353"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function int get_addresses (</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=6>virtual function int get_addresses (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
       <td class=PParameter nowrap>addr[]</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Identifies the external physical address(es) of this register</div></div><div class=CToolTip id="tt354"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_adjacent_predecessor_nodes(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_adjacent_predecessor_nodes(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_phase&nbsp;</td>
-      <td class=PParameter nowrap>pred[]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>pred[]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides an array of nodes which are predecessors to <i>this</i> phase node. </div></div><div class=CToolTip id="tt355"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_adjacent_successor_nodes(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_adjacent_successor_nodes(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_phase&nbsp;</td>
-      <td class=PParameter nowrap>succ[]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>succ[]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides an array of nodes which are successors to <i>this</i> phase node. </div></div><div class=CToolTip id="tt356"><div class=CMethod>
@@ -333,46 +381,54 @@ Provides an array of nodes which are successors to <i>this</i> phase node. </div
   </td></tr></table></blockquote>Return the current arbitration mode set for this sequencer. </div></div><div class=CToolTip id="tt357"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_arg_matches (</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>function int get_arg_matches (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>match,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PParameter nowrap width=100%>match,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>args[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>args[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function loads a queue with all of the arguments that match the input expression and returns the number of items that matched. </div></div><div class=CToolTip id="tt358"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_arg_value (</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>function int get_arg_value (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>match,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PParameter nowrap width=100%>match,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function finds the first argument which matches the <i>match</i> arg and returns the suffix of the argument. </div></div><div class=CToolTip id="tt359"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_arg_values (</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>function int get_arg_values (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>match,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PParameter nowrap width=100%>match,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>values[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>values[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function finds all the arguments which matches the <i>match</i> arg and returns the suffix of the arguments in a list of values. </div></div><div class=CToolTip id="tt360"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_args (</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_args (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>args[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>args[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function returns a queue with all of the command line arguments that were used to start the simulation. </div></div><div class=CToolTip id="tt361"><div class=CMethod>
@@ -382,41 +438,49 @@ This function returns a queue with all of the command line arguments that were u
   </td></tr></table></blockquote>Returns (and locks) the value of the &lsquo;automatically object to starting phase&rsquo; bit.</div></div><div class=CToolTip id="tt363"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_reg_backdoor get_backdoor(</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_reg_backdoor get_backdoor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>inherited</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the user-defined backdoor for this memory</div></div><div class=CToolTip id="tt364"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_reg_backdoor get_backdoor(</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_reg_backdoor get_backdoor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>inherited</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the user-defined backdoor for this register</div></div><div class=CToolTip id="tt365"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_reg_backdoor get_backdoor(</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_reg_backdoor get_backdoor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>inherited</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the user-defined backdoor for all registers in this block</div></div><div class=CToolTip id="tt366"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_base_addr (</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_addr_t get_base_addr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the base offset address for this map. </div></div><div class=CToolTip id="tt367"><div class=CMethod>
@@ -424,128 +488,146 @@ Get the base offset address for this map. </div></div><div class=CToolTip id="tt
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt368"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_block get_block_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_reg_block get_block_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Finds a sub-block with the specified simple name.</div></div><div class=CToolTip id="tt369"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_blocks (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_blocks (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_block&nbsp;</td>
       <td class=PParameter nowrap>blks[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the sub-blocks</div></div><div class=CToolTip id="tt370"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function this_type get_by_name(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function this_type get_by_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>scope,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>rpterr</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 looks up a resource by <i>name</i> in the name map. </div></div><div class=CToolTip id="tt371"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function rsrc_t get_by_name(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function rsrc_t get_by_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>scope,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>rpterr</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Imports a resource by <i>name</i>. </div></div><div class=CToolTip id="tt372"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_resource_base get_by_name(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_resource_base get_by_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>scope</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_resource_base&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_resource_base&nbsp;</td>
       <td class=PParameter nowrap>type_handle,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>rpterr</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Lookup a resource by <i>name</i>, <i>scope</i>, and <i>type_handle</i>. </div></div><div class=CToolTip id="tt373"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function this_type get_by_type(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function this_type get_by_type(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>scope</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_resource_base&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_resource_base&nbsp;</td>
       <td class=PParameter nowrap>type_handle</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 looks up a resource by <i>type_handle</i> in the type map. </div></div><div class=CToolTip id="tt374"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function rsrc_t get_by_type(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>scope</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function rsrc_t get_by_type(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>scope</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get a resource by type. </div></div><div class=CToolTip id="tt375"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_resource_base get_by_type(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_resource_base get_by_type(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>scope</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_resource_base&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_resource_base&nbsp;</td>
       <td class=PParameter nowrap>type_handle</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Lookup a resource by <i>type_handle</i> and <i>scope</i>. </div></div><div class=CToolTip id="tt376"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_byte_enable(</td>      <td class=PTypePrefix nowrap>output byte&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_byte_enable(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output byte&nbsp;</td>
       <td class=PType nowrap>unsigned&nbsp;</td>
-      <td class=PParameter nowrap>p[]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>p[]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the value of the m_byte_enable array</div></div><div class=CToolTip id="tt377"><div class=CMethod>
@@ -557,18 +639,22 @@ Return the value of the m_byte_enable array</div></div><div class=CToolTip id="t
   </td></tr></table></blockquote>Gets the check-on-read mode setting for this map.</div></div><div class=CToolTip id="tt380"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_component get_child (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function uvm_component get_child (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt381"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_children(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_children(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_component&nbsp;</td>
-      <td class=PParameter nowrap>children[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>children[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function populates the end of the <i>children</i> array with the list of this component&rsquo;s children.</div></div><div class=CToolTip id="tt382"><div class=CMethod>
@@ -586,34 +672,42 @@ This function populates the end of the <i>children</i> array with the list of th
   </td></tr></table></blockquote>Returns the compare policy for this field.</div></div><div class=CToolTip id="tt388"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function uvm_visitor#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>) get_component_visitor()</td></tr>
+      <td class=PBeforeParameters colspan=2>pure virtual function uvm_visitor#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>) get_component_visitor()</td></tr>
       </table></td></tr>
     </table></blockquote>
 intended to retrieve the current component visitor see set_component_visitor</div></div><div class=CToolTip id="tt389"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_visitor#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>) get_component_visitor()</td></tr>
+      <td class=PBeforeParameters colspan=2>virtual function uvm_visitor#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>) get_component_visitor()</td></tr>
       </table></td></tr>
     </table></blockquote>
 retrieves the current component visitor if unset(or null) returns a uvm_component_name_check_visitor instance</div></div><div class=CToolTip id="tt390"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function TYPE get_config(</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
-      <td class=PParameter nowrap>comp,</td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap>is_fatal</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function TYPE get_config(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      <td class=PParameter nowrap width=100%>comp,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap width=100%>is_fatal</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This method gets the object config of type <i>TYPE</i> associated with component <i>comp</i>. </div></div><div class=CToolTip id="tt391"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_connected_to(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_connected_to(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_port_list&nbsp;</td>
-      <td class=PParameter nowrap>list</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>list</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 For a port or export type, this function fills <i>list</i> with all of the ports, exports and implementations that this port is connected to.</div></div><div class=CToolTip id="tt392"><div class=CMethod>
@@ -623,27 +717,33 @@ For a port or export type, this function fills <i>list</i> with all of the ports
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt394"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit get_coverage(</td>      <td class=PType nowrap>uvm_reg_cvr_t&nbsp;</td>
-      <td class=PParameter nowrap>is_on</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function bit get_coverage(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_cvr_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>is_on</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Check if coverage measurement is on.</div></div><div class=CToolTip id="tt395"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit get_coverage(</td>      <td class=PType nowrap>uvm_reg_cvr_t&nbsp;</td>
-      <td class=PParameter nowrap>is_on</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function bit get_coverage(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_cvr_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>is_on</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Check if coverage measurement is on.</div></div><div class=CToolTip id="tt396"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit get_coverage(</td>      <td class=PType nowrap>uvm_reg_cvr_t&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function bit get_coverage(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_cvr_t&nbsp;</td>
       <td class=PParameter nowrap>is_on</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> UVM_CVR_ALL</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Check if coverage measurement is on.</div></div><div class=CToolTip id="tt397"><div class=CMethod>
@@ -653,10 +753,12 @@ Check if coverage measurement is on.</div></div><div class=CToolTip id="tt397"><
   </td></tr></table></blockquote>Returns the request_item currently being executed by the sequencer. </div></div><div class=CToolTip id="tt399"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_data (</td>      <td class=PTypePrefix nowrap>output byte unsigned&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_data (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output byte unsigned&nbsp;</td>
       <td class=PType nowrap>p&nbsp;</td>
-      <td class=PParameter nowrap>[]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>[]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the value of the m_data array</div></div><div class=CToolTip id="tt400"><div class=CMethod>
@@ -686,20 +788,24 @@ Return the value of the m_data array</div></div><div class=CToolTip id="tt400"><
   </td></tr></table></blockquote>Returns the domain name associated with this phase node</div></div><div class=CToolTip id="tt412"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void get_domains(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>static function void get_domains(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>uvm_domain&nbsp;</td>
-      <td class=PParameter nowrap>domains[string]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>domains[string]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides a list of all domains in the provided <i>domains</i> argument.</div></div><div class=CToolTip id="tt413"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function time get_drain_time (</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function time get_drain_time (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>obj</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the current drain time set for the given <i>object</i> (default: 0 ns).</div></div><div class=CToolTip id="tt414"><div class=CMethod>
@@ -715,9 +821,11 @@ Returns the current drain time set for the given <i>object</i> (default: 0 ns).<
   </td></tr></table></blockquote>Returns the event pool associated with this transaction.</div></div><div class=CToolTip id="tt420"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_tlm_extension_base get_extension(</td>      <td class=PType nowrap>uvm_tlm_extension_base&nbsp;</td>
-      <td class=PParameter nowrap>ext_handle</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function uvm_tlm_extension_base get_extension(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tlm_extension_base&nbsp;</td>
+      <td class=PParameter nowrap width=100%>ext_handle</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the instance specific extension bound under the specified key. </div></div><div class=CToolTip id="tt421"><div class=CMethod>
@@ -727,75 +835,89 @@ Return the instance specific extension bound under the specified key. </div></di
   </td></tr></table></blockquote>Returns the currently enabled uvm factory. </div></div><div class=CToolTip id="tt423"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_field get_field_by_name(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_reg_field get_field_by_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the named field in this register</div></div><div class=CToolTip id="tt424"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_field get_field_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_reg_field get_field_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Finds a field with the specified simple name.</div></div><div class=CToolTip id="tt425"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_vreg_field get_field_by_name(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_vreg_field get_field_by_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the named virtual field in this virtual register</div></div><div class=CToolTip id="tt426"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_fields (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_fields (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_field&nbsp;</td>
-      <td class=PParameter nowrap>fields[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>fields[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the fields in this register</div></div><div class=CToolTip id="tt427"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_fields (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_fields (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_field&nbsp;</td>
       <td class=PParameter nowrap>fields[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the fields</div></div><div class=CToolTip id="tt428"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_fields (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_fields (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_field&nbsp;</td>
       <td class=PParameter nowrap>fields[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the fields</div></div><div class=CToolTip id="tt429"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_fields(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_fields(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_vreg_field&nbsp;</td>
-      <td class=PParameter nowrap>fields[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>fields[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the virtual fields in this virtual register</div></div><div class=CToolTip id="tt430"><div class=CMethod>
@@ -805,22 +927,26 @@ Return the virtual fields in this virtual register</div></div><div class=CToolTi
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt432"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function CB get_first (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>static function CB get_first (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>itr,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      <td class=PParameter nowrap width=100%>itr,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the first enabled callback of type CB which resides in the queue for <i>obj</i>. </div></div><div class=CToolTip id="tt433"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_first_child (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function int get_first_child (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 These methods are used to iterate through this component&rsquo;s children, if any. </div></div><div class=CToolTip id="tt434"><div class=CMethod>
@@ -828,105 +954,117 @@ These methods are used to iterate through this component&rsquo;s children, if an
   </td></tr></table></blockquote>Returns the file name of the message.</div></div><div class=CToolTip id="tt435"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_reg_frontdoor get_frontdoor(</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_reg_frontdoor get_frontdoor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the user-defined frontdoor for this memory</div></div><div class=CToolTip id="tt436"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_reg_frontdoor get_frontdoor(</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function uvm_reg_frontdoor get_frontdoor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the user-defined frontdoor for this register</div></div><div class=CToolTip id="tt437"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_full_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_full_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_hdl_path_concat&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>separator</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;.&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the full hierarchical HDL path(s)</div></div><div class=CToolTip id="tt438"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_full_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_full_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_hdl_path_concat&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>separator</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;.&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the full hierarchical HDL path(s)</div></div><div class=CToolTip id="tt439"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_full_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_full_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap></td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>separator</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;.&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the full hierarchical HDL path(s)</div></div><div class=CToolTip id="tt440"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_full_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_full_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>separator</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;.&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the full hierarchical HDL path(s)</div></div><div class=CToolTip id="tt441"><div class=CMethod>
@@ -956,25 +1094,31 @@ Get the full hierarchical HDL path(s)</div></div><div class=CToolTip id="tt441">
   </td></tr></table></blockquote>Get the hierarchical name</div></div><div class=CToolTip id="tt453"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function T get_global (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>key</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function T get_global (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>key</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the specified item instance from the global item pool.</div></div><div class=CToolTip id="tt454"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function T get_global (</td>      <td class=PType nowrap>KEY&nbsp;</td>
-      <td class=PParameter nowrap>key</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function T get_global (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>KEY&nbsp;</td>
+      <td class=PParameter nowrap width=100%>key</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the specified item instance from the global item pool.</div></div><div class=CToolTip id="tt455"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function T get_global (</td>      <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>index</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function T get_global (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>index</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the specified item instance from the global item queue.</div></div><div class=CToolTip id="tt456"><div class=CMethod>
@@ -990,83 +1134,95 @@ Returns the specified item instance from the global item queue.</div></div><div 
   </td></tr></table></blockquote>Returns a unique ID for this stream.</div></div><div class=CToolTip id="tt461"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_hdl_path_concat&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the incremental HDL path(s)</div></div><div class=CToolTip id="tt462"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_hdl_path_concat&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the incremental HDL path(s)</div></div><div class=CToolTip id="tt463"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the incremental HDL path(s)</div></div><div class=CToolTip id="tt464"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_hdl_path (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>function void get_hdl_path (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>paths[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the incremental HDL path(s)</div></div><div class=CToolTip id="tt465"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_hdl_path_kinds (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_hdl_path_kinds (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>kinds[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>kinds[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get design abstractions for which HDL paths have been defined</div></div><div class=CToolTip id="tt466"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_hdl_path_kinds (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_hdl_path_kinds (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>kinds[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>kinds[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get design abstractions for which HDL paths have been defined</div></div><div class=CToolTip id="tt467"><div class=CMethod>
@@ -1098,45 +1254,55 @@ Traverse a queue, <i>q</i>, of resources and return the one with the highest pre
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt471"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt472"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function int get_id_count(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function int get_id_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the count of already passed messages with <i>id</i></div></div><div class=CToolTip id="tt473"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_id_set(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_id_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the set of id&rsquo;s already used by this uvm_report_server</div></div><div class=CToolTip id="tt474"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_port_base #(</td>      <td class=PParameter nowrap>IF</td>
-      <td class=PAfterParameters nowrap>) get_if(int index=0)</td></tr>
+      <td class=PBeforeParameters colspan=2>function uvm_port_base #(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>IF</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>) get_if(int index=0)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the implementation (imp) port at the given index from the array of imps this port is connected to. </div></div><div class=CToolTip id="tt475"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_immediate_children(</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_immediate_children(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>STRUCTURE&nbsp;</td>
-      <td class=PParameter nowrap>s,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PParameter nowrap width=100%>s,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>STRUCTURE&nbsp;</td>
-      <td class=PParameter nowrap>children[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>children[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This method will be return in <i>children</i> a set of the direct subelements of <i>s</i></div></div><div class=CToolTip id="tt476"><div class=CMethod>
@@ -1160,13 +1326,15 @@ This method will be return in <i>children</i> a set of the direct subelements of
   </td></tr></table></blockquote>Return handle to the target phase of the current jump, or null if no jump is in progress. </div></div><div class=CToolTip id="tt485"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function CB get_last (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>static function CB get_last (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>itr,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      <td class=PParameter nowrap width=100%>itr,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the last enabled callback of type CB which resides in the queue for <i>obj</i>. </div></div><div class=CToolTip id="tt486"><div class=CMethod>
@@ -1180,55 +1348,61 @@ Returns the last enabled callback of type CB which resides in the queue for <i>o
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt490"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_cause_effect_link get_link(</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function uvm_cause_effect_link get_link(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>lhs,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>rhs,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;ce_link&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Constructs a pre-filled link</div></div><div class=CToolTip id="tt491"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_parent_child_link get_link(</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function uvm_parent_child_link get_link(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>lhs,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>rhs,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;pc_link&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Constructs a pre-filled link</div></div><div class=CToolTip id="tt492"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_related_link get_link(</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function uvm_related_link get_link(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>lhs,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>rhs,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;ce_link&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Constructs a pre-filled link</div></div><div class=CToolTip id="tt493"><div class=CMethod>
@@ -1238,45 +1412,55 @@ Constructs a pre-filled link</div></div><div class=CToolTip id="tt493"><div clas
   </td></tr></table></blockquote>Return the position of the virtual field / Returns the index of the least significant bit of the virtual field in the virtual register that instantiates it. </div></div><div class=CToolTip id="tt495"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_map get_map_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_reg_map get_map_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Finds an address map with the specified simple name.</div></div><div class=CToolTip id="tt496"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_maps (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_maps (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
-      <td class=PParameter nowrap>maps[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>maps[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns all of the address <i>maps</i> where this memory is mapped</div></div><div class=CToolTip id="tt497"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_maps (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_maps (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
-      <td class=PParameter nowrap>maps[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>maps[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns all of the address <i>maps</i> where this register is mapped</div></div><div class=CToolTip id="tt498"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_maps (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_maps (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
-      <td class=PParameter nowrap>maps[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>maps[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the address maps</div></div><div class=CToolTip id="tt499"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_maps (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_maps (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
-      <td class=PParameter nowrap>maps[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>maps[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns all of the address <i>maps</i> where this virtual register array is mapped</div></div><div class=CToolTip id="tt500"><div class=CMethod>
@@ -1292,33 +1476,39 @@ Returns all of the address <i>maps</i> where this virtual register array is mapp
   </td></tr></table></blockquote>Returns the width, in number of bits, of the largest field.</div></div><div class=CToolTip id="tt505"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_mem get_mem_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_mem get_mem_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Finds a memory with the specified simple name.</div></div><div class=CToolTip id="tt506"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_mem get_mem_by_offset(</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
-      <td class=PParameter nowrap>offset</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_mem get_mem_by_offset(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
+      <td class=PParameter nowrap width=100%>offset</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get memory mapped at offset</div></div><div class=CToolTip id="tt507"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_memories (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_memories (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_mem&nbsp;</td>
       <td class=PParameter nowrap>mems[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the memories</div></div><div class=CToolTip id="tt508"><div class=CMethod>
@@ -1338,29 +1528,33 @@ Get the memories</div></div><div class=CToolTip id="tt508"><div class=CMethod>
   </td></tr></table></blockquote>returns the uvm_tr_database used for recording messages</div></div><div class=CToolTip id="tt515"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_data_t get_mirrored_value(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_data_t get_mirrored_value(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>fname</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>lineno</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the mirrored value of the fields in the register.</div></div><div class=CToolTip id="tt516"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_data_t get_mirrored_value(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_data_t get_mirrored_value(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>fname</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>int&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>lineno</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the mirrored value of the field</div></div><div class=CToolTip id="tt517"><div class=CMethod>
@@ -1380,11 +1574,13 @@ Return the mirrored value of the field</div></div><div class=CToolTip id="tt517"
   </td></tr></table></blockquote>Returns the width, in bytes, of this register. </div></div><div class=CToolTip id="tt524"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function int unsigned get_n_bytes (</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function int unsigned get_n_bytes (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the width in bytes of the bus associated with this map. </div></div><div class=CToolTip id="tt525"><div class=CMethod>
@@ -1410,40 +1606,48 @@ Get the width in bytes of the bus associated with this map. </div></div><div cla
   </td></tr></table></blockquote>This method should return a regex for what is being considered a valid/good component name. </div></div><div class=CToolTip id="tt543"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function CB get_next (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>static function CB get_next (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>itr,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      <td class=PParameter nowrap width=100%>itr,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the next enabled callback of type CB which resides in the queue for <i>obj</i>, using <i>itr</i> as the starting point. </div></div><div class=CToolTip id="tt544"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_next_child (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function int get_next_child (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt545"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual task get_next_item (</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual task get_next_item (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>REQ&nbsp;</td>
-      <td class=PParameter nowrap>t</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>t</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Retrieves the next available item from a sequence.</div></div><div class=CToolTip id="tt546"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual task get_next_item(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual task get_next_item(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>T1&nbsp;</td>
-      <td class=PParameter nowrap>t</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>t</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Retrieves the next available item from a sequence. </div></div><div class=CToolTip id="tt547"><div class=CMethod>
@@ -1469,73 +1673,87 @@ Retrieves the next available item from a sequence. </div></div><div class=CToolT
   </td></tr></table></blockquote>Return the uvm_objection that gates the termination of the phase.</div></div><div class=CToolTip id="tt557"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_objection_count (</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function int get_objection_count (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>obj</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the current number of objections raised by the given <i>object</i>.</div></div><div class=CToolTip id="tt558"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function int get_objection_count(</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function int get_objection_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>obj</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the current number of objections to ending this phase raised by the given <i>object</i>.</div></div><div class=CToolTip id="tt559"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_objection_total (</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function int get_objection_total (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
       <td class=PParameter nowrap>obj</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the current number of objections raised by the given <i>object</i> and all descendants.</div></div><div class=CToolTip id="tt560"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_objectors(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_objectors(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_object&nbsp;</td>
-      <td class=PParameter nowrap>list[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>list[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the current list of objecting objects (objects that raised an objection but have not dropped it).</div></div><div class=CToolTip id="tt561"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_offset (</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_addr_t get_offset (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
       <td class=PParameter nowrap>offset</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 0,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the base offset of a memory location</div></div><div class=CToolTip id="tt562"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_offset (</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_addr_t get_offset (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the offset of this register</div></div><div class=CToolTip id="tt563"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_offset_in_memory(</td>      <td class=PTypePrefix nowrap>longint&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function uvm_reg_addr_t get_offset_in_memory(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>longint&nbsp;</td>
       <td class=PType nowrap>unsigned&nbsp;</td>
-      <td class=PParameter nowrap>idx</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>idx</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the offset of a virtual register</div></div><div class=CToolTip id="tt564"><div class=CMethod>
@@ -1573,28 +1791,32 @@ Returns the offset of a virtual register</div></div><div class=CToolTip id="tt56
   </td></tr></table></blockquote>Returns the phase type as defined by uvm_phase_type</div></div><div class=CToolTip id="tt580"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function int get_physical_addresses(</td>      <td class=PTypePrefix nowrap></td>
+      <td class=PBeforeParameters colspan=4>virtual function int get_physical_addresses(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
-      <td class=PParameter nowrap>base_addr,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap></td>
+      <td class=PParameter nowrap width=100%>base_addr,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>
       <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
-      <td class=PParameter nowrap>mem_offset,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>int&nbsp;</td>
+      <td class=PParameter nowrap width=100%>mem_offset,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>int&nbsp;</td>
       <td class=PType nowrap>unsigned&nbsp;</td>
-      <td class=PParameter nowrap>n_bytes,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PParameter nowrap width=100%>n_bytes,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
-      <td class=PParameter nowrap>addr[]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>addr[]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Translate a local address into external addresses</div></div><div class=CToolTip id="tt581"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void get_plusargs (</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function void get_plusargs (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>args[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>args[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function returns a queue with all of the plus arguments that were used to start the simulation. </div></div><div class=CToolTip id="tt582"><div class=CMethod>
@@ -1602,13 +1824,15 @@ This function returns a queue with all of the plus arguments that were used to s
   </td></tr></table></blockquote>Retrieve the actual port object that this proxy refers to.</div></div><div class=CToolTip id="tt583"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function CB get_prev (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>static function CB get_prev (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>itr,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      <td class=PParameter nowrap width=100%>itr,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the previous enabled callback of type CB which resides in the queue for <i>obj</i>, using <i>itr</i> as the starting point. </div></div><div class=CToolTip id="tt584"><div class=CMethod>
@@ -1620,10 +1844,12 @@ Returns the previous enabled callback of type CB which resides in the queue for 
   </td></tr></table></blockquote>Returns the propagation mode for this objection.</div></div><div class=CToolTip id="tt587"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_provided_to(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_provided_to(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_port_list&nbsp;</td>
-      <td class=PParameter nowrap>list</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>list</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 For an implementation or export type, this function fills <i>list</i> with all of the ports, exports and implementations that this port is provides its implementation to.</div></div><div class=CToolTip id="tt588"><div class=CMethod>
@@ -1633,23 +1859,27 @@ For an implementation or export type, this function fills <i>list</i> with all o
   </td></tr></table></blockquote>returns the current number of <i>UVM_QUIT</i> actions already passed through this server</div></div><div class=CToolTip id="tt590"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function string get_radix_str(</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function string get_radix_str(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Converts the radix from an enumerated to a printable radix according to the radix printing knobs (bin_radix, and so on).</div></div><div class=CToolTip id="tt591"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function real get_realtime(</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function real get_realtime(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
       <td class=PParameter nowrap>scaled,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>real&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>real&nbsp;</td>
       <td class=PParameter nowrap>secs</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1.0e-9</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the current canonical time value, scaled for the caller&rsquo;s timescale</div></div><div class=CToolTip id="tt592"><div class=CMethod>
@@ -1657,40 +1887,48 @@ Return the current canonical time value, scaled for the caller&rsquo;s timescale
   </td></tr></table></blockquote>Provides a tool-specific handle which is compatible with `uvm_record_attribute.</div></div><div class=CToolTip id="tt593"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_recorder get_recorder_from_handle(</td>      <td class=PType nowrap>integer&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function uvm_recorder get_recorder_from_handle(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Static accessor, returns a recorder reference for a given unique id.</div></div><div class=CToolTip id="tt594"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function unsigned get_recorders(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function unsigned get_recorders(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_recorder&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides a queue of all transactions within the stream.</div></div><div class=CToolTip id="tt595"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg get_reg_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_reg get_reg_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Finds a register with the specified simple name.</div></div><div class=CToolTip id="tt596"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg get_reg_by_offset(</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg get_reg_by_offset(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
       <td class=PParameter nowrap>offset,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>read</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> 1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get register mapped at offset</div></div><div class=CToolTip id="tt597"><div class=CMethod>
@@ -1702,61 +1940,71 @@ Get register mapped at offset</div></div><div class=CToolTip id="tt597"><div cla
   </td></tr></table></blockquote>Get the region where the virtual register array is implemented</div></div><div class=CToolTip id="tt600"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_registers (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_registers (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg&nbsp;</td>
       <td class=PParameter nowrap>regs[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the registers</div></div><div class=CToolTip id="tt601"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_registers (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_registers (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg&nbsp;</td>
       <td class=PParameter nowrap>regs[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the registers</div></div><div class=CToolTip id="tt602"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_report_action(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_report_action(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Gets the action associated with reports having the given <i>severity</i> and <i>id</i>.</div></div><div class=CToolTip id="tt603"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_report_catcher get_report_catcher(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function uvm_report_catcher get_report_catcher(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the first report catcher that has <i>name</i>.</div></div><div class=CToolTip id="tt604"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_report_file_handle(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_report_file_handle(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Gets the file descriptor associated with reports having the given <i>severity</i> and <i>id</i>.</div></div><div class=CToolTip id="tt605"><div class=CMethod>
@@ -1776,51 +2024,59 @@ Gets the file descriptor associated with reports having the given <i>severity</i
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt612"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_report_verbosity_level(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function int get_report_verbosity_level(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
       <td class=PParameter nowrap>severity</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_INFO,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>id</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Gets the verbosity level in effect for this object. </div></div><div class=CToolTip id="tt613"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_data_t get_reset(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_data_t get_reset(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;HARD&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the specified reset value for this register</div></div><div class=CToolTip id="tt614"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_data_t get_reset(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_reg_data_t get_reset(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>kind</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> &quot;HARD&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the specified reset value for this field</div></div><div class=CToolTip id="tt615"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual task get_response(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual task get_response(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>RSP&nbsp;</td>
       <td class=PParameter nowrap>response,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>transaction_id</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> -1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 By default, sequences must retrieve responses by calling get_response. </div></div><div class=CToolTip id="tt616"><div class=CMethod>
@@ -1836,31 +2092,37 @@ By default, sequences must retrieve responses by calling get_response. </div></d
   </td></tr></table></blockquote>Gets the right-hand-side of the link</div></div><div class=CToolTip id="tt621"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function string get_rights (</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function string get_rights (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the access rights of this memory.</div></div><div class=CToolTip id="tt622"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function string get_rights (</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function string get_rights (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the accessibility (&ldquo;RW, &ldquo;RO&rdquo;, or &ldquo;WO&rdquo;) of this register in the given <i>map</i>.</div></div><div class=CToolTip id="tt623"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function string get_rights(</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function string get_rights(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the access rights of this virtual reigster array</div></div><div class=CToolTip id="tt624"><div class=CMethod>
@@ -1868,10 +2130,12 @@ Returns the access rights of this virtual reigster array</div></div><div class=C
   </td></tr></table></blockquote>returns the uvm_root instance</div></div><div class=CToolTip id="tt625"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void get_root_blocks(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>static function void get_root_blocks(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_block&nbsp;</td>
-      <td class=PParameter nowrap>blks[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>blks[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the all root blocks</div></div><div class=CToolTip id="tt626"><div class=CMethod>
@@ -1885,19 +2149,23 @@ Get the all root blocks</div></div><div class=CToolTip id="tt626"><div class=CMe
   </td></tr></table></blockquote>Accessor to return the integer number of times this phase has executed</div></div><div class=CToolTip id="tt630"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function uvm_phase get_schedule(</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap>hier</td>
+      <td class=PBeforeParameters colspan=4>function uvm_phase get_schedule(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap width=100%>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the topmost parent schedule node, if any, for hierarchical graph traversal</div></div><div class=CToolTip id="tt631"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function string get_schedule_name(</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap>hier</td>
+      <td class=PBeforeParameters colspan=4>function string get_schedule_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap width=100%>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns the schedule name associated with this phase node</div></div><div class=CToolTip id="tt632"><div class=CMethod>
@@ -1913,11 +2181,13 @@ Returns the schedule name associated with this phase node</div></div><div class=
   </td></tr></table></blockquote>Returns the sequence state as an enumerated value. </div></div><div class=CToolTip id="tt637"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_sequencer_base get_sequencer (</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_sequencer_base get_sequencer (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Gets the sequencer for the bus associated with this map. </div></div><div class=CToolTip id="tt638"><div class=CMethod>
@@ -1925,13 +2195,15 @@ Gets the sequencer for the bus associated with this map. </div></div><div class=
   </td></tr></table></blockquote>Returns a reference to the default sequencer used by this sequence.</div></div><div class=CToolTip id="tt639"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_sequences(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_sequences(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
-      <td class=PParameter nowrap>seq_types[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>seq_types[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Append to the provided <i>seq_types</i> array the list of registered sequences.</div></div><div class=CToolTip id="tt640"><div class=CMethod>
+Append to the provided <i>seq_types</i> array the list of registered <i>sequences</i>.</div></div><div class=CToolTip id="tt640"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>static function uvm_report_server get_server()
   </td></tr></table></blockquote>Gets the global report server used for reporting.</div></div><div class=CToolTip id="tt641"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function uvm_severity get_severity()
@@ -1940,26 +2212,32 @@ Append to the provided <i>seq_types</i> array the list of registered sequences.<
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt643"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function int get_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>function int get_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt644"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function int get_severity_count(</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>severity</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function int get_severity_count(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_severity&nbsp;</td>
+      <td class=PParameter nowrap width=100%>severity</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the count of already passed messages with severity <i>severity</i></div></div><div class=CToolTip id="tt645"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void get_severity_set(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>pure virtual function void get_severity_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>uvm_severity&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 returns the set of severities&rsquo;s already used by this uvm_report_server</div></div><div class=CToolTip id="tt646"><div class=CMethod>
@@ -1979,9 +2257,11 @@ returns the set of severities&rsquo;s already used by this uvm_report_server</di
   </td></tr></table></blockquote>Returns a reference to the stream which created this record.</div></div><div class=CToolTip id="tt653"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function uvm_tr_stream get_stream_from_handle(</td>      <td class=PType nowrap>integer&nbsp;</td>
-      <td class=PParameter nowrap>id</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>static function uvm_tr_stream get_stream_from_handle(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
+      <td class=PParameter nowrap width=100%>id</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Static accessor, returns a stream reference for a given unique id.</div></div><div class=CToolTip id="tt654"><div class=CMethod>
@@ -1991,34 +2271,40 @@ Static accessor, returns a stream reference for a given unique id.</div></div><d
   </td></tr></table></blockquote>Get the value of the m_streaming_width array</div></div><div class=CToolTip id="tt656"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function unsigned get_streams(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>function unsigned get_streams(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_tr_stream&nbsp;</td>
-      <td class=PParameter nowrap>q[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>q[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides a queue of all streams within the database.</div></div><div class=CToolTip id="tt657"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_reg_addr_t get_submap_offset (</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
-      <td class=PParameter nowrap>submap</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_reg_addr_t get_submap_offset (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      <td class=PParameter nowrap width=100%>submap</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the offset of the given <i>submap</i>.</div></div><div class=CToolTip id="tt658"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_submaps (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_submaps (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>maps[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the address sub-maps</div></div><div class=CToolTip id="tt659"><div class=CMethod>
@@ -2034,15 +2320,17 @@ Get the address sub-maps</div></div><div class=CToolTip id="tt659"><div class=CM
   </td></tr></table></blockquote>Returns the handle associated with the transaction, as set by a previous call to begin_child_tr or begin_tr with transaction recording enabled.</div></div><div class=CToolTip id="tt664"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_tr_stream get_tr_stream(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_tr_stream get_tr_stream(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>stream_type_name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns a tr stream with <i>this</i> component&rsquo;s full name as a scope.</div></div><div class=CToolTip id="tt665"><div class=CMethod>
@@ -2092,13 +2380,15 @@ Returns a tr stream with <i>this</i> component&rsquo;s full name as a scope.</di
   </td></tr></table></blockquote>Get the &ldquo;UVM&rdquo; schedule, which consists of the run-time phases that all components execute when participating in the &ldquo;UVM&rdquo; domain.</div></div><div class=CToolTip id="tt687"><div class=CMethod>This function returns a queue with all of the uvm arguments that were used to start the simulation. </div></div><div class=CToolTip id="tt688"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_bitstream_t get_value(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function uvm_bitstream_t get_value(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>int&nbsp;</td>
-      <td class=PParameter nowrap>size,</td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PParameter nowrap width=100%>size,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>uvm_radix_enum&nbsp;</td>
-      <td class=PParameter nowrap>radix</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>radix</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt689"><div class=CMethod>
@@ -2112,67 +2402,79 @@ Returns a tr stream with <i>this</i> component&rsquo;s full name as a scope.</di
   </td></tr></table></blockquote></div></div><div class=CToolTip id="tt693"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_vreg_field get_vfield_by_name(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_vreg_field get_vfield_by_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Find the named virtual field</div></div><div class=CToolTip id="tt694"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_vreg_field get_vfield_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_vreg_field get_vfield_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Finds a virtual field with the specified simple name.</div></div><div class=CToolTip id="tt695"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_virtual_fields(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_virtual_fields(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_vreg_field&nbsp;</td>
-      <td class=PParameter nowrap>fields[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>fields[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return  the virtual fields in the memory</div></div><div class=CToolTip id="tt696"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_virtual_fields (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_virtual_fields (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_vreg_field&nbsp;</td>
       <td class=PParameter nowrap>fields[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the virtual fields</div></div><div class=CToolTip id="tt697"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_virtual_fields (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_virtual_fields (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_vreg_field&nbsp;</td>
       <td class=PParameter nowrap>fields[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the virtual fields</div></div><div class=CToolTip id="tt698"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_virtual_registers(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function void get_virtual_registers(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_vreg&nbsp;</td>
-      <td class=PParameter nowrap>regs[$]</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>regs[$]</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Return the virtual registers in this memory</div></div><div class=CToolTip id="tt699"><div class=CMethod>
@@ -2180,81 +2482,95 @@ Return the virtual registers in this memory</div></div><div class=CToolTip id="t
   </td></tr></table></blockquote>Get the virtual register array in this region</div></div><div class=CToolTip id="tt700"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_virtual_registers(</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_virtual_registers(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_vreg&nbsp;</td>
       <td class=PParameter nowrap>regs[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the virtual registers</div></div><div class=CToolTip id="tt701"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void get_virtual_registers (</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
+      <td class=PBeforeParameters colspan=6>virtual function void get_virtual_registers (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>ref&nbsp;</td>
       <td class=PType nowrap>uvm_vreg&nbsp;</td>
       <td class=PParameter nowrap>regs[$],</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>input&nbsp;</td>
       <td class=PType nowrap>uvm_hier_e&nbsp;</td>
       <td class=PParameter nowrap>hier</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>UVM_HIER</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Get the virtual registers</div></div><div class=CToolTip id="tt702"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_vreg get_vreg_by_name(</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_vreg get_vreg_by_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Find the named virtual register</div></div><div class=CToolTip id="tt703"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_vreg get_vreg_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_vreg get_vreg_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Finds a virtual register with the specified simple name.</div></div><div class=CToolTip id="tt704"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_vreg get_vreg_by_offset(</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_vreg get_vreg_by_offset(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_addr_t&nbsp;</td>
       <td class=PParameter nowrap>offset,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>
       <td class=PParameter nowrap>map</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Find the virtual register implemented at the specified offset</div></div><div class=CToolTip id="tt705"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>task grab(</td>      <td class=PType nowrap>uvm_sequencer_base&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>task grab(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_sequencer_base&nbsp;</td>
       <td class=PParameter nowrap>sequencer</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%> null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Requests a lock on the specified sequencer. </div></div><div class=CToolTip id="tt706"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual task grab(</td>      <td class=PType nowrap>uvm_sequence_base&nbsp;</td>
-      <td class=PParameter nowrap>sequence_ptr</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual task grab(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_sequence_base&nbsp;</td>
+      <td class=PParameter nowrap width=100%>sequence_ptr</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Requests a lock for the sequence specified by sequence_ptr.</div></div><!--END_ND_TOOLTIPS-->

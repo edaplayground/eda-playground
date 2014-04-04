@@ -147,7 +147,7 @@ slave</pre></blockquote></div></div></div>
 
 
  <!--CONTENT index=9 -->
-<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="Usage" href="../../src/overviews/tlm1.txt">Usage</a></h3><div class=CBody><p>This example illustrates basic TLM connectivity using the blocking put inteface.</p><img src="../../images/uvm_ref_tlm_hierarchy.gif" width="486" height="236"><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>port-to-port</td><td class=CDLDescription>leaf1&rsquo;s <i>out</i> port is connected to its parent&rsquo;s (comp1) <i>out</i> port</td></tr><tr><td class=CDLEntry>port-to-export</td><td class=CDLDescription>comp1&rsquo;s <i>out</i> port is connected to comp2&rsquo;s <i>in</i> export</td></tr><tr><td class=CDLEntry>export-to-export</td><td class=CDLDescription>comp2&rsquo;s <i>in</i> export is connected to its child&rsquo;s (subcomp2) <i>in</i> export</td></tr><tr><td class=CDLEntry>export-to-imp</td><td class=CDLDescription>subcomp2&rsquo;s <i>in</i> export is connected leaf2&rsquo;s <i>in</i> imp port.</td></tr><tr><td class=CDLEntry>imp-to-implementation</td><td class=CDLDescription>leaf2&rsquo;s <i>in</i> imp port is connected to its implementation, leaf2</td></tr></table><p>Hierarchical port connections are resolved and optimized just before the &lt;uvm_component::end_of_elaboration&gt; phase.&nbsp; After optimization, calling any port&rsquo;s interface method (e.g. leaf1.out.put(trans)) incurs a single hop to get to the implementation (e.g. leaf2&rsquo;s put task), no matter how far up and down the hierarchy the implementation resides.</p><blockquote><pre>`include &quot;uvm_pkg.sv&quot;
+<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="Usage" href="../../src/overviews/tlm1.txt">Usage</a></h3><div class=CBody><p>This example illustrates basic TLM connectivity using the blocking put inteface.</p><img src="../../images/uvm_ref_tlm_hierarchy.gif" width="486" height="236"><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>port-to-port</td><td class=CDLDescription>leaf1&rsquo;s <i>out</i> port is connected to its parent&rsquo;s (comp1) <i>out</i> port</td></tr><tr><td class=CDLEntry>port-to-export</td><td class=CDLDescription>comp1&rsquo;s <i>out</i> port is connected to comp2&rsquo;s <i>in</i> export</td></tr><tr><td class=CDLEntry>export-to-export</td><td class=CDLDescription>comp2&rsquo;s <i>in</i> export is connected to its child&rsquo;s (subcomp2) <i>in</i> export</td></tr><tr><td class=CDLEntry>export-to-imp</td><td class=CDLDescription>subcomp2&rsquo;s <i>in</i> export is connected leaf2&rsquo;s <i>in</i> imp port.</td></tr><tr><td class=CDLEntry>imp-to-implementation</td><td class=CDLDescription>leaf2&rsquo;s <i>in</i> imp port is connected to its implementation, leaf2</td></tr></table><p>Hierarchical port connections are resolved and optimized just before <a href="../base/uvm_component-svh.html#uvm_component.end_of_elaboration_phase" class=LMethod id=link1 onMouseOver="ShowTip(event, 'tt1', 'link1')" onMouseOut="HideTip('tt1')">uvm_component::end_of_elaboration_phase</a>.&nbsp; After optimization, calling any port&rsquo;s interface method (e.g. leaf1.out.put(trans)) incurs a single hop to get to the implementation (e.g. leaf2&rsquo;s put task), no matter how far up and down the hierarchy the implementation resides.</p><blockquote><pre>`include &quot;uvm_pkg.sv&quot;
 import uvm_pkg::*;
 
 class trans extends uvm_transaction;
@@ -307,7 +307,17 @@ endmodule</pre></blockquote></div></div></div>
 
 
 <!--START_ND_TOOLTIPS-->
-<!--END_ND_TOOLTIPS-->
+<div class=CToolTip id="tt1"><div class=CMethod>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters colspan=3>virtual function void end_of_elaboration_phase(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_phase&nbsp;</td>
+      <td class=PParameter nowrap width=100%>phase</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+The uvm_end_of_elaboration_phase phase implementation method.</div></div><!--END_ND_TOOLTIPS-->
 
 <script language=JavaScript><!--
 if (browserType) {if (browserVer) {document.write("</div>"); }document.write("</div>");}// --></script></body></html>

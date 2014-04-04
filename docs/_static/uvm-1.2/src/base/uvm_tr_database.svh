@@ -130,7 +130,7 @@ virtual class uvm_tr_database extends uvm_object;
    // object if successful, ~null~ otherwise.
    //
    // This method will trigger a <do_open_stream> call, and if a
-   // non ~null~ stream is returned, then <uvm_tr_stream::do_opened>
+   // non ~null~ stream is returned, then <uvm_tr_stream::do_open>
    // will be called.
    //
    // Streams can only be opened if the database is

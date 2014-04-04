@@ -100,7 +100,7 @@ virtual class uvm_event_base extends uvm_object;
 	// Waits for the event to be triggered. 
 	//
 	// If one process calls wait_trigger in the same delta as another process
-	// calls <trigger>, a race condition occurs. If the call to wait occurs
+	// calls <uvm_event#(T)::trigger>, a race condition occurs. If the call to wait occurs
 	// before the trigger, this method will return in this delta. If the wait
 	// occurs after the trigger, this method will not return until the next
 	// trigger, which may never occur and thus cause deadlock.
@@ -268,7 +268,7 @@ class uvm_event#(type T=uvm_object) extends uvm_event_base;
 
 	// Task: wait_trigger_data
 	//
-	// This method calls <wait_trigger> followed by <get_trigger_data>.
+	// This method calls <uvm_event_base::wait_trigger> followed by <get_trigger_data>.
 
 	virtual task wait_trigger_data (output T data);
 		wait_trigger();
@@ -278,7 +278,7 @@ class uvm_event#(type T=uvm_object) extends uvm_event_base;
 
 	// Task: wait_ptrigger_data
 	//
-	// This method calls <wait_ptrigger> followed by <get_trigger_data>.
+	// This method calls <uvm_event_base::wait_ptrigger> followed by <get_trigger_data>.
 
 	virtual task wait_ptrigger_data (output T data);
 		wait_ptrigger();

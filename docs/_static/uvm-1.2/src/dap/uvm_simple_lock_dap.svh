@@ -29,7 +29,7 @@
 // 'get' at any time.
 //
 // The UVM uses this policy to protect the ~file name~ value in the
-// <uvm_text_record_database>.
+// <uvm_text_tr_database>.
 //
 
 class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);

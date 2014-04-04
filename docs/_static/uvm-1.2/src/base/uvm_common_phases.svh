@@ -229,7 +229,7 @@ endclass
 //
 // Exit Criteria:
 // - The DUT no longer needs to be simulated, and 
-// - The <uvm_post_shutdown_ph> is ready to end
+// - The <uvm_post_shutdown_phase> is ready to end
 //
 // The run phase terminates in one of two ways.
 //

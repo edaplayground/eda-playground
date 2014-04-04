@@ -124,6 +124,6 @@ However, TLM-2.0 strongly recommends either using the base
 protocol off-the-shelf or creating models of specific protocols on top
 of the base protocol.
 
-The UVM 1.1 standard only defines and supports this TLM2 style interface for
+The UVM 1.2 standard only defines and supports this TLM2 style interface for
 SystemVerilog to SystemVerlog communication. Mixed languanged TLM
 communication is saved for future extension.

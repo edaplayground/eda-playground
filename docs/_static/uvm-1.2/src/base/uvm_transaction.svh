@@ -136,7 +136,7 @@ virtual class uvm_transaction extends uvm_object;
   // Calling ~accept_tr~ indicates that the transaction item has been received by
   // a consumer component. Typically a <uvm_driver #(REQ,RSP)> would call <uvm_component::accept_tr>,
   // which calls this method-- upon return from a get_next_item(), get(), or peek()
-  // call on its sequencer port, <uvm_driver::seq_item_port>.
+  // call on its sequencer port, <uvm_driver#(REQ,RSP)::seq_item_port>.
   //
   // With some
   // protocols, the received item may not be started immediately after it is
@@ -336,7 +336,7 @@ virtual class uvm_transaction extends uvm_object;
   //
   // By default, the event pool contains the events: begin, accept, and end.
   // Events can also be added by derivative objects. An event pool is a
-  // specialization of an <uvm_pool #(T)>, e.g. a ~uvm_pool#(uvm_event)~.
+  // specialization of an <uvm_pool#(KEY,T)>, e.g. a ~uvm_pool#(uvm_event)~.
 
   extern function uvm_event_pool get_event_pool ();
 
@@ -411,25 +411,25 @@ virtual class uvm_transaction extends uvm_object;
 
   // Variable: begin_event
   //
-  // A <uvm_event> that is triggered when this transaction's actual execution on the
+  // A ~uvm_event#(uvm_object)~ that is triggered when this transaction's actual execution on the
   // bus begins, typically as a result of a driver calling <uvm_component::begin_tr>. 
   // Processes that wait on this event will block until the transaction has
   // begun. 
   //
   // For more information, see the general discussion for <uvm_transaction>.
-  // See <uvm_event> for details on the event API.
+  // See <uvm_event#(T)> for details on the event API.
   //
   uvm_event#(uvm_object) begin_event;
 
   // Variable: end_event
   //
-  // A <uvm_event> that is triggered when this transaction's actual execution on
+  // A ~uvm_event#(uvm_object)~ that is triggered when this transaction's actual execution on
   // the bus ends, typically as a result of a driver calling <uvm_component::end_tr>. 
   // Processes that wait on this event will block until the transaction has
   // ended. 
   //
   // For more information, see the general discussion for <uvm_transaction>.
-  // See <uvm_event> for details on the event API.
+  // See <uvm_event#(T)> for details on the event API.
   //
   //| virtual task my_sequence::body();
   //|  ...

@@ -332,7 +332,7 @@ virtual class uvm_reg_block extends uvm_object;
    //
    // Note that memories may be located in different and/or multiple
    // address maps. To get the memories in a specific address map,
-   // use the <uvm_reg_map::get_memories()> method.
+   // use the ~uvm_reg_map::get_memories()~ method.
    //
    extern virtual function void get_memories (ref uvm_mem mems[$],
                                               input uvm_hier_e hier=UVM_HIER);

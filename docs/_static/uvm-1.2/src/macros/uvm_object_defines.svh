@@ -241,8 +241,6 @@ endfunction \
 // except that they also start a block in which `uvm_field_* macros can be
 // placed. The block must be terminated by `uvm_object_utils_end.
 //
-// Objects deriving from uvm_sequence must use the `uvm_sequence_* macros
-// instead of these macros.  See <`uvm_sequence_utils> for details.
 
 `define uvm_object_utils(T) \
   `uvm_object_utils_begin(T) \
@@ -585,7 +583,7 @@ endfunction \
 //   UVM_ABSTRACT   - Treat as an abstract field. Use the abstract setting
 //                      in the policy class for this field.
 //   UVM_READONLY   - Do not allow setting of this field from the set_*_local
-//                      methods or during <apply_config_settings> operation.
+//                      methods or during <uvm_component::apply_config_settings> operation.
 //
 //
 // A radix for printing and recording can be specified by OR'ing one of the

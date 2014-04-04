@@ -770,7 +770,7 @@ class uvm_text_recorder extends uvm_recorder;
    endfunction : do_open
 
    // Function: do_close
-   // Callback triggered via <close>.
+   // Callback triggered via <uvm_recorder::close>.
    //
    // Text-backend specific implementation.
    protected virtual function void do_close(time close_time);
@@ -785,7 +785,7 @@ class uvm_text_recorder extends uvm_recorder;
    endfunction : do_close
 
    // Function: do_free
-   // Callback triggered via <free>.
+   // Callback triggered via <uvm_recorder::free>.
    //
    // Text-backend specific implementation.
    protected virtual function void do_free();
@@ -858,8 +858,8 @@ class uvm_text_recorder extends uvm_recorder;
    //
    // Text-backend specific implementation.
    //
-   // The method uses <identifier> to determine whether or not to
-   // record the object instance id, and <recursion_policy> to
+   // The method uses ~identifier~ to determine whether or not to
+   // record the object instance id, and ~recursion_policy~ to
    // determine whether or not to recurse into the object.
    protected virtual function void do_record_object(string name,
                                                     uvm_object value);

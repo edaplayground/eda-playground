@@ -107,11 +107,13 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_set_before_get_dap.new" href="../../src/dap/uvm_set_before_get_dap.svh">new</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;unnamed-uvm_set_before_get_dap#(T)&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Constructor</p></div></div></div>
@@ -129,9 +131,11 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_set_before_get_dap.set" href="../../src/dap/uvm_set_before_get_dap.svh">set</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Updates the value stored within the DAP.</p></div></div></div>
@@ -143,9 +147,11 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_set_before_get_dap.try_set" href="../../src/dap/uvm_set_before_get_dap.svh">try_set</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function bit try_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Attempts to update the value stored within the DAP.</p><p><i>try_set</i> will always return a &lsquo;1&rsquo;.</p></div></div></div>
@@ -165,10 +171,12 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_set_before_get_dap.try_get" href="../../src/dap/uvm_set_before_get_dap.svh">try_get</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_get(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function bit try_get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Attempts to retrieve the current value stored within the DAP</p><p>If the value has not been &lsquo;set&rsquo;, then try_get will return a &lsquo;0&rsquo;, otherwise it will return a &lsquo;1&rsquo;, and set <i>value</i> to the current value stored within the DAP.</p></div></div></div>
@@ -187,37 +195,45 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
 <div class=CToolTip id="tt1"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>class uvm_set_before_get_dap#(</td>      <td class=PType nowrap>type&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>class uvm_set_before_get_dap#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>type&nbsp;</td>
       <td class=PParameter nowrap>T</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>int</td>
-      <td class=PAfterParameters nowrap>) extends uvm_set_get_dap_base#(T)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>) extends uvm_set_get_dap_base#(T)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides a &lsquo;Set Before Get&rsquo; Data Access Policy.</div></div><div class=CToolTip id="tt2"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;unnamed-uvm_set_before_get_dap#(T)&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Constructor</div></div><div class=CToolTip id="tt3"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Updates the value stored within the DAP.</div></div><div class=CToolTip id="tt4"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function bit try_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Attempts to update the value stored within the DAP.</div></div><div class=CToolTip id="tt5"><div class=CMethod>
@@ -225,10 +241,12 @@ Attempts to update the value stored within the DAP.</div></div><div class=CToolT
   </td></tr></table></blockquote>Returns the current value stored within the DAP.</div></div><div class=CToolTip id="tt6"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_get(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function bit try_get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Attempts to retrieve the current value stored within the DAP</div></div><!--END_ND_TOOLTIPS-->

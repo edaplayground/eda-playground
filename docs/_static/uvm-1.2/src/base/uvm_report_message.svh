@@ -311,7 +311,7 @@ class uvm_report_message_element_container extends uvm_object;
 
   // Function: delete
   //
-  // Delete the <index>-th element in the container
+  // Delete the ~index~-th element in the container
   //
 
   virtual function void delete(int index);
@@ -529,23 +529,23 @@ class uvm_report_message extends uvm_object;
   // uvm_report_message::print() method provides UVM printer formatted output
   // of the message.  A snippet of example output is shown here:
   //
-  // --------------------------------------------------------
-  // Name               Type               Size  Value
-  // --------------------------------------------------------
-  // uvm_report_message  uvm_report_message  -     @532
-  //   severity         uvm_severity       2     UVM_INFO
-  //   id               string             10    TEST_ID
-  //   message          string             12    A message...
-  //   verbosity        uvm_verbosity      32    UVM_LOW
-  //   filename         string             7     test.sv
-  //   line             integral           32    'd58
-  //   context_name     string             0     ""
-  //   color            string             3     red
-  //   my_int           integral           32    'd5
-  //   my_string        string             3     foo
-  //   my_obj           my_class           -     @531
-  //     foo            integral           32    'd3
-  //     bar            string             8     hi there
+  //| --------------------------------------------------------
+  //| Name                Type               Size  Value
+  //| --------------------------------------------------------
+  //| uvm_report_message  uvm_report_message  -     @532
+  //|   severity          uvm_severity       2     UVM_INFO
+  //|   id                string             10    TEST_ID
+  //|   message           string             12    A message...
+  //|   verbosity         uvm_verbosity      32    UVM_LOW
+  //|   filename          string             7     test.sv
+  //|   line              integral           32    'd58
+  //|   context_name      string             0     ""
+  //|   color             string             3     red
+  //|   my_int            integral           32    'd5
+  //|   my_string         string             3     foo
+  //|   my_obj            my_class           -     @531
+  //|     foo             integral           32    'd3
+  //|     bar             string             8     hi there
 
 
   virtual function void do_print(uvm_printer printer);
@@ -754,7 +754,7 @@ class uvm_report_message extends uvm_object;
 
   // Function: set_line
   //
-  // Get or set the line in the <file> from which the message originates.
+  // Get or set the line in the ~file~ from which the message originates.
   // This value is automatically populate by the messaging macros.
 
   virtual function void set_line(int ln);

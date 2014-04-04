@@ -883,7 +883,7 @@ function void uvm_phase::add(uvm_phase phase,
          new_node.phase_done = uvm_test_done_objection::get();
        end
        else begin
-         new_node.phase_done = uvm_objection::type_id::create({get_name(), "_objection"});
+         new_node.phase_done = uvm_objection::type_id::create({phase.get_name(), "_objection"});
        end
     end
 

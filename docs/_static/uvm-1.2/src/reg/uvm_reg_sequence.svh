@@ -122,7 +122,7 @@ class uvm_reg_sequence #(type BASE=uvm_sequence #(uvm_reg_item)) extends BASE;
   //
   // Continually gets a register transaction from the configured upstream
   // sequencer, <reg_seqr>, and executes the corresponding bus transaction
-  // via <do_rw_access>. 
+  // via <do_reg_item>. 
   //
   // User-defined RegModel test sequences must override body() and not call
   // super.body(), else a warning will be issued and the calling process
@@ -137,7 +137,7 @@ class uvm_reg_sequence #(type BASE=uvm_sequence #(uvm_reg_item)) extends BASE;
       `uvm_warning("REG_XLATE_NO_SEQR",
          {"Executing RegModel translation sequence on sequencer ",
        m_sequencer.get_full_name(),"' does not have an upstream sequencer defined. ",
-       "Execution of register items available only via direct calls to 'do_rw_access'"})
+       "Execution of register items available only via direct calls to 'do_reg_item'"})
       wait(0);
     end
     `uvm_info("REG_XLATE_SEQ_START",

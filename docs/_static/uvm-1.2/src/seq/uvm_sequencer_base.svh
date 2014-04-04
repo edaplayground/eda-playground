@@ -105,7 +105,7 @@ class uvm_sequencer_base extends uvm_component;
   // parent sequence is automatically created for the ~item~.  There is no capability to
   // retrieve responses. If the driver returns responses, they will accumulate in the
   // sequencer, eventually causing response overflow unless
-  // <set_response_queue_error_report_disabled> is called.
+  // <uvm_sequence_base::set_response_queue_error_report_disabled> is called.
 
   extern virtual task execute_item(uvm_sequence_item item);
 

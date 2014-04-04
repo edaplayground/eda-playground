@@ -192,7 +192,7 @@ virtual class uvm_component extends uvm_report_object;
   // <build_phase>.
   //
   // All processes associated with a task-based phase are killed when the phase
-  // ends. See <uvm_phase::execute> for more details.
+  // ends. See <uvm_task_phase> for more details.
   //----------------------------------------------------------------------------
 
 
@@ -623,7 +623,7 @@ virtual class uvm_component extends uvm_report_object;
   //
   // Custom component base classes requiring a custom phasing schedule can
   // augment or replace the domain definition they inherit by overriding
-  // <defined_domain>. To augment, overrides would call super.define_domain().
+  // their ~defined_domain~. To augment, overrides would call super.define_domain().
   // To replace, overrides would not call super.define_domain().
   // 
   // The default implementation adds a copy of the ~uvm~ phasing schedule to
@@ -631,14 +631,14 @@ virtual class uvm_component extends uvm_report_object;
   // is currently empty.
   //
   // Calling <set_domain>
-  // with the default ~uvm~ domain (see <uvm_domain::get_uvm_domain>) on
+  // with the default ~uvm~ domain (ie. <uvm_domain::get_uvm_domain> ) on
   // a component with no ~define_domain~ override effectively reverts the
   // that component to using the default ~uvm~ domain. This may be useful
   // if a branch of the testbench hierarchy defines a custom domain, but
   // some child sub-branch should remain in the default ~uvm~ domain,
   // call <set_domain> with a new domain instance handle with ~hier~ set.
   // Then, in the sub-branch, call <set_domain> with the default ~uvm~ domain handle,
-  // obtained via <uvm_domain::get_uvm_domain()>.
+  // obtained via <uvm_domain::get_uvm_domain>.
   //
   // Alternatively, the integrator may define the graph in a new domain externally,
   // then call <set_domain> to apply it to a component.
@@ -1696,6 +1696,16 @@ virtual class uvm_component extends uvm_report_object;
 
   // does the pre abort callback hierarchically
   extern /*local*/ function void m_do_pre_abort;
+
+
+typedef struct  {
+	string arg;
+	string args[$];
+	int unsigned used;
+} uvm_cmdline_parsed_arg_t;
+
+static uvm_cmdline_parsed_arg_t m_uvm_applied_cl_action[$];
+static uvm_cmdline_parsed_arg_t m_uvm_applied_cl_sev[$];
 
 endclass : uvm_component
 
@@ -3446,7 +3456,6 @@ function void uvm_component::m_set_cl_verb;
   first = 0;
 endfunction
 
-
 // m_set_cl_action
 // ---------------
 
@@ -3454,33 +3463,47 @@ function void uvm_component::m_set_cl_action;
   // _ALL_ can be used for ids or severities
   // +uvm_set_action=<comp>,<id>,<severity>,<action[|action]>
   // +uvm_set_action=uvm_test_top.env0.*,_ALL_,UVM_ERROR,UVM_NO_ACTION
-
-  static string values[$];
-  string args[$];
+	
+  static bit initialized = 0;
   uvm_severity sev;
   uvm_action action;
 
-  if(!values.size())
+  if(!initialized) begin
+	string values[$];
     void'(uvm_cmdline_proc.get_arg_values("+uvm_set_action=",values));
+	foreach(values[idx]) begin
+		uvm_cmdline_parsed_arg_t t;
+		string args[$];
+	 	uvm_split_string(values[idx], ",", args);	
 
-  foreach(values[i]) begin
-    uvm_split_string(values[i], ",", args);
-    if(args.size() != 4) begin
-      `uvm_warning("INVLCMDARGS", $sformatf("+uvm_set_action requires 4 arguments, only %0d given for command +uvm_set_action=%s, Usage: +uvm_set_action=<comp>,<id>,<severity>,<action[|action]>", args.size(), values[i]))
-      values.delete(i);
-      break;
-    end
-    if (!uvm_is_match(args[0], get_full_name()) ) break; 
-    if((args[2] != "_ALL_") && !uvm_string_to_severity(args[2], sev)) begin
-      `uvm_warning("INVLCMDARGS", $sformatf("Bad severity argument \"%s\" given to command +uvm_set_action=%s, Usage: +uvm_set_action=<comp>,<id>,<severity>,<action[|action]>", args[2], values[i]))
-      values.delete(i);
-      break;
-    end
-    if(!uvm_string_to_action(args[3], action)) begin
-      `uvm_warning("INVLCMDARGS", $sformatf("Bad action argument \"%s\" given to command +uvm_set_action=%s, Usage: +uvm_set_action=<comp>,<id>,<severity>,<action[|action]>", args[3], values[i]))
-      values.delete(i);
-      break;
-    end
+		if(args.size() != 4) begin
+	   		`uvm_warning("INVLCMDARGS", $sformatf("+uvm_set_action requires 4 arguments, but %0d given for command +uvm_set_action=%s, Usage: +uvm_set_action=<comp>,<id>,<severity>,<action[|action]>", args.size(), values[idx]))
+	   		continue;
+   		end
+   		if((args[2] != "_ALL_") && !uvm_string_to_severity(args[2], sev)) begin
+	   		`uvm_warning("INVLCMDARGS", $sformatf("Bad severity argument \"%s\" given to command +uvm_set_action=%s, Usage: +uvm_set_action=<comp>,<id>,<severity>,<action[|action]>", args[2], values[idx]))
+	   		continue;
+   		end
+   		if(!uvm_string_to_action(args[3], action)) begin
+	   		`uvm_warning("INVLCMDARGS", $sformatf("Bad action argument \"%s\" given to command +uvm_set_action=%s, Usage: +uvm_set_action=<comp>,<id>,<severity>,<action[|action]>", args[3], values[idx]))
+	   		continue;
+   		end
+   		t.args=args;   
+   		t.arg=values[idx];
+   		m_uvm_applied_cl_action.push_back(t);
+	end 
+	initialized=1;
+  end
+  
+  foreach(m_uvm_applied_cl_action[i]) begin
+	string args[$] = m_uvm_applied_cl_action[i].args;
+
+	if (!uvm_is_match(args[0], get_full_name()) ) continue; 
+	
+	void'(uvm_string_to_severity(args[2], sev));
+	void'(uvm_string_to_action(args[3], action));
+	
+    m_uvm_applied_cl_action[i].used++;
     if(args[1] == "_ALL_") begin
       if(args[2] == "_ALL_") begin
         set_report_severity_action(UVM_INFO, action);
@@ -3513,32 +3536,44 @@ function void uvm_component::m_set_cl_sev;
   //  +uvm_set_severity=<comp>,<id>,<orig_severity>,<new_severity>
   //  +uvm_set_severity=uvm_test_top.env0.*,BAD_CRC,UVM_ERROR,UVM_WARNING
 
-  static string values[$];
-  static bit first = 1;
-  string args[$];
+  static bit initialized;
   uvm_severity orig_sev, sev;
 
-  if(!values.size())
+  if(!initialized) begin
+	string values[$];
     void'(uvm_cmdline_proc.get_arg_values("+uvm_set_severity=",values));
+	foreach(values[idx]) begin
+		uvm_cmdline_parsed_arg_t t;
+		string args[$];
+	 	uvm_split_string(values[idx], ",", args);	
+	 	if(args.size() != 4) begin
+      		`uvm_warning("INVLCMDARGS", $sformatf("+uvm_set_severity requires 4 arguments, but %0d given for command +uvm_set_severity=%s, Usage: +uvm_set_severity=<comp>,<id>,<orig_severity>,<new_severity>", args.size(), values[idx]))
+      		continue;
+    	end
+    	if(args[2] != "_ALL_" && !uvm_string_to_severity(args[2], orig_sev)) begin
+      		`uvm_warning("INVLCMDARGS", $sformatf("Bad severity argument \"%s\" given to command +uvm_set_severity=%s, Usage: +uvm_set_severity=<comp>,<id>,<orig_severity>,<new_severity>", args[2], values[idx]))
+      		continue;
+    	end
+    	if(!uvm_string_to_severity(args[3], sev)) begin
+      		`uvm_warning("INVLCMDARGS", $sformatf("Bad severity argument \"%s\" given to command +uvm_set_severity=%s, Usage: +uvm_set_severity=<comp>,<id>,<orig_severity>,<new_severity>", args[3], values[idx]))
+      		continue;
+    	end
+	 	
+	 	t.args=args;
+    	t.arg=values[idx];
+	 	m_uvm_applied_cl_sev.push_back(t);
+	end	
+	initialized=1;
+  end
 
-  foreach(values[i]) begin
-    uvm_split_string(values[i], ",", args);
-    if(args.size() != 4) begin
-      `uvm_warning("INVLCMDARGS", $sformatf("+uvm_set_severity requires 4 arguments, only %0d given for command +uvm_set_severity=%s, Usage: +uvm_set_severity=<comp>,<id>,<orig_severity>,<new_severity>", args.size(), values[i]))
-      values.delete(i);
-      break;
-    end
-    if (!uvm_is_match(args[0], get_full_name()) ) break; 
-    if(args[2] != "_ALL_" && !uvm_string_to_severity(args[2], orig_sev)) begin
-      `uvm_warning("INVLCMDARGS", $sformatf("Bad severity argument \"%s\" given to command +uvm_set_severity=%s, Usage: +uvm_set_severity=<comp>,<id>,<orig_severity>,<new_severity>", args[2], values[i]))
-      values.delete(i);
-      break;
-    end
-    if(!uvm_string_to_severity(args[3], sev)) begin
-      `uvm_warning("INVLCMDARGS", $sformatf("Bad severity argument \"%s\" given to command +uvm_set_severity=%s, Usage: +uvm_set_severity=<comp>,<id>,<orig_severity>,<new_severity>", args[3], values[i]))
-      values.delete(i);
-      break;
-    end
+  foreach(m_uvm_applied_cl_sev[i]) begin
+  	string args[$]=m_uvm_applied_cl_sev[i].args;
+
+    if (!uvm_is_match(args[0], get_full_name()) ) continue; 
+	    
+	void'(uvm_string_to_severity(args[2], orig_sev));
+	void'(uvm_string_to_severity(args[3], sev));   	
+    m_uvm_applied_cl_sev[i].used++;
     if(args[1] == "_ALL_" && args[2] == "_ALL_") begin
       set_report_severity_override(UVM_INFO,sev);
       set_report_severity_override(UVM_WARNING,sev);

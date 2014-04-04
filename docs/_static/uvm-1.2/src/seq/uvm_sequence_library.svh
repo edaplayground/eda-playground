@@ -34,7 +34,7 @@ typedef class uvm_sequence_library_cfg;
 // When started (as any other sequence), the sequence library will randomly
 // select and execute a sequence from its ~sequences~ queue. If in
 // <UVM_SEQ_LIB_RAND> mode, its <select_rand> property is randomized and used
-// as an index into ~sequences~.  When in <UVM_SEQ_LIB_RANC> mode, the
+// as an index into ~sequences~.  When in <UVM_SEQ_LIB_RANDC> mode, the
 // <select_randc> property is used. When in <UVM_SEQ_LIB_ITEM> mode, only
 // sequence items of the ~REQ~ type are generated and executed--no sequences
 // are executed. Finally, when in <UVM_SEQ_LIB_USER> mode, the
@@ -296,7 +296,7 @@ class uvm_sequence_library #(type REQ=uvm_sequence_item,RSP=REQ) extends uvm_seq
    // Function: get_sequences
    //
    // 
-   // Append to the provided ~seq_types~ array the list of registered <sequences>.
+   // Append to the provided ~seq_types~ array the list of registered ~sequences~.
    //
    extern virtual function void get_sequences(ref uvm_object_wrapper seq_types[$]);
 

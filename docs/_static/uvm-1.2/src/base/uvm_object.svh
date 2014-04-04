@@ -384,9 +384,8 @@ virtual class uvm_object extends uvm_void;
   // classes should override the <do_record> method.
   //
   // The optional ~recorder~ argument specifies the recording policy, which
-  // governs how recording takes place. If a recorder policy is not provided
-  // explicitly, then the global <uvm_default_recorder> policy is used. See
-  // uvm_recorder for information.
+  // governs how recording takes place. See
+  // <uvm_recorder> for information.
   //
   // A simulator's recording mechanism is vendor-specific. By providing access
   // via a common interface, the uvm_recorder policy provides vendor-independent

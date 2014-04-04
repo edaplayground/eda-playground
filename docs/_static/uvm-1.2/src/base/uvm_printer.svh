@@ -418,7 +418,7 @@ class uvm_printer_knobs;
 
   // Variable: header
   //
-  // Indicates whether the <print_header> function should be called when
+  // Indicates whether the ~uvm_printer::print_header~ function should be called when
   // printing an object.
 
   bit header = 1;
@@ -426,7 +426,7 @@ class uvm_printer_knobs;
 
   // Variable: footer
   //
-  // Indicates whether the <print_footer> function should be called when
+  // Indicates whether the ~uvm_printer::print_footer~ function should be called when
   // printing an object. 
 
   bit footer = 1;
@@ -434,7 +434,7 @@ class uvm_printer_knobs;
 
   // Variable: full_name
   //
-  // Indicates whether <adjust_name> should print the full name of an identifier
+  // Indicates whether <uvm_printer::adjust_name> should print the full name of an identifier
   // or just the leaf name.
 
   bit full_name = 0;
@@ -442,7 +442,7 @@ class uvm_printer_knobs;
 
   // Variable: identifier
   //
-  // Indicates whether <adjust_name> should print the identifier. This is useful
+  // Indicates whether <uvm_printer::adjust_name> should print the identifier. This is useful
   // in cases where you just want the values of an object, but no identifiers.
 
   bit identifier = 1;

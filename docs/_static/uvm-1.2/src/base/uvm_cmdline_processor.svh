@@ -374,7 +374,9 @@ class uvm_cmdline_processor extends uvm_report_object;
     // ~+UVM_CONFIG_DB_TRACE~ turns on tracing of configuration DB access.
     // Users simply need to put the argument on the command line.
 
-    // Variable: +uvm_set_inst_override, +uvm_set_type_override
+    // Variable: +uvm_set_inst_override
+     
+    // Variable: +uvm_set_type_override
     //
     // ~+uvm_set_inst_override=<req_type>,<override_type>,<full_inst_path>~ and
     // ~+uvm_set_type_override=<req_type>,<override_type>[,<replace>]~ work

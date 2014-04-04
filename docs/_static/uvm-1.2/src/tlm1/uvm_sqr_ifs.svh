@@ -111,8 +111,8 @@ virtual class uvm_sqr_if_base #(type T1=uvm_object, T2=T1);
   // Task: wait_for_sequences
   //
   // Waits for a sequence to have a new item available. The default
-  // implementation in the sequencer delays
-  //  <uvm_sequencer_base::pound_zero_count> delta cycles.
+  // implementation in the sequencer calls
+  //  <uvm_wait_for_nba_region>.
   // User-derived sequencers
   // may override its <wait_for_sequences> implementation to perform some other
   // application-specific implementation.

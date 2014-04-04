@@ -322,7 +322,7 @@
 //-----------------------------------------------------------------------------
 
 
-// MACRO- `uvm_add_to_sequence_library
+// MACRO: `uvm_add_to_sequence_library
 //
 // Adds the given sequence ~TYPE~ to the given sequence library ~LIBTYPE~
 //
@@ -359,7 +359,7 @@
 
 
 
-// MACRO- `uvm_sequence_library_utils
+// MACRO: `uvm_sequence_library_utils
 //
 //| `uvm_sequence_library_utils(TYPE)
 // 

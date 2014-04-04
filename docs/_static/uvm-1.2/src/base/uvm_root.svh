@@ -1053,6 +1053,16 @@ endfunction
 // TBD this looks wrong - taking advantage of uvm_root not doing anything else?
 // TBD move to phase_started callback?
 task uvm_root::run_phase (uvm_phase phase);
+  // check that the commandline are took effect
+  foreach(m_uvm_applied_cl_action[idx])
+	  if(m_uvm_applied_cl_action[idx].used==0) begin
+		    `uvm_warning("INVLCMDARGS",$sformatf("\"+uvm_set_action=%s\" never took effect due to a mismatching component pattern",m_uvm_applied_cl_action[idx].arg))
+	  end
+  foreach(m_uvm_applied_cl_sev[idx])
+	  if(m_uvm_applied_cl_sev[idx].used==0) begin
+		    `uvm_warning("INVLCMDARGS",$sformatf("\"+uvm_set_severity=%s\" never took effect due to a mismatching component pattern",m_uvm_applied_cl_sev[idx].arg))
+	  end	  
+	  
   if($time > 0)
     `uvm_fatal("RUNPHSTIME", {"The run phase must start at time 0, current time is ",
        $sformatf("%0t", $realtime), ". No non-zero delays are allowed before ",

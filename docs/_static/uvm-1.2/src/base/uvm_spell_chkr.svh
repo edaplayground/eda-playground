@@ -64,8 +64,10 @@ class uvm_spell_chkr #(type T=int);
   // string table is not excessive and run times will be fast enough.
   // If, on average, that proves to be an invalid assumption then we'll
   // have to find ways to optimize this algorithm.
+  //
+  // note: strtab should not be modified inside check() 
   //--------------------------------------------------------------------
-  static function bit check (tab_t strtab, string s);
+  static function bit check ( /* const */ ref tab_t strtab, input string s);
 
     string key;
     int distance;

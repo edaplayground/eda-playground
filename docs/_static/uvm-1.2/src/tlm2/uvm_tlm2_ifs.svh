@@ -18,12 +18,7 @@
 //   permissions and limitations under the License.
 //----------------------------------------------------------------------
 
-//----------------------------------------------------------------------
-// Title: tlm interfaces
-//----------------------------------------------------------------------
-
-// Group: Globals
-// Global macro's & enums
+// File: TLM2 Types
 
 // Enum: uvm_tlm_phase_e 
 //
@@ -70,9 +65,6 @@ typedef enum
 //
 // Defines Not-Yet-Implemented TLM functions
 `define UVM_TLM_FUNCTION_ERROR "TLM-2 interface function not implemented"
-
-// Group:  TLM IF Class
-// Base class type to define the transport functions.
 
 //
 // Class: uvm_tlm_if

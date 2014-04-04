@@ -69,7 +69,7 @@ endclass
 // as ~pure virtual~.  The UVM uses the <uvm_default_factory> class
 // as its default factory implementation.
 //   
-// See <Usage> section for details on configuring and using the factory.
+// See <uvm_default_factory::Usage> section for details on configuring and using the factory.
 //
   
 virtual class uvm_factory;
@@ -561,7 +561,7 @@ endclass
 //
 // - The factory's <print>, <debug_create_by_type>, and <debug_create_by_name>
 //   methods, which depend on type names to convey information, will list
-//   parameterized types as <unknown>.
+//   parameterized types as '<unknown>'.
 //
 // It is worth noting that environments that exclusively use the type-based
 // factory methods (*_by_type) do not require type registration. The factory's

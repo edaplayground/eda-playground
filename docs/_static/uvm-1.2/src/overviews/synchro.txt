@@ -6,7 +6,7 @@ Title: Synchronization Classes
 The UVM provides event and barrier synchronization classes
 for managing concurrent processes. 
 
-- <uvm_event> - UVM's event class augments the SystemVerilog
+- <uvm_event#(T)> - UVM's event class augments the SystemVerilog
 event datatype with such services as setting callbacks and data delivery.
 
 - <uvm_barrier> - A barrier is used to prevent a pre-configured number of

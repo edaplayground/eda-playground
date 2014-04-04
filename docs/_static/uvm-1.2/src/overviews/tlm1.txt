@@ -192,8 +192,8 @@ export-to-imp - subcomp2's ~in~ export is connected leaf2's ~in~ imp port.
 
 imp-to-implementation - leaf2's ~in~ imp port is connected to its implementation, leaf2
 
-Hierarchical port connections are resolved and optimized just before the 
-<uvm_component::end_of_elaboration> phase. After optimization, calling
+Hierarchical port connections are resolved and optimized just before 
+<uvm_component::end_of_elaboration_phase>. After optimization, calling
 any port's interface method (e.g. leaf1.out.put(trans)) incurs a single
 hop to get to the implementation (e.g. leaf2's put task), no matter how
 far up and down the hierarchy the implementation resides.

@@ -40,7 +40,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=1 -->
-<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_factory" href="../../src/base/uvm_factory.svh">uvm_factory</a></h2><div class=CBody><p>As the name implies, uvm_factory is used to manufacture (create) UVM objects and components.&nbsp; Object and component types are registered with the factory using lightweight proxies to the actual objects and components being created.&nbsp; The <a href="uvm_registry-svh.html#uvm_object_registry#(T,Tname)" class=LClass id=link23 onMouseOver="ShowTip(event, 'tt20', 'link23')" onMouseOut="HideTip('tt20')">uvm_object_registry #(T,Tname)</a> and <a href="uvm_registry-svh.html#uvm_component_registry#(T,Tname)" class=LClass id=link24 onMouseOver="ShowTip(event, 'tt21', 'link24')" onMouseOut="HideTip('tt21')">uvm_component_registry #(T,Tname)</a> class are used to proxy <a href="uvm_object-svh.html#uvm_object" class=LClass id=link25 onMouseOver="ShowTip(event, 'tt22', 'link25')" onMouseOut="HideTip('tt22')">uvm_objects</a> and <a href="uvm_component-svh.html#uvm_component" class=LClass id=link26 onMouseOver="ShowTip(event, 'tt23', 'link26')" onMouseOut="HideTip('tt23')">uvm_components</a>.</p><p>The factory provides both name-based and type-based interfaces.</p><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>type-based</td><td class=CDLDescription>The type-based interface is far less prone to errors in usage.&nbsp; When errors do occur, they are caught at compile-time.</td></tr><tr><td class=CDLEntry>name-based</td><td class=CDLDescription>The name-based interface is dominated by string arguments that can be misspelled and provided in the wrong order.&nbsp; Errors in name-based requests might only be caught at the time of the call, if at all.&nbsp; Further, the name-based interface is not portable across simulators when used with parameterized classes.</td></tr></table><p>The <i>uvm_factory</i> is an abstract class which declares many of its methods as <i>pure virtual</i>.&nbsp;  The UVM uses the <a href="#uvm_default_factory" class=LClass id=link27 onMouseOver="ShowTip(event, 'tt2', 'link27')" onMouseOut="HideTip('tt2')">uvm_default_factory</a> class as its default factory implementation.</p><p>See <a href="../overviews/tlm1-txt.html#Usage" class=LGroup id=link28 onMouseOver="ShowTip(event, 'tt24', 'link28')" onMouseOut="HideTip('tt24')">Usage</a> section for details on configuring and using the factory.</p>
+<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_factory" href="../../src/base/uvm_factory.svh">uvm_factory</a></h2><div class=CBody><p>As the name implies, uvm_factory is used to manufacture (create) UVM objects and components.&nbsp; Object and component types are registered with the factory using lightweight proxies to the actual objects and components being created.&nbsp; The <a href="uvm_registry-svh.html#uvm_object_registry#(T,Tname)" class=LClass id=link23 onMouseOver="ShowTip(event, 'tt20', 'link23')" onMouseOut="HideTip('tt20')">uvm_object_registry #(T,Tname)</a> and <a href="uvm_registry-svh.html#uvm_component_registry#(T,Tname)" class=LClass id=link24 onMouseOver="ShowTip(event, 'tt21', 'link24')" onMouseOut="HideTip('tt21')">uvm_component_registry #(T,Tname)</a> class are used to proxy <a href="uvm_object-svh.html#uvm_object" class=LClass id=link25 onMouseOver="ShowTip(event, 'tt22', 'link25')" onMouseOut="HideTip('tt22')">uvm_objects</a> and <a href="uvm_component-svh.html#uvm_component" class=LClass id=link26 onMouseOver="ShowTip(event, 'tt23', 'link26')" onMouseOut="HideTip('tt23')">uvm_components</a>.</p><p>The factory provides both name-based and type-based interfaces.</p><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>type-based</td><td class=CDLDescription>The type-based interface is far less prone to errors in usage.&nbsp; When errors do occur, they are caught at compile-time.</td></tr><tr><td class=CDLEntry>name-based</td><td class=CDLDescription>The name-based interface is dominated by string arguments that can be misspelled and provided in the wrong order.&nbsp; Errors in name-based requests might only be caught at the time of the call, if at all.&nbsp; Further, the name-based interface is not portable across simulators when used with parameterized classes.</td></tr></table><p>The <i>uvm_factory</i> is an abstract class which declares many of its methods as <i>pure virtual</i>.&nbsp;  The UVM uses the <a href="#uvm_default_factory" class=LClass id=link27 onMouseOver="ShowTip(event, 'tt2', 'link27')" onMouseOut="HideTip('tt2')">uvm_default_factory</a> class as its default factory implementation.</p><p>See <a href="#uvm_default_factory.Usage" class=LGroup id=link28 onMouseOver="ShowTip(event, 'tt24', 'link28')" onMouseOut="HideTip('tt24')">uvm_default_factory::Usage</a> section for details on configuring and using the factory.</p>
 
 <!--START_ND_SUMMARY index=1-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
@@ -152,9 +152,11 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_factory.register" href="../../src/base/uvm_factory.svh">register</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void register (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void register (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Registers the given proxy object, <i>obj</i>, with the factory.&nbsp; The proxy object is a lightweight substitute for the component or object it represents.&nbsp; When the factory needs to create an object of a given type, it calls the proxy&rsquo;s create_object or create_component method to do so.</p><p>When doing name-based operations, the factory calls the proxy&rsquo;s get_type_name method to match against the <i>requested_type_name</i> argument in subsequent calls to <a href="#uvm_factory.create_component_by_name" class=LMethod id=link31 onMouseOver="ShowTip(event, 'tt13', 'link31')" onMouseOut="HideTip('tt13')">create_component_by_name</a> and <a href="#uvm_factory.create_object_by_name" class=LMethod id=link32 onMouseOver="ShowTip(event, 'tt12', 'link32')" onMouseOut="HideTip('tt12')">create_object_by_name</a>.&nbsp; If the proxy object&rsquo;s get_type_name method returns the empty string, name-based lookup is effectively disabled.</p></div></div></div>
@@ -414,19 +416,21 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_factory.debug_create_by_name" href="../../src/base/uvm_factory.svh">debug_create_by_name</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void debug_create_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void debug_create_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>requested_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>parent_inst_path</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>These methods perform the same search algorithm as the create_* methods, but they do not create new objects.&nbsp; Instead, they provide detailed information about what type of object it would return, listing each override that was applied to arrive at the result.&nbsp; Interpretation of the arguments are exactly as with the create_* methods.</p></div></div></div>
@@ -474,9 +478,11 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_factory.find_wrapper_by_name" href="../../src/base/uvm_factory.svh">find_wrapper_by_name</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function uvm_object_wrapper find_wrapper_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function uvm_object_wrapper find_wrapper_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>This method returns the <a href="#uvm_object_wrapper" class=LClass id=link36 onMouseOver="ShowTip(event, 'tt3', 'link36')" onMouseOut="HideTip('tt3')">uvm_object_wrapper</a> associated with a given <i>type_name</i>.</p></div></div></div>
@@ -488,11 +494,13 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_factory.print" href="../../src/base/uvm_factory.svh">print</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void print (</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void print (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>all_types</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Prints the state of the uvm_factory, including registered types, instance overrides, and type overrides.</p><p>When <i>all_types</i> is 0, only type and instance overrides are displayed.&nbsp; When <i>all_types</i> is 1 (default), all registered user-defined types are printed as well, provided they have names associated with them.&nbsp; When <i>all_types</i> is 2, the UVM types (prefixed with uvm_) are included in the list of registered types.</p></div></div></div>
@@ -601,9 +609,11 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_factory.register" href="../../src/base/uvm_factory.svh">register</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void register (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void register (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Registers the given proxy object, <i>obj</i>, with the factory.</p></div></div></div>
@@ -641,13 +651,15 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_factory.set_inst_override_by_name" href="../../src/base/uvm_factory.svh">set_inst_override_by_name</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_inst_override_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>original_type_name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>override_type_name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>full_inst_path</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_inst_override_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>original_type_name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>override_type_name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>full_inst_path</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Configures the factory to create an object of the override&rsquo;s type whenever a request is made to create an object of the original type using a context that matches <i>full_inst_path</i>.</p></div></div></div>
@@ -685,19 +697,21 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_factory.set_type_override_by_name" href="../../src/base/uvm_factory.svh">set_type_override_by_name</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_type_override_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void set_type_override_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>original_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>override_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>replace</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Configures the factory to create an object of the override&rsquo;s type whenever a request is made to create an object of the original type, provided no instance override applies.</p></div></div></div>
@@ -833,19 +847,21 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_factory.debug_create_by_type" href="../../src/base/uvm_factory.svh">debug_create_by_type</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void debug_create_by_type (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void debug_create_by_type (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>requested_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>parent_inst_path</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody></div></div></div>
@@ -857,19 +873,21 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_factory.debug_create_by_name" href="../../src/base/uvm_factory.svh">debug_create_by_name</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void debug_create_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void debug_create_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>requested_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>parent_inst_path</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>These methods perform the same search algorithm as the create_* methods, but they do not create new objects.</p></div></div></div>
@@ -917,11 +935,13 @@ f = uvm_factory::get();</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_factory.print" href="../../src/base/uvm_factory.svh">print</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void print (</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void print (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>all_types</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Prints the state of the uvm_factory, including registered types, instance overrides, and type overrides.</p></div></div></div>
@@ -942,7 +962,7 @@ endclass</pre></blockquote><p>Objects that are parameterized are declared as</p>
   `uvm_component_utils(comp)
 endclass</pre></blockquote><p>Components that are parameterized are declared as</p><blockquote><pre>class comp #(type T=int, int WIDTH=32) extends uvm_component;
   `uvm_component_param_utils(comp #(T,WIDTH))
-endclass</pre></blockquote><p>The `uvm_*_utils macros for simple, non-parameterized classes will register the type with the factory and define the get_type, get_type_name, and create virtual methods inherited from <a href="uvm_object-svh.html#uvm_object" class=LClass id=link59 onMouseOver="ShowTip(event, 'tt22', 'link59')" onMouseOut="HideTip('tt22')">uvm_object</a>.&nbsp; It will also define a static type_name variable in the class, which will allow you to determine the type without having to allocate an instance.</p><p>The `uvm_*_param_utils macros for parameterized classes differ from `uvm_*_utils classes in the following ways:</p><ul><li>The get_type_name method and static type_name variable are not defined.&nbsp; You will need to implement these manually.</li><li>A type name is not associated with the type when registeriing with the factory, so the factory&rsquo;s *_by_name operations will not work with parameterized classes.</li><li>The factory&rsquo;s <a href="#uvm_default_factory.print" class=LMethod id=link60 onMouseOver="ShowTip(event, 'tt40', 'link60')" onMouseOut="HideTip('tt40')">print</a>, <a href="#uvm_default_factory.debug_create_by_type" class=LMethod id=link61 onMouseOver="ShowTip(event, 'tt36', 'link61')" onMouseOut="HideTip('tt36')">debug_create_by_type</a>, and <a href="#uvm_default_factory.debug_create_by_name" class=LMethod id=link62 onMouseOver="ShowTip(event, 'tt37', 'link62')" onMouseOut="HideTip('tt37')">debug_create_by_name</a> methods, which depend on type names to convey information, will list parameterized types as &lt;unknown&gt;.</li></ul><p>It is worth noting that environments that exclusively use the type-based factory methods (*_by_type) do not require type registration.&nbsp; The factory&rsquo;s type-based methods will register the types involved &ldquo;on the fly,&rdquo; when first used.&nbsp; However, registering with the `uvm_*_utils macros enables name-based factory usage and implements some useful utility functions.</p><h4 class=CHeading>2 -- Designing components that defer creation to the factory</h4><p>Having registered your objects and components with the factory, you can now make requests for new objects and components via the factory.&nbsp; Using the factory instead of allocating them directly (via new) allows different objects to be substituted for the original without modifying the requesting class.&nbsp; The following code defines a driver class that is parameterized.</p><blockquote><pre>class driverB #(type T=uvm_object) extends uvm_driver;
+endclass</pre></blockquote><p>The `uvm_*_utils macros for simple, non-parameterized classes will register the type with the factory and define the get_type, get_type_name, and create virtual methods inherited from <a href="uvm_object-svh.html#uvm_object" class=LClass id=link59 onMouseOver="ShowTip(event, 'tt22', 'link59')" onMouseOut="HideTip('tt22')">uvm_object</a>.&nbsp; It will also define a static type_name variable in the class, which will allow you to determine the type without having to allocate an instance.</p><p>The `uvm_*_param_utils macros for parameterized classes differ from `uvm_*_utils classes in the following ways:</p><ul><li>The get_type_name method and static type_name variable are not defined.&nbsp; You will need to implement these manually.</li><li>A type name is not associated with the type when registeriing with the factory, so the factory&rsquo;s *_by_name operations will not work with parameterized classes.</li><li>The factory&rsquo;s <a href="#uvm_default_factory.print" class=LMethod id=link60 onMouseOver="ShowTip(event, 'tt40', 'link60')" onMouseOut="HideTip('tt40')">print</a>, <a href="#uvm_default_factory.debug_create_by_type" class=LMethod id=link61 onMouseOver="ShowTip(event, 'tt36', 'link61')" onMouseOut="HideTip('tt36')">debug_create_by_type</a>, and <a href="#uvm_default_factory.debug_create_by_name" class=LMethod id=link62 onMouseOver="ShowTip(event, 'tt37', 'link62')" onMouseOut="HideTip('tt37')">debug_create_by_name</a> methods, which depend on type names to convey information, will list parameterized types as &lsquo;&lt;unknown&gt;&rsquo;.</li></ul><p>It is worth noting that environments that exclusively use the type-based factory methods (*_by_type) do not require type registration.&nbsp; The factory&rsquo;s type-based methods will register the types involved &ldquo;on the fly,&rdquo; when first used.&nbsp; However, registering with the `uvm_*_utils macros enables name-based factory usage and implements some useful utility functions.</p><h4 class=CHeading>2 -- Designing components that defer creation to the factory</h4><p>Having registered your objects and components with the factory, you can now make requests for new objects and components via the factory.&nbsp; Using the factory instead of allocating them directly (via new) allows different objects to be substituted for the original without modifying the requesting class.&nbsp; The following code defines a driver class that is parameterized.</p><blockquote><pre>class driverB #(type T=uvm_object) extends uvm_driver;
 
   // parameterized classes must use the _param_utils version
   `uvm_component_param_utils(driverB #(T))
@@ -1165,11 +1185,13 @@ endmodule</pre></blockquote><p>When the above example is run, the resulting topo
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_object_wrapper.create_object" href="../../src/base/uvm_factory.svh">create_object</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_object create_object (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_object create_object (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Creates a new object with the optional <i>name</i>.&nbsp; An object proxy (e.g., <a href="uvm_registry-svh.html#uvm_object_registry#(T,Tname)" class=LClass id=link75 onMouseOver="ShowTip(event, 'tt20', 'link75')" onMouseOut="HideTip('tt20')">uvm_object_registry #(T,Tname)</a>) implements this method to create an object of a specific type, T.</p></div></div></div>
@@ -1181,11 +1203,13 @@ endmodule</pre></blockquote><p>When the above example is run, the resulting topo
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_object_wrapper.create_component" href="../../src/base/uvm_factory.svh">create_component</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_component create_component (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
-      <td class=PParameter nowrap>parent</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_component create_component (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      <td class=PParameter nowrap width=100%>parent</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Creates a new component, passing to its constructor the given <i>name</i> and <i>parent</i>.&nbsp; A component proxy (e.g.&nbsp; <a href="uvm_registry-svh.html#uvm_component_registry#(T,Tname)" class=LClass id=link76 onMouseOver="ShowTip(event, 'tt21', 'link76')" onMouseOut="HideTip('tt21')">uvm_component_registry #(T,Tname)</a>) implements this method to create a component of a specific type, T.</p></div></div></div>
@@ -1214,9 +1238,11 @@ endmodule</pre></blockquote><p>When the above example is run, the resulting topo
   </td></tr></table></blockquote>Static accessor for uvm_factory</div></div><div class=CToolTip id="tt5"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void register (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void register (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Registers the given proxy object, <i>obj</i>, with the factory. </div></div><div class=CToolTip id="tt6"><div class=CMethod>
@@ -1398,19 +1424,21 @@ Creates and returns a component or object of the requested type, which may be sp
 </div></div><div class=CToolTip id="tt15"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void debug_create_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void debug_create_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>requested_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>parent_inst_path</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 These methods perform the same search algorithm as the create_* methods, but they do not create new objects. </div></div><div class=CToolTip id="tt16"><div class=CMethod>
@@ -1440,19 +1468,23 @@ These methods perform the same search algorithm as the create_* methods, but the
 These methods return the proxy to the object that would be created given the arguments. </div></div><div class=CToolTip id="tt18"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function uvm_object_wrapper find_wrapper_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>type_name</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function uvm_object_wrapper find_wrapper_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>type_name</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This method returns the uvm_object_wrapper associated with a given <i>type_name</i>.</div></div><div class=CToolTip id="tt19"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void print (</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void print (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>all_types</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Prints the state of the uvm_factory, including registered types, instance overrides, and type overrides.</div></div><div class=CToolTip id="tt20"><div class=CClass>
@@ -1491,16 +1523,18 @@ The uvm_component_registry serves as a lightweight proxy for a component of type
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_object extends uvm_void
   </td></tr></table></blockquote>The uvm_object class is the base class for all UVM data and hierarchical classes. </div></div><div class=CToolTip id="tt23"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_component extends uvm_report_object
-  </td></tr></table></blockquote>The uvm_component class is the root base class for UVM components. </div></div><div class=CToolTip id="tt24"><div class=CGroup>This example illustrates basic TLM connectivity using the blocking put inteface.</div></div><div class=CToolTip id="tt25"><div class=CMethod>
+  </td></tr></table></blockquote>The uvm_component class is the root base class for UVM components. </div></div><div class=CToolTip id="tt24"><div class=CGroup>Using the factory involves three basic operations</div></div><div class=CToolTip id="tt25"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>pure virtual function uvm_factory get_factory()
   </td></tr></table></blockquote>intended to return the currently enabled uvm factory,</div></div><div class=CToolTip id="tt26"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function string get_full_name ()
   </td></tr></table></blockquote>Returns the full hierarchical name of this object. </div></div><div class=CToolTip id="tt27"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void register (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
-      <td class=PParameter nowrap>obj</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void register (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PParameter nowrap width=100%>obj</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Registers the given proxy object, <i>obj</i>, with the factory.</div></div><div class=CToolTip id="tt28"><div class=CMethod>
@@ -1520,13 +1554,15 @@ Registers the given proxy object, <i>obj</i>, with the factory.</div></div><div 
 </div></div><div class=CToolTip id="tt29"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_inst_override_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>original_type_name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>override_type_name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>full_inst_path</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_inst_override_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>original_type_name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>override_type_name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>full_inst_path</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Configures the factory to create an object of the override&rsquo;s type whenever a request is made to create an object of the original type using a context that matches <i>full_inst_path</i>.</div></div><div class=CToolTip id="tt30"><div class=CMethod>
@@ -1552,19 +1588,21 @@ Configures the factory to create an object of the override&rsquo;s type whenever
 </div></div><div class=CToolTip id="tt31"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_type_override_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void set_type_override_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>original_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>override_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>replace</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Configures the factory to create an object of the override&rsquo;s type whenever a request is made to create an object of the original type, provided no instance override applies.</div></div><div class=CToolTip id="tt32"><div class=CMethod>
@@ -1658,37 +1696,41 @@ Configures the factory to create an object of the override&rsquo;s type whenever
 Creates and returns a component or object of the requested type, which may be specified by type or by name.</div></div><div class=CToolTip id="tt36"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void debug_create_by_type (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void debug_create_by_type (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>requested_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>parent_inst_path</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 </div></div><div class=CToolTip id="tt37"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void debug_create_by_name (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void debug_create_by_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>requested_type_name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>parent_inst_path</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 These methods perform the same search algorithm as the create_* methods, but they do not create new objects.</div></div><div class=CToolTip id="tt38"><div class=CMethod>
@@ -1718,11 +1760,13 @@ These methods perform the same search algorithm as the create_* methods, but the
 These methods return the proxy to the object that would be created given the arguments.</div></div><div class=CToolTip id="tt40"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void print (</td>      <td class=PType nowrap>int&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function void print (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>int&nbsp;</td>
       <td class=PParameter nowrap>all_types</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Prints the state of the uvm_factory, including registered types, instance overrides, and type overrides.</div></div><div class=CToolTip id="tt41"><div class=CGroup>The <i>utils</i> macros define the infrastructure needed to enable the object/component for correct factory operation. </div></div><div class=CToolTip id="tt42"><div class=CMethod>
@@ -1730,39 +1774,47 @@ Prints the state of the uvm_factory, including registered types, instance overri
   </td></tr></table></blockquote>This function returns the type name of the object, which is typically the type identifier enclosed in quotes. </div></div><div class=CToolTip id="tt43"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function void print_topology (</td>      <td class=PType nowrap>uvm_printer&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function void print_topology (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_printer&nbsp;</td>
       <td class=PParameter nowrap>printer</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Print the verification environment&rsquo;s component topology. </div></div><div class=CToolTip id="tt44"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void end_of_elaboration_phase(</td>      <td class=PType nowrap>uvm_phase&nbsp;</td>
-      <td class=PParameter nowrap>phase</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void end_of_elaboration_phase(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_phase&nbsp;</td>
+      <td class=PParameter nowrap width=100%>phase</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 The uvm_end_of_elaboration_phase phase implementation method.</div></div><div class=CToolTip id="tt45"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_object create_object (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_object create_object (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Creates a new object with the optional <i>name</i>. </div></div><div class=CToolTip id="tt46"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_component create_component (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
-      <td class=PParameter nowrap>parent</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_component create_component (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      <td class=PParameter nowrap width=100%>parent</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Creates a new component, passing to its constructor the given <i>name</i> and <i>parent</i>. </div></div><div class=CToolTip id="tt47"><div class=CMethod>

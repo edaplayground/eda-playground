@@ -124,11 +124,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component_registry#(T,Tname).create_component" href="../../src/base/uvm_registry.svh">create_component</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_component create_component (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
-      <td class=PParameter nowrap>parent</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_component create_component (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      <td class=PParameter nowrap width=100%>parent</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Creates a component of type T having the provided <i>name</i> and <i>parent</i>.&nbsp; This is an override of the method in <a href="uvm_factory-svh.html#uvm_object_wrapper" class=LClass id=link14 onMouseOver="ShowTip(event, 'tt4', 'link14')" onMouseOut="HideTip('tt4')">uvm_object_wrapper</a>.&nbsp; It is called by the factory after determining the type of object to create.&nbsp; You should not call this method directly.&nbsp; Call <a href="#uvm_component_registry#(T,Tname).create" class=LMethod id=link15 onMouseOver="ShowTip(event, 'tt8', 'link15')" onMouseOut="HideTip('tt8')">create</a> instead.</p></div></div></div>
@@ -156,19 +158,21 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component_registry#(T,Tname).create" href="../../src/base/uvm_registry.svh">create</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function T create(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function T create(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>contxt</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Returns an instance of the component type, <i>T</i>, represented by this proxy, subject to any factory overrides based on the context provided by the <i>parent</i>&rsquo;s full name.&nbsp; The <i>contxt</i> argument, if supplied, supercedes the <i>parent</i>&rsquo;s context.&nbsp; The new instance will have the given leaf <i>name</i> and <i>parent</i>.</p></div></div></div>
@@ -180,15 +184,17 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component_registry#(T,Tname).set_type_override" href="../../src/base/uvm_registry.svh">set_type_override</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_type_override (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_type_override (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>replace</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Configures the factory to create an object of the type represented by <i>override_type</i> whenever a request is made to create an object of the type, <i>T</i>, represented by this proxy, provided no instance override applies.&nbsp; The original type, <i>T</i>, is typically a super class of the override type.</p></div></div></div>
@@ -200,19 +206,21 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component_registry#(T,Tname).set_inst_override" href="../../src/base/uvm_registry.svh">set_inst_override</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_inst_override(</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_inst_override(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>inst_path,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Configures the factory to create a component of the type represented by <i>override_type</i> whenever a request is made to create an object of the type, <i>T</i>, represented by this proxy,  with matching instance paths.&nbsp; The original type, <i>T</i>, is typically a super class of the override type.</p><p>If <i>parent</i> is not specified, <i>inst_path</i> is interpreted as an absolute instance path, which enables instance overrides to be set from outside component classes.&nbsp; If <i>parent</i> is specified, <i>inst_path</i> is interpreted as being relative to the <i>parent</i>&rsquo;s hierarchical instance path, i.e.&nbsp; <i>{parent.get_full_name(),&rdquo;.&rdquo;,inst_path}</i> is the instance path that is registered with the override.&nbsp; The <i>inst_path</i> may contain wildcards for matching against multiple contexts.</p></div></div></div>
@@ -293,11 +301,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_object_registry#(T,Tname).create_object" href="../../src/base/uvm_registry.svh">create_object</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_object create_object(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_object create_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Creates an object of type <i>T</i> and returns it as a handle to an <a href="uvm_object-svh.html#uvm_object" class=LClass id=link30 onMouseOver="ShowTip(event, 'tt3', 'link30')" onMouseOut="HideTip('tt3')">uvm_object</a>.&nbsp; This is an override of the method in <a href="uvm_factory-svh.html#uvm_object_wrapper" class=LClass id=link31 onMouseOver="ShowTip(event, 'tt4', 'link31')" onMouseOut="HideTip('tt4')">uvm_object_wrapper</a>.&nbsp; It is called by the factory after determining the type of object to create.&nbsp; You should not call this method directly.&nbsp; Call <a href="#uvm_object_registry#(T,Tname).create" class=LMethod id=link32 onMouseOver="ShowTip(event, 'tt16', 'link32')" onMouseOut="HideTip('tt16')">create</a> instead.</p></div></div></div>
@@ -325,19 +335,21 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_object_registry#(T,Tname).create" href="../../src/base/uvm_registry.svh">create</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function T create (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function T create (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>contxt</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Returns an instance of the object type, <i>T</i>, represented by this proxy, subject to any factory overrides based on the context provided by the <i>parent</i>&rsquo;s full name.&nbsp; The <i>contxt</i> argument, if supplied, supercedes the <i>parent</i>&rsquo;s context.&nbsp; The new instance will have the given leaf <i>name</i>, if provided.</p></div></div></div>
@@ -349,15 +361,17 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_object_registry#(T,Tname).set_type_override" href="../../src/base/uvm_registry.svh">set_type_override</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_type_override (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_type_override (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>replace</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Configures the factory to create an object of the type represented by <i>override_type</i> whenever a request is made to create an object of the type represented by this proxy, provided no instance override applies.&nbsp; The original type, <i>T</i>, is typically a super class of the override type.</p></div></div></div>
@@ -369,19 +383,21 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_object_registry#(T,Tname).set_inst_override" href="../../src/base/uvm_registry.svh">set_inst_override</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_inst_override(</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_inst_override(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>inst_path,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Configures the factory to create an object of the type represented by <i>override_type</i> whenever a request is made to create an object of the type represented by this proxy, with matching instance paths.&nbsp; The original type, <i>T</i>, is typically a super class of the override type.</p><p>If <i>parent</i> is not specified, <i>inst_path</i> is interpreted as an absolute instance path, which enables instance overrides to be set from outside component classes.&nbsp; If <i>parent</i> is specified, <i>inst_path</i> is interpreted as being relative to the <i>parent</i>&rsquo;s hierarchical instance path, i.e.&nbsp; <i>{parent.get_full_name(),&rdquo;.&rdquo;,inst_path}</i> is the instance path that is registered with the override.&nbsp; The <i>inst_path</i> may contain wildcards for matching against multiple contexts.</p></div></div></div>
@@ -444,11 +460,13 @@ The uvm_object_registry serves as a lightweight proxy for an uvm_object of type 
   </td></tr></table></blockquote>The uvm_object_wrapper provides an abstract interface for creating object and component proxies. </div></div><div class=CToolTip id="tt5"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_component create_component (</td>      <td class=PType nowrap>string&nbsp;</td>
-      <td class=PParameter nowrap>name,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
-      <td class=PParameter nowrap>parent</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function uvm_component create_component (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap width=100%>name,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      <td class=PParameter nowrap width=100%>parent</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Creates a component of type T having the provided <i>name</i> and <i>parent</i>. </div></div><div class=CToolTip id="tt6"><div class=CMethod>
@@ -458,51 +476,57 @@ Creates a component of type T having the provided <i>name</i> and <i>parent</i>.
   </td></tr></table></blockquote>Returns the singleton instance of this type. </div></div><div class=CToolTip id="tt8"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function T create(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function T create(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>contxt</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns an instance of the component type, <i>T</i>, represented by this proxy, subject to any factory overrides based on the context provided by the <i>parent</i>&rsquo;s full name. </div></div><div class=CToolTip id="tt9"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_type_override (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_type_override (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>replace</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Configures the factory to create an object of the type represented by <i>override_type</i> whenever a request is made to create an object of the type, <i>T</i>, represented by this proxy, provided no instance override applies. </div></div><div class=CToolTip id="tt10"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_inst_override(</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_inst_override(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>inst_path,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Configures the factory to create a component of the type represented by <i>override_type</i> whenever a request is made to create an object of the type, <i>T</i>, represented by this proxy,  with matching instance paths. </div></div><div class=CToolTip id="tt11"><div class=CClass>
@@ -510,11 +534,13 @@ Configures the factory to create a component of the type represented by <i>overr
   </td></tr></table></blockquote>As the name implies, uvm_factory is used to manufacture (create) UVM objects and components. </div></div><div class=CToolTip id="tt12"><div class=CGroup>This example illustrates basic TLM connectivity using the blocking put inteface.</div></div><div class=CToolTip id="tt13"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_object create_object(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>virtual function uvm_object create_object(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Creates an object of type <i>T</i> and returns it as a handle to an uvm_object. </div></div><div class=CToolTip id="tt14"><div class=CMethod>
@@ -524,51 +550,57 @@ Creates an object of type <i>T</i> and returns it as a handle to an uvm_object. 
   </td></tr></table></blockquote>Returns the singleton instance of this type. </div></div><div class=CToolTip id="tt16"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function T create (</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function T create (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;,</td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null,</td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>contxt</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Returns an instance of the object type, <i>T</i>, represented by this proxy, subject to any factory overrides based on the context provided by the <i>parent</i>&rsquo;s full name. </div></div><div class=CToolTip id="tt17"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_type_override (</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_type_override (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>bit&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
       <td class=PParameter nowrap>replace</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>1</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Configures the factory to create an object of the type represented by <i>override_type</i> whenever a request is made to create an object of the type represented by this proxy, provided no instance override applies. </div></div><div class=CToolTip id="tt18"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>static function void set_inst_override(</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>static function void set_inst_override(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
       <td class=PParameter nowrap>override_type,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>string&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>inst_path,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
       <td class=PDefaultValue width=100%></td>
-</tr><tr><td></td>      <td class=PType nowrap>uvm_component&nbsp;</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_component&nbsp;</td>
       <td class=PParameter nowrap>parent</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>null</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Configures the factory to create an object of the type represented by <i>override_type</i> whenever a request is made to create an object of the type represented by this proxy, with matching instance paths. </div></div><div class=CToolTip id="tt19"><div class=CGroup>This section describes usage for the uvm_*_registry classes.</div></div><!--END_ND_TOOLTIPS-->

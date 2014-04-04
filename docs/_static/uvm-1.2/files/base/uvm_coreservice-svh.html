@@ -51,9 +51,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_coreservice_t.set_factory" href="../../src/base/uvm_coreservice.svh">set_factory</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_factory(</td>      <td class=PType nowrap>uvm_factory&nbsp;</td>
-      <td class=PParameter nowrap>f</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_factory(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_factory&nbsp;</td>
+      <td class=PParameter nowrap width=100%>f</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>intended to set the current uvm factory</p></div></div></div>
@@ -73,9 +75,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_coreservice_t.set_report_server" href="../../src/base/uvm_coreservice.svh">set_report_server</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_report_server(</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
-      <td class=PParameter nowrap>server</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_report_server(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
+      <td class=PParameter nowrap width=100%>server</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>intended to set the central report server to <i>server</i></p></div></div></div>
@@ -95,9 +99,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_coreservice_t.set_default_tr_database" href="../../src/base/uvm_coreservice.svh">set_default_tr_database</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_default_tr_database(</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
-      <td class=PParameter nowrap>db</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_default_tr_database(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
+      <td class=PParameter nowrap width=100%>db</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>intended to set the current default record database to <i>db</i></p></div></div></div>
@@ -109,9 +115,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_coreservice_t.set_component_visitor" href="../../src/base/uvm_coreservice.svh">set_component_visitor</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_component_visitor(</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
-      <td class=PParameter nowrap>v</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_component_visitor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
+      <td class=PParameter nowrap width=100%>v</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>intended to set the component visitor to <i>v</i> (this visitor is being used for the traversal at end_of_elaboration_phase for instance for name checking)</p></div></div></div>
@@ -123,8 +131,10 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_coreservice_t.get_component_visitor" href="../../src/base/uvm_coreservice.svh">get_component_visitor</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function uvm_visitor#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>) get_component_visitor()</td></tr>
+      <td class=PBeforeParameters colspan=2>pure virtual function uvm_visitor#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>) get_component_visitor()</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>intended to retrieve the current component visitor see <a href="#uvm_coreservice_t.set_component_visitor" class=LMethod id=link3 onMouseOver="ShowTip(event, 'tt3', 'link3')" onMouseOut="HideTip('tt3')">set_component_visitor</a></p></div></div></div>
@@ -232,9 +242,11 @@ endclass</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_coreservice_t.set_factory" href="../../src/base/uvm_coreservice.svh">set_factory</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_factory(</td>      <td class=PType nowrap>uvm_factory&nbsp;</td>
-      <td class=PParameter nowrap>f</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_factory(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_factory&nbsp;</td>
+      <td class=PParameter nowrap width=100%>f</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Sets the current uvm factory.&nbsp; Please note: it is up to the user to preserve the contents of the original factory or delegate calls to to the original factory</p></div></div></div>
@@ -254,9 +266,11 @@ endclass</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_coreservice_t.set_default_tr_database" href="../../src/base/uvm_coreservice.svh">set_default_tr_database</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_default_tr_database(</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
-      <td class=PParameter nowrap>db</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_default_tr_database(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
+      <td class=PParameter nowrap width=100%>db</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Sets the current default record database to <i>db</i></p></div></div></div>
@@ -276,9 +290,11 @@ endclass</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_coreservice_t.set_report_server" href="../../src/base/uvm_coreservice.svh">set_report_server</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_report_server(</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
-      <td class=PParameter nowrap>server</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_report_server(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
+      <td class=PParameter nowrap width=100%>server</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>sets the central report server to <i>server</i></p></div></div></div>
@@ -290,9 +306,11 @@ endclass</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_coreservice_t.set_component_visitor" href="../../src/base/uvm_coreservice.svh">set_component_visitor</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_component_visitor(</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
-      <td class=PParameter nowrap>v</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_component_visitor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
+      <td class=PParameter nowrap width=100%>v</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>sets the component visitor to <i>v</i> (this visitor is being used for the traversal at end_of_elaboration_phase for instance for name checking)</p></div></div></div>
@@ -304,8 +322,10 @@ endclass</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_default_coreservice_t.get_component_visitor" href="../../src/base/uvm_coreservice.svh">get_component_visitor</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_visitor#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>) get_component_visitor()</td></tr>
+      <td class=PBeforeParameters colspan=2>virtual function uvm_visitor#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>) get_component_visitor()</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>retrieves the current component visitor if unset(or null) returns a <a href="uvm_traversal-svh.html#uvm_component_name_check_visitor" class=LClass id=link16 onMouseOver="ShowTip(event, 'tt12', 'link16')" onMouseOut="HideTip('tt12')">uvm_component_name_check_visitor</a> instance</p></div></div></div>
@@ -322,9 +342,11 @@ endclass</pre></blockquote></div></div></div>
   </td></tr></table></blockquote>uvm_default_coreservice_t provides a default implementation of the uvm_coreservice_t API. </div></div><div class=CToolTip id="tt3"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>pure virtual function void set_component_visitor(</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
-      <td class=PParameter nowrap>v</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>pure virtual function void set_component_visitor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
+      <td class=PParameter nowrap width=100%>v</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 intended to set the component visitor to <i>v</i> (this visitor is being used for the traversal at end_of_elaboration_phase for instance for name checking)</div></div><div class=CToolTip id="tt4"><div class=CMethod>
@@ -332,9 +354,11 @@ intended to set the component visitor to <i>v</i> (this visitor is being used fo
   </td></tr></table></blockquote>Returns the currently enabled uvm factory. </div></div><div class=CToolTip id="tt5"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_factory(</td>      <td class=PType nowrap>uvm_factory&nbsp;</td>
-      <td class=PParameter nowrap>f</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_factory(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_factory&nbsp;</td>
+      <td class=PParameter nowrap width=100%>f</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Sets the current uvm factory. </div></div><div class=CToolTip id="tt6"><div class=CMethod>
@@ -342,9 +366,11 @@ Sets the current uvm factory. </div></div><div class=CToolTip id="tt6"><div clas
   </td></tr></table></blockquote>returns the current default record database</div></div><div class=CToolTip id="tt7"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_default_tr_database(</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
-      <td class=PParameter nowrap>db</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_default_tr_database(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_tr_database&nbsp;</td>
+      <td class=PParameter nowrap width=100%>db</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Sets the current default record database to <i>db</i></div></div><div class=CToolTip id="tt8"><div class=CMethod>
@@ -352,31 +378,39 @@ Sets the current default record database to <i>db</i></div></div><div class=CToo
   </td></tr></table></blockquote>returns the current global report_server if no report server has been set before, returns an instance of uvm_default_report_server</div></div><div class=CToolTip id="tt9"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_report_server(</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
-      <td class=PParameter nowrap>server</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_report_server(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_report_server&nbsp;</td>
+      <td class=PParameter nowrap width=100%>server</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 sets the central report server to <i>server</i></div></div><div class=CToolTip id="tt10"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set_component_visitor(</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
-      <td class=PParameter nowrap>v</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set_component_visitor(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_visitor#(uvm_component)&nbsp;</td>
+      <td class=PParameter nowrap width=100%>v</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 sets the component visitor to <i>v</i> (this visitor is being used for the traversal at end_of_elaboration_phase for instance for name checking)</div></div><div class=CToolTip id="tt11"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function uvm_visitor#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>) get_component_visitor()</td></tr>
+      <td class=PBeforeParameters colspan=2>virtual function uvm_visitor#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>) get_component_visitor()</td></tr>
       </table></td></tr>
     </table></blockquote>
 retrieves the current component visitor if unset(or null) returns a uvm_component_name_check_visitor instance</div></div><div class=CToolTip id="tt12"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>class uvm_component_name_check_visitor extends uvm_visitor#(</td>      <td class=PParameter nowrap>uvm_component</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=2>class uvm_component_name_check_visitor extends uvm_visitor#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PParameter nowrap width=100%>uvm_component</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=2>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This specialized visitor analyze the naming of the current component. </div></div><div class=CToolTip id="tt13"><div class=CClass>

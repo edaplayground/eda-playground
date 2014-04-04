@@ -18,7 +18,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=0 -->
-<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_simple_lock_dap" href="../../src/dap/uvm_simple_lock_dap.svh">uvm_simple_lock_dap</a></h1><div class=CBody><p>Provides a &lsquo;Simple Lock&rsquo; Data Access Policy.</p><p>The &lsquo;Simple Lock&rsquo; Data Access Policy allows for any number of &lsquo;sets&rsquo;, so long as the value is not &lsquo;locked&rsquo;.&nbsp;  The value can be retrieved using &lsquo;get&rsquo; at any time.</p><p>The UVM uses this policy to protect the <i>file name</i> value in the &lt;uvm_text_record_database&gt;.</p>
+<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_simple_lock_dap" href="../../src/dap/uvm_simple_lock_dap.svh">uvm_simple_lock_dap</a></h1><div class=CBody><p>Provides a &lsquo;Simple Lock&rsquo; Data Access Policy.</p><p>The &lsquo;Simple Lock&rsquo; Data Access Policy allows for any number of &lsquo;sets&rsquo;, so long as the value is not &lsquo;locked&rsquo;.&nbsp;  The value can be retrieved using &lsquo;get&rsquo; at any time.</p><p>The UVM uses this policy to protect the <i>file name</i> value in the <a href="../base/uvm_tr_database-svh.html#uvm_text_tr_database" class=LClass id=link10 onMouseOver="ShowTip(event, 'tt10', 'link10')" onMouseOut="HideTip('tt10')">uvm_text_tr_database</a>.</p>
 
 <!--START_ND_SUMMARY index=0-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
@@ -98,11 +98,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_simple_lock_dap.new" href="../../src/dap/uvm_simple_lock_dap.svh">new</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;unnamed-uvm_simple_lock_dap#(T)&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Constructor</p></div></div></div>
@@ -120,9 +122,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_simple_lock_dap.set" href="../../src/dap/uvm_simple_lock_dap.svh">set</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Updates the value stored within the DAP.</p><p><i>set</i> will result in an error if the DAP has been locked.</p></div></div></div>
@@ -134,9 +138,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_simple_lock_dap.try_set" href="../../src/dap/uvm_simple_lock_dap.svh">try_set</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function bit try_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Attempts to update the value stored within the DAP.</p><p><i>try_set</i> will return a &lsquo;1&rsquo; if the value was successfully updated, or a &lsquo;0&rsquo; if the value can not be updated due to the DAP being locked.&nbsp;  No errors will be reported if <i>try_set</i> fails.</p></div></div></div>
@@ -156,10 +162,12 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_simple_lock_dap.try_get" href="../../src/dap/uvm_simple_lock_dap.svh">try_get</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_get(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function bit try_get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Retrieves the current value stored within the DAP</p><p><i>try_get</i> will always return 1.</p></div></div></div>
@@ -176,7 +184,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=8 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_simple_lock_dap.lock" href="../../src/dap/uvm_simple_lock_dap.svh">lock</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function void lock()
-  </td></tr></table></blockquote><div class=CBody><p>Locks the data value</p><p>The data value can not be updated via <a href="#uvm_simple_lock_dap.set" class=LMethod id=link10 onMouseOver="ShowTip(event, 'tt3', 'link10')" onMouseOut="HideTip('tt3')">set</a> or <a href="#uvm_simple_lock_dap.try_set" class=LMethod id=link11 onMouseOver="ShowTip(event, 'tt4', 'link11')" onMouseOut="HideTip('tt4')">try_set</a> while locked.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Locks the data value</p><p>The data value can not be updated via <a href="#uvm_simple_lock_dap.set" class=LMethod id=link11 onMouseOver="ShowTip(event, 'tt3', 'link11')" onMouseOut="HideTip('tt3')">set</a> or <a href="#uvm_simple_lock_dap.try_set" class=LMethod id=link12 onMouseOver="ShowTip(event, 'tt4', 'link12')" onMouseOut="HideTip('tt4')">try_set</a> while locked.</p></div></div></div>
 
 
 
@@ -208,37 +216,45 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class=CToolTip id="tt1"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>class uvm_simple_lock_dap#(</td>      <td class=PType nowrap>type&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>class uvm_simple_lock_dap#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>type&nbsp;</td>
       <td class=PParameter nowrap>T</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>int</td>
-      <td class=PAfterParameters nowrap>) extends uvm_set_get_dap_base#(T)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>) extends uvm_set_get_dap_base#(T)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Provides a &lsquo;Simple Lock&rsquo; Data Access Policy.</div></div><div class=CToolTip id="tt2"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>function new(</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
       <td class=PParameter nowrap>name</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
       <td class=PDefaultValue width=100%>&quot;unnamed-uvm_simple_lock_dap#(T)&quot;</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Constructor</div></div><div class=CToolTip id="tt3"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function void set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function void set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Updates the value stored within the DAP.</div></div><div class=CToolTip id="tt4"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_set(</td>      <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PBeforeParameters colspan=3>virtual function bit try_set(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Attempts to update the value stored within the DAP.</div></div><div class=CToolTip id="tt5"><div class=CMethod>
@@ -246,10 +262,12 @@ Attempts to update the value stored within the DAP.</div></div><div class=CToolT
   </td></tr></table></blockquote>Returns the current value stored within the DAP</div></div><div class=CToolTip id="tt6"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters nowrap>virtual function bit try_get(</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
+      <td class=PBeforeParameters colspan=4>virtual function bit try_get(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap>output&nbsp;</td>
       <td class=PType nowrap>T&nbsp;</td>
-      <td class=PParameter nowrap>value</td>
-      <td class=PAfterParameters nowrap>)</td></tr>
+      <td class=PParameter nowrap width=100%>value</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Retrieves the current value stored within the DAP</div></div><div class=CToolTip id="tt7"><div class=CMethod>
@@ -258,7 +276,9 @@ Retrieves the current value stored within the DAP</div></div><div class=CToolTip
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function void unlock()
   </td></tr></table></blockquote>Unlocks the data value</div></div><div class=CToolTip id="tt9"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function bit is_locked()
-  </td></tr></table></blockquote>Returns the state of the lock.</div></div><!--END_ND_TOOLTIPS-->
+  </td></tr></table></blockquote>Returns the state of the lock.</div></div><div class=CToolTip id="tt10"><div class=CClass>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>class uvm_text_tr_database extends uvm_tr_database
+  </td></tr></table></blockquote>The <i>uvm_text_tr_database</i> is the default implementation for the uvm_tr_database. </div></div><!--END_ND_TOOLTIPS-->
 
 <script language=JavaScript><!--
 if (browserType) {if (browserVer) {document.write("</div>"); }document.write("</div>");}// --></script></body></html>

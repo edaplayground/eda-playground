@@ -59,7 +59,7 @@ parameter UVM_STREAMBITS = `UVM_MAX_STREAMBITS;
 // Macro: `UVM_DEFAULT_TIMEOUT
 //
 // The default timeout for simulation, if not overridden by
-// <uvm_root::set_timeout> or <+UVM_TIMEOUT>
+// <uvm_root::set_timeout> or <uvm_cmdline_processor::+UVM_TIMEOUT>
 //
 
 `define UVM_DEFAULT_TIMEOUT 9200s
