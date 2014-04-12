@@ -42,8 +42,9 @@ class uvm_sequencer_base extends uvm_component;
 
   typedef enum {SEQ_TYPE_REQ,
                 SEQ_TYPE_LOCK,
-                SEQ_TYPE_GRAB} seq_req_t;
+                SEQ_TYPE_GRAB} seq_req_t; // FIXME SEQ_TYPE_GRAB is unused
 
+// queue of sequences waiting for arbitration
   protected uvm_sequence_request arb_sequence_q[$];
 
   protected bit                 arb_completed[int];
@@ -657,47 +658,51 @@ endfunction
 // at the front that are not locked out
 
 function void uvm_sequencer_base::grant_queued_locks();
-  int i, temp;
-
-  i = 0;
-  while (i < arb_sequence_q.size()) begin
-
-    // Check for lock requests.  Any lock request at the head
-    // of the queue that is not blocked will be granted immediately.
-    temp = 0;
-    if (i < arb_sequence_q.size()) begin
-      if (arb_sequence_q[i].request == SEQ_TYPE_LOCK) begin
-         if ((arb_sequence_q[i].process_id.status == process::KILLED) ||
-             (arb_sequence_q[i].process_id.status == process::FINISHED)) begin
-            `uvm_error("SEQLCKZMB", $sformatf("The task responsible for requesting a lock on sequencer '%s' for sequence '%s' has been killed, to avoid a deadlock the sequence will be removed from the arbitration queues", this.get_full_name(), arb_sequence_q[i].sequence_ptr.get_full_name()))
-            remove_sequence_from_queues(arb_sequence_q[i].sequence_ptr);
-            continue;
-         end
-         
-         temp = (is_blocked(arb_sequence_q[i].sequence_ptr) == 0);
-      end
-    end
-
-    // Grant the lock request and remove it from the queue.
-    // This is a loop to handle multiple back-to-back locks.
-    // Since each entry is deleted, i remains constant
-    while (temp) begin
-      lock_list.push_back(arb_sequence_q[i].sequence_ptr);
-      m_set_arbitration_completed(arb_sequence_q[i].request_id);
-      arb_sequence_q.delete(i);
-      m_update_lists();
-
-      temp = 0;
-      if (i < arb_sequence_q.size()) begin
-        if (arb_sequence_q[i].request == SEQ_TYPE_LOCK) begin
-          temp = is_blocked(arb_sequence_q[i].sequence_ptr) == 0;
-        end
-      end
-    end
-
-    i++;
+  // first remove sequences with dead lock control process
+  begin
+	  uvm_sequence_request q[$];
+	  q = arb_sequence_q.find(item) with (item.request==SEQ_TYPE_LOCK && item.process_id.status inside {process::KILLED,process::FINISHED});
+	  foreach(q[idx]) begin
+		`uvm_error("SEQLCKZMB", $sformatf("The task responsible for requesting a lock on sequencer '%s' for sequence '%s' has been killed, to avoid a deadlock the sequence will be removed from the arbitration queues", this.get_full_name(), q[idx].sequence_ptr.get_full_name()))
+		
+		remove_sequence_from_queues(q[idx].sequence_ptr);
+	  end	
   end
-
+  
+  // now move all is_blocked() into lock_list
+  begin
+	uvm_sequence_request leading_lock_reqs[$],blocked_seqs[$],not_blocked_seqs[$];  
+	int q1[$];
+	int b=arb_sequence_q.size(); // index for first non-LOCK request
+	q1 = arb_sequence_q.find_first_index(item) with (item.request!=SEQ_TYPE_LOCK);
+	if(q1.size())
+		b=q1[0];  
+	if(b!=0) begin // at least one lock
+		leading_lock_reqs = arb_sequence_q[0:b-1]; // set of locks; arb_sequence[b] is the first req!=SEQ_TYPE_LOCK	
+		// split into blocked/not-blocked requests
+		foreach(leading_lock_reqs[i]) begin
+			uvm_sequence_request item = leading_lock_reqs[i];
+			if(is_blocked(item.sequence_ptr)!=0)
+				blocked_seqs.push_back(item);
+			else
+				not_blocked_seqs.push_back(item);
+		end
+		
+		if(b>arb_sequence_q.size()-1)
+			arb_sequence_q=blocked_seqs;
+		  else
+			arb_sequence_q={blocked_seqs,arb_sequence_q[b:arb_sequence_q.size()-1]};
+	  
+		foreach(not_blocked_seqs[idx]) begin
+			lock_list.push_back(not_blocked_seqs[idx].sequence_ptr);  
+			m_set_arbitration_completed(not_blocked_seqs[idx].request_id);
+		end
+	
+		// trigger listeners if lock list has changed
+		if(not_blocked_seqs.size()) 	
+			m_update_lists();	
+	end	
+  end
 endfunction
 
   
@@ -1196,24 +1201,26 @@ endtask
 // will remove a lock for this sequence if it exists
 
 function void uvm_sequencer_base::m_unlock_req(uvm_sequence_base sequence_ptr);
-  int my_seq_id;
-  
   if (sequence_ptr == null) begin
     uvm_report_fatal("uvm_sequencer",
                      "m_unlock_req passed null sequence_ptr", UVM_NONE);
   end
-  my_seq_id = m_register_sequence(sequence_ptr);
-
-  foreach (lock_list[i]) begin
-    if (lock_list[i].get_inst_id() == sequence_ptr.get_inst_id()) begin
-      lock_list.delete(i);
-      m_update_lists();
-      return;
-    end
-  end
-  uvm_report_warning("SQRUNL", 
+ 
+  begin
+	  int q[$];
+	  int seqid=sequence_ptr.get_inst_id();
+	  q=lock_list.find_first_index(item) with (item.get_inst_id() == seqid);
+	  if(q.size()==1) begin
+	      lock_list.delete(q[0]);
+		  grant_queued_locks(); // grant lock requests 
+		  m_update_lists();	 
+	  end
+	  else
+		  uvm_report_warning("SQRUNL", 
            {"Sequence '", sequence_ptr.get_full_name(),
-            "' called ungrab / unlock, but didn't have lock"}, UVM_NONE);
+            "' called ungrab / unlock, but didn't have lock"}, UVM_NONE);  
+
+  end
 endfunction
 
 

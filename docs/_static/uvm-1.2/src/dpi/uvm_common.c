@@ -23,15 +23,21 @@
 
 extern void m__uvm_report_dpi(int,const char*,const char*,int,const char*, int);
 
+#if defined(INCA) || defined(NCSC)
+const static char* uvm_package_scope_name = "uvm_pkg::";
+#else
+const static char* uvm_package_scope_name = "uvm_pkg";
+#endif
+
 void m_uvm_report_dpi( int severity,
 		char* id,
 		char* message,
 		int verbosity,
 		char* file,
 		int linenum) {
-    svScope old_scope = svSetScope(svGetScopeFromName("uvm_pkg"));
-    m__uvm_report_dpi(severity, id, message, verbosity, file, linenum);
-    svSetScope(old_scope);
+  svScope old_scope = svSetScope(svGetScopeFromName(uvm_package_scope_name));
+  m__uvm_report_dpi(severity, id, message, verbosity, file, linenum);
+  svSetScope(old_scope);
  }
 
 
