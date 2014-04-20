@@ -206,6 +206,18 @@ This is a *g++* Linux compiler for C++. It is used for C++ and SystemC runs.
 
 Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
 
+Csh
+---
+
+This is a standard Csh (C Shell) interpreter.
+Currently, no additional options are available for Csh.
+
+Perl
+----
+
+This is a standard Perl compiler.
+Currently, no additional options are available for Perl.
+
 Python
 ------
 

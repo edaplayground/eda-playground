@@ -106,11 +106,13 @@ Simulators
 * `GPL Cver <http://sourceforge.net/projects/gplcver/>`_
 * `VeriWell <http://sourceforge.net/projects/veriwell/>`_
 
-Compilers
-=========
+Compilers and Interpreters
+==========================
 
-* `C++ Compiler <http://gcc.gnu.org/>`_
-* `Python Compiler <http://www.python.org/>`_
+* `C++ <http://gcc.gnu.org/>`_
+* `Perl <http://www.perl.org/>`_
+* `Python <http://www.python.org/>`_
+* `Csh (C Shell) <http://en.wikipedia.org/wiki/C_shell>`_
 
 Synthesis Tools
 ===============
