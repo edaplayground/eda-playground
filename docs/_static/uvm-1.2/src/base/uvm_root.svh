@@ -36,7 +36,7 @@
 // The ~uvm_top~ instance of ~uvm_root~ plays several key roles in the UVM.
 // 
 // Implicit top-level - The ~uvm_top~ serves as an implicit top-level component.
-// Any component whose parent is specified as NULL becomes a child of ~uvm_top~. 
+// Any component whose parent is specified as ~null~ becomes a child of ~uvm_top~.
 // Thus, all UVM components in simulation are descendants of ~uvm_top~.
 //
 // Phase control - ~uvm_top~ manages the phasing for all components.
@@ -57,7 +57,7 @@
 //
 //
 // The ~uvm_top~ instance checks during the end_of_elaboration phase if any errors have 
-// been generated so far. If errors are found an UVM_FATAL error is being generated as result 
+// been generated so far. If errors are found a UVM_FATAL error is being generated as result 
 // so that the simulation will not continue to the start_of_simulation_phase.
 // 
 
@@ -118,7 +118,7 @@ class uvm_root extends uvm_component;
   // Function: die
   //
   // This method is called by the report server if a report reaches the maximum
-  // quit count or has an UVM_EXIT action associated with it, e.g., as with
+  // quit count or has a UVM_EXIT action associated with it, e.g., as with
   // fatal errors.
   //
   // Calls the <uvm_component::pre_abort()> method
@@ -183,8 +183,8 @@ class uvm_root extends uvm_component;
   //
   // Returns the component handle (find) or list of components handles
   // (find_all) matching a given string. The string may contain the wildcards,
-  // * and ?. Strings beginning with '.' are absolute path names. If optional
-  // comp arg is provided, then search begins from that component down
+  // * and ?. Strings beginning with '.' are absolute path names. If the optional
+  // argument comp is provided, then search begins from that component down
   // (default=all components).
 
   extern function void find_all (string comp_match,

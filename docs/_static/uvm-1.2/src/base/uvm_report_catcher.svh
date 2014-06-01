@@ -46,7 +46,7 @@ endclass
 // The uvm_report_catcher is used to catch messages issued by the uvm report
 // server. Catchers are
 // uvm_callbacks#(<uvm_report_object>,uvm_report_catcher) objects,
-// so all factilities in the <uvm_callback> and <uvm_callbacks#(T,CB)>
+// so all facilities in the <uvm_callback> and <uvm_callbacks#(T,CB)>
 // classes are available for registering catchers and controlling catcher
 // state.
 // The uvm_callbacks#(<uvm_report_object>,uvm_report_catcher) class is
@@ -92,7 +92,7 @@ endclass
 //|  // Catchers are callbacks on report objects (components are report 
 //|  // objects, so catchers can be attached to components).
 //|
-//|  // To affect all reporters, use null for the object
+//|  // To affect all reporters, use ~null~ for the object
 //|  uvm_report_cb::add(null, demoter); 
 //|
 //|  // To affect some specific object use the specific reporter
@@ -380,7 +380,7 @@ virtual class uvm_report_catcher extends uvm_callback;
   // registered. For finer grained detail, the <uvm_callbacks #(T,CB)::display>
   // method can be used by calling uvm_report_cb::display(<uvm_report_object>).
 
-  static function void print_catcher(UVM_FILE file=0);
+  static function void print_catcher(UVM_FILE file = 0);
 	  string msg;
 	  string enabled;
 	  uvm_report_catcher catcher;
@@ -406,7 +406,7 @@ virtual class uvm_report_catcher extends uvm_callback;
   
   // Funciton: debug_report_catcher
   //
-  // Turn on report catching debug information. ~what~ is a bitwise and of
+  // Turn on report catching debug information. ~what~ is a bitwise AND of
   // * DO_NOT_CATCH  -- forces catch to be ignored so that all catchers see the
   //   the reports.
   // * DO_NOT_MODIFY -- forces the message to remain unchanged
@@ -449,7 +449,7 @@ virtual class uvm_report_catcher extends uvm_callback;
 
    // Function: uvm_report_error
    //
-   // Issues a error message using the current message's report object.
+   // Issues an error message using the current message's report object.
    // This message will bypass any message catching callbacks.
    
    protected function void uvm_report_error(string id,
@@ -658,7 +658,7 @@ virtual class uvm_report_catcher extends uvm_callback;
 
 
   //process_report_catcher
-  //internal method to call user catch() method
+  //internal method to call user <catch()> method
   //
 
   local function int process_report_catcher();

@@ -36,7 +36,7 @@
 
 // Enum: uvm_tlm_command_e
 //
-// Command atribute type definition
+// Command attribute type definition
 //
 // UVM_TLM_READ_COMMAND      - Bus read operation
 //
@@ -54,9 +54,9 @@ typedef enum
 
 // Enum: uvm_tlm_response_status_e
 //
-// Respone status attribute type definition
+// Response status attribute type definition
 //
-// UVM_TLM_OK_RESPONSE                - Bus operation completed succesfully
+// UVM_TLM_OK_RESPONSE                - Bus operation completed successfully
 //
 // UVM_TLM_INCOMPLETE_RESPONSE        - Transaction was not delivered to target
 //
@@ -168,14 +168,14 @@ class uvm_tlm_generic_payload extends uvm_sequence_item;
    // of multi-byte data in the generic payload to match the host endianness.
    // Unlike C++, it is not possible in SystemVerilog to cast an arbitrary
    // data type as an array of bytes. Therefore, matching the host
-   // endianness is not necessary. In constrast, arbitrary data types may be
+   // endianness is not necessary. In contrast, arbitrary data types may be
    // converted to and from a byte array using the streaming operator and
    // <uvm_object> objects may be further converted using the
    // <uvm_object::pack_bytes()> and <uvm_object::unpack_bytes()> methods.
    // All that is required is that a consistent mechanism is used to
    // fill the payload data array and later extract data from it.
    //
-   // Should a generic payload be transfered to/from a systemC model,
+   // Should a generic payload be transferred to/from a SystemC model,
    // it will be necessary for any multi-byte data in that generic payload
    // to use/be interpreted using the host endianness.
    // However, this process is currently outside the scope of this standard.
@@ -319,7 +319,7 @@ class uvm_tlm_generic_payload extends uvm_sequence_item;
    // streaming width attribute shall determine the width of the stream,
    // that is, the number of bytes transferred on each beat. In other
    // words, streaming affects the local address associated with each
-   // byte in the data array. In all other respects, the organisation of
+   // byte in the data array. In all other respects, the organization of
    // the data array is unaffected by streaming.
    //
    // The bytes within the data array have a corresponding sequence of
@@ -613,7 +613,7 @@ class uvm_tlm_generic_payload extends uvm_sequence_item;
   // The accessor functions let you set and get each of the members of the 
   // generic payload. All of the accessor methods are virtual. This implies 
   // a slightly different use model for the generic payload than 
-  // in SsytemC. The way the generic payload is defined in SystemC does 
+  // in SystemC. The way the generic payload is defined in SystemC does 
   // not encourage you to create new transaction types derived from 
   // uvm_tlm_generic_payload. Instead, you would use the extensions mechanism. 
   // Thus in SystemC none of the accessors are virtual.
@@ -760,7 +760,7 @@ class uvm_tlm_generic_payload extends uvm_sequence_item;
    // Function: set_byte_enable_length
    //
    // Set the size <m_byte_enable_length> of the <m_byte_enable> array
-   // i.e  <m_byte_enable>.size()
+   // i.e.  <m_byte_enable>.size()
    
  virtual function void set_byte_enable_length(int unsigned length);
     m_byte_enable_length = length;
@@ -848,7 +848,7 @@ class uvm_tlm_generic_payload extends uvm_sequence_item;
   // Add an instance-specific extension. Only one instance of any given
   // extension type is allowed. If there is an existing extension
   // instance of the type of ~ext~, ~ext~ replaces it and its handle
-  // is returned. Otherwise, null is returned.
+  // is returned. Otherwise, ~null~ is returned.
    
   function uvm_tlm_extension_base set_extension(uvm_tlm_extension_base ext);
     uvm_tlm_extension_base ext_handle = ext.get_type_handle();

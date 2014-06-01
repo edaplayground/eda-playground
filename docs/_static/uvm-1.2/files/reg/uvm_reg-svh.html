@@ -315,7 +315,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Instance-specific configuration</p><p>Specify the parent block of this register.&nbsp; May also set a parent register file for this register,</p><p>If the register is implemented in a single HDL variable, it&rsquo;s name is specified as the <i>hdl_path</i>.&nbsp; Otherwise, if the register is implemented as a concatenation of variables (usually one per field), then the HDL path must be specified using the <a href="#uvm_reg.add_hdl_path" class=LMethod id=link66 onMouseOver="ShowTip(event, 'tt43', 'link66')" onMouseOut="HideTip('tt43')">add_hdl_path()</a> or <a href="#uvm_reg.add_hdl_path_slice" class=LMethod id=link67 onMouseOver="ShowTip(event, 'tt44', 'link67')" onMouseOut="HideTip('tt44')">add_hdl_path_slice</a> method.</p></div></div></div>
+<div class=CBody><p>Instance-specific configuration</p><p>Specify the parent block of this register.&nbsp; May also set a parent register file for this register,</p><p>If the register is implemented in a single HDL variable, its name is specified as the <i>hdl_path</i>.&nbsp; Otherwise, if the register is implemented as a concatenation of variables (usually one per field), then the HDL path must be specified using the <a href="#uvm_reg.add_hdl_path" class=LMethod id=link66 onMouseOver="ShowTip(event, 'tt43', 'link66')" onMouseOut="HideTip('tt43')">add_hdl_path()</a> or <a href="#uvm_reg.add_hdl_path_slice" class=LMethod id=link67 onMouseOver="ShowTip(event, 'tt44', 'link67')" onMouseOut="HideTip('tt44')">add_hdl_path_slice</a> method.</p></div></div></div>
 
 
 
@@ -493,7 +493,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Return the named field in this register</p><p>Finds a field with the specified name in this register and returns its abstraction class.&nbsp; If no fields are found, returns null.</p></div></div></div>
+<div class=CBody><p>Return the named field in this register</p><p>Finds a field with the specified name in this register and returns its abstraction class.&nbsp; If no fields are found, returns <i>null</i>.</p></div></div></div>
 
 
 
@@ -553,7 +553,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Identifies the external physical address(es) of this register</p><p>Computes all of the external physical addresses that must be accessed to completely read or write this register.&nbsp; The addressed are specified in little endian order.&nbsp; Returns the number of bytes transfered on each access.</p><p>If no address map is specified and the register is mapped in only one address map, that address map is used.&nbsp; If the register is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the register is not mapped in the specified address map, an error message is issued.</p></div></div></div>
+<div class=CBody><p>Identifies the external physical address(es) of this register</p><p>Computes all of the external physical addresses that must be accessed to completely read or write this register.&nbsp; The addressed are specified in little endian order.&nbsp; Returns the number of bytes transferred on each access.</p><p>If no address map is specified and the register is mapped in only one address map, that address map is used.&nbsp; If the register is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the register is not mapped in the specified address map, an error message is issued.</p></div></div></div>
 
 
 
@@ -933,7 +933,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Read the current value from this register</p><p>Sample the value in the DUT register corresponding to this absraction class instance using a back-door access.&nbsp; The register value is sampled, not modified.</p><p>Uses the HDL path for the design abstraction specified by <i>kind</i>.</p><p>The mirrored value will be updated using the <a href="#uvm_reg.predict" class=LMethod id=link83 onMouseOver="ShowTip(event, 'tt36', 'link83')" onMouseOut="HideTip('tt36')">uvm_reg::predict()</a> method.</p></div></div></div>
+<div class=CBody><p>Read the current value from this register</p><p>Sample the value in the DUT register corresponding to this abstraction class instance using a back-door access.&nbsp; The register value is sampled, not modified.</p><p>Uses the HDL path for the design abstraction specified by <i>kind</i>.</p><p>The mirrored value will be updated using the <a href="#uvm_reg.predict" class=LMethod id=link83 onMouseOver="ShowTip(event, 'tt36', 'link83')" onMouseOut="HideTip('tt36')">uvm_reg::predict()</a> method.</p></div></div></div>
 
 
 
@@ -1088,7 +1088,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Update the mirrored and desired value for this register.</p><p>Predict the mirror (and desired) value of the fields in the register based on the specified observed <i>value</i> on a specified adress <i>map</i>, or based on a calculated value.&nbsp; See <a href="uvm_reg_field-svh.html#uvm_reg_field.predict" class=LMethod id=link91 onMouseOver="ShowTip(event, 'tt73', 'link91')" onMouseOut="HideTip('tt73')">uvm_reg_field::predict()</a> for more details.</p><p>Returns TRUE if the prediction was succesful for each field in the register.</p></div></div></div>
+<div class=CBody><p>Update the mirrored and desired value for this register.</p><p>Predict the mirror (and desired) value of the fields in the register based on the specified observed <i>value</i> on a specified address <i>map</i>, or based on a calculated value.&nbsp; See <a href="uvm_reg_field-svh.html#uvm_reg_field.predict" class=LMethod id=link91 onMouseOver="ShowTip(event, 'tt73', 'link91')" onMouseOut="HideTip('tt73')">uvm_reg_field::predict()</a> for more details.</p><p>Returns TRUE if the prediction was successful for each field in the register.</p></div></div></div>
 
 
 
@@ -1150,7 +1150,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns the user-defined frontdoor for this register</p><p>If null, no user-defined frontdoor has been defined.&nbsp; A user-defined frontdoor is defined by using the <a href="#uvm_reg.set_frontdoor" class=LMethod id=link92 onMouseOver="ShowTip(event, 'tt38', 'link92')" onMouseOut="HideTip('tt38')">uvm_reg::set_frontdoor()</a> method.</p><p>If the register is mapped in multiple address maps, an address <i>map</i> must be specified.</p></div></div></div>
+<div class=CBody><p>Returns the user-defined frontdoor for this register</p><p>If <i>null</i>, no user-defined frontdoor has been defined.&nbsp; A user-defined frontdoor is defined by using the <a href="#uvm_reg.set_frontdoor" class=LMethod id=link92 onMouseOver="ShowTip(event, 'tt38', 'link92')" onMouseOut="HideTip('tt38')">uvm_reg::set_frontdoor()</a> method.</p><p>If the register is mapped in multiple address maps, an address <i>map</i> must be specified.</p></div></div></div>
 
 
 
@@ -1200,7 +1200,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns the user-defined backdoor for this register</p><p>If null, no user-defined backdoor has been defined.&nbsp; A user-defined backdoor is defined by using the <a href="#uvm_reg.set_backdoor" class=LMethod id=link95 onMouseOver="ShowTip(event, 'tt40', 'link95')" onMouseOut="HideTip('tt40')">uvm_reg::set_backdoor()</a> method.</p><p>If <i>inherited</i> is TRUE, returns the backdoor of the parent block if none have been specified for this register.</p></div></div></div>
+<div class=CBody><p>Returns the user-defined backdoor for this register</p><p>If <i>null</i>, no user-defined backdoor has been defined.&nbsp; A user-defined backdoor is defined by using the <a href="#uvm_reg.set_backdoor" class=LMethod id=link95 onMouseOver="ShowTip(event, 'tt40', 'link95')" onMouseOut="HideTip('tt40')">uvm_reg::set_backdoor()</a> method.</p><p>If <i>inherited</i> is TRUE, returns the backdoor of the parent block if none have been specified for this register.</p></div></div></div>
 
 
 
@@ -1246,7 +1246,7 @@ Bits:  5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
       |A|xxx|      B      |xxx|   C   |
       +-+---+-------------+---+-------+</pre></blockquote><h4 class=CHeading>would be specified using the following literal value</h4><blockquote><pre>add_hdl_path('{ '{&quot;A_reg&quot;, 15, 1},
                 '{&quot;B_reg&quot;,  6, 7},
-                '{'C_reg&quot;,  0, 4} } );</pre></blockquote><p>If the register is implementd using a single HDL variable, The array should specify a single slice with its <i>offset</i> and <i>size</i> specified as -1.&nbsp; For example:</p><blockquote><pre>r1.add_hdl_path('{ '{&quot;r1&quot;, -1, -1} });</pre></blockquote></div></div></div>
+                '{'C_reg&quot;,  0, 4} } );</pre></blockquote><p>If the register is implemented using a single HDL variable, The array should specify a single slice with its <i>offset</i> and <i>size</i> specified as -1.&nbsp; For example:</p><blockquote><pre>r1.add_hdl_path('{ '{&quot;r1&quot;, -1, -1} });</pre></blockquote></div></div></div>
 
 
 
@@ -1322,7 +1322,7 @@ Bits:  5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the register instance.&nbsp; Returns only the component of the HDL paths that corresponds to the register, not a full hierarchical path</p><p>If no design asbtraction is specified, the default design abstraction for the parent block is used.</p></div></div></div>
+<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the register instance.&nbsp; Returns only the component of the HDL paths that corresponds to the register, not a full hierarchical path</p><p>If no design abstraction is specified, the default design abstraction for the parent block is used.</p></div></div></div>
 
 
 
@@ -1368,7 +1368,7 @@ Bits:  5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the register instance.&nbsp; There may be more than one path returned even if only one path was defined for the register instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design asbtraction is specified, the default design abstraction for each ancestor block is used to get each incremental path.</p></div></div></div>
+<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the register instance.&nbsp; There may be more than one path returned even if only one path was defined for the register instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design abstraction is specified, the default design abstraction for each ancestor block is used to get each incremental path.</p></div></div></div>
 
 
 
@@ -1456,7 +1456,7 @@ Bits:  5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Specify which coverage model that must be included in various block, register or memory abstraction class instances.</p><p>The coverage models are specified by or&rsquo;ing or adding the <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link97 onMouseOver="ShowTip(event, 'tt65', 'link97')" onMouseOut="HideTip('tt65')">uvm_coverage_model_e</a> coverage model identifiers corresponding to the coverage model to be included.</p><p>The scope specifies a hierarchical name or pattern identifying a block, memory or register abstraction class instances.&nbsp; Any block, memory or register whose full hierarchical name matches the specified scope will have the specified functional coverage models included in them.</p><p>The scope can be specified as a POSIX regular expression or simple pattern.&nbsp; See <a href="../base/uvm_resource-svh.html#uvm_resource_base.Scope_Interface" class=LGroup id=link98 onMouseOver="ShowTip(event, 'tt74', 'link98')" onMouseOut="HideTip('tt74')">uvm_resource_base::Scope Interface</a> for more details.</p><blockquote><pre>uvm_reg::include_coverage(&quot;*&quot;, UVM_CVR_ALL);</pre></blockquote><p>The specification of which coverage model to include in which abstraction class is stored in a <a href="uvm_reg_model-svh.html#uvm_reg_cvr_t" class=LType id=link99 onMouseOver="ShowTip(event, 'tt75', 'link99')" onMouseOut="HideTip('tt75')">uvm_reg_cvr_t</a> resource in the <a href="../base/uvm_resource_db-svh.html#uvm_resource_db" class=LClass id=link100 onMouseOver="ShowTip(event, 'tt76', 'link100')" onMouseOut="HideTip('tt76')">uvm_resource_db</a> resource database, in the &ldquo;uvm_reg::&rdquo; scope namespace.</p></div></div></div>
+<div class=CBody><p>Specify which coverage model that must be included in various block, register or memory abstraction class instances.</p><p>The coverage models are specified by OR&rsquo;ing or adding the <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link97 onMouseOver="ShowTip(event, 'tt65', 'link97')" onMouseOut="HideTip('tt65')">uvm_coverage_model_e</a> coverage model identifiers corresponding to the coverage model to be included.</p><p>The scope specifies a hierarchical name or pattern identifying a block, memory or register abstraction class instances.&nbsp; Any block, memory or register whose full hierarchical name matches the specified scope will have the specified functional coverage models included in them.</p><p>The scope can be specified as a POSIX regular expression or simple pattern.&nbsp; See <a href="../base/uvm_resource-svh.html#uvm_resource_base.Scope_Interface" class=LGroup id=link98 onMouseOver="ShowTip(event, 'tt74', 'link98')" onMouseOut="HideTip('tt74')">uvm_resource_base::Scope Interface</a> for more details.</p><blockquote><pre>uvm_reg::include_coverage(&quot;*&quot;, UVM_CVR_ALL);</pre></blockquote><p>The specification of which coverage model to include in which abstraction class is stored in a <a href="uvm_reg_model-svh.html#uvm_reg_cvr_t" class=LType id=link99 onMouseOver="ShowTip(event, 'tt75', 'link99')" onMouseOut="HideTip('tt75')">uvm_reg_cvr_t</a> resource in the <a href="../base/uvm_resource_db-svh.html#uvm_resource_db" class=LClass id=link100 onMouseOver="ShowTip(event, 'tt76', 'link100')" onMouseOut="HideTip('tt76')">uvm_resource_db</a> resource database, in the &ldquo;uvm_reg::&rdquo; scope namespace.</p></div></div></div>
 
 
 
@@ -1520,7 +1520,7 @@ Bits:  5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Turns on coverage measurement.</p><p>Turns the collection of functional coverage measurements on or off for this register.&nbsp; The functional coverage measurement is turned on for every coverage model specified using <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link105 onMouseOver="ShowTip(event, 'tt65', 'link105')" onMouseOut="HideTip('tt65')">uvm_coverage_model_e</a> symbolic identifers.&nbsp; Multiple functional coverage models can be specified by adding the functional coverage model identifiers.&nbsp; All other functional coverage models are turned off.&nbsp; Returns the sum of all functional coverage models whose measurements were previously on.</p><p>This method can only control the measurement of functional coverage models that are present in the register abstraction classes, then enabled during construction.&nbsp; See the <a href="#uvm_reg.has_coverage" class=LMethod id=link106 onMouseOver="ShowTip(event, 'tt56', 'link106')" onMouseOut="HideTip('tt56')">uvm_reg::has_coverage()</a> method to identify the available functional coverage models.</p></div></div></div>
+<div class=CBody><p>Turns on coverage measurement.</p><p>Turns the collection of functional coverage measurements on or off for this register.&nbsp; The functional coverage measurement is turned on for every coverage model specified using <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link105 onMouseOver="ShowTip(event, 'tt65', 'link105')" onMouseOut="HideTip('tt65')">uvm_coverage_model_e</a> symbolic identifiers.&nbsp; Multiple functional coverage models can be specified by adding the functional coverage model identifiers.&nbsp; All other functional coverage models are turned off.&nbsp; Returns the sum of all functional coverage models whose measurements were previously on.</p><p>This method can only control the measurement of functional coverage models that are present in the register abstraction classes, then enabled during construction.&nbsp; See the <a href="#uvm_reg.has_coverage" class=LMethod id=link106 onMouseOver="ShowTip(event, 'tt56', 'link106')" onMouseOut="HideTip('tt56')">uvm_reg::has_coverage()</a> method to identify the available functional coverage models.</p></div></div></div>
 
 
 

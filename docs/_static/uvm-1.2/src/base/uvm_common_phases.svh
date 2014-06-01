@@ -66,6 +66,10 @@ class uvm_build_phase extends uvm_topdown_phase;
    endfunction
    local static uvm_build_phase m_inst;
    static const string type_name = "uvm_build_phase";
+
+   // Function: get
+   // Returns the singleton phase handle
+   //
    static function uvm_build_phase get();
       if(m_inst == null)
          m_inst = new();
@@ -108,6 +112,9 @@ class uvm_connect_phase extends uvm_bottomup_phase;
    endfunction
    local static uvm_connect_phase m_inst;
    static const string type_name = "uvm_connect_phase";
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_connect_phase get();
       if(m_inst == null)
          m_inst = new();
@@ -147,6 +154,9 @@ class uvm_end_of_elaboration_phase extends uvm_bottomup_phase;
    endfunction
    local static uvm_end_of_elaboration_phase m_inst;
    static const string type_name = "uvm_end_of_elaboration_phase";
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_end_of_elaboration_phase get();
       if(m_inst == null) begin 
          m_inst = new();
@@ -191,6 +201,9 @@ class uvm_start_of_simulation_phase extends uvm_bottomup_phase;
    endfunction
    local static uvm_start_of_simulation_phase m_inst;
    static const string type_name = "uvm_start_of_simulation_phase";
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_start_of_simulation_phase get();
       if(m_inst == null)
          m_inst = new();
@@ -212,7 +225,7 @@ endclass
 // <uvm_component::run_phase> virtual method. This phase runs in
 // parallel to the runtime phases, <uvm_pre_reset_phase> through
 // <uvm_post_shutdown_phase>. All components in the testbench
-// are synchronized with respect to the run phase regardles of
+// are synchronized with respect to the run phase regardless of
 // the phase domain they belong to.
 //
 // Upon Entry:
@@ -257,6 +270,9 @@ class uvm_run_phase extends uvm_task_phase;
    endtask
    local static uvm_run_phase m_inst; 
    static const string type_name = "uvm_run_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_run_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -273,7 +289,7 @@ endclass
 
 // Class: uvm_extract_phase
 //
-// Extract data from different points of the verficiation environment.
+// Extract data from different points of the verification environment.
 //
 // <uvm_bottomup_phase> that calls the
 // <uvm_component::extract_phase> method.
@@ -300,6 +316,9 @@ class uvm_extract_phase extends uvm_bottomup_phase;
    endfunction
    local static uvm_extract_phase m_inst;
    static const string type_name = "uvm_extract_phase";
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_extract_phase get();
       if(m_inst == null)
          m_inst = new();
@@ -335,6 +354,9 @@ class uvm_check_phase extends uvm_bottomup_phase;
    endfunction
    local static uvm_check_phase m_inst;
    static const string type_name = "uvm_check_phase";
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_check_phase get();
       if(m_inst == null)
          m_inst = new();
@@ -371,6 +393,9 @@ class uvm_report_phase extends uvm_bottomup_phase;
    endfunction
    local static uvm_report_phase m_inst;
    static const string type_name = "uvm_report_phase";
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_report_phase get();
       if(m_inst == null)
          m_inst = new();
@@ -409,6 +434,9 @@ class uvm_final_phase extends uvm_topdown_phase;
    endfunction
    local static uvm_final_phase m_inst;
    static const string type_name = "uvm_final_phase";
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_final_phase get();
       if(m_inst == null)
          m_inst = new();

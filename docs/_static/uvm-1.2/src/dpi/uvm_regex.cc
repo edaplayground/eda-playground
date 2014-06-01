@@ -42,7 +42,7 @@ int uvm_re_match(const char * re, const char *str)
   regex_t *rexp;
   int err;
 
-  // safety check.  Args should never be null since this is called
+  // safety check.  Args should never be ~null~ since this is called
   // from DPI.  But we'll check anyway.
   if(re == NULL)
     return 1;
@@ -123,7 +123,7 @@ const char * uvm_glob_to_re(const char *glob)
   const char *p;
   int len;
 
-  // safety check.  Glob should never be null since this is called
+  // safety check.  Glob should never be ~null~ since this is called
   // from DPI.  But we'll check anyway.
   if(glob == NULL)
     return NULL;

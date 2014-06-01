@@ -125,7 +125,7 @@ class uvm_resource_db #(type T=uvm_object);
   //
   // Create a new resource, write a ~val~ to it, and set it into the
   // database using ~name~ and ~scope~ as the lookup parameters. The
-  // ~accessor~ is used for auditting.
+  // ~accessor~ is used for auditing.
   static function void set(input string scope, input string name,
                            T val, input uvm_object accessor = null);
 
@@ -142,7 +142,7 @@ class uvm_resource_db #(type T=uvm_object);
   // Create a new resource, write a ~val~ to it, and set it into the
   // database.  The resource has no name and therefore will not be
   // entered into the name map. But is does have a ~scope~ for lookup
-  // purposes. The ~accessor~ is used for auditting.
+  // purposes. The ~accessor~ is used for auditing.
   static function void set_anonymous(input string scope,
                                      T val, input uvm_object accessor = null);
 
@@ -214,7 +214,7 @@ class uvm_resource_db #(type T=uvm_object);
   // locate a resource by ~name~ and ~scope~ and read its value. The value 
   // is returned through the output argument ~val~.  The return value is a bit 
   // that indicates whether or not the read was successful. The ~accessor~
-  // is used for auditting.
+  // is used for auditing.
   static function bit read_by_name(input string scope,
                                    input string name,
                                    inout T val, input uvm_object accessor = null);
@@ -238,7 +238,7 @@ class uvm_resource_db #(type T=uvm_object);
   // Read a value by type.  The value is returned through the output
   // argument ~val~.  The ~scope~ is used for the lookup. The return
   // value is a bit that indicates whether or not the read is successful.
-  // The ~accessor~ is used for auditting.
+  // The ~accessor~ is used for auditing.
   static function bit read_by_type(input string scope,
                                    inout T val,
                                    input uvm_object accessor = null);

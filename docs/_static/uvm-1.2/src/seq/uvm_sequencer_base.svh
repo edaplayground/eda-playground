@@ -92,7 +92,7 @@ class uvm_sequencer_base extends uvm_component;
   // Derived sequencers may override this method to perform a custom arbitration
   // policy. The override must return one of the entries from the
   // avail_sequences queue, which are indexes into an internal queue,
-  // arb_sequence_q. The 
+  // arb_sequence_q.  
   //
   // The default implementation behaves like UVM_SEQ_ARB_FIFO, which returns the
   // entry at avail_sequences[0]. 
@@ -121,11 +121,11 @@ class uvm_sequencer_base extends uvm_component;
   // If both are used,
   // the sequence instance takes precedence. When attempting to override
   // a previous default sequence setting, you must override both
-  // the instance and type (wrapper) reources, else your override may not
+  // the instance and type (wrapper) resources, else your override may not
   // take effect.
   //
   // When setting the resource using ~set~, the 1st argument specifies the
-  // context pointer, usually "this" for components or "null" when executed from
+  // context pointer, usually ~this~ for components or ~null~ when executed from
   // outside the component hierarchy (i.e. in module).  
   // The 2nd argument is the instance string, which is a path name to the
   // target sequencer, relative to the context pointer.  The path must include
@@ -143,7 +143,7 @@ class uvm_sequencer_base extends uvm_component;
   //|                                         "default_sequence",
   //|                                         myseq);
   //
-  // Configuration by type is shorter and can be substituted via the
+  // Configuration by type is shorter and can be substituted via
   // the factory.
   //
   //| uvm_config_db #(uvm_object_wrapper)::set(null, "top.agent.myseqr.main_phase",
@@ -228,11 +228,11 @@ class uvm_sequencer_base extends uvm_component;
 
   // Function: has_lock
   //
-  // Returns 1 if the sequence refered to in the parameter currently has a lock
+  // Returns 1 if the sequence referred to in the parameter currently has a lock
   // on this sequencer, 0 otherwise.
   //
   // Note that even if this sequence has a lock, a child sequence may also have
-  // a lock, in which case the sequence is still blocked from issueing
+  // a lock, in which case the sequence is still blocked from issuing
   // operations on the sequencer
   //
   extern function bit has_lock(uvm_sequence_base sequence_ptr);
@@ -321,7 +321,7 @@ class uvm_sequencer_base extends uvm_component;
   // UVM_SEQ_ARB_FIFO          - Requests are granted in FIFO order (default)
   // UVM_SEQ_ARB_WEIGHTED      - Requests are granted randomly by weight
   // UVM_SEQ_ARB_RANDOM        - Requests are granted randomly
-  // UVM_SEQ_ARB_STRICT_FIFO   - Requests at highest priority granted in fifo order
+  // UVM_SEQ_ARB_STRICT_FIFO   - Requests at highest priority granted in FIFO order
   // UVM_SEQ_ARB_STRICT_RANDOM - Requests at highest priority granted in randomly
   // UVM_SEQ_ARB_USER          - Arbitration is delegated to the user-defined 
   //                             function, user_priority_arbitration. That function
@@ -1711,7 +1711,7 @@ function uvm_sequence_base uvm_sequencer_base::get_sequence(int req_kind);
                                           m_seq_type))) 
   begin
       uvm_report_fatal("FCTSEQ", 
-        $sformatf("Factory can not produce a sequence of type %0s.",
+        $sformatf("Factory cannot produce a sequence of type %0s.",
         m_seq_type), UVM_NONE);
   end
 

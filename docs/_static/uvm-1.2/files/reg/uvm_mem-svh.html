@@ -300,7 +300,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Instance-specific configuration</p><p>Specify the parent block of this memory.</p><p>If this memory is implemented in a single HDL variable, it&rsquo;s name is specified as the <i>hdl_path</i>.&nbsp; Otherwise, if the memory is implemented as a concatenation of variables (usually one per bank), then the HDL path must be specified using the <a href="#uvm_mem.add_hdl_path" class=LMethod id=link57 onMouseOver="ShowTip(event, 'tt37', 'link57')" onMouseOut="HideTip('tt37')">add_hdl_path()</a> or <a href="#uvm_mem.add_hdl_path_slice" class=LMethod id=link58 onMouseOver="ShowTip(event, 'tt38', 'link58')" onMouseOut="HideTip('tt38')">add_hdl_path_slice()</a> method.</p></div></div></div>
+<div class=CBody><p>Instance-specific configuration</p><p>Specify the parent block of this memory.</p><p>If this memory is implemented in a single HDL variable, its name is specified as the <i>hdl_path</i>.&nbsp; Otherwise, if the memory is implemented as a concatenation of variables (usually one per bank), then the HDL path must be specified using the <a href="#uvm_mem.add_hdl_path" class=LMethod id=link57 onMouseOver="ShowTip(event, 'tt37', 'link57')" onMouseOut="HideTip('tt37')">add_hdl_path()</a> or <a href="#uvm_mem.add_hdl_path_slice" class=LMethod id=link58 onMouseOver="ShowTip(event, 'tt38', 'link58')" onMouseOut="HideTip('tt38')">add_hdl_path_slice()</a> method.</p></div></div></div>
 
 
 
@@ -618,7 +618,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Identifies the external physical address(es) of a memory location</p><p>Computes all of the external physical addresses that must be accessed to completely read or write the specified location in this memory.&nbsp; The addressed are specified in little endian order.&nbsp; Returns the number of bytes transfered on each access.</p><p>If no address map is specified and the memory is mapped in only one address map, that address map is used.&nbsp; If the memory is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the memory is not mapped in the specified address map, an error message is issued.</p></div></div></div>
+<div class=CBody><p>Identifies the external physical address(es) of a memory location</p><p>Computes all of the external physical addresses that must be accessed to completely read or write the specified location in this memory.&nbsp; The addressed are specified in little endian order.&nbsp; Returns the number of bytes transferred on each access.</p><p>If no address map is specified and the memory is mapped in only one address map, that address map is used.&nbsp; If the memory is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the memory is not mapped in the specified address map, an error message is issued.</p></div></div></div>
 
 
 
@@ -934,7 +934,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Deposit the specified value in a memory location</p><p>Deposit the value in the DUT memory location corresponding to this abstraction class instance at the secified <i>offset</i>, as-is, using a back-door access.</p><p>Uses the HDL path for the design abstraction specified by <i>kind</i>.</p></div></div></div>
+<div class=CBody><p>Deposit the specified value in a memory location</p><p>Deposit the value in the DUT memory location corresponding to this abstraction class instance at the specified <i>offset</i>, as-is, using a back-door access.</p><p>Uses the HDL path for the design abstraction specified by <i>kind</i>.</p></div></div></div>
 
 
 
@@ -988,7 +988,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Read the current value from a memory location</p><p>Sample the value in the DUT memory location corresponding to this absraction class instance at the specified <i>offset</i> using a back-door access.&nbsp; The memory location value is sampled, not modified.</p><p>Uses the HDL path for the design abstraction specified by <i>kind</i>.</p></div></div></div>
+<div class=CBody><p>Read the current value from a memory location</p><p>Sample the value in the DUT memory location corresponding to this abstraction class instance at the specified <i>offset</i> using a back-door access.&nbsp; The memory location value is sampled, not modified.</p><p>Uses the HDL path for the design abstraction specified by <i>kind</i>.</p></div></div></div>
 
 
 
@@ -1024,7 +1024,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Set a user-defined frontdoor for this memory</p><p>By default, memorys are mapped linearly into the address space of the address maps that instantiate them.&nbsp; If memorys are accessed using a different mechanism, a user-defined access mechanism must be defined and associated with the corresponding memory abstraction class</p><p>If the memory is mapped in multiple address maps, an address <i>map</i> must be specified.</p></div></div></div>
+<div class=CBody><p>Set a user-defined frontdoor for this memory</p><p>By default, memories are mapped linearly into the address space of the address maps that instantiate them.&nbsp; If memories are accessed using a different mechanism, a user-defined access mechanism must be defined and associated with the corresponding memory abstraction class</p><p>If the memory is mapped in multiple address maps, an address <i>map</i> must be specified.</p></div></div></div>
 
 
 
@@ -1042,7 +1042,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns the user-defined frontdoor for this memory</p><p>If null, no user-defined frontdoor has been defined.&nbsp; A user-defined frontdoor is defined by using the <a href="#uvm_mem.set_frontdoor" class=LMethod id=link60 onMouseOver="ShowTip(event, 'tt32', 'link60')" onMouseOut="HideTip('tt32')">uvm_mem::set_frontdoor()</a> method.</p><p>If the memory is mapped in multiple address maps, an address <i>map</i> must be specified.</p></div></div></div>
+<div class=CBody><p>Returns the user-defined frontdoor for this memory</p><p>If <i>null</i>, no user-defined frontdoor has been defined.&nbsp; A user-defined frontdoor is defined by using the <a href="#uvm_mem.set_frontdoor" class=LMethod id=link60 onMouseOver="ShowTip(event, 'tt32', 'link60')" onMouseOut="HideTip('tt32')">uvm_mem::set_frontdoor()</a> method.</p><p>If the memory is mapped in multiple address maps, an address <i>map</i> must be specified.</p></div></div></div>
 
 
 
@@ -1092,7 +1092,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns the user-defined backdoor for this memory</p><p>If null, no user-defined backdoor has been defined.&nbsp; A user-defined backdoor is defined by using the <a href="uvm_reg-svh.html#uvm_reg.set_backdoor" class=LMethod id=link63 onMouseOver="ShowTip(event, 'tt58', 'link63')" onMouseOut="HideTip('tt58')">uvm_reg::set_backdoor()</a> method.</p><p>If <i>inherit</i> is TRUE, returns the backdoor of the parent block if none have been specified for this memory.</p></div></div></div>
+<div class=CBody><p>Returns the user-defined backdoor for this memory</p><p>If <i>null</i>, no user-defined backdoor has been defined.&nbsp; A user-defined backdoor is defined by using the <a href="uvm_reg-svh.html#uvm_reg.set_backdoor" class=LMethod id=link63 onMouseOver="ShowTip(event, 'tt58', 'link63')" onMouseOut="HideTip('tt58')">uvm_reg::set_backdoor()</a> method.</p><p>If <i>inherit</i> is TRUE, returns the backdoor of the parent block if none have been specified for this memory.</p></div></div></div>
 
 
 
@@ -1208,7 +1208,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the memory instance.&nbsp; Returns only the component of the HDL paths that corresponds to the memory, not a full hierarchical path</p><p>If no design asbtraction is specified, the default design abstraction for the parent block is used.</p></div></div></div>
+<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the memory instance.&nbsp; Returns only the component of the HDL paths that corresponds to the memory, not a full hierarchical path</p><p>If no design abstraction is specified, the default design abstraction for the parent block is used.</p></div></div></div>
 
 
 
@@ -1237,7 +1237,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the memory instance.&nbsp; There may be more than one path returned even if only one path was defined for the memory instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design asbtraction is specified, the default design abstraction for each ancestor block is used to get each incremental path.</p></div></div></div>
+<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the memory instance.&nbsp; There may be more than one path returned even if only one path was defined for the memory instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design abstraction is specified, the default design abstraction for each ancestor block is used to get each incremental path.</p></div></div></div>
 
 
 
@@ -1442,7 +1442,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Turns on coverage measurement.</p><p>Turns the collection of functional coverage measurements on or off for this memory.&nbsp; The functional coverage measurement is turned on for every coverage model specified using <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link71 onMouseOver="ShowTip(event, 'tt56', 'link71')" onMouseOut="HideTip('tt56')">uvm_coverage_model_e</a> symbolic identifers.&nbsp; Multiple functional coverage models can be specified by adding the functional coverage model identifiers.&nbsp; All other functional coverage models are turned off.&nbsp; Returns the sum of all functional coverage models whose measurements were previously on.</p><p>This method can only control the measurement of functional coverage models that are present in the memory abstraction classes, then enabled during construction.&nbsp; See the <a href="#uvm_mem.has_coverage" class=LMethod id=link72 onMouseOver="ShowTip(event, 'tt52', 'link72')" onMouseOut="HideTip('tt52')">uvm_mem::has_coverage()</a> method to identify the available functional coverage models.</p></div></div></div>
+<div class=CBody><p>Turns on coverage measurement.</p><p>Turns the collection of functional coverage measurements on or off for this memory.&nbsp; The functional coverage measurement is turned on for every coverage model specified using <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link71 onMouseOver="ShowTip(event, 'tt56', 'link71')" onMouseOut="HideTip('tt56')">uvm_coverage_model_e</a> symbolic identifiers.&nbsp; Multiple functional coverage models can be specified by adding the functional coverage model identifiers.&nbsp; All other functional coverage models are turned off.&nbsp; Returns the sum of all functional coverage models whose measurements were previously on.</p><p>This method can only control the measurement of functional coverage models that are present in the memory abstraction classes, then enabled during construction.&nbsp; See the <a href="#uvm_mem.has_coverage" class=LMethod id=link72 onMouseOver="ShowTip(event, 'tt52', 'link72')" onMouseOut="HideTip('tt52')">uvm_mem::has_coverage()</a> method to identify the available functional coverage models.</p></div></div></div>
 
 
 
@@ -1478,7 +1478,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Functional coverage measurement method</p><p>This method is invoked by the memory abstraction class whenever an address within one of its address map is succesfully read or written.&nbsp; The specified offset is the offset within the memory, not an absolute address.</p><p>Empty by default, this method may be extended by the abstraction class generator to perform the required sampling in any provided functional coverage model.</p></div></div></div>
+<div class=CBody><p>Functional coverage measurement method</p><p>This method is invoked by the memory abstraction class whenever an address within one of its address map is successfully read or written.&nbsp; The specified offset is the offset within the memory, not an absolute address.</p><p>Empty by default, this method may be extended by the abstraction class generator to perform the required sampling in any provided functional coverage model.</p></div></div></div>
 
 </div><!--Content-->
 

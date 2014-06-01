@@ -212,11 +212,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=21 -->
-<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_hdl_path_concat" href="../../src/reg/uvm_reg_model.svh">uvm_hdl_path_concat</a></h2><div class=CBody><p>Concatenation of HDL variables</p><p>An dArray of <a href="#uvm_hdl_path_slice" class=LType id=link26 onMouseOver="ShowTip(event, 'tt18', 'link26')" onMouseOut="HideTip('tt18')">uvm_hdl_path_slice</a> specifing a concatenation of HDL variables that implement a register in the HDL.</p><p>Slices must be specified in most-to-least significant order.&nbsp; Slices must not overlap.&nbsp; Gaps may exists in the concatentation if portions of the registers are not implemented.</p><p>For example, the following register</p><blockquote><pre>       1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0
+<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_hdl_path_concat" href="../../src/reg/uvm_reg_model.svh">uvm_hdl_path_concat</a></h2><div class=CBody><p>Concatenation of HDL variables</p><p>A dArray of <a href="#uvm_hdl_path_slice" class=LType id=link26 onMouseOver="ShowTip(event, 'tt18', 'link26')" onMouseOut="HideTip('tt18')">uvm_hdl_path_slice</a> specifying a concatenation of HDL variables that implement a register in the HDL.</p><p>Slices must be specified in most-to-least significant order.&nbsp; Slices must not overlap.&nbsp; Gaps may exist in the concatenation if portions of the registers are not implemented.</p><p>For example, the following register</p><blockquote><pre>       1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0
 Bits:  5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0
       +-+---+-------------+---+-------+
       |A|xxx|      B      |xxx|   C   |
-      +-+---+-------------+---+-------+</pre></blockquote><p>If the register is implementd using a single HDL variable, The array should specify a single slice with its <i>offset</i> and <i>size</i> specified as -1.&nbsp; For example:</p><blockquote><pre>concat.set('{ '{&quot;r1&quot;, -1, -1} });</pre></blockquote>
+      +-+---+-------------+---+-------+</pre></blockquote><p>If the register is implemented using a single HDL variable, The array should specify a single slice with its <i>offset</i> and <i>size</i> specified as -1.&nbsp; For example:</p><blockquote><pre>concat.set('{ '{&quot;r1&quot;, -1, -1} });</pre></blockquote>
 
 <!--START_ND_SUMMARY index=21-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>

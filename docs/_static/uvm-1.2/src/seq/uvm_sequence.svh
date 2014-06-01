@@ -82,7 +82,7 @@ virtual class uvm_sequence #(type REQ = uvm_sequence_item,
   // Function: get_current_item
   //
   // Returns the request item currently being executed by the sequencer. If the
-  // sequencer is not currently executing an item, this method will return null.
+  // sequencer is not currently executing an item, this method will return ~null~.
   //
   // The sequencer is executing an item from the time that get_next_item or peek
   // is called until the time that get or item_done is called.
@@ -102,7 +102,7 @@ virtual class uvm_sequence #(type REQ = uvm_sequence_item,
   // By default, sequences must retrieve responses by calling get_response.
   // If no transaction_id is specified, this task will return the next response
   // sent to this sequence.  If no response is available in the response queue,
-  // the method will block until a response is recieved.
+  // the method will block until a response is received.
   //
   // If a transaction_id is parameter is specified, the task will block until
   // a response with that transaction_id is received in the response queue.

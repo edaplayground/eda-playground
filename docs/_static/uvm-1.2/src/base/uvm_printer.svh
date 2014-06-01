@@ -266,9 +266,9 @@ virtual class uvm_printer;
   //
   // Prints the header of a footer. This function marks the end of an array
   // print. Generally, there is no output associated with the array footer, but
-  // this method lets the printer know that the array printing is complete.
+  // this method let's the printer know that the array printing is complete.
 
-  extern virtual  function void print_array_footer (int size=0);
+  extern virtual  function void print_array_footer (int size = 0);
 
 
 
@@ -418,7 +418,7 @@ class uvm_printer_knobs;
 
   // Variable: header
   //
-  // Indicates whether the ~uvm_printer::print_header~ function should be called when
+  // Indicates whether the <uvm_printer::print_header> function should be called when
   // printing an object.
 
   bit header = 1;
@@ -426,7 +426,7 @@ class uvm_printer_knobs;
 
   // Variable: footer
   //
-  // Indicates whether the ~uvm_printer::print_footer~ function should be called when
+  // Indicates whether the <uvm_printer::print_footer> function should be called when
   // printing an object. 
 
   bit footer = 1;
@@ -547,7 +547,8 @@ class uvm_printer_knobs;
   // Variable: default_radix
   //
   // This knob sets the default radix to use for integral values when no radix
-  // enum is explicitly supplied to the print_field() method.
+  // enum is explicitly supplied to the <uvm_printer::print_field> or 
+  // <uvm_printer::print_field_int> methods.
 
   uvm_radix_enum default_radix = UVM_HEX;
 

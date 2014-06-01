@@ -164,7 +164,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=7 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence#(REQ,RSP).get_current_item" href="../../src/seq/uvm_sequence.svh">get_current_item</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function REQ get_current_item()
-  </td></tr></table></blockquote><div class=CBody><p>Returns the request item currently being executed by the sequencer.&nbsp; If the sequencer is not currently executing an item, this method will return null.</p><p>The sequencer is executing an item from the time that get_next_item or peek is called until the time that get or item_done is called.</p><p>Note that a driver that only calls get will never show a current item, since the item is completed at the same time as it is requested.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns the request item currently being executed by the sequencer.&nbsp; If the sequencer is not currently executing an item, this method will return <i>null</i>.</p><p>The sequencer is executing an item from the time that get_next_item or peek is called until the time that get or item_done is called.</p><p>Note that a driver that only calls get will never show a current item, since the item is completed at the same time as it is requested.</p></div></div></div>
 
 
 
@@ -188,7 +188,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>By default, sequences must retrieve responses by calling get_response.&nbsp; If no transaction_id is specified, this task will return the next response sent to this sequence.&nbsp;  If no response is available in the response queue, the method will block until a response is recieved.</p><p>If a transaction_id is parameter is specified, the task will block until a response with that transaction_id is received in the response queue.</p><p>The default size of the response queue is 8.&nbsp;  The get_response method must be called soon enough to avoid an overflow of the response queue to prevent responses from being dropped.</p><p>If a response is dropped in the response queue, an error will be reported unless the error reporting is disabled via set_response_queue_error_report_disabled.</p></div></div></div>
+<div class=CBody><p>By default, sequences must retrieve responses by calling get_response.&nbsp; If no transaction_id is specified, this task will return the next response sent to this sequence.&nbsp;  If no response is available in the response queue, the method will block until a response is received.</p><p>If a transaction_id is parameter is specified, the task will block until a response with that transaction_id is received in the response queue.</p><p>The default size of the response queue is 8.&nbsp;  The get_response method must be called soon enough to avoid an overflow of the response queue to prevent responses from being dropped.</p><p>If a response is dropped in the response queue, an error will be reported unless the error reporting is disabled via set_response_queue_error_report_disabled.</p></div></div></div>
 
 </div><!--Content-->
 

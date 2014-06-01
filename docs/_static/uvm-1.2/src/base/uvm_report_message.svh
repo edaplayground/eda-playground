@@ -301,7 +301,7 @@ class uvm_report_message_element_container extends uvm_object;
 
   // Function: size
   //
-  // Returns the size of the container, ie. the number of elements
+  // Returns the size of the container, i.e. the number of elements
   //
 
   virtual function int size();
@@ -526,26 +526,26 @@ class uvm_report_message extends uvm_object;
   // Function: print
   //
   // The uvm_report_message implements <uvm_object::do_print()> such that
-  // uvm_report_message::print() method provides UVM printer formatted output
+  // ~print~ method provides UVM printer formatted output
   // of the message.  A snippet of example output is shown here:
   //
   //| --------------------------------------------------------
   //| Name                Type               Size  Value
   //| --------------------------------------------------------
   //| uvm_report_message  uvm_report_message  -     @532
-  //|   severity          uvm_severity       2     UVM_INFO
-  //|   id                string             10    TEST_ID
-  //|   message           string             12    A message...
-  //|   verbosity         uvm_verbosity      32    UVM_LOW
-  //|   filename          string             7     test.sv
-  //|   line              integral           32    'd58
-  //|   context_name      string             0     ""
-  //|   color             string             3     red
-  //|   my_int            integral           32    'd5
-  //|   my_string         string             3     foo
-  //|   my_obj            my_class           -     @531
-  //|     foo             integral           32    'd3
-  //|     bar             string             8     hi there
+  //|   severity          uvm_severity        2     UVM_INFO
+  //|   id                string              10    TEST_ID
+  //|   message           string              12    A message...
+  //|   verbosity         uvm_verbosity       32    UVM_LOW
+  //|   filename          string              7     test.sv
+  //|   line              integral            32    'd58
+  //|   context_name      string              0     ""
+  //|   color             string              3     red
+  //|   my_int            integral            32    'd5
+  //|   my_string         string              3     foo
+  //|   my_obj            my_class            -     @531
+  //|     foo             integral            32    'd3
+  //|     bar             string              8     hi there
 
 
   virtual function void do_print(uvm_printer printer);
@@ -721,7 +721,7 @@ class uvm_report_message extends uvm_object;
 
   // Function: set_verbosity
   //
-  // Get or set the message threshhold value.  This value is compared
+  // Get or set the message threshold value.  This value is compared
   // against settings in the <uvm_report_handler> to determine whether this
   // message should be executed.
 

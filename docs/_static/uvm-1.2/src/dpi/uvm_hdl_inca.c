@@ -19,6 +19,8 @@
 //   permissions and limitations under the License.
 //----------------------------------------------------------------------
 
+// use -DINCA_EXTENDED_PARTSEL_SUPPORT to use extended support for vpi_handle_by_name
+
 #include "vhpi_user.h"
 #include "vpi_user.h"
 #include "veriuser.h"
@@ -53,6 +55,10 @@ static void m_uvm_get_object_handle(const char* path, vhpiHandleT *handle,int *l
 static int is_valid_path_slice(const char* path) {
 	  char *path_ptr = (char *) path;
 	  int path_len;
+
+#ifdef INCA_EXTENDED_PARTSEL_SUPPORT
+	  return 0;
+#endif
 
 	  path_len = strlen(path);
 	  path_ptr = (char*)(path+path_len-1);

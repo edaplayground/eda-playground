@@ -158,7 +158,7 @@ class uvm_mem_mam;
    // Reserve a memory region of the specified number of bytes
    // starting at the specified offset.
    // A descriptor of the reserved region is returned.
-   // If the specified region cannot be reserved, null is returned.
+   // If the specified region cannot be reserved, ~null~ is returned.
    //
    // It may not be possible to reserve a region because
    // it overlaps with an already-allocated region or

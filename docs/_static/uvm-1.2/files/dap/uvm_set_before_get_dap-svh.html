@@ -97,7 +97,7 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
 <tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_set_before_get_dap.try_get" id=link6 onMouseOver="ShowTip(event, 'tt6', 'link6')" onMouseOut="HideTip('tt6')">try_get</a></td><td class=SDescription>Attempts to retrieve the current value stored within the DAP</td></tr>
   <!-- index=7 -->
 
-<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_set_before_get_dap.Introspection" >Introspection</a></td><td class=SDescription>The <i>uvm_set_before_get_dap</i> can not support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_set_before_get_dap.Introspection" >Introspection</a></td><td class=SDescription>The <i>uvm_set_before_get_dap</i> cannot support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -154,7 +154,7 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Attempts to update the value stored within the DAP.</p><p><i>try_set</i> will always return a &lsquo;1&rsquo;.</p></div></div></div>
+<div class=CBody><p>Attempts to update the value stored within the DAP.</p><p><i>try_set</i> will always return a 1.</p></div></div></div>
 
 
 
@@ -179,13 +179,13 @@ endfunction</pre></blockquote><p>In the example above, the environment didn&rsqu
       <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Attempts to retrieve the current value stored within the DAP</p><p>If the value has not been &lsquo;set&rsquo;, then try_get will return a &lsquo;0&rsquo;, otherwise it will return a &lsquo;1&rsquo;, and set <i>value</i> to the current value stored within the DAP.</p></div></div></div>
+<div class=CBody><p>Attempts to retrieve the current value stored within the DAP</p><p>If the value has not been &lsquo;set&rsquo;, then try_get will return a 0, otherwise it will return a 1, and set <i>value</i> to the current value stored within the DAP.</p></div></div></div>
 
 
 
 
  <!--CONTENT index=7 -->
-<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_set_before_get_dap.Introspection" href="../../src/dap/uvm_set_before_get_dap.svh">Introspection</a></h3><div class=CBody><p>The <i>uvm_set_before_get_dap</i> can not support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</p><p>A call to any of these methods will result in an error.</p></div></div></div>
+<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_set_before_get_dap.Introspection" href="../../src/dap/uvm_set_before_get_dap.svh">Introspection</a></h3><div class=CBody><p>The <i>uvm_set_before_get_dap</i> cannot support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</p><p>A call to any of these methods will result in an error.</p></div></div></div>
 
 </div><!--Content-->
 

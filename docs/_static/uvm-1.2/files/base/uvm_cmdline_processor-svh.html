@@ -18,7 +18,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=0 -->
-<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_cmdline_processor" href="../../src/base/uvm_cmdline_processor.svh">uvm_cmdline_processor</a></h1><div class=CBody><p>This class provides an interface to the command line arguments that were provided for the given simulation.&nbsp;  The class is intended to be used as a singleton, but that isn&rsquo;t required.&nbsp;  The generation of the data structures which hold the command line argument information happens during construction of the class object.&nbsp;  A global variable called <i>uvm_cmdline_proc</i> is created at initialization time and may be used to access command line information.</p><p>The uvm_cmdline_processor class also provides support for setting various UVM variables from the command line such as components&rsquo; verbosities and configuration settings for integral types and strings.&nbsp;  Each of these capablities is described in the Built-in UVM Aware Command Line Arguments section.</p>
+<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_cmdline_processor" href="../../src/base/uvm_cmdline_processor.svh">uvm_cmdline_processor</a></h1><div class=CBody><p>This class provides an interface to the command line arguments that were provided for the given simulation.&nbsp;  The class is intended to be used as a singleton, but that isn&rsquo;t required.&nbsp;  The generation of the data structures which hold the command line argument information happens during construction of the class object.&nbsp;  A global variable called <i>uvm_cmdline_proc</i> is created at initialization time and may be used to access command line information.</p><p>The uvm_cmdline_processor class also provides support for setting various UVM variables from the command line such as components&rsquo; verbosities and configuration settings for integral types and strings.&nbsp;  Each of these capabilities is described in the Built-in UVM Aware Command Line Arguments section.</p>
 
 <!--START_ND_SUMMARY index=0-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
@@ -83,10 +83,10 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_cmdline_processor.Tool_information" >Tool information</a></td><td class=SDescription></td></tr>
   <!-- index=12 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_cmdline_processor.get_tool_name" id=link11 onMouseOver="ShowTip(event, 'tt11', 'link11')" onMouseOut="HideTip('tt11')">get_tool_name</a></td><td class=SDescription>Returns the simulation tool that is executing the simlation. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_cmdline_processor.get_tool_name" id=link11 onMouseOver="ShowTip(event, 'tt11', 'link11')" onMouseOut="HideTip('tt11')">get_tool_name</a></td><td class=SDescription>Returns the simulation tool that is executing the simulation. </td></tr>
   <!-- index=13 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_cmdline_processor.get_tool_version" id=link12 onMouseOver="ShowTip(event, 'tt12', 'link12')" onMouseOut="HideTip('tt12')">get_tool_version</a></td><td class=SDescription>Returns the version of the simulation tool that is executing the simlation. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_cmdline_processor.get_tool_version" id=link12 onMouseOver="ShowTip(event, 'tt12', 'link12')" onMouseOut="HideTip('tt12')">get_tool_version</a></td><td class=SDescription>Returns the version of the simulation tool that is executing the simulation. </td></tr>
   <!-- index=14 -->
 
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_cmdline_processor.Command_Line_Debug" >Command Line Debug</a></td><td class=SDescription></td></tr>
@@ -198,13 +198,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>This function returns a queue with all of the plus arguments that were used to start the simulation.&nbsp; Plusarguments may be used by the simulator vendor, or may be specific to a company or individiual user.&nbsp; Plusargs never have extra arguments (i.e. if there is a plusarg as the second argument on the command line, the third argument is unrelated); this is not necessarily the case with vendor specific dash arguments.</p></div></div></div>
+<div class=CBody><p>This function returns a queue with all of the plus arguments that were used to start the simulation.&nbsp; Plusarguments may be used by the simulator vendor, or may be specific to a company or individual user.&nbsp; Plusargs never have extra arguments (i.e. if there is a plusarg as the second argument on the command line, the third argument is unrelated); this is not necessarily the case with vendor specific dash arguments.</p></div></div></div>
 
 
 
 
  <!--CONTENT index=6 -->
-<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.get_uvmargs" href="../../src/base/uvm_cmdline_processor.svh">get_uvmargs</a></h3><div class=CBody><p>This function returns a queue with all of the uvm arguments that were used to start the simulation.&nbsp; An UVM argument is taken to be any argument that starts with a - or + and uses the keyword UVM (case insensitive) as the first three letters of the argument.</p></div></div></div>
+<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.get_uvmargs" href="../../src/base/uvm_cmdline_processor.svh">get_uvmargs</a></h3><div class=CBody><p>This function returns a queue with all of the uvm arguments that were used to start the simulation.&nbsp; A UVM argument is taken to be any argument that starts with a - or + and uses the keyword UVM (case insensitive) as the first three letters of the argument.</p></div></div></div>
 
 
 
@@ -258,7 +258,7 @@ initial begin
       <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>This function finds the first argument which matches the <i>match</i> arg and returns the suffix of the argument.&nbsp; This is similar to the $value$plusargs system task, but does not take a formating string.&nbsp; The return value is the number of command line arguments that match the <i>match</i> string, and <i>value</i> is the value of the first match.</p></div></div></div>
+<div class=CBody><p>This function finds the first argument which matches the <i>match</i> arg and returns the suffix of the argument.&nbsp; This is similar to the $value$plusargs system task, but does not take a formatting string.&nbsp; The return value is the number of command line arguments that match the <i>match</i> string, and <i>value</i> is the value of the first match.</p></div></div></div>
 
 
 
@@ -294,7 +294,7 @@ initial begin
  <!--CONTENT index=12 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.get_tool_name" href="../../src/base/uvm_cmdline_processor.svh">get_tool_name</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function string get_tool_name ()
-  </td></tr></table></blockquote><div class=CBody><p>Returns the simulation tool that is executing the simlation.&nbsp; This is a vendor specific string.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns the simulation tool that is executing the simulation.&nbsp; This is a vendor specific string.</p></div></div></div>
 
 
 
@@ -302,7 +302,7 @@ initial begin
  <!--CONTENT index=13 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.get_tool_version" href="../../src/base/uvm_cmdline_processor.svh">get_tool_version</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function string get_tool_version ()
-  </td></tr></table></blockquote><div class=CBody><p>Returns the version of the simulation tool that is executing the simlation.&nbsp; This is a vendor specific string.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns the version of the simulation tool that is executing the simulation.&nbsp; This is a vendor specific string.</p></div></div></div>
 
 
 
@@ -410,13 +410,13 @@ initial begin
 
 
  <!--CONTENT index=31 -->
-<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.+uvm_set_config_string" href="../../src/base/uvm_cmdline_processor.svh">+uvm_set_config_string</a></h3><div class=CBody><p><i>+uvm_set_config_int=&lt;comp&gt;,&lt;field&gt;,&lt;value&gt;</i> and <i>+uvm_set_config_string=&lt;comp&gt;,&lt;field&gt;,&lt;value&gt;</i> work like their procedural counterparts: set_config_int() and set_config_string().&nbsp; For the value of int config settings, &lsquo;b (0b), &lsquo;o, &lsquo;d, &lsquo;h (&lsquo;x or 0x) as the first two characters of the value are treated as base specifiers for interpreting the base of the number.&nbsp; Size specifiers are not used since SystemVerilog does not allow size specifiers in string to value conversions.&nbsp;  For example:</p><blockquote><pre>&lt;sim command&gt; +uvm_set_config_int=uvm_test_top.soc_env,mode,5</pre></blockquote><p>No equivalent of set_config_object() exists since no way exists to pass an uvm_object into the simulation via the command line.</p></div></div></div>
+<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.+uvm_set_config_string" href="../../src/base/uvm_cmdline_processor.svh">+uvm_set_config_string</a></h3><div class=CBody><p><i>+uvm_set_config_int=&lt;comp&gt;,&lt;field&gt;,&lt;value&gt;</i> and <i>+uvm_set_config_string=&lt;comp&gt;,&lt;field&gt;,&lt;value&gt;</i> work like their procedural counterparts: set_config_int() and set_config_string().&nbsp; For the value of int config settings, &lsquo;b (0b), &lsquo;o, &lsquo;d, &lsquo;h (&lsquo;x or 0x) as the first two characters of the value are treated as base specifiers for interpreting the base of the number.&nbsp; Size specifiers are not used since SystemVerilog does not allow size specifiers in string to value conversions.&nbsp;  For example:</p><blockquote><pre>&lt;sim command&gt; +uvm_set_config_int=uvm_test_top.soc_env,mode,5</pre></blockquote><p>No equivalent of set_config_object() exists since no way exists to pass a uvm_object into the simulation via the command line.</p></div></div></div>
 
 
 
 
  <!--CONTENT index=32 -->
-<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.+uvm_set_default_sequence" href="../../src/base/uvm_cmdline_processor.svh">+uvm_set_default_sequence</a></h3><div class=CBody><p>The <i>+uvm_set_default_sequence=&lt;seqr&gt;,&lt;phase&gt;,&lt;type&gt;</i> plusarg allows the user to define a default sequence from the command line, using the <i>typename</i> of that sequence.&nbsp;  For example:</p><blockquote><pre>&lt;sim command&gt; +uvm_set_default_sequence=path.to.sequencer,main_phase,seq_type</pre></blockquote><p>This is functionally equivilent to calling the following in your test:</p><blockquote><pre>uvm_coreservice_t cs = uvm_coreservice_t::get();
+<div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_cmdline_processor.+uvm_set_default_sequence" href="../../src/base/uvm_cmdline_processor.svh">+uvm_set_default_sequence</a></h3><div class=CBody><p>The <i>+uvm_set_default_sequence=&lt;seqr&gt;,&lt;phase&gt;,&lt;type&gt;</i> plusarg allows the user to define a default sequence from the command line, using the <i>typename</i> of that sequence.&nbsp;  For example:</p><blockquote><pre>&lt;sim command&gt; +uvm_set_default_sequence=path.to.sequencer,main_phase,seq_type</pre></blockquote><p>This is functionally equivalent to calling the following in your test:</p><blockquote><pre>uvm_coreservice_t cs = uvm_coreservice_t::get();
 uvm_factory f = cs.get_factory();
 uvm_config_db#(uvm_object_wrapper)::set(this,
                                         &quot;path.to.sequencer.main_phase&quot;,
@@ -504,9 +504,9 @@ This function finds the first argument which matches the <i>match</i> arg and re
     </table></blockquote>
 This function finds all the arguments which matches the <i>match</i> arg and returns the suffix of the arguments in a list of values. </div></div><div class=CToolTip id="tt11"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function string get_tool_name ()
-  </td></tr></table></blockquote>Returns the simulation tool that is executing the simlation. </div></div><div class=CToolTip id="tt12"><div class=CMethod>
+  </td></tr></table></blockquote>Returns the simulation tool that is executing the simulation. </div></div><div class=CToolTip id="tt12"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function string get_tool_version ()
-  </td></tr></table></blockquote>Returns the version of the simulation tool that is executing the simlation. </div></div><!--END_ND_TOOLTIPS-->
+  </td></tr></table></blockquote>Returns the version of the simulation tool that is executing the simulation. </div></div><!--END_ND_TOOLTIPS-->
 
 <script language=JavaScript><!--
 if (browserType) {if (browserVer) {document.write("</div>"); }document.write("</div>");}// --></script></body></html>

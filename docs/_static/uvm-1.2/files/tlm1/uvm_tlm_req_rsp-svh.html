@@ -37,7 +37,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=1 -->
-<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_tlm_req_rsp_channel#(REQ,RSP)" href="../../src/tlm1/uvm_tlm_req_rsp.svh">uvm_tlm_req_rsp_channel #(REQ,RSP)</a></h2><div class=CBody><p>The uvm_tlm_req_rsp_channel contains a request FIFO of type <i>REQ</i> and a response FIFO of type <i>RSP</i>.&nbsp; These FIFOs can be of any size.&nbsp; This channel is particularly useful for dealing with pipelined protocols where the request and response are not tightly coupled.</p><h4 class=CHeading>Type parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>REQ</td><td class=CDLDescription>Type of the request transactions conveyed by this channel.</td></tr><tr><td class=CDLEntry>RSP</td><td class=CDLDescription>Type of the reponse transactions conveyed by this channel.</td></tr></table>
+<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_tlm_req_rsp_channel#(REQ,RSP)" href="../../src/tlm1/uvm_tlm_req_rsp.svh">uvm_tlm_req_rsp_channel #(REQ,RSP)</a></h2><div class=CBody><p>The uvm_tlm_req_rsp_channel contains a request FIFO of type <i>REQ</i> and a response FIFO of type <i>RSP</i>.&nbsp; These FIFOs can be of any size.&nbsp; This channel is particularly useful for dealing with pipelined protocols where the request and response are not tightly coupled.</p><h4 class=CHeading>Type parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>REQ</td><td class=CDLDescription>Type of the request transactions conveyed by this channel.</td></tr><tr><td class=CDLEntry>RSP</td><td class=CDLDescription>Type of the response transactions conveyed by this channel.</td></tr></table>
 
 <!--START_ND_SUMMARY index=1-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
@@ -219,7 +219,7 @@ function bit try_put (input T t);</pre></blockquote><p>Any put port variant can 
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>The <i>name</i> and <i>parent</i> are the standard <a href="../base/uvm_component-svh.html#uvm_component" class=LClass id=link11 onMouseOver="ShowTip(event, 'tt6', 'link11')" onMouseOut="HideTip('tt6')">uvm_component</a> constructor arguments.&nbsp; The <i>parent</i> must be null if this component is defined within a static component such as a module, program block, or interface.&nbsp; The last two arguments specify the request and response FIFO sizes, which have default values of 1.</p></div></div></div>
+<div class=CBody><p>The <i>name</i> and <i>parent</i> are the standard <a href="../base/uvm_component-svh.html#uvm_component" class=LClass id=link11 onMouseOver="ShowTip(event, 'tt6', 'link11')" onMouseOut="HideTip('tt6')">uvm_component</a> constructor arguments.&nbsp; The <i>parent</i> must be <i>null</i> if this component is defined within a static component such as a module, program block, or interface.&nbsp; The last two arguments specify the request and response FIFO sizes, which have default values of 1.</p></div></div></div>
 
 
 
@@ -324,7 +324,7 @@ function bit nb_transport(REQ request, output RSP response);</pre></blockquote><
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>The <i>name</i> and <i>parent</i> are the standard <a href="../base/uvm_component-svh.html#uvm_component" class=LClass id=link22 onMouseOver="ShowTip(event, 'tt6', 'link22')" onMouseOut="HideTip('tt6')">uvm_component</a> constructor arguments.&nbsp; The <i>parent</i> must be null if this component is defined within a statically elaborated construct such as a module, program block, or interface.</p></div></div></div>
+<div class=CBody><p>The <i>name</i> and <i>parent</i> are the standard <a href="../base/uvm_component-svh.html#uvm_component" class=LClass id=link22 onMouseOver="ShowTip(event, 'tt6', 'link22')" onMouseOut="HideTip('tt6')">uvm_component</a> constructor arguments.&nbsp; The <i>parent</i> must be <i>null</i> if this component is defined within a statically elaborated construct such as a module, program block, or interface.</p></div></div></div>
 
 </div><!--Content-->
 

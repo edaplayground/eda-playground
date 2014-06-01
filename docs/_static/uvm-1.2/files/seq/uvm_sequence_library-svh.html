@@ -84,7 +84,7 @@ endclass</pre></blockquote>
 uvm_config_db #(uvm_sequence_lib_mode)::set(null,
                                    &quot;env.agent.sequencer.main_phase&quot;,
                                    &quot;default_sequence.selection_mode&quot;,
-                                   UVM_SEQ_LIB_RANDC);</pre></blockquote><p>Alternatively, you may create an instance of the sequence library apriori, initialize all its parameters, randomize it, then set it to run as-is on the sequencer.</p><blockquote><pre>main_seq_lib my_seq_lib;
+                                   UVM_SEQ_LIB_RANDC);</pre></blockquote><p>Alternatively, you may create an instance of the sequence library a priori, initialize all its parameters, randomize it, then set it to run as-is on the sequencer.</p><blockquote><pre>main_seq_lib my_seq_lib;
 my_seq_lib = new(&quot;my_seq_lib&quot;);
 
 my_seq_lib.selection_mode = UVM_SEQ_LIB_RANDC;
@@ -246,7 +246,7 @@ uvm_config_db #(uvm_sequence_base)::set(null,
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Removes the given sequence type from this sequence library instance.&nbsp; If the type was registered statically, the sequence queues of all instances of this library will be updated accordingly.&nbsp; A warning is issued if te sequence is not registered.</p></div></div></div>
+<div class=CBody><p>Removes the given sequence type from this sequence library instance.&nbsp; If the type was registered statically, the sequence queues of all instances of this library will be updated accordingly.&nbsp; A warning is issued if the sequence is not registered.</p></div></div></div>
 
 
 

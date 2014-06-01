@@ -250,7 +250,7 @@ class uvm_vreg extends uvm_object;
 
    //
    // FUNCTION: get_memory
-   // Get the memory where the virtual regoster array is implemented
+   // Get the memory where the virtual register array is implemented
    //
    extern virtual function uvm_mem get_memory();
 
@@ -274,7 +274,7 @@ class uvm_vreg extends uvm_object;
 
    //
    // FUNCTION: get_rights
-   // Returns the access rights of this virtual reigster array
+   // Returns the access rights of this virtual register array
    //
    // Returns "RW", "RO" or "WO".
    // The access rights of a virtual register array is always "RW",
@@ -357,7 +357,7 @@ class uvm_vreg extends uvm_object;
    //
    // Finds a virtual field with the specified name in this virtual register
    // and returns its abstraction class.
-   // If no fields are found, returns null.
+   // If no fields are found, returns ~null~.
    //
    extern virtual function uvm_vreg_field get_field_by_name(string name);
 
@@ -376,7 +376,7 @@ class uvm_vreg extends uvm_object;
    // Returns the base external physical address of a virtual register
    //
    // Returns the base external physical address of the specified
-   // virtual reigster if accessed through the specified address ~map~.
+   // virtual register if accessed through the specified address ~map~.
    //
    // If no address map is specified and the memory implementing
    // the virtual register array is mapped in only one

@@ -133,7 +133,7 @@ sub_seq.post_start()        (task)</pre></blockquote></div></div></div>
 
 
  <!--CONTENT index=4 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_do_pri" href="../../src/macros/uvm_sequence_defines.svh">`uvm_do_pri</a></h3><div class=CBody><blockquote><pre>`uvm_do_pri(SEQ_OR_ITEM, PRIORITY)</pre></blockquote><p>This is the same as `uvm_do except that the sequene item or sequence is executed with the priority specified in the argument</p></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_do_pri" href="../../src/macros/uvm_sequence_defines.svh">`uvm_do_pri</a></h3><div class=CBody><blockquote><pre>`uvm_do_pri(SEQ_OR_ITEM, PRIORITY)</pre></blockquote><p>This is the same as `uvm_do except that the sequence item or sequence is executed with the priority specified in the argument</p></div></div></div>
 
 
 
@@ -199,7 +199,7 @@ sub_seq.post_start()        (task)</pre></blockquote></div></div></div>
 
 
  <!--CONTENT index=15 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_send_pri" href="../../src/macros/uvm_sequence_defines.svh">`uvm_send_pri</a></h3><div class=CBody><blockquote><pre>`uvm_send_pri(SEQ_OR_ITEM, PRIORITY)</pre></blockquote><p>This is the same as `uvm_send except that the sequene item or sequence is executed with the priority specified in the argument.</p></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_send_pri" href="../../src/macros/uvm_sequence_defines.svh">`uvm_send_pri</a></h3><div class=CBody><blockquote><pre>`uvm_send_pri(SEQ_OR_ITEM, PRIORITY)</pre></blockquote><p>This is the same as `uvm_send except that the sequence item or sequence is executed with the priority specified in the argument.</p></div></div></div>
 
 
 
@@ -211,7 +211,7 @@ sub_seq.post_start()        (task)</pre></blockquote></div></div></div>
 
 
  <!--CONTENT index=17 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_rand_send_pri" href="../../src/macros/uvm_sequence_defines.svh">`uvm_rand_send_pri</a></h3><div class=CBody><blockquote><pre>`uvm_rand_send_pri(SEQ_OR_ITEM, PRIORITY)</pre></blockquote><p>This is the same as `uvm_rand_send except that the sequene item or sequence is executed with the priority specified in the argument.</p></div></div></div>
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_rand_send_pri" href="../../src/macros/uvm_sequence_defines.svh">`uvm_rand_send_pri</a></h3><div class=CBody><blockquote><pre>`uvm_rand_send_pri(SEQ_OR_ITEM, PRIORITY)</pre></blockquote><p>This is the same as `uvm_rand_send except that the sequence item or sequence is executed with the priority specified in the argument.</p></div></div></div>
 
 
 
@@ -276,7 +276,7 @@ endclass</pre></blockquote><p>Each library, itself a sequence, can then be start
 
 
  <!--CONTENT index=23 -->
-<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_declare_p_sequencer" href="../../src/macros/uvm_sequence_defines.svh">`uvm_declare_p_sequencer</a></h3><div class=CBody><p>This macro is used to declare a variable <i>p_sequencer</i> whose type is specified by <i>SEQUENCER</i>.</p><blockquote><pre>`uvm_declare_p_sequencer(SEQUENCER)</pre></blockquote><p>The example below shows using the the `uvm_declare_p_sequencer macro along with the uvm_object_utils macros to set up the sequence but not register the sequence in the sequencer&rsquo;s library.</p><blockquote><pre>class mysequence extends uvm_sequence#(mydata);
+<div class="CMacro"><div class=CTopic><h3 class=CTitle><a name="`uvm_declare_p_sequencer" href="../../src/macros/uvm_sequence_defines.svh">`uvm_declare_p_sequencer</a></h3><div class=CBody><p>This macro is used to declare a variable <i>p_sequencer</i> whose type is specified by <i>SEQUENCER</i>.</p><blockquote><pre>`uvm_declare_p_sequencer(SEQUENCER)</pre></blockquote><p>The example below shows using the `uvm_declare_p_sequencer macro along with the uvm_object_utils macros to set up the sequence but not register the sequence in the sequencer&rsquo;s library.</p><blockquote><pre>class mysequence extends uvm_sequence#(mydata);
   `uvm_object_utils(mysequence)
   `uvm_declare_p_sequencer(some_seqr_type)
   task body;

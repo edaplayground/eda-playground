@@ -59,7 +59,7 @@ virtual class uvm_object extends uvm_void;
   // Variable: use_uvm_seeding
   //
   // This bit enables or disables the UVM seeding mechanism. It globally affects
-  // the operation of the reseed method. 
+  // the operation of the <reseed> method.
   //
   // When enabled, UVM-based objects are seeded based on their type and full
   // hierarchical name rather than allocation order. This improves random
@@ -142,7 +142,7 @@ virtual class uvm_object extends uvm_void;
   // means of supplying those arguments.
   //
   // The default implementation of this method produces an error and returns
-  // null. To enable use of this method, a user's subtype must implement a
+  // ~null~. To enable use of this method, a user's subtype must implement a
   // version that returns the subtype's wrapper.
   //
   // For example:
@@ -174,7 +174,7 @@ virtual class uvm_object extends uvm_void;
   //
   // The default implementation of this method does a factory lookup of the
   // proxy using the return value from <get_type_name>. If the type returned
-  // by <get_type_name> is not registered with the factory, then a null 
+  // by <get_type_name> is not registered with the factory, then a ~null~
   // handle is returned.
   //
   // For example:
@@ -224,7 +224,7 @@ virtual class uvm_object extends uvm_void;
 
   // Function: create
   //
-  // The create method allocates a new object of the same type as this object
+  // The ~create~ method allocates a new object of the same type as this object
   // and returns it via a base uvm_object handle. Every class deriving from
   // uvm_object, directly or indirectly, must implement the create method.
   //
@@ -242,7 +242,7 @@ virtual class uvm_object extends uvm_void;
   
   // Function: clone
   //
-  // The clone method creates and returns an exact copy of this object.
+  // The ~clone~ method creates and returns an exact copy of this object.
   // 
   // The default implementation calls <create> followed by <copy>. As clone is
   // virtual, derived classes may override this implementation if desired. 
@@ -254,7 +254,7 @@ virtual class uvm_object extends uvm_void;
 
   // Function: print
   // 
-  // The print method deep-prints this object's properties in a format and
+  // The ~print~ method deep-prints this object's properties in a format and
   // manner governed by the given ~printer~ argument; if the ~printer~ argument
   // is not provided, the global <uvm_default_printer> is used. See 
   // <uvm_printer> for more information on printer output formatting. See also
@@ -262,7 +262,7 @@ virtual class uvm_object extends uvm_void;
   // on the pre-defined printer "policies," or formatters, provided by the UVM.
   //
   // The ~print~ method is not virtual and must not be overloaded. To include
-  // custom information in the ~print~ and ~sprint~ operations, derived classes
+  // custom information in the ~print~ and <sprint> operations, derived classes
   // must override the <do_print> method and use the provided printer policy
   // class to format the output.
 
@@ -275,7 +275,7 @@ virtual class uvm_object extends uvm_void;
   // is returned in a string rather than displayed. 
   //
   // The ~sprint~ method is not virtual and must not be overloaded. To include
-  // additional fields in the ~print~ and ~sprint~ operation, derived classes
+  // additional fields in the <print> and ~sprint~ operation, derived classes
   // must override the <do_print> method and use the provided printer policy
   // class to format the output. The printer policy will manage all string
   // concatenations and provide the string to ~sprint~ to return to the caller.
@@ -323,7 +323,7 @@ virtual class uvm_object extends uvm_void;
   //
   // This virtual function is a user-definable hook, called directly by the
   // user, that allows users to provide object information in the form of
-  // a string. Unlike <sprint>, there is no requirement to use an <uvm_printer>
+  // a string. Unlike <sprint>, there is no requirement to use a <uvm_printer>
   // policy object. As such, the format and content of the output is fully
   // customizable, which may be suitable for applications not requiring the
   // consistent formatting offered by the <print>/<sprint>/<do_print>
@@ -378,7 +378,7 @@ virtual class uvm_object extends uvm_void;
 
   // Function: record
   //
-  // The record method deep-records this object's properties according to an
+  // The ~record~ method deep-records this object's properties according to an
   // optional ~recorder~ policy. The method is not virtual and must not be
   // overloaded. To include additional fields in the record operation, derived
   // classes should override the <do_record> method.
@@ -396,7 +396,7 @@ virtual class uvm_object extends uvm_void;
 
   // Function: do_record
   //
-  // The do_record method is the user-definable hook called by the <record>
+  // The ~do_record~ method is the user-definable hook called by the <record>
   // method. A derived class should override this method to include its fields
   // in a record operation.
   //
@@ -425,7 +425,7 @@ virtual class uvm_object extends uvm_void;
   //
   // The copy makes this object a copy of the specified object.
   //
-  // The copy method is not virtual and should not be overloaded in derived
+  // The ~copy~ method is not virtual and should not be overloaded in derived
   // classes. To copy the fields of a derived class, that class should override
   // the <do_copy> method.
 
@@ -434,8 +434,8 @@ virtual class uvm_object extends uvm_void;
 
   // Function: do_copy
   //
-  // The do_copy method is the user-definable hook called by the copy method.
-  // A derived class should override this method to include its fields in a copy
+  // The ~do_copy~ method is the user-definable hook called by the <copy> method.
+  // A derived class should override this method to include its fields in a <copy>
   // operation.
   //
   // A typical implementation is as follows:
@@ -461,9 +461,9 @@ virtual class uvm_object extends uvm_void;
   // Function: compare
   //
   // Deep compares members of this data object with those of the object provided
-  // in the ~rhs~ (right-hand side) argument, returning 1 on a match, 0 othewise.
+  // in the ~rhs~ (right-hand side) argument, returning 1 on a match, 0 otherwise.
   //
-  // The compare method is not virtual and should not be overloaded in derived
+  // The ~compare~ method is not virtual and should not be overloaded in derived
   // classes. To compare the fields of a derived class, that class should
   // override the <do_compare> method.
   //
@@ -479,7 +479,7 @@ virtual class uvm_object extends uvm_void;
 
   // Function: do_compare
   //
-  // The do_compare method is the user-definable hook called by the <compare>
+  // The ~do_compare~ method is the user-definable hook called by the <compare>
   // method. A derived class should override this method to include its fields
   // in a compare operation. It should return 1 if the comparison succeeds, 0
   // otherwise.
@@ -542,7 +542,7 @@ virtual class uvm_object extends uvm_void;
   
   // Function: do_pack
   //
-  // The do_pack method is the user-definable hook called by the <pack> methods.
+  // The ~do_pack~ method is the user-definable hook called by the <pack> methods.
   // A derived class should override this method to include its fields in a pack
   // operation.
   //
@@ -581,8 +581,8 @@ virtual class uvm_object extends uvm_void;
   //  - For string data types, append a zero byte after packing the string
   //    contents.
   //
-  //  - For objects, pack 4 bits immediately before packing the object. For null
-  //    objects, pack 4'b0000. For non-null objects, pack 4'b0001.
+  //  - For objects, pack 4 bits immediately before packing the object. For ~null~
+  //    objects, pack 4'b0000. For non-~null~ objects, pack 4'b0001.
   //
   // When the `uvm_field_* macros are used, 
   // <Utility and Field Macros for Components and Objects>,
@@ -632,7 +632,7 @@ virtual class uvm_object extends uvm_void;
 
   // Function: do_unpack
   //
-  // The do_unpack method is the user-definable hook called by the <unpack>
+  // The ~do_unpack~ method is the user-definable hook called by the <unpack>
   // method. A derived class should override this method to include its fields
   // in an unpack operation.
   //
@@ -663,11 +663,11 @@ virtual class uvm_object extends uvm_void;
   //   elements in the array from the 32 bits immediately before unpacking
   //   individual elements, as shown above.
   //
-  // - For string data types, unpack into the new string until a null byte is
+  // - For string data types, unpack into the new string until a ~null~ byte is
   //   encountered.
   //
   // - For objects, unpack 4 bits into a byte or int variable. If the value
-  //   is 0, the target object should be set to null and unpacking continues to
+  //   is 0, the target object should be set to ~null~ and unpacking continues to
   //   the next property, if any. If the least significant bit is 1, then the
   //   target object should be allocated and its properties unpacked.
 

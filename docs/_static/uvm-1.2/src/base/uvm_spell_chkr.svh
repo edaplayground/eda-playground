@@ -44,7 +44,7 @@ class uvm_spell_chkr #(type T=int);
   // match.
   //
   // First, we do the simple thing and see if the string already is in
-  // the string table by calling the exists() method.  If it does exist
+  // the string table by calling the ~exists()~ method.  If it does exist
   // then there is a match and we're done.  If the string doesn't exist
   // in the table then we invoke the spell checker algorithm to see if
   // our string is a misspelled variation on a string that does exist in

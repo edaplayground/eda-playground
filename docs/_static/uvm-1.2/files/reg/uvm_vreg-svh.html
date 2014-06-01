@@ -101,7 +101,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_vreg.get_parent" id=link13 onMouseOver="ShowTip(event, 'tt12', 'link13')" onMouseOut="HideTip('tt12')">get_parent</a></td><td class=SDescription>Get the parent block</td></tr>
   <!-- index=13 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_vreg.get_memory" id=link14 onMouseOver="ShowTip(event, 'tt13', 'link14')" onMouseOut="HideTip('tt13')">get_memory</a></td><td class=SDescription>Get the memory where the virtual regoster array is implemented</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_vreg.get_memory" id=link14 onMouseOver="ShowTip(event, 'tt13', 'link14')" onMouseOut="HideTip('tt13')">get_memory</a></td><td class=SDescription>Get the memory where the virtual register array is implemented</td></tr>
   <!-- index=14 -->
 
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_vreg.get_n_maps" id=link15 onMouseOver="ShowTip(event, 'tt14', 'link15')" onMouseOut="HideTip('tt14')">get_n_maps</a></td><td class=SDescription>Returns the number of address maps this virtual register array is mapped in</td></tr>
@@ -113,7 +113,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_vreg.get_maps" id=link17 onMouseOver="ShowTip(event, 'tt16', 'link17')" onMouseOut="HideTip('tt16')">get_maps</a></td><td class=SDescription>Returns all of the address <i>maps</i> where this virtual register array is mapped</td></tr>
   <!-- index=17 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_vreg.get_rights" id=link18 onMouseOver="ShowTip(event, 'tt17', 'link18')" onMouseOut="HideTip('tt17')">get_rights</a></td><td class=SDescription>Returns the access rights of this virtual reigster array</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_vreg.get_rights" id=link18 onMouseOver="ShowTip(event, 'tt17', 'link18')" onMouseOut="HideTip('tt17')">get_rights</a></td><td class=SDescription>Returns the access rights of this virtual register array</td></tr>
   <!-- index=18 -->
 
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_vreg.get_access" id=link19 onMouseOver="ShowTip(event, 'tt18', 'link19')" onMouseOut="HideTip('tt18')">get_access</a></td><td class=SDescription>Returns the access policy of the virtual register array when written and read via an address map.</td></tr>
@@ -354,7 +354,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=13 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_vreg.get_memory" href="../../src/reg/uvm_vreg.svh">get_memory</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function uvm_mem get_memory()
-  </td></tr></table></blockquote><div class=CBody><p>Get the memory where the virtual regoster array is implemented</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Get the memory where the virtual register array is implemented</p></div></div></div>
 
 
 
@@ -413,7 +413,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns the access rights of this virtual reigster array</p><p>Returns &ldquo;RW&rdquo;, &ldquo;RO&rdquo; or &ldquo;WO&rdquo;.&nbsp; The access rights of a virtual register array is always &ldquo;RW&rdquo;, unless it is implemented in a shared memory with access restriction in a particular address map.</p><p>If no address map is specified and the memory is mapped in only one address map, that address map is used.&nbsp; If the memory is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the memory is not mapped in the specified address map, an error message is issued and &ldquo;RW&rdquo; is returned.</p></div></div></div>
+<div class=CBody><p>Returns the access rights of this virtual register array</p><p>Returns &ldquo;RW&rdquo;, &ldquo;RO&rdquo; or &ldquo;WO&rdquo;.&nbsp; The access rights of a virtual register array is always &ldquo;RW&rdquo;, unless it is implemented in a shared memory with access restriction in a particular address map.</p><p>If no address map is specified and the memory is mapped in only one address map, that address map is used.&nbsp; If the memory is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the memory is not mapped in the specified address map, an error message is issued and &ldquo;RW&rdquo; is returned.</p></div></div></div>
 
 
 
@@ -496,7 +496,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Return the named virtual field in this virtual register</p><p>Finds a virtual field with the specified name in this virtual register and returns its abstraction class.&nbsp; If no fields are found, returns null.</p></div></div></div>
+<div class=CBody><p>Return the named virtual field in this virtual register</p><p>Finds a virtual field with the specified name in this virtual register and returns its abstraction class.&nbsp; If no fields are found, returns <i>null</i>.</p></div></div></div>
 
 
 
@@ -537,7 +537,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns the base external physical address of a virtual register</p><p>Returns the base external physical address of the specified virtual reigster if accessed through the specified address <i>map</i>.</p><p>If no address map is specified and the memory implementing the virtual register array is mapped in only one address map, that address map is used.&nbsp; If the memory is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the memory is not mapped in the specified address map, an error message is issued.</p></div></div></div>
+<div class=CBody><p>Returns the base external physical address of a virtual register</p><p>Returns the base external physical address of the specified virtual register if accessed through the specified address <i>map</i>.</p><p>If no address map is specified and the memory implementing the virtual register array is mapped in only one address map, that address map is used.&nbsp; If the memory is mapped in more than one address map, the default address map of the parent block is used.</p><p>If an address map is specified and the memory is not mapped in the specified address map, an error message is issued.</p></div></div></div>
 
 
 
@@ -1216,7 +1216,7 @@ Randomly implement, resize or relocate a virtual register array</div></div><div 
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function uvm_reg_block get_parent()
   </td></tr></table></blockquote>Get the parent block</div></div><div class=CToolTip id="tt13"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function uvm_mem get_memory()
-  </td></tr></table></blockquote>Get the memory where the virtual regoster array is implemented</div></div><div class=CToolTip id="tt14"><div class=CMethod>
+  </td></tr></table></blockquote>Get the memory where the virtual register array is implemented</div></div><div class=CToolTip id="tt14"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function int get_n_maps ()
   </td></tr></table></blockquote>Returns the number of address maps this virtual register array is mapped in</div></div><div class=CToolTip id="tt15"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
@@ -1251,7 +1251,7 @@ Returns all of the address <i>maps</i> where this virtual register array is mapp
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Returns the access rights of this virtual reigster array</div></div><div class=CToolTip id="tt18"><div class=CMethod>
+Returns the access rights of this virtual register array</div></div><div class=CToolTip id="tt18"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>virtual function string get_access(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_reg_map&nbsp;</td>

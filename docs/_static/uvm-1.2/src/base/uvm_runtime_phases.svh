@@ -77,6 +77,9 @@ class uvm_pre_reset_phase extends uvm_task_phase;
    endtask
    local static uvm_pre_reset_phase m_inst; 
    static const string type_name = "uvm_pre_reset_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_pre_reset_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -122,6 +125,9 @@ class uvm_reset_phase extends uvm_task_phase;
    endtask
    local static uvm_reset_phase m_inst; 
    static const string type_name = "uvm_reset_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_reset_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -160,6 +166,9 @@ class uvm_post_reset_phase extends uvm_task_phase;
    endtask
    local static uvm_post_reset_phase m_inst; 
    static const string type_name = "uvm_post_reset_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_post_reset_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -200,6 +209,9 @@ class uvm_pre_configure_phase extends uvm_task_phase;
    endtask
    local static uvm_pre_configure_phase m_inst; 
    static const string type_name = "uvm_pre_configure_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_pre_configure_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -239,6 +251,9 @@ class uvm_configure_phase extends uvm_task_phase;
    endtask
    local static uvm_configure_phase m_inst; 
    static const string type_name = "uvm_configure_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_configure_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -278,6 +293,9 @@ class uvm_post_configure_phase extends uvm_task_phase;
    endtask
    local static uvm_post_configure_phase m_inst; 
    static const string type_name = "uvm_post_configure_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_post_configure_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -314,6 +332,9 @@ class uvm_pre_main_phase extends uvm_task_phase;
    endtask
    local static uvm_pre_main_phase m_inst; 
    static const string type_name = "uvm_pre_main_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_pre_main_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -354,6 +375,9 @@ class uvm_main_phase extends uvm_task_phase;
    endtask
    local static uvm_main_phase m_inst; 
    static const string type_name = "uvm_main_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_main_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -390,6 +414,9 @@ class uvm_post_main_phase extends uvm_task_phase;
    endtask
    local static uvm_post_main_phase m_inst; 
    static const string type_name = "uvm_post_main_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_post_main_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -426,6 +453,9 @@ class uvm_pre_shutdown_phase extends uvm_task_phase;
    endtask
    local static uvm_pre_shutdown_phase m_inst; 
    static const string type_name = "uvm_pre_shutdown_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_pre_shutdown_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -465,6 +495,9 @@ class uvm_shutdown_phase extends uvm_task_phase;
    endtask
    local static uvm_shutdown_phase m_inst; 
    static const string type_name = "uvm_shutdown_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_shutdown_phase get(); 
       if(m_inst == null)
          m_inst = new; 
@@ -505,6 +538,9 @@ class uvm_post_shutdown_phase extends uvm_task_phase;
    endtask
    local static uvm_post_shutdown_phase m_inst; 
    static const string type_name = "uvm_post_shutdown_phase"; 
+
+   // Function: get
+   // Returns the singleton phase handle 
    static function uvm_post_shutdown_phase get(); 
       if(m_inst == null)
          m_inst = new; 

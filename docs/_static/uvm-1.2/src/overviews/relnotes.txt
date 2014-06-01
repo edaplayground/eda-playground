@@ -154,7 +154,7 @@ Not possible to undo a factory override.
 A factory override can now be "undone" by supplying a type
 as an override for itself.
 
-ie.
+i.e.
 | // Perform an override
 | set_type_override_by_type(old_type::get_type(), new_type::get_type());
 | // Undo the override
@@ -822,7 +822,7 @@ uvm_config_db::set expects to be invoked in process context
 
 The implementation of <uvm_config_db::set> was improperly assuming
 that the method would be invoked within a process context
-(ie. process.self() != null).  This behavior has been corrected.
+(i.e. process.self() != null).  This behavior has been corrected.
 
 Group: Mantis 4677
 remove uvm_global_copy_map 

@@ -120,7 +120,7 @@ class uvm_reg_fifo extends uvm_reg;
 
     //  Function: write
     // 
-    //  Pushes the given value to the DUT FIFO. If auto-predition is enabled,
+    //  Pushes the given value to the DUT FIFO. If auto-prediction is enabled,
     //  the written value is also pushed to the abstract FIFO before the
     //  call returns. If auto-prediction is not enabled (via 
     //  <uvm_reg_map::set_auto_predict>), the value is pushed to abstract

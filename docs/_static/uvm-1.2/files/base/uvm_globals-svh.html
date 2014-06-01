@@ -141,7 +141,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns 1 if the configured verbosity in <i>uvm_top</i> for this severity/id is greater than or equal to <i>verbosity</i> else returns 0.</p><p>See also <a href="uvm_report_object-svh.html#uvm_report_object.uvm_report_enabled" class=LMethod id=link16 onMouseOver="ShowTip(event, 'tt16', 'link16')" onMouseOut="HideTip('tt16')">uvm_report_object::uvm_report_enabled</a>.</p><p>Static methods of an extension of uvm_report_object, e.g. uvm_compoent-based objects, can not call <i>uvm_report_enabled</i> because the call will resolve to the <a href="uvm_report_object-svh.html#uvm_report_object.uvm_report_enabled" class=LMethod id=link17 onMouseOver="ShowTip(event, 'tt16', 'link17')" onMouseOut="HideTip('tt16')">uvm_report_object::uvm_report_enabled</a>, which is non-static.&nbsp; Static methods can not call non-static methods of the same class.</p></div></div></div>
+<div class=CBody><p>Returns 1 if the configured verbosity in <i>uvm_top</i> for this severity/id is greater than or equal to <i>verbosity</i> else returns 0.</p><p>See also <a href="uvm_report_object-svh.html#uvm_report_object.uvm_report_enabled" class=LMethod id=link16 onMouseOver="ShowTip(event, 'tt16', 'link16')" onMouseOut="HideTip('tt16')">uvm_report_object::uvm_report_enabled</a>.</p><p>Static methods of an extension of uvm_report_object, e.g. uvm_component-based objects, cannot call <i>uvm_report_enabled</i> because the call will resolve to the <a href="uvm_report_object-svh.html#uvm_report_object.uvm_report_enabled" class=LMethod id=link17 onMouseOver="ShowTip(event, 'tt16', 'link17')" onMouseOut="HideTip('tt16')">uvm_report_object::uvm_report_enabled</a>, which is non-static.&nbsp; Static methods cannot call non-static methods of the same class.</p></div></div></div>
 
 
 
@@ -465,20 +465,36 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=18 -->
-<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_enum_wrapper#(T)" href="../../src/base/uvm_globals.svh">uvm_enum_wrapper#(T)</a></h2><div class=CBody>
+<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_enum_wrapper#(T)" href="../../src/base/uvm_globals.svh">uvm_enum_wrapper#(T)</a></h2><div class=CBody><p>The <i>uvm_enum_wrapper#(T)</i> class is a utility mechanism provided as a convenience to the end user.&nbsp;  It provides a <a href="#uvm_enum_wrapper#(T).from_name" class=LMethod id=link23 onMouseOver="ShowTip(event, 'tt20', 'link23')" onMouseOut="HideTip('tt20')">from_name</a> method which is the logical inverse of the System Verilog <i>name</i> method which is built into all enumerations.</p>
 
 <!--START_ND_SUMMARY index=18-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
   <!-- index=18 -->
 
-<tr class="SClass"><td colspan=2 class=SEntry><a href="#uvm_enum_wrapper#(T)" >uvm_enum_wrapper#(T)</a></td></tr>
-<tr class=SMain><td colspan=2 class=SWideDescription></td></tr>
+<tr class="SClass"><td colspan=2 class=SEntry><a href="#uvm_enum_wrapper#(T)" id=link21 onMouseOver="ShowTip(event, 'tt19', 'link21')" onMouseOut="HideTip('tt19')">uvm_enum_wrapper#(T)</a></td></tr>
+<tr class=SMain><td colspan=2 class=SWideDescription>The <i>uvm_enum_wrapper#(T)</i> class is a utility mechanism provided as a convenience to the end user. </td></tr>
+  <!-- PROTOTYPE -->
+  <tr class="SPrototype SIndent1"><td colspan=2 class="SEntry SIndent1">Class Declaration</td></tr>
+  <tr class="SPrototype SIndent1"><td colspan=2 class=SDescription>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters colspan=5>class uvm_enum_wrapper#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>type&nbsp;</td>
+      <td class=PParameter nowrap>T</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%>uvm_active_passive_enum</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+</td></tr>
+
   <!-- index=19 -->
 
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_enum_wrapper#(T).Methods" >Methods</a></td><td class=SDescription></td></tr>
   <!-- index=20 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_enum_wrapper#(T).from_name" id=link21 onMouseOver="ShowTip(event, 'tt19', 'link21')" onMouseOut="HideTip('tt19')">from_name</a></td><td class=SDescription>Attempts to convert a string <i>name</i> to an enumerated value.</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_enum_wrapper#(T).from_name" id=link22 onMouseOver="ShowTip(event, 'tt20', 'link22')" onMouseOut="HideTip('tt20')">from_name</a></td><td class=SDescription>Attempts to convert a string <i>name</i> to an enumerated value.</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -505,7 +521,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Attempts to convert a string <i>name</i> to an enumerated value.</p><p>If the conversion is successful, the method will return &lsquo;1&rsquo;, otherwise &lsquo;0&rsquo;.</p><p>Note that the <i>name</i> passed in to the method must exactly match the value which would be produced by <i>enum::name</i>, and is case sensitive.</p><h4 class=CHeading>For example</h4><blockquote><pre>typedef uvm_enum_wrapper#(uvm_radix_enum) radix_wrapper;
+<div class=CBody><p>Attempts to convert a string <i>name</i> to an enumerated value.</p><p>If the conversion is successful, the method will return 1, otherwise 0.</p><p>Note that the <i>name</i> passed in to the method must exactly match the value which would be produced by <i>enum::name</i>, and is case sensitive.</p><h4 class=CHeading>For example</h4><blockquote><pre>typedef uvm_enum_wrapper#(uvm_radix_enum) radix_wrapper;
 uvm_radix_enum r_v;
 
 // The following would return '0', as &quot;foo&quot; isn't a value
@@ -829,7 +845,19 @@ Returns 1 if the configured verbosity for this severity/id is greater than or eq
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>class uvm_report_object extends uvm_object
   </td></tr></table></blockquote>The uvm_report_object provides an interface to the UVM reporting facility. </div></div><div class=CToolTip id="tt18"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual task wait_for_sequences()
-  </td></tr></table></blockquote>Waits for a sequence to have a new item available. </div></div><div class=CToolTip id="tt19"><div class=CMethod>
+  </td></tr></table></blockquote>Waits for a sequence to have a new item available. </div></div><div class=CToolTip id="tt19"><div class=CClass>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters colspan=5>class uvm_enum_wrapper#(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>type&nbsp;</td>
+      <td class=PParameter nowrap>T</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%>uvm_active_passive_enum</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+The <i>uvm_enum_wrapper#(T)</i> class is a utility mechanism provided as a convenience to the end user. </div></div><div class=CToolTip id="tt20"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=4>static function bit from_name(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>

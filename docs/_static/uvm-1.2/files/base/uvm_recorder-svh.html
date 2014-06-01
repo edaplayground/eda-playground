@@ -338,7 +338,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Static accessor, returns a recorder reference for a given unique id.</p><p>If no recorder exists with the given <i>id</i>, or if the recorder with that <i>id</i> has been freed, then <i>null</i> is returned.</p><p>This method can be used to access the recorder associated with a <i>begin_tr</i> call from <a href="uvm_transaction-svh.html#uvm_transaction" class=LClass id=link58 onMouseOver="ShowTip(event, 'tt43', 'link58')" onMouseOut="HideTip('tt43')">uvm_transaction</a> or <a href="uvm_component-svh.html#uvm_component" class=LClass id=link59 onMouseOver="ShowTip(event, 'tt44', 'link59')" onMouseOut="HideTip('tt44')">uvm_component</a>.</p><blockquote><pre>integer handle = tr.begin_tr();
+<div class=CBody><p>Static accessor, returns a recorder reference for a given unique id.</p><p>If no recorder exists with the given <i>id</i>, or if the recorder with that <i>id</i> has been freed, then <i>null</i> is returned.</p><p>This method can be used to access the recorder associated with a call to <a href="uvm_transaction-svh.html#uvm_transaction.begin_tr" class=LMethod id=link58 onMouseOver="ShowTip(event, 'tt43', 'link58')" onMouseOut="HideTip('tt43')">uvm_transaction::begin_tr</a> or <a href="uvm_component-svh.html#uvm_component.begin_tr" class=LMethod id=link59 onMouseOver="ShowTip(event, 'tt44', 'link59')" onMouseOut="HideTip('tt44')">uvm_component::begin_tr</a>.</p><blockquote><pre>integer handle = tr.begin_tr();
 uvm_recorder recorder = uvm_recorder::get_recorder_from_handle(handle);
 if (recorder != null) begin
   recorder.record_string(&quot;begin_msg&quot;, &quot;Started recording transaction!&quot;);
@@ -1404,11 +1404,51 @@ Records a name/value pair, where <i>value</i> has been converted to a string.</d
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The do_record method is the user-definable hook called by the record method. </div></div><div class=CToolTip id="tt43"><div class=CClass>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_transaction extends uvm_object
-  </td></tr></table></blockquote>The uvm_transaction class is the root base class for UVM transactions. </div></div><div class=CToolTip id="tt44"><div class=CClass>
-    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_component extends uvm_report_object
-  </td></tr></table></blockquote>The uvm_component class is the root base class for UVM components. </div></div><div class=CToolTip id="tt45"><div class=CType>Specifies the radix to print or record in.</div></div><div class=CToolTip id="tt46"><div class=CMethod>
+The <i>do_record</i> method is the user-definable hook called by the record method. </div></div><div class=CToolTip id="tt43"><div class=CMethod>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters colspan=5>function integer begin_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap>begin_time</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+This function indicates that the transaction has been started and is not the child of another transaction. </div></div><div class=CToolTip id="tt44"><div class=CMethod>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
+      <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
+      <td class=PBeforeParameters colspan=5>function integer begin_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>
+      <td class=PParameter nowrap>tr,</td>
+      <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
+      <td class=PDefaultValue width=100%></td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap>stream_name</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%>&quot;main&quot;,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap>label</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%>&quot;&quot;,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
+      <td class=PParameter nowrap>desc</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%>&quot;&quot;,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap>begin_time</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%>0,</td>
+      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
+      <td class=PParameter nowrap>parent_handle</td>
+      <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%>0</td>
+    </tr>
+    <tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
+      </table></td></tr>
+    </table></blockquote>
+This function marks the start of a transaction, <i>tr</i>, by this component. </div></div><div class=CToolTip id="tt45"><div class=CType>Specifies the radix to print or record in.</div></div><div class=CToolTip id="tt46"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>function new(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>

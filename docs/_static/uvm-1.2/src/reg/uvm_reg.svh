@@ -94,7 +94,7 @@ virtual class uvm_reg extends uvm_object;
    // May also set a parent register file for this register,
    //
    // If the register is implemented in a single HDL variable,
-   // it's name is specified as the ~hdl_path~.
+   // its name is specified as the ~hdl_path~.
    // Otherwise, if the register is implemented as a concatenation
    // of variables (usually one per field), then the HDL path
    // must be specified using the <add_hdl_path()> or
@@ -253,7 +253,7 @@ virtual class uvm_reg extends uvm_object;
    //
    // Finds a field with the specified name in this register
    // and returns its abstraction class.
-   // If no fields are found, returns null. 
+   // If no fields are found, returns ~null~.
    //
    extern virtual function uvm_reg_field get_field_by_name(string name);
 
@@ -305,7 +305,7 @@ virtual class uvm_reg extends uvm_object;
    // Computes all of the external physical addresses that must be accessed
    // to completely read or write this register. The addressed are specified in
    // little endian order.
-   // Returns the number of bytes transfered on each access.
+   // Returns the number of bytes transferred on each access.
    //
    // If no address map is specified and the register is mapped in only one
    // address map, that address map is used. If the register is mapped
@@ -538,7 +538,7 @@ virtual class uvm_reg extends uvm_object;
    // Read the current value from this register
    //
    // Sample the value in the DUT register corresponding to this
-   // absraction class instance using a back-door access.
+   // abstraction class instance using a back-door access.
    // The register value is sampled, not modified.
    //
    // Uses the HDL path for the design abstraction specified by ~kind~.
@@ -622,11 +622,11 @@ virtual class uvm_reg extends uvm_object;
    // Update the mirrored and desired value for this register.
    //
    // Predict the mirror (and desired) value of the fields in the register
-   // based on the specified observed ~value~ on a specified adress ~map~,
+   // based on the specified observed ~value~ on a specified address ~map~,
    // or based on a calculated value.
    // See <uvm_reg_field::predict()> for more details.
    //
-   // Returns TRUE if the prediction was succesful for each field in the
+   // Returns TRUE if the prediction was successful for each field in the
    // register.
    //
    extern virtual function bit predict (uvm_reg_data_t    value,
@@ -708,7 +708,7 @@ virtual class uvm_reg extends uvm_object;
    //
    // Returns the user-defined frontdoor for this register
    //
-   // If null, no user-defined frontdoor has been defined.
+   // If ~null~, no user-defined frontdoor has been defined.
    // A user-defined frontdoor is defined
    // by using the <uvm_reg::set_frontdoor()> method. 
    //
@@ -750,7 +750,7 @@ virtual class uvm_reg extends uvm_object;
    //
    // Returns the user-defined backdoor for this register
    //
-   // If null, no user-defined backdoor has been defined.
+   // If ~null~, no user-defined backdoor has been defined.
    // A user-defined backdoor is defined
    // by using the <uvm_reg::set_backdoor()> method. 
    //
@@ -793,7 +793,7 @@ virtual class uvm_reg extends uvm_object;
    //|                 '{"B_reg",  6, 7},
    //|                 '{'C_reg",  0, 4} } );
    //
-   // If the register is implementd using a single HDL variable,
+   // If the register is implemented using a single HDL variable,
    // The array should specify a single slice with its ~offset~ and ~size~
    // specified as -1. For example:
    //
@@ -837,7 +837,7 @@ virtual class uvm_reg extends uvm_object;
    // Returns only the component of the HDL paths that corresponds to
    // the register, not a full hierarchical path
    //
-   // If no design asbtraction is specified, the default design abstraction
+   // If no design abstraction is specified, the default design abstraction
    // for the parent block is used.
    //
    extern function void get_hdl_path (ref uvm_hdl_path_concat paths[$],
@@ -862,7 +862,7 @@ virtual class uvm_reg extends uvm_object;
    // parent components have more than one path defined for the same design
    // abstraction
    //
-   // If no design asbtraction is specified, the default design abstraction
+   // If no design abstraction is specified, the default design abstraction
    // for each ancestor block is used to get each incremental path.
    //
    extern function void get_full_hdl_path (ref uvm_hdl_path_concat paths[$],
@@ -924,7 +924,7 @@ virtual class uvm_reg extends uvm_object;
    // Specify which coverage model that must be included in
    // various block, register or memory abstraction class instances.
    //
-   // The coverage models are specified by or'ing or adding the
+   // The coverage models are specified by OR'ing or adding the
    // <uvm_coverage_model_e> coverage model identifiers corresponding to the
    // coverage model to be included.
    //
@@ -1000,7 +1000,7 @@ virtual class uvm_reg extends uvm_object;
    // for this register.
    // The functional coverage measurement is turned on for every
    // coverage model specified using <uvm_coverage_model_e> symbolic
-   // identifers.
+   // identifiers.
    // Multiple functional coverage models can be specified by adding
    // the functional coverage model identifiers.
    // All other functional coverage models are turned off.
@@ -1644,7 +1644,7 @@ endfunction
 
 function uvm_reg_map uvm_reg::get_default_map(string caller="");
 
-   // if reg is not associated with any map, return null
+   // if reg is not associated with any map, return ~null~
    if (m_maps.num() == 0) begin
       `uvm_warning("RegModel", 
         {"Register '",get_full_name(),"' is not registered with any map",

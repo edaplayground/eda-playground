@@ -35,7 +35,7 @@
 // or ~use~, the associated interface to convey transactions. A port can
 // be connected to any compatible port, export, or imp port. Unless its
 // ~min_size~ is 0, a port ~must~ be connected to at least one implementation
-// of its assocated interface.
+// of its associated interface.
 //
 // The asterisk in ~uvm_*_port~ is any of the following
 //
@@ -159,7 +159,7 @@ endclass
 // or ~use~, the associated interface to convey transactions. A port can
 // be connected to any compatible port, export, or imp port. Unless its
 // ~min_size~ is 0, a port ~must~ be connected to at least one implementation
-// of its assocated interface.
+// of its associated interface.
 //
 // The asterisk in ~uvm_*_port~ is any of the following
 //

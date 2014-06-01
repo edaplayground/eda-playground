@@ -83,7 +83,7 @@ class uvm_sequence_item extends uvm_transaction;
   // request, and to uniquely identify transactions.
   //
   // The sequence_id is assigned automatically by a sequencer when a sequence
-  // initiates communication through any sequencer calls (i.e. `uvm_do_xxx,
+  // initiates communication through any sequencer calls (i.e. `uvm_do_*,
   // wait_for_grant).  A sequence_id will remain unique for this sequence
   // until it ends or it is killed.  However, a single sequence may have
   // multiple valid sequence ids at any point in time.  Should a sequence 
@@ -189,7 +189,7 @@ class uvm_sequence_item extends uvm_transaction;
   // Function: get_parent_sequence
   //
   // Returns a reference to the parent sequence of any sequence on which this
-  // method was called. If this is a parent sequence, the method returns null.
+  // method was called. If this is a parent sequence, the method returns ~null~.
 
   function uvm_sequence_base get_parent_sequence();
     return (m_parent_sequence);
@@ -210,8 +210,8 @@ class uvm_sequence_item extends uvm_transaction;
 
   // Function: get_depth
   //
-  // Returns the depth of a sequence from it's parent.  A  parent sequence will
-  // have a depth of 1, it's child will have a depth  of 2, and it's grandchild
+  // Returns the depth of a sequence from its parent.  A  parent sequence will
+  // have a depth of 1, its child will have a depth  of 2, and its grandchild
   // will have a depth of 3.
 
   function int get_depth();

@@ -73,8 +73,8 @@ class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);
    // Function: try_set
    // Attempts to update the value stored within the DAP.
    //
-   // ~try_set~ will return a '1' if the value was successfully
-   // updated, or a '0' if the value can not be updated due
+   // ~try_set~ will return a 1 if the value was successfully
+   // updated, or a 0 if the value can not be updated due
    // to the DAP being locked.  No errors will be reported
    // if ~try_set~ fails.
    virtual function bit try_set(T value);
@@ -107,7 +107,7 @@ class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);
    // Function: lock
    // Locks the data value
    //
-   // The data value can not be updated via <set> or <try_set> while locked.
+   // The data value cannot be updated via <set> or <try_set> while locked.
    function void lock();
       m_locked = 1;
    endfunction : lock
@@ -131,7 +131,7 @@ class uvm_simple_lock_dap#(type T=int) extends uvm_set_get_dap_base#(T);
    
    // Group: Introspection
    //
-   // The ~uvm_simple_lock_dap~ can not support the standard UVM
+   // The ~uvm_simple_lock_dap~ cannot support the standard UVM
    // instrumentation methods (~copy~, ~clone~, ~pack~ and
    // ~unpack~), due to the fact that they would potentially 
    // violate the access policy.

@@ -242,7 +242,7 @@ end</pre></blockquote><p>When appending the stream to the internal pack array, t
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Packs a string value into the pack array.</p><p>When the metadata flag is set, the packed string is terminated by a null character to mark the end of the string.</p><p>This is useful for mixed language communication where unpacking may occur outside of SystemVerilog UVM.</p></div></div></div>
+<div class=CBody><p>Packs a string value into the pack array.</p><p>When the metadata flag is set, the packed string is terminated by a <i>null</i> character to mark the end of the string.</p><p>This is useful for mixed language communication where unpacking may occur outside of SystemVerilog UVM.</p></div></div></div>
 
 
 
@@ -290,7 +290,7 @@ end</pre></blockquote><p>When appending the stream to the internal pack array, t
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Packs an object value into the pack array.</p><p>A 4-bit header is inserted ahead of the string to indicate the number of bits that was packed.&nbsp; If a null object was packed, then this header will be 0.</p><p>This is useful for mixed-language communication where unpacking may occur outside of SystemVerilog UVM.</p></div></div></div>
+<div class=CBody><p>Packs an object value into the pack array.</p><p>A 4-bit header is inserted ahead of the string to indicate the number of bits that was packed.&nbsp; If a <i>null</i> object was packed, then this header will be 0.</p><p>This is useful for mixed-language communication where unpacking may occur outside of SystemVerilog UVM.</p></div></div></div>
 
 
 
@@ -431,7 +431,7 @@ end</pre></blockquote><p>When unpacking the stream from the internal pack array,
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Unpacks a string.</p><p>num_chars bytes are unpacked into a string.&nbsp; If num_chars is -1 then unpacking stops on at the first null character that is encountered.</p></div></div></div>
+<div class=CBody><p>Unpacks a string.</p><p>num_chars bytes are unpacked into a string.&nbsp; If num_chars is -1 then unpacking stops on at the first <i>null</i> character that is encountered.</p></div></div></div>
 
 
 
@@ -463,7 +463,7 @@ end</pre></blockquote><p>When unpacking the stream from the internal pack array,
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Unpacks an object and stores the result into <i>value</i>.</p><p><i>value</i> must be an allocated object that has enough space for the data being unpacked.&nbsp; The first four bits of packed data are used to determine if a null object was packed into the array.</p><p>The <a href="#uvm_packer.is_null" class=LMethod id=link38 onMouseOver="ShowTip(event, 'tt10', 'link38')" onMouseOut="HideTip('tt10')">is_null</a> function can be used to peek at the next four bits in the pack array before calling this method.</p></div></div></div>
+<div class=CBody><p>Unpacks an object and stores the result into <i>value</i>.</p><p><i>value</i> must be an allocated object that has enough space for the data being unpacked.&nbsp; The first four bits of packed data are used to determine if a <i>null</i> object was packed into the array.</p><p>The <a href="#uvm_packer.is_null" class=LMethod id=link38 onMouseOver="ShowTip(event, 'tt10', 'link38')" onMouseOut="HideTip('tt10')">is_null</a> function can be used to peek at the next four bits in the pack array before calling this method.</p></div></div></div>
 
 
 
@@ -501,7 +501,7 @@ end</pre></blockquote><p>When unpacking the stream from the internal pack array,
  <!--CONTENT index=26 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_packer.use_metadata" href="../../src/base/uvm_packer.svh">use_metadata</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit use_metadata
-  </td></tr></table></blockquote><div class=CBody><p>This flag indicates whether to encode metadata when packing dynamic data, or to decode metadata when unpacking.&nbsp;  Implementations of <a href="uvm_object-svh.html#uvm_object.do_pack" class=LMethod id=link44 onMouseOver="ShowTip(event, 'tt25', 'link44')" onMouseOut="HideTip('tt25')">uvm_object::do_pack</a> and <a href="uvm_object-svh.html#uvm_object.do_unpack" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt26', 'link45')" onMouseOut="HideTip('tt26')">uvm_object::do_unpack</a> should regard this bit when performing their respective operation.&nbsp; When set, metadata should be encoded as follows:</p><ul><li>For strings, pack an additional null byte after the string is packed.</li><li>For objects, pack 4 bits prior to packing the object itself.&nbsp; Use 4&rsquo;b0000 to indicate the object being packed is null, otherwise pack 4&rsquo;b0001 (the remaining 3 bits are reserved).</li><li>For queues, dynamic arrays, and associative arrays, pack 32 bits indicating the size of the array prior to to packing individual elements.</li></ul></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>This flag indicates whether to encode metadata when packing dynamic data, or to decode metadata when unpacking.&nbsp;  Implementations of <a href="uvm_object-svh.html#uvm_object.do_pack" class=LMethod id=link44 onMouseOver="ShowTip(event, 'tt25', 'link44')" onMouseOut="HideTip('tt25')">uvm_object::do_pack</a> and <a href="uvm_object-svh.html#uvm_object.do_unpack" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt26', 'link45')" onMouseOut="HideTip('tt26')">uvm_object::do_unpack</a> should regard this bit when performing their respective operation.&nbsp; When set, metadata should be encoded as follows:</p><ul><li>For strings, pack an additional <i>null</i> byte after the string is packed.</li><li>For objects, pack 4 bits prior to packing the object itself.&nbsp; Use 4&rsquo;b0000 to indicate the object being packed is <i>null</i>, otherwise pack 4&rsquo;b0001 (the remaining 3 bits are reserved).</li><li>For queues, dynamic arrays, and associative arrays, pack 32 bits indicating the size of the array prior to packing individual elements.</li></ul></div></div></div>
 
 
 
@@ -776,7 +776,7 @@ Unpacks an object and stores the result into <i>value</i>.</div></div><div class
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The do_pack method is the user-definable hook called by the pack methods. </div></div><div class=CToolTip id="tt26"><div class=CMethod>
+The <i>do_pack</i> method is the user-definable hook called by the pack methods. </div></div><div class=CToolTip id="tt26"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=3>virtual function void do_unpack (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_packer&nbsp;</td>
@@ -786,7 +786,7 @@ The do_pack method is the user-definable hook called by the pack methods. </div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The do_unpack method is the user-definable hook called by the unpack method. </div></div><!--END_ND_TOOLTIPS-->
+The <i>do_unpack</i> method is the user-definable hook called by the unpack method. </div></div><!--END_ND_TOOLTIPS-->
 
 <script language=JavaScript><!--
 if (browserType) {if (browserVer) {document.write("</div>"); }document.write("</div>");}// --></script></body></html>

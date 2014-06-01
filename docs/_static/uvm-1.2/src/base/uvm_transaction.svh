@@ -30,7 +30,7 @@ typedef class uvm_parent_child_link;
 // CLASS: uvm_transaction
 //
 // The uvm_transaction class is the root base class for UVM transactions.
-// Inheriting all the methods of uvm_object, uvm_transaction adds a timing and
+// Inheriting all the methods of <uvm_object>, uvm_transaction adds a timing and
 // recording interface.
 //
 // This class provides timestamp properties, notification events, and transaction
@@ -44,7 +44,7 @@ typedef class uvm_parent_child_link;
 // <uvm_component::begin_tr>, and <uvm_component::end_tr> during the course of
 // sequence item execution. These methods in the component base class will
 // call into the corresponding methods in this class to set the corresponding
-// timestamps (accept_time, begin_time, and end_tr), trigger the
+// timestamps (~accept_time~, ~begin_time~, and ~end_time~), trigger the
 // corresponding event (<begin_event> and <end_event>, and, if enabled,
 // record the transaction contents to a vendor-specific transaction database.
 //
@@ -53,12 +53,12 @@ typedef class uvm_parent_child_link;
 // While convenient, it is generally the responsibility of drivers to mark a
 // transaction's progress during execution.  To allow the driver or layering sequence
 // to control sequence item timestamps, events, and recording, you must call
-// <uvm_sqr_if_base#(REQ,RSP)::disable_auto_item_recording> at the begining
-// of the run_phase() method.
+// <uvm_sqr_if_base#(REQ,RSP)::disable_auto_item_recording> at the beginning
+// of the driver's ~run_phase~ task.
 //
 // Users may also use the transaction's event pool, <events>,
 // to define custom events for the driver to trigger and the sequences to wait on. Any
-// in-between events such as marking the begining of the address and data
+// in-between events such as marking the beginning of the address and data
 // phases of transaction execution could be implemented via the
 // <events> pool.
 // 
@@ -135,13 +135,13 @@ virtual class uvm_transaction extends uvm_object;
   //
   // Calling ~accept_tr~ indicates that the transaction item has been received by
   // a consumer component. Typically a <uvm_driver #(REQ,RSP)> would call <uvm_component::accept_tr>,
-  // which calls this method-- upon return from a get_next_item(), get(), or peek()
+  // which calls this method-- upon return from a <get_next_item()>, <get()>, or <peek()>
   // call on its sequencer port, <uvm_driver#(REQ,RSP)::seq_item_port>.
   //
   // With some
   // protocols, the received item may not be started immediately after it is
   // accepted. For example, a bus driver, having accepted a request transaction,
-  // may still have to wait for a bus grant before begining to execute
+  // may still have to wait for a bus grant before beginning to execute
   // the request.
   //
   // This function performs the following actions:
@@ -156,7 +156,7 @@ virtual class uvm_transaction extends uvm_object;
   // - The <do_accept_tr> method is called to allow for any post-accept
   //   action in derived classes.
 
-  extern function void accept_tr (time accept_time=0);
+  extern function void accept_tr (time accept_time = 0);
 
   
   // Function: do_accept_tr
@@ -201,7 +201,7 @@ virtual class uvm_transaction extends uvm_object;
   // recording is enabled. The meaning of the handle is implementation specific.
 
 
-  extern function integer begin_tr (time begin_time=0);
+  extern function integer begin_tr (time begin_time = 0);
 
   
   // Function: begin_child_tr
@@ -222,7 +222,7 @@ virtual class uvm_transaction extends uvm_object;
   //   any time, past or future, but should not be less than the accept time.
   //
   // - If recording is enabled, then a new database-transaction is started with
-  //   the same begin time as above. The record method inherited from <uvm_object>
+  //   the same begin time as above. The inherited <uvm_object::record> method
   //   is then called, which records the current property values to this new
   //   transaction. Finally, the newly started transaction is linked to the
   //   parent transaction given by parent_handle.
@@ -236,8 +236,8 @@ virtual class uvm_transaction extends uvm_object;
   // The return value is a transaction handle, which is valid (non-zero) only if
   // recording is enabled. The meaning of the handle is implementation specific.
 
-  extern function integer begin_child_tr (time begin_time=0, 
-                                               integer parent_handle=0);
+  extern function integer begin_child_tr (time begin_time = 0, 
+                                               integer parent_handle = 0);
 
 
   // Function: do_begin_tr
@@ -336,7 +336,7 @@ virtual class uvm_transaction extends uvm_object;
   //
   // By default, the event pool contains the events: begin, accept, and end.
   // Events can also be added by derivative objects. An event pool is a
-  // specialization of an <uvm_pool#(KEY,T)>, e.g. a ~uvm_pool#(uvm_event)~.
+  // specialization of <uvm_pool#(KEY,T)>, e.g. a ~uvm_pool#(uvm_event)~.
 
   extern function uvm_event_pool get_event_pool ();
 

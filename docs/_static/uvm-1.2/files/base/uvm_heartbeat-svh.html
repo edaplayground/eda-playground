@@ -82,7 +82,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Creates a new heartbeat instance associated with <i>cntxt</i>.&nbsp; The context is the hierarchical location that the heartbeat objections will flow through and be monitored at.&nbsp; The <i>objection</i> associated with the heartbeat is optional, if it is left null but it must be set before the heartbeat monitor will activate.</p><blockquote><pre>uvm_objection myobjection = new(&quot;myobjection&quot;); //some shared objection
+<div class=CBody><p>Creates a new heartbeat instance associated with <i>cntxt</i>.&nbsp; The context is the hierarchical location that the heartbeat objections will flow through and be monitored at.&nbsp; The <i>objection</i> associated with the heartbeat is optional, if it is left <i>null</i> but it must be set before the heartbeat monitor will activate.</p><blockquote><pre>uvm_objection myobjection = new(&quot;myobjection&quot;); //some shared objection
 class myenv extends uvm_env;
    uvm_heartbeat hb = new(&quot;hb&quot;, this, myobjection);
    ...
@@ -124,7 +124,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Sets up the heartbeat event and assigns a list of objects to watch.&nbsp; The monitoring is started as soon as this method is called.&nbsp; Once the monitoring has been started with a specific event, providing a new monitor event results in an error.&nbsp; To change trigger events, you must first <a href="#uvm_heartbeat.stop" class=LMethod id=link8 onMouseOver="ShowTip(event, 'tt7', 'link8')" onMouseOut="HideTip('tt7')">stop</a> the monitor and then <a href="#uvm_heartbeat.start" class=LMethod id=link9 onMouseOver="ShowTip(event, 'tt6', 'link9')" onMouseOut="HideTip('tt6')">start</a> with a new event trigger.</p><p>If the trigger event <i>e</i> is null and there was no previously set trigger event, then the monitoring is not started.&nbsp; Monitoring can be started by explicitly calling <a href="#uvm_heartbeat.start" class=LMethod id=link10 onMouseOver="ShowTip(event, 'tt6', 'link10')" onMouseOut="HideTip('tt6')">start</a>.</p></div></div></div>
+<div class=CBody><p>Sets up the heartbeat event and assigns a list of objects to watch.&nbsp; The monitoring is started as soon as this method is called.&nbsp; Once the monitoring has been started with a specific event, providing a new monitor event results in an error.&nbsp; To change trigger events, you must first <a href="#uvm_heartbeat.stop" class=LMethod id=link8 onMouseOver="ShowTip(event, 'tt7', 'link8')" onMouseOut="HideTip('tt7')">stop</a> the monitor and then <a href="#uvm_heartbeat.start" class=LMethod id=link9 onMouseOver="ShowTip(event, 'tt6', 'link9')" onMouseOut="HideTip('tt6')">start</a> with a new event trigger.</p><p>If the trigger event <i>e</i> is <i>null</i> and there was no previously set trigger event, then the monitoring is not started.&nbsp; Monitoring can be started by explicitly calling <a href="#uvm_heartbeat.start" class=LMethod id=link10 onMouseOver="ShowTip(event, 'tt6', 'link10')" onMouseOut="HideTip('tt6')">start</a>.</p></div></div></div>
 
 
 
@@ -174,7 +174,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Starts the heartbeat monitor.&nbsp; If <i>e</i> is null then whatever event was previously set is used.&nbsp; If no event was previously set then a warning is issued.&nbsp; It is an error if the monitor is currently running and <i>e</i> is specifying a different trigger event from the current event.</p></div></div></div>
+<div class=CBody><p>Starts the heartbeat monitor.&nbsp; If <i>e</i> is <i>null</i> then whatever event was previously set is used.&nbsp; If no event was previously set then a warning is issued.&nbsp; It is an error if the monitor is currently running and <i>e</i> is specifying a different trigger event from the current event.</p></div></div></div>
 
 
 

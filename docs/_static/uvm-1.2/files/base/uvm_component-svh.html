@@ -50,13 +50,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
   <!-- index=1 -->
 
-<tr class="SMethod SIndent1 SMarked"><td class=SEntry><a href="#uvm_component.new" id=link5 onMouseOver="ShowTip(event, 'tt5', 'link5')" onMouseOut="HideTip('tt5')">new</a></td><td class=SDescription>Creates a new component with the given leaf instance <i>name</i> and handle to to its <i>parent</i>. </td></tr>
+<tr class="SMethod SIndent1 SMarked"><td class=SEntry><a href="#uvm_component.new" id=link5 onMouseOver="ShowTip(event, 'tt5', 'link5')" onMouseOut="HideTip('tt5')">new</a></td><td class=SDescription>Creates a new component with the given leaf instance <i>name</i> and handle to its <i>parent</i>. </td></tr>
   <!-- index=2 -->
 
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Hierarchy_Interface" >Hierarchy Interface</a></td><td class=SDescription>These methods provide user access to information about the component hierarchy, i.e., topology.</td></tr>
   <!-- index=3 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.get_parent" id=link6 onMouseOver="ShowTip(event, 'tt6', 'link6')" onMouseOut="HideTip('tt6')">get_parent</a></td><td class=SDescription>Returns a handle to this component&rsquo;s parent, or null if it has no parent.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.get_parent" id=link6 onMouseOver="ShowTip(event, 'tt6', 'link6')" onMouseOut="HideTip('tt6')">get_parent</a></td><td class=SDescription>Returns a handle to this component&rsquo;s parent, or <i>null</i> if it has no parent.</td></tr>
   <!-- index=4 -->
 
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.get_full_name" id=link7 onMouseOver="ShowTip(event, 'tt7', 'link7')" onMouseOut="HideTip('tt7')">get_full_name</a></td><td class=SDescription>Returns the full hierarchical name of this object. </td></tr>
@@ -191,10 +191,10 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.apply_config_settings" id=link69 onMouseOver="ShowTip(event, 'tt69', 'link69')" onMouseOut="HideTip('tt69')">apply_config_settings</a></td><td class=SDescription>Searches for all config settings matching this component&rsquo;s instance path. </td></tr>
   <!-- index=48 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_config_settings" id=link70 onMouseOver="ShowTip(event, 'tt70', 'link70')" onMouseOut="HideTip('tt70')">print_config_settings</a></td><td class=SDescription>Called without arguments, print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set(). </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_config_settings" id=link70 onMouseOver="ShowTip(event, 'tt70', 'link70')" onMouseOut="HideTip('tt70')">print_config_settings</a></td><td class=SDescription>Called without arguments, print_config_settings prints all configuration information for this component, as set by previous calls to &lt;uvm_config_db#(T)::set()&gt;. </td></tr>
   <!-- index=49 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.print_config" id=link71 onMouseOver="ShowTip(event, 'tt71', 'link71')" onMouseOut="HideTip('tt71')">print_config</a></td><td class=SDescription>Print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set() and exports to the resources pool. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.print_config" id=link71 onMouseOver="ShowTip(event, 'tt71', 'link71')" onMouseOut="HideTip('tt71')">print_config</a></td><td class=SDescription>Print_config_settings prints all configuration information for this component, as set by previous calls to &lt;uvm_config_db#(T)::set()&gt; and exports to the resources pool. </td></tr>
   <!-- index=50 -->
 
 <tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.print_config_with_audit" id=link72 onMouseOver="ShowTip(event, 'tt72', 'link72')" onMouseOut="HideTip('tt72')">print_config_with_audit</a></td><td class=SDescription>Operates the same as print_config except that the audit bit is forced to 1. </td></tr>
@@ -206,10 +206,10 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_component.Objection_Interface" >Objection Interface</a></td><td class=SDescription>These methods provide object level hooks into the <a href="uvm_objection-svh.html#uvm_objection" class=LClass id=link74 onMouseOver="ShowTip(event, 'tt74', 'link74')" onMouseOut="HideTip('tt74')">uvm_objection</a> mechanism.</td></tr>
   <!-- index=53 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.raised" id=link75 onMouseOver="ShowTip(event, 'tt75', 'link75')" onMouseOut="HideTip('tt75')">raised</a></td><td class=SDescription>The <i>raised</i> callback is called when this or a descendant of this component instance raises the specfied <i>objection</i>. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.raised" id=link75 onMouseOver="ShowTip(event, 'tt75', 'link75')" onMouseOut="HideTip('tt75')">raised</a></td><td class=SDescription>The <i>raised</i> callback is called when this or a descendant of this component instance raises the specified <i>objection</i>. </td></tr>
   <!-- index=54 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.dropped" id=link76 onMouseOver="ShowTip(event, 'tt76', 'link76')" onMouseOut="HideTip('tt76')">dropped</a></td><td class=SDescription>The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specfied <i>objection</i>. </td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_component.dropped" id=link76 onMouseOver="ShowTip(event, 'tt76', 'link76')" onMouseOut="HideTip('tt76')">dropped</a></td><td class=SDescription>The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specified <i>objection</i>. </td></tr>
   <!-- index=55 -->
 
 <tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_component.all_dropped" id=link77 onMouseOver="ShowTip(event, 'tt77', 'link77')" onMouseOut="HideTip('tt77')">all_dropped</a></td><td class=SDescription>The <i>all_droppped</i> callback is called when all objections have been dropped by this component and all its descendants. </td></tr>
@@ -333,7 +333,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Creates a new component with the given leaf instance <i>name</i> and handle to to its <i>parent</i>.&nbsp;  If the component is a top-level component (i.e. it is created in a static module or interface), <i>parent</i> should be null.</p><p>The component will be inserted as a child of the <i>parent</i> object, if any.&nbsp; If <i>parent</i> already has a child by the given <i>name</i>, an error is produced.</p><p>If <i>parent</i> is null, then the component will become a child of the implicit top-level component, <i>uvm_top</i>.</p><p>All classes derived from uvm_component must call super.new(name,parent).</p></div></div></div>
+<div class=CBody><p>Creates a new component with the given leaf instance <i>name</i> and handle to its <i>parent</i>.&nbsp;  If the component is a top-level component (i.e. it is created in a static module or interface), <i>parent</i> should be <i>null</i>.</p><p>The component will be inserted as a child of the <i>parent</i> object, if any.&nbsp; If <i>parent</i> already has a child by the given <i>name</i>, an error is produced.</p><p>If <i>parent</i> is <i>null</i>, then the component will become a child of the implicit top-level component, <i>uvm_top</i>.</p><p>All classes derived from uvm_component must call super.new(name,parent).</p></div></div></div>
 
 
 
@@ -347,7 +347,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=3 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.get_parent" href="../../src/base/uvm_component.svh">get_parent</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function uvm_component get_parent ()
-  </td></tr></table></blockquote><div class=CBody><p>Returns a handle to this component&rsquo;s parent, or null if it has no parent.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns a handle to this component&rsquo;s parent, or <i>null</i> if it has no parent.</p></div></div></div>
 
 
 
@@ -471,7 +471,7 @@ if (comp.get_first_child(name))
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Looks for a component with the given hierarchical <i>name</i> relative to this component.&nbsp; If the given <i>name</i> is preceded with a &lsquo;.&rsquo;&nbsp; (dot), then the search begins relative to the top level (absolute lookup).&nbsp; The handle of the matching component is returned, else null.&nbsp; The name must not contain wildcards.</p></div></div></div>
+<div class=CBody><p>Looks for a component with the given hierarchical <i>name</i> relative to this component.&nbsp; If the given <i>name</i> is preceded with a &lsquo;.&rsquo;&nbsp; (dot), then the search begins relative to the top level (absolute lookup).&nbsp; The handle of the matching component is returned, else <i>null</i>.&nbsp; The name must not contain wildcards.</p></div></div></div>
 
 
 
@@ -501,7 +501,7 @@ if (comp.get_first_child(name))
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>The <a href="uvm_common_phases-svh.html#uvm_build_phase" class=LClass id=link134 onMouseOver="ShowTip(event, 'tt17', 'link134')" onMouseOut="HideTip('tt17')">uvm_build_phase</a> phase implementation method.</p><p>Any override should call super.build_phase(phase) to execute the automatic configuration of fields registed in the component by calling <a href="#uvm_component.apply_config_settings" class=LMethod id=link135 onMouseOver="ShowTip(event, 'tt69', 'link135')" onMouseOut="HideTip('tt69')">apply_config_settings</a>.&nbsp; To turn off automatic configuration for a component, do not call super.build_phase(phase).</p><p>This method should never be called directly.</p></div></div></div>
+<div class=CBody><p>The <a href="uvm_common_phases-svh.html#uvm_build_phase" class=LClass id=link134 onMouseOver="ShowTip(event, 'tt17', 'link134')" onMouseOut="HideTip('tt17')">uvm_build_phase</a> phase implementation method.</p><p>Any override should call super.build_phase(phase) to execute the automatic configuration of fields registered in the component by calling <a href="#uvm_component.apply_config_settings" class=LMethod id=link135 onMouseOver="ShowTip(event, 'tt69', 'link135')" onMouseOut="HideTip('tt69')">apply_config_settings</a>.&nbsp; To turn off automatic configuration for a component, do not call super.build_phase(phase).</p><p>This method should never be called directly.</p></div></div></div>
 
 
 
@@ -565,7 +565,7 @@ if (comp.get_first_child(name))
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>The <a href="uvm_common_phases-svh.html#uvm_run_phase" class=LClass id=link139 onMouseOver="ShowTip(event, 'tt25', 'link139')" onMouseOut="HideTip('tt25')">uvm_run_phase</a> phase implementation method.</p><p>This task returning or not does not indicate the end or persistence of this phase.&nbsp; Thn the phase will automatically ends once all objections are dropped using <i>phase.drop_objection()</i>.</p><p>Any processes forked by this task continue to run after the task returns, but they will be killed once the phase ends.</p><p>The run_phase task should never be called directly.</p></div></div></div>
+<div class=CBody><p>The <a href="uvm_common_phases-svh.html#uvm_run_phase" class=LClass id=link139 onMouseOver="ShowTip(event, 'tt25', 'link139')" onMouseOut="HideTip('tt25')">uvm_run_phase</a> phase implementation method.</p><p>This task returning or not does not indicate the end or persistence of this phase.&nbsp; Thus the phase will automatically end once all objections are dropped using <i>phase.drop_objection()</i>.</p><p>Any processes forked by this task continue to run after the task returns, but they will be killed once the phase ends.</p><p>The run_phase task should never be called directly.</p></div></div></div>
 
 
 
@@ -891,7 +891,7 @@ if (comp.get_first_child(name))
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Apply a phase domain to this component and, if <i>hier</i> is set, recursively to all its children.</p><p>Calls the virtual <a href="#uvm_component.define_domain" class=LMethod id=link156 onMouseOver="ShowTip(event, 'tt63', 'link156')" onMouseOut="HideTip('tt63')">define_domain</a> method, which derived components can override to augment or replace the domain definition of ita base class.</p></div></div></div>
+<div class=CBody><p>Apply a phase domain to this component and, if <i>hier</i> is set, recursively to all its children.</p><p>Calls the virtual <a href="#uvm_component.define_domain" class=LMethod id=link156 onMouseOver="ShowTip(event, 'tt63', 'link156')" onMouseOut="HideTip('tt63')">define_domain</a> method, which derived components can override to augment or replace the domain definition of its base class.</p></div></div></div>
 
 
 
@@ -915,7 +915,7 @@ if (comp.get_first_child(name))
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Builds custom phase schedules into the provided <i>domain</i> handle.</p><p>This method is called by <a href="#uvm_component.set_domain" class=LMethod id=link157 onMouseOver="ShowTip(event, 'tt61', 'link157')" onMouseOut="HideTip('tt61')">set_domain</a>, which integrators use to specify this component belongs in a domain apart from the default &lsquo;uvm&rsquo; domain.</p><p>Custom component base classes requiring a custom phasing schedule can augment or replace the domain definition they inherit by overriding their <i>defined_domain</i>.&nbsp; To augment, overrides would call super.define_domain().&nbsp; To replace, overrides would not call super.define_domain().</p><p>The default implementation adds a copy of the <i>uvm</i> phasing schedule to the given <i>domain</i>, if one doesn&rsquo;t already exist, and only if the domain is currently empty.</p><p>Calling <a href="#uvm_component.set_domain" class=LMethod id=link158 onMouseOver="ShowTip(event, 'tt61', 'link158')" onMouseOut="HideTip('tt61')">set_domain</a> with the default <i>uvm</i> domain (ie.&nbsp; <a href="uvm_domain-svh.html#uvm_domain.get_uvm_domain" class=LMethod id=link159 onMouseOver="ShowTip(event, 'tt124', 'link159')" onMouseOut="HideTip('tt124')">uvm_domain::get_uvm_domain</a> ) on a component with no <i>define_domain</i> override effectively reverts the that component to using the default <i>uvm</i> domain.&nbsp; This may be useful if a branch of the testbench hierarchy defines a custom domain, but some child sub-branch should remain in the default <i>uvm</i> domain, call <a href="#uvm_component.set_domain" class=LMethod id=link160 onMouseOver="ShowTip(event, 'tt61', 'link160')" onMouseOut="HideTip('tt61')">set_domain</a> with a new domain instance handle with <i>hier</i> set.&nbsp; Then, in the sub-branch, call <a href="#uvm_component.set_domain" class=LMethod id=link161 onMouseOver="ShowTip(event, 'tt61', 'link161')" onMouseOut="HideTip('tt61')">set_domain</a> with the default <i>uvm</i> domain handle, obtained via <a href="uvm_domain-svh.html#uvm_domain.get_uvm_domain" class=LMethod id=link162 onMouseOver="ShowTip(event, 'tt124', 'link162')" onMouseOut="HideTip('tt124')">uvm_domain::get_uvm_domain</a>.</p><p>Alternatively, the integrator may define the graph in a new domain externally, then call <a href="#uvm_component.set_domain" class=LMethod id=link163 onMouseOver="ShowTip(event, 'tt61', 'link163')" onMouseOut="HideTip('tt61')">set_domain</a> to apply it to a component.</p></div></div></div>
+<div class=CBody><p>Builds custom phase schedules into the provided <i>domain</i> handle.</p><p>This method is called by <a href="#uvm_component.set_domain" class=LMethod id=link157 onMouseOver="ShowTip(event, 'tt61', 'link157')" onMouseOut="HideTip('tt61')">set_domain</a>, which integrators use to specify this component belongs in a domain apart from the default &lsquo;uvm&rsquo; domain.</p><p>Custom component base classes requiring a custom phasing schedule can augment or replace the domain definition they inherit by overriding their <i>defined_domain</i>.&nbsp; To augment, overrides would call super.define_domain().&nbsp; To replace, overrides would not call super.define_domain().</p><p>The default implementation adds a copy of the <i>uvm</i> phasing schedule to the given <i>domain</i>, if one doesn&rsquo;t already exist, and only if the domain is currently empty.</p><p>Calling <a href="#uvm_component.set_domain" class=LMethod id=link158 onMouseOver="ShowTip(event, 'tt61', 'link158')" onMouseOut="HideTip('tt61')">set_domain</a> with the default <i>uvm</i> domain (i.e.&nbsp; <a href="uvm_domain-svh.html#uvm_domain.get_uvm_domain" class=LMethod id=link159 onMouseOver="ShowTip(event, 'tt124', 'link159')" onMouseOut="HideTip('tt124')">uvm_domain::get_uvm_domain</a> ) on a component with no <i>define_domain</i> override effectively reverts the that component to using the default <i>uvm</i> domain.&nbsp; This may be useful if a branch of the testbench hierarchy defines a custom domain, but some child sub-branch should remain in the default <i>uvm</i> domain, call <a href="#uvm_component.set_domain" class=LMethod id=link160 onMouseOver="ShowTip(event, 'tt61', 'link160')" onMouseOut="HideTip('tt61')">set_domain</a> with a new domain instance handle with <i>hier</i> set.&nbsp; Then, in the sub-branch, call <a href="#uvm_component.set_domain" class=LMethod id=link161 onMouseOver="ShowTip(event, 'tt61', 'link161')" onMouseOut="HideTip('tt61')">set_domain</a> with the default <i>uvm</i> domain handle, obtained via <a href="uvm_domain-svh.html#uvm_domain.get_uvm_domain" class=LMethod id=link162 onMouseOver="ShowTip(event, 'tt124', 'link162')" onMouseOut="HideTip('tt124')">uvm_domain::get_uvm_domain</a>.</p><p>Alternatively, the integrator may define the graph in a new domain externally, then call <a href="#uvm_component.set_domain" class=LMethod id=link163 onMouseOver="ShowTip(event, 'tt61', 'link163')" onMouseOut="HideTip('tt61')">set_domain</a> to apply it to a component.</p></div></div></div>
 
 
 
@@ -1000,12 +1000,13 @@ endfunction</pre></blockquote></div></div></div>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.apply_config_settings" href="../../src/base/uvm_component.svh">apply_config_settings</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>virtual function void apply_config_settings (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap width=100%>verbose</td>
+      <td class=PBeforeParameters colspan=5>virtual function void apply_config_settings (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap>verbose</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Searches for all config settings matching this component&rsquo;s instance path.&nbsp; For each match, the appropriate set_*_local method is called using the matching config setting&rsquo;s field_name and value.&nbsp; Provided the set_*_local method is implemented, the component property associated with the field_name is assigned the given value.</p><p>This function is called by <a href="#uvm_component.build_phase" class=LMethod id=link166 onMouseOver="ShowTip(event, 'tt16', 'link166')" onMouseOut="HideTip('tt16')">uvm_component::build_phase</a>.</p><p>The apply_config_settings method determines all the configuration settings targeting this component and calls the appropriate set_*_local method to set each one.&nbsp; To work, you must override one or more set_*_local methods to accommodate setting of your component&rsquo;s specific properties.&nbsp; Any properties registered with the optional `uvm_*_field macros do not require special handling by the set_*_local methods; the macros provide the set_*_local functionality for you.</p><p>If you do not want apply_config_settings to be called for a component, then the build_phase() method should be overloaded and you should not call super.build_phase(phase).&nbsp; Likewise, apply_config_settings can be overloaded to customize automated configuration.</p><p>When the <i>verbose</i> bit is set, all overrides are printed as they are applied.&nbsp; If the component&rsquo;s <a href="#uvm_component.print_config_matches" class=LVariable id=link167 onMouseOver="ShowTip(event, 'tt73', 'link167')" onMouseOut="HideTip('tt73')">print_config_matches</a> property is set, then apply_config_settings is automatically called with <i>verbose</i> = 1.</p></div></div></div>
@@ -1034,7 +1035,7 @@ endfunction</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Called without arguments, print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set().&nbsp; The settings are printing in the order of their precedence.</p><p>If <i>field</i> is specified and non-empty, then only configuration settings matching that field, if any, are printed.&nbsp; The field may not contain wildcards.</p><p>If <i>comp</i> is specified and non-null, then the configuration for that component is printed.</p><p>If <i>recurse</i> is set, then configuration information for all <i>comp</i>&rsquo;s children and below are printed as well.</p><p>This function has been deprecated.&nbsp;  Use print_config instead.</p></div></div></div>
+<div class=CBody><p>Called without arguments, print_config_settings prints all configuration information for this component, as set by previous calls to &lt;uvm_config_db#(T)::set()&gt;.&nbsp; The settings are printing in the order of their precedence.</p><p>If <i>field</i> is specified and non-empty, then only configuration settings matching that field, if any, are printed.&nbsp; The field may not contain wildcards.</p><p>If <i>comp</i> is specified and non-<i>null</i>, then the configuration for that component is printed.</p><p>If <i>recurse</i> is set, then configuration information for all <i>comp</i>&rsquo;s children and below are printed as well.</p><p>This function has been deprecated.&nbsp;  Use print_config instead.</p></div></div></div>
 
 
 
@@ -1056,7 +1057,7 @@ endfunction</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Print_config_settings prints all configuration information for this component, as set by previous calls to uvm_config_db#(T)::set() and exports to the resources pool.&nbsp;  The settings are printing in the order of their precedence.</p><p>If <i>recurse</i> is set, then configuration information for all children and below are printed as well.</p><p>if <i>audit</i> is set then the audit trail for each resource is printed along with the resource name and value</p></div></div></div>
+<div class=CBody><p>Print_config_settings prints all configuration information for this component, as set by previous calls to &lt;uvm_config_db#(T)::set()&gt; and exports to the resources pool.&nbsp;  The settings are printing in the order of their precedence.</p><p>If <i>recurse</i> is set, then configuration information for all children and below are printed as well.</p><p>if <i>audit</i> is set then the audit trail for each resource is printed along with the resource name and value</p></div></div></div>
 
 
 
@@ -1110,7 +1111,7 @@ endfunction</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>The <i>raised</i> callback is called when this or a descendant of this component instance raises the specfied <i>objection</i>.&nbsp; The <i>source_obj</i> is the object that originally raised the objection.&nbsp; The <i>description</i> is optionally provided by the <i>source_obj</i> to give a reason for raising the objection.&nbsp; The <i>count</i> indicates the number of objections raised by the <i>source_obj</i>.</p></div></div></div>
+<div class=CBody><p>The <i>raised</i> callback is called when this or a descendant of this component instance raises the specified <i>objection</i>.&nbsp; The <i>source_obj</i> is the object that originally raised the objection.&nbsp; The <i>description</i> is optionally provided by the <i>source_obj</i> to give a reason for raising the objection.&nbsp; The <i>count</i> indicates the number of objections raised by the <i>source_obj</i>.</p></div></div></div>
 
 
 
@@ -1132,7 +1133,7 @@ endfunction</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specfied <i>objection</i>.&nbsp; The <i>source_obj</i> is the object that originally dropped the objection.&nbsp; The <i>description</i> is optionally provided by the <i>source_obj</i> to give a reason for dropping the objection.&nbsp; The <i>count</i> indicates the number of objections dropped by the the <i>source_obj</i>.</p></div></div></div>
+<div class=CBody><p>The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specified <i>objection</i>.&nbsp; The <i>source_obj</i> is the object that originally dropped the objection.&nbsp; The <i>description</i> is optionally provided by the <i>source_obj</i> to give a reason for dropping the objection.&nbsp; The <i>count</i> indicates the number of objections dropped by the <i>source_obj</i>.</p></div></div></div>
 
 
 
@@ -1154,7 +1155,7 @@ endfunction</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>The <i>all_droppped</i> callback is called when all objections have been dropped by this component and all its descendants.&nbsp;  The <i>source_obj</i> is the object that dropped the last objection.&nbsp; The <i>description</i> is optionally provided by the <i>source_obj</i> to give a reason for raising the objection.&nbsp; The <i>count</i> indicates the number of objections dropped by the the <i>source_obj</i>.</p></div></div></div>
+<div class=CBody><p>The <i>all_droppped</i> callback is called when all objections have been dropped by this component and all its descendants.&nbsp;  The <i>source_obj</i> is the object that dropped the last objection.&nbsp; The <i>description</i> is optionally provided by the <i>source_obj</i> to give a reason for raising the objection.&nbsp; The <i>count</i> indicates the number of objections dropped by the <i>source_obj</i>.</p></div></div></div>
 
 
 
@@ -1386,7 +1387,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>These methods recursively associate the specified verbosity with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair.&nbsp; An verbosity associated with a particular severity-id pair takes precedence over an verbosity associated with id, which takes precedence over an an verbosity associated with a severity.</p><p>For a list of severities and their default verbosities, refer to <a href="uvm_report_handler-svh.html#uvm_report_handler" class=LClass id=link190 onMouseOver="ShowTip(event, 'tt119', 'link190')" onMouseOut="HideTip('tt119')">uvm_report_handler</a>.</p></div></div></div>
+<div class=CBody><p>These methods recursively associate the specified verbosity with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair.&nbsp; A verbosity associated with a particular severity-id pair takes precedence over a verbosity associated with id, which takes precedence over a verbosity associated with a severity.</p><p>For a list of severities and their default verbosities, refer to <a href="uvm_report_handler-svh.html#uvm_report_handler" class=LClass id=link190 onMouseOver="ShowTip(event, 'tt119', 'link190')" onMouseOut="HideTip('tt119')">uvm_report_handler</a>.</p></div></div></div>
 
 
 
@@ -1442,7 +1443,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>These methods recursively associate the specified action with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair.&nbsp; An action associated with a particular severity-id pair takes precedence over an action associated with id, which takes precedence over an an action associated with a severity.</p><p>For a list of severities and their default actions, refer to <a href="uvm_report_handler-svh.html#uvm_report_handler" class=LClass id=link191 onMouseOver="ShowTip(event, 'tt119', 'link191')" onMouseOut="HideTip('tt119')">uvm_report_handler</a>.</p></div></div></div>
+<div class=CBody><p>These methods recursively associate the specified action with reports of the given <i>severity</i>, <i>id</i>, or <i>severity-id</i> pair.&nbsp; An action associated with a particular severity-id pair takes precedence over an action associated with id, which takes precedence over an action associated with a severity.</p><p>For a list of severities and their default actions, refer to <a href="uvm_report_handler-svh.html#uvm_report_handler" class=LClass id=link191 onMouseOver="ShowTip(event, 'tt119', 'link191')" onMouseOut="HideTip('tt119')">uvm_report_handler</a>.</p></div></div></div>
 
 
 
@@ -1555,15 +1556,17 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_component.accept_tr" href="../../src/base/uvm_component.svh">accept_tr</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>
-      <td class=PParameter nowrap width=100%>tr,</td>
+      <td class=PBeforeParameters colspan=5>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>
+      <td class=PParameter nowrap>tr,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
+      <td class=PDefaultValue width=100%></td>
       </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap width=100%>accept_time</td>
+      <td class=PParameter nowrap>accept_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>This function marks the acceptance of a transaction, <i>tr</i>, by this component.&nbsp; Specifically, it performs the following actions:</p><ul><li>Calls the <i>tr</i>&rsquo;s <a href="uvm_transaction-svh.html#uvm_transaction.accept_tr" class=LMethod id=link195 onMouseOver="ShowTip(event, 'tt129', 'link195')" onMouseOut="HideTip('tt129')">uvm_transaction::accept_tr</a> method, passing to it the <i>accept_time</i> argument.</li><li>Calls this component&rsquo;s <a href="#uvm_component.do_accept_tr" class=LMethod id=link196 onMouseOver="ShowTip(event, 'tt105', 'link196')" onMouseOut="HideTip('tt105')">do_accept_tr</a> method to allow for any post-begin action in derived classes.</li><li>Triggers the component&rsquo;s internal accept_tr event.&nbsp; Any processes waiting on this event will resume in the next delta cycle.</li></ul></div></div></div>
@@ -1879,9 +1882,9 @@ endfunction</pre></blockquote><p>The pre_abort() callback hooks are called in a 
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Creates a new component with the given leaf instance <i>name</i> and handle to to its <i>parent</i>. </div></div><div class=CToolTip id="tt6"><div class=CMethod>
+Creates a new component with the given leaf instance <i>name</i> and handle to its <i>parent</i>. </div></div><div class=CToolTip id="tt6"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function uvm_component get_parent ()
-  </td></tr></table></blockquote>Returns a handle to this component&rsquo;s parent, or null if it has no parent.</div></div><div class=CToolTip id="tt7"><div class=CMethod>
+  </td></tr></table></blockquote>Returns a handle to this component&rsquo;s parent, or <i>null</i> if it has no parent.</div></div><div class=CToolTip id="tt7"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function string get_full_name ()
   </td></tr></table></blockquote>Returns the full hierarchical name of this object. </div></div><div class=CToolTip id="tt8"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
@@ -2166,7 +2169,7 @@ The uvm_post_shutdown_phase phase implementation method.</div></div><div class=C
     </table></blockquote>
 The uvm_extract_phase phase implementation method.</div></div><div class=CToolTip id="tt51"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>class uvm_extract_phase extends uvm_bottomup_phase
-  </td></tr></table></blockquote>Extract data from different points of the verficiation environment.</div></div><div class=CToolTip id="tt52"><div class=CMethod>
+  </td></tr></table></blockquote>Extract data from different points of the verification environment.</div></div><div class=CToolTip id="tt52"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=3>virtual function void check_phase(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_phase&nbsp;</td>
@@ -2301,12 +2304,13 @@ Override the default implementation for a phase on this component (tree) with a 
 Check all configuration settings in a components configuration table to determine if the setting has been used, overridden or not used. </div></div><div class=CToolTip id="tt69"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>virtual function void apply_config_settings (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap width=100%>verbose</td>
+      <td class=PBeforeParameters colspan=5>virtual function void apply_config_settings (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap>verbose</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Searches for all config settings matching this component&rsquo;s instance path. </div></div><div class=CToolTip id="tt70"><div class=CMethod>
@@ -2377,7 +2381,7 @@ Operates the same as print_config except that the audit bit is forced to 1. </di
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The <i>raised</i> callback is called when this or a descendant of this component instance raises the specfied <i>objection</i>. </div></div><div class=CToolTip id="tt76"><div class=CMethod>
+The <i>raised</i> callback is called when this or a descendant of this component instance raises the specified <i>objection</i>. </div></div><div class=CToolTip id="tt76"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=3>virtual function void dropped (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_objection&nbsp;</td>
@@ -2393,7 +2397,7 @@ The <i>raised</i> callback is called when this or a descendant of this component
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specfied <i>objection</i>. </div></div><div class=CToolTip id="tt77"><div class=CMethod>
+The <i>dropped</i> callback is called when this or a descendant of this component instance drops the specified <i>objection</i>. </div></div><div class=CToolTip id="tt77"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=3>virtual task all_dropped (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_objection&nbsp;</td>
@@ -2762,15 +2766,17 @@ This method recursively sets the maximum verbosity level for reports for this co
   </td></tr></table></blockquote>This callback is executed when the message system is executing a UVM_EXIT action. </div></div><div class=CToolTip id="tt103"><div class=CConstant>Terminates the simulation immediately.</div></div><div class=CToolTip id="tt104"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>
-      <td class=PParameter nowrap width=100%>tr,</td>
+      <td class=PBeforeParameters colspan=5>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>
+      <td class=PParameter nowrap>tr,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
+      <td class=PDefaultValue width=100%></td>
       </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap width=100%>accept_time</td>
+      <td class=PParameter nowrap>accept_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function marks the acceptance of a transaction, <i>tr</i>, by this component. </div></div><div class=CToolTip id="tt105"><div class=CMethod>
@@ -3007,7 +3013,7 @@ Frees the internal references associated with <i>stream</i>.</div></div><div cla
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The print method deep-prints this object&rsquo;s properties in a format and manner governed by the given <i>printer</i> argument; if the <i>printer</i> argument is not provided, the global uvm_default_printer is used. </div></div><div class=CToolTip id="tt123"><div class=CClass>
+The <i>print</i> method deep-prints this object&rsquo;s properties in a format and manner governed by the given <i>printer</i> argument; if the <i>printer</i> argument is not provided, the global uvm_default_printer is used. </div></div><div class=CToolTip id="tt123"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_task_phase extends uvm_phase
   </td></tr></table></blockquote>Base class for all task phases. </div></div><div class=CToolTip id="tt124"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>static function uvm_domain get_uvm_domain()
@@ -3043,7 +3049,7 @@ The uvm_component_registry serves as a lightweight proxy for a component of type
       <td class=PAfterParameters colspan=5>) extends uvm_object_wrapper</td></tr>
       </table></td></tr>
     </table></blockquote>
-The uvm_object_registry serves as a lightweight proxy for an uvm_object of type <i>T</i> and type name <i>Tname</i>, a string. </div></div><div class=CToolTip id="tt127"><div class=CMethod>
+The uvm_object_registry serves as a lightweight proxy for a uvm_object of type <i>T</i> and type name <i>Tname</i>, a string. </div></div><div class=CToolTip id="tt127"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>pure virtual function uvm_object create_object_by_type (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object_wrapper&nbsp;</td>
@@ -3090,23 +3096,25 @@ The uvm_object_registry serves as a lightweight proxy for an uvm_object of type 
 </div></div><div class=CToolTip id="tt129"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap width=100%>accept_time</td>
+      <td class=PBeforeParameters colspan=5>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap>accept_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Calling <i>accept_tr</i> indicates that the transaction item has been received by a consumer component. </div></div><div class=CToolTip id="tt130"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>function integer begin_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap width=100%>begin_time</td>
+      <td class=PBeforeParameters colspan=5>function integer begin_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap>begin_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function indicates that the transaction has been started and is not the child of another transaction. </div></div><div class=CToolTip id="tt131"><div class=CMethod>
@@ -3135,7 +3143,7 @@ This function indicates that the transaction execution has ended. </div></div><d
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The do_record method is the user-definable hook called by the record method. </div></div><div class=CToolTip id="tt133"><div class=CClass>
+The <i>do_record</i> method is the user-definable hook called by the record method. </div></div><div class=CToolTip id="tt133"><div class=CClass>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual class uvm_tr_stream extends uvm_object
   </td></tr></table></blockquote>The <i>uvm_tr_stream</i> base class is a representation of a stream of records within a uvm_tr_database.</div></div><div class=CToolTip id="tt134"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>pure virtual function uvm_tr_database get_default_tr_database()

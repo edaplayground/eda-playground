@@ -68,7 +68,7 @@ class uvm_heartbeat extends uvm_object;
   // Creates a new heartbeat instance associated with ~cntxt~. The context
   // is the hierarchical location that the heartbeat objections will flow
   // through and be monitored at. The ~objection~ associated with the heartbeat 
-  // is optional, if it is left null but it must be set before the heartbeat
+  // is optional, if it is left ~null~ but it must be set before the heartbeat
   // monitor will activate.
   //
   //| uvm_objection myobjection = new("myobjection"); //some shared objection
@@ -113,7 +113,7 @@ class uvm_heartbeat extends uvm_object;
   // monitor event results in an error. To change trigger events, you
   // must first <stop> the monitor and then <start> with a new event trigger.
   //
-  // If the trigger event ~e~ is null and there was no previously set
+  // If the trigger event ~e~ is ~null~ and there was no previously set
   // trigger event, then the monitoring is not started. Monitoring can be 
   // started by explicitly calling <start>.
 
@@ -160,7 +160,7 @@ class uvm_heartbeat extends uvm_object;
 
   // Function: start
   //
-  // Starts the heartbeat monitor. If ~e~ is null then whatever event
+  // Starts the heartbeat monitor. If ~e~ is ~null~ then whatever event
   // was previously set is used. If no event was previously set then
   // a warning is issued. It is an error if the monitor is currently
   // running and ~e~ is specifying a different trigger event from the

@@ -173,7 +173,7 @@ endclass
 // so they are documented in that class even though the implementation
 // is in this class. 
 //
-// The add, delete, and display methods are implemented in this class.
+// The <add>, <delete>, and <display> methods are implemented in this class.
 
 class uvm_typed_callbacks#(type T=uvm_object) extends uvm_callbacks_base;
 
@@ -462,7 +462,7 @@ endclass
 // virtual, users can define subtypes that override the default algorithm,
 // perform tasks before and/or after calling super.<method> to execute any
 // registered callbacks, or to not call the base implementation, effectively
-// disabling that particalar hook. A demonstration of this methodology is
+// disabling that particular hook. A demonstration of this methodology is
 // provided in an example included in the kit.
 //------------------------------------------------------------------------------
 
@@ -569,17 +569,17 @@ class uvm_callbacks #(type T=uvm_object, type CB=uvm_callback)
     return($cast(this_cb,cb));
   endfunction
 
-  // Group: Add/delete inteface
+  // Group: Add/delete interface
 
   // Function: add
   //
   // Registers the given callback object, ~cb~, with the given
-  // ~obj~ handle. The ~obj~ handle can be null, which allows 
+  // ~obj~ handle. The ~obj~ handle can be ~null~, which allows 
   // registration of callbacks without an object context. If
-  // ~ordreing~ is UVM_APPEND (default), the callback will be executed
+  // ~ordering~ is UVM_APPEND (default), the callback will be executed
   // after previously added callbacks, else  the callback
   // will be executed ahead of previously added callbacks. The ~cb~
-  // is the callback handle; it must be non-null, and if the callback
+  // is the callback handle; it must be non-~null~, and if the callback
   // has already been added to the object instance then a warning is
   // issued. Note that the CB parameter is optional. For example, the 
   // following are equivalent:
@@ -738,9 +738,9 @@ class uvm_callbacks #(type T=uvm_object, type CB=uvm_callback)
   // Function: delete
   //
   // Deletes the given callback object, ~cb~, from the queue associated with
-  //  the given ~obj~ handle. The ~obj~ handle can be null, which allows 
+  //  the given ~obj~ handle. The ~obj~ handle can be ~null~, which allows
   // de-registration of callbacks without an object context. 
-  // The ~cb~ is the callback handle; it must be non-null, and if the callback
+  // The ~cb~ is the callback handle; it must be non-~null~, and if the callback
   // has already been removed from the object instance then a warning is
   // issued. Note that the CB parameter is optional. For example, the 
   // following are equivalent:
@@ -837,11 +837,11 @@ class uvm_callbacks #(type T=uvm_object, type CB=uvm_callback)
   // Function: get_first
   //
   // Returns the first enabled callback of type CB which resides in the queue for ~obj~.
-  // If ~obj~ is null then the typewide queue for T is searched. ~itr~ is the iterator;
+  // If ~obj~ is ~null~ then the typewide queue for T is searched. ~itr~ is the iterator;
   // it will be updated with a value that can be supplied to <get_next> to get the next
   // callback object.
   //
-  // If the queue is empty then null is returned. 
+  // If the queue is empty then ~null~ is returned. 
   //
   // The iterator class <uvm_callback_iter> may be used as an alternative, simplified,
   // iterator interface.
@@ -860,11 +860,11 @@ class uvm_callbacks #(type T=uvm_object, type CB=uvm_callback)
   // Function: get_last
   //
   // Returns the last enabled callback of type CB which resides in the queue for ~obj~.
-  // If ~obj~ is null then the typewide queue for T is searched. ~itr~ is the iterator;
+  // If ~obj~ is ~null~ then the typewide queue for T is searched. ~itr~ is the iterator;
   // it will be updated with a value that can be supplied to <get_prev> to get the previous
   // callback object.
   //
-  // If the queue is empty then null is returned. 
+  // If the queue is empty then ~null~ is returned.
   //
   // The iterator class <uvm_callback_iter> may be used as an alternative, simplified,
   // iterator interface.
@@ -884,12 +884,12 @@ class uvm_callbacks #(type T=uvm_object, type CB=uvm_callback)
   // Function: get_next
   //
   // Returns the next enabled callback of type CB which resides in the queue for ~obj~,
-  // using ~itr~ as the starting point. If ~obj~ is null then the typewide queue for T 
+  // using ~itr~ as the starting point. If ~obj~ is ~null~ then the typewide queue for T
   // is searched. ~itr~ is the iterator; it will be updated with a value that can be 
   // supplied to <get_next> to get the next callback object.
   //
-  // If no more callbacks exist in the queue, then null is returned. <get_next> will
-  // continue to return null in this case until <get_first> or <get_last> has been used to reset
+  // If no more callbacks exist in the queue, then ~null~ is returned. <get_next> will
+  // continue to return ~null~ in this case until <get_first> or <get_last> has been used to reset
   // the iterator.
   //
   // The iterator class <uvm_callback_iter> may be used as an alternative, simplified,
@@ -910,12 +910,12 @@ class uvm_callbacks #(type T=uvm_object, type CB=uvm_callback)
   // Function: get_prev
   //
   // Returns the previous enabled callback of type CB which resides in the queue for ~obj~,
-  // using ~itr~ as the starting point. If ~obj~ is null then the typewide queue for T 
+  // using ~itr~ as the starting point. If ~obj~ is ~null~ then the typewide queue for T
   // is searched. ~itr~ is the iterator; it will be updated with a value that can be 
   // supplied to <get_prev> to get the previous callback object.
   //
-  // If no more callbacks exist in the queue, then null is returned. <get_prev> will
-  // continue to return null in this case until <get_first> or <get_last> has been used to reset
+  // If no more callbacks exist in the queue, then ~null~ is returned. <get_prev> will
+  // continue to return ~null~ in this case until <get_first> or <get_last> has been used to reset
   // the iterator.
   //
   // The iterator class <uvm_callback_iter> may be used as an alternative, simplified,
@@ -940,7 +940,7 @@ class uvm_callbacks #(type T=uvm_object, type CB=uvm_callback)
   // Function: display
   //
   // This function displays callback information for ~obj~. If ~obj~ is
-  // null, then it displays callback information for all objects
+  // ~null~, then it displays callback information for all objects
   // of type ~T~, including typewide callbacks.
 
   static function void display(T obj=null);
@@ -1053,7 +1053,7 @@ class uvm_callback_iter#(type T = uvm_object, type CB = uvm_callback);
    //
    // Returns the first valid (enabled) callback of the callback type (or
    // a derivative) that is in the queue of the context object. If the
-   // queue is empty then null is returned.
+   // queue is empty then ~null~ is returned.
 
    function CB first();
       m_cb = uvm_callbacks#(T,CB)::get_first(m_i, m_obj);
@@ -1064,7 +1064,7 @@ class uvm_callback_iter#(type T = uvm_object, type CB = uvm_callback);
    //
    // Returns the last valid (enabled) callback of the callback type (or
    // a derivative) that is in the queue of the context object. If the
-   // queue is empty then null is returned.
+   // queue is empty then ~null~ is returned.
 
    function CB last();
       m_cb = uvm_callbacks#(T,CB)::get_last(m_i, m_obj);
@@ -1075,7 +1075,7 @@ class uvm_callback_iter#(type T = uvm_object, type CB = uvm_callback);
    //
    // Returns the next valid (enabled) callback of the callback type (or
    // a derivative) that is in the queue of the context object. If there
-   // are no more valid callbacks in the queue, then null is returned.
+   // are no more valid callbacks in the queue, then ~null~ is returned.
 
    function CB next();
       m_cb = uvm_callbacks#(T,CB)::get_next(m_i, m_obj);
@@ -1086,7 +1086,7 @@ class uvm_callback_iter#(type T = uvm_object, type CB = uvm_callback);
    //
    // Returns the previous valid (enabled) callback of the callback type (or
    // a derivative) that is in the queue of the context object. If there
-   // are no more valid callbacks in the queue, then null is returned.
+   // are no more valid callbacks in the queue, then ~null~ is returned.
 
    function CB prev();
       m_cb = uvm_callbacks#(T,CB)::get_prev(m_i, m_obj);

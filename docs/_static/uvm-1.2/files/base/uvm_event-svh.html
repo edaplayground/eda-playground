@@ -61,12 +61,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_event_base.wait_on" href="../../src/base/uvm_event.svh">wait_on</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>virtual task wait_on (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap width=100%>delta</td>
+      <td class=PBeforeParameters colspan=5>virtual task wait_on (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap>delta</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Waits for the event to be activated for the first time.</p><p>If the event has already been triggered, this task returns immediately.&nbsp; If <i>delta</i> is set, the caller will be forced to wait a single delta #0 before returning.&nbsp; This prevents the caller from returning before previously waiting processes have had a chance to resume.</p><p>Once an event has been triggered, it will be remain &ldquo;on&rdquo; until the event is <a href="#uvm_event_base.reset" class=LMethod id=link5 onMouseOver="ShowTip(event, 'tt5', 'link5')" onMouseOut="HideTip('tt5')">reset</a>.</p></div></div></div>
@@ -78,12 +79,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_event_base.wait_off" href="../../src/base/uvm_event.svh">wait_off</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>virtual task wait_off (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap width=100%>delta</td>
+      <td class=PBeforeParameters colspan=5>virtual task wait_off (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap>delta</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>If the event has already triggered and is &ldquo;on&rdquo;, this task waits for the event to be turned &ldquo;off&rdquo; via a call to <a href="#uvm_event_base.reset" class=LMethod id=link6 onMouseOver="ShowTip(event, 'tt5', 'link6')" onMouseOut="HideTip('tt5')">reset</a>.</p><p>If the event has not already been triggered, this task returns immediately.&nbsp; If <i>delta</i> is set, the caller will be forced to wait a single delta #0 before returning.&nbsp; This prevents the caller from returning before previously waiting processes have had a chance to resume.</p></div></div></div>
@@ -135,12 +137,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_event_base.reset" href="../../src/base/uvm_event.svh">reset</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>virtual function void reset (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap width=100%>wakeup</td>
+      <td class=PBeforeParameters colspan=5>virtual function void reset (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap>wakeup</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Resets the event to its off state.&nbsp; If <i>wakeup</i> is set, then all processes currently waiting for the event are activated before the reset.</p><p>No callbacks are called during a reset.</p></div></div></div>
@@ -379,12 +382,13 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 The uvm_event class is an extension of the abstract uvm_event_base class.</div></div><div class=CToolTip id="tt5"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>virtual function void reset (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap width=100%>wakeup</td>
+      <td class=PBeforeParameters colspan=5>virtual function void reset (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap>wakeup</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Resets the event to its off state. </div></div><div class=CToolTip id="tt6"><div class=CMethod>

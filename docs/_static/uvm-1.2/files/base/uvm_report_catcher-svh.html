@@ -18,7 +18,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=0 -->
-<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_report_catcher" href="../../src/base/uvm_report_catcher.svh">uvm_report_catcher</a></h1><div class=CBody><p>The uvm_report_catcher is used to catch messages issued by the uvm report server.&nbsp; Catchers are uvm_callbacks#(<a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link39 onMouseOver="ShowTip(event, 'tt7', 'link39')" onMouseOut="HideTip('tt7')">uvm_report_object</a>,uvm_report_catcher) objects, so all factilities in the <a href="uvm_callback-svh.html#uvm_callback" class=LClass id=link40 onMouseOver="ShowTip(event, 'tt3', 'link40')" onMouseOut="HideTip('tt3')">uvm_callback</a> and <a href="uvm_callback-svh.html#uvm_callbacks#(T,CB)" class=LClass id=link41 onMouseOver="ShowTip(event, 'tt39', 'link41')" onMouseOut="HideTip('tt39')">uvm_callbacks#(T,CB)</a> classes are available for registering catchers and controlling catcher state.&nbsp; The uvm_callbacks#(<a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link42 onMouseOver="ShowTip(event, 'tt7', 'link42')" onMouseOut="HideTip('tt7')">uvm_report_object</a>,uvm_report_catcher) class is aliased to <i>uvm_report_cb</i> to make it easier to use.&nbsp; Multiple report catchers can be registered with a report object.&nbsp; The catchers can be registered as default catchers which catch all reports on all <a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link43 onMouseOver="ShowTip(event, 'tt7', 'link43')" onMouseOut="HideTip('tt7')">uvm_report_object</a> reporters, or catchers can be attached to specific report objects (i.e. components).</p><p>User extensions of <a href="#uvm_report_catcher" class=LClass id=link44 onMouseOver="ShowTip(event, 'tt4', 'link44')" onMouseOut="HideTip('tt4')">uvm_report_catcher</a> must implement the <a href="#uvm_report_catcher.catch" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt30', 'link45')" onMouseOut="HideTip('tt30')">catch</a> method in which the action to be taken on catching the report is specified.&nbsp; The catch method can return <i>CAUGHT</i>, in which case further processing of the report is immediately stopped, or return <i>THROW</i> in which case the (possibly modified) report is passed on to other registered catchers.&nbsp; The catchers are processed in the order in which they are registered.</p><p>On catching a report, the <a href="#uvm_report_catcher.catch" class=LMethod id=link46 onMouseOver="ShowTip(event, 'tt30', 'link46')" onMouseOut="HideTip('tt30')">catch</a> method can modify the severity, id, action, verbosity or the report string itself before the report is finally issued by the report server.&nbsp; The report can be immediately issued from within the catcher class by calling the <a href="#uvm_report_catcher.issue" class=LMethod id=link47 onMouseOver="ShowTip(event, 'tt36', 'link47')" onMouseOut="HideTip('tt36')">issue</a> method.</p><p>The catcher maintains a count of all reports with FATAL,ERROR or WARNING severity and a count of all reports with FATAL, ERROR or WARNING severity whose severity was lowered.&nbsp; These statistics are reported in the summary of the <a href="uvm_report_server-svh.html#uvm_report_server" class=LClass id=link48 onMouseOver="ShowTip(event, 'tt40', 'link48')" onMouseOut="HideTip('tt40')">uvm_report_server</a>.</p><p>This example shows the basic concept of creating a report catching callback and attaching it to all messages that get emitted:</p><blockquote><pre>class my_error_demoter extends uvm_report_catcher;
+<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_report_catcher" href="../../src/base/uvm_report_catcher.svh">uvm_report_catcher</a></h1><div class=CBody><p>The uvm_report_catcher is used to catch messages issued by the uvm report server.&nbsp; Catchers are uvm_callbacks#(<a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link39 onMouseOver="ShowTip(event, 'tt7', 'link39')" onMouseOut="HideTip('tt7')">uvm_report_object</a>,uvm_report_catcher) objects, so all facilities in the <a href="uvm_callback-svh.html#uvm_callback" class=LClass id=link40 onMouseOver="ShowTip(event, 'tt3', 'link40')" onMouseOut="HideTip('tt3')">uvm_callback</a> and <a href="uvm_callback-svh.html#uvm_callbacks#(T,CB)" class=LClass id=link41 onMouseOver="ShowTip(event, 'tt39', 'link41')" onMouseOut="HideTip('tt39')">uvm_callbacks#(T,CB)</a> classes are available for registering catchers and controlling catcher state.&nbsp; The uvm_callbacks#(<a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link42 onMouseOver="ShowTip(event, 'tt7', 'link42')" onMouseOut="HideTip('tt7')">uvm_report_object</a>,uvm_report_catcher) class is aliased to <i>uvm_report_cb</i> to make it easier to use.&nbsp; Multiple report catchers can be registered with a report object.&nbsp; The catchers can be registered as default catchers which catch all reports on all <a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link43 onMouseOver="ShowTip(event, 'tt7', 'link43')" onMouseOut="HideTip('tt7')">uvm_report_object</a> reporters, or catchers can be attached to specific report objects (i.e. components).</p><p>User extensions of <a href="#uvm_report_catcher" class=LClass id=link44 onMouseOver="ShowTip(event, 'tt4', 'link44')" onMouseOut="HideTip('tt4')">uvm_report_catcher</a> must implement the <a href="#uvm_report_catcher.catch" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt30', 'link45')" onMouseOut="HideTip('tt30')">catch</a> method in which the action to be taken on catching the report is specified.&nbsp; The catch method can return <i>CAUGHT</i>, in which case further processing of the report is immediately stopped, or return <i>THROW</i> in which case the (possibly modified) report is passed on to other registered catchers.&nbsp; The catchers are processed in the order in which they are registered.</p><p>On catching a report, the <a href="#uvm_report_catcher.catch" class=LMethod id=link46 onMouseOver="ShowTip(event, 'tt30', 'link46')" onMouseOut="HideTip('tt30')">catch</a> method can modify the severity, id, action, verbosity or the report string itself before the report is finally issued by the report server.&nbsp; The report can be immediately issued from within the catcher class by calling the <a href="#uvm_report_catcher.issue" class=LMethod id=link47 onMouseOver="ShowTip(event, 'tt36', 'link47')" onMouseOut="HideTip('tt36')">issue</a> method.</p><p>The catcher maintains a count of all reports with FATAL,ERROR or WARNING severity and a count of all reports with FATAL, ERROR or WARNING severity whose severity was lowered.&nbsp; These statistics are reported in the summary of the <a href="uvm_report_server-svh.html#uvm_report_server" class=LClass id=link48 onMouseOver="ShowTip(event, 'tt40', 'link48')" onMouseOut="HideTip('tt40')">uvm_report_server</a>.</p><p>This example shows the basic concept of creating a report catching callback and attaching it to all messages that get emitted:</p><blockquote><pre>class my_error_demoter extends uvm_report_catcher;
   function new(string name=&quot;my_error_demoter&quot;);
     super.new(name);
   endfunction
@@ -35,7 +35,7 @@ initial begin
  // Catchers are callbacks on report objects (components are report
  // objects, so catchers can be attached to components).
 
- // To affect all reporters, use null for the object
+ // To affect all reporters, use ~null~ for the object
  uvm_report_cb::add(null, demoter);
 
  // To affect some specific object use the specific reporter
@@ -163,7 +163,7 @@ end</pre></blockquote>
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_report_catcher.uvm_report_fatal" id=link31 onMouseOver="ShowTip(event, 'tt31', 'link31')" onMouseOut="HideTip('tt31')">uvm_report_fatal</a></td><td class=SDescription>Issues a fatal message using the current message&rsquo;s report object. </td></tr>
   <!-- index=30 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_report_catcher.uvm_report_error" id=link32 onMouseOver="ShowTip(event, 'tt32', 'link32')" onMouseOut="HideTip('tt32')">uvm_report_error</a></td><td class=SDescription>Issues a error message using the current message&rsquo;s report object. </td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_report_catcher.uvm_report_error" id=link32 onMouseOver="ShowTip(event, 'tt32', 'link32')" onMouseOut="HideTip('tt32')">uvm_report_error</a></td><td class=SDescription>Issues an error message using the current message&rsquo;s report object. </td></tr>
   <!-- index=31 -->
 
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_report_catcher.uvm_report_warning" id=link33 onMouseOver="ShowTip(event, 'tt33', 'link33')" onMouseOut="HideTip('tt33')">uvm_report_warning</a></td><td class=SDescription>Issues a warning message using the current message&rsquo;s report object. </td></tr>
@@ -502,12 +502,13 @@ end</pre></blockquote>
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_report_catcher.print_catcher" href="../../src/base/uvm_report_catcher.svh">print_catcher</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>static function void print_catcher(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
-      <td class=PParameter nowrap width=100%>file</td>
+      <td class=PBeforeParameters colspan=5>static function void print_catcher(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
+      <td class=PParameter nowrap>file</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 <div class=CBody><p>Prints information about all of the report catchers that are registered.&nbsp; For finer grained detail, the <a href="uvm_callback-svh.html#uvm_callbacks#(T,CB).display" class=LMethod id=link52 onMouseOver="ShowTip(event, 'tt41', 'link52')" onMouseOut="HideTip('tt41')">uvm_callbacks #(T,CB)::display</a> method can be used by calling uvm_report_cb::display(<a href="uvm_report_object-svh.html#uvm_report_object" class=LClass id=link53 onMouseOver="ShowTip(event, 'tt7', 'link53')" onMouseOut="HideTip('tt7')">uvm_report_object</a>).</p></div></div></div>
@@ -614,7 +615,7 @@ end</pre></blockquote>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Issues a error message using the current message&rsquo;s report object.&nbsp; This message will bypass any message catching callbacks.</p></div></div></div>
+<div class=CBody><p>Issues an error message using the current message&rsquo;s report object.&nbsp; This message will bypass any message catching callbacks.</p></div></div></div>
 
 
 
@@ -950,12 +951,13 @@ Adds a uvm_object of the name <i>name</i> and reference <i>obj</i> to the messag
 Returns the first report catcher that has <i>name</i>.</div></div><div class=CToolTip id="tt29"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>static function void print_catcher(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
-      <td class=PParameter nowrap width=100%>file</td>
+      <td class=PBeforeParameters colspan=5>static function void print_catcher(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
+      <td class=PParameter nowrap>file</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Prints information about all of the report catchers that are registered. </div></div><div class=CToolTip id="tt30"><div class=CMethod>
@@ -1032,7 +1034,7 @@ Issues a fatal message using the current message&rsquo;s report object. </div></
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Issues a error message using the current message&rsquo;s report object. </div></div><div class=CToolTip id="tt33"><div class=CMethod>
+Issues an error message using the current message&rsquo;s report object. </div></div><div class=CToolTip id="tt33"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>protected function void uvm_report_warning(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
@@ -1151,12 +1153,13 @@ Issues a message using the current message&rsquo;s report object. </div></div><d
   </td></tr></table></blockquote>This function is called automatically by uvm_report_server::report_summarize(). </div></div><div class=CToolTip id="tt38"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>pure virtual function void report_summarize(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
-      <td class=PParameter nowrap width=100%>file</td>
+      <td class=PBeforeParameters colspan=5>pure virtual function void report_summarize(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>UVM_FILE&nbsp;</td>
+      <td class=PParameter nowrap>file</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Outputs statistical information on the reports issued by this central report server. </div></div><div class=CToolTip id="tt39"><div class=CClass>
@@ -1175,7 +1178,7 @@ Outputs statistical information on the reports issued by this central report ser
       <td class=PAfterParameters colspan=5>) extends uvm_typed_callbacks#(T)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The <i>uvm_callbacks</i> class provides a base class for implementing callbacks, which are typically used to modify or augment component behavior without changing the component class. </div></div><div class=CToolTip id="tt40"><div class=CClass>uvm_report_server is a global server that processes all of the reports generated by an uvm_report_handler.</div></div><div class=CToolTip id="tt41"><div class=CMethod>
+The <i>uvm_callbacks</i> class provides a base class for implementing callbacks, which are typically used to modify or augment component behavior without changing the component class. </div></div><div class=CToolTip id="tt40"><div class=CClass>uvm_report_server is a global server that processes all of the reports generated by a uvm_report_handler.</div></div><div class=CToolTip id="tt41"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>static function void display(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>T&nbsp;</td>

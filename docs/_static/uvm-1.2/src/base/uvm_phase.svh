@@ -74,7 +74,7 @@ typedef class uvm_phase_cb;
 // Singleton instances of those extensions are provided as package variables.
 // These instances define the attributes of the phase (not what state it is in)
 // They are then cloned into schedule nodes which point back to one of these
-// implementations, and calls it's virtual task or function methods on each
+// implementations, and calls its virtual task or function methods on each
 // participating component.
 // It is the base class for phase functors, for both predefined and
 // user-defined phases. Per-component overrides can use a customized imp.
@@ -86,7 +86,7 @@ typedef class uvm_phase_cb;
 // Extend the appropriate one of these to create a uvm_YOURNAME_phase class
 // (or YOURPREFIX_NAME_phase class) for each phase, containing the default
 // implementation of the new phase, which must be a uvm_component-compatible
-// delegate, and which may be a null implementation. Instantiate a singleton
+// delegate, and which may be a ~null~ implementation. Instantiate a singleton
 // instance of that class for your code to use when a phase handle is required.
 // If your custom phase depends on methods that are not in uvm_component, but
 // are within an extended class, then extend the base YOURPREFIX_NAME_phase
@@ -127,8 +127,8 @@ typedef class uvm_phase_cb;
 //
 // Handles of this type uvm_phase are used frequently in the API, both by
 // the user, to access phasing-specific API, and also as a parameter to some
-// APIs. In many cases, the singleton package-global phase handles can be
-// used (eg. connect_ph, run_ph) in APIs. For those APIs that need to look
+// APIs. In many cases, the singleton phase handles can be
+// used (eg. <uvm_run_phase::get()>) in APIs. For those APIs that need to look
 // up that phase in the graph, this is done automatically.
 
 class uvm_phase extends uvm_object;
@@ -146,7 +146,7 @@ class uvm_phase extends uvm_object;
   //
   // Create a new phase node, with a name and a note of its type
   //   name   - name of this phase
-  //   type   - task, topdown func or bottomup func
+  //   type   - a value in <uvm_phase_type>
   //
   extern function new(string name="uvm_phase",
                       uvm_phase_type phase_type=UVM_PHASE_SCHEDULE,
@@ -283,14 +283,14 @@ class uvm_phase extends uvm_object;
   //
   // Returns the topmost parent schedule node, if any, for hierarchical graph traversal
   //
-  extern function uvm_phase get_schedule(bit hier=0);
+  extern function uvm_phase get_schedule(bit hier = 0);
 
 
   // Function: get_schedule_name
   //
   // Returns the schedule name associated with this phase node
   //
-  extern function string get_schedule_name(bit hier=0);
+  extern function string get_schedule_name(bit hier = 0);
 
 
   // Function: get_domain
@@ -303,7 +303,7 @@ class uvm_phase extends uvm_object;
   // Function: get_imp
   //
   // Returns the phase implementation for this this node.
-  // Returns null if this phase type is not a UVM_PHASE_LEAF_NODE. 
+  // Returns ~null~ if this phase type is not a UVM_PHASE_LEAF_NODE.
   //
   extern function uvm_phase get_imp();
 
@@ -327,8 +327,8 @@ class uvm_phase extends uvm_object;
   // Function: get_adjacent_successor_nodes
   //
   // Provides an array of nodes which are successors to
-  // ~this~ phase node.  A 'successors node' is defined
-  // as any phase node which liest after ~this~ node in
+  // ~this~ phase node.  A 'successor's node' is defined
+  // as any phase node which comes after ~this~ node in
   // the phase graph, with no nodes between ~this~ node
   // and the successor node.
   //
@@ -344,7 +344,7 @@ class uvm_phase extends uvm_object;
   // if the user attempts to ~raise~, ~drop~, or ~get_objection_count~.
    
   // Function- m_report_null_objection
-  // Simplifies the reporting of null objection errors
+  // Simplifies the reporting of ~null~ objection errors
   extern function void m_report_null_objection(uvm_object obj,
                                                string description,
                                                int count,
@@ -528,7 +528,7 @@ class uvm_phase extends uvm_object;
 
   // Function: get_jump_target
   //
-  // Return handle to the target phase of the current jump, or null if no jump
+  // Return handle to the target phase of the current jump, or ~null~ if no jump
   // is in progress. Valid for use during the phase_ended() callback
   //
   extern function uvm_phase get_jump_target();
@@ -668,7 +668,7 @@ endclass
 //
 // Phase state transition descriptor.
 // Used to describe the phase transition that caused a
-// uvm_phase_cb::state_changed() callback to be invoked.
+// <uvm_phase_cb::state_changed()> callback to be invoked.
 //
 
 class uvm_phase_state_change extends uvm_object;
@@ -688,7 +688,7 @@ class uvm_phase_state_change extends uvm_object;
   // Function: get_state()
   //
   // Returns the state the phase just transitioned to.
-  // Functionally equivalent to uvm_phase::get_state().
+  // Functionally equivalent to <uvm_phase::get_state()>.
   //
   virtual function uvm_phase_state get_state();
     return m_phase.get_state();
@@ -721,8 +721,8 @@ endclass
 //
 //------------------------------------------------------------------------------
 //
-// This class define a callback method that is invoked by the phaser
-// during the execution of a specific node in the phase graph or all phase node.
+// This class defines a callback method that is invoked by the phaser
+// during the execution of a specific node in the phase graph or all phase nodes.
 // User-defined callback extensions can be used to integrate data types that
 // are not natively phase-aware with the UVM phasing.
 //

@@ -83,7 +83,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent1"><td class=SEntry><a href="#uvm_sequence_item.set_depth" id=link15 onMouseOver="ShowTip(event, 'tt15', 'link15')" onMouseOut="HideTip('tt15')">set_depth</a></td><td class=SDescription>The depth of any sequence is calculated automatically. </td></tr>
   <!-- index=12 -->
 
-<tr class="SMethod SIndent1 SMarked"><td class=SEntry><a href="#uvm_sequence_item.get_depth" id=link16 onMouseOver="ShowTip(event, 'tt16', 'link16')" onMouseOut="HideTip('tt16')">get_depth</a></td><td class=SDescription>Returns the depth of a sequence from it&rsquo;s parent. </td></tr>
+<tr class="SMethod SIndent1 SMarked"><td class=SEntry><a href="#uvm_sequence_item.get_depth" id=link16 onMouseOver="ShowTip(event, 'tt16', 'link16')" onMouseOut="HideTip('tt16')">get_depth</a></td><td class=SDescription>Returns the depth of a sequence from its parent. </td></tr>
   <!-- index=13 -->
 
 <tr class="SMethod SIndent1"><td class=SEntry><a href="#uvm_sequence_item.is_item" id=link17 onMouseOver="ShowTip(event, 'tt17', 'link17')" onMouseOut="HideTip('tt17')">is_item</a></td><td class=SDescription>This function may be called on any sequence_item or sequence. </td></tr>
@@ -140,7 +140,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=2 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_item.get_sequence_id" href="../../src/seq/uvm_sequence_item.svh">get_sequence_id</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function int get_sequence_id()
-  </td></tr></table></blockquote><div class=CBody><p>private</p><p>Get_sequence_id is an internal method that is not intended for user code.&nbsp; The sequence_id is not a simple integer.&nbsp;  The get_transaction_id is meant for users to identify specific transactions.</p><p>These methods allow access to the sequence_item sequence and transaction IDs. get_transaction_id and set_transaction_id are methods on the uvm_transaction base_class.&nbsp; These IDs are used to identify sequences to the sequencer, to route responses back to the sequence that issued a request, and to uniquely identify transactions.</p><p>The sequence_id is assigned automatically by a sequencer when a sequence initiates communication through any sequencer calls (i.e.&nbsp; `uvm_do_xxx, wait_for_grant).&nbsp;  A sequence_id will remain unique for this sequence until it ends or it is killed.&nbsp;  However, a single sequence may have multiple valid sequence ids at any point in time.&nbsp;  Should a sequence start again after it has ended, it will be given a new unique sequence_id.</p><p>The transaction_id is assigned automatically by the sequence each time a transaction is sent to the sequencer with the transaction_id in its default (-1) value.&nbsp;  If the user sets the transaction_id to any non-default value, that value will be maintained.</p><p>Responses are routed back to this sequences based on sequence_id.&nbsp; The sequence may use the transaction_id to correlate responses with their requests.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>private</p><p>Get_sequence_id is an internal method that is not intended for user code.&nbsp; The sequence_id is not a simple integer.&nbsp;  The get_transaction_id is meant for users to identify specific transactions.</p><p>These methods allow access to the sequence_item sequence and transaction IDs. get_transaction_id and set_transaction_id are methods on the uvm_transaction base_class.&nbsp; These IDs are used to identify sequences to the sequencer, to route responses back to the sequence that issued a request, and to uniquely identify transactions.</p><p>The sequence_id is assigned automatically by a sequencer when a sequence initiates communication through any sequencer calls (i.e.&nbsp; `uvm_do_*, wait_for_grant).&nbsp;  A sequence_id will remain unique for this sequence until it ends or it is killed.&nbsp;  However, a single sequence may have multiple valid sequence ids at any point in time.&nbsp;  Should a sequence start again after it has ended, it will be given a new unique sequence_id.</p><p>The transaction_id is assigned automatically by the sequence each time a transaction is sent to the sequencer with the transaction_id in its default (-1) value.&nbsp;  If the user sets the transaction_id to any non-default value, that value will be maintained.</p><p>Responses are routed back to this sequences based on sequence_id.&nbsp; The sequence may use the transaction_id to correlate responses with their requests.</p></div></div></div>
 
 
 
@@ -250,7 +250,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=10 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_item.get_parent_sequence" href="../../src/seq/uvm_sequence_item.svh">get_parent_sequence</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function uvm_sequence_base get_parent_sequence()
-  </td></tr></table></blockquote><div class=CBody><p>Returns a reference to the parent sequence of any sequence on which this method was called.&nbsp; If this is a parent sequence, the method returns null.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns a reference to the parent sequence of any sequence on which this method was called.&nbsp; If this is a parent sequence, the method returns <i>null</i>.</p></div></div></div>
 
 
 
@@ -274,7 +274,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=12 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_sequence_item.get_depth" href="../../src/seq/uvm_sequence_item.svh">get_depth</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function int get_depth()
-  </td></tr></table></blockquote><div class=CBody><p>Returns the depth of a sequence from it&rsquo;s parent.&nbsp;  A  parent sequence will have a depth of 1, it&rsquo;s child will have a depth  of 2, and it&rsquo;s grandchild will have a depth of 3.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns the depth of a sequence from its parent.&nbsp;  A  parent sequence will have a depth of 1, its child will have a depth  of 2, and its grandchild will have a depth of 3.</p></div></div></div>
 
 
 
@@ -629,7 +629,7 @@ Sets the parent sequence of this sequence_item. </div></div><div class=CToolTip 
     </table></blockquote>
 The depth of any sequence is calculated automatically. </div></div><div class=CToolTip id="tt16"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function int get_depth()
-  </td></tr></table></blockquote>Returns the depth of a sequence from it&rsquo;s parent. </div></div><div class=CToolTip id="tt17"><div class=CMethod>
+  </td></tr></table></blockquote>Returns the depth of a sequence from its parent. </div></div><div class=CToolTip id="tt17"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function bit is_item()
   </td></tr></table></blockquote>This function may be called on any sequence_item or sequence. </div></div><div class=CToolTip id="tt18"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function string get_root_sequence_name()

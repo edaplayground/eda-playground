@@ -81,7 +81,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_sequencer_base.is_blocked" id=link15 onMouseOver="ShowTip(event, 'tt15', 'link15')" onMouseOut="HideTip('tt15')">is_blocked</a></td><td class=SDescription>Returns 1 if the sequence referred to by sequence_ptr is currently locked out of the sequencer. </td></tr>
   <!-- index=11 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_sequencer_base.has_lock" id=link16 onMouseOver="ShowTip(event, 'tt16', 'link16')" onMouseOut="HideTip('tt16')">has_lock</a></td><td class=SDescription>Returns 1 if the sequence refered to in the parameter currently has a lock on this sequencer, 0 otherwise.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_sequencer_base.has_lock" id=link16 onMouseOver="ShowTip(event, 'tt16', 'link16')" onMouseOut="HideTip('tt16')">has_lock</a></td><td class=SDescription>Returns 1 if the sequence referred to in the parameter currently has a lock on this sequencer, 0 otherwise.</td></tr>
   <!-- index=12 -->
 
 <tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_sequencer_base.lock" id=link17 onMouseOver="ShowTip(event, 'tt17', 'link17')" onMouseOut="HideTip('tt17')">lock</a></td><td class=SDescription>Requests a lock for the sequence specified by sequence_ptr.</td></tr>
@@ -179,7 +179,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>When the sequencer arbitration mode is set to UVM_SEQ_ARB_USER (via the <a href="#uvm_sequencer_base.set_arbitration" class=LMethod id=link30 onMouseOver="ShowTip(event, 'tt9', 'link30')" onMouseOut="HideTip('tt9')">set_arbitration</a> method), the sequencer will call this function each time that it needs to arbitrate among sequences.</p><p>Derived sequencers may override this method to perform a custom arbitration policy.&nbsp; The override must return one of the entries from the avail_sequences queue, which are indexes into an internal queue, arb_sequence_q.&nbsp; The</p><p>The default implementation behaves like UVM_SEQ_ARB_FIFO, which returns the entry at avail_sequences[0].</p></div></div></div>
+<div class=CBody><p>When the sequencer arbitration mode is set to UVM_SEQ_ARB_USER (via the <a href="#uvm_sequencer_base.set_arbitration" class=LMethod id=link30 onMouseOver="ShowTip(event, 'tt9', 'link30')" onMouseOut="HideTip('tt9')">set_arbitration</a> method), the sequencer will call this function each time that it needs to arbitrate among sequences.</p><p>Derived sequencers may override this method to perform a custom arbitration policy.&nbsp; The override must return one of the entries from the avail_sequences queue, which are indexes into an internal queue, arb_sequence_q.</p><p>The default implementation behaves like UVM_SEQ_ARB_FIFO, which returns the entry at avail_sequences[0].</p></div></div></div>
 
 
 
@@ -211,11 +211,11 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Start the default sequence for this phase, if any.&nbsp; The default sequence is configured via resources using either a sequence instance or sequence type (object wrapper).&nbsp; If both are used, the sequence instance takes precedence.&nbsp; When attempting to override a previous default sequence setting, you must override both the instance and type (wrapper) reources, else your override may not take effect.</p><p>When setting the resource using <i>set</i>, the 1st argument specifies the context pointer, usually &ldquo;this&rdquo; for components or &ldquo;null&rdquo; when executed from outside the component hierarchy (i.e. in module).&nbsp; The 2nd argument is the instance string, which is a path name to the target sequencer, relative to the context pointer.&nbsp;  The path must include the name of the phase with a &ldquo;_phase&rdquo; suffix.&nbsp; The 3rd argument is the resource name, which is &ldquo;default_sequence&rdquo;.&nbsp; The 4th argument is either an object wrapper for the sequence type, or an instance of a sequence.</p><p>Configuration by instances allows pre-initialization, setting rand_mode, use of inline constraints, etc.</p><blockquote><pre>myseq_t myseq = new(&quot;myseq&quot;);
+<div class=CBody><p>Start the default sequence for this phase, if any.&nbsp; The default sequence is configured via resources using either a sequence instance or sequence type (object wrapper).&nbsp; If both are used, the sequence instance takes precedence.&nbsp; When attempting to override a previous default sequence setting, you must override both the instance and type (wrapper) resources, else your override may not take effect.</p><p>When setting the resource using <i>set</i>, the 1st argument specifies the context pointer, usually <i>this</i> for components or <i>null</i> when executed from outside the component hierarchy (i.e. in module).&nbsp; The 2nd argument is the instance string, which is a path name to the target sequencer, relative to the context pointer.&nbsp;  The path must include the name of the phase with a &ldquo;_phase&rdquo; suffix.&nbsp; The 3rd argument is the resource name, which is &ldquo;default_sequence&rdquo;.&nbsp; The 4th argument is either an object wrapper for the sequence type, or an instance of a sequence.</p><p>Configuration by instances allows pre-initialization, setting rand_mode, use of inline constraints, etc.</p><blockquote><pre>myseq_t myseq = new(&quot;myseq&quot;);
 myseq.randomize() with { ... };
 uvm_config_db #(uvm_sequence_base)::set(null, &quot;top.agent.myseqr.main_phase&quot;,
                                         &quot;default_sequence&quot;,
-                                        myseq);</pre></blockquote><p>Configuration by type is shorter and can be substituted via the the factory.</p><blockquote><pre>uvm_config_db #(uvm_object_wrapper)::set(null, &quot;top.agent.myseqr.main_phase&quot;,
+                                        myseq);</pre></blockquote><p>Configuration by type is shorter and can be substituted via the factory.</p><blockquote><pre>uvm_config_db #(uvm_object_wrapper)::set(null, &quot;top.agent.myseqr.main_phase&quot;,
                                          &quot;default_sequence&quot;,
                                          myseq_type::type_id::get());</pre></blockquote><p>The uvm_resource_db can similarly be used.</p><blockquote><pre>myseq_t myseq = new(&quot;myseq&quot;);
 myseq.randomize() with { ... };
@@ -316,7 +316,7 @@ uvm_resource_db #(uvm_sequence_base)::set({get_full_name(), &quot;.myseqr.main_p
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Returns 1 if the sequence refered to in the parameter currently has a lock on this sequencer, 0 otherwise.</p><p>Note that even if this sequence has a lock, a child sequence may also have a lock, in which case the sequence is still blocked from issueing operations on the sequencer</p></div></div></div>
+<div class=CBody><p>Returns 1 if the sequence referred to in the parameter currently has a lock on this sequencer, 0 otherwise.</p><p>Note that even if this sequence has a lock, a child sequence may also have a lock, in which case the sequence is still blocked from issuing operations on the sequencer</p></div></div></div>
 
 
 
@@ -428,7 +428,7 @@ uvm_resource_db #(uvm_sequence_base)::set({get_full_name(), &quot;.myseqr.main_p
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Specifies the arbitration mode for the sequencer.&nbsp; It is one of</p><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>UVM_SEQ_ARB_FIFO</td><td class=CDLDescription>Requests are granted in FIFO order (default)</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_WEIGHTED</td><td class=CDLDescription>Requests are granted randomly by weight</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_RANDOM</td><td class=CDLDescription>Requests are granted randomly</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_STRICT_FIFO</td><td class=CDLDescription>Requests at highest priority granted in fifo order</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_STRICT_RANDOM</td><td class=CDLDescription>Requests at highest priority granted in randomly</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_USER</td><td class=CDLDescription>Arbitration is delegated to the user-defined function, user_priority_arbitration.&nbsp; That function will specify the next sequence to grant.</td></tr></table><p>The default user function specifies FIFO order.</p></div></div></div>
+<div class=CBody><p>Specifies the arbitration mode for the sequencer.&nbsp; It is one of</p><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>UVM_SEQ_ARB_FIFO</td><td class=CDLDescription>Requests are granted in FIFO order (default)</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_WEIGHTED</td><td class=CDLDescription>Requests are granted randomly by weight</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_RANDOM</td><td class=CDLDescription>Requests are granted randomly</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_STRICT_FIFO</td><td class=CDLDescription>Requests at highest priority granted in FIFO order</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_STRICT_RANDOM</td><td class=CDLDescription>Requests at highest priority granted in randomly</td></tr><tr><td class=CDLEntry>UVM_SEQ_ARB_USER</td><td class=CDLDescription>Arbitration is delegated to the user-defined function, user_priority_arbitration.&nbsp; That function will specify the next sequence to grant.</td></tr></table><p>The default user function specifies FIFO order.</p></div></div></div>
 
 
 
@@ -629,7 +629,7 @@ Returns 1 if the sequence referred to by sequence_ptr is currently locked out of
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Returns 1 if the sequence refered to in the parameter currently has a lock on this sequencer, 0 otherwise.</div></div><div class=CToolTip id="tt17"><div class=CMethod>
+Returns 1 if the sequence referred to in the parameter currently has a lock on this sequencer, 0 otherwise.</div></div><div class=CToolTip id="tt17"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=3>virtual task lock(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_sequence_base&nbsp;</td>

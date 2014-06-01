@@ -47,7 +47,7 @@
 // Registers that contain fields with unknown access policies
 // cannot be tested.
 //
-// The DUT should be idle and not modify any register durign this test.
+// The DUT should be idle and not modify any register during this test.
 //
 //------------------------------------------------------------------------------
 
@@ -247,7 +247,7 @@ class uvm_reg_bit_bash_seq extends uvm_reg_sequence #(uvm_sequence #(uvm_reg_ite
 
    // Task: do_block
    //
-   // Test all of the registers in a a given ~block~
+   // Test all of the registers in a given ~block~
    //
    protected virtual task do_block(uvm_reg_block blk);
       uvm_reg regs[$];

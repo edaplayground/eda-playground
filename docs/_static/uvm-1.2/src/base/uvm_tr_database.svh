@@ -74,7 +74,7 @@ virtual class uvm_tr_database extends uvm_object;
    // Open the backend connection to the database.
    //
    // If the database is already open, then this
-   // method will return '1'.
+   // method will return 1.
    //
    // Otherwise, the method will call <do_open_db>,
    // and return the result.
@@ -91,7 +91,7 @@ virtual class uvm_tr_database extends uvm_object;
    // frees all <uvm_tr_streams> within the database.
    //
    // If the database is already closed, then this
-   // method will return '1'.
+   // method will return 1.
    // 
    // Otherwise, this method will trigger a <do_close_db>
    // call, and return the result.
@@ -106,7 +106,7 @@ virtual class uvm_tr_database extends uvm_object;
    // Function: is_open
    // Returns the open/closed status of the database.
    //
-   // This method returns '1' if the database has been
+   // This method returns 1 if the database has been
    // successfully opened, but not yet closed.
    //
    function bit is_open();
@@ -199,7 +199,7 @@ virtual class uvm_tr_database extends uvm_object;
    // Establishes a ~link~ between two elements in the database
    //
    // Links are only supported between ~streams~ and ~records~
-   // wihin a single database.
+   // within a single database.
    //
    // This method will trigger a <do_establish_link> call.
    function void establish_link(uvm_link_base link);
@@ -327,7 +327,7 @@ class uvm_text_tr_database extends uvm_tr_database;
    // The text-backend will open a text file to dump all records in to.  The name
    // of this text file is controlled via <set_file_name>.
    //
-   // This will also lock the ~file_name~, so that it can not be
+   // This will also lock the ~file_name~, so that it cannot be
    // modified while the connection is open.
    protected virtual function bit do_open_db();
       if (m_file == 0) begin

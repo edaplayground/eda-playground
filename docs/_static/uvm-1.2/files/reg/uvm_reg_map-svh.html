@@ -211,10 +211,10 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_reg_map.do_read" id=link43 onMouseOver="ShowTip(event, 'tt40', 'link43')" onMouseOut="HideTip('tt40')">do_read</a></td><td class=SDescription>Perform a read operation.</td></tr>
   <!-- index=45 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_reg_map.set_transaction_order_policy" id=link44 onMouseOver="ShowTip(event, 'tt41', 'link44')" onMouseOut="HideTip('tt41')">set_transaction_order_policy</a></td><td class=SDescription>set the transacton order policy</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_reg_map.set_transaction_order_policy" id=link44 onMouseOver="ShowTip(event, 'tt41', 'link44')" onMouseOut="HideTip('tt41')">set_transaction_order_policy</a></td><td class=SDescription>set the transaction order policy</td></tr>
   <!-- index=46 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_reg_map.get_transaction_order_policy" id=link45 onMouseOver="ShowTip(event, 'tt42', 'link45')" onMouseOut="HideTip('tt42')">get_transaction_order_policy</a></td><td class=SDescription>set the transacton order policy</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_reg_map.get_transaction_order_policy" id=link45 onMouseOver="ShowTip(event, 'tt42', 'link45')" onMouseOut="HideTip('tt42')">get_transaction_order_policy</a></td><td class=SDescription>set the transaction order policy</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -354,7 +354,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Add a memory</p><p>Add the specified memory instance to this address map.&nbsp; The memory is located at the specified base address and has the specified access rights (&ldquo;RW&rdquo;, &ldquo;RO&rdquo; or &ldquo;WO&rdquo;).&nbsp; The number of consecutive physical addresses occupied by the memory depends on the width and size of the memory and the number of bytes in the physical interface corresponding to this address map.</p><p>If <i>unmapped</i> is TRUE, the memory does not occupy any physical addresses and the base address is ignored.&nbsp; Unmapped memorys require a user-defined <i>frontdoor</i> to be specified.</p><p>A memory may be added to multiple address maps if it is accessible from multiple physical interfaces.&nbsp; A memory may only be added to an address map whose parent block is the same as the memory&rsquo;s parent block.</p></div></div></div>
+<div class=CBody><p>Add a memory</p><p>Add the specified memory instance to this address map.&nbsp; The memory is located at the specified base address and has the specified access rights (&ldquo;RW&rdquo;, &ldquo;RO&rdquo; or &ldquo;WO&rdquo;).&nbsp; The number of consecutive physical addresses occupied by the memory depends on the width and size of the memory and the number of bytes in the physical interface corresponding to this address map.</p><p>If <i>unmapped</i> is TRUE, the memory does not occupy any physical addresses and the base address is ignored.&nbsp; Unmapped memories require a user-defined <i>frontdoor</i> to be specified.</p><p>A memory may be added to multiple address maps if it is accessible from multiple physical interfaces.&nbsp; A memory may only be added to an address map whose parent block is the same as the memory&rsquo;s parent block.</p></div></div></div>
 
 
 
@@ -826,7 +826,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Sets the check-on-read mode for his map and all of its submaps.</p><p>When <i>on</i> is <i>TRUE</i>, the register model will automatically check any value read back from a register or field against the current value in its mirror and report any discrepancy.&nbsp; This effectively combines the functionality of the <a href="uvm_reg-svh.html#uvm_reg.read" class=LMethod id=link65 onMouseOver="ShowTip(event, 'tt49', 'link65')" onMouseOut="HideTip('tt49')">uvm_reg::read()</a> and <i>uvm_reg::mirror(UVM_CHECK)</i> method.&nbsp; This mode is useful when the register model is used passively.</p><p>When <i>on</i> is <i>FALSE</i>, no check is made against the mirrored value.</p><p>At the end of the read operation, the mirror value is updated based on the value that was read reguardless of this mode setting.</p><p>By default, auto-prediction is turned off.</p></div></div></div>
+<div class=CBody><p>Sets the check-on-read mode for his map and all of its submaps.</p><p>When <i>on</i> is <i>TRUE</i>, the register model will automatically check any value read back from a register or field against the current value in its mirror and report any discrepancy.&nbsp; This effectively combines the functionality of the <a href="uvm_reg-svh.html#uvm_reg.read" class=LMethod id=link65 onMouseOver="ShowTip(event, 'tt49', 'link65')" onMouseOut="HideTip('tt49')">uvm_reg::read()</a> and &lt;uvm_reg::mirror(UVM_CHECK)&gt; method.&nbsp; This mode is useful when the register model is used passively.</p><p>When <i>on</i> is <i>FALSE</i>, no check is made against the mirrored value.</p><p>At the end of the read operation, the mirror value is updated based on the value that was read regardless of this mode setting.</p><p>By default, auto-prediction is turned off.</p></div></div></div>
 
 
 
@@ -922,7 +922,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>set the transacton order policy</p></div></div></div>
+<div class=CBody><p>set the transaction order policy</p></div></div></div>
 
 
 
@@ -930,7 +930,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=46 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_reg_map.get_transaction_order_policy" href="../../src/reg/uvm_reg_map.svh">get_transaction_order_policy</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function uvm_reg_transaction_order_policy get_transaction_order_policy()
-  </td></tr></table></blockquote><div class=CBody><p>set the transacton order policy</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>set the transaction order policy</p></div></div></div>
 
 </div><!--Content-->
 
@@ -1400,9 +1400,9 @@ Perform a read operation.</div></div><div class=CToolTip id="tt41"><div class=CM
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-set the transacton order policy</div></div><div class=CToolTip id="tt42"><div class=CMethod>
+set the transaction order policy</div></div><div class=CToolTip id="tt42"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function uvm_reg_transaction_order_policy get_transaction_order_policy()
-  </td></tr></table></blockquote>set the transacton order policy</div></div><div class=CToolTip id="tt43"><div class=CMethod>
+  </td></tr></table></blockquote>set the transaction order policy</div></div><div class=CToolTip id="tt43"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=6>virtual function uvm_reg_map create_map(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PTypePrefix nowrap></td>

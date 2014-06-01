@@ -18,7 +18,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=0 -->
-<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_comparer" href="../../src/base/uvm_comparer.svh">uvm_comparer</a></h1><div class=CBody><p>The uvm_comparer class provides a policy object for doing comparisons.&nbsp; The policies determine how miscompares are treated and counted.&nbsp; Results of a comparison are stored in the comparer object.&nbsp; The <a href="uvm_object-svh.html#uvm_object.compare" class=LMethod id=link22 onMouseOver="ShowTip(event, 'tt18', 'link22')" onMouseOut="HideTip('tt18')">uvm_object::compare</a> and <a href="uvm_object-svh.html#uvm_object.do_compare" class=LMethod id=link23 onMouseOver="ShowTip(event, 'tt19', 'link23')" onMouseOut="HideTip('tt19')">uvm_object::do_compare</a> methods are passed an uvm_comparer policy object.</p>
+<div class="CClass"><div class=CTopic id=MainTopic><h1 class=CTitle><a name="uvm_comparer" href="../../src/base/uvm_comparer.svh">uvm_comparer</a></h1><div class=CBody><p>The uvm_comparer class provides a policy object for doing comparisons.&nbsp; The policies determine how miscompares are treated and counted.&nbsp; Results of a comparison are stored in the comparer object.&nbsp; The <a href="uvm_object-svh.html#uvm_object.compare" class=LMethod id=link22 onMouseOver="ShowTip(event, 'tt18', 'link22')" onMouseOut="HideTip('tt18')">uvm_object::compare</a> and <a href="uvm_object-svh.html#uvm_object.do_compare" class=LMethod id=link23 onMouseOver="ShowTip(event, 'tt19', 'link23')" onMouseOut="HideTip('tt19')">uvm_object::do_compare</a> methods are passed a uvm_comparer policy object.</p>
 
 <!--START_ND_SUMMARY index=0-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
@@ -40,7 +40,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_comparer.policy" id=link2 onMouseOver="ShowTip(event, 'tt2', 'link2')" onMouseOut="HideTip('tt2')">policy</a></td><td class=SDescription>Determines whether comparison is UVM_DEEP, UVM_REFERENCE, or UVM_SHALLOW.</td></tr>
   <!-- index=3 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_comparer.show_max" id=link3 onMouseOver="ShowTip(event, 'tt3', 'link3')" onMouseOut="HideTip('tt3')">show_max</a></td><td class=SDescription>Sets the maximum number of messages to send to the messager for miscompares of an object.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_comparer.show_max" id=link3 onMouseOver="ShowTip(event, 'tt3', 'link3')" onMouseOut="HideTip('tt3')">show_max</a></td><td class=SDescription>Sets the maximum number of messages to send to the printer for miscompares of an object.</td></tr>
   <!-- index=4 -->
 
 <tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_comparer.verbosity" id=link4 onMouseOver="ShowTip(event, 'tt4', 'link4')" onMouseOut="HideTip('tt4')">verbosity</a></td><td class=SDescription>Sets the verbosity for printed messages.</td></tr>
@@ -105,7 +105,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=3 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_comparer.show_max" href="../../src/base/uvm_comparer.svh">show_max</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int unsigned show_max = 1
-  </td></tr></table></blockquote><div class=CBody><p>Sets the maximum number of messages to send to the messager for miscompares of an object.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Sets the maximum number of messages to send to the printer for miscompares of an object.</p></div></div></div>
 
 
 
@@ -324,7 +324,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_recursion_policy_enum policy = UVM_DEFAULT_POLICY
   </td></tr></table></blockquote>Determines whether comparison is UVM_DEEP, UVM_REFERENCE, or UVM_SHALLOW.</div></div><div class=CToolTip id="tt3"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int unsigned show_max = 1
-  </td></tr></table></blockquote>Sets the maximum number of messages to send to the messager for miscompares of an object.</div></div><div class=CToolTip id="tt4"><div class=CVariable>
+  </td></tr></table></blockquote>Sets the maximum number of messages to send to the printer for miscompares of an object.</div></div><div class=CToolTip id="tt4"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int unsigned verbosity = UVM_LOW
   </td></tr></table></blockquote>Sets the verbosity for printed messages.</div></div><div class=CToolTip id="tt5"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_severity sev = UVM_INFO
@@ -464,7 +464,7 @@ Causes the error count to be incremented and the message, <i>msg</i>, to be appe
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Deep compares members of this data object with those of the object provided in the <i>rhs</i> (right-hand side) argument, returning 1 on a match, 0 othewise.</div></div><div class=CToolTip id="tt19"><div class=CMethod>
+Deep compares members of this data object with those of the object provided in the <i>rhs</i> (right-hand side) argument, returning 1 on a match, 0 otherwise.</div></div><div class=CToolTip id="tt19"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=3>virtual function bit do_compare (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
@@ -476,7 +476,7 @@ Deep compares members of this data object with those of the object provided in t
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The do_compare method is the user-definable hook called by the compare method. </div></div><!--END_ND_TOOLTIPS-->
+The <i>do_compare</i> method is the user-definable hook called by the compare method. </div></div><!--END_ND_TOOLTIPS-->
 
 <script language=JavaScript><!--
 if (browserType) {if (browserVer) {document.write("</div>"); }document.write("</div>");}// --></script></body></html>

@@ -109,7 +109,7 @@ class uvm_sequence_library #(type REQ=uvm_sequence_item,RSP=REQ) extends uvm_seq
    //|                                    UVM_SEQ_LIB_RANDC);
    //
    // Alternatively, you may create an instance of the sequence library
-   // apriori, initialize all its parameters, randomize it, then set it
+   // a priori, initialize all its parameters, randomize it, then set it
    // to run as-is on the sequencer. 
    //
    //| main_seq_lib my_seq_lib;
@@ -288,7 +288,7 @@ class uvm_sequence_library #(type REQ=uvm_sequence_item,RSP=REQ) extends uvm_seq
    // Removes the given sequence type from this sequence library
    // instance. If the type was registered statically, the sequence queues of
    // all instances of this library will be updated accordingly.
-   // A warning is issued if te sequence is not registered.
+   // A warning is issued if the sequence is not registered.
    //
    extern virtual function void remove_sequence(uvm_object_wrapper seq_type);
 

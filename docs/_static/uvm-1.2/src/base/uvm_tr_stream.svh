@@ -307,11 +307,11 @@ virtual class uvm_tr_stream extends uvm_object;
    // open_time - Optional time to record as the opening of this transaction
    // type_name - Optional type name for the transaction
    //
-   // If ~open_time~ is omitted (or set to '0'), then the stream will use
+   // If ~open_time~ is omitted (or set to 0), then the stream will use
    // the current time.
    //
    // This method will trigger a <do_open_recorder> call.  If ~do_open_recorder~
-   // returns a non-null value, then the <uvm_recorder::do_open> method will
+   // returns a non-~null~ value, then the <uvm_recorder::do_open> method will
    // be called in the recorder.
    //
    // Transaction recorders can only be opened if the stream is
@@ -360,7 +360,7 @@ virtual class uvm_tr_stream extends uvm_object;
    // Parameters:
    // q - A reference to the queue of <uvm_recorder>s
    //
-   // The ~get_recorders~ method returns the size of the queue,
+   // The <get_recorders> method returns the size of the queue,
    // such that the user can conditionally process the elements.
    //
    // | uvm_recorder tr_q[$];

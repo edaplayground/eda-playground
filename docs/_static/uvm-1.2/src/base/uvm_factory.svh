@@ -110,9 +110,9 @@ virtual class uvm_factory;
   // create_object or create_component method to do so.
   //
   // When doing name-based operations, the factory calls the proxy's
-  // get_type_name method to match against the ~requested_type_name~ argument in
+  // ~get_type_name~ method to match against the ~requested_type_name~ argument in
   // subsequent calls to <create_component_by_name> and <create_object_by_name>.
-  // If the proxy object's get_type_name method returns the empty string,
+  // If the proxy object's ~get_type_name~ method returns the empty string,
   // name-based lookup is effectively disabled.
 
   pure virtual function void register (uvm_object_wrapper obj);
@@ -139,11 +139,11 @@ virtual class uvm_factory;
   //
   // When overriding by name, the ~original_type_name~ typically refers to a
   // preregistered type in the factory. It may, however, be any arbitrary
-  // string. Future calls to any of the create_* methods with the same string
+  // string. Future calls to any of the ~create_*~ methods with the same string
   // and matching instance path will produce the type represented by
   // ~override_type_name~, which must be preregistered with the factory.
   //
-  // The ~full_inst_path~ is matched against the contentation of
+  // The ~full_inst_path~ is matched against the concatenation of
   // {~parent_inst_path~, ".", ~name~} provided in future create requests. The
   // ~full_inst_path~ may include wildcards (* and ?) such that a single
   // instance override can be applied in multiple contexts. A ~full_inst_path~
@@ -179,7 +179,7 @@ virtual class uvm_factory;
   //
   // When overriding by name, the ~original_type_name~ typically refers to a
   // preregistered type in the factory. It may, however, be any arbitrary
-  // string. Future calls to any of the create_* methods with the same string
+  // string. Future calls to any of the ~create_*~ methods with the same string
   // and matching instance path will produce the type represented by
   // ~override_type_name~, which must be preregistered with the factory.
   //
@@ -229,7 +229,7 @@ virtual class uvm_factory;
   // When requesting by name, the ~request_type_name~ is a string representing
   // the requested type, which must have been registered with the factory with
   // that name prior to the request. If the factory does not recognize the
-  // ~requested_type_name~, an error is produced and a null handle returned.
+  // ~requested_type_name~, an error is produced and a ~null~ handle returned.
   //
   // If the optional ~parent_inst_path~ is provided, then the concatenation,
   // {~parent_inst_path~, ".",~name~}, forms an instance path (context) that
@@ -269,11 +269,11 @@ virtual class uvm_factory;
 
   // Function: debug_create_by_name
   //
-  // These methods perform the same search algorithm as the create_* methods,
+  // These methods perform the same search algorithm as the ~create_*~ methods,
   // but they do not create new objects. Instead, they provide detailed
   // information about what type of object it would return, listing each
   // override that was applied to arrive at the result. Interpretation of the
-  // arguments are exactly as with the create_* methods.
+  // arguments are exactly as with the ~create_*~ methods.
 
   pure virtual function
       void debug_create_by_name (string requested_type_name,
@@ -423,7 +423,7 @@ class uvm_default_factory extends uvm_factory;
 
   // Function: debug_create_by_name
   //
-  // These methods perform the same search algorithm as the create_* methods,
+  // These methods perform the same search algorithm as the ~create_*~ methods,
   // but they do not create new objects. 
   extern virtual function
       void debug_create_by_name (string requested_type_name,
@@ -552,10 +552,10 @@ endclass
 // The `uvm_*_param_utils macros for parameterized classes differ from
 // `uvm_*_utils classes in the following ways:
 //
-// - The get_type_name method and static type_name variable are not defined. You
+// - The <get_type_name> method and static type_name variable are not defined. You
 //   will need to implement these manually.
 //
-// - A type name is not associated with the type when registeriing with the
+// - A type name is not associated with the type when registering with the
 //   factory, so the factory's *_by_name operations will not work with
 //   parameterized classes.
 //
@@ -677,7 +677,7 @@ endclass
 //|
 //|  endclass
 //
-// Finally we define an environment class, also not parameterized. Its build
+// Finally we define an environment class, also not parameterized. Its <build_phase>
 // method shows three methods for setting an instance override on a grandchild
 // component with relative path name, ~agent1.driver1~, all equivalent.
 //

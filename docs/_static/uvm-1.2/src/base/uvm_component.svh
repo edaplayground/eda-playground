@@ -61,14 +61,14 @@ virtual class uvm_component extends uvm_report_object;
 
   // Function: new
   //
-  // Creates a new component with the given leaf instance ~name~ and handle to
+  // Creates a new component with the given leaf instance ~name~ and handle
   // to its ~parent~.  If the component is a top-level component (i.e. it is
-  // created in a static module or interface), ~parent~ should be null.
+  // created in a static module or interface), ~parent~ should be ~null~.
   //
   // The component will be inserted as a child of the ~parent~ object, if any.
   // If ~parent~ already has a child by the given ~name~, an error is produced.
   //
-  // If ~parent~ is null, then the component will become a child of the
+  // If ~parent~ is ~null~, then the component will become a child of the
   // implicit top-level component, ~uvm_top~.
   //
   // All classes derived from uvm_component must call super.new(name,parent).
@@ -87,7 +87,7 @@ virtual class uvm_component extends uvm_report_object;
 
   // Function: get_parent
   //
-  // Returns a handle to this component's parent, or null if it has no parent.
+  // Returns a handle to this component's parent, or ~null~ if it has no parent.
 
   extern virtual function uvm_component get_parent ();
 
@@ -164,7 +164,7 @@ virtual class uvm_component extends uvm_report_object;
   // Looks for a component with the given hierarchical ~name~ relative to this
   // component. If the given ~name~ is preceded with a '.' (dot), then the search
   // begins relative to the top level (absolute lookup). The handle of the
-  // matching component is returned, else null. The name must not contain
+  // matching component is returned, else ~null~. The name must not contain
   // wildcards.
 
   extern function uvm_component lookup (string name);
@@ -201,7 +201,7 @@ virtual class uvm_component extends uvm_report_object;
   // The <uvm_build_phase> phase implementation method.
   //
   // Any override should call super.build_phase(phase) to execute the automatic
-  // configuration of fields registed in the component by calling 
+  // configuration of fields registered in the component by calling 
   // <apply_config_settings>.
   // To turn off automatic configuration for a component, 
   // do not call super.build_phase(phase).
@@ -210,7 +210,7 @@ virtual class uvm_component extends uvm_report_object;
 
   extern virtual function void build_phase(uvm_phase phase);
 
-  // For backward compatibility the base build_phase method calls build.
+  // For backward compatibility the base <build_phase> method calls <build>.
   extern virtual function void build();
 
 
@@ -233,7 +233,7 @@ virtual class uvm_component extends uvm_report_object;
 
   extern virtual function void end_of_elaboration_phase(uvm_phase phase);
 
-  // For backward compatibility the base end_of_elaboration_phase method calls end_of_elaboration.
+  // For backward compatibility the base <end_of_elaboration_phase> method calls <end_of_elaboration>.
   extern virtual function void end_of_elaboration();
 
   // Function: start_of_simulation_phase
@@ -244,7 +244,7 @@ virtual class uvm_component extends uvm_report_object;
 
   extern virtual function void start_of_simulation_phase(uvm_phase phase);
 
-  // For backward compatibility the base start_of_simulation_phase method calls start_of_simulation.
+  // For backward compatibility the base <start_of_simulation_phase> method calls <start_of_simulation>.
   extern virtual function void start_of_simulation();
 
   // Task: run_phase
@@ -253,8 +253,8 @@ virtual class uvm_component extends uvm_report_object;
   //
   // This task returning or not does not indicate the end
   // or persistence of this phase.
-  // Thn the phase will automatically
-  // ends once all objections are dropped using ~phase.drop_objection()~.
+  // Thus the phase will automatically
+  // end once all objections are dropped using ~phase.drop_objection()~.
   // 
   // Any processes forked by this task continue to run
   // after the task returns,
@@ -264,7 +264,7 @@ virtual class uvm_component extends uvm_report_object;
 
   extern virtual task run_phase(uvm_phase phase);
 
-  // For backward compatibility the base run_phase method calls run.
+  // For backward compatibility the base <run_phase> method calls <run>.
   extern virtual task run();
 
   // Task: pre_reset_phase
@@ -601,7 +601,7 @@ virtual class uvm_component extends uvm_report_object;
   // recursively to all its children. 
   //
   // Calls the virtual <define_domain> method, which derived components can
-  // override to augment or replace the domain definition of ita base class.
+  // override to augment or replace the domain definition of its base class.
   //
 
   extern function void set_domain(uvm_domain domain, int hier=1);
@@ -631,7 +631,7 @@ virtual class uvm_component extends uvm_report_object;
   // is currently empty.
   //
   // Calling <set_domain>
-  // with the default ~uvm~ domain (ie. <uvm_domain::get_uvm_domain> ) on
+  // with the default ~uvm~ domain (i.e. <uvm_domain::get_uvm_domain> ) on
   // a component with no ~define_domain~ override effectively reverts the
   // that component to using the default ~uvm~ domain. This may be useful
   // if a branch of the testbench hierarchy defines a custom domain, but
@@ -837,7 +837,7 @@ virtual class uvm_component extends uvm_report_object;
   // - For set_config_string, ~value~ is a string.
   //
   // - For set_config_object, ~value~ must be an <uvm_object>-based object or
-  //   null.  Its clone argument specifies whether the object should be cloned.
+  //   ~null~.  Its clone argument specifies whether the object should be cloned.
   //   If set, the object is cloned both going into the table (during the set)
   //   and coming out of the table (during the get), so that multiple components
   //   matched to the same setting (by way of wildcards) do not end up sharing
@@ -884,7 +884,7 @@ virtual class uvm_component extends uvm_report_object;
   // is found, then ~value~ is unchanged and the 0 returned.
   //
   // Calling the get_config_object method requires special handling. Because
-  // ~value~ is an output of type <uvm_object>, you must provide an uvm_object
+  // ~value~ is an output of type <uvm_object>, you must provide a uvm_object
   // handle to assign to (_not_ a derived class handle). After the call, you can
   // then $cast to the actual type.
   //
@@ -963,20 +963,20 @@ virtual class uvm_component extends uvm_report_object;
   // applied. If the component's <print_config_matches> property is set, then
   // apply_config_settings is automatically called with ~verbose~ = 1.
 
-  extern virtual function void apply_config_settings (bit verbose=0);
+  extern virtual function void apply_config_settings (bit verbose = 0);
 
 
   // Function: print_config_settings
   //
   // Called without arguments, print_config_settings prints all configuration
-  // information for this component, as set by previous calls to uvm_config_db#(T)::set().
+  // information for this component, as set by previous calls to <uvm_config_db#(T)::set()>.
   // The settings are printing in the order of their precedence.
   // 
   // If ~field~ is specified and non-empty, then only configuration settings
   // matching that field, if any, are printed. The field may not contain
   // wildcards. 
   //
-  // If ~comp~ is specified and non-null, then the configuration for that
+  // If ~comp~ is specified and non-~null~, then the configuration for that
   // component is printed.
   //
   // If ~recurse~ is set, then configuration information for all ~comp~'s
@@ -991,7 +991,7 @@ virtual class uvm_component extends uvm_report_object;
   // Function: print_config
   //
   // Print_config_settings prints all configuration information for this
-  // component, as set by previous calls to uvm_config_db#(T)::set() and exports to
+  // component, as set by previous calls to <uvm_config_db#(T)::set()> and exports to
   // the resources pool.  The settings are printing in the order of
   // their precedence.
   //
@@ -1035,7 +1035,7 @@ virtual class uvm_component extends uvm_report_object;
   // Function: raised
   //
   // The ~raised~ callback is called when this or a descendant of this component
-  // instance raises the specfied ~objection~. The ~source_obj~ is the object
+  // instance raises the specified ~objection~. The ~source_obj~ is the object
   // that originally raised the objection. 
   // The ~description~ is optionally provided by the ~source_obj~ to give a
   // reason for raising the objection. The ~count~ indicates the number of
@@ -1049,11 +1049,11 @@ virtual class uvm_component extends uvm_report_object;
   // Function: dropped
   //
   // The ~dropped~ callback is called when this or a descendant of this component
-  // instance drops the specfied ~objection~. The ~source_obj~ is the object
+  // instance drops the specified ~objection~. The ~source_obj~ is the object
   // that originally dropped the objection. 
   // The ~description~ is optionally provided by the ~source_obj~ to give a
   // reason for dropping the objection. The ~count~ indicates the number of
-  // objections dropped by the the ~source_obj~.
+  // objections dropped by the ~source_obj~.
 
   virtual function void dropped (uvm_objection objection, uvm_object source_obj, 
       string description, int count);
@@ -1067,7 +1067,7 @@ virtual class uvm_component extends uvm_report_object;
   // object that dropped the last objection.
   // The ~description~ is optionally provided by the ~source_obj~ to give a
   // reason for raising the objection. The ~count~ indicates the number of
-  // objections dropped by the the ~source_obj~.
+  // objections dropped by the ~source_obj~.
 
   virtual task all_dropped (uvm_objection objection, uvm_object source_obj, 
       string description, int count);
@@ -1282,9 +1282,9 @@ virtual class uvm_component extends uvm_report_object;
   // Function: set_report_severity_id_verbosity_hier
   //
   // These methods recursively associate the specified verbosity with reports of
-  // the given ~severity~, ~id~, or ~severity-id~ pair. An verbosity associated
-  // with a particular severity-id pair takes precedence over an verbosity
-  // associated with id, which takes precedence over an an verbosity associated
+  // the given ~severity~, ~id~, or ~severity-id~ pair. A verbosity associated
+  // with a particular severity-id pair takes precedence over a verbosity
+  // associated with id, which takes precedence over a verbosity associated
   // with a severity.
   //
   // For a list of severities and their default verbosities, refer to
@@ -1311,7 +1311,7 @@ virtual class uvm_component extends uvm_report_object;
   // These methods recursively associate the specified action with reports of
   // the given ~severity~, ~id~, or ~severity-id~ pair. An action associated
   // with a particular severity-id pair takes precedence over an action
-  // associated with id, which takes precedence over an an action associated
+  // associated with id, which takes precedence over an action associated
   // with a severity.
   //
   // For a list of severities and their default actions, refer to
@@ -1410,7 +1410,7 @@ virtual class uvm_component extends uvm_report_object;
   // - Triggers the component's internal accept_tr event. Any processes waiting
   //   on this event will resume in the next delta cycle. 
 
-  extern function void accept_tr (uvm_transaction tr, time accept_time=0);
+  extern function void accept_tr (uvm_transaction tr, time accept_time = 0);
 
 
   // Function: do_accept_tr
@@ -3058,7 +3058,7 @@ function void uvm_component::set_config_object(string inst_name,
       uvm_component comp;
       if ($cast(comp,value)) begin
         `uvm_error("INVCLNC", {"Clone failed during set_config_object ",
-          "with an object that is an uvm_component. Components cannot be cloned."})
+          "with an object that is a uvm_component. Components cannot be cloned."})
         return;
       end
       else begin

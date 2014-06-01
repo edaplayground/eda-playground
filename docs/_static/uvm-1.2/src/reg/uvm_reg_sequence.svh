@@ -44,7 +44,7 @@
 //   delegation methods in this class. 
 //
 // - When used as a translation sequence, objects of this class are
-//   executed directly on a bus sequencerwhich are used in support of a layered sequencer
+//   executed directly on a bus sequencer which are used in support of a layered sequencer
 //   use model, a pre-defined convert-and-execute algorithm is provided.
 //
 // Register operations do not require extending this class if none of the above
@@ -530,7 +530,7 @@ virtual class uvm_reg_frontdoor extends uvm_reg_sequence #(uvm_sequence #(uvm_se
 
    // Function: new
    //
-   // Constructor, new object givne optional ~name~.
+   // Constructor, new object given optional ~name~.
    //
    function new(string name="");
       super.new(name);

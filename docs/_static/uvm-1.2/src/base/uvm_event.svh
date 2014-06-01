@@ -63,7 +63,7 @@ virtual class uvm_event_base extends uvm_object;
 	// Once an event has been triggered, it will be remain "on" until the event
 	// is <reset>.
 
-	virtual task wait_on (bit delta=0);
+	virtual task wait_on (bit delta = 0);
 		if (on) begin
 			if (delta)
 				#0;
@@ -84,7 +84,7 @@ virtual class uvm_event_base extends uvm_object;
 	// before returning. This prevents the caller from returning before
 	// previously waiting processes have had a chance to resume.
 
-	virtual task wait_off (bit delta=0);
+	virtual task wait_off (bit delta = 0);
 		if (!on) begin
 			if (delta)
 				#0;
@@ -169,7 +169,7 @@ virtual class uvm_event_base extends uvm_object;
 	//
 	// No callbacks are called during a reset.
 
-	virtual function void reset (bit wakeup=0);
+	virtual function void reset (bit wakeup = 0);
 		event e;
 		if (wakeup)
 			->m_event;

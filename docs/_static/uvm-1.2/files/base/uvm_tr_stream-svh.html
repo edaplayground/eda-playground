@@ -247,7 +247,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Marks the opening of a new transaction recorder on the stream.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>A name for the new transaction</td></tr><tr><td class=CDLEntry>open_time</td><td class=CDLDescription>Optional time to record as the opening of this transaction</td></tr><tr><td class=CDLEntry>type_name</td><td class=CDLDescription>Optional type name for the transaction</td></tr></table><p>If <i>open_time</i> is omitted (or set to &lsquo;0&rsquo;), then the stream will use the current time.</p><p>This method will trigger a <a href="#uvm_tr_stream.do_open_recorder" class=LMethod id=link40 onMouseOver="ShowTip(event, 'tt23', 'link40')" onMouseOut="HideTip('tt23')">do_open_recorder</a> call.&nbsp;  If <i>do_open_recorder</i> returns a non-null value, then the <a href="uvm_recorder-svh.html#uvm_recorder.do_open" class=LMethod id=link41 onMouseOver="ShowTip(event, 'tt26', 'link41')" onMouseOut="HideTip('tt26')">uvm_recorder::do_open</a> method will be called in the recorder.</p><p>Transaction recorders can only be opened if the stream is <i>open</i> on the database (per <a href="#uvm_tr_stream.is_open" class=LMethod id=link42 onMouseOver="ShowTip(event, 'tt14', 'link42')" onMouseOut="HideTip('tt14')">is_open</a>).&nbsp;  Otherwise the request will be ignored, and <i>null</i> will be returned.</p></div></div></div>
+<div class=CBody><p>Marks the opening of a new transaction recorder on the stream.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>name</td><td class=CDLDescription>A name for the new transaction</td></tr><tr><td class=CDLEntry>open_time</td><td class=CDLDescription>Optional time to record as the opening of this transaction</td></tr><tr><td class=CDLEntry>type_name</td><td class=CDLDescription>Optional type name for the transaction</td></tr></table><p>If <i>open_time</i> is omitted (or set to 0), then the stream will use the current time.</p><p>This method will trigger a <a href="#uvm_tr_stream.do_open_recorder" class=LMethod id=link40 onMouseOver="ShowTip(event, 'tt23', 'link40')" onMouseOut="HideTip('tt23')">do_open_recorder</a> call.&nbsp;  If <i>do_open_recorder</i> returns a non-<i>null</i> value, then the <a href="uvm_recorder-svh.html#uvm_recorder.do_open" class=LMethod id=link41 onMouseOver="ShowTip(event, 'tt26', 'link41')" onMouseOut="HideTip('tt26')">uvm_recorder::do_open</a> method will be called in the recorder.</p><p>Transaction recorders can only be opened if the stream is <i>open</i> on the database (per <a href="#uvm_tr_stream.is_open" class=LMethod id=link42 onMouseOver="ShowTip(event, 'tt14', 'link42')" onMouseOut="HideTip('tt14')">is_open</a>).&nbsp;  Otherwise the request will be ignored, and <i>null</i> will be returned.</p></div></div></div>
 
 
 
@@ -264,7 +264,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=4>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Provides a queue of all transactions within the stream.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>q</td><td class=CDLDescription>A reference to the queue of <a href="uvm_recorder-svh.html#uvm_recorder" class=LClass id=link43 onMouseOver="ShowTip(event, 'tt27', 'link43')" onMouseOut="HideTip('tt27')">uvm_recorder</a>s</td></tr></table><p>The <i>get_recorders</i> method returns the size of the queue, such that the user can conditionally process the elements.</p><blockquote><pre>uvm_recorder tr_q[$];
+<div class=CBody><p>Provides a queue of all transactions within the stream.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>q</td><td class=CDLDescription>A reference to the queue of <a href="uvm_recorder-svh.html#uvm_recorder" class=LClass id=link43 onMouseOver="ShowTip(event, 'tt27', 'link43')" onMouseOut="HideTip('tt27')">uvm_recorder</a>s</td></tr></table><p>The <a href="#uvm_tr_stream.get_recorders" class=LMethod id=link44 onMouseOver="ShowTip(event, 'tt17', 'link44')" onMouseOut="HideTip('tt17')">get_recorders</a> method returns the size of the queue, such that the user can conditionally process the elements.</p><blockquote><pre>uvm_recorder tr_q[$];
 if (my_stream.get_recorders(tr_q)) begin
   // Process the queue...
 end</pre></blockquote></div></div></div>
@@ -323,7 +323,7 @@ end</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Callback triggered via <a href="uvm_tr_database-svh.html#uvm_tr_database.open_stream" class=LMethod id=link44 onMouseOver="ShowTip(event, 'tt11', 'link44')" onMouseOut="HideTip('tt11')">uvm_tr_database::open_stream</a>.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>db</td><td class=CDLDescription>Database which the stream belongs to</td></tr><tr><td class=CDLEntry>scope</td><td class=CDLDescription>Optional scope</td></tr><tr><td class=CDLEntry>stream_type_name</td><td class=CDLDescription>Optional type name for the stream</td></tr></table><p>The <i>do_open</i> callback can be used to initialize any internal state within the stream, as well as providing a location to record any initial information about the stream.</p></div></div></div>
+<div class=CBody><p>Callback triggered via <a href="uvm_tr_database-svh.html#uvm_tr_database.open_stream" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt11', 'link45')" onMouseOut="HideTip('tt11')">uvm_tr_database::open_stream</a>.</p><h4 class=CHeading>Parameters</h4><table border=0 cellspacing=0 cellpadding=0 class=CDescriptionList><tr><td class=CDLEntry>db</td><td class=CDLDescription>Database which the stream belongs to</td></tr><tr><td class=CDLEntry>scope</td><td class=CDLDescription>Optional scope</td></tr><tr><td class=CDLEntry>stream_type_name</td><td class=CDLDescription>Optional type name for the stream</td></tr></table><p>The <i>do_open</i> callback can be used to initialize any internal state within the stream, as well as providing a location to record any initial information about the stream.</p></div></div></div>
 
 
 
@@ -331,7 +331,7 @@ end</pre></blockquote></div></div></div>
  <!--CONTENT index=20 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_tr_stream.do_close" href="../../src/base/uvm_tr_stream.svh">do_close</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected virtual function void do_close()
-  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.close" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt12', 'link45')" onMouseOut="HideTip('tt12')">close</a>.</p><p>The <i>do_close</i> callback can be used to set internal state within the stream, as well as providing a location to record any closing information.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.close" class=LMethod id=link46 onMouseOver="ShowTip(event, 'tt12', 'link46')" onMouseOut="HideTip('tt12')">close</a>.</p><p>The <i>do_close</i> callback can be used to set internal state within the stream, as well as providing a location to record any closing information.</p></div></div></div>
 
 
 
@@ -339,7 +339,7 @@ end</pre></blockquote></div></div></div>
  <!--CONTENT index=21 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_tr_stream.do_free" href="../../src/base/uvm_tr_stream.svh">do_free</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected virtual function void do_free()
-  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.free" class=LMethod id=link46 onMouseOver="ShowTip(event, 'tt13', 'link46')" onMouseOut="HideTip('tt13')">free</a>.</p><p>The <i>do_free</i> callback can be used to release the internal state within the stream, as well as providing a location to record any &ldquo;freeing&rdquo; information.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.free" class=LMethod id=link47 onMouseOver="ShowTip(event, 'tt13', 'link47')" onMouseOut="HideTip('tt13')">free</a>.</p><p>The <i>do_free</i> callback can be used to release the internal state within the stream, as well as providing a location to record any &ldquo;freeing&rdquo; information.</p></div></div></div>
 
 
 
@@ -359,29 +359,29 @@ end</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Marks the beginning of a new record in the stream.</p><p>Backend implementation of <a href="#uvm_tr_stream.open_recorder" class=LMethod id=link47 onMouseOver="ShowTip(event, 'tt16', 'link47')" onMouseOut="HideTip('tt16')">open_recorder</a></p></div></div></div>
+<div class=CBody><p>Marks the beginning of a new record in the stream.</p><p>Backend implementation of <a href="#uvm_tr_stream.open_recorder" class=LMethod id=link48 onMouseOver="ShowTip(event, 'tt16', 'link48')" onMouseOut="HideTip('tt16')">open_recorder</a></p></div></div></div>
 
 
 
 
  <!--CONTENT index=23 -->
-<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_text_tr_stream" href="../../src/base/uvm_tr_stream.svh">uvm_text_tr_stream</a></h2><div class=CBody><p>The <i>uvm_text_tr_stream</i> is the default stream implementation for the <a href="uvm_tr_database-svh.html#uvm_text_tr_database" class=LClass id=link61 onMouseOver="ShowTip(event, 'tt4', 'link61')" onMouseOut="HideTip('tt4')">uvm_text_tr_database</a>.</p>
+<div class="CClass"><div class=CTopic><h2 class=CTitle><a name="uvm_text_tr_stream" href="../../src/base/uvm_tr_stream.svh">uvm_text_tr_stream</a></h2><div class=CBody><p>The <i>uvm_text_tr_stream</i> is the default stream implementation for the <a href="uvm_tr_database-svh.html#uvm_text_tr_database" class=LClass id=link62 onMouseOver="ShowTip(event, 'tt4', 'link62')" onMouseOut="HideTip('tt4')">uvm_text_tr_database</a>.</p>
 
 <!--START_ND_SUMMARY index=23-->
 <div class=Summary><div class=STitle>Summary</div><div class=SBorder><table border=0 cellspacing=0 cellpadding=0 class=STable>
   <!-- index=23 -->
 
-<tr class="SClass"><td colspan=2 class=SEntry><a href="#uvm_text_tr_stream" id=link51 onMouseOver="ShowTip(event, 'tt3', 'link51')" onMouseOut="HideTip('tt3')">uvm_text_tr_stream</a></td></tr>
-<tr class=SMain><td colspan=2 class=SWideDescription>The <i>uvm_text_tr_stream</i> is the default stream implementation for the <a href="uvm_tr_database-svh.html#uvm_text_tr_database" class=LClass id=link52 onMouseOver="ShowTip(event, 'tt4', 'link52')" onMouseOut="HideTip('tt4')">uvm_text_tr_database</a>.</td></tr>
+<tr class="SClass"><td colspan=2 class=SEntry><a href="#uvm_text_tr_stream" id=link52 onMouseOver="ShowTip(event, 'tt3', 'link52')" onMouseOut="HideTip('tt3')">uvm_text_tr_stream</a></td></tr>
+<tr class=SMain><td colspan=2 class=SWideDescription>The <i>uvm_text_tr_stream</i> is the default stream implementation for the <a href="uvm_tr_database-svh.html#uvm_text_tr_database" class=LClass id=link53 onMouseOver="ShowTip(event, 'tt4', 'link53')" onMouseOut="HideTip('tt4')">uvm_text_tr_database</a>.</td></tr>
 
   <!-- HIERARCHY -->
   <tr class="SHierarchy SIndent1 "><td colspan=2 class="SEntry SIndent1">Class Hierarchy</td></tr>
   <tr class="SPrototype SIndent1"><td colspan=2 class=SDescription>
       <div class=ClassHierarchy>
         <table border=0 cellspacing=0 cellpadding=0>
-          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_misc-svh.html#uvm_void" class=LClass id=link48 onMouseOver="ShowTip(event, 'tt5', 'link48')" onMouseOut="HideTip('tt5')">uvm_void</a></div></div></td></tr>
-          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_object-svh.html#uvm_object" class=LClass id=link49 onMouseOver="ShowTip(event, 'tt6', 'link49')" onMouseOut="HideTip('tt6')">uvm_object</a></div></div></td></tr>
-          <tr><td><div class=CHParent><div class=CHEntry><a href="#uvm_tr_stream" class=LClass id=link50 onMouseOver="ShowTip(event, 'tt1', 'link50')" onMouseOut="HideTip('tt1')">uvm_tr_stream</a></div></div></td></tr>
+          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_misc-svh.html#uvm_void" class=LClass id=link49 onMouseOver="ShowTip(event, 'tt5', 'link49')" onMouseOut="HideTip('tt5')">uvm_void</a></div></div></td></tr>
+          <tr><td><div class=CHParent><div class=CHEntry><a href="uvm_object-svh.html#uvm_object" class=LClass id=link50 onMouseOver="ShowTip(event, 'tt6', 'link50')" onMouseOut="HideTip('tt6')">uvm_object</a></div></div></td></tr>
+          <tr><td><div class=CHParent><div class=CHEntry><a href="#uvm_tr_stream" class=LClass id=link51 onMouseOver="ShowTip(event, 'tt1', 'link51')" onMouseOut="HideTip('tt1')">uvm_tr_stream</a></div></div></td></tr>
           <tr><td><div class=CHCurrent><div class=CHEntry>uvm_text_tr_stream</div></div></td></tr>
         </table>
       </div>
@@ -397,22 +397,22 @@ end</pre></blockquote></div></div></div>
 
   <!-- index=24 -->
 
-<tr class="SMethod SIndent1 SMarked"><td class=SEntry><a href="#uvm_text_tr_stream.new" id=link53 onMouseOver="ShowTip(event, 'tt28', 'link53')" onMouseOut="HideTip('tt28')">new</a></td><td class=SDescription>Constructor</td></tr>
+<tr class="SMethod SIndent1 SMarked"><td class=SEntry><a href="#uvm_text_tr_stream.new" id=link54 onMouseOver="ShowTip(event, 'tt28', 'link54')" onMouseOut="HideTip('tt28')">new</a></td><td class=SDescription>Constructor</td></tr>
   <!-- index=25 -->
 
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_text_tr_stream.Implementation_Agnostic_API" >Implementation Agnostic API</a></td><td class=SDescription></td></tr>
   <!-- index=26 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_tr_stream.do_open" id=link54 onMouseOver="ShowTip(event, 'tt29', 'link54')" onMouseOut="HideTip('tt29')">do_open</a></td><td class=SDescription>Callback triggered via <a href="uvm_tr_database-svh.html#uvm_tr_database.open_stream" class=LMethod id=link55 onMouseOver="ShowTip(event, 'tt11', 'link55')" onMouseOut="HideTip('tt11')">uvm_tr_database::open_stream</a>.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_tr_stream.do_open" id=link55 onMouseOver="ShowTip(event, 'tt29', 'link55')" onMouseOut="HideTip('tt29')">do_open</a></td><td class=SDescription>Callback triggered via <a href="uvm_tr_database-svh.html#uvm_tr_database.open_stream" class=LMethod id=link56 onMouseOver="ShowTip(event, 'tt11', 'link56')" onMouseOut="HideTip('tt11')">uvm_tr_database::open_stream</a>.</td></tr>
   <!-- index=27 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_tr_stream.do_close" id=link56 onMouseOver="ShowTip(event, 'tt30', 'link56')" onMouseOut="HideTip('tt30')">do_close</a></td><td class=SDescription>Callback triggered via <a href="#uvm_tr_stream.close" class=LMethod id=link57 onMouseOver="ShowTip(event, 'tt12', 'link57')" onMouseOut="HideTip('tt12')">uvm_tr_stream::close</a>.</td></tr>
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_tr_stream.do_close" id=link57 onMouseOver="ShowTip(event, 'tt30', 'link57')" onMouseOut="HideTip('tt30')">do_close</a></td><td class=SDescription>Callback triggered via <a href="#uvm_tr_stream.close" class=LMethod id=link58 onMouseOver="ShowTip(event, 'tt12', 'link58')" onMouseOut="HideTip('tt12')">uvm_tr_stream::close</a>.</td></tr>
   <!-- index=28 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_tr_stream.do_free" id=link58 onMouseOver="ShowTip(event, 'tt31', 'link58')" onMouseOut="HideTip('tt31')">do_free</a></td><td class=SDescription>Callback triggered via <a href="#uvm_tr_stream.free" class=LMethod id=link59 onMouseOver="ShowTip(event, 'tt13', 'link59')" onMouseOut="HideTip('tt13')">uvm_tr_stream::free</a>.</td></tr>
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_text_tr_stream.do_free" id=link59 onMouseOver="ShowTip(event, 'tt31', 'link59')" onMouseOut="HideTip('tt31')">do_free</a></td><td class=SDescription>Callback triggered via <a href="#uvm_tr_stream.free" class=LMethod id=link60 onMouseOver="ShowTip(event, 'tt13', 'link60')" onMouseOut="HideTip('tt13')">uvm_tr_stream::free</a>.</td></tr>
   <!-- index=29 -->
 
-<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_tr_stream.do_open_recorder" id=link60 onMouseOver="ShowTip(event, 'tt32', 'link60')" onMouseOut="HideTip('tt32')">do_open_recorder</a></td><td class=SDescription>Marks the beginning of a new record in the stream</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_text_tr_stream.do_open_recorder" id=link61 onMouseOver="ShowTip(event, 'tt32', 'link61')" onMouseOut="HideTip('tt32')">do_open_recorder</a></td><td class=SDescription>Marks the beginning of a new record in the stream</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -457,7 +457,7 @@ end</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Callback triggered via <a href="uvm_tr_database-svh.html#uvm_tr_database.open_stream" class=LMethod id=link62 onMouseOver="ShowTip(event, 'tt11', 'link62')" onMouseOut="HideTip('tt11')">uvm_tr_database::open_stream</a>.</p></div></div></div>
+<div class=CBody><p>Callback triggered via <a href="uvm_tr_database-svh.html#uvm_tr_database.open_stream" class=LMethod id=link63 onMouseOver="ShowTip(event, 'tt11', 'link63')" onMouseOut="HideTip('tt11')">uvm_tr_database::open_stream</a>.</p></div></div></div>
 
 
 
@@ -465,7 +465,7 @@ end</pre></blockquote></div></div></div>
  <!--CONTENT index=27 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_tr_stream.do_close" href="../../src/base/uvm_tr_stream.svh">do_close</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected virtual function void do_close()
-  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.close" class=LMethod id=link63 onMouseOver="ShowTip(event, 'tt12', 'link63')" onMouseOut="HideTip('tt12')">uvm_tr_stream::close</a>.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.close" class=LMethod id=link64 onMouseOver="ShowTip(event, 'tt12', 'link64')" onMouseOut="HideTip('tt12')">uvm_tr_stream::close</a>.</p></div></div></div>
 
 
 
@@ -473,7 +473,7 @@ end</pre></blockquote></div></div></div>
  <!--CONTENT index=28 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_tr_stream.do_free" href="../../src/base/uvm_tr_stream.svh">do_free</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected virtual function void do_free()
-  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.free" class=LMethod id=link64 onMouseOver="ShowTip(event, 'tt13', 'link64')" onMouseOut="HideTip('tt13')">uvm_tr_stream::free</a>.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Callback triggered via <a href="#uvm_tr_stream.free" class=LMethod id=link65 onMouseOver="ShowTip(event, 'tt13', 'link65')" onMouseOut="HideTip('tt13')">uvm_tr_stream::free</a>.</p></div></div></div>
 
 
 

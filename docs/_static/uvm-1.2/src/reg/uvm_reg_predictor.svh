@@ -150,7 +150,7 @@ class uvm_reg_predictor #(type BUSTYPE=int) extends uvm_component;
      adapter.bus2reg(tr,rw);
      rg = map.get_reg_by_offset(rw.addr, (rw.kind == UVM_READ));
 
-     // ToDo: Add memory look-up and call uvm_mem::XsampleX()
+     // ToDo: Add memory look-up and call <uvm_mem::XsampleX()>
 
      if (rg != null) begin
        bit found;
@@ -243,7 +243,7 @@ class uvm_reg_predictor #(type BUSTYPE=int) extends uvm_component;
   
   // Function: check_phase
   //
-  // Checks that no pending register transactions are still enqueued.
+  // Checks that no pending register transactions are still queued.
 
   virtual function void check_phase(uvm_phase phase);
 	 string q[$];

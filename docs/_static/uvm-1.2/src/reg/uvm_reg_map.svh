@@ -204,7 +204,7 @@ class uvm_reg_map extends uvm_object;
    //
    // If ~unmapped~ is TRUE, the memory does not occupy any
    // physical addresses and the base address is ignored.
-   // Unmapped memorys require a user-defined ~frontdoor~ to be specified.
+   // Unmapped memories require a user-defined ~frontdoor~ to be specified.
    //
    // A memory may be added to multiple address maps
    // if it is accessible from multiple physical interfaces.
@@ -587,13 +587,13 @@ class uvm_reg_map extends uvm_object;
    // a register or field against the current value in its mirror
    // and report any discrepancy.
    // This effectively combines the functionality of the
-   // <uvm_reg::read()> and ~uvm_reg::mirror(UVM_CHECK)~ method.
+   // <uvm_reg::read()> and <uvm_reg::mirror(UVM_CHECK)> method.
    // This mode is useful when the register model is used passively.
    //
    // When ~on~ is ~FALSE~, no check is made against the mirrored value.
    //
    // At the end of the read operation, the mirror value is updated based
-   // on the value that was read reguardless of this mode setting.
+   // on the value that was read regardless of this mode setting.
    //
    // By default, auto-prediction is turned off.
    // 
@@ -660,13 +660,13 @@ class uvm_reg_map extends uvm_object;
 
 
     // Function: set_transaction_order_policy
-    // set the transacton order policy
+    // set the transaction order policy
     function void set_transaction_order_policy(uvm_reg_transaction_order_policy pol);
         policy = pol;
     endfunction
     
     // Function: get_transaction_order_policy
-    // set the transacton order policy
+    // set the transaction order policy
     function uvm_reg_transaction_order_policy get_transaction_order_policy();
         return policy;
     endfunction    
@@ -995,7 +995,7 @@ function void uvm_reg_map::add_submap (uvm_reg_map child_map,
 
    parent_map = child_map.get_parent_map();
 
-   // Can not have more than one parent (currently)
+   // Cannot have more than one parent (currently)
    if (parent_map != null) begin
       `uvm_error("RegModel", {"Map '", child_map.get_full_name(),
                  "' is already a child of map '",

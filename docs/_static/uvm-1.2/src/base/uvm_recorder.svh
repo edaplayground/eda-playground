@@ -361,7 +361,7 @@ virtual class uvm_recorder extends uvm_object;
    // returned.
    //
    // This method can be used to access the recorder associated with a
-   // ~begin_tr~ call from <uvm_transaction> or <uvm_component>.
+   // call to <uvm_transaction::begin_tr> or <uvm_component::begin_tr>.
    //
    // | integer handle = tr.begin_tr();
    // | uvm_recorder recorder = uvm_recorder::get_recorder_from_handle(handle);

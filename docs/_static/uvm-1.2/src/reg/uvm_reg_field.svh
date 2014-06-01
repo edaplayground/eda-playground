@@ -33,7 +33,7 @@ typedef class uvm_reg_cbs;
 // as a single entity.
 //
 // A field is contained within a single register, but may
-// have different access policies depending on the adddress map
+// have different access policies depending on the address map
 // use the access the register (thus the field).
 //-----------------------------------------------------------------
 class uvm_reg_field extends uvm_object;
@@ -81,7 +81,7 @@ class uvm_reg_field extends uvm_object;
    // Create a new field instance
    //
    // This method should not be used directly.
-   // The uvm_reg_field::type_id::create() factory method
+   // The <uvm_reg_field::type_id::create()> factory method
    // should be used instead.
    //
    extern function new(string name = "uvm_reg_field");
@@ -227,10 +227,10 @@ class uvm_reg_field extends uvm_object;
    // Define a new access policy value
    //
    // Because field access policies are specified using string values,
-   // there is no way for SystemVerilog to verify if a spceific access
+   // there is no way for SystemVerilog to verify if a specific access
    // value is valid or not.
    // To help catch typing errors, user-defined access values
-   // must be defined using this method to avoid beign reported as an
+   // must be defined using this method to avoid begin reported as an
    // invalid access policy.
    //
    // The name of field access policies are always converted to all uppercase.
@@ -497,7 +497,7 @@ class uvm_reg_field extends uvm_object;
    // specified if a physical access is used (front-door access).
    // If a back-door access path is used, the effect of reading
    // the field through a physical access is mimicked. For
-   // example, clear-on-read bits in the filed will be set to zero.
+   // example, clear-on-read bits in the field will be set to zero.
    //
    // The mirrored value will be updated using the <uvm_reg_field::predict()>
    // method.
@@ -552,7 +552,7 @@ class uvm_reg_field extends uvm_object;
    // Read the current value from this field
    //
    // Sample the value in the DUT field corresponding to this
-   // absraction class instance using a back-door access.
+   // abstraction class instance using a back-door access.
    // The field value is sampled, not modified.
    //
    // Uses the HDL path for the design abstraction specified by ~kind~.
@@ -581,8 +581,8 @@ class uvm_reg_field extends uvm_object;
    // method based on the readback value.
    //
    // The ~path~ argument specifies whether to mirror using 
-   // the  <UVM_FRONTDOOR> (<read>) or
-   // or <UVM_BACKDOOR> (<peek()>).
+   // the  <UVM_FRONTDOOR> (<read>) or 
+   // <UVM_BACKDOOR> (<peek()>).
    //
    // If ~check~ is specified as <UVM_CHECK>,
    // an error message is issued if the current mirrored value
@@ -656,7 +656,7 @@ class uvm_reg_field extends uvm_object;
    // a transaction because the results are unpredictable and
    // indicative of a race condition in the testbench.
    //
-   // Returns TRUE if the prediction was succesful.
+   // Returns TRUE if the prediction was successful.
    //
    extern function bit predict (uvm_reg_data_t    value,
                                 uvm_reg_byte_en_t be = -1,

@@ -110,7 +110,7 @@ class uvm_sequencer #(type REQ=uvm_sequence_item, RSP=REQ)
   extern task                  get           (output REQ t);
 
   // Task: peek
-  // Returns the current request item if one is in the fifo.
+  // Returns the current request item if one is in the FIFO.
   //
   extern task                  peek          (output REQ t);
 
@@ -128,7 +128,7 @@ class uvm_sequencer #(type REQ=uvm_sequence_item, RSP=REQ)
   //-----------------
   // Internal Methods
   //-----------------
-  // Do not use directly; not part of standard
+  // Do not use directly, not part of standard
 
   extern function void         item_done_trigger(RSP item = null);
   function RSP                 item_done_get_trigger_data();

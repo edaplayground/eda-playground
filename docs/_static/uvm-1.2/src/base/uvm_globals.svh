@@ -125,10 +125,10 @@ endfunction
 // 
 // See also <uvm_report_object::uvm_report_enabled>.
 //
-// Static methods of an extension of uvm_report_object, e.g. uvm_compoent-based
-// objects, can not call ~uvm_report_enabled~ because the call will resolve to
+// Static methods of an extension of uvm_report_object, e.g. uvm_component-based
+// objects, cannot call ~uvm_report_enabled~ because the call will resolve to
 // the <uvm_report_object::uvm_report_enabled>, which is non-static.
-// Static methods can not call non-static methods of the same class. 
+// Static methods cannot call non-static methods of the same class. 
 
 function int uvm_report_enabled (int verbosity,
                                  uvm_severity severity=UVM_INFO, string id="");
@@ -461,7 +461,7 @@ task uvm_wait_for_nba_region;
   int next_nba;
 
   //If `included directly in a program block, can't use a non-blocking assign,
-  //but it isn't needed since program blocks are in a seperate region.
+  //but it isn't needed since program blocks are in a separate region.
 `ifndef UVM_NO_WAIT_FOR_NBA
   next_nba++;
   nba <= next_nba;
@@ -500,9 +500,9 @@ function automatic void uvm_split_string (string str, byte sep, ref string value
 endfunction
 
 // Class: uvm_enum_wrapper#(T)
-
+//
 // The ~uvm_enum_wrapper#(T)~ class is a utility mechanism provided
-// as a convenience to the end user.  It provides a ~from_name~
+// as a convenience to the end user.  It provides a <from_name>
 // method which is the logical inverse of the System Verilog ~name~ 
 // method which is built into all enumerations.
 
@@ -514,7 +514,7 @@ class uvm_enum_wrapper#(type T=uvm_active_passive_enum);
     // Attempts to convert a string ~name~ to an enumerated value.
     //
     // If the conversion is successful, the method will return
-    // '1', otherwise '0'.
+    // 1, otherwise 0.
     //
     // Note that the ~name~ passed in to the method must exactly
     // match the value which would be produced by ~enum::name~, and

@@ -71,7 +71,7 @@
 //   the command line.
 //
 // The macros also enforce a verbosity setting of UVM_NONE for warnings, errors
-// and fatals so that they cannot be mistakingly turned off by setting the
+// and fatals so that they cannot be mistakenly turned off by setting the
 // verbosity level too low (warning and errors can still be turned off by 
 // setting the actions appropriately).
 //
@@ -118,7 +118,7 @@
 
 // MACRO: `uvm_warning
 //
-// Calls uvm_report_warning with a verbosity of UVM_NONE. The message can not
+// Calls uvm_report_warning with a verbosity of UVM_NONE. The message cannot
 // be turned off using the reporter's verbosity setting, but can be turned off
 // by setting the action for the message.  ~ID~ is given as the message tag and 
 // ~MSG~ is given as the message text. The file and line are also sent to the 
@@ -135,7 +135,7 @@
 
 // MACRO: `uvm_error
 //
-// Calls uvm_report_error with a verbosity of UVM_NONE. The message can not
+// Calls uvm_report_error with a verbosity of UVM_NONE. The message cannot
 // be turned off using the reporter's verbosity setting, but can be turned off
 // by setting the action for the message.  ~ID~ is given as the message tag and 
 // ~MSG~ is given as the message text. The file and line are also sent to the 
@@ -152,7 +152,7 @@
 
 // MACRO: `uvm_fatal
 //
-// Calls uvm_report_fatal with a verbosity of UVM_NONE. The message can not
+// Calls uvm_report_fatal with a verbosity of UVM_NONE. The message cannot
 // be turned off using the reporter's verbosity setting, but can be turned off
 // by setting the action for the message.  ~ID~ is given as the message tag and 
 // ~MSG~ is given as the message text. The file and line are also sent to the 
@@ -331,7 +331,7 @@
 // MACRO: `uvm_warning_end
 //
 // This macro pair operates identically to <`uvm_info_begin>/<`uvm_info_end> with
-// exception that the message severity is <UVM_WARNING> and has no verbosity threshhold.
+// exception that the message severity is <UVM_WARNING> and has no verbosity threshold.
 //
 // |`uvm_warning_end
 //
@@ -354,7 +354,7 @@
 // MACRO: `uvm_error_end
 //
 // This macro pair operates identically to <`uvm_info_begin>/<`uvm_info_end> with
-// exception that the message severity is <UVM_ERROR> and has no verbosity threshhold.
+// exception that the message severity is <UVM_ERROR> and has no verbosity threshold.
 //
 // |`uvm_error_end
 //
@@ -377,7 +377,7 @@
 // MACRO: `uvm_fatal_end
 //
 // This macro pair operates identically to <`uvm_info_begin>/<`uvm_info_end> with
-// exception that the message severity is <UVM_FATAL> and has no verbosity threshhold.
+// exception that the message severity is <UVM_FATAL> and has no verbosity threshold.
 //
 // |`uvm_fatal_end
 //
@@ -476,7 +476,7 @@
 
 
 //----------------------------------------------------------------------------
-// Group:  Messge Element Macros
+// Group:  Message Element Macros
 //----------------------------------------------------------------------------
 
 

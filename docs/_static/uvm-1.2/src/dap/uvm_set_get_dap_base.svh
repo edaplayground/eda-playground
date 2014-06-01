@@ -58,8 +58,8 @@ virtual class uvm_set_get_dap_base#(type T=int) extends uvm_object;
    // Attempts to set the value contained within the resource.
    //
    // If the DAP policies forbid setting at this time, then
-   // the method will return '0', however no errors will be
-   // reported.  Otherwise, the method will return '1', and
+   // the method will return 0, however no errors will be
+   // reported.  Otherwise, the method will return 1, and
    // will be treated like a standard <set> call.
    pure virtual function bit try_set(T value);
    
@@ -74,8 +74,8 @@ virtual class uvm_set_get_dap_base#(type T=int) extends uvm_object;
    // Attempts to retrieve the value contained within the resource.
    //
    // If the DAP policies forbid retrieving at this time, then
-   // the method will return '0', however no errors will be
-   // reported.  Otherwise, the method will return '1', and will
+   // the method will return 0, however no errors will be
+   // reported.  Otherwise, the method will return 1, and will
    // be treated like a standard <get> call.
    pure virtual function bit try_get(output T value);
 

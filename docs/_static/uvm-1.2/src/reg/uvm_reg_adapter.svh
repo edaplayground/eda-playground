@@ -107,7 +107,7 @@ virtual class uvm_reg_adapter extends uvm_object;
   // transaction.
   // This function returns a value reference only when called in the
   // <uvm_reg_adapter::reg2bus()> method.
-  // It returns null at all other times.
+  // It returns ~null~ at all other times.
   // The content of the return <uvm_reg_item> instance must not be modified
   // and used strictly to obtain additional information about the operation.  
   virtual function uvm_reg_item get_item();

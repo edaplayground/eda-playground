@@ -76,7 +76,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 <tr class="SMethod SIndent2 SMarked"><td class=SEntry><a href="#uvm_get_to_lock_dap.try_get" id=link6 onMouseOver="ShowTip(event, 'tt6', 'link6')" onMouseOut="HideTip('tt6')">try_get</a></td><td class=SDescription>Retrieves the current value stored within the DAP, and &lsquo;locks&rsquo; the DAP.</td></tr>
   <!-- index=7 -->
 
-<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_get_to_lock_dap.Introspection" >Introspection</a></td><td class=SDescription>The <i>uvm_get_to_lock_dap</i> can not support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_get_to_lock_dap.Introspection" >Introspection</a></td><td class=SDescription>The <i>uvm_get_to_lock_dap</i> cannot support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -133,7 +133,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Attempts to update the value stored within the DAP.</p><p><i>try_set</i> will return a &lsquo;1&rsquo; if the value was successfully updated, or a &lsquo;0&rsquo; if the value can not be updated due to <i>get</i> having been called.&nbsp;  No errors will be reported if <i>try_set</i> fails.</p></div></div></div>
+<div class=CBody><p>Attempts to update the value stored within the DAP.</p><p><i>try_set</i> will return a 1 if the value was successfully updated, or a 0 if the value can not be updated due to <i>get</i> having been called.&nbsp;  No errors will be reported if <i>try_set</i> fails.</p></div></div></div>
 
 
 
@@ -141,7 +141,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=5 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_get_to_lock_dap.get" href="../../src/dap/uvm_get_to_lock_dap.svh">get</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function T get()
-  </td></tr></table></blockquote><div class=CBody><p>Returns the current value stored within the DAP, and &lsquo;locks&rsquo; the DAP.</p><p>After a &lsquo;get&rsquo;, the value contained within the DAP can not be changed.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns the current value stored within the DAP, and &lsquo;locks&rsquo; the DAP.</p><p>After a &lsquo;get&rsquo;, the value contained within the DAP cannot be changed.</p></div></div></div>
 
 
 
@@ -164,7 +164,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=7 -->
-<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_get_to_lock_dap.Introspection" href="../../src/dap/uvm_get_to_lock_dap.svh">Introspection</a></h3><div class=CBody><p>The <i>uvm_get_to_lock_dap</i> can not support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</p><p>A call to any of these methods will result in an error.</p></div></div></div>
+<div class="CGroup"><div class=CTopic><h3 class=CTitle><a name="uvm_get_to_lock_dap.Introspection" href="../../src/dap/uvm_get_to_lock_dap.svh">Introspection</a></h3><div class=CBody><p>The <i>uvm_get_to_lock_dap</i> cannot support the standard UVM instrumentation methods (<i>copy</i>, <i>clone</i>, <i>pack</i> and <i>unpack</i>), due to the fact that they would potentially violate the access policy.</p><p>A call to any of these methods will result in an error.</p></div></div></div>
 
 </div><!--Content-->
 

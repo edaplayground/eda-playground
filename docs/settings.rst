@@ -84,7 +84,7 @@ These libraries may be used along with UVM/OVM. Multiple libraries may be select
 *Ctrl+Click* to select multiple libraries. Available libraries:
 
 * OVL 2.7
-* SVUnit 2.5
+* SVUnit 2.11
 * ClueLib 0.1.0
 * svlib 0.2
 
@@ -99,6 +99,14 @@ Top entity (VHDL)
 -----------------
 
 When language is *VHDL*, the top entity of the design must be specified before running a simulation.
+
+Libraries (C++)
+---------------
+
+When language is *C++/SystemC*, the following libraries can be used for both design and testbench.
+
+* SystemC 2.3.1
+* SystemC 2.3.0
 
 Methodology (Python + Verilog or Python only)
 ---------------------------------------------

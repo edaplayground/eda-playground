@@ -55,7 +55,7 @@ class uvm_tlm_fifo #(type T=int) extends uvm_tlm_fifo_base #(T);
   // Function: new
   //
   // The ~name~ and ~parent~ are the normal uvm_component constructor arguments. 
-  // The ~parent~ should be null if the <uvm_tlm_fifo#(T)> is going to be used in a
+  // The ~parent~ should be ~null~ if the <uvm_tlm_fifo#(T)> is going to be used in a
   // statically elaborated construct (e.g., a module). The ~size~ indicates the
   // maximum size of the FIFO; a value of zero indicates no upper bound.
 
@@ -192,7 +192,7 @@ endclass
 //
 // An analysis_fifo is a <uvm_tlm_fifo#(T)> with an unbounded size and a write interface.
 // It can be used any place a <uvm_analysis_imp> is used. Typical usage is
-// as a buffer between an <uvm_analysis_port> in an initiator component
+// as a buffer between a <uvm_analysis_port> in an initiator component
 // and TLM1 target component.
 //
 //------------------------------------------------------------------------------

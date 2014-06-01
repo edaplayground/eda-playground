@@ -116,7 +116,7 @@ Observed bus transactions of type <i>BUSTYPE</i> are received from this port and
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>static int unsigned default_precedence = 1000
   </td></tr></table></blockquote>The default precedence for an resource that has been created. </div></div><div class=CToolTip id="tt38"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_radix_enum default_radix = UVM_HEX
-  </td></tr></table></blockquote>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the print_field() method.</div></div><div class=CToolTip id="tt39"><div class=CVariable>
+  </td></tr></table></blockquote>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the uvm_printer::print_field or uvm_printer::print_field_int methods.</div></div><div class=CToolTip id="tt39"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_radix_enum default_radix = UVM_HEX
   </td></tr></table></blockquote>This is the default radix setting if record_field is called without a radix.</div></div><div class=CToolTip id="tt40"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int depth = -1
@@ -163,7 +163,7 @@ A <i>uvm_event#(uvm_object)</i> that is triggered when this transaction&rsquo;s 
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string fname
   </td></tr></table></blockquote>The file name from where this transaction originated, if provided at the call site.</div></div><div class=CToolTip id="tt54"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit footer = 1
-  </td></tr></table></blockquote>Indicates whether the <i>uvm_printer::print_footer</i> function should be called when printing an object.</div></div><div class=CToolTip id="tt55"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether the uvm_printer::print_footer function should be called when printing an object.</div></div><div class=CToolTip id="tt55"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit full_name = 0
   </td></tr></table></blockquote>Indicates whether uvm_printer::adjust_name should print the full name of an identifier or just the leaf name.</div></div><!--END_ND_TOOLTIPS-->
 
@@ -171,7 +171,7 @@ A <i>uvm_event#(uvm_object)</i> that is triggered when this transaction&rsquo;s 
 <!--START_ND_TOOLTIPS-->
 <div class=CToolTip id="tt56"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit header = 1
-  </td></tr></table></blockquote>Indicates whether the <i>uvm_printer::print_header</i> function should be called when printing an object.</div></div><div class=CToolTip id="tt57"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether the uvm_printer::print_header function should be called when printing an object.</div></div><div class=CToolTip id="tt57"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string hex_radix = &quot;'h&quot;
   </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_HEX is used for the radix of the integral object.</div></div><!--END_ND_TOOLTIPS-->
 
@@ -396,7 +396,7 @@ This export provides access to this sequencer&rsquo;s implementation of the sequ
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_severity sev = UVM_INFO
   </td></tr></table></blockquote>Sets the severity for printed messages.</div></div><div class=CToolTip id="tt146"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int unsigned show_max = 1
-  </td></tr></table></blockquote>Sets the maximum number of messages to send to the messager for miscompares of an object.</div></div><div class=CToolTip id="tt147"><div class=CVariable>
+  </td></tr></table></blockquote>Sets the maximum number of messages to send to the printer for miscompares of an object.</div></div><div class=CToolTip id="tt147"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit show_radix = 1
   </td></tr></table></blockquote>Indicates whether the radix string (&lsquo;h, and so on) should be prepended to an integral value when one is printed.</div></div><div class=CToolTip id="tt148"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit show_root = 0

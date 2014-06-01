@@ -127,7 +127,7 @@ class uvm_pool #(type KEY=int, T=uvm_void) extends uvm_object;
 
   // Function: exists
   //
-  // Returns 1 if a item with the given ~key~ exists in the pool,
+  // Returns 1 if an item with the given ~key~ exists in the pool,
   // 0 otherwise.
 
   virtual function int exists (KEY key);

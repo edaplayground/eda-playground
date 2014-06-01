@@ -47,26 +47,29 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 Calling this function will traverse through <i>s</i> (and every subnode of <i>s</i>). </div></div><div class=CToolTip id="tt2"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>
-      <td class=PParameter nowrap width=100%>tr,</td>
+      <td class=PBeforeParameters colspan=5>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_transaction&nbsp;</td>
+      <td class=PParameter nowrap>tr,</td>
       <td class=PDefaultValuePrefix>&nbsp;&nbsp;</td>
+      <td class=PDefaultValue width=100%></td>
       </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap width=100%>accept_time</td>
+      <td class=PParameter nowrap>accept_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function marks the acceptance of a transaction, <i>tr</i>, by this component. </div></div><div class=CToolTip id="tt3"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap width=100%>accept_time</td>
+      <td class=PBeforeParameters colspan=5>function void accept_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap>accept_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Calling <i>accept_tr</i> indicates that the transaction item has been received by a consumer component. </div></div><div class=CToolTip id="tt4"><div class=CMethod>
@@ -792,12 +795,13 @@ Objection all_dropped callback function. </div></div><div class=CToolTip id="tt4
 Randomly implement, resize or relocate a virtual register array</div></div><div class=CToolTip id="tt45"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>virtual function void apply_config_settings (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
-      <td class=PParameter nowrap width=100%>verbose</td>
+      <td class=PBeforeParameters colspan=5>virtual function void apply_config_settings (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>bit&nbsp;</td>
+      <td class=PParameter nowrap>verbose</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 Searches for all config settings matching this component&rsquo;s instance path. </div></div><!--END_ND_TOOLTIPS-->
@@ -918,11 +922,11 @@ This function marks the start of a child transaction, <i>tr</i>, by this compone
       <td class=PBeforeParameters colspan=5>function integer begin_child_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
       <td class=PParameter nowrap>begin_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PDefaultValue width=100%>0,</td>
+      <td class=PDefaultValue width=100%> 0,</td>
       </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>integer&nbsp;</td>
       <td class=PParameter nowrap>parent_handle</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
-      <td class=PDefaultValue width=100%>0</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
       <td class=PAfterParameters colspan=5>)</td></tr>
@@ -963,12 +967,13 @@ This function indicates that the transaction has been started as a child of a pa
 This function marks the start of a transaction, <i>tr</i>, by this component. </div></div><div class=CToolTip id="tt58"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
-      <td class=PBeforeParameters colspan=4>function integer begin_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
-      <td class=PParameter nowrap width=100%>begin_time</td>
+      <td class=PBeforeParameters colspan=5>function integer begin_tr (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
+      <td class=PParameter nowrap>begin_time</td>
       <td class=PDefaultValuePrefix>&nbsp;=&nbsp;</td>
+      <td class=PDefaultValue width=100%> 0</td>
     </tr>
     <tr>
-      <td class=PAfterParameters colspan=4>)</td></tr>
+      <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
 This function indicates that the transaction has been started and is not the child of another transaction. </div></div><div class=CToolTip id="tt59"><div class=CMethod>
@@ -977,7 +982,7 @@ This function indicates that the transaction has been started and is not the chi
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual task body()
   </td></tr></table></blockquote>Execute the Memory Access sequence. </div></div><div class=CToolTip id="tt61"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual task body()
-  </td></tr></table></blockquote>Performs the walking-ones algorithm on each map of the memory specifed in mem.</div></div><div class=CToolTip id="tt62"><div class=CMethod>
+  </td></tr></table></blockquote>Performs the walking-ones algorithm on each map of the memory specified in mem.</div></div><div class=CToolTip id="tt62"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual task body()
   </td></tr></table></blockquote>Executes the mem walk sequence, one block at a time. </div></div><div class=CToolTip id="tt63"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual task body()
@@ -1364,7 +1369,7 @@ The uvm_check_phase phase implementation method.</div></div><div class=CToolTip 
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Checks that no pending register transactions are still enqueued.</div></div><div class=CToolTip id="tt91"><div class=CMethod>
+Checks that no pending register transactions are still queued.</div></div><div class=CToolTip id="tt91"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>virtual function void clear(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_object&nbsp;</td>
@@ -1440,7 +1445,7 @@ Delete HDL paths</div></div><div class=CToolTip id="tt98"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function void clear_response_queue()
   </td></tr></table></blockquote>Empties the response queue for this sequence.</div></div><div class=CToolTip id="tt99"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function uvm_object clone ()
-  </td></tr></table></blockquote>The clone method creates and returns an exact copy of this object.</div></div><div class=CToolTip id="tt100"><div class=CMethod>
+  </td></tr></table></blockquote>The <i>clone</i> method creates and returns an exact copy of this object.</div></div><div class=CToolTip id="tt100"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>function void close(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>time&nbsp;</td>
@@ -1472,7 +1477,7 @@ Closes this recorder.</div></div><div class=CToolTip id="tt101"><div class=CMeth
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Deep compares members of this data object with those of the object provided in the <i>rhs</i> (right-hand side) argument, returning 1 on a match, 0 othewise.</div></div><div class=CToolTip id="tt104"><div class=CMethod>
+Deep compares members of this data object with those of the object provided in the <i>rhs</i> (right-hand side) argument, returning 1 on a match, 0 otherwise.</div></div><div class=CToolTip id="tt104"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>virtual function bit compare_field (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
@@ -1914,7 +1919,7 @@ Returns an instance of the component type, <i>T</i>, represented by this proxy, 
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-The create method allocates a new object of the same type as this object and returns it via a base uvm_object handle. </div></div><div class=CToolTip id="tt134"><div class=CMethod>
+The <i>create</i> method allocates a new object of the same type as this object and returns it via a base uvm_object handle. </div></div><div class=CToolTip id="tt134"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>static function T create (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
@@ -2153,7 +2158,7 @@ A convenience function for uvm_factory::create_object_by_name, this method calls
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Creates an object of type <i>T</i> and returns it as a handle to an uvm_object. </div></div><div class=CToolTip id="tt147"><div class=CMethod>
+Creates an object of type <i>T</i> and returns it as a handle to a uvm_object. </div></div><div class=CToolTip id="tt147"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>virtual function uvm_object create_object (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>

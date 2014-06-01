@@ -28,7 +28,7 @@
 //  UNINITIALIZED_PHASE  - Defaults for constructor
 //  BEGIN_REQ            - Beginning of request phase
 //  END_REQ              - End of request phase
-//  BEGIN_RESP           - Begining of response phase
+//  BEGIN_RESP           - Beginning of response phase
 //  END_RESP             - End of response phase
 
 typedef enum
@@ -155,7 +155,7 @@ class uvm_tlm_if #(type T=uvm_tlm_generic_payload,
    //
    // Execute a blocking transaction. Once this method returns,
    // the transaction is assumed to have been executed. Whether
-   // that execution is succesful or not must be indicated by the
+   // that execution is successful or not must be indicated by the
    // transaction itself.
    //
    // The callee may modify or update the transaction object, subject

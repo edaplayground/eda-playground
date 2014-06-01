@@ -145,7 +145,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Configure a register file instance</p><p>Specify the parent block and register file of the register file instance.&nbsp; If the register file is instantiated in a block, <i>regfile_parent</i> is specified as <i>null</i>.&nbsp; If the register file is instantiated in a register file, <i>blk_parent</i> must be the block parent of that register file and <i>regfile_parent</i> is specified as that register file.</p><p>If the register file corresponds to a hierarchical RTL structure, it&rsquo;s contribution to the HDL path is specified as the <i>hdl_path</i>.&nbsp; Otherwise, the register file does not correspond to a hierarchical RTL structure (e.g. it is physically flattened) and does not contribute to the hierarchical HDL path of any contained registers.</p></div></div></div>
+<div class=CBody><p>Configure a register file instance</p><p>Specify the parent block and register file of the register file instance.&nbsp; If the register file is instantiated in a block, <i>regfile_parent</i> is specified as <i>null</i>.&nbsp; If the register file is instantiated in a register file, <i>blk_parent</i> must be the block parent of that register file and <i>regfile_parent</i> is specified as that register file.</p><p>If the register file corresponds to a hierarchical RTL structure, its contribution to the HDL path is specified as the <i>hdl_path</i>.&nbsp; Otherwise, the register file does not correspond to a hierarchical RTL structure (e.g. it is physically flattened) and does not contribute to the hierarchical HDL path of any contained registers.</p></div></div></div>
 
 
 
@@ -245,7 +245,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Check if a HDL path is specified</p><p>Returns TRUE if the register file instance has a HDL path defined for the specified design abstraction.&nbsp; If no design abstraction is specified, uses the default design abstraction specified for the nearest enclosing register file or block</p><p>If no design asbtraction is specified, the default design abstraction for this register file is used.</p></div></div></div>
+<div class=CBody><p>Check if a HDL path is specified</p><p>Returns TRUE if the register file instance has a HDL path defined for the specified design abstraction.&nbsp; If no design abstraction is specified, uses the default design abstraction specified for the nearest enclosing register file or block</p><p>If no design abstraction is specified, the default design abstraction for this register file is used.</p></div></div></div>
 
 
 
@@ -269,7 +269,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the register file instance.&nbsp; If no design abstraction is specified, uses the default design abstraction specified for the nearest enclosing register file or block.&nbsp; Returns only the component of the HDL paths that corresponds to the register file, not a full hierarchical path</p><p>If no design asbtraction is specified, the default design abstraction for this register file is used.</p></div></div></div>
+<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the register file instance.&nbsp; If no design abstraction is specified, uses the default design abstraction specified for the nearest enclosing register file or block.&nbsp; Returns only the component of the HDL paths that corresponds to the register file, not a full hierarchical path</p><p>If no design abstraction is specified, the default design abstraction for this register file is used.</p></div></div></div>
 
 
 
@@ -298,7 +298,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the register file instance.&nbsp; If no design abstraction is specified, uses the default design abstraction specified for the nearest enclosing register file or block.&nbsp; There may be more than one path returned even if only one path was defined for the register file instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design asbtraction is specified, the default design abstraction for each ancestor register file or block is used to get each incremental path.</p></div></div></div>
+<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the register file instance.&nbsp; If no design abstraction is specified, uses the default design abstraction specified for the nearest enclosing register file or block.&nbsp; There may be more than one path returned even if only one path was defined for the register file instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design abstraction is specified, the default design abstraction for each ancestor register file or block is used to get each incremental path.</p></div></div></div>
 
 
 
@@ -322,7 +322,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=16 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_reg_file.get_default_hdl_path" href="../../src/reg/uvm_reg_file.svh">get_default_hdl_path</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function string get_default_hdl_path ()
-  </td></tr></table></blockquote><div class=CBody><p>Get the default design abstraction</p><p>Returns the default design abstraction for this register file instance.&nbsp; If a default design abstraction has not been explicitly set for this register file instance, returns the default design absraction for the nearest register file or block ancestor.&nbsp; Returns &ldquo;&rdquo; if no default design abstraction has been specified.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Get the default design abstraction</p><p>Returns the default design abstraction for this register file instance.&nbsp; If a default design abstraction has not been explicitly set for this register file instance, returns the default design abstraction for the nearest register file or block ancestor.&nbsp; Returns &ldquo;&rdquo; if no default design abstraction has been specified.</p></div></div></div>
 
 </div><!--Content-->
 

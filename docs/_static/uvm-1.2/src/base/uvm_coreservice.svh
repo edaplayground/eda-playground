@@ -39,7 +39,7 @@ typedef class `UVM_CORESERVICE_TYPE;
 //
 // The singleton instance of uvm_coreservice_t provides a common point for all central 
 // uvm services such as uvm_factory, uvm_report_server, ...
-// The service class provides a static ::get which returns an instance adhering to uvm_coreservice_t
+// The service class provides a static <::get> which returns an instance adhering to uvm_coreservice_t
 // the rest of the set_<facility> get_<facility> pairs provide access to the internal uvm services
 //
 // Custom implementations of uvm_coreservice_t can be included in uvm_pkg::*
@@ -139,7 +139,7 @@ class uvm_default_coreservice_t extends uvm_coreservice_t;
 	// Function: set_factory
 	//
 	// Sets the current uvm factory.
-	// Please note: it is up to the user to preserve the contents of the original factory or delegate calls to to the original factory 
+	// Please note: it is up to the user to preserve the contents of the original factory or delegate calls to the original factory 
 	virtual function void set_factory(uvm_factory f);
 		factory = f;
 	endfunction 
@@ -209,7 +209,7 @@ class uvm_default_coreservice_t extends uvm_coreservice_t;
 	
 	// Function: get_component_visitor
 	// retrieves the current component visitor 
-	// if unset(or null) returns a <uvm_component_name_check_visitor> instance
+	// if unset(or ~null~) returns a <uvm_component_name_check_visitor> instance
 	virtual function uvm_visitor#(uvm_component) get_component_visitor();
 		if(_visitor==null) begin
 			uvm_component_name_check_visitor v = new("name-check-visitor");

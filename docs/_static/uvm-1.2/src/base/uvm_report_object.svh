@@ -40,7 +40,7 @@ typedef class uvm_root;
 // or for all messages from all components in the environment. Defaults are
 // applied where there is no explicit configuration.
 //
-// Most methods in uvm_report_object are delegated to an internal instance of an
+// Most methods in uvm_report_object are delegated to an internal instance of a
 // <uvm_report_handler>, which stores the reporting configuration and determines
 // whether an issued message should be displayed based on that configuration.
 // Then, to display a message, the report handler delegates the actual
@@ -60,7 +60,7 @@ typedef class uvm_root;
 // whether a $finish should occur <UVM_EXIT>.
 //
 // Default Actions - The following provides the default actions assigned to
-// each severity. These can be overridden by any of the set_*_action methods. 
+// each severity. These can be overridden by any of the ~set_*_action~ methods.
 //|    UVM_INFO -       UVM_DISPLAY
 //|    UVM_WARNING -    UVM_DISPLAY
 //|    UVM_ERROR -      UVM_DISPLAY | UVM_COUNT
@@ -68,12 +68,12 @@ typedef class uvm_root;
 //
 // File descriptors - These can be set by (in increasing priority) default,
 // severity level, an id, or (severity,id) pair.  File descriptors are
-// standard verilog file descriptors; they may refer to more than one file.
+// standard SystemVerilog file descriptors; they may refer to more than one file.
 // It is the user's responsibility to open and close them.
 //
 // Default file handle - The default file handle is 0, which means that reports
-// are not sent to a file even if an UVM_LOG attribute is set in the action
-// associated with the report. This can be overridden by any of the set_*_file
+// are not sent to a file even if a UVM_LOG attribute is set in the action
+// associated with the report. This can be overridden by any of the ~set_*_file~
 // methods.
 //
 //------------------------------------------------------------------------------
@@ -100,8 +100,8 @@ class uvm_report_object extends uvm_object;
 
   // Function: uvm_get_report_object
   //
-  // Returns the nearest uvm_report_object when called.  From inside an 
-  // uvm_component, the method simply returns 'this'.  
+  // Returns the nearest uvm_report_object when called.  From inside a
+  // uvm_component, the method simply returns ~this~.
   // 
   // See also the global version of <uvm_get_report_object>.
 
@@ -302,10 +302,10 @@ class uvm_report_object extends uvm_object;
   // given ~severity~, ~id~, or ~severity-id~ pair. This threshold is compared with
   // the verbosity originally assigned to the report to decide whether it gets
   // processed.  A verbosity threshold associated with a particular ~severity-id~ 
-  // pair takes precedence over an verbosity threshold associated with ~id~, which 
-  // takes precedence over an an verbosity threshold associated with a ~severity~.
+  // pair takes precedence over a verbosity threshold associated with ~id~, which 
+  // takes precedence over a verbosity threshold associated with a ~severity~.
   //
-  // The ~verbosity~ argument can be any integer, but is most commonaly a
+  // The ~verbosity~ argument can be any integer, but is most commonly a
   // predefined <uvm_verbosity> value, <UVM_NONE>, <UVM_LOW>, <UVM_MEDIUM>,
   // <UVM_HIGH>, <UVM_FULL>.
 
@@ -348,7 +348,7 @@ class uvm_report_object extends uvm_object;
   // These methods associate the specified action or actions with reports of the
   // given ~severity~, ~id~, or ~severity-id~ pair. An action associated with a
   // particular ~severity-id~ pair takes precedence over an action associated with
-  // ~id~, which takes precedence over an an action associated with a ~severity~.
+  // ~id~, which takes precedence over an action associated with a ~severity~.
   //
   // The ~action~ argument can take the value <UVM_NO_ACTION>, or it can be a
   // bitwise OR of any combination of <UVM_DISPLAY>, <UVM_LOG>, <UVM_COUNT>,
@@ -399,7 +399,7 @@ class uvm_report_object extends uvm_object;
   // output to the given file descriptor. The ~file~ argument must be a
   // multi-channel descriptor (mcd) or file id compatible with $fdisplay.
   //
-  // A FILE descriptor can be associated with with reports of
+  // A FILE descriptor can be associated with reports of
   // the given ~severity~, ~id~, or ~severity-id~ pair.  A FILE associated with
   // a particular ~severity-id~ pair takes precedence over a FILE associated
   // with ~id~, which take precedence over an a FILE associated with a 
@@ -467,7 +467,7 @@ class uvm_report_object extends uvm_object;
   // Function: reset_report_handler
   //
   // Resets the underlying report handler to its default settings. This clears
-  // any settings made with the set_report_* methods (see below).
+  // any settings made with the ~set_report_*~ methods (see below).
 
   function void reset_report_handler;
     m_rh.initialize();
@@ -526,8 +526,8 @@ class uvm_report_object extends uvm_object;
   // implementations return 1, which allows the report to be processed. If an
   // override returns 0, then the report is not processed.
   //
-  // First, the report_hook method is called, followed by the severity 
-  // severity specific hook (report_info_hook, etc.). If either hook method
+  // First, the ~report_hook~ method is called, followed by the severity-specific
+  // hook (<report_info_hook>, etc.). If either hook method
   // returns 0 then the report is not processed further.
 
   virtual function bit report_hook(
@@ -543,7 +543,7 @@ class uvm_report_object extends uvm_object;
   // The <uvm_root::run_test> task calls this method just before it component
   // phasing begins.
   //
-  // Use uvm_root::report_header()
+  // Use <uvm_root::report_header()>
 
   virtual function void report_header(UVM_FILE file = 0);    
      uvm_root l_root;
@@ -560,7 +560,7 @@ class uvm_report_object extends uvm_object;
   // server. This information will be sent to the command line if ~file~ is 0, or
   // to the file descriptor ~file~ if it is not 0.
   //
-  // The run_test method in uvm_top calls this method.
+  // The <run_test> method in uvm_top calls this method.
   //
   // Use:
   // uvm_report_server rs =uvm_report_server::get_server();
@@ -575,7 +575,7 @@ class uvm_report_object extends uvm_object;
   // Function- die
   //
   // This method is called by the report server if a report reaches the maximum
-  // quit count or has an UVM_EXIT action associated with it, e.g., as with
+  // quit count or has a UVM_EXIT action associated with it, e.g., as with
   // fatal errors.
   //
   // Calls the <uvm_component::pre_abort()> method
@@ -618,7 +618,7 @@ class uvm_report_object extends uvm_object;
   //
   // Returns the <uvm_report_server> instance associated with this report object.
   //
-  // Use uvm_report_server::get_server()
+  // Use <uvm_report_server::get_server()>
 
   function uvm_report_server get_report_server();
     uvm_report_server l_rs = uvm_report_server::get_server();

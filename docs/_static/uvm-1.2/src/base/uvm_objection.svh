@@ -273,9 +273,9 @@ class uvm_objection extends uvm_report_object;
   // unused by the testbench then they are simply an unnecessary
   // performance hit.  If the testbench is not going to use this
   // functionality, then the performance can be improved by setting
-  // the propagation mode to '0'.
+  // the propagation mode to 0.
   //
-  // When propagation mode is set to '0', all intermediate callbacks
+  // When propagation mode is set to 0, all intermediate callbacks
   // between the ~source~ and ~top~ will be skipped.  This would
   // result in the following counts and totals for the above objection:
   //  
@@ -294,7 +294,7 @@ class uvm_objection extends uvm_report_object;
      if (!m_top_all_dropped && (get_objection_total() != 0)) begin
         `uvm_error("UVM/BASE/OBJTN/PROP_MODE",
                    {"The propagation mode of '", this.get_full_name(),
-                    "' can not be changed while the objection is raised ",
+                    "' cannot be changed while the objection is raised ",
                     "or draining!"})
         return;
      end
@@ -312,10 +312,10 @@ class uvm_objection extends uvm_report_object;
   //
   // Raises the number of objections for the source ~object~ by ~count~, which
   // defaults to 1.  The ~object~ is usually the ~this~ handle of the caller.
-  // If ~object~ is not specified or null, the implicit top-level component,
+  // If ~object~ is not specified or ~null~, the implicit top-level component,
   // <uvm_root>, is chosen.
   //
-  // Rasing an objection causes the following.
+  // Raising an objection causes the following.
   //
   // - The source and total objection counts for ~object~ are increased by
   //   ~count~. ~description~ is a string that marks a specific objection
@@ -431,7 +431,7 @@ class uvm_objection extends uvm_report_object;
         // Determine the diff count, if it's positive, then we're
         // looking at a 'raise' total, if it's negative, then
         // we're looking at a 'drop', but not down to 0.  If it's
-        // a '0', that means that there is no change in the total.
+        // a 0, that means that there is no change in the total.
         diff_count = count - ctxt.count;
 
         if (diff_count != 0) begin
@@ -466,7 +466,7 @@ class uvm_objection extends uvm_report_object;
   //
   // Drops the number of objections for the source ~object~ by ~count~, which
   // defaults to 1.  The ~object~ is usually the ~this~ handle of the caller.
-  // If ~object~ is not specified or null, the implicit top-level component,
+  // If ~object~ is not specified or ~null~, the implicit top-level component,
   // <uvm_root>, is chosen.
   //
   // Dropping an objection causes the following.
@@ -507,7 +507,7 @@ class uvm_objection extends uvm_report_object;
   //   completed, propagation of the dropped objection to the parent proceeds
   //   as described in <raise_objection>, except as described below.
   //
-  // If a new objection for this ~object~ or any of its descendents is raised
+  // If a new objection for this ~object~ or any of its descendants is raised
   // during the drain time or during execution of the all_dropped callback at
   // any point, the hierarchical chain described above is terminated and the
   // dropped callback does not go up the hierarchy. The raised objection will
@@ -515,7 +515,7 @@ class uvm_objection extends uvm_report_object;
   // reduced by the number of drops that were pending waiting for the 
   // all_dropped/drain time completion. Thus, if exactly one objection
   // caused the count to go to zero, and during the drain exactly one new
-  // objection comes in, no raises or drops are propagted up the hierarchy,
+  // objection comes in, no raises or drops are propagated up the hierarchy,
   //
   // As an optimization, if the ~object~ has no set drain-time and no
   // registered callbacks, the forked process can be skipped and propagation
@@ -599,7 +599,7 @@ class uvm_objection extends uvm_report_object;
         // the propagation.
 
         // Using the background process just allows us to
-        // seperate the links of the chain.
+        // separate the links of the chain.
         m_scheduled_list.push_back(ctxt);
 
     end // else: !if(m_total_count[obj] != 0)
@@ -615,7 +615,7 @@ class uvm_objection extends uvm_report_object;
   //
   // The caller, if a uvm_object-based object, should pass its 'this' handle
   // to the ~obj~ argument to document who cleared the objection.
-  // Any drain_times set by the user are not effected. 
+  // Any drain_times set by the user are not affected. 
   //
   virtual function void clear(uvm_object obj=null);
     string name;
@@ -799,7 +799,7 @@ class uvm_objection extends uvm_report_object;
   // been dropped before calling the all_dropped callback and propagating
   // the objection to the parent. 
   //
-  // If a new objection for this ~object~ or any of its descendents is raised
+  // If a new objection for this ~object~ or any of its descendants is raised
   // during the drain time or during execution of the all_dropped callbacks,
   // the drain_time/all_dropped execution is terminated. 
 
@@ -951,31 +951,15 @@ class uvm_objection extends uvm_report_object;
   // and all descendants.
 
   function int get_objection_total (uvm_object obj=null);
-    uvm_component c;
-    string ch;
  
     if (obj==null)
       obj = m_top;
 
     if (!m_total_count.exists(obj))
       return 0;
-    if (m_prop_mode) 
+    else
       return m_total_count[obj];
-    else begin
-      if ($cast(c,obj)) begin
-        if (!m_source_count.exists(obj))
-          get_objection_total = 0;
-        else
-          get_objection_total = m_source_count[obj];
-        if (c.get_first_child(ch))
-        do
-          get_objection_total += get_objection_total(c.get_child(ch));
-        while (c.get_next_child(ch));
-      end
-      else begin
-        return m_total_count[obj];
-      end
-    end
+     
   endfunction
   
 
@@ -1089,7 +1073,7 @@ class uvm_objection extends uvm_report_object;
   endfunction
 
 
-  // Below is all of the basic data stuff that is needed for an uvm_object
+  // Below is all of the basic data stuff that is needed for a uvm_object
   // for factory registration, printing, comparing, etc.
 
   typedef uvm_object_registry#(uvm_objection,"uvm_objection") type_id;
@@ -1143,7 +1127,7 @@ class uvm_test_done_objection extends uvm_objection;
 
   // Function- new DEPRECATED
   //
-  // Creates the singleton test_done objection. Users must not to call
+  // Creates the singleton test_done objection. Users must not call
   // this method directly.
 
   function new(string name="uvm_test_done");
@@ -1227,7 +1211,7 @@ class uvm_test_done_objection extends uvm_objection;
 
   // Variable- stop_timeout DEPRECATED
   //
-  // These set watchdog timers for task-based phases and stop tasks. You can not
+  // These set watchdog timers for task-based phases and stop tasks. You cannot
   // disable the timeouts. When set to 0, a timeout of the maximum time possible
   // is applied. A timeout at this value usually indicates a problem with your
   // testbench. You should lower the timeout to prevent "never-ending"

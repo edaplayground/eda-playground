@@ -166,7 +166,7 @@ class uvm_parent_child_link extends uvm_link_base;
    //
    // Parameters:
    // lhs - Left hand side reference
-   // rhs - Righ hand side reference
+   // rhs - Right hand side reference
    // name - Optional name for the link object
    //
    static function uvm_parent_child_link get_link(uvm_object lhs,
@@ -245,7 +245,7 @@ class uvm_cause_effect_link extends uvm_link_base;
    //
    // Parameters:
    // lhs - Left hand side reference
-   // rhs - Righ hand side reference
+   // rhs - Right hand side reference
    // name - Optional name for the link object
    //
    static function uvm_cause_effect_link get_link(uvm_object lhs,
@@ -324,7 +324,7 @@ class uvm_related_link extends uvm_link_base;
    //
    // Parameters:
    // lhs - Left hand side reference
-   // rhs - Righ hand side reference
+   // rhs - Right hand side reference
    // name - Optional name for the link object
    //
    static function uvm_related_link get_link(uvm_object lhs,

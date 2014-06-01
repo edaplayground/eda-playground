@@ -67,15 +67,18 @@ parameter UVM_STREAMBITS = `UVM_MAX_STREAMBITS;
 // Type: uvm_bitstream_t
 //
 // The bitstream type is used as a argument type for passing integral values
-// in such methods as set_int_local, get_int_local, uvm_config_int, report,
-// pack and unpack. 
+// in such methods as <uvm_object::set_int_local>, <uvm_config_int>, 
+// <uvm_printer::print_field>, <uvm_recorder::record_field>, 
+// <uvm_packer::pack_field> and <uvm_packer::unpack_field>.
 
 typedef logic signed [UVM_STREAMBITS-1:0] uvm_bitstream_t;
 
 // Type: uvm_integral_t
 //
 // The integral type is used as a argument type for passing integral values
-// of 64 bits or less to report, record, compare, pack and unpack.
+// of 64 bits or less in such methods as 
+// <uvm_printer::print_field_int>, <uvm_recorder::record_field_int>, 
+// <uvm_packer::pack_field_int> and <uvm_packer::unpack_field_int>.
 //
 
 typedef logic signed [63:0] uvm_integral_t;
@@ -92,7 +95,7 @@ typedef logic signed [63:0] uvm_integral_t;
 // UVM_UNFORMAT2 - Selects unformatted 2 value data (%u) format
 // UVM_UNFORMAT4 - Selects unformatted 4 value data (%z) format
 // UVM_OCT       - Selects octal (%o) format
-// UVM_HEX       - Selects hexidecimal (%h) format
+// UVM_HEX       - Selects hexadecimal (%h) format
 // UVM_STRING    - Selects string (%s) format
 // UVM_TIME      - Selects time (%t) format
 // UVM_ENUM      - Selects enumeration value (name) format
@@ -147,7 +150,7 @@ endfunction
 //
 // Specifies the policy for copying objects.
 //
-// UVM_DEEP      - Objects are deep copied (object must implement copy method)
+// UVM_DEEP      - Objects are deep copied (object must implement <uvm_object::copy> method)
 // UVM_SHALLOW   - Objects are shallow copied using default SV copy.
 // UVM_REFERENCE - Only object handles are copied.
 
@@ -204,7 +207,7 @@ parameter UVM_ALL_ON      = 'b000000101010101;
 parameter UVM_FLAGS_ON    = 'b000000101010101;
 parameter UVM_FLAGS_OFF   = 0;
 
-//Values are or'ed into a 32 bit value
+//Values are OR'ed into a 32 bit value
 //and externally
 parameter UVM_COPY         = (1<<0);
 parameter UVM_NOCOPY       = (1<<1);
@@ -254,11 +257,11 @@ string uvm_aa_string_key;
 //
 // Defines all possible values for report severity.
 //
-//   UVM_INFO    - Informative messsage.
+//   UVM_INFO    - Informative message.
 //   UVM_WARNING - Indicates a potential problem.
 //   UVM_ERROR   - Indicates a real problem. Simulation continues subject
 //                 to the configured message action.
-//   UVM_FATAL   - Indicates a problem from which simulation can not
+//   UVM_FATAL   - Indicates a problem from which simulation cannot
 //                 recover. Simulation exits via $finish after a #0 delay.
 
 typedef enum bit [1:0]
@@ -310,7 +313,7 @@ typedef enum
 //
 // Defines standard verbosity levels for reports.
 //
-//  UVM_NONE   - Report is always printed. Verbosity level setting can not
+//  UVM_NONE   - Report is always printed. Verbosity level setting cannot
 //               disable it.
 //  UVM_LOW    - Report is issued if configured verbosity is set to UVM_LOW
 //               or above.
@@ -521,7 +524,7 @@ typedef enum { UVM_PHASE_IMP,
 //   UVM_PHASE_STARTED - phase ready to execute, running phase_started() callback
 //
 //   UVM_PHASE_EXECUTING - An executing phase is one where the phase callbacks are
-//              being executed. It's process is tracked by the phaser.
+//              being executed. Its process is tracked by the phaser.
 //
 //   UVM_PHASE_READY_TO_END - no objections remain in this phase or in any
 //              predecessors of its successors or in any sync'd phases. This 

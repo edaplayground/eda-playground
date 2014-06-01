@@ -67,7 +67,7 @@
 // A sequence can also be indirectly started as a child in the <body> of a
 // parent sequence. The child sequence's <start> method is called indirectly
 // by invoking any of the `uvm_do macros.
-// In thise cases, <start> is called with
+// In these cases, <start> is called with
 // ~call_pre_post~ set to 0, preventing the started sequence's <pre_body> and
 // <post_body> methods from being called. During execution of the
 // child sequence, the parent's <pre_do>, <mid_do>, and <post_do> methods
@@ -140,7 +140,7 @@ class uvm_sequence_base extends uvm_sequence_item;
             int                m_wait_for_grant_semaphore;
 
   // Each sequencer will assign a sequence id.  When a sequence is talking to multiple
-  // sequencers, each sequence_id is managed seperately
+  // sequencers, each sequence_id is managed separately
   protected int m_sqr_seq_ids[int];
 
   protected bit children_array[uvm_sequence_base];
@@ -240,7 +240,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // The ~sequencer~ argument specifies the sequencer on which to run this
   // sequence. The sequencer must be compatible with the sequence.
   //
-  // If ~parent_sequence~ is null, then this sequence is a root parent,
+  // If ~parent_sequence~ is ~null~, then this sequence is a root parent,
   // otherwise it is a child of ~parent_sequence~. The ~parent_sequence~'s
   // pre_do, mid_do, and post_do methods will be called during the execution
   // of this sequence.
@@ -424,7 +424,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Task: pre_do
   //
   // This task is a user-definable callback task that is called ~on the
-  // parent sequence~, if any.the
+  // parent sequence~, if any
   // sequence has issued a wait_for_grant() call and after the sequencer has
   // selected this sequence, and before the item is randomized.
   //
@@ -525,12 +525,12 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Function: get_starting_phase
   // Returns the 'starting phase'.
   //
-  // If non-null, the starting phase specifies the phase in which this
+  // If non-~null~, the starting phase specifies the phase in which this
   // sequence was started.  The starting phase is set automatically when
   // this sequence is started as the default sequence on a sequencer.
   // See <uvm_sequencer_base::start_phase_sequence> for more information.
   //
-  // Internally, the <uvm_sequence_base> uses a <uvm_get_to_lock_dap> to 
+  // Internally, the <uvm_sequence_base> uses an <uvm_get_to_lock_dap> to 
   // protect the starting phase value from being modified 
   // after the reference has been read.  Once the sequence has ended 
   // its execution (either via natural termination, or being killed),
@@ -590,12 +590,12 @@ class uvm_sequence_base extends uvm_sequence_item;
   //| seq.start(my_sequencer);
   //
   // Internally, the <uvm_sequence_base> uses a <uvm_get_to_lock_dap> to 
-  // protect the ~automatic_phase_objection~ value from being modified after
+  // protect the ~automatic_phase_objection~ value from being modified 
   // after the reference has been read.  Once the sequence has ended 
   // its execution (either via natural termination, or being killed),
   // then the ~automatic_phase_objection~ value can be modified again.
   //
-  // NEVER set the automatic phase objection bit to '1' if your sequence
+  // NEVER set the automatic phase objection bit to 1 if your sequence
   // runs with a forever loop inside of the body, as the objection will
   // never get dropped!
   function void set_automatic_phase_objection(bit value);
@@ -606,8 +606,8 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Returns (and locks) the value of the 'automatically object to 
   // starting phase' bit.
   //
-  // If '1', then the sequence will automatically raise an objection
-  // to the starting phase (if the starting phase is not-null) immediately
+  // If 1, then the sequence will automatically raise an objection
+  // to the starting phase (if the starting phase is not ~null~) immediately
   // prior to <pre_start> being called.  The objection will be dropped
   // after <post_start> has executed, or <kill> has been called.
   //
@@ -710,7 +710,7 @@ class uvm_sequence_base extends uvm_sequence_item;
 
   // Task: lock
   //
-  // Requests a lock on the specified sequencer. If sequencer is null, the lock
+  // Requests a lock on the specified sequencer. If sequencer is ~null~, the lock
   // will be requested on the current default sequencer.
   //
   // A lock request will be arbitrated the same as any other request.  A lock is
@@ -735,7 +735,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Requests a lock on the specified sequencer.  If no argument is supplied,
   // the lock will be requested on the current default sequencer.
   //
-  // A grab equest is put in front of the arbitration queue. It will be
+  // A grab request is put in front of the arbitration queue. It will be
   // arbitrated before any other requests. A grab is granted when no other grabs
   // or locks are blocking this sequence.
   //
@@ -757,7 +757,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Function: unlock
   //
   // Removes any locks or grabs obtained by this sequence on the specified
-  // sequencer. If sequencer is null, then the unlock will be done on the
+  // sequencer. If sequencer is ~null~, then the unlock will be done on the
   // current default sequencer.
 
   function void  unlock(uvm_sequencer_base sequencer = null);
@@ -775,7 +775,7 @@ class uvm_sequence_base extends uvm_sequence_item;
   // Function: ungrab
   //
   // Removes any locks or grabs obtained by this sequence on the specified
-  // sequencer. If sequencer is null, then the unlock will be done on the
+  // sequencer. If sequencer is ~null~, then the unlock will be done on the
   // current default sequencer.
 
   function void  ungrab(uvm_sequencer_base sequencer = null);
@@ -1069,7 +1069,7 @@ class uvm_sequence_base extends uvm_sequence_item;
 
   // Function: response_handler
   //
-  // When the use_reponse_handler bit is set to 1, this virtual task is called
+  // When the use_response_handler bit is set to 1, this virtual task is called
   // by the sequencer for each response that arrives for this sequence.
 
   virtual function void response_handler(uvm_sequence_item response);
@@ -1248,7 +1248,7 @@ class uvm_sequence_base extends uvm_sequence_item;
     m_seq_type = m_sequencer.sequences[req_kind];
     if (!$cast(m_seq, factory.create_object_by_name(m_seq_type, get_full_name(), m_seq_type))) begin
       uvm_report_fatal("FCTSEQ", 
-        $sformatf("Factory can not produce a sequence of type %0s.",
+        $sformatf("Factory cannot produce a sequence of type %0s.",
         m_seq_type), UVM_NONE);
     end
     m_seq.set_use_sequence_info(1);
@@ -1270,7 +1270,7 @@ class uvm_sequence_base extends uvm_sequence_item;
     m_seq_type = m_sequencer.sequences[req_kind];
     if (!$cast(m_seq, factory.create_object_by_name(m_seq_type, get_full_name(), m_seq_type))) begin
       uvm_report_fatal("FCTSEQ", 
-        $sformatf("Factory can not produce a sequence of type %0s.", m_seq_type), UVM_NONE);
+        $sformatf("Factory cannot produce a sequence of type %0s.", m_seq_type), UVM_NONE);
     end
 
     m_seq.set_item_context(this, m_sequencer);
@@ -1293,7 +1293,7 @@ class uvm_sequence_base extends uvm_sequence_item;
     `uvm_warning("UVM_DEPRECATED",$sformatf("%m deprecated."))
     if (!$cast(m_seq, factory.create_object_by_name(seq_name, get_full_name(), seq_name))) begin
       uvm_report_fatal("FCTSEQ", 
-        $sformatf("Factory can not produce a sequence of type %0s.", seq_name), UVM_NONE);
+        $sformatf("Factory cannot produce a sequence of type %0s.", seq_name), UVM_NONE);
     end
     m_seq.set_use_sequence_info(1);
     return m_seq;

@@ -143,7 +143,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=4 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_tr_database.open_db" href="../../src/base/uvm_tr_database.svh">open_db</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function bit open_db()
-  </td></tr></table></blockquote><div class=CBody><p>Open the backend connection to the database.</p><p>If the database is already open, then this method will return &lsquo;1&rsquo;.</p><p>Otherwise, the method will call <a href="#uvm_tr_database.do_open_db" class=LMethod id=link23 onMouseOver="ShowTip(event, 'tt12', 'link23')" onMouseOut="HideTip('tt12')">do_open_db</a>, and return the result.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Open the backend connection to the database.</p><p>If the database is already open, then this method will return 1.</p><p>Otherwise, the method will call <a href="#uvm_tr_database.do_open_db" class=LMethod id=link23 onMouseOver="ShowTip(event, 'tt12', 'link23')" onMouseOut="HideTip('tt12')">do_open_db</a>, and return the result.</p></div></div></div>
 
 
 
@@ -151,7 +151,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=5 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_tr_database.close_db" href="../../src/base/uvm_tr_database.svh">close_db</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function bit close_db()
-  </td></tr></table></blockquote><div class=CBody><p>Closes the backend connection to the database.</p><p>Closing a database implicitly closes and frees all <a href="uvm_tr_stream-svh.html#uvm_tr_stream" class=LClass id=link24 onMouseOver="ShowTip(event, 'tt16', 'link24')" onMouseOut="HideTip('tt16')">uvm_tr_streams</a> within the database.</p><p>If the database is already closed, then this method will return &lsquo;1&rsquo;.</p><p>Otherwise, this method will trigger a <a href="#uvm_tr_database.do_close_db" class=LMethod id=link25 onMouseOver="ShowTip(event, 'tt13', 'link25')" onMouseOut="HideTip('tt13')">do_close_db</a> call, and return the result.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Closes the backend connection to the database.</p><p>Closing a database implicitly closes and frees all <a href="uvm_tr_stream-svh.html#uvm_tr_stream" class=LClass id=link24 onMouseOver="ShowTip(event, 'tt16', 'link24')" onMouseOut="HideTip('tt16')">uvm_tr_streams</a> within the database.</p><p>If the database is already closed, then this method will return 1.</p><p>Otherwise, this method will trigger a <a href="#uvm_tr_database.do_close_db" class=LMethod id=link25 onMouseOver="ShowTip(event, 'tt13', 'link25')" onMouseOut="HideTip('tt13')">do_close_db</a> call, and return the result.</p></div></div></div>
 
 
 
@@ -159,7 +159,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
  <!--CONTENT index=6 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_tr_database.is_open" href="../../src/base/uvm_tr_database.svh">is_open</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function bit is_open()
-  </td></tr></table></blockquote><div class=CBody><p>Returns the open/closed status of the database.</p><p>This method returns &lsquo;1&rsquo; if the database has been successfully opened, but not yet closed.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Returns the open/closed status of the database.</p><p>This method returns 1 if the database has been successfully opened, but not yet closed.</p></div></div></div>
 
 
 
@@ -233,7 +233,7 @@ end</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Establishes a <i>link</i> between two elements in the database</p><p>Links are only supported between <i>streams</i> and <i>records</i> wihin a single database.</p><p>This method will trigger a <a href="#uvm_tr_database.do_establish_link" class=LMethod id=link31 onMouseOver="ShowTip(event, 'tt15', 'link31')" onMouseOut="HideTip('tt15')">do_establish_link</a> call.</p></div></div></div>
+<div class=CBody><p>Establishes a <i>link</i> between two elements in the database</p><p>Links are only supported between <i>streams</i> and <i>records</i> within a single database.</p><p>This method will trigger a <a href="#uvm_tr_database.do_establish_link" class=LMethod id=link31 onMouseOver="ShowTip(event, 'tt15', 'link31')" onMouseOut="HideTip('tt15')">do_establish_link</a> call.</p></div></div></div>
 
 
 
@@ -383,7 +383,7 @@ end</pre></blockquote></div></div></div>
  <!--CONTENT index=20 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_text_tr_database.do_open_db" href="../../src/base/uvm_tr_database.svh">do_open_db</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>protected virtual function bit do_open_db()
-  </td></tr></table></blockquote><div class=CBody><p>Open the backend connection to the database.</p><p>Text-Backend implementation of <a href="#uvm_tr_database.open_db" class=LMethod id=link48 onMouseOver="ShowTip(event, 'tt6', 'link48')" onMouseOut="HideTip('tt6')">uvm_tr_database::open_db</a>.</p><p>The text-backend will open a text file to dump all records in to.&nbsp;  The name of this text file is controlled via <a href="#uvm_text_tr_database.set_file_name" class=LMethod id=link49 onMouseOver="ShowTip(event, 'tt23', 'link49')" onMouseOut="HideTip('tt23')">set_file_name</a>.</p><p>This will also lock the <i>file_name</i>, so that it can not be modified while the connection is open.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Open the backend connection to the database.</p><p>Text-Backend implementation of <a href="#uvm_tr_database.open_db" class=LMethod id=link48 onMouseOver="ShowTip(event, 'tt6', 'link48')" onMouseOut="HideTip('tt6')">uvm_tr_database::open_db</a>.</p><p>The text-backend will open a text file to dump all records in to.&nbsp;  The name of this text file is controlled via <a href="#uvm_text_tr_database.set_file_name" class=LMethod id=link49 onMouseOver="ShowTip(event, 'tt23', 'link49')" onMouseOut="HideTip('tt23')">set_file_name</a>.</p><p>This will also lock the <i>file_name</i>, so that it cannot be modified while the connection is open.</p></div></div></div>
 
 
 

@@ -107,7 +107,7 @@ class uvm_packer;
   //
   // Packs a string value into the pack array. 
   //
-  // When the metadata flag is set, the packed string is terminated by a null
+  // When the metadata flag is set, the packed string is terminated by a ~null~
   // character to mark the end of the string.
   //
   // This is useful for mixed language communication where unpacking may occur
@@ -138,7 +138,7 @@ class uvm_packer;
   // Packs an object value into the pack array. 
   //
   // A 4-bit header is inserted ahead of the string to indicate the number of
-  // bits that was packed. If a null object was packed, then this header will
+  // bits that was packed. If a ~null~ object was packed, then this header will
   // be 0. 
   //
   // This is useful for mixed-language communication where unpacking may occur
@@ -230,7 +230,7 @@ class uvm_packer;
   // Unpacks a string. 
   //
   // num_chars bytes are unpacked into a string. If num_chars is -1 then
-  // unpacking stops on at the first null character that is encountered.
+  // unpacking stops on at the first ~null~ character that is encountered.
 
   extern virtual function string unpack_string (int num_chars=-1);
 
@@ -260,7 +260,7 @@ class uvm_packer;
   //
   // ~value~ must be an allocated object that has enough space for the data
   // being unpacked. The first four bits of packed data are used to determine
-  // if a null object was packed into the array. 
+  // if a ~null~ object was packed into the array.
   //
   // The <is_null> function can be used to peek at the next four bits in
   // the pack array before calling this method.
@@ -310,14 +310,14 @@ class uvm_packer;
   // and <uvm_object::do_unpack> should regard this bit when performing their
   // respective operation. When set, metadata should be encoded as follows:
   //
-  // - For strings, pack an additional null byte after the string is packed.
+  // - For strings, pack an additional ~null~ byte after the string is packed.
   //
   // - For objects, pack 4 bits prior to packing the object itself. Use 4'b0000
-  //   to indicate the object being packed is null, otherwise pack 4'b0001 (the
+  //   to indicate the object being packed is ~null~, otherwise pack 4'b0001 (the
   //   remaining 3 bits are reserved).
   //
   // - For queues, dynamic arrays, and associative arrays, pack 32 bits
-  //   indicating the size of the array prior to to packing individual elements.
+  //   indicating the size of the array prior to packing individual elements.
 
   bit use_metadata;
 
@@ -644,7 +644,7 @@ function void uvm_packer::pack_object(uvm_object value);
   if((policy != UVM_REFERENCE) && (value != null) ) begin
       if(use_metadata == 1) begin
         m_bits[count +: 4] = 1;
-        count += 4; // to better debug when display packed bits in hexidecimal
+        count += 4; // to better debug when display packed bits in hexadecimal
       end
       scope.down(value.get_name());
       value.__m_uvm_field_automation(null, UVM_PACK,"");
@@ -859,7 +859,7 @@ function void uvm_packer::unpack_object(uvm_object value);
     end
   end
   else if ((is_non_null != 0) && (value == null)) begin
-     uvm_report_error("UNPOBJ","can not unpack into null object", UVM_NONE);
+     uvm_report_error("UNPOBJ","cannot unpack into null object", UVM_NONE);
   end
   value.__m_uvm_status_container.cycle_check.delete(value);
 
@@ -1009,7 +1009,7 @@ endfunction
 // specific number of bytes into the string.
 function string uvm_packer::unpack_string(int num_chars=-1);
   byte b;
-  bit  is_null_term; // Assumes a null terminated string
+  bit  is_null_term; // Assumes a ~null~ terminated string
   int i; i=0;
   if(num_chars == -1) is_null_term = 1;
   else is_null_term = 0;
@@ -1018,7 +1018,7 @@ function string uvm_packer::unpack_string(int num_chars=-1);
         ((m_bits[count+:8] != 0) || (is_null_term == 0)) &&
         ((i<num_chars)||(is_null_term==1)) )
   begin
-    // silly, because can not append byte/char to string
+    // silly, because cannot append byte/char to string
     unpack_string = {unpack_string," "};
     if(big_endian == 0)
       unpack_string[i] = m_bits[count +: 8];

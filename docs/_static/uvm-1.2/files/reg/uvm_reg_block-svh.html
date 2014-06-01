@@ -288,7 +288,7 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Instance-specific configuration</p><p>Specify the parent block of this block.&nbsp; A block without parent is a root block.</p><p>If the block file corresponds to a hierarchical RTL structure, it&rsquo;s contribution to the HDL path is specified as the <i>hdl_path</i>.&nbsp; Otherwise, the block does not correspond to a hierarchical RTL structure (e.g. it is physically flattened) and does not contribute to the hierarchical HDL path of any contained registers or memories.</p></div></div></div>
+<div class=CBody><p>Instance-specific configuration</p><p>Specify the parent block of this block.&nbsp; A block without parent is a root block.</p><p>If the block file corresponds to a hierarchical RTL structure, its contribution to the HDL path is specified as the <i>hdl_path</i>.&nbsp; Otherwise, the block does not correspond to a hierarchical RTL structure (e.g. it is physically flattened) and does not contribute to the hierarchical HDL path of any contained registers or memories.</p></div></div></div>
 
 
 
@@ -371,7 +371,7 @@ endclass</pre></blockquote></div></div></div>
  <!--CONTENT index=8 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_reg_block.default_map" href="../../src/reg/uvm_reg_block.svh">default_map</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_reg_map default_map
-  </td></tr></table></blockquote><div class=CBody><p>Default address map</p><p>Default address map for this block, to be used when no address map is specified for a register operation and that register is accessible from more than one address map.</p><p>It is also the implciit address map for a block with a single, unamed address map because it has only one physical interface.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Default address map</p><p>Default address map for this block, to be used when no address map is specified for a register operation and that register is accessible from more than one address map.</p><p>It is also the implicit address map for a block with a single, unnamed address map because it has only one physical interface.</p></div></div></div>
 
 
 
@@ -608,7 +608,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the memories</p><p>Get the memories instantiated in this block.&nbsp; If <i>hier</i> is TRUE, recursively includes the memories in the sub-blocks.</p><p>Note that memories may be located in different and/or multiple address maps.&nbsp; To get the memories in a specific address map, use the <i>uvm_reg_map::get_memories()</i> method.</p></div></div></div>
+<div class=CBody><p>Get the memories</p><p>Get the memories instantiated in this block.&nbsp; If <i>hier</i> is TRUE, recursively includes the memories in the sub-blocks.</p><p>Note that memories may be located in different and/or multiple address maps.&nbsp; To get the memories in a specific address map, use the &lt;uvm_reg_map::get_memories()&gt; method.</p></div></div></div>
 
 
 
@@ -838,7 +838,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Turns on coverage measurement.</p><p>Turns the collection of functional coverage measurements on or off for this block and all blocks, registers, fields and memories within it.&nbsp; The functional coverage measurement is turned on for every coverage model specified using <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link69 onMouseOver="ShowTip(event, 'tt59', 'link69')" onMouseOut="HideTip('tt59')">uvm_coverage_model_e</a> symbolic identifers.&nbsp; Multiple functional coverage models can be specified by adding the functional coverage model identifiers.&nbsp; All other functional coverage models are turned off.&nbsp; Returns the sum of all functional coverage models whose measurements were previously on.</p><p>This method can only control the measurement of functional coverage models that are present in the various abstraction classes, then enabled during construction.&nbsp; See the <a href="#uvm_reg_block.has_coverage" class=LMethod id=link70 onMouseOver="ShowTip(event, 'tt34', 'link70')" onMouseOut="HideTip('tt34')">uvm_reg_block::has_coverage()</a> method to identify the available functional coverage models.</p></div></div></div>
+<div class=CBody><p>Turns on coverage measurement.</p><p>Turns the collection of functional coverage measurements on or off for this block and all blocks, registers, fields and memories within it.&nbsp; The functional coverage measurement is turned on for every coverage model specified using <a href="uvm_reg_model-svh.html#uvm_coverage_model_e" class=LType id=link69 onMouseOver="ShowTip(event, 'tt59', 'link69')" onMouseOut="HideTip('tt59')">uvm_coverage_model_e</a> symbolic identifiers.&nbsp; Multiple functional coverage models can be specified by adding the functional coverage model identifiers.&nbsp; All other functional coverage models are turned off.&nbsp; Returns the sum of all functional coverage models whose measurements were previously on.</p><p>This method can only control the measurement of functional coverage models that are present in the various abstraction classes, then enabled during construction.&nbsp; See the <a href="#uvm_reg_block.has_coverage" class=LMethod id=link70 onMouseOver="ShowTip(event, 'tt34', 'link70')" onMouseOut="HideTip('tt34')">uvm_reg_block::has_coverage()</a> method to identify the available functional coverage models.</p></div></div></div>
 
 
 
@@ -876,7 +876,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=3>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Functional coverage measurement method</p><p>This method is invoked by the block abstraction class whenever an address within one of its address map is succesfully read or written.&nbsp; The specified offset is the offset within the block, not an absolute address.</p><p>Empty by default, this method may be extended by the abstraction class generator to perform the required sampling in any provided functional coverage model.</p></div></div></div>
+<div class=CBody><p>Functional coverage measurement method</p><p>This method is invoked by the block abstraction class whenever an address within one of its address map is successfully read or written.&nbsp; The specified offset is the offset within the block, not an absolute address.</p><p>Empty by default, this method may be extended by the abstraction class generator to perform the required sampling in any provided functional coverage model.</p></div></div></div>
 
 
 
@@ -924,7 +924,7 @@ endclass</pre></blockquote></div></div></div>
  <!--CONTENT index=43 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_reg_block.needs_update" href="../../src/reg/uvm_reg_block.svh">needs_update</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function bit needs_update()
-  </td></tr></table></blockquote><div class=CBody><p>Check if DUT registers need to be written</p><p>If a mirror value has been modified in the abstraction model without actually updating the actual register (either through randomization or via the <a href="uvm_reg-svh.html#uvm_reg.set" class=LMethod id=link76 onMouseOver="ShowTip(event, 'tt67', 'link76')" onMouseOut="HideTip('tt67')">uvm_reg::set()</a> method, the mirror and state of the registers are outdated.&nbsp; The corresponding registers in the DUT need to be updated.</p><p>This method returns TRUE if the state of at lest one register in the block or sub-blocks needs to be updated to match the mirrored values.&nbsp; The mirror values, or actual content of registers, are not modified.&nbsp; For additional information, see <a href="#uvm_reg_block.update" class=LMethod id=link77 onMouseOver="ShowTip(event, 'tt42', 'link77')" onMouseOut="HideTip('tt42')">uvm_reg_block::update()</a> method.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Check if DUT registers need to be written</p><p>If a mirror value has been modified in the abstraction model without actually updating the actual register (either through randomization or via the <a href="uvm_reg-svh.html#uvm_reg.set" class=LMethod id=link76 onMouseOver="ShowTip(event, 'tt67', 'link76')" onMouseOut="HideTip('tt67')">uvm_reg::set()</a> method, the mirror and state of the registers are outdated.&nbsp; The corresponding registers in the DUT need to be updated.</p><p>This method returns TRUE if the state of at least one register in the block or sub-blocks needs to be updated to match the mirrored values.&nbsp; The mirror values, or actual content of registers, are not modified.&nbsp; For additional information, see <a href="#uvm_reg_block.update" class=LMethod id=link77 onMouseOver="ShowTip(event, 'tt42', 'link77')" onMouseOut="HideTip('tt42')">uvm_reg_block::update()</a> method.</p></div></div></div>
 
 
 
@@ -1317,7 +1317,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the user-defined backdoor for all registers in this block</p><p>Return the user-defined backdoor for all register in this block and all sub-blocks -- unless overriden by a backdoor set in a lower-level block or in the register itself.</p><p>If <i>inherited</i> is TRUE, returns the backdoor of the parent block if none have been specified for this block.</p></div></div></div>
+<div class=CBody><p>Get the user-defined backdoor for all registers in this block</p><p>Return the user-defined backdoor for all register in this block and all sub-blocks -- unless overridden by a backdoor set in a lower-level block or in the register itself.</p><p>If <i>inherited</i> is TRUE, returns the backdoor of the parent block if none have been specified for this block.</p></div></div></div>
 
 
 
@@ -1343,7 +1343,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Set the user-defined backdoor for all registers in this block</p><p>Defines the backdoor mechanism for all registers instantiated in this block and sub-blocks, unless overriden by a definition in a lower-level block or register.</p></div></div></div>
+<div class=CBody><p>Set the user-defined backdoor for all registers in this block</p><p>Defines the backdoor mechanism for all registers instantiated in this block and sub-blocks, unless overridden by a definition in a lower-level block or register.</p></div></div></div>
 
 
 
@@ -1425,7 +1425,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the block instance.&nbsp; Returns only the component of the HDL paths that corresponds to the block, not a full hierarchical path</p><p>If no design asbtraction is specified, the default design abstraction for this block is used.</p></div></div></div>
+<div class=CBody><p>Get the incremental HDL path(s)</p><p>Returns the HDL path(s) defined for the specified design abstraction in the block instance.&nbsp; Returns only the component of the HDL paths that corresponds to the block, not a full hierarchical path</p><p>If no design abstraction is specified, the default design abstraction for this block is used.</p></div></div></div>
 
 
 
@@ -1454,7 +1454,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=6>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the block instance.&nbsp; There may be more than one path returned even if only one path was defined for the block instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design asbtraction is specified, the default design abstraction for each ancestor block is used to get each incremental path.</p></div></div></div>
+<div class=CBody><p>Get the full hierarchical HDL path(s)</p><p>Returns the full hierarchical HDL path(s) defined for the specified design abstraction in the block instance.&nbsp; There may be more than one path returned even if only one path was defined for the block instance, if any of the parent components have more than one path defined for the same design abstraction</p><p>If no design abstraction is specified, the default design abstraction for each ancestor block is used to get each incremental path.</p></div></div></div>
 
 
 
@@ -1478,7 +1478,7 @@ endclass</pre></blockquote></div></div></div>
  <!--CONTENT index=59 -->
 <div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_reg_block.get_default_hdl_path" href="../../src/reg/uvm_reg_block.svh">get_default_hdl_path</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function string get_default_hdl_path ()
-  </td></tr></table></blockquote><div class=CBody><p>Get the default design abstraction</p><p>Returns the default design abstraction for this block instance.&nbsp; If a default design abstraction has not been explicitly set for this block instance, returns the default design absraction for the nearest block ancestor.&nbsp; Returns &ldquo;&rdquo; if no default design abstraction has been specified.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Get the default design abstraction</p><p>Returns the default design abstraction for this block instance.&nbsp; If a default design abstraction has not been explicitly set for this block instance, returns the default design abstraction for the nearest block ancestor.&nbsp; Returns &ldquo;&rdquo; if no default design abstraction has been specified.</p></div></div></div>
 
 
 
@@ -1500,7 +1500,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Specify a root HDL path</p><p>Set the specified path as the absolute HDL path to the block instance for the specified design abstraction.&nbsp; This absolute root path is preppended to all hierarchical paths under this block.&nbsp; The HDL path of any ancestor block is ignored.&nbsp; This method overrides any incremental path for the same design abstraction specified using <a href="#uvm_reg_block.add_hdl_path" class=LMethod id=link89 onMouseOver="ShowTip(event, 'tt51', 'link89')" onMouseOut="HideTip('tt51')">add_hdl_path</a>.</p></div></div></div>
+<div class=CBody><p>Specify a root HDL path</p><p>Set the specified path as the absolute HDL path to the block instance for the specified design abstraction.&nbsp; This absolute root path is prepended to all hierarchical paths under this block.&nbsp; The HDL path of any ancestor block is ignored.&nbsp; This method overrides any incremental path for the same design abstraction specified using <a href="#uvm_reg_block.add_hdl_path" class=LMethod id=link89 onMouseOver="ShowTip(event, 'tt51', 'link89')" onMouseOut="HideTip('tt51')">add_hdl_path</a>.</p></div></div></div>
 
 
 
@@ -1518,7 +1518,7 @@ endclass</pre></blockquote></div></div></div>
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-<div class=CBody><p>Check if this block has an absolute path</p><p>Returns TRUE if an absolute HDL path to the block instance for the specified design abstraction has been defined.&nbsp; If no design asbtraction is specified, the default design abstraction for this block is used.</p></div></div></div>
+<div class=CBody><p>Check if this block has an absolute path</p><p>Returns TRUE if an absolute HDL path to the block instance for the specified design abstraction has been defined.&nbsp; If no design abstraction is specified, the default design abstraction for this block is used.</p></div></div></div>
 
 </div><!--Content-->
 

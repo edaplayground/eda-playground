@@ -36,8 +36,8 @@
   `include "base/uvm_object_globals.svh"
   `include "base/uvm_misc.svh"
 
-  // The base object element. Contains data methods (copy/compare etc) and
-  // factory creation methods (create). Also includes control classes.
+  // The base object element. Contains data methods (<copy>, <compare> etc) and
+  // factory creation methods (<create>). Also includes control classes.
   `include "base/uvm_object.svh"
 
   `include "base/uvm_pool.svh"

@@ -232,7 +232,7 @@ endclass
 // 
 // ruleset a legal name is composed of
 // - allowed charset "A-z:_0-9[](){}-: "
-// - whitespace-as-is, no-balacing delimiter semantic, no escape sequences
+// - whitespace-as-is, no-balancing delimiter semantic, no escape sequences
 // - path delimiter not allowed anywhere in the name
 //   
 // the check is coded here as a function to complete it in a single function call

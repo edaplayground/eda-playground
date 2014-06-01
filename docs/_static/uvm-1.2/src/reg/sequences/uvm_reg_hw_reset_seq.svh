@@ -82,7 +82,7 @@ class uvm_reg_hw_reset_seq extends uvm_reg_sequence #(uvm_sequence #(uvm_reg_ite
 
 // Task: do_block
    //
-   // Test all of the registers in a a given ~block~
+   // Test all of the registers in a given ~block~
    //
    protected virtual task do_block(uvm_reg_block blk);
       uvm_reg_map maps[$];
