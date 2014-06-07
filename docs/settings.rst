@@ -302,11 +302,34 @@ Links to code examples created on EDA Playground. Some examples may have additio
 
 .. image:: _static/examples.png
 
-****************
-Editor Shortcuts
-****************
+**************************
+Editor Modes and Shortcuts
+**************************
 
-The following editor shortcuts are enabled by default. Note that the shortcuts are different for PC and MAC users. ::
+The editor supports the following modes:
+
+* Default
+* Vim
+* Emacs
+
+The user may select the mode in the *User Options* on the user page:
+
+.. image:: _static/editorMode.png
+
+Note that *Vim* and *Emacs* modes are only loose approximations of the actual bindings.
+
+Default Mode
+============
+
+The default mode comes with **search/replace** functionality. The keybindings are:
+
+* **Ctrl-F / Cmd-F** - Start searching
+* **Ctrl-G / Cmd-G** - Find next
+* **Shift-Ctrl-G / Shift-Cmd-G** - Find previous
+* **Shift-Ctrl-F / Cmd-Option-F** - Replace
+* **Shift-Ctrl-R / Shift-Cmd-Option-F** - Replace all
+
+The default mode uses the following shortcuts. Note that the shortcuts are different for PC and MAC users. ::
 
     // For All
     keyMap.basic = {
