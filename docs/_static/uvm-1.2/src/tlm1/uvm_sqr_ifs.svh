@@ -231,7 +231,7 @@ virtual class uvm_sqr_if_base #(type T1=uvm_object, T2=T1);
   // <uvm_transaction::accept_tr>, <uvm_transaction::begin_tr>
   // and <uvm_transaction::end_tr> explicitly at appropriate points in time.
   //
-  // This methods be called at the beginning of the driver's <run_phase()> method.
+  // This methods be called at the beginning of the driver's ~run_phase()~ method.
   // Once disabled, automatic recording cannot be re-enabled.
   //
   // For backward-compatibility, automatic item recording can be globally

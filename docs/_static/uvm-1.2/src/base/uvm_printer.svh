@@ -71,7 +71,6 @@ typedef struct {
 // specifying a printer, the <uvm_default_printer> is used.
 //
 //------------------------------------------------------------------------------
-
 virtual class uvm_printer;
 
   // Variable: knobs
@@ -213,7 +212,7 @@ virtual class uvm_printer;
   extern virtual function string format_row (uvm_printer_row_info row);
 
 
-  // Function: format_row
+  // Function: format_header
   //
   // Hook to override base header with a custom header. 
   virtual function string format_header();
@@ -221,7 +220,7 @@ virtual class uvm_printer;
   endfunction
 
 
-  // Function: format_header
+  // Function: format_footer
   //
   // Hook to override base footer with a custom footer. 
   virtual function string format_footer();
@@ -418,7 +417,7 @@ class uvm_printer_knobs;
 
   // Variable: header
   //
-  // Indicates whether the <uvm_printer::print_header> function should be called when
+  // Indicates whether the <uvm_printer::format_header> function should be called when
   // printing an object.
 
   bit header = 1;
@@ -426,7 +425,7 @@ class uvm_printer_knobs;
 
   // Variable: footer
   //
-  // Indicates whether the <uvm_printer::print_footer> function should be called when
+  // Indicates whether the <uvm_printer::format_footer> function should be called when
   // printing an object. 
 
   bit footer = 1;

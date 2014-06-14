@@ -161,9 +161,9 @@ i.e.
 | set_type_override_by_type(old_type::get_type(), old_type::get_type());
 
 Group: Mantis 4091
-bug in uvm_reg_file::get_full_name
+bug in the ~get_full_name~ method of <uvm_reg_file>.
 
-~uvm_reg_file::get_full_name~ now includes the top-level block name.
+The ~get_full_name~ method of <uvm_reg_file> now includes the top-level block name.
 
 Group: Mantis 4160
 uvm_comparer not using verbosity setting for print_msg()
@@ -963,3 +963,44 @@ After fixing <Mantis 4783 (*)>, the previously undocumented
 <`uvm_record_string> and <`uvm_record_time> have been officially added
 to the standard.
 
+Group: Mantis 4861
+Adding a uvm_reg_map to an existing regmap instance required both maps 
+to have the same parent.  The behavior was fixed and the bad error
+message corrected.
+
+Group: Mantis 4871
+Fixed a problem wherein multiple ~+uvm_set_*~ commands were ignored
+after a format error.
+
+Group: Mantis 4882
+The instance name of the phase objection was changed to reflect the
+name of the phase.
+
+Group: Mantis 4884
+A performance fix was implemented which avoided the copy of large QDA
+within the spell checker.
+
+Group: Mantis 4893
+Fixed a bug within uvm_leaf_scope which could lead to stall of
+simulation.
+
+Group: Mantis 4920
+Fixed random stability bug in ~lookup_name~ which caused instability
+when the config database was queried.
+
+Group: Mantis 4923
+A check was added for an out-of-bound queue access in uvm_misc.svh.
+This check caused no functional change, but prevents certain tools
+from throwing a warning when processing the code.
+
+Group: Mantis 4925
+The macros <`UVM_MAX_STREAMBITS>, <`UVM_PACKER_MAX_BYTES> and 
+<`UVM_DEFAULT_TIMEOUT> were relocated to
+src/macros/uvm_global_defines.svh, which is included via
+uvm_macros.svh.  These changes will make the UVM 1.2 Reference HTML
+out of sync with the UVM 1.2 Reference PDF, however this change is
+strictly contained to the formatting/location of documentation, not a
+functional difference.
+
+Group: Mantis 4931
+Various typos and bad links within the reference guide were corrected.

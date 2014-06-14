@@ -35,34 +35,9 @@ bit uvm_start_uvm_declarations = 1;
 // Group: Field automation
 //------------------------
 
-// Macro: `UVM_MAX_STREAMBITS
-//
-// Defines the maximum bit vector size for integral types.
-
-`ifndef UVM_MAX_STREAMBITS
-`define UVM_MAX_STREAMBITS 4096
-`endif
-
-
-// Macro: `UVM_PACKER_MAX_BYTES
-//
-// Defines the maximum bytes to allocate for packing an object using
-// the <uvm_packer>. Default is <`UVM_MAX_STREAMBITS>, in ~bytes~.
-
-`ifndef UVM_PACKER_MAX_BYTES
-  `define UVM_PACKER_MAX_BYTES UVM_STREAMBITS
-`endif
 
 parameter UVM_STREAMBITS = `UVM_MAX_STREAMBITS; 
 
-
-// Macro: `UVM_DEFAULT_TIMEOUT
-//
-// The default timeout for simulation, if not overridden by
-// <uvm_root::set_timeout> or <uvm_cmdline_processor::+UVM_TIMEOUT>
-//
-
-`define UVM_DEFAULT_TIMEOUT 9200s
 
 // Type: uvm_bitstream_t
 //

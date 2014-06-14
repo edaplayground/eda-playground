@@ -168,7 +168,7 @@ Available libraries and methodologies:
 
 * `svlib <http://www.verilab.com/resources/svlib/>`_ - A Programmer's Utility Library for SystemVerilog
 
-  * :download:`svlib User Guide <_static/svlib-userguide-0.2.pdf>`
+  * :download:`svlib User Guide <_static/svlib-userguide-0.3.pdf>`
 
 * `SystemC <http://www.accellera.org/downloads/standards/systemc>`_ - system level design and simulation in C++
 

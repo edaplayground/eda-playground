@@ -446,7 +446,7 @@ class uvm_reg_map extends uvm_object;
                                              input uvm_hier_e hier=UVM_HIER);
 
    
-   // Function get_memories
+   // Function: get_memories
    //
    // Get the memories
    //
@@ -587,7 +587,7 @@ class uvm_reg_map extends uvm_object;
    // a register or field against the current value in its mirror
    // and report any discrepancy.
    // This effectively combines the functionality of the
-   // <uvm_reg::read()> and <uvm_reg::mirror(UVM_CHECK)> method.
+   // <uvm_reg::read()> and ~uvm_reg::mirror(UVM_CHECK)~ method.
    // This mode is useful when the register model is used passively.
    //
    // When ~on~ is ~FALSE~, no check is made against the mirrored value.

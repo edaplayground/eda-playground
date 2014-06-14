@@ -403,16 +403,9 @@ function bit uvm_is_match (string expr, string str);
   return (uvm_re_match(s, str) == 0);
 endfunction
 
-`ifndef UVM_LINE_WIDTH
-  `define UVM_LINE_WIDTH 120
-`endif 
+
 parameter UVM_LINE_WIDTH = `UVM_LINE_WIDTH;
-
-`ifndef UVM_NUM_LINES
-  `define UVM_NUM_LINES 120
-`endif
 parameter UVM_NUM_LINES = `UVM_NUM_LINES;
-
 parameter UVM_SMALL_STRING = UVM_LINE_WIDTH*8-1;
 parameter UVM_LARGE_STRING = UVM_LINE_WIDTH*UVM_NUM_LINES*8-1;
 

@@ -521,6 +521,19 @@ class uvm_sequence_base extends uvm_sequence_item;
         m_starting_phase_dap.set_name(sp_name);
      end
   endfunction : m_init_phase_daps
+
+`ifndef UVM_NO_DEPRECATED
+ `define UVM_DEPRECATED_STARTING_PHASE
+`endif
+
+`ifdef UVM_DEPRECATED_STARTING_PHASE
+  // DEPRECATED!! Use get/set_starting_phase accessors instead!
+  uvm_phase starting_phase;
+  // Value set via set_starting_phase
+  uvm_phase m_set_starting_phase;
+  // Ensures we only warn once per sequence
+  bit m_warn_deprecated_set;
+`endif 
    
   // Function: get_starting_phase
   // Returns the 'starting phase'.
@@ -537,6 +550,31 @@ class uvm_sequence_base extends uvm_sequence_item;
   // then the starting phase value can be modified again.
   //
   function uvm_phase get_starting_phase();
+`ifdef UVM_DEPRECATED_STARTING_PHASE
+     begin
+        bit throw_error;
+
+        if (starting_phase != m_set_starting_phase) begin
+           if (!m_warn_deprecated_set) begin
+              `uvm_warning("UVM_DEPRECATED", "'starting_phase' is deprecated and not part of the UVM standard.  See documentation for uvm_sequence_base::set_starting_phase")
+              m_warn_deprecated_set = 1;
+           end
+           
+           if (m_starting_phase_dap.try_set(starting_phase))
+             m_set_starting_phase = starting_phase;
+           else begin
+              uvm_phase dap_phase = m_starting_phase_dap.get();
+              `uvm_error("UVM/SEQ/LOCK_DEPR",
+                         {"The deprecated 'starting_phase' variable has been set to '",
+                          (starting_phase == null) ? "<null>" : starting_phase.get_full_name(), 
+                          "' after a call to get_starting_phase locked the value to '",
+                          (dap_phase == null) ? "<null>" : dap_phase.get_full_name(), 
+                          "'.  See documentation for uvm_sequence_base::set_starting_phase."})
+           end
+        end
+
+     end
+`endif
      return m_starting_phase_dap.get();
   endfunction : get_starting_phase
 
@@ -550,6 +588,23 @@ class uvm_sequence_base extends uvm_sequence_item;
   // then the starting phase value can be modified again.
   //
   function void set_starting_phase(uvm_phase phase);
+`ifdef UVM_DEPRECATED_STARTING_PHASE
+     begin
+        if (starting_phase != m_set_starting_phase) begin
+           if (!m_warn_deprecated_set) begin
+              `uvm_warning("UVM_DEPRECATED", 
+                           {"The deprecated 'starting_phase' variable has been set to '",
+                            starting_phase.get_full_name(),
+                            "' manually.  See documentation for uvm_sequence_base::set_starting_phase."})
+              m_warn_deprecated_set = 1;
+           end
+
+           starting_phase = phase;
+           m_set_starting_phase = phase;
+        end
+     end
+`endif
+           
      m_starting_phase_dap.set(phase);
   endfunction : set_starting_phase
    

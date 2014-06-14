@@ -301,13 +301,17 @@ if (browserType) {document.write("<div class=" + browserType + ">");if (browserV
 
 
  <!--CONTENT index=13 -->
-<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_printer.format_row" href="../../src/base/uvm_printer.svh">format_row</a></h3><div class=CBody><p>Hook to override base header with a custom header.</p></div></div></div>
+<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_printer.format_header" href="../../src/base/uvm_printer.svh">format_header</a></h3>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function string format_header()
+  </td></tr></table></blockquote><div class=CBody><p>Hook to override base header with a custom header.</p></div></div></div>
 
 
 
 
  <!--CONTENT index=14 -->
-<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_printer.format_header" href="../../src/base/uvm_printer.svh">format_header</a></h3><div class=CBody><p>Hook to override base footer with a custom footer.</p></div></div></div>
+<div class="CMethod"><div class=CTopic><h3 class=CTitle><a name="uvm_printer.format_footer" href="../../src/base/uvm_printer.svh">format_footer</a></h3>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function string format_footer()
+  </td></tr></table></blockquote><div class=CBody><p>Hook to override base footer with a custom footer.</p></div></div></div>
 
 
 
@@ -639,76 +643,76 @@ value       integral        12          'h2d
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_printer_knobs.Variables" >Variables</a></td><td class=SDescription></td></tr>
   <!-- index=34 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.header" id=link42 onMouseOver="ShowTip(event, 'tt23', 'link42')" onMouseOut="HideTip('tt23')">header</a></td><td class=SDescription>Indicates whether the &lt;uvm_printer::print_header&gt; function should be called when printing an object.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.header" id=link42 onMouseOver="ShowTip(event, 'tt23', 'link42')" onMouseOut="HideTip('tt23')">header</a></td><td class=SDescription>Indicates whether the <a href="#uvm_printer.format_header" class=LMethod id=link43 onMouseOver="ShowTip(event, 'tt24', 'link43')" onMouseOut="HideTip('tt24')">uvm_printer::format_header</a> function should be called when printing an object.</td></tr>
   <!-- index=35 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.footer" id=link43 onMouseOver="ShowTip(event, 'tt24', 'link43')" onMouseOut="HideTip('tt24')">footer</a></td><td class=SDescription>Indicates whether the &lt;uvm_printer::print_footer&gt; function should be called when printing an object.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.footer" id=link44 onMouseOver="ShowTip(event, 'tt25', 'link44')" onMouseOut="HideTip('tt25')">footer</a></td><td class=SDescription>Indicates whether the <a href="#uvm_printer.format_footer" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt26', 'link45')" onMouseOut="HideTip('tt26')">uvm_printer::format_footer</a> function should be called when printing an object.</td></tr>
   <!-- index=36 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.full_name" id=link44 onMouseOver="ShowTip(event, 'tt25', 'link44')" onMouseOut="HideTip('tt25')">full_name</a></td><td class=SDescription>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link45 onMouseOver="ShowTip(event, 'tt26', 'link45')" onMouseOut="HideTip('tt26')">uvm_printer::adjust_name</a> should print the full name of an identifier or just the leaf name.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.full_name" id=link46 onMouseOver="ShowTip(event, 'tt27', 'link46')" onMouseOut="HideTip('tt27')">full_name</a></td><td class=SDescription>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link47 onMouseOver="ShowTip(event, 'tt28', 'link47')" onMouseOut="HideTip('tt28')">uvm_printer::adjust_name</a> should print the full name of an identifier or just the leaf name.</td></tr>
   <!-- index=37 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.identifier" id=link46 onMouseOver="ShowTip(event, 'tt27', 'link46')" onMouseOut="HideTip('tt27')">identifier</a></td><td class=SDescription>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link47 onMouseOver="ShowTip(event, 'tt26', 'link47')" onMouseOut="HideTip('tt26')">uvm_printer::adjust_name</a> should print the identifier. </td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.identifier" id=link48 onMouseOver="ShowTip(event, 'tt29', 'link48')" onMouseOut="HideTip('tt29')">identifier</a></td><td class=SDescription>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link49 onMouseOver="ShowTip(event, 'tt28', 'link49')" onMouseOut="HideTip('tt28')">uvm_printer::adjust_name</a> should print the identifier. </td></tr>
   <!-- index=38 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.type_name" id=link48 onMouseOver="ShowTip(event, 'tt28', 'link48')" onMouseOut="HideTip('tt28')">type_name</a></td><td class=SDescription>Controls whether to print a field&rsquo;s type name.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.type_name" id=link50 onMouseOver="ShowTip(event, 'tt30', 'link50')" onMouseOut="HideTip('tt30')">type_name</a></td><td class=SDescription>Controls whether to print a field&rsquo;s type name.</td></tr>
   <!-- index=39 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.size" id=link49 onMouseOver="ShowTip(event, 'tt29', 'link49')" onMouseOut="HideTip('tt29')">size</a></td><td class=SDescription>Controls whether to print a field&rsquo;s size.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.size" id=link51 onMouseOver="ShowTip(event, 'tt31', 'link51')" onMouseOut="HideTip('tt31')">size</a></td><td class=SDescription>Controls whether to print a field&rsquo;s size.</td></tr>
   <!-- index=40 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.depth" id=link50 onMouseOver="ShowTip(event, 'tt30', 'link50')" onMouseOut="HideTip('tt30')">depth</a></td><td class=SDescription>Indicates how deep to recurse when printing objects. </td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.depth" id=link52 onMouseOver="ShowTip(event, 'tt32', 'link52')" onMouseOut="HideTip('tt32')">depth</a></td><td class=SDescription>Indicates how deep to recurse when printing objects. </td></tr>
   <!-- index=41 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.reference" id=link51 onMouseOver="ShowTip(event, 'tt31', 'link51')" onMouseOut="HideTip('tt31')">reference</a></td><td class=SDescription>Controls whether to print a unique reference ID for object handles. </td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.reference" id=link53 onMouseOver="ShowTip(event, 'tt33', 'link53')" onMouseOut="HideTip('tt33')">reference</a></td><td class=SDescription>Controls whether to print a unique reference ID for object handles. </td></tr>
   <!-- index=42 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.begin_elements" id=link52 onMouseOver="ShowTip(event, 'tt16', 'link52')" onMouseOut="HideTip('tt16')">begin_elements</a></td><td class=SDescription>Defines the number of elements at the head of a list to print. </td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.begin_elements" id=link54 onMouseOver="ShowTip(event, 'tt16', 'link54')" onMouseOut="HideTip('tt16')">begin_elements</a></td><td class=SDescription>Defines the number of elements at the head of a list to print. </td></tr>
   <!-- index=43 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.end_elements" id=link53 onMouseOver="ShowTip(event, 'tt17', 'link53')" onMouseOut="HideTip('tt17')">end_elements</a></td><td class=SDescription>This defines the number of elements at the end of a list that should be printed.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.end_elements" id=link55 onMouseOver="ShowTip(event, 'tt17', 'link55')" onMouseOut="HideTip('tt17')">end_elements</a></td><td class=SDescription>This defines the number of elements at the end of a list that should be printed.</td></tr>
   <!-- index=44 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.prefix" id=link54 onMouseOver="ShowTip(event, 'tt32', 'link54')" onMouseOut="HideTip('tt32')">prefix</a></td><td class=SDescription>Specifies the string prepended to each output line</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.prefix" id=link56 onMouseOver="ShowTip(event, 'tt34', 'link56')" onMouseOut="HideTip('tt34')">prefix</a></td><td class=SDescription>Specifies the string prepended to each output line</td></tr>
   <!-- index=45 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.indent" id=link55 onMouseOver="ShowTip(event, 'tt33', 'link55')" onMouseOut="HideTip('tt33')">indent</a></td><td class=SDescription>This knob specifies the number of spaces to use for level indentation. </td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.indent" id=link57 onMouseOver="ShowTip(event, 'tt35', 'link57')" onMouseOut="HideTip('tt35')">indent</a></td><td class=SDescription>This knob specifies the number of spaces to use for level indentation. </td></tr>
   <!-- index=46 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.show_root" id=link56 onMouseOver="ShowTip(event, 'tt34', 'link56')" onMouseOut="HideTip('tt34')">show_root</a></td><td class=SDescription>This setting indicates whether or not the initial object that is printed (when current depth is 0) prints the full path name. </td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.show_root" id=link58 onMouseOver="ShowTip(event, 'tt36', 'link58')" onMouseOut="HideTip('tt36')">show_root</a></td><td class=SDescription>This setting indicates whether or not the initial object that is printed (when current depth is 0) prints the full path name. </td></tr>
   <!-- index=47 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.mcd" id=link57 onMouseOver="ShowTip(event, 'tt35', 'link57')" onMouseOut="HideTip('tt35')">mcd</a></td><td class=SDescription>This is a file descriptor, or multi-channel descriptor, that specifies where the print output should be directed.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.mcd" id=link59 onMouseOver="ShowTip(event, 'tt37', 'link59')" onMouseOut="HideTip('tt37')">mcd</a></td><td class=SDescription>This is a file descriptor, or multi-channel descriptor, that specifies where the print output should be directed.</td></tr>
   <!-- index=48 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.separator" id=link58 onMouseOver="ShowTip(event, 'tt36', 'link58')" onMouseOut="HideTip('tt36')">separator</a></td><td class=SDescription>For tree printers only, determines the opening and closing separators used for nested objects.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.separator" id=link60 onMouseOver="ShowTip(event, 'tt38', 'link60')" onMouseOut="HideTip('tt38')">separator</a></td><td class=SDescription>For tree printers only, determines the opening and closing separators used for nested objects.</td></tr>
   <!-- index=49 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.show_radix" id=link59 onMouseOver="ShowTip(event, 'tt37', 'link59')" onMouseOut="HideTip('tt37')">show_radix</a></td><td class=SDescription>Indicates whether the radix string (&lsquo;h, and so on) should be prepended to an integral value when one is printed.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.show_radix" id=link61 onMouseOver="ShowTip(event, 'tt39', 'link61')" onMouseOut="HideTip('tt39')">show_radix</a></td><td class=SDescription>Indicates whether the radix string (&lsquo;h, and so on) should be prepended to an integral value when one is printed.</td></tr>
   <!-- index=50 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.default_radix" id=link60 onMouseOver="ShowTip(event, 'tt38', 'link60')" onMouseOut="HideTip('tt38')">default_radix</a></td><td class=SDescription>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the <a href="#uvm_printer.print_field" class=LMethod id=link61 onMouseOver="ShowTip(event, 'tt39', 'link61')" onMouseOut="HideTip('tt39')">uvm_printer::print_field</a> or <a href="#uvm_printer.print_field_int" class=LMethod id=link62 onMouseOver="ShowTip(event, 'tt40', 'link62')" onMouseOut="HideTip('tt40')">uvm_printer::print_field_int</a> methods.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.default_radix" id=link62 onMouseOver="ShowTip(event, 'tt40', 'link62')" onMouseOut="HideTip('tt40')">default_radix</a></td><td class=SDescription>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the <a href="#uvm_printer.print_field" class=LMethod id=link63 onMouseOver="ShowTip(event, 'tt41', 'link63')" onMouseOut="HideTip('tt41')">uvm_printer::print_field</a> or <a href="#uvm_printer.print_field_int" class=LMethod id=link64 onMouseOver="ShowTip(event, 'tt42', 'link64')" onMouseOut="HideTip('tt42')">uvm_printer::print_field_int</a> methods.</td></tr>
   <!-- index=51 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.dec_radix" id=link63 onMouseOver="ShowTip(event, 'tt41', 'link63')" onMouseOut="HideTip('tt41')">dec_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_DEC" class=LConstant id=link64 onMouseOver="ShowTip(event, 'tt42', 'link64')" onMouseOut="HideTip('tt42')">UVM_DEC</a> is used for the radix of the integral object.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.dec_radix" id=link65 onMouseOver="ShowTip(event, 'tt43', 'link65')" onMouseOut="HideTip('tt43')">dec_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_DEC" class=LConstant id=link66 onMouseOver="ShowTip(event, 'tt44', 'link66')" onMouseOut="HideTip('tt44')">UVM_DEC</a> is used for the radix of the integral object.</td></tr>
   <!-- index=52 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.bin_radix" id=link65 onMouseOver="ShowTip(event, 'tt43', 'link65')" onMouseOut="HideTip('tt43')">bin_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_BIN" class=LConstant id=link66 onMouseOver="ShowTip(event, 'tt44', 'link66')" onMouseOut="HideTip('tt44')">UVM_BIN</a> is used for the radix of the integral object.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.bin_radix" id=link67 onMouseOver="ShowTip(event, 'tt45', 'link67')" onMouseOut="HideTip('tt45')">bin_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_BIN" class=LConstant id=link68 onMouseOver="ShowTip(event, 'tt46', 'link68')" onMouseOut="HideTip('tt46')">UVM_BIN</a> is used for the radix of the integral object.</td></tr>
   <!-- index=53 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.oct_radix" id=link67 onMouseOver="ShowTip(event, 'tt45', 'link67')" onMouseOut="HideTip('tt45')">oct_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_OCT" class=LConstant id=link68 onMouseOver="ShowTip(event, 'tt46', 'link68')" onMouseOut="HideTip('tt46')">UVM_OCT</a> is used for the radix of the integral object.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.oct_radix" id=link69 onMouseOver="ShowTip(event, 'tt47', 'link69')" onMouseOut="HideTip('tt47')">oct_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_OCT" class=LConstant id=link70 onMouseOver="ShowTip(event, 'tt48', 'link70')" onMouseOut="HideTip('tt48')">UVM_OCT</a> is used for the radix of the integral object.</td></tr>
   <!-- index=54 -->
 
-<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.unsigned_radix" id=link69 onMouseOver="ShowTip(event, 'tt47', 'link69')" onMouseOut="HideTip('tt47')">unsigned_radix</a></td><td class=SDescription>This is the string which should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_UNSIGNED" class=LConstant id=link70 onMouseOver="ShowTip(event, 'tt48', 'link70')" onMouseOut="HideTip('tt48')">UVM_UNSIGNED</a> is used for the radix of the integral object.</td></tr>
+<tr class="SVariable SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.unsigned_radix" id=link71 onMouseOver="ShowTip(event, 'tt49', 'link71')" onMouseOut="HideTip('tt49')">unsigned_radix</a></td><td class=SDescription>This is the string which should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_UNSIGNED" class=LConstant id=link72 onMouseOver="ShowTip(event, 'tt50', 'link72')" onMouseOut="HideTip('tt50')">UVM_UNSIGNED</a> is used for the radix of the integral object.</td></tr>
   <!-- index=55 -->
 
-<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.hex_radix" id=link71 onMouseOver="ShowTip(event, 'tt49', 'link71')" onMouseOut="HideTip('tt49')">hex_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_HEX" class=LConstant id=link72 onMouseOver="ShowTip(event, 'tt50', 'link72')" onMouseOut="HideTip('tt50')">UVM_HEX</a> is used for the radix of the integral object.</td></tr>
+<tr class="SVariable SIndent2 SMarked"><td class=SEntry><a href="#uvm_printer_knobs.hex_radix" id=link73 onMouseOver="ShowTip(event, 'tt51', 'link73')" onMouseOut="HideTip('tt51')">hex_radix</a></td><td class=SDescription>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_HEX" class=LConstant id=link74 onMouseOver="ShowTip(event, 'tt52', 'link74')" onMouseOut="HideTip('tt52')">UVM_HEX</a> is used for the radix of the integral object.</td></tr>
   <!-- index=56 -->
 
 <tr class="SGroup SIndent1"><td class=SEntry><a href="#uvm_printer_knobs.Methods" >Methods</a></td><td class=SDescription></td></tr>
   <!-- index=57 -->
 
-<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.get_radix_str" id=link73 onMouseOver="ShowTip(event, 'tt51', 'link73')" onMouseOut="HideTip('tt51')">get_radix_str</a></td><td class=SDescription>Converts the radix from an enumerated to a printable radix according to the radix printing knobs (bin_radix, and so on).</td></tr></table></div></div><!--END_ND_SUMMARY-->
+<tr class="SMethod SIndent2"><td class=SEntry><a href="#uvm_printer_knobs.get_radix_str" id=link75 onMouseOver="ShowTip(event, 'tt53', 'link75')" onMouseOut="HideTip('tt53')">get_radix_str</a></td><td class=SDescription>Converts the radix from an enumerated to a printable radix according to the radix printing knobs (bin_radix, and so on).</td></tr></table></div></div><!--END_ND_SUMMARY-->
 </div></div></div>
 
 
@@ -723,7 +727,7 @@ value       integral        12          'h2d
  <!--CONTENT index=34 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.header" href="../../src/base/uvm_printer.svh">header</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit header = 1
-  </td></tr></table></blockquote><div class=CBody><p>Indicates whether the &lt;uvm_printer::print_header&gt; function should be called when printing an object.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Indicates whether the <a href="#uvm_printer.format_header" class=LMethod id=link76 onMouseOver="ShowTip(event, 'tt24', 'link76')" onMouseOut="HideTip('tt24')">uvm_printer::format_header</a> function should be called when printing an object.</p></div></div></div>
 
 
 
@@ -731,7 +735,7 @@ value       integral        12          'h2d
  <!--CONTENT index=35 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.footer" href="../../src/base/uvm_printer.svh">footer</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit footer = 1
-  </td></tr></table></blockquote><div class=CBody><p>Indicates whether the &lt;uvm_printer::print_footer&gt; function should be called when printing an object.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Indicates whether the <a href="#uvm_printer.format_footer" class=LMethod id=link77 onMouseOver="ShowTip(event, 'tt26', 'link77')" onMouseOut="HideTip('tt26')">uvm_printer::format_footer</a> function should be called when printing an object.</p></div></div></div>
 
 
 
@@ -739,7 +743,7 @@ value       integral        12          'h2d
  <!--CONTENT index=36 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.full_name" href="../../src/base/uvm_printer.svh">full_name</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit full_name = 0
-  </td></tr></table></blockquote><div class=CBody><p>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link74 onMouseOver="ShowTip(event, 'tt26', 'link74')" onMouseOut="HideTip('tt26')">uvm_printer::adjust_name</a> should print the full name of an identifier or just the leaf name.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link78 onMouseOver="ShowTip(event, 'tt28', 'link78')" onMouseOut="HideTip('tt28')">uvm_printer::adjust_name</a> should print the full name of an identifier or just the leaf name.</p></div></div></div>
 
 
 
@@ -747,7 +751,7 @@ value       integral        12          'h2d
  <!--CONTENT index=37 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.identifier" href="../../src/base/uvm_printer.svh">identifier</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit identifier = 1
-  </td></tr></table></blockquote><div class=CBody><p>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link75 onMouseOver="ShowTip(event, 'tt26', 'link75')" onMouseOut="HideTip('tt26')">uvm_printer::adjust_name</a> should print the identifier.&nbsp; This is useful in cases where you just want the values of an object, but no identifiers.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>Indicates whether <a href="#uvm_printer.adjust_name" class=LMethod id=link79 onMouseOver="ShowTip(event, 'tt28', 'link79')" onMouseOut="HideTip('tt28')">uvm_printer::adjust_name</a> should print the identifier.&nbsp; This is useful in cases where you just want the values of an object, but no identifiers.</p></div></div></div>
 
 
 
@@ -851,7 +855,7 @@ value       integral        12          'h2d
  <!--CONTENT index=50 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.default_radix" href="../../src/base/uvm_printer.svh">default_radix</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_radix_enum default_radix = UVM_HEX
-  </td></tr></table></blockquote><div class=CBody><p>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the <a href="#uvm_printer.print_field" class=LMethod id=link76 onMouseOver="ShowTip(event, 'tt39', 'link76')" onMouseOut="HideTip('tt39')">uvm_printer::print_field</a> or <a href="#uvm_printer.print_field_int" class=LMethod id=link77 onMouseOver="ShowTip(event, 'tt40', 'link77')" onMouseOut="HideTip('tt40')">uvm_printer::print_field_int</a> methods.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the <a href="#uvm_printer.print_field" class=LMethod id=link80 onMouseOver="ShowTip(event, 'tt41', 'link80')" onMouseOut="HideTip('tt41')">uvm_printer::print_field</a> or <a href="#uvm_printer.print_field_int" class=LMethod id=link81 onMouseOver="ShowTip(event, 'tt42', 'link81')" onMouseOut="HideTip('tt42')">uvm_printer::print_field_int</a> methods.</p></div></div></div>
 
 
 
@@ -859,7 +863,7 @@ value       integral        12          'h2d
  <!--CONTENT index=51 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.dec_radix" href="../../src/base/uvm_printer.svh">dec_radix</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string dec_radix = &quot;'d&quot;
-  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_DEC" class=LConstant id=link78 onMouseOver="ShowTip(event, 'tt42', 'link78')" onMouseOut="HideTip('tt42')">UVM_DEC</a> is used for the radix of the integral object.</p><p>When a negative number is printed, the radix is not printed since only signed decimal values can print as negative.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_DEC" class=LConstant id=link82 onMouseOver="ShowTip(event, 'tt44', 'link82')" onMouseOut="HideTip('tt44')">UVM_DEC</a> is used for the radix of the integral object.</p><p>When a negative number is printed, the radix is not printed since only signed decimal values can print as negative.</p></div></div></div>
 
 
 
@@ -867,7 +871,7 @@ value       integral        12          'h2d
  <!--CONTENT index=52 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.bin_radix" href="../../src/base/uvm_printer.svh">bin_radix</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string bin_radix = &quot;'b&quot;
-  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_BIN" class=LConstant id=link79 onMouseOver="ShowTip(event, 'tt44', 'link79')" onMouseOut="HideTip('tt44')">UVM_BIN</a> is used for the radix of the integral object.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_BIN" class=LConstant id=link83 onMouseOver="ShowTip(event, 'tt46', 'link83')" onMouseOut="HideTip('tt46')">UVM_BIN</a> is used for the radix of the integral object.</p></div></div></div>
 
 
 
@@ -875,7 +879,7 @@ value       integral        12          'h2d
  <!--CONTENT index=53 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.oct_radix" href="../../src/base/uvm_printer.svh">oct_radix</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string oct_radix = &quot;'o&quot;
-  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_OCT" class=LConstant id=link80 onMouseOver="ShowTip(event, 'tt46', 'link80')" onMouseOut="HideTip('tt46')">UVM_OCT</a> is used for the radix of the integral object.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_OCT" class=LConstant id=link84 onMouseOver="ShowTip(event, 'tt48', 'link84')" onMouseOut="HideTip('tt48')">UVM_OCT</a> is used for the radix of the integral object.</p></div></div></div>
 
 
 
@@ -883,7 +887,7 @@ value       integral        12          'h2d
  <!--CONTENT index=54 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.unsigned_radix" href="../../src/base/uvm_printer.svh">unsigned_radix</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string unsigned_radix = &quot;'d&quot;
-  </td></tr></table></blockquote><div class=CBody><p>This is the string which should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_UNSIGNED" class=LConstant id=link81 onMouseOver="ShowTip(event, 'tt48', 'link81')" onMouseOut="HideTip('tt48')">UVM_UNSIGNED</a> is used for the radix of the integral object.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>This is the string which should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_UNSIGNED" class=LConstant id=link85 onMouseOver="ShowTip(event, 'tt50', 'link85')" onMouseOut="HideTip('tt50')">UVM_UNSIGNED</a> is used for the radix of the integral object.</p></div></div></div>
 
 
 
@@ -891,7 +895,7 @@ value       integral        12          'h2d
  <!--CONTENT index=55 -->
 <div class="CVariable"><div class=CTopic><h3 class=CTitle><a name="uvm_printer_knobs.hex_radix" href="../../src/base/uvm_printer.svh">hex_radix</a></h3>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string hex_radix = &quot;'h&quot;
-  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_HEX" class=LConstant id=link82 onMouseOver="ShowTip(event, 'tt50', 'link82')" onMouseOut="HideTip('tt50')">UVM_HEX</a> is used for the radix of the integral object.</p></div></div></div>
+  </td></tr></table></blockquote><div class=CBody><p>This string should be prepended to the value of an integral type when a radix of <a href="uvm_object_globals-svh.html#UVM_HEX" class=LConstant id=link86 onMouseOver="ShowTip(event, 'tt52', 'link86')" onMouseOut="HideTip('tt52')">UVM_HEX</a> is used for the radix of the integral object.</p></div></div></div>
 
 
 
@@ -996,11 +1000,15 @@ Prints the header of a footer. </div></div><div class=CToolTip id="tt16"><div cl
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>function new()
   </td></tr></table></blockquote>Creates a new instance of <i>uvm_line_printer</i>. </div></div><div class=CToolTip id="tt23"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit header = 1
-  </td></tr></table></blockquote>Indicates whether the uvm_printer::print_header function should be called when printing an object.</div></div><div class=CToolTip id="tt24"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether the uvm_printer::format_header function should be called when printing an object.</div></div><div class=CToolTip id="tt24"><div class=CMethod>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function string format_header()
+  </td></tr></table></blockquote>Hook to override base header with a custom header.</div></div><div class=CToolTip id="tt25"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit footer = 1
-  </td></tr></table></blockquote>Indicates whether the uvm_printer::print_footer function should be called when printing an object.</div></div><div class=CToolTip id="tt25"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether the uvm_printer::format_footer function should be called when printing an object.</div></div><div class=CToolTip id="tt26"><div class=CMethod>
+    <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>virtual function string format_footer()
+  </td></tr></table></blockquote>Hook to override base footer with a custom footer.</div></div><div class=CToolTip id="tt27"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit full_name = 0
-  </td></tr></table></blockquote>Indicates whether uvm_printer::adjust_name should print the full name of an identifier or just the leaf name.</div></div><div class=CToolTip id="tt26"><div class=CMethod>
+  </td></tr></table></blockquote>Indicates whether uvm_printer::adjust_name should print the full name of an identifier or just the leaf name.</div></div><div class=CToolTip id="tt28"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>virtual protected function string adjust_name (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
@@ -1016,31 +1024,31 @@ Prints the header of a footer. </div></div><div class=CToolTip id="tt16"><div cl
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Prints a field&rsquo;s name, or <i>id</i>, which is the full instance name.</div></div><div class=CToolTip id="tt27"><div class=CVariable>
+Prints a field&rsquo;s name, or <i>id</i>, which is the full instance name.</div></div><div class=CToolTip id="tt29"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit identifier = 1
-  </td></tr></table></blockquote>Indicates whether uvm_printer::adjust_name should print the identifier. </div></div><div class=CToolTip id="tt28"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether uvm_printer::adjust_name should print the identifier. </div></div><div class=CToolTip id="tt30"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit type_name = 1
-  </td></tr></table></blockquote>Controls whether to print a field&rsquo;s type name.</div></div><div class=CToolTip id="tt29"><div class=CVariable>
+  </td></tr></table></blockquote>Controls whether to print a field&rsquo;s type name.</div></div><div class=CToolTip id="tt31"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit size = 1
-  </td></tr></table></blockquote>Controls whether to print a field&rsquo;s size.</div></div><div class=CToolTip id="tt30"><div class=CVariable>
+  </td></tr></table></blockquote>Controls whether to print a field&rsquo;s size.</div></div><div class=CToolTip id="tt32"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int depth = -1
-  </td></tr></table></blockquote>Indicates how deep to recurse when printing objects. </div></div><div class=CToolTip id="tt31"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates how deep to recurse when printing objects. </div></div><div class=CToolTip id="tt33"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit reference = 1
-  </td></tr></table></blockquote>Controls whether to print a unique reference ID for object handles. </div></div><div class=CToolTip id="tt32"><div class=CVariable>
+  </td></tr></table></blockquote>Controls whether to print a unique reference ID for object handles. </div></div><div class=CToolTip id="tt34"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string prefix = &quot;&quot;
-  </td></tr></table></blockquote>Specifies the string prepended to each output line</div></div><div class=CToolTip id="tt33"><div class=CVariable>
+  </td></tr></table></blockquote>Specifies the string prepended to each output line</div></div><div class=CToolTip id="tt35"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int indent = 2
-  </td></tr></table></blockquote>This knob specifies the number of spaces to use for level indentation. </div></div><div class=CToolTip id="tt34"><div class=CVariable>
+  </td></tr></table></blockquote>This knob specifies the number of spaces to use for level indentation. </div></div><div class=CToolTip id="tt36"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit show_root = 0
-  </td></tr></table></blockquote>This setting indicates whether or not the initial object that is printed (when current depth is 0) prints the full path name. </div></div><div class=CToolTip id="tt35"><div class=CVariable>
+  </td></tr></table></blockquote>This setting indicates whether or not the initial object that is printed (when current depth is 0) prints the full path name. </div></div><div class=CToolTip id="tt37"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int mcd = UVM_STDOUT
-  </td></tr></table></blockquote>This is a file descriptor, or multi-channel descriptor, that specifies where the print output should be directed.</div></div><div class=CToolTip id="tt36"><div class=CVariable>
+  </td></tr></table></blockquote>This is a file descriptor, or multi-channel descriptor, that specifies where the print output should be directed.</div></div><div class=CToolTip id="tt38"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string separator = &quot;{}&quot;
-  </td></tr></table></blockquote>For tree printers only, determines the opening and closing separators used for nested objects.</div></div><div class=CToolTip id="tt37"><div class=CVariable>
+  </td></tr></table></blockquote>For tree printers only, determines the opening and closing separators used for nested objects.</div></div><div class=CToolTip id="tt39"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit show_radix = 1
-  </td></tr></table></blockquote>Indicates whether the radix string (&lsquo;h, and so on) should be prepended to an integral value when one is printed.</div></div><div class=CToolTip id="tt38"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether the radix string (&lsquo;h, and so on) should be prepended to an integral value when one is printed.</div></div><div class=CToolTip id="tt40"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>uvm_radix_enum default_radix = UVM_HEX
-  </td></tr></table></blockquote>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the uvm_printer::print_field or uvm_printer::print_field_int methods.</div></div><div class=CToolTip id="tt39"><div class=CMethod>
+  </td></tr></table></blockquote>This knob sets the default radix to use for integral values when no radix enum is explicitly supplied to the uvm_printer::print_field or uvm_printer::print_field_int methods.</div></div><div class=CToolTip id="tt41"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>virtual function void print_field (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
@@ -1072,7 +1080,7 @@ Prints a field&rsquo;s name, or <i>id</i>, which is the full instance name.</div
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Prints an integral field (up to 4096 bits).</div></div><div class=CToolTip id="tt40"><div class=CMethod>
+Prints an integral field (up to 4096 bits).</div></div><div class=CToolTip id="tt42"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=5>virtual function void print_field_int (</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>string&nbsp;</td>
@@ -1104,17 +1112,17 @@ Prints an integral field (up to 4096 bits).</div></div><div class=CToolTip id="t
       <td class=PAfterParameters colspan=5>)</td></tr>
       </table></td></tr>
     </table></blockquote>
-Prints an integral field (up to 64 bits).</div></div><div class=CToolTip id="tt41"><div class=CVariable>
+Prints an integral field (up to 64 bits).</div></div><div class=CToolTip id="tt43"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string dec_radix = &quot;'d&quot;
-  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_DEC is used for the radix of the integral object.</div></div><div class=CToolTip id="tt42"><div class=CConstant>Selects decimal (%d) format</div></div><div class=CToolTip id="tt43"><div class=CVariable>
+  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_DEC is used for the radix of the integral object.</div></div><div class=CToolTip id="tt44"><div class=CConstant>Selects decimal (%d) format</div></div><div class=CToolTip id="tt45"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string bin_radix = &quot;'b&quot;
-  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_BIN is used for the radix of the integral object.</div></div><div class=CToolTip id="tt44"><div class=CConstant>Selects binary (%b) format</div></div><div class=CToolTip id="tt45"><div class=CVariable>
+  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_BIN is used for the radix of the integral object.</div></div><div class=CToolTip id="tt46"><div class=CConstant>Selects binary (%b) format</div></div><div class=CToolTip id="tt47"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string oct_radix = &quot;'o&quot;
-  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_OCT is used for the radix of the integral object.</div></div><div class=CToolTip id="tt46"><div class=CConstant>Selects octal (%o) format</div></div><div class=CToolTip id="tt47"><div class=CVariable>
+  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_OCT is used for the radix of the integral object.</div></div><div class=CToolTip id="tt48"><div class=CConstant>Selects octal (%o) format</div></div><div class=CToolTip id="tt49"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string unsigned_radix = &quot;'d&quot;
-  </td></tr></table></blockquote>This is the string which should be prepended to the value of an integral type when a radix of UVM_UNSIGNED is used for the radix of the integral object.</div></div><div class=CToolTip id="tt48"><div class=CConstant>Selects unsigned decimal (%u) format</div></div><div class=CToolTip id="tt49"><div class=CVariable>
+  </td></tr></table></blockquote>This is the string which should be prepended to the value of an integral type when a radix of UVM_UNSIGNED is used for the radix of the integral object.</div></div><div class=CToolTip id="tt50"><div class=CConstant>Selects unsigned decimal (%u) format</div></div><div class=CToolTip id="tt51"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string hex_radix = &quot;'h&quot;
-  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_HEX is used for the radix of the integral object.</div></div><div class=CToolTip id="tt50"><div class=CConstant>Selects hexadecimal (%h) format</div></div><div class=CToolTip id="tt51"><div class=CMethod>
+  </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_HEX is used for the radix of the integral object.</div></div><div class=CToolTip id="tt52"><div class=CConstant>Selects hexadecimal (%h) format</div></div><div class=CToolTip id="tt53"><div class=CMethod>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype>
       <tr><td><table border=0 cellspacing=0 cellpadding=0><tr>
       <td class=PBeforeParameters colspan=3>function string get_radix_str(</td>      </tr><tr><td>&nbsp;&nbsp;&nbsp;</td>      <td class=PType nowrap>uvm_radix_enum&nbsp;</td>

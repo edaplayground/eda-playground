@@ -23,9 +23,9 @@
 `ifndef UVM_VERSION_SVH
 `define UVM_VERSION_SVH
 
-parameter string uvm_mgc_copyright  = "(C) 2007-2013 Mentor Graphics Corporation";
-parameter string uvm_cdn_copyright  = "(C) 2007-2013 Cadence Design Systems, Inc.";
-parameter string uvm_snps_copyright = "(C) 2006-2013 Synopsys, Inc.";
+parameter string uvm_mgc_copyright  = "(C) 2007-2014 Mentor Graphics Corporation";
+parameter string uvm_cdn_copyright  = "(C) 2007-2014 Cadence Design Systems, Inc.";
+parameter string uvm_snps_copyright = "(C) 2006-2014 Synopsys, Inc.";
 parameter string uvm_cy_copyright   = "(C) 2011-2013 Cypress Semiconductor Corp.";
 parameter string uvm_nv_copyright   = "(C) 2013-2014 NVIDIA Corporation";
 parameter string uvm_revision = `UVM_VERSION_STRING;

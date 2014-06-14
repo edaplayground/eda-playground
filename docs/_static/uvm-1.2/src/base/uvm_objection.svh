@@ -1102,7 +1102,7 @@ class uvm_objection extends uvm_report_object;
 endclass
 
 // TODO: change to plusarg
-`define UVM_DEFAULT_TIMEOUT 9200s
+//`define UVM_DEFAULT_TIMEOUT 9200s
 
 typedef class uvm_cmdline_processor;
 

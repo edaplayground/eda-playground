@@ -135,7 +135,7 @@ virtual class uvm_transaction extends uvm_object;
   //
   // Calling ~accept_tr~ indicates that the transaction item has been received by
   // a consumer component. Typically a <uvm_driver #(REQ,RSP)> would call <uvm_component::accept_tr>,
-  // which calls this method-- upon return from a <get_next_item()>, <get()>, or <peek()>
+  // which calls this method-- upon return from a ~get_next_item()~, ~get()~, or ~peek()~
   // call on its sequencer port, <uvm_driver#(REQ,RSP)::seq_item_port>.
   //
   // With some

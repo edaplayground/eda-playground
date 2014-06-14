@@ -552,7 +552,7 @@ endclass
 // The `uvm_*_param_utils macros for parameterized classes differ from
 // `uvm_*_utils classes in the following ways:
 //
-// - The <get_type_name> method and static type_name variable are not defined. You
+// - The ~get_type_name~ method and static type_name variable are not defined. You
 //   will need to implement these manually.
 //
 // - A type name is not associated with the type when registering with the
@@ -677,7 +677,7 @@ endclass
 //|
 //|  endclass
 //
-// Finally we define an environment class, also not parameterized. Its <build_phase>
+// Finally we define an environment class, also not parameterized. Its ~build_phase~
 // method shows three methods for setting an instance override on a grandchild
 // component with relative path name, ~agent1.driver1~, all equivalent.
 //

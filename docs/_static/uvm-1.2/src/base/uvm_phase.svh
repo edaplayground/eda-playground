@@ -668,7 +668,7 @@ endclass
 //
 // Phase state transition descriptor.
 // Used to describe the phase transition that caused a
-// <uvm_phase_cb::state_changed()> callback to be invoked.
+// <uvm_phase_cb::phase_state_changed()> callback to be invoked.
 //
 
 class uvm_phase_state_change extends uvm_object;

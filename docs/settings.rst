@@ -83,17 +83,17 @@ When language is *Verilog/SystemVerilog*, other Verilog libraries can be used fo
 These libraries may be used along with UVM/OVM. Multiple libraries may be selected at the same time.
 *Ctrl+Click* to select multiple libraries. Available libraries:
 
-* OVL 2.7
+* OVL 2.8.1
 * SVUnit 2.11
-* ClueLib 0.1.0
-* svlib 0.2
+* ClueLib 0.2.0
+* svlib 0.3
 
 Libraries (VHDL)
 ----------------
 
 When language is *VHDL*, the following VHDL libraries can be used for both design and testbench.
 
-* OVL 2.7
+* OVL 2.8.1
 
 Top entity (VHDL)
 -----------------

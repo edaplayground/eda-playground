@@ -281,7 +281,7 @@ class uvm_status_container;
   // object stack
   uvm_object m_uvm_cycle_scopes[$];
   function bit m_do_cycle_check(uvm_object scope);
-    uvm_object l = m_uvm_cycle_scopes[$];
+    uvm_object l = (m_uvm_cycle_scopes.size()==0) ? null : m_uvm_cycle_scopes[$];
 
     // we have been in this scope before (but actually right before so assuming a super/derived context of the same object)
     if(l == scope) 

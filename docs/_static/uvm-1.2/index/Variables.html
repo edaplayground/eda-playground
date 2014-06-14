@@ -163,7 +163,7 @@ A <i>uvm_event#(uvm_object)</i> that is triggered when this transaction&rsquo;s 
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string fname
   </td></tr></table></blockquote>The file name from where this transaction originated, if provided at the call site.</div></div><div class=CToolTip id="tt54"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit footer = 1
-  </td></tr></table></blockquote>Indicates whether the uvm_printer::print_footer function should be called when printing an object.</div></div><div class=CToolTip id="tt55"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether the uvm_printer::format_footer function should be called when printing an object.</div></div><div class=CToolTip id="tt55"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit full_name = 0
   </td></tr></table></blockquote>Indicates whether uvm_printer::adjust_name should print the full name of an identifier or just the leaf name.</div></div><!--END_ND_TOOLTIPS-->
 
@@ -171,7 +171,7 @@ A <i>uvm_event#(uvm_object)</i> that is triggered when this transaction&rsquo;s 
 <!--START_ND_TOOLTIPS-->
 <div class=CToolTip id="tt56"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit header = 1
-  </td></tr></table></blockquote>Indicates whether the uvm_printer::print_header function should be called when printing an object.</div></div><div class=CToolTip id="tt57"><div class=CVariable>
+  </td></tr></table></blockquote>Indicates whether the uvm_printer::format_header function should be called when printing an object.</div></div><div class=CToolTip id="tt57"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string hex_radix = &quot;'h&quot;
   </td></tr></table></blockquote>This string should be prepended to the value of an integral type when a radix of UVM_HEX is used for the radix of the integral object.</div></div><!--END_ND_TOOLTIPS-->
 
@@ -309,7 +309,7 @@ A <i>uvm_event#(uvm_object)</i> that is triggered when this transaction&rsquo;s 
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>string prefix = &quot;&quot;
   </td></tr></table></blockquote>Specifies the string prepended to each output line</div></div><div class=CToolTip id="tt118"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>static bit print_config_matches
-  </td></tr></table></blockquote>Setting this static variable causes uvm_config_db#(T)::get() to print info about matching configuration settings as they are being applied.</div></div><div class=CToolTip id="tt119"><div class=CVariable>
+  </td></tr></table></blockquote>Setting this static variable causes uvm_config_db::get() to print info about matching configuration settings as they are being applied.</div></div><div class=CToolTip id="tt119"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>bit print_enabled = 1
   </td></tr></table></blockquote>This bit determines if this component should automatically be printed as a child of its parent object.</div></div><div class=CToolTip id="tt120"><div class=CVariable>
     <blockquote><table border=0 cellspacing=0 cellpadding=0 class=Prototype><tr><td>int prior = -1

@@ -226,7 +226,7 @@ virtual class uvm_port_base #(type IF=uvm_void) extends IF;
   //
   // By default, the parent/child relationship of any port being connected to
   // this port is not checked. This can be overridden by configuring the
-  // port's ~check_connection_relationships~ bit via <uvm_config_int::set()>. See
+  // port's ~check_connection_relationships~ bit via ~uvm_config_int::set()~. See
   // <connect> for more information.
 
   function new (string name,

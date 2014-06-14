@@ -969,7 +969,7 @@ virtual class uvm_component extends uvm_report_object;
   // Function: print_config_settings
   //
   // Called without arguments, print_config_settings prints all configuration
-  // information for this component, as set by previous calls to <uvm_config_db#(T)::set()>.
+  // information for this component, as set by previous calls to <uvm_config_db::set()>.
   // The settings are printing in the order of their precedence.
   // 
   // If ~field~ is specified and non-empty, then only configuration settings
@@ -991,7 +991,7 @@ virtual class uvm_component extends uvm_report_object;
   // Function: print_config
   //
   // Print_config_settings prints all configuration information for this
-  // component, as set by previous calls to <uvm_config_db#(T)::set()> and exports to
+  // component, as set by previous calls to <uvm_config_db::set()> and exports to
   // the resources pool.  The settings are printing in the order of
   // their precedence.
   //
@@ -1016,7 +1016,7 @@ virtual class uvm_component extends uvm_report_object;
 
   // Variable: print_config_matches
   //
-  // Setting this static variable causes uvm_config_db#(T)::get() to print info about
+  // Setting this static variable causes uvm_config_db::get() to print info about
   // matching configuration settings as they are being applied.
 
   static bit print_config_matches;

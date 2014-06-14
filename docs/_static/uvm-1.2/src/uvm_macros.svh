@@ -67,6 +67,7 @@
 
 
 `include "macros/uvm_version_defines.svh"
+`include "macros/uvm_global_defines.svh"
 `include "macros/uvm_message_defines.svh"
 `include "macros/uvm_phase_defines.svh"
 `include "macros/uvm_object_defines.svh"
