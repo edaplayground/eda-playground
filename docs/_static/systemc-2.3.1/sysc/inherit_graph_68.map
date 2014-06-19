@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$a00206.html" title="sc_core::sc_trace_file" alt="" coords="6,31,151,57"/>
+<area shape="rect" id="node2" href="$a00207.html" title="sc_core::sc_trace_file_base" alt="" coords="200,31,379,57"/>
+<area shape="rect" id="node3" href="$a00255.html" title="sc_core::vcd_trace_file" alt="" coords="427,5,579,32"/>
+<area shape="rect" id="node4" href="$a00257.html" title="sc_core::wif_trace_file" alt="" coords="429,56,577,83"/>
+</map>

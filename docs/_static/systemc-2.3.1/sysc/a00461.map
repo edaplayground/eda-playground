@@ -1,0 +1,21 @@
+<map id="sysc/datatypes/bit/sc_proxy.h" name="sysc/datatypes/bit/sc_proxy.h">
+<area shape="rect" id="node2" href="$a00332.html" title="sysc/kernel/sc_cmnhdr.h" alt="" coords="691,549,853,576"/>
+<area shape="rect" id="node7" href="$a00377.html" title="sysc/utils/sc_iostream.h" alt="" coords="1207,549,1364,576"/>
+<area shape="rect" id="node14" href="$a00324.html" title="sysc/datatypes/int\l/sc_signed.h" alt="" coords="689,97,812,138"/>
+<area shape="rect" id="node21" href="$a00285.html" title="sysc/datatypes/bit\l/sc_bit_ids.h" alt="" coords="422,459,545,501"/>
+<area shape="rect" id="node24" href="$a00327.html" title="sysc/datatypes/int\l/sc_unsigned.h" alt="" coords="587,187,711,229"/>
+<area shape="rect" id="node25" href="$a00318.html" title="sysc/datatypes/int\l/sc_int_base.h" alt="" coords="1082,97,1205,138"/>
+<area shape="rect" id="node26" href="$a00326.html" title="sysc/datatypes/int\l/sc_uint_base.h" alt="" coords="982,187,1105,229"/>
+<area shape="rect" id="node27" href="$a00284.html" title="sysc/datatypes/bit\l/sc_bit.h" alt="" coords="1425,369,1548,410"/>
+<area shape="rect" id="node28" href="$a00289.html" title="sysc/datatypes/bit\l/sc_logic.h" alt="" coords="1590,278,1713,319"/>
+<area shape="rect" id="node29" href="$a00345.html" title="sysc/kernel/sc_macros.h" alt="" coords="1725,376,1888,403"/>
+<area shape="rect" id="node15" href="$a00351.html" title="sysc/kernel/sc_object.h" alt="" coords="1208,285,1361,312"/>
+<area shape="rect" id="node16" href="$a00329.html" title="sysc/datatypes/misc\l/sc_value_base.h" alt="" coords="685,278,821,319"/>
+<area shape="rect" id="node17" href="$a00321.html" title="sysc/datatypes/int\l/sc_nbdefs.h" alt="" coords="710,459,833,501"/>
+<area shape="rect" id="node18" href="$a00387.html" title="sysc/utils/sc_temporary.h" alt="" coords="343,285,507,312"/>
+<area shape="rect" id="node19" href="$a00320.html" title="sysc/datatypes/int\l/sc_length_param.h" alt="" coords="846,278,980,319"/>
+<area shape="rect" id="node20" href="$a00323.html" title="sysc/datatypes/int\l/sc_nbutils.h" alt="" coords="434,369,557,410"/>
+<area shape="rect" id="node23" href="$a00322.html" title="sysc/datatypes/int\l/sc_nbexterns.h" alt="" coords="195,278,319,319"/>
+<area shape="rect" id="node22" href="$a00319.html" title="sysc/datatypes/int\l/sc_int_ids.h" alt="" coords="958,459,1081,501"/>
+<area shape="rect" id="node30" href="$a00380.html" title="sysc/utils/sc_mempool.h" alt="" coords="1486,467,1647,493"/>
+</map>

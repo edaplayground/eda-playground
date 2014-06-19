@@ -1,0 +1,11 @@
+<map id="sysc/kernel/sc_runnable_int.h" name="sysc/kernel/sc_runnable_int.h">
+<area shape="rect" id="node2" href="$a00358.html" title="sysc/kernel/sc_runnable.h" alt="" coords="41,104,209,131"/>
+<area shape="rect" id="node4" href="$a00346.html" title="sysc/kernel/sc_method\l_process.h" alt="" coords="311,97,464,138"/>
+<area shape="rect" id="node9" href="$a00366.html" title="sysc/kernel/sc_thread\l_process.h" alt="" coords="489,97,636,138"/>
+<area shape="rect" id="node3" href="$a00355.html" title="sysc/kernel/sc_process.h" alt="" coords="5,195,168,221"/>
+<area shape="rect" id="node5" href="$a00364.html" title="sysc/kernel/sc_spawn\l_options.h" alt="" coords="193,187,340,229"/>
+<area shape="rect" id="node6" href="$a00334.html" title="sysc/kernel/sc_cor.h" alt="" coords="364,195,503,221"/>
+<area shape="rect" id="node7" href="$a00340.html" title="sysc/kernel/sc_event.h" alt="" coords="527,195,677,221"/>
+<area shape="rect" id="node8" href="$a00341.html" title="sysc/kernel/sc_except.h" alt="" coords="702,195,860,221"/>
+<area shape="rect" id="node10" href="$a00357.html" title="sysc/kernel/sc_reset.h" alt="" coords="885,195,1032,221"/>
+</map>

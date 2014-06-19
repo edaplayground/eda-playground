@@ -1,0 +1,4 @@
+<map id="sc_core::sc_fifo_in&lt; T &gt;" name="sc_core::sc_fifo_in&lt; T &gt;">
+<area shape="rect" id="node2" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_fifo_in_if\&lt; T \&gt;, 0,\l SC_ONE_OR_MORE_BOUND \&gt;" alt="" coords="5,96,216,152"/>
+<area shape="rect" id="node3" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_fifo_in_if\&lt; T \&gt; \&gt;" alt="" coords="39,6,181,47"/>
+</map>

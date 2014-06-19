@@ -1,0 +1,18 @@
+<map id="sysc/kernel/sc_kernel_ids.h" name="sysc/kernel/sc_kernel_ids.h">
+<area shape="rect" id="node2" href="$a00347.html" title="sysc/kernel/sc_module.h" alt="" coords="848,328,1011,355"/>
+<area shape="rect" id="node8" href="$a00355.html" title="sysc/kernel/sc_process.h" alt="" coords="506,96,669,123"/>
+<area shape="rect" id="node11" href="$a00340.html" title="sysc/kernel/sc_event.h" alt="" coords="349,245,499,272"/>
+<area shape="rect" id="node3" href="$a00390.html" title="systemc" alt="" coords="373,592,443,619"/>
+<area shape="rect" id="node4" href="$a00356.html" title="sysc/kernel/sc_process\l_handle.h" alt="" coords="852,411,1005,453"/>
+<area shape="rect" id="node5" href="$a00259.html" title="sysc/communication\l/sc_clock.h" alt="" coords="285,502,424,543"/>
+<area shape="rect" id="node6" href="$a00263.html" title="sysc/communication\l/sc_event_queue.h" alt="" coords="392,411,531,453"/>
+<area shape="rect" id="node7" href="$a00352.html" title="sysc/kernel/sc_object\l_int.h" alt="" coords="581,411,725,453"/>
+<area shape="rect" id="node9" href="$a00360.html" title="sysc/kernel/sc_sensitive.h" alt="" coords="850,245,1019,272"/>
+<area shape="rect" id="node10" href="$a00361.html" title="sysc/kernel/sc_simcontext.h" alt="" coords="5,171,187,197"/>
+<area shape="rect" id="node12" href="$a00272.html" title="sysc/communication\l/sc_port.h" alt="" coords="285,321,424,362"/>
+<area shape="rect" id="node13" href="$a00276.html" title="sysc/communication\l/sc_signal.h" alt="" coords="179,411,317,453"/>
+<area shape="rect" id="node14" href="$a00366.html" title="sysc/kernel/sc_thread\l_process.h" alt="" coords="499,321,645,362"/>
+<area shape="rect" id="node15" href="$a00346.html" title="sysc/kernel/sc_method\l_process.h" alt="" coords="670,321,823,362"/>
+<area shape="rect" id="node16" href="$a00343.html" title="sysc/kernel/sc_join.h" alt="" coords="677,171,816,197"/>
+<area shape="rect" id="node17" href="$a00358.html" title="sysc/kernel/sc_runnable.h" alt="" coords="841,171,1009,197"/>
+</map>

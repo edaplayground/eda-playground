@@ -1,0 +1,11 @@
+<map id="sysc/kernel/sc_wait_cthread.h" name="sysc/kernel/sc_wait_cthread.h">
+<area shape="rect" id="node2" href="$a00347.html" title="sysc/kernel/sc_module.h" alt="" coords="198,195,360,221"/>
+<area shape="rect" id="node8" href="$a00273.html" title="sysc/communication\l/sc_prim_channel.h" alt="" coords="542,97,680,138"/>
+<area shape="rect" id="node3" href="$a00390.html" title="systemc" alt="" coords="411,368,480,395"/>
+<area shape="rect" id="node4" href="$a00356.html" title="sysc/kernel/sc_process\l_handle.h" alt="" coords="31,278,184,319"/>
+<area shape="rect" id="node5" href="$a00259.html" title="sysc/communication\l/sc_clock.h" alt="" coords="543,278,682,319"/>
+<area shape="rect" id="node6" href="$a00263.html" title="sysc/communication\l/sc_event_queue.h" alt="" coords="210,278,348,319"/>
+<area shape="rect" id="node7" href="$a00352.html" title="sysc/kernel/sc_object\l_int.h" alt="" coords="373,278,518,319"/>
+<area shape="rect" id="node9" href="$a00276.html" title="sysc/communication\l/sc_signal.h" alt="" coords="542,187,680,229"/>
+<area shape="rect" id="node10" href="$a00265.html" title="sysc/communication\l/sc_fifo.h" alt="" coords="704,187,843,229"/>
+</map>

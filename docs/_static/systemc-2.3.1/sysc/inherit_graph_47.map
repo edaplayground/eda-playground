@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$a00146.html" title="sc_core::sc_ppq_base" alt="" coords="6,64,154,91"/>
+<area shape="rect" id="node2" href="$a00145.html" title="sc_core::sc_ppq\&lt; T \&gt;" alt="" coords="216,5,360,32"/>
+<area shape="rect" id="node3" href="$a00145.html" title="sc_core::sc_ppq\&lt; sc\l_core::sc_event_timed * \&gt;" alt="" coords="203,57,373,98"/>
+<area shape="rect" id="node4" href="$a00145.html" title="sc_core::sc_ppq\&lt; sc\l_core::sc_time * \&gt;" alt="" coords="219,122,357,163"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="sc_core::sc_port&lt; IF, N, P &gt;" name="sc_core::sc_port&lt; IF, N, P &gt;">
+<area shape="rect" id="node4" href="$a00088.html" title="sc_in\&lt; sc_dt::sc_lv\l\&lt; W \&gt; \&gt;" alt="" coords="26,262,155,303"/>
+<area shape="rect" id="node6" href="$a00093.html" title="sc_inout\&lt; sc_dt::sc\l_lv\&lt; W \&gt; \&gt;" alt="" coords="196,262,325,303"/>
+<area shape="rect" id="node2" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; IF \&gt;" alt="" coords="102,81,231,122"/>
+<area shape="rect" id="node3" href="$a00143.html" title="sc_core::sc_port_base" alt="" coords="92,5,240,32"/>
+<area shape="rect" id="node5" href="$a00092.html" title="sc_core::sc_in_rv\&lt; W \&gt;" alt="" coords="5,352,159,379"/>
+<area shape="rect" id="node7" href="$a00097.html" title="sc_core::sc_inout_rv\&lt; W \&gt;" alt="" coords="185,352,356,379"/>
+</map>

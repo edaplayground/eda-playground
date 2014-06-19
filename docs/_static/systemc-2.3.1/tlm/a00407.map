@@ -1,0 +1,10 @@
+<map id="tlm::tlm_base_target_socket&lt; BUSWIDTH, FW_IF, BW_IF, N, POL &gt;" name="tlm::tlm_base_target_socket&lt; BUSWIDTH, FW_IF, BW_IF, N, POL &gt;">
+<area shape="rect" id="node5" href="$a00091.html" title="tlm_target_socket\&lt;\l BUSWIDTH, TYPES \&gt;" alt="" coords="653,133,808,174"/>
+<area shape="rect" id="node2" href="$a00036.html" title="tlm::tlm_base_target\l_socket_b\&lt; BUSWIDTH,\l FW_IF, BW_IF \&gt;" alt="" coords="216,89,381,145"/>
+<area shape="rect" id="node3" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; FW_IF \&gt;" alt="" coords="235,169,363,210"/>
+<area shape="rect" id="node4" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00055.html" title="sc_core::sc_export_base" alt="" coords="5,176,168,203"/>
+<area shape="rect" id="node6" href="$a00018.html" title="tlm_utils::passthrough\l_target_socket\&lt; MODULE,\l BUSWIDTH, TYPES \&gt;" alt="" coords="880,5,1056,61"/>
+<area shape="rect" id="node7" href="$a00019.html" title="tlm_utils::passthrough\l_target_socket_tagged\l\&lt; MODULE, BUSWIDTH, TYPES \&gt;" alt="" coords="856,85,1080,141"/>
+<area shape="rect" id="node8" href="$a00024.html" title="tlm_utils::simple_target\l_socket\&lt; MODULE, BUSWIDTH,\l TYPES \&gt;" alt="" coords="862,165,1074,221"/>
+<area shape="rect" id="node9" href="$a00025.html" title="tlm_utils::simple_target\l_socket_tagged\&lt; MODULE,\l BUSWIDTH, TYPES \&gt;" alt="" coords="877,245,1059,301"/>
+</map>

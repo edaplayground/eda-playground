@@ -1,0 +1,6 @@
+<map id="sc_core::sc_inout_resolved" name="sc_core::sc_inout_resolved">
+<area shape="rect" id="node2" href="$a00095.html" title="sc_core::sc_inout\&lt;\l sc_dt::sc_logic \&gt;" alt="" coords="307,93,437,134"/>
+<area shape="rect" id="node3" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_inout_if\&lt; sc\l_dt::sc_logic \&gt;, 1, SC\l_ONE_OR_MORE_BOUND \&gt;" alt="" coords="6,5,197,75"/>
+<area shape="rect" id="node4" href="$a00108.html" title="sc_dt::sc_logic" alt="" coords="48,100,155,127"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="46,151,157,177"/>
+</map>

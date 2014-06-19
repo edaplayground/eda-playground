@@ -1,0 +1,5 @@
+<map id="sc_core::sc_in&lt; sc_dt::sc_logic &gt;" name="sc_core::sc_in&lt; sc_dt::sc_logic &gt;">
+<area shape="rect" id="node4" href="$a00091.html" title="sc_core::sc_in_resolved" alt="" coords="5,320,163,347"/>
+<area shape="rect" id="node2" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_in_if\&lt; sc_dt\l::sc_logic \&gt;, 1, SC_ONE\l_OR_MORE_BOUND \&gt;" alt="" coords="5,110,163,181"/>
+<area shape="rect" id="node3" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_signal_in_if\&lt; sc\l_dt::sc_logic \&gt; \&gt;" alt="" coords="13,5,153,61"/>
+</map>

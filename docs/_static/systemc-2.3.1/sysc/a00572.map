@@ -1,0 +1,11 @@
+<map id="sysc/kernel/sc_process_handle.h" name="sysc/kernel/sc_process_handle.h">
+<area shape="rect" id="node2" href="$a00347.html" title="sysc/kernel/sc_module.h" alt="" coords="376,96,539,123"/>
+<area shape="rect" id="node3" href="$a00344.html" title="sysc/kernel/sc_kernel\l_ids.h" alt="" coords="5,337,149,378"/>
+<area shape="rect" id="node4" href="$a00355.html" title="sysc/kernel/sc_process.h" alt="" coords="55,261,219,288"/>
+<area shape="rect" id="node5" href="$a00348.html" title="sysc/kernel/sc_module\l_name.h" alt="" coords="105,171,257,213"/>
+<area shape="rect" id="node6" href="$a00360.html" title="sysc/kernel/sc_sensitive.h" alt="" coords="282,179,451,205"/>
+<area shape="rect" id="node7" href="$a00367.html" title="sysc/kernel/sc_time.h" alt="" coords="475,179,620,205"/>
+<area shape="rect" id="node8" href="$a00369.html" title="sysc/kernel/sc_wait.h" alt="" coords="645,179,787,205"/>
+<area shape="rect" id="node9" href="$a00370.html" title="sysc/kernel/sc_wait\l_cthread.h" alt="" coords="812,171,945,213"/>
+<area shape="rect" id="node10" href="$a00378.html" title="sysc/utils/sc_list.h" alt="" coords="970,179,1093,205"/>
+</map>

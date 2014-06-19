@@ -1,0 +1,20 @@
+<map id="sysc/datatypes/int/sc_nbdefs.h" name="sysc/datatypes/int/sc_nbdefs.h">
+<area shape="rect" id="node2" href="$a00367.html" title="sysc/kernel/sc_time.h" alt="" coords="161,376,305,403"/>
+<area shape="rect" id="node6" href="$a00371.html" title="sysc/tracing/sc_trace.h" alt="" coords="399,467,552,493"/>
+<area shape="rect" id="node7" href="$a00323.html" title="sysc/datatypes/int\l/sc_nbutils.h" alt="" coords="810,97,933,138"/>
+<area shape="rect" id="node9" href="$a00324.html" title="sysc/datatypes/int\l/sc_signed.h" alt="" coords="683,369,807,410"/>
+<area shape="rect" id="node13" href="$a00327.html" title="sysc/datatypes/int\l/sc_unsigned.h" alt="" coords="917,278,1040,319"/>
+<area shape="rect" id="node14" href="$a00284.html" title="sysc/datatypes/bit\l/sc_bit.h" alt="" coords="1078,278,1201,319"/>
+<area shape="rect" id="node16" href="$a00329.html" title="sysc/datatypes/misc\l/sc_value_base.h" alt="" coords="483,187,620,229"/>
+<area shape="rect" id="node17" href="$a00318.html" title="sysc/datatypes/int\l/sc_int_base.h" alt="" coords="433,369,556,410"/>
+<area shape="rect" id="node18" href="$a00326.html" title="sysc/datatypes/int\l/sc_uint_base.h" alt="" coords="433,278,556,319"/>
+<area shape="rect" id="node19" href="$a00375.html" title="sysc/tracing/sc_wif\l_trace.h" alt="" coords="1211,97,1340,138"/>
+<area shape="rect" id="node3" href="$a00347.html" title="sysc/kernel/sc_module.h" alt="" coords="212,467,375,493"/>
+<area shape="rect" id="node5" href="$a00361.html" title="sysc/kernel/sc_simcontext.h" alt="" coords="5,467,187,493"/>
+<area shape="rect" id="node4" href="$a00390.html" title="systemc" alt="" coords="525,549,595,576"/>
+<area shape="rect" id="node8" href="$a00299.html" title="sysc/datatypes/fx/sc\l_fxdefs.h" alt="" coords="697,187,833,229"/>
+<area shape="rect" id="node12" href="$a00322.html" title="sysc/datatypes/int\l/sc_nbexterns.h" alt="" coords="910,187,1033,229"/>
+<area shape="rect" id="node10" href="$a00292.html" title="sysc/datatypes/bit\l/sc_proxy.h" alt="" coords="786,459,909,501"/>
+<area shape="rect" id="node11" href="$a00328.html" title="sysc/datatypes/misc\l/sc_concatref.h" alt="" coords="577,459,713,501"/>
+<area shape="rect" id="node15" href="$a00289.html" title="sysc/datatypes/bit\l/sc_logic.h" alt="" coords="985,369,1108,410"/>
+</map>

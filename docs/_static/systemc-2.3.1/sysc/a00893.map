@@ -1,0 +1,10 @@
+<map id="sc_core::sc_process_handle" name="sc_core::sc_process_handle">
+<area shape="rect" id="node3" href="$a00044.html" title="sc_core::sc_event" alt="" coords="7,184,131,211"/>
+<area shape="rect" id="node6" href="$a00149.html" title="sc_core::sc_process_b" alt="" coords="590,423,741,449"/>
+<area shape="rect" id="node5" href="$a00125.html" title="sc_core::sc_object" alt="" coords="5,549,133,576"/>
+<area shape="rect" id="node13" href="$a00165.html" title="sc_core::sc_report" alt="" coords="258,499,385,525"/>
+<area shape="rect" id="node8" href="$a00124.html" title="sc_core::sc_name_gen" alt="" coords="245,600,398,627"/>
+<area shape="rect" id="node10" href="$a00049.html" title="sc_core::sc_event_list" alt="" coords="248,99,395,125"/>
+<area shape="rect" id="node11" href="$a00203.html" title="sc_core::sc_throw_it\l_helper" alt="" coords="252,150,391,191"/>
+<area shape="rect" id="node12" href="$a00151.html" title="sc_core::sc_process_host" alt="" coords="237,448,405,475"/>
+</map>

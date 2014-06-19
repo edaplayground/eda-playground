@@ -1,0 +1,10 @@
+<map id="sysc/kernel/sc_dynamic_processes.h" name="sysc/kernel/sc_dynamic_processes.h">
+<area shape="rect" id="node2" href="$a00341.html" title="sysc/kernel/sc_except.h" alt="" coords="31,96,189,123"/>
+<area shape="rect" id="node4" href="$a00363.html" title="sysc/kernel/sc_spawn.h" alt="" coords="281,96,436,123"/>
+<area shape="rect" id="node7" href="$a00343.html" title="sysc/kernel/sc_join.h" alt="" coords="469,96,608,123"/>
+<area shape="rect" id="node10" href="$a00331.html" title="sysc/kernel/sc_boost.h" alt="" coords="806,96,956,123"/>
+<area shape="rect" id="node5" href="$a00356.html" title="sysc/kernel/sc_process\l_handle.h" alt="" coords="107,171,260,213"/>
+<area shape="rect" id="node6" href="$a00364.html" title="sysc/kernel/sc_spawn\l_options.h" alt="" coords="285,171,432,213"/>
+<area shape="rect" id="node8" href="$a00355.html" title="sysc/kernel/sc_process.h" alt="" coords="457,179,620,205"/>
+<area shape="rect" id="node9" href="$a00369.html" title="sysc/kernel/sc_wait.h" alt="" coords="645,179,787,205"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="tlm_utils::multi_passthrough_initiator_socket&lt; MODULE, BUSWIDTH, TYPES, N, POL &gt;" name="tlm_utils::multi_passthrough_initiator_socket&lt; MODULE, BUSWIDTH, TYPES, N, POL &gt;">
+<area shape="rect" id="node2" href="$a00013.html" title="tlm_utils::multi_init\l_base\&lt; BUSWIDTH, TYPES,\l N, POL \&gt;" alt="" coords="11,109,201,165"/>
+<area shape="rect" id="node3" href="$a00068.html" title="tlm::tlm_initiator\l_socket\&lt; BUSWIDTH, TYPES,\l N, POL \&gt;" alt="" coords="6,5,207,61"/>
+</map>

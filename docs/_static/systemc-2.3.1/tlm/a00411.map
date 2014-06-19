@@ -1,0 +1,7 @@
+<map id="tlm::tlm_base_initiator_socket&lt; BUSWIDTH, FW_IF, BW_IF, N, POL &gt;" name="tlm::tlm_base_initiator_socket&lt; BUSWIDTH, FW_IF, BW_IF, N, POL &gt;">
+<area shape="rect" id="node2" href="$a00033.html" title="tlm::tlm_base_initiator\l_socket_b\&lt; BUSWIDTH, FW\l_IF, BW_IF \&gt;" alt="" coords="219,5,407,61"/>
+<area shape="rect" id="node3" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00141.html" title="sc_core::sc_port\&lt; FW\l_IF, N, POL \&gt;" alt="" coords="240,85,387,126"/>
+<area shape="rect" id="node4" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00142.html" title="sc_core::sc_port_b\l\&lt; IF \&gt;" alt="" coords="22,85,151,126"/>
+<area shape="rect" id="node5" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; bw_interface_type \&gt;" alt="" coords="239,150,387,191"/>
+<area shape="rect" id="node6" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00055.html" title="sc_core::sc_export_base" alt="" coords="5,157,168,184"/>
+</map>

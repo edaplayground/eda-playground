@@ -1,0 +1,10 @@
+<map id="sysc/datatypes/int/sc_nbexterns.h" name="sysc/datatypes/int/sc_nbexterns.h">
+<area shape="rect" id="node2" href="$a00324.html" title="sysc/datatypes/int\l/sc_signed.h" alt="" coords="342,187,465,229"/>
+<area shape="rect" id="node9" href="$a00327.html" title="sysc/datatypes/int\l/sc_unsigned.h" alt="" coords="442,97,565,138"/>
+<area shape="rect" id="node3" href="$a00292.html" title="sysc/datatypes/bit\l/sc_proxy.h" alt="" coords="499,278,623,319"/>
+<area shape="rect" id="node4" href="$a00315.html" title="sysc/datatypes/int\l/sc_bigint.h" alt="" coords="647,278,771,319"/>
+<area shape="rect" id="node5" href="$a00316.html" title="sysc/datatypes/int\l/sc_biguint.h" alt="" coords="795,278,919,319"/>
+<area shape="rect" id="node6" href="$a00328.html" title="sysc/datatypes/misc\l/sc_concatref.h" alt="" coords="5,278,141,319"/>
+<area shape="rect" id="node7" href="$a00303.html" title="sysc/datatypes/fx/sc\l_fxval.h" alt="" coords="166,278,303,319"/>
+<area shape="rect" id="node8" href="$a00309.html" title="sysc/datatypes/fx/scfx\l_other_defs.h" alt="" coords="328,278,475,319"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="sysc/utils/sc_pq.h" name="sysc/utils/sc_pq.h">
+<area shape="rect" id="node2" href="$a00361.html" title="sysc/kernel/sc_simcontext.h" alt="" coords="415,80,597,107"/>
+<area shape="rect" id="node3" href="$a00369.html" title="sysc/kernel/sc_wait.h" alt="" coords="5,163,147,189"/>
+<area shape="rect" id="node4" href="$a00370.html" title="sysc/kernel/sc_wait\l_cthread.h" alt="" coords="172,155,305,197"/>
+<area shape="rect" id="node5" href="$a00390.html" title="systemc" alt="" coords="415,336,484,363"/>
+<area shape="rect" id="node6" href="$a00340.html" title="sysc/kernel/sc_event.h" alt="" coords="431,163,581,189"/>
+<area shape="rect" id="node7" href="$a00276.html" title="sysc/communication\l/sc_signal.h" alt="" coords="380,246,519,287"/>
+<area shape="rect" id="node8" href="$a00265.html" title="sysc/communication\l/sc_fifo.h" alt="" coords="543,246,681,287"/>
+<area shape="rect" id="node9" href="$a00294.html" title="sysc/datatypes/fx/sc\l_context.h" alt="" coords="658,155,795,197"/>
+<area shape="rect" id="node10" href="$a00362.html" title="sysc/kernel/sc_simcontext\l_int.h" alt="" coords="819,155,991,197"/>
+<area shape="rect" id="node11" href="$a00354.html" title="sysc/kernel/sc_phase\l_callback_registry.h" alt="" coords="1016,155,1160,197"/>
+</map>

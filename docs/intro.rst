@@ -172,6 +172,9 @@ Available libraries and methodologies:
 
 * `SystemC <http://www.accellera.org/downloads/standards/systemc>`_ - system level design and simulation in C++
 
+  * `SystemC 2.3.1 Class Reference <_static/systemc-2.3.1/sysc/classes.html>`_
+  * `TLM 2.0 Class Reference <_static/systemc-2.3.1/tlm/classes.html>`_
+
 * `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
 
   * `MyHDL Manual <http://www.myhdl.org/doc/current/>`_

@@ -1,0 +1,8 @@
+<map id="tlm::tlm_slave_to_transport&lt; REQ, RSP &gt;" name="tlm::tlm_slave_to_transport&lt; REQ, RSP &gt;">
+<area shape="rect" id="node2" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00117.html" title="sc_core::sc_module" alt="" coords="237,17,371,44"/>
+<area shape="rect" id="node3" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00125.html" title="sc_core::sc_object" alt="" coords="25,5,153,32"/>
+<area shape="rect" id="node4" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00151.html" title="sc_core::sc_process_host" alt="" coords="5,56,173,83"/>
+<area shape="rect" id="node5" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00141.html" title="sc_core::sc_port\&lt; tlm\l::tlm_transport_if\&lt; REQ,\l RSP \&gt; \&gt;" alt="" coords="225,68,383,124"/>
+<area shape="rect" id="node6" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00142.html" title="sc_core::sc_port_b\l\&lt; IF \&gt;" alt="" coords="25,121,154,162"/>
+<area shape="rect" id="node7" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00141.html" title="sc_core::sc_port\&lt; tlm\l::tlm_slave_if\&lt; REQ,\l RSP \&gt; \&gt;" alt="" coords="232,148,376,204"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="sysc/communication/sc_event_finder.h" name="sysc/communication/sc_event_finder.h">
+<area shape="rect" id="node2" href="$a00272.html" title="sysc/communication\l/sc_port.h" alt="" coords="421,97,560,138"/>
+<area shape="rect" id="node3" href="$a00261.html" title="sysc/communication\l/sc_communication_ids.h" alt="" coords="5,187,171,229"/>
+<area shape="rect" id="node4" href="$a00269.html" title="sysc/communication\l/sc_interface.h" alt="" coords="196,187,335,229"/>
+<area shape="rect" id="node5" href="$a00340.html" title="sysc/kernel/sc_event.h" alt="" coords="359,195,509,221"/>
+<area shape="rect" id="node6" href="$a00351.html" title="sysc/kernel/sc_object.h" alt="" coords="531,277,684,304"/>
+<area shape="rect" id="node7" href="$a00355.html" title="sysc/kernel/sc_process.h" alt="" coords="586,195,749,221"/>
+</map>

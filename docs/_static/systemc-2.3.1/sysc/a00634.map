@@ -1,0 +1,35 @@
+<map id="systemc.h" name="systemc.h">
+<area shape="rect" id="node18" href="$a00390.html" title="systemc" alt="" coords="1917,80,1986,107"/>
+<area shape="rect" id="node19" href="$a00332.html" title="sysc/kernel/sc_cmnhdr.h" alt="" coords="596,539,758,565"/>
+<area shape="rect" id="node20" href="$a00342.html" title="sysc/kernel/sc_externs.h" alt="" coords="2684,169,2845,196"/>
+<area shape="rect" id="node21" href="$a00341.html" title="sysc/kernel/sc_except.h" alt="" coords="536,169,694,196"/>
+<area shape="rect" id="node22" href="$a00347.html" title="sysc/kernel/sc_module.h" alt="" coords="924,267,1086,293"/>
+<area shape="rect" id="node23" href="$a00356.html" title="sysc/kernel/sc_process\l_handle.h" alt="" coords="928,350,1081,391"/>
+<area shape="rect" id="node24" href="$a00361.html" title="sysc/kernel/sc_simcontext.h" alt="" coords="963,448,1145,475"/>
+<area shape="rect" id="node25" href="$a00368.html" title="sysc/kernel/sc_ver.h" alt="" coords="3778,169,3914,196"/>
+<area shape="rect" id="node26" href="$a00258.html" title="sysc/communication\l/sc_buffer.h" alt="" coords="2056,259,2194,301"/>
+<area shape="rect" id="node27" href="$a00276.html" title="sysc/communication\l/sc_signal.h" alt="" coords="1836,350,1974,391"/>
+<area shape="rect" id="node28" href="$a00289.html" title="sysc/datatypes/bit\l/sc_logic.h" alt="" coords="3443,441,3566,482"/>
+<area shape="rect" id="node29" href="$a00284.html" title="sysc/datatypes/bit\l/sc_bit.h" alt="" coords="3560,531,3684,573"/>
+<area shape="rect" id="node30" href="$a00371.html" title="sysc/tracing/sc_trace.h" alt="" coords="1828,448,1981,475"/>
+<area shape="rect" id="node31" href="$a00259.html" title="sysc/communication\l/sc_clock.h" alt="" coords="1674,162,1813,203"/>
+<area shape="rect" id="node32" href="$a00260.html" title="sysc/communication\l/sc_clock_ports.h" alt="" coords="3300,162,3438,203"/>
+<area shape="rect" id="node33" href="$a00278.html" title="sysc/communication\l/sc_signal_ports.h" alt="" coords="3353,259,3492,301"/>
+<area shape="rect" id="node34" href="$a00263.html" title="sysc/communication\l/sc_event_queue.h" alt="" coords="973,162,1112,203"/>
+<area shape="rect" id="node35" href="$a00264.html" title="sysc/communication\l/sc_export.h" alt="" coords="714,350,853,391"/>
+<area shape="rect" id="node36" href="$a00265.html" title="sysc/communication\l/sc_fifo.h" alt="" coords="1106,350,1245,391"/>
+<area shape="rect" id="node37" href="$a00267.html" title="sysc/communication\l/sc_fifo_ports.h" alt="" coords="1186,162,1325,203"/>
+<area shape="rect" id="node38" href="$a00270.html" title="sysc/communication\l/sc_mutex.h" alt="" coords="1349,162,1488,203"/>
+<area shape="rect" id="node39" href="$a00274.html" title="sysc/communication\l/sc_semaphore.h" alt="" coords="1512,162,1650,203"/>
+<area shape="rect" id="node40" href="$a00279.html" title="sysc/communication\l/sc_signal_resolved.h" alt="" coords="1888,259,2030,301"/>
+<area shape="rect" id="node41" href="$a00280.html" title="sysc/communication\l/sc_signal_resolved\l_ports.h" alt="" coords="3513,155,3652,211"/>
+<area shape="rect" id="node42" href="$a00281.html" title="sysc/communication\l/sc_signal_rv.h" alt="" coords="2656,259,2794,301"/>
+<area shape="rect" id="node43" href="$a00290.html" title="sysc/datatypes/bit\l/sc_lv.h" alt="" coords="2988,350,3112,391"/>
+<area shape="rect" id="node44" href="$a00282.html" title="sysc/communication\l/sc_signal_rv_ports.h" alt="" coords="2870,162,3010,203"/>
+<area shape="rect" id="node45" href="$a00287.html" title="sysc/datatypes/bit\l/sc_bv.h" alt="" coords="2990,259,3113,301"/>
+<area shape="rect" id="node46" href="$a00315.html" title="sysc/datatypes/int\l/sc_bigint.h" alt="" coords="1990,162,2113,203"/>
+<area shape="rect" id="node47" href="$a00316.html" title="sysc/datatypes/int\l/sc_biguint.h" alt="" coords="2138,162,2261,203"/>
+<area shape="rect" id="node48" href="$a00317.html" title="sysc/datatypes/int\l/sc_int.h" alt="" coords="2286,162,2409,203"/>
+<area shape="rect" id="node49" href="$a00325.html" title="sysc/datatypes/int\l/sc_uint.h" alt="" coords="2434,162,2557,203"/>
+<area shape="rect" id="node50" href="$a00328.html" title="sysc/datatypes/misc\l/sc_concatref.h" alt="" coords="3087,162,3224,203"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="tlm::tlm_transport_channel&lt; REQ, RSP, REQ_CHANNEL, RSP_CHANNEL &gt;" name="tlm::tlm_transport_channel&lt; REQ, RSP, REQ_CHANNEL, RSP_CHANNEL &gt;">
+<area shape="rect" id="node2" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00117.html" title="sc_core::sc_module" alt="" coords="238,316,373,343"/>
+<area shape="rect" id="node3" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00125.html" title="sc_core::sc_object" alt="" coords="25,255,153,281"/>
+<area shape="rect" id="node6" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00055.html" title="sc_core::sc_export_base" alt="" coords="224,180,387,207"/>
+<area shape="rect" id="node4" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00151.html" title="sc_core::sc_process_host" alt="" coords="5,316,173,343"/>
+<area shape="rect" id="node5" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_slave_if\l\&lt; REQ, RSP \&gt; \&gt;" alt="" coords="440,85,568,141"/>
+<area shape="rect" id="node7" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_fifo_get\l_if\&lt; REQ \&gt; \&gt;" alt="" coords="440,165,568,221"/>
+<area shape="rect" id="node8" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_transport\l_if\&lt; REQ, RSP \&gt; \&gt;" alt="" coords="438,245,570,301"/>
+<area shape="rect" id="node9" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_fifo_put\l_if\&lt; RSP \&gt; \&gt;" alt="" coords="440,5,568,61"/>
+</map>

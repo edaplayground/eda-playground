@@ -1,0 +1,5 @@
+<map id="tlm_utils::callback_binder_bw&lt; TYPES &gt;" name="tlm_utils::callback_binder_bw&lt; TYPES &gt;">
+<area shape="rect" id="node2" href="$a00047.html" title="tlm::tlm_bw_transport\l_if\&lt; TYPES \&gt;" alt="" coords="227,59,371,101"/>
+<area shape="rect" id="node3" href="$a00046.html" title="tlm::tlm_bw_nonblocking\l_transport_if\&lt; TYPES::\ltlm_payload_type, TYPES\l::tlm_phase_type \&gt;" alt="" coords="6,5,178,75"/>
+<area shape="rect" id="node4" href="$a00045.html" title="tlm::tlm_bw_direct\l_mem_if" alt="" coords="29,99,155,141"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="tlm::tlm_transport_to_master&lt; REQ, RSP &gt;" name="tlm::tlm_transport_to_master&lt; REQ, RSP &gt;">
+<area shape="rect" id="node2" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00117.html" title="sc_core::sc_module" alt="" coords="238,85,373,112"/>
+<area shape="rect" id="node3" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00125.html" title="sc_core::sc_object" alt="" coords="25,28,153,55"/>
+<area shape="rect" id="node8" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00055.html" title="sc_core::sc_export_base" alt="" coords="224,20,387,47"/>
+<area shape="rect" id="node4" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00151.html" title="sc_core::sc_process_host" alt="" coords="5,87,173,113"/>
+<area shape="rect" id="node5" href="$a00094.html" title="tlm::tlm_transport\l_if\&lt; REQ, RSP \&gt;" alt="" coords="451,137,573,178"/>
+<area shape="rect" id="node6" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00104.html" title="sc_core::sc_interface" alt="" coords="234,144,377,171"/>
+<area shape="rect" id="node7" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_transport\l_if\&lt; REQ, RSP \&gt; \&gt;" alt="" coords="446,5,578,61"/>
+<area shape="rect" id="node9" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00141.html" title="sc_core::sc_port\&lt; tlm\l::tlm_master_if\&lt; REQ,\l RSP \&gt; \&gt;" alt="" coords="438,201,586,257"/>
+<area shape="rect" id="node10" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00142.html" title="sc_core::sc_port_b\l\&lt; IF \&gt;" alt="" coords="241,209,370,250"/>
+</map>

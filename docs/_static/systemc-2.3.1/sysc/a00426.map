@@ -1,0 +1,10 @@
+<map id="sysc/communication/sc_semaphore.h" name="sysc/communication/sc_semaphore.h">
+<area shape="rect" id="node2" href="$a00340.html" title="sysc/kernel/sc_event.h" alt="" coords="212,104,362,131"/>
+<area shape="rect" id="node7" href="$a00351.html" title="sysc/kernel/sc_object.h" alt="" coords="387,104,540,131"/>
+<area shape="rect" id="node8" href="$a00275.html" title="sysc/communication\l/sc_semaphore_if.h" alt="" coords="566,97,704,138"/>
+<area shape="rect" id="node3" href="$a00332.html" title="sysc/kernel/sc_cmnhdr.h" alt="" coords="56,277,219,304"/>
+<area shape="rect" id="node4" href="$a00344.html" title="sysc/kernel/sc_kernel\l_ids.h" alt="" coords="26,187,171,229"/>
+<area shape="rect" id="node5" href="$a00361.html" title="sysc/kernel/sc_simcontext.h" alt="" coords="196,195,378,221"/>
+<area shape="rect" id="node6" href="$a00283.html" title="sysc/communication\l/sc_writer_policy.h" alt="" coords="403,187,542,229"/>
+<area shape="rect" id="node9" href="$a00269.html" title="sysc/communication\l/sc_interface.h" alt="" coords="566,187,704,229"/>
+</map>

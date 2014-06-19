@@ -1,0 +1,4 @@
+<map id="tlm_utils::multi_init_base&lt; BUSWIDTH, TYPES, N, POL &gt;" name="tlm_utils::multi_init_base&lt; BUSWIDTH, TYPES, N, POL &gt;">
+<area shape="rect" id="node2" href="$a00068.html" title="tlm::tlm_initiator\l_socket\&lt; BUSWIDTH, TYPES,\l N, POL \&gt;" alt="" coords="227,20,429,76"/>
+<area shape="rect" id="node3" href="$a00032.html" title="tlm::tlm_base_initiator\l_socket\&lt; BUSWIDTH, tlm\l_fw_transport_if\&lt; TYPES\l \&gt;, tlm_bw_transport_if\l\&lt; TYPES \&gt;, N, POL \&gt;" alt="" coords="6,5,178,91"/>
+</map>

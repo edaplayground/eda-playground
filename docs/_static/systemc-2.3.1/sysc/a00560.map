@@ -1,0 +1,10 @@
+<map id="sysc/kernel/sc_module.h" name="sysc/kernel/sc_module.h">
+<area shape="rect" id="node2" href="$a00390.html" title="systemc" alt="" coords="143,179,212,205"/>
+<area shape="rect" id="node4" href="$a00356.html" title="sysc/kernel/sc_process\l_handle.h" alt="" coords="352,81,506,122"/>
+<area shape="rect" id="node6" href="$a00259.html" title="sysc/communication\l/sc_clock.h" alt="" coords="27,81,166,122"/>
+<area shape="rect" id="node7" href="$a00263.html" title="sysc/communication\l/sc_event_queue.h" alt="" coords="190,81,328,122"/>
+<area shape="rect" id="node8" href="$a00352.html" title="sysc/kernel/sc_object\l_int.h" alt="" coords="532,81,676,122"/>
+<area shape="rect" id="node3" href="$a00391.html" title="systemc.h" alt="" coords="138,261,216,288"/>
+<area shape="rect" id="node5" href="$a00363.html" title="sysc/kernel/sc_spawn.h" alt="" coords="352,179,507,205"/>
+<area shape="rect" id="node9" href="$a00354.html" title="sysc/kernel/sc_phase\l_callback_registry.h" alt="" coords="532,171,676,213"/>
+</map>

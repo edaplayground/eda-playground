@@ -1,0 +1,10 @@
+<map id="tlm::tlm_analysis_fifo&lt; T &gt;" name="tlm::tlm_analysis_fifo&lt; T &gt;">
+<area shape="rect" id="node2" href="$a00056.html" title="tlm::tlm_fifo\&lt; T \&gt;" alt="" coords="245,81,363,108"/>
+<area shape="rect" id="node3" href="$a00059.html" title="tlm::tlm_fifo_get_if\&lt; T \&gt;" alt="" coords="12,5,169,32"/>
+<area shape="rect" id="node4" href="$a00060.html" title="tlm::tlm_fifo_put_if\&lt; T \&gt;" alt="" coords="12,56,169,83"/>
+<area shape="rect" id="node5" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00147.html" title="sc_core::sc_prim_channel" alt="" coords="5,107,176,133"/>
+<area shape="rect" id="node6" href="$a00028.html" title="tlm::tlm_analysis_if\&lt; T \&gt;" alt="" coords="224,157,384,184"/>
+<area shape="rect" id="node7" href="$a00096.html" title="tlm::tlm_write_if\&lt; T \&gt;" alt="" coords="19,157,162,184"/>
+<area shape="rect" id="node8" href="$a00028.html" title="tlm::tlm_analysis_if\l\&lt; tlm_analysis_triple\l\&lt; T \&gt; \&gt;" alt="" coords="235,208,373,264"/>
+<area shape="rect" id="node9" href="$a00096.html" title="tlm::tlm_write_if\&lt;\l tlm_analysis_triple\l\&lt; T \&gt; \&gt;" alt="" coords="25,208,156,264"/>
+</map>

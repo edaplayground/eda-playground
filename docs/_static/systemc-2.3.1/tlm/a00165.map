@@ -1,0 +1,9 @@
+<map id="tlm_core/tlm_1/tlm_req_rsp/tlm_1_interfaces/tlm_core_ifs.h" name="tlm_core/tlm_1/tlm_req_rsp/tlm_1_interfaces/tlm_core_ifs.h">
+<area shape="rect" id="node2" href="$a00105.html" title="tlm_core/tlm_1/tlm\l_req_rsp/tlm_1_interfaces\l/tlm_fifo_ifs.h" alt="" coords="5,109,176,165"/>
+<area shape="rect" id="node4" href="$a00118.html" title="tlm_core/tlm_1/tlm\l_req_rsp/tlm_req_rsp.h" alt="" coords="251,229,403,270"/>
+<area shape="rect" id="node5" href="$a00106.html" title="tlm_core/tlm_1/tlm\l_req_rsp/tlm_1_interfaces\l/tlm_master_slave_ifs.h" alt="" coords="427,109,597,165"/>
+<area shape="rect" id="node8" href="$a00117.html" title="tlm_core/tlm_1/tlm\l_req_rsp/tlm_ports/tlm\l_nonblocking_port.h" alt="" coords="251,109,401,165"/>
+<area shape="rect" id="node3" href="$a00110.html" title="tlm_core/tlm_1/tlm\l_req_rsp/tlm_channels\l/tlm_fifo/tlm_fifo.h" alt="" coords="15,221,165,277"/>
+<area shape="rect" id="node6" href="$a00108.html" title="tlm_core/tlm_1/tlm\l_req_rsp/tlm_adapters\l/tlm_adapters.h" alt="" coords="432,221,580,277"/>
+<area shape="rect" id="node7" href="$a00114.html" title="tlm_core/tlm_1/tlm\l_req_rsp/tlm_channels\l/tlm_req_rsp_channels\l/tlm_put_get_imp.h" alt="" coords="606,214,756,285"/>
+</map>

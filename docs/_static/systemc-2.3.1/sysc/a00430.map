@@ -1,0 +1,18 @@
+<map id="sysc/communication/sc_signal.h" name="sysc/communication/sc_signal.h">
+<area shape="rect" id="node2" href="$a00272.html" title="sysc/communication\l/sc_port.h" alt="" coords="461,97,600,138"/>
+<area shape="rect" id="node5" href="$a00340.html" title="sysc/kernel/sc_event.h" alt="" coords="99,195,249,221"/>
+<area shape="rect" id="node6" href="$a00361.html" title="sysc/kernel/sc_simcontext.h" alt="" coords="777,285,959,312"/>
+<area shape="rect" id="node7" href="$a00355.html" title="sysc/kernel/sc_process.h" alt="" coords="641,376,804,403"/>
+<area shape="rect" id="node11" href="$a00283.html" title="sysc/communication\l/sc_writer_policy.h" alt="" coords="5,369,144,410"/>
+<area shape="rect" id="node13" href="$a00273.html" title="sysc/communication\l/sc_prim_channel.h" alt="" coords="895,97,1033,138"/>
+<area shape="rect" id="node16" href="$a00289.html" title="sysc/datatypes/bit\l/sc_logic.h" alt="" coords="1138,278,1261,319"/>
+<area shape="rect" id="node18" href="$a00277.html" title="sysc/communication\l/sc_signal_ifs.h" alt="" coords="112,278,251,319"/>
+<area shape="rect" id="node19" href="$a00371.html" title="sysc/tracing/sc_trace.h" alt="" coords="1286,285,1439,312"/>
+<area shape="rect" id="node3" href="$a00261.html" title="sysc/communication\l/sc_communication_ids.h" alt="" coords="326,187,492,229"/>
+<area shape="rect" id="node4" href="$a00269.html" title="sysc/communication\l/sc_interface.h" alt="" coords="193,369,332,410"/>
+<area shape="rect" id="node8" href="$a00351.html" title="sysc/kernel/sc_object.h" alt="" coords="645,467,799,493"/>
+<area shape="rect" id="node9" href="$a00367.html" title="sysc/kernel/sc_time.h" alt="" coords="1138,376,1283,403"/>
+<area shape="rect" id="node10" href="$a00321.html" title="sysc/datatypes/int\l/sc_nbdefs.h" alt="" coords="1243,459,1367,501"/>
+<area shape="rect" id="node14" href="$a00369.html" title="sysc/kernel/sc_wait.h" alt="" coords="811,195,953,221"/>
+<area shape="rect" id="node15" href="$a00370.html" title="sysc/kernel/sc_wait\l_cthread.h" alt="" coords="979,187,1112,229"/>
+</map>

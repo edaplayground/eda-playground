@@ -1,0 +1,12 @@
+<map id="tlm::tlm_req_rsp_channel&lt; REQ, RSP, REQ_CHANNEL, RSP_CHANNEL &gt;" name="tlm::tlm_req_rsp_channel&lt; REQ, RSP, REQ_CHANNEL, RSP_CHANNEL &gt;">
+<area shape="rect" id="node2" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00117.html" title="sc_core::sc_module" alt="" coords="238,468,373,495"/>
+<area shape="rect" id="node3" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00125.html" title="sc_core::sc_object" alt="" coords="25,347,153,373"/>
+<area shape="rect" id="node6" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00055.html" title="sc_core::sc_export_base" alt="" coords="224,260,387,287"/>
+<area shape="rect" id="node4" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00151.html" title="sc_core::sc_process_host" alt="" coords="5,468,173,495"/>
+<area shape="rect" id="node5" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_slave_if\l\&lt; REQ, RSP \&gt; \&gt;" alt="" coords="441,85,569,141"/>
+<area shape="rect" id="node7" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_fifo_get\l_if\&lt; RSP \&gt; \&gt;" alt="" coords="441,165,569,221"/>
+<area shape="rect" id="node8" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_fifo_get\l_if\&lt; REQ \&gt; \&gt;" alt="" coords="441,245,569,301"/>
+<area shape="rect" id="node9" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_fifo_put\l_if\&lt; REQ \&gt; \&gt;" alt="" coords="441,325,569,381"/>
+<area shape="rect" id="node10" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_fifo_put\l_if\&lt; RSP \&gt; \&gt;" alt="" coords="441,405,569,461"/>
+<area shape="rect" id="node11" href="/home/vlyubosl/systemc-2.3.1/objdir/docs/sysc/doxygen/systemc.tag$a00054.html" title="sc_core::sc_export\l\&lt; tlm::tlm_master_if\l\&lt; REQ, RSP \&gt; \&gt;" alt="" coords="438,5,573,61"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="sysc/communication/sc_clock_ports.h" name="sysc/communication/sc_clock_ports.h">
+<area shape="rect" id="node2" href="$a00278.html" title="sysc/communication\l/sc_signal_ports.h" alt="" coords="219,97,357,138"/>
+<area shape="rect" id="node3" href="$a00262.html" title="sysc/communication\l/sc_event_finder.h" alt="" coords="5,187,144,229"/>
+<area shape="rect" id="node4" href="$a00272.html" title="sysc/communication\l/sc_port.h" alt="" coords="59,278,197,319"/>
+<area shape="rect" id="node5" href="$a00277.html" title="sysc/communication\l/sc_signal_ifs.h" alt="" coords="219,187,357,229"/>
+<area shape="rect" id="node6" href="$a00289.html" title="sysc/datatypes/bit\l/sc_logic.h" alt="" coords="382,187,505,229"/>
+<area shape="rect" id="node7" href="$a00371.html" title="sysc/tracing/sc_trace.h" alt="" coords="530,195,683,221"/>
+</map>

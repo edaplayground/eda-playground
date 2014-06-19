@@ -1,0 +1,21 @@
+<map id="sc_core::sc_port_base" name="sc_core::sc_port_base">
+<area shape="rect" id="node3" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; IF \&gt;" alt="" coords="402,6,531,47"/>
+<area shape="rect" id="node5" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_fifo_in_if\&lt; T \&gt; \&gt;" alt="" coords="395,78,538,119"/>
+<area shape="rect" id="node7" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_fifo_out_if\&lt; T \&gt; \&gt;" alt="" coords="391,157,542,198"/>
+<area shape="rect" id="node9" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_signal_in_if\&lt; bool \&gt; \&gt;" alt="" coords="379,233,554,274"/>
+<area shape="rect" id="node11" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_signal_in_if\&lt; sc\l_dt::sc_logic \&gt; \&gt;" alt="" coords="396,305,537,361"/>
+<area shape="rect" id="node13" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_signal_in_if\&lt; T \&gt; \&gt;" alt="" coords="387,393,546,434"/>
+<area shape="rect" id="node15" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_signal_inout_if\l\&lt; bool \&gt; \&gt;" alt="" coords="399,465,534,521"/>
+<area shape="rect" id="node17" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_signal_inout_if\l\&lt; sc_dt::sc_logic \&gt; \&gt;" alt="" coords="397,553,536,609"/>
+<area shape="rect" id="node19" href="$a00142.html" title="sc_core::sc_port_b\l\&lt; sc_signal_inout_if\l\&lt; T \&gt; \&gt;" alt="" coords="399,641,534,697"/>
+<area shape="rect" id="node2" href="$a00125.html" title="sc_core::sc_object" alt="" coords="5,320,133,347"/>
+<area shape="rect" id="node4" href="$a00141.html" title="sc_core::sc_port\&lt; IF \&gt;" alt="" coords="649,7,799,33"/>
+<area shape="rect" id="node6" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_fifo_in_if\&lt; T \&gt;, 0,\l SC_ONE_OR_MORE_BOUND \&gt;" alt="" coords="618,57,830,113"/>
+<area shape="rect" id="node8" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_fifo_out_if\&lt; T \&gt;, 0,\l SC_ONE_OR_MORE_BOUND \&gt;" alt="" coords="618,137,830,193"/>
+<area shape="rect" id="node10" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_in_if\&lt; bool \&gt;\l, 1, SC_ONE_OR_MORE_BOUND \&gt;" alt="" coords="609,217,839,273"/>
+<area shape="rect" id="node12" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_in_if\&lt; sc_dt\l::sc_logic \&gt;, 1, SC_ONE\l_OR_MORE_BOUND \&gt;" alt="" coords="645,298,803,369"/>
+<area shape="rect" id="node14" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_in_if\&lt; T \&gt;, 1,\l SC_ONE_OR_MORE_BOUND \&gt;" alt="" coords="618,393,830,449"/>
+<area shape="rect" id="node16" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_inout_if\&lt; bool\l \&gt;, 1, SC_ONE_OR_MORE_BOUND \&gt;" alt="" coords="603,473,845,529"/>
+<area shape="rect" id="node18" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_inout_if\&lt; sc\l_dt::sc_logic \&gt;, 1, SC\l_ONE_OR_MORE_BOUND \&gt;" alt="" coords="629,554,819,625"/>
+<area shape="rect" id="node20" href="$a00141.html" title="sc_core::sc_port\&lt; sc\l_signal_inout_if\&lt; T \&gt;\l, 1, SC_ONE_OR_MORE_BOUND \&gt;" alt="" coords="609,649,839,705"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="sysc/kernel/sc_wait.h" name="sysc/kernel/sc_wait.h">
+<area shape="rect" id="node2" href="$a00361.html" title="sysc/kernel/sc_simcontext.h" alt="" coords="454,80,636,107"/>
+<area shape="rect" id="node3" href="$a00332.html" title="sysc/kernel/sc_cmnhdr.h" alt="" coords="5,155,168,181"/>
+<area shape="rect" id="node4" href="$a00355.html" title="sysc/kernel/sc_process.h" alt="" coords="193,155,356,181"/>
+<area shape="rect" id="node5" href="$a00365.html" title="sysc/kernel/sc_status.h" alt="" coords="381,155,535,181"/>
+<area shape="rect" id="node6" href="$a00367.html" title="sysc/kernel/sc_time.h" alt="" coords="561,155,705,181"/>
+<area shape="rect" id="node7" href="$a00376.html" title="sysc/utils/sc_hash.h" alt="" coords="730,155,864,181"/>
+<area shape="rect" id="node8" href="$a00381.html" title="sysc/utils/sc_pq.h" alt="" coords="889,155,1012,181"/>
+</map>
