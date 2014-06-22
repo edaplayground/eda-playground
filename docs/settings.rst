@@ -171,6 +171,8 @@ Additional command-line *compile options* and *run options* may be specified in 
 
 The **Run Time** option can be used to specify the number of timesteps for the simulation to run. By default, the simulation runs forever until it hits a breakpoint or *$finish*.
 
+The **Use run.do Tcl file** option is for using a custom *run.do* DO file for specifying simulation commands. YouTube video: `Using ModelSim DO file <https://www.youtube.com/watch?v=4ItQy0WCdns>`_
+
 ModelSim Compile Options for SystemVerilog/Verilog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

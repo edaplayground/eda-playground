@@ -98,6 +98,7 @@ Simulators
 
   * ModelSim supports most of SystemVerilog (including UVM/OVM and SVUnit libraries), and VHDL.
   * :ref:`modelsim-uvm`
+  * `SystemVerilog DPI (Direct Programming Interface) Tutorial <https://www.youtube.com/watch?v=HhSAnApHYkU&list=PLScWdLzHpkAeqA7BlGEDHooMeN10IW3_T>`_
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
