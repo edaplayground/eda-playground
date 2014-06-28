@@ -587,7 +587,7 @@ set_type_override_by_type(old_type::get_type(), old_type::get_type());</pre></bl
 
 
  <!--CONTENT index=37 -->
-<div class="CGeneric"><div class=CTopic><h3 class=CTitle><a name="Backwards_Compatibility" href="../../src/overviews/relnotes.txt">Backwards Compatibility</a></h3><div class=CBody><p>This change could potentially effect users, as references to the <i>uvm_sequence_base::starting_phase</i> variable will now miscompile.&nbsp; The <a href="#1.1_to_1.2_Migration_Script" class=LGeneric id=link77 onMouseOver="ShowTip(event, 'tt56', 'link77')" onMouseOut="HideTip('tt56')">1.1 to 1.2 Migration Script</a> can be used to search-and-replace within the user code, updating it to the new methods.</p></div></div></div>
+<div class="CGeneric"><div class=CTopic><h3 class=CTitle><a name="Backwards_Compatibility" href="../../src/overviews/relnotes.txt">Backwards Compatibility</a></h3><div class=CBody><p>This change could potentially affect users, as references to the <i>uvm_sequence_base::starting_phase</i> variable will now miscompile (unless the deprecated behavior is restored by either defining UVM_DEPRECATED_STARTING_PHASE or not defining UVM_NO_DEPRECATED).&nbsp; The <a href="#1.1_to_1.2_Migration_Script" class=LGeneric id=link77 onMouseOver="ShowTip(event, 'tt56', 'link77')" onMouseOut="HideTip('tt56')">1.1 to 1.2 Migration Script</a> can be used to search-and-replace within the user code, updating it to the new methods.</p></div></div></div>
 
 
 
