@@ -161,6 +161,28 @@ well as any generated files such as wave dumps, log files, etc.
 
 YouTube video: `How to download code and results from EDA Playground <http://www.youtube.com/watch?v=MZh0-Bz5TwI&hd=1>`_
 
+Riviera-PRO EDU
+---------------
+
+.. image:: _static/riviera-pro.png
+   :align: right
+
+Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
+
+The **Run Time** option can be used to specify the number of timesteps for the simulation to run. By default, the simulation runs forever until it hits a breakpoint or *$finish*.
+
+The **Use run.do Tcl file** option is for using a custom *run.do* DO file for specifying simulation commands.
+
+Riviera-PRO Compile Options for SystemVerilog/Verilog
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For SystemVerilog and Verilog simulations, *Riviera-PRO* compile options are prepopulated with **-timescale 1ns/1ns -sv2k9** and run options are prepopulated with **+access+r**
+
+Riviera-PRO Compile Options for VHDL
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For VHDL simulations, *Riviera-PRO* compile options are prepopulated with **-2008**
+
 ModelSim
 --------
 
@@ -176,7 +198,7 @@ The **Use run.do Tcl file** option is for using a custom *run.do* DO file for sp
 ModelSim Compile Options for SystemVerilog/Verilog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For SystemVerilog and Verilog simulations, *ModelSim* compile options are prepopulated with **-timescale 1ns/1ns -mfcu +acc=rmb -sv**
+For SystemVerilog and Verilog simulations, *ModelSim* compile options are prepopulated with **-timescale 1ns/1ns -mfcu +acc=rmb -sv -suppress 2181** and run options are prepopulated with **-suppress 3829**
 
 ModelSim Compile Options for VHDL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

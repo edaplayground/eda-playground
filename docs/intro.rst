@@ -94,6 +94,11 @@ Available tools and simulators are below. EDA Playground can support many differ
 Simulators
 ==========
 
+* `Riviera-PRO <https://www.aldec.com/en/products/functional_verification/riviera-pro>`_
+
+  * Commercial simulator that supports ALL SystemVerilog and VHDL features.
+  * :ref:`riviera-pro`
+
 * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
 
   * ModelSim supports most of SystemVerilog (including UVM/OVM and SVUnit libraries), and VHDL.
