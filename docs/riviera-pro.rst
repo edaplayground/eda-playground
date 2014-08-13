@@ -23,4 +23,4 @@ The following video demonstrates SystemVerilog's randomization and functional co
 
 .. raw:: html
 
-  <iframe width="1280" height="720" src="//www.youtube.com/embed/GPptuw2dd8A&vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/GPptuw2dd8A?vq=hd720" frameborder="0" allowfullscreen></iframe>
