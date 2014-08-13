@@ -6,7 +6,8 @@ Announcement: Riviera-PRO EDU Available on EDA Playground
 
 *2014/08/13*
 
-We are excited to announce the availability of Aldec's Riviera-PRO EDU simulator on EDA Playground. Riviera-PRO is a full-featured
+We are excited to announce the availability of Aldec's Riviera-PRO EDU simulator on
+`EDA Playground <http://www.edaplayground.com>`_. Riviera-PRO is a full-featured
 commercial simulator that has full support for SystemVerilog, VHDL, and SystemC.
 
 The goal of EDA Playground has always been to accelerate learning and give engineers immedate hands-on exposure to simulating HDLs.
