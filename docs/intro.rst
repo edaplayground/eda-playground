@@ -1,12 +1,8 @@
 ############
 Introduction
 ############
-| *EDA Playground* web application located at http://www.edaplayground.com/
-| *EPWave* documentation located at http://epwave.readthedocs.org
 
-.. raw:: html
-
-  <iframe width="1280" height="720" src="//www.youtube.com/embed/NXlqdrYga9M?vq=hd720" frameborder="0" allowfullscreen></iframe>
+| `EDA Playground on YouTube <https://www.youtube.com/channel/UCP1LfE6VR_YfrcFiYhG_imA>`_ - Tutorials for Verilog, SystemVerilog, UVM, and VHDL, interview questions, news and features, etc.
 
 ********
 Overview
@@ -145,6 +141,9 @@ For settings and options documentation, see :ref:`Languages & Libraries Options 
 
 Available libraries and methodologies:
 
+SystemVerilog and Verilog
+=========================
+
 * `UVM - Universal Verification Methodology <http://www.accellera.org/downloads/standards/uvm>`_
 
   * `UVM 1.2 Class Reference <_static/uvm-1.2/index.html>`_
@@ -163,7 +162,7 @@ Available libraries and methodologies:
 
   * `SVUnit on SourceForge <http://sourceforge.net/projects/svunit/>`_
 
-* OVL - Open Verification Library (for Verilog and VHDL)
+* OVL - Open Verification Library
 
   * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
   * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
@@ -176,10 +175,26 @@ Available libraries and methodologies:
 
   * :download:`svlib User Guide <_static/svlib-userguide-0.3.pdf>`
 
+VHDL
+====
+
+* OVL - Open Verification Library
+
+  * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
+  * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
+
+* `OSVVM <http://osvvm.org/>`_ - Open Source VHDL Verification Methodology
+
+C++
+===
+
 * `SystemC <http://www.accellera.org/downloads/standards/systemc>`_ - system level design and simulation in C++
 
   * `SystemC 2.3.1 Class Reference <_static/systemc-2.3.1/sysc/classes.html>`_
   * `TLM 2.0 Class Reference <_static/systemc-2.3.1/tlm/classes.html>`_
+
+Python
+======
 
 * `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
 

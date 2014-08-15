@@ -94,6 +94,7 @@ Libraries (VHDL)
 When language is *VHDL*, the following VHDL libraries can be used for both design and testbench.
 
 * OVL 2.8.1
+* OSVVM 2014.01
 
 Top entity (VHDL)
 -----------------
