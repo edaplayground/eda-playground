@@ -44,40 +44,6 @@ Example Usecases
   Students can work from home at their own pace, and run the lab samples on EDA Playground.
 * Quickly check whether your code is **synthesizable** or emulator-friendly.
 
-*********************
-What Users are Saying
-*********************
-
-   "This is a really useful web-based utility for anyone who is discussing/sharing/debugging a code segment with a
-   colleague or a support person. Also, a very useful follow-up tool for post-training help among students or between
-   instructor and students. Simple, easy, useful."
-
-   -- Hemendra Talesara, Verification Technologist at Synapse Design Automation Inc.
-
-   "I think EDA Playground is awesome! Great resource to learn without the hassle of setting up tools!"
-
-   -- Alan Langman, Engineering Consultant
-
-   "I’ve used it a few times now to just check out some issues related to SV syntax and it’s been a big timesaver!"
-
-   -- Eric White, MTS Design Engineer at AMD
-
-   "EDA Playground is sooo useful for interviews. I got a lot more feedback from being able to watch
-   someone compile and debug errors. I would highly recommend others to use it if they are asking SV
-   related questions."
-
-   -- Ricardo Goto, Verification Engineer
-
-   "I have recommended to use EDAPlayground.com to my team and am also trying to use it more for my debug.
-   I find EDAPlayground.com is much easier than logging into my Unix machines."
-
-   -- Subhash Bhogadi, Verification Consultant
-
-   "I just wanted to thank you a lot for creating EDA Playground. I've been using it a lot lately together with
-   StackOverflow and it makes asking and answering questions much easier."
-
-   -- Tudor Timisescu, System Verification Engineer at Infineon Technologies
-
 ******************
 Tools & Simulators
 ******************
@@ -92,7 +58,7 @@ Simulators
 
 * `Riviera-PRO <https://www.aldec.com/en/products/functional_verification/riviera-pro>`_
 
-  * Commercial simulator that supports ALL SystemVerilog and VHDL features.
+  * Commercial simulator that supports ALL SystemVerilog and VHDL features. Supports PSL.
   * :ref:`riviera-pro`
 
 * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
@@ -183,6 +149,10 @@ VHDL
   * :download:`OVL Library Reference Manual <_static/ovl_lrm.pdf>`
   * :download:`OVL Quick Reference <_static/ovl_quick_ref.pdf>`
 
+* PSL - Property Specification Language
+
+  * Natively supported by Riviera-PRO
+
 * `OSVVM <http://osvvm.org/>`_ - Open Source VHDL Verification Methodology
 
 C++
@@ -210,6 +180,40 @@ Python
   VHDL and Verilog testbenches in Python
 
   * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
+
+*********************
+What Users are Saying
+*********************
+
+   "This is a really useful web-based utility for anyone who is discussing/sharing/debugging a code segment with a
+   colleague or a support person. Also, a very useful follow-up tool for post-training help among students or between
+   instructor and students. Simple, easy, useful."
+
+   -- Hemendra Talesara, Verification Technologist at Synapse Design Automation Inc.
+
+   "I think EDA Playground is awesome! Great resource to learn without the hassle of setting up tools!"
+
+   -- Alan Langman, Engineering Consultant
+
+   "I’ve used it a few times now to just check out some issues related to SV syntax and it’s been a big timesaver!"
+
+   -- Eric White, MTS Design Engineer at AMD
+
+   "EDA Playground is sooo useful for interviews. I got a lot more feedback from being able to watch
+   someone compile and debug errors. I would highly recommend others to use it if they are asking SV
+   related questions."
+
+   -- Ricardo Goto, Verification Engineer
+
+   "I have recommended to use EDAPlayground.com to my team and am also trying to use it more for my debug.
+   I find EDAPlayground.com is much easier than logging into my Unix machines."
+
+   -- Subhash Bhogadi, Verification Consultant
+
+   "I just wanted to thank you a lot for creating EDA Playground. I've been using it a lot lately together with
+   StackOverflow and it makes asking and answering questions much easier."
+
+   -- Tudor Timisescu, System Verification Engineer at Infineon Technologies
 
 ***************************************
 Support, Feature Requests and Bug Fixes
