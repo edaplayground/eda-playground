@@ -63,7 +63,8 @@ The testbench (left editor pane) and design (right editor pane) may be written u
 
 * Verilog/SystemVerilog for both
 * VHDL for both
-* Python for testbench, and Verilog/SystemVerilog for design
+* e for testbench, and SystemVerilog/Verilog for design
+* Python for testbench, and SystemVerilog/Verilog for design
 * Python for both
 
 UVM / OVM (SystemVerilog)
@@ -100,6 +101,13 @@ Top entity (VHDL)
 -----------------
 
 When language is *VHDL*, the top entity of the design must be specified before running a simulation.
+
+Specman
+-------
+
+When testbench language is *e*, one of the following Specman versions must be used.
+
+* Specman 2014.10
 
 Libraries (C++)
 ---------------

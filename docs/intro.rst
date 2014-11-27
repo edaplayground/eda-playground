@@ -27,7 +27,7 @@ designed for small prototypes and examples.
   on a subsequent re-run.
 * Browse and use a large repository of working code examples and templates.
 
-.. image:: https://imageshack.com/a/img841/6759/80m6.jpg
+.. image:: _static/playground.png
    :alt: Playground
    :width: 100%
 
@@ -66,6 +66,11 @@ Simulators
   * ModelSim supports most of SystemVerilog (including UVM/OVM and SVUnit libraries), and VHDL.
   * :ref:`modelsim-uvm`
   * `SystemVerilog DPI (Direct Programming Interface) Tutorial <https://www.youtube.com/watch?v=HhSAnApHYkU&list=PLScWdLzHpkAeqA7BlGEDHooMeN10IW3_T>`_
+
+* `Incisive Specman Elite <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
+
+  * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
+  * Works with Icarus Verilog 0.10.0 (contact `Victor EDA <http://www.victoreda.com>`_ regarding EDA Playground support for other simulators)
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
