@@ -22,3 +22,4 @@ Table of Contents:
    yosys-circuit-diagrams
    code-examples
    faq
+   privacy-policy
