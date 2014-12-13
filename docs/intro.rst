@@ -60,6 +60,7 @@ Simulators
 
   * Commercial simulator that supports ALL SystemVerilog and VHDL features. Supports PSL.
   * :ref:`riviera-pro`
+  * `Riviera-PRO Product Manual <https://www.aldec.com/en/support/resources/documentation/manuals>`_ (registration required)
 
 * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
 
@@ -71,6 +72,7 @@ Simulators
 
   * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
   * Works with Icarus Verilog 0.10.0 (contact `Victor EDA <http://www.victoreda.com>`_ regarding EDA Playground support for other simulators)
+  * `Hello e World Video Tutorial <https://www.youtube.com/watch?v=A07FJF0RvH0>`_
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 

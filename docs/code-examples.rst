@@ -10,4 +10,5 @@ Tutorials and Code Examples
    code-examples/uvm
    code-examples/svunit
    code-examples/vhdl
+   code-examples/e
    code-examples/cocotb
