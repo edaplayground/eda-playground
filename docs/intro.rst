@@ -62,11 +62,12 @@ Simulators
   * :ref:`riviera-pro`
   * `Riviera-PRO Product Manual <https://www.aldec.com/en/support/resources/documentation/manuals>`_ (registration required)
 
-* `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
+..
+   * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
 
-  * ModelSim supports most of SystemVerilog (including UVM/OVM and SVUnit libraries), and VHDL.
-  * :ref:`modelsim-uvm`
-  * `SystemVerilog DPI (Direct Programming Interface) Tutorial <https://www.youtube.com/watch?v=HhSAnApHYkU&list=PLScWdLzHpkAeqA7BlGEDHooMeN10IW3_T>`_
+     * ModelSim supports most of SystemVerilog (including UVM/OVM and SVUnit libraries), and VHDL.
+     * :ref:`modelsim-uvm`
+     * `SystemVerilog DPI (Direct Programming Interface) Tutorial <https://www.youtube.com/watch?v=HhSAnApHYkU&list=PLScWdLzHpkAeqA7BlGEDHooMeN10IW3_T>`_
 
 * `Incisive Specman Elite <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
 
@@ -227,7 +228,7 @@ Support, Feature Requests and Bug Fixes
 ***************************************
 
 | Support available on `EDA Playground forum <https://groups.google.com/forum/#!forum/eda-playground>`_
-| Or open a bug here: https://github.com/getvictor/eda-playground/issues (requires GitHub account).
+| Or open a bug here: https://github.com/edaplayground/eda-playground/issues (requires GitHub account).
 
 *********************
 News and Site Updates

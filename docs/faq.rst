@@ -63,16 +63,6 @@ account at https://accounts.google.com/SignUp and use that to sign in.
 
 Note: If you're using EDA Playground on a private network, log in with the authentication credentials for your network.
 
-**************************************************************************************
-Why can't I run a sim with SystemVerilog assertions, coverage, or randomize() methods?
-**************************************************************************************
-
-Currently, most of SystemVerilog language is supported on **EDA Playground**, which is sufficient for examples and tutorials.
-
-We are working with simulator vendors to offer limited public access to commercial SystemVerilog features.
-
-Also see :ref:`modelsim-uvm`
-
 ******************
 Is VHDL supported?
 ******************
@@ -95,6 +85,6 @@ I have more questions. How do I get support?
 `EDA Playground forum <https://groups.google.com/forum/#!forum/eda-playground>`_
 
 If you see a bug, however minor, please post on the forum or
-file a new issue at https://github.com/getvictor/eda-playground/issues (requires GitHub account)
+file a new issue at https://github.com/edaplayground/eda-playground/issues (requires GitHub account)
 
 For simulator support, please contact the appropriate simulator vendor.
