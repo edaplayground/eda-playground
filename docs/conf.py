@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'EDA Playground'
-copyright = u'2014, Victor EDA, Inc.'
+copyright = u'2015, Doulos'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -249,7 +249,7 @@ latex_elements = {
 #  author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'EDAPlayground.tex', u'EDA Playground Documentation',
-   u'Victor EDA', 'manual'),
+   u'Doulos', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -279,7 +279,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'edaplayground', u'EDA Playground Documentation',
-     [u'Victor EDA'], 1)
+     [u'Doulos'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -293,7 +293,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'EDAPlayground', u'EDA Playground Documentation',
-   u'Victor EDA', 'EDAPlayground', 'One line description of project.',
+   u'Doulos', 'EDAPlayground', 'One line description of project.',
    'Miscellaneous'),
 ]
 

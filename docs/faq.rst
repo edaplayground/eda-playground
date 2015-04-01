@@ -33,7 +33,6 @@ How do I get updates about new EDA Playground features?
 New features are frequently being added to EDA Playground. Follow the updates on your favorite social media site:
 
 * `@EDAPlayground on Twitter <https://twitter.com/edaplayground>`_
-* `Victor EDA on LinkedIn <http://www.linkedin.com/company/victor-eda>`_
 * `EDA Playground on Facebook <https://facebook.com/edaplayground>`_
 * `EDA Playground on Google+ <https://plus.google.com/+Edaplayground_EPWave>`_
 
@@ -42,9 +41,6 @@ What are the resource limits for running my code?
 *************************************************
 
 Each run is limited to 60 seconds runtime and 100MB of memory.
-
-These limits can be increased for those who would like to be power users -- use EDA Playground on a regular basis and
-provide feedback. Contact `Victor EDA <http://www.victoreda.com>`_ to request.
 
 *********************************
 Which web browsers are supported?
@@ -68,14 +64,6 @@ Is VHDL supported?
 ******************
 
 Yes, VHDL is supported. VHDL example: http://www.edaplayground.com/s/example/615
-
-*********************************************************************************
-How do I get a private deployment of **EDA Playground** at my company/university?
-*********************************************************************************
-
-Please contact `Victor EDA <http://www.victoreda.com>`_
-
-Private deployments are available **FREE** for academic and non-commercial research purposes.
 
 ********************************************
 I have more questions. How do I get support?

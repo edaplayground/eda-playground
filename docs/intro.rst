@@ -51,7 +51,7 @@ Tools & Simulators
 For settings and options documentation, see :ref:`Tools & Simulators Options <tools-simulators-options-label>`
 
 Available tools and simulators are below. EDA Playground can support many different tools.
-`Contact us <http://www.victoreda.com>`_ to add your EDA tool to EDA Playground.
+`Contact us <http://www.doulos.com>`_ to add your EDA tool to EDA Playground.
 
 Simulators
 ==========
@@ -69,11 +69,12 @@ Simulators
      * :ref:`modelsim-uvm`
      * `SystemVerilog DPI (Direct Programming Interface) Tutorial <https://www.youtube.com/watch?v=HhSAnApHYkU&list=PLScWdLzHpkAeqA7BlGEDHooMeN10IW3_T>`_
 
-* `Incisive Specman Elite <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
+..
+   * `Incisive Specman Elite <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
 
-  * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
-  * Works with Icarus Verilog 0.10.0 (contact `Victor EDA <http://www.victoreda.com>`_ regarding EDA Playground support for other simulators)
-  * `Hello e World Video Tutorial <https://www.youtube.com/watch?v=A07FJF0RvH0>`_
+     * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
+     * Works with Icarus Verilog 0.10.0 (contact `Doulos <http://www.doulos.com>`_ regarding EDA Playground support for other simulators)
+     * `Hello e World Video Tutorial <https://www.youtube.com/watch?v=A07FJF0RvH0>`_
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
@@ -236,7 +237,6 @@ News and Site Updates
 New features are frequently being added to EDA Playground. Follow the updates on your favorite social media site:
 
 * `@EDAPlayground on Twitter <https://twitter.com/edaplayground>`_
-* `Victor EDA on LinkedIn <http://www.linkedin.com/company/victor-eda>`_
 * `EDA Playground on Facebook <https://facebook.com/edaplayground>`_
 * `EDA Playground on Google+ <https://plus.google.com/+Edaplayground_EPWave>`_
 
@@ -244,4 +244,4 @@ New features are frequently being added to EDA Playground. Follow the updates on
 Credits
 *******
 
-**EDA Playground** was created in May 2013 by Victor Lyuboslavsky.
+**EDA Playground** was created by Doulos.

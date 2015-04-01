@@ -2,8 +2,7 @@
 Privacy Policy
 ##############
 
-This Privacy Policy governs the manner in which Victor EDA, Inc. collects, uses, maintains and discloses information collected from users (each, a "User") of the http://www.edaplayground.com website ("Site").
-This privacy policy applies to the Site and all products and services offered by Victor EDA, Inc..
+This Privacy Policy governs the manner in which Doulos, Ltd. collects, uses, maintains and discloses information collected from users (each, a "User") of the http://www.edaplayground.com website ("Site").
 
 **Personal identification information**
 
@@ -23,7 +22,7 @@ to refuse cookies, or to alert you when cookies are being sent. If they do so, n
 
 **How we use collected information**
 
-Victor EDA, Inc. may collect and use Users personal information for the following purposes:
+Doulos, Ltd. may collect and use Users personal information for the following purposes:
 
 * To improve customer service
 
@@ -68,7 +67,7 @@ information about you or others who use your computer. This information allows a
 
 **Changes to this privacy policy**
 
-Victor EDA, Inc. has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are
+Doulos, Ltd. has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are
 helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
 
 **Your acceptance of these terms**
@@ -78,6 +77,6 @@ By using the Site, you signify your acceptance of this policy. If you do not agr
 **Contacting us**
 
 If you have any questions about this Privacy Policy, the practices of this Site, or your dealings with this Site, please contact us at:
-http://www.victoreda.com
+http://www.doulos.com
 
-This document was last updated on December 10, 2014
+This document was last updated on April 1, 2015
