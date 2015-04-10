@@ -2,6 +2,10 @@
 Verilog Tutorials and Examples
 ##############################
 
+| `Doulos Verilog Knowhow <http://www.doulos.com/knowhow/verilog_designers_guide/>`_ - Free Verilog Technical Resources
+
+http://www.doulos.com/knowhow/verilog_designers_guide/
+
 .. toctree::
    :maxdepth: 1
 
