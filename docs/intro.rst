@@ -127,6 +127,8 @@ SystemVerilog and Verilog
 
   * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
 
+  * `Doulos *Easier UVM* <http://www.doulos.com/knowhow/sysverilog/uvm/easier_uvm_generator/>`_
+
 * `OVM - Open Verification Methodology <https://verificationacademy.com/topics/verification-methodology>`_
 
   * `OVM 2.1.2 Class Reference <https://verificationacademy.com/verification-methodology-reference/ovmworld/docs_2.1.2/html/index.html>`_
