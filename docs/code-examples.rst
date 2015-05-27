@@ -8,6 +8,7 @@ Tutorials and Code Examples
    code-examples/verilog
    code-examples/system-verilog
    code-examples/uvm
+   code-examples/e
    code-examples/svunit
    code-examples/vhdl
    code-examples/cocotb
