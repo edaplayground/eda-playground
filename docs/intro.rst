@@ -245,4 +245,4 @@ New features are frequently being added to EDA Playground. Follow the updates on
 Credits
 *******
 
-**EDA Playground** was created by Doulos.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
