@@ -69,12 +69,11 @@ Simulators
      * :ref:`modelsim-uvm`
      * `SystemVerilog DPI (Direct Programming Interface) Tutorial <https://www.youtube.com/watch?v=HhSAnApHYkU&list=PLScWdLzHpkAeqA7BlGEDHooMeN10IW3_T>`_
 
-*
-   * `Incisive Specman Elite <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
+* `Incisive Specman Elite <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
 
-     * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
-     * Works with Icarus Verilog 0.10.0 (contact `Doulos <http://www.doulos.com>`_ regarding EDA Playground support for other simulators)
-     * `Hello e World Video Tutorial <https://www.youtube.com/watch?v=A07FJF0RvH0>`_
+  * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
+  * Works with Icarus Verilog 0.10.0 (contact `Doulos <http://www.doulos.com>`_ regarding EDA Playground support for other simulators)
+  * `Hello e World Video Tutorial <https://www.youtube.com/watch?v=A07FJF0RvH0>`_
 
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
