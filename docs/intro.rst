@@ -58,9 +58,13 @@ Simulators
 
 * `Riviera-PRO <https://www.aldec.com/en/products/functional_verification/riviera-pro>`_
 
-  * Commercial simulator that supports ALL SystemVerilog and VHDL features. Supports PSL.
+  * Commercial simulator for VHDL and SystemVerilog
   * :ref:`riviera-pro`
   * `Riviera-PRO Product Manual <https://www.aldec.com/en/support/resources/documentation/manuals>`_ (registration required)
+
+* `Synopsys VCS <http://www.synopsys.com/Tools/Verification/FunctionalVerification/Pages/VCS.aspx>`_
+
+  * Commercial simulator for VHDL and SystemVerilog
 
 ..
    * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
