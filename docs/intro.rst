@@ -59,7 +59,6 @@ Simulators
 * `Riviera-PRO <https://www.aldec.com/en/products/functional_verification/riviera-pro>`_
 
   * Commercial simulator for VHDL and SystemVerilog
-  * :ref:`riviera-pro`
   * `Riviera-PRO Product Manual <https://www.aldec.com/en/support/resources/documentation/manuals>`_ (registration required)
 
 * `Synopsys VCS <http://www.synopsys.com/Tools/Verification/FunctionalVerification/Pages/VCS.aspx>`_
