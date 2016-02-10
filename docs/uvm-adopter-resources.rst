@@ -2,8 +2,6 @@
 UVM Adopter Resources
 #####################
 
-| `EDA Playground on YouTube <https://www.youtube.com/channel/UCP1LfE6VR_YfrcFiYhG_imA>`_ - Tutorials for Verilog, SystemVerilog, UVM, and VHDL, interview questions, news and features, etc.
-
 ********
 Workbook
 ********
