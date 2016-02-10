@@ -6,7 +6,7 @@ UVM Adopter Resources
 Workbook
 ********
 
-The workbook for this course can be download from `here <http://www.doulos.com/>` (no it can't!).
+The workbook for this course can be download from `here <http://www.doulos.com/>`_ (no it can't!).
 
 **********
 Background
