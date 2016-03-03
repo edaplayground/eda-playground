@@ -7,9 +7,13 @@ How to Use EDA Playground for this course
 *****************************************
 
 On the left hand side of the window, near the bottom, you will see a link called "Courses". 
+
 * Click on "Courses" to show the name of the courses you have access to, ie "India SV UVM Accelerator Program v1.0 2016.06". 
+
 * Click on "India SV UVM Accelerator Program v1.0 2016.06" and you will see a link to the first exercise.
+
 * Click on the link to the first exercise.
+
 * **Then click on the "Copy" button near the top left of the window.** Doing this copies the exercise from the master copy to a copy you own. If you do not do this, you will not be able to save and may lose you edits. 
 
 
@@ -22,8 +26,11 @@ Full instructions on using EDA Playground can be found `here <http://eda-playgro
 In brief:
 
 * Make your edits
+
 * Click on "Save" to save them.
+
 * Click on "Run" the run the simulation.
+
 * Select "Open EPWave after run" to view wavefoms.
 
 
@@ -42,34 +49,63 @@ Solutions to the course exercises
 Here are the links to the solutions for this course:
 
 `Exercise 1 <http://www.edaplayground.com/x/X_B>`_
+
 `Exercise 2 <http://www.edaplayground.com/x/6gC>`_
+
 `Exercise 3 <http://www.edaplayground.com/x/9kd>`_
+
 `Exercise 4 <http://www.edaplayground.com/x/Cr5>`_
+
 `Exercise 5 <http://www.edaplayground.com/x/FvW>`_
+
 `Exercise 6 <http://www.edaplayground.com/x/Jzx>`_
+
 `Exercise 7 <http://www.edaplayground.com/x/R9q>`_
+
 `Exercise 8 <http://www.edaplayground.com/x/UEG>`_
+
 `Exercise 9 <http://www.edaplayground.com/x/XJh>`_
+
 `Exercise 10 <http://www.edaplayground.com/x/JM7>`_
+
 `Exercise A1 <http://www.edaplayground.com/x/X_M>`_
+
 `Exercise A2 part 1 <http://www.edaplayground.com/x/6zj>`_
+
 `Exercise A2 part 2 <http://www.edaplayground.com/x/A5B>`_
+
 `Exercise C1 <http://www.edaplayground.com/x/D9c>`_
+
 `Exercise C2 <http://www.edaplayground.com/x/XGx>`_
+
 `Exercise C3 <http://www.edaplayground.com/x/GE4>`_
+
 `Exercise C4 <http://www.edaplayground.com/x/KJV>`_
+
 `Exercise C5 <http://www.edaplayground.com/x/NNw>`_
+
 `Exercise C6 <http://www.edaplayground.com/x/RTN>`_
+
 `Exercise U1 <http://www.edaplayground.com/x/7bq>`_
+
 `Exercise U2 <http://www.edaplayground.com/x/QEC>`_
+
 `Exercise U3 <http://www.edaplayground.com/x/M9k>`_
+
 `Exercise U4 <http://www.edaplayground.com/x/J5K>`_
+
 `Exercise U5 <http://www.edaplayground.com/x/BvS>`_
+
 `Exercise U6 <http://www.edaplayground.com/x/8r_>`_
+
 `Exercise U7 <http://www.edaplayground.com/x/5kZ>`_
+
 `Exercise U8 <http://www.edaplayground.com/x/Wze>`_
+
 `Exercise U9 <http://www.edaplayground.com/x/W5X>`_
+
 `Exercise U10 <http://www.edaplayground.com/x/T_6>`_
+
 `Exercise U11 <http://www.edaplayground.com/x/LrD>`_
 
 
