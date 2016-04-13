@@ -119,7 +119,7 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
-                     ('goto EDA Playground', "http://www.edaplayground.com", True),
+                     ('EDA Playground ->', "http://www.edaplayground.com", True),
                      ('Forum', "https://groups.google.com/forum/#!forum/eda-playground", True)
     ],
 
