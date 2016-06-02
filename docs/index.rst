@@ -17,7 +17,7 @@ Table of Contents:
    :maxdepth: 3
 
    intro
-   quick-start
+   tutorial
    settings
    yosys-circuit-diagrams
    code-examples
