@@ -8,7 +8,7 @@ Quick Start
 
 #. Log in. Click the **Log in** button (top right) and click either your Google or Facebook.
 #. Select your language from the **Testbench + Design** menu.
-#. Select your simulator from the **Tools & Simulators** menu. using certain simulators will require you to supply additional identifcation information.
+#. Select your simulator from the **Tools & Simulators** menu. Using certain simulators will require you to supply additional identifcation information.
 #. Type in your code in the **testbench** and **design** windows. 
 #. Click **Run**. 
 
@@ -20,24 +20,19 @@ Quick Start
 What is EDA Playground?
 ***********************
 
-EDA Playground gives engineers immediate hands-on exposure to simulating SystemVerilog, Verilog, VHDL, C++/SystemC, and other HDLs.
-All you need is a web browser. The goal is to accelerate learning of design/testbench development with
-easier code sharing, and with simpler access to EDA tools and libraries. EDA Playground is specifically
-designed for small prototypes and examples.
+EDA Playground gives engineers immediate hands-on exposure to simulating SystemVerilog, Verilog, VHDL, C++/SystemC, and other HDLs. All you need is a web browser. The goal is to accelerate learning of design/testbench development with
+easier code sharing and simpler access to EDA tools and libraries. 
 
-* With a simple click, run your code and see console output in real time. Pick another simulator version and run it again.
+* With a simple click, run your code and see console output in real time. 
 * View waves for your simulation using `EPWave <http://epwave.readthedocs.org>`_ browser-based wave viewer.
-* Save your code snippets. Share your code and simulation results with a web link. Perfect for web forum discussions or emails.
+* Save your code snippets ("Playgrounds"). 
+* Share your code and simulation results with a web link. Perfect for web forum discussions or emails.
   Great for asking questions or sharing your knowledge.
 * Quickly try something out
 
-  * Try out a SystemVerilog feature before using it on your project.
+  * Try out a language feature with a small example.
   * Try out a library that you're thinking of using.
-  * Modify another engineer's shared code and re-run it.
 
-* Eliminate environment differences. Since the code always executes in the same environment, everyone will see the same result
-  on a subsequent re-run.
-* Browse and use a large repository of working code examples and templates.
 
 .. image:: _static/playground.png
    :alt: Playground
@@ -46,14 +41,11 @@ designed for small prototypes and examples.
 ****************
 Example Usecases
 ****************
-* **Quick prototyping** -- try out syntax or a library/language feature before using it in a large code base.
+* **Quick prototyping** -- try out syntax or a library/language feature.
 * When **asking questions on** `Stack Overflow <http://stackoverflow.com/>`_ or other online forums, attach a link to the
   code and simulation results.
 * Use during **technical interviews** to test candidates' SystemVerilog/Verilog coding and debug skills.
 * Try verifying using **different verification frameworks**: UVM, SVUnit, plain Verilog, or Python.
-* Create an **HDL and Verification Lab** for young engineers, with the code hosted on EDA Playground.
-  Students can work from home at their own pace, and run the lab samples on EDA Playground.
-* Quickly check whether your code is **synthesizable** or emulator-friendly.
 
 ******************
 Tools & Simulators
@@ -67,14 +59,18 @@ Available tools and simulators are below. EDA Playground can support many differ
 Simulators
 ==========
 
+* `Synopsys VCS <http://www.synopsys.com/Tools/Verification/FunctionalVerification/Pages/VCS.aspx>`_
+
+  * Commercial simulator for VHDL and SystemVerilog
+
+* `Cadence Incisive <http://www.cadence.com/products/fv/enterprise_simulator/pages/default.aspx>`_
+
+  * Commercial simulator for VHDL and SystemVerilog (VHDL simulation not yet implemented on EDA Playground)
+
 * `Riviera-PRO <https://www.aldec.com/en/products/functional_verification/riviera-pro>`_
 
   * Commercial simulator for VHDL and SystemVerilog
   * `Riviera-PRO Product Manual <https://www.aldec.com/en/support/resources/documentation/manuals>`_ (registration required)
-
-* `Synopsys VCS <http://www.synopsys.com/Tools/Verification/FunctionalVerification/Pages/VCS.aspx>`_
-
-  * Commercial simulator for VHDL and SystemVerilog
 
 ..
    * `ModelSim <http://www.mentor.com/products/fv/modelsim/>`_
@@ -114,12 +110,6 @@ NOTE: The synthesis tools will only process code in the right *Design* pane. The
   * `Yosys on GitHub <https://github.com/cliffordwolf/yosys>`_
 
 * `The Verilog-to-Routing (VTR) Project <http://code.google.com/p/vtr-verilog-to-routing/>`_
-
-On private EDA Playground
-=========================
-
-EDA Playground may be deployed on a private company/university network. For such a private deployment, any additional simulators/tools
-may be added. The company/university must have licenses for the commercial tools to be added.
 
 *************************
 Libraries & Methodologies
