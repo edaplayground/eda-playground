@@ -1,6 +1,10 @@
-############
-Introduction
-############
+###################
+EDA Playground Help
+###################
+
+| `Quick Start <http://eda-playground.readthedocs.io/en/latest/quick-start.html>`_
+
+| `Tutorial <http://eda-playground.readthedocs.io/en/latest/tutorial.html>`_
 
 | `EDA Playground on YouTube <https://www.youtube.com/channel/UCP1LfE6VR_YfrcFiYhG_imA>`_ - Tutorials for Verilog, SystemVerilog, UVM, and VHDL, interview questions, news and features, etc.
 
