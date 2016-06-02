@@ -63,9 +63,10 @@ Simulators
 
   * Commercial simulator for VHDL and SystemVerilog
 
-* `Cadence Incisive <http://www.cadence.com/products/fv/enterprise_simulator/pages/default.aspx>`_
+..
+  * `Cadence Incisive <http://www.cadence.com/products/fv/enterprise_simulator/pages/default.aspx>`_
 
-  * Commercial simulator for VHDL and SystemVerilog (VHDL simulation not yet implemented on EDA Playground)
+    * Commercial simulator for VHDL and SystemVerilog (VHDL simulation not yet implemented on EDA Playground)
 
 * `Riviera-PRO <https://www.aldec.com/en/products/functional_verification/riviera-pro>`_
 
