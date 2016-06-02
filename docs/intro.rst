@@ -2,15 +2,23 @@
 EDA Playground Help
 ###################
 
-| `Quick Start <http://eda-playground.readthedocs.io/en/latest/quick-start.html>`_
+***********
+Quick Start
+***********
+
+#. Log in. Click the **Log in** button (top right) and click either your Google or Facebook.
+#. Select your language from the **Testbench + Design** menu.
+#. Select your simulator from the **Tools & Simulators** menu. using certain simulators will require you to supply additional identifcation information.
+#. Type in your code in the **testbench** and **design** windows. 
+#. Click **Run**. 
 
 | `Tutorial <http://eda-playground.readthedocs.io/en/latest/tutorial.html>`_
 
 | `EDA Playground on YouTube <https://www.youtube.com/channel/UCP1LfE6VR_YfrcFiYhG_imA>`_ - Tutorials for Verilog, SystemVerilog, UVM, and VHDL, interview questions, news and features, etc.
 
-********
-Overview
-********
+***********************
+What is EDA Playground?
+***********************
 
 EDA Playground gives engineers immediate hands-on exposure to simulating SystemVerilog, Verilog, VHDL, C++/SystemC, and other HDLs.
 All you need is a web browser. The goal is to accelerate learning of design/testbench development with
@@ -42,7 +50,6 @@ Example Usecases
 * When **asking questions on** `Stack Overflow <http://stackoverflow.com/>`_ or other online forums, attach a link to the
   code and simulation results.
 * Use during **technical interviews** to test candidates' SystemVerilog/Verilog coding and debug skills.
-* **Run anywhere**. When away from your work machine, you can still try a quick prototype on EDA Playground.
 * Try verifying using **different verification frameworks**: UVM, SVUnit, plain Verilog, or Python.
 * Create an **HDL and Verification Lab** for young engineers, with the code hosted on EDA Playground.
   Students can work from home at their own pace, and run the lab samples on EDA Playground.
