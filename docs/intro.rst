@@ -6,9 +6,9 @@ EDA Playground Help
 Quick Start
 ***********
 
-#. Log in. Click the **Log in** button (top right) and click either your Google or Facebook.
+#. `Log in <http://eda-playground.readthedocs.io/en/latest/login.html>`_. Click the **Log in** button (top right) and click either your Google or Facebook.
 #. Select your language from the **Testbench + Design** menu.
-#. Select your simulator from the **Tools & Simulators** menu. Using certain simulators will require you to supply additional identifcation information.
+#. Select your simulator from the **Tools & Simulators** menu. Using certain simulators will require you to supply `additional identifcation information <http://eda-playground.readthedocs.io/en/latest/login.html>`_.
 #. Type in your code in the **testbench** and **design** windows. 
 #. Click **Run**. 
 
