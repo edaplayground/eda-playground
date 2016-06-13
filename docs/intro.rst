@@ -63,7 +63,7 @@ Simulators
 
   * Commercial simulator for VHDL and SystemVerilog
 
-..
+*
   * `Cadence Incisive <http://www.cadence.com/products/fv/enterprise_simulator/pages/default.aspx>`_
 
     * Commercial simulator for VHDL and SystemVerilog (VHDL simulation not yet implemented on EDA Playground)

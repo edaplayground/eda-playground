@@ -17,6 +17,7 @@ Table of Contents:
    :maxdepth: 3
 
    intro
+   login
    tutorial
    settings
    yosys-circuit-diagrams
