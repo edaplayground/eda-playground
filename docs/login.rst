@@ -1,6 +1,6 @@
-############################
-Logging in to EDA Playground
-############################
+##########
+Logging in
+##########
 
 *****************************************
 Logging in with either Google or Facebook
