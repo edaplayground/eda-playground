@@ -121,7 +121,6 @@ html_theme_options = {
     'navbar_links': [
                      ('EDA Playground ->', "http://eda-playground.readthedocs.io/en/latest/faq.html", True),
                      ('FAQ', "http://www.edaplayground.com", True),
-                     ('Forum', "https://groups.google.com/forum/#!forum/eda-playground", True)
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
