@@ -1,6 +1,22 @@
 ##############################################################
 `EDA Playground <http://www.edaplayground.com>`_ Documentation
 ##############################################################
+
+Table of Contents:
+------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   faq
+   intro
+   login
+   tutorial
+   settings
+   yosys-circuit-diagrams
+   code-examples
+   privacy-policy
+   
 | `EDA Playground on YouTube <https://www.youtube.com/channel/UCP1LfE6VR_YfrcFiYhG_imA>`_ - Tutorials for Verilog, SystemVerilog, UVM, and VHDL, interview questions, news and features, etc.
 
 .. raw:: html
@@ -10,17 +26,4 @@
 | *EDA Playground* web application located at http://www.edaplayground.com/
 | *EPWave* documentation located at http://epwave.readthedocs.org
 
-Table of Contents:
-------------------
 
-.. toctree::
-   :maxdepth: 3
-
-   intro
-   login
-   tutorial
-   settings
-   yosys-circuit-diagrams
-   code-examples
-   faq
-   privacy-policy

@@ -20,8 +20,8 @@ Are you sure you need to? Using Aldec Riviera Pro does not require account valid
 
 Which simulators require account validation?
 ============================================
-Synopsys VCS
-Cadence Incisive
+* Synopsys VCS
+* Cadence Incisive
 
 What can I do without account validation?
 =========================================
