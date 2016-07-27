@@ -23,3 +23,42 @@ Doulos Online Training Customers
 ********************************
 
 If you have purchased a place on a Doulos online training course and have been sent a username and password, you can enter them in the Username and Password boxes and then can log in by clicking on **Login**. You will then be directed to the main EDA Playground page and you will see your training course listed on the left hand side. If you click on that, you will see links to some further instructions and to all the exercises for your training course.
+
+***
+FAQ
+***
+
+I don't have a company or institutional email address. How can I validate my account?
+=====================================================================================
+Are you sure? Are you perhaps a member of a professional institution that gives you an email address? 
+
+Are you sure you need to? Using Aldec Riviera Pro does not require account validation: this is a commercial simulator, which supports VHDL, Verilog, System-Verilog and UVM. Using Cadence Specman does not require account validation, either.
+
+Which simulators require account validation?
+============================================
+* Synopsys VCS
+* Cadence Incisive
+
+What can I do without account validation?
+=========================================
+Pretty much everything. Using Aldec Riviera Pro does not require account validation: this is a commercial simulator, which supports VHDL, Verilog, System-Verilog and UVM. Using Cadence Specman does not require account validation, either.
+
+I'm a Doulos customer; can I validate my account without access to a company or institutional email address?
+============================================================================================================
+I am looking into this.
+
+I didn't receive your email, what can I do?
+===========================================
+Unfortunately, we put some code in to prevent multiple people validating using the same email address, which also prevents you resending to your email address. This will be fixed soon. So, just filling in the validation form again is not an option.
+
+So, first check you spam folder to make sure our email is not stuck there. If not, check the email address you entered was correct (for example, people often seem to add '.com' instead of '.edu'; people often seem to be combining gmail addresses with work, for example people often seem to type something like 'myname1982@somerealcompany.com').
+
+If all that fails, get in touch with me (Matthew) at getedaplayground@gmail.com. 
+
+Why is account validation necessary?
+====================================
+Unfortunately, following some abuse of this privilige on EDA Playground, we have had to restrict access to some of the simulators. EDA Playground enables you to use some commercial, professional simulators, completely free of charge. In order to use some simulators, asking for some identification information and the agreement not to abuse this privilige doesn't seem much to ask.
+
+How do I log in if I don't have a Google or Facebook account?
+=============================================================
+We are working on providing additional ways to sign into ==EDA Playground==. I know it has said this for years, but now we are. We really are. Meanwhile, please create a new Google account at https://accounts.google.com/SignUp and use that to sign in.
