@@ -119,8 +119,8 @@ html_theme_options = {
     # Note the "1" or "True" value above as the third argument to indicate
     # an arbitrary url.
     'navbar_links': [
-                     ('EDA Playground ->', "http://eda-playground.readthedocs.io/en/latest/faq.html", True),
-                     ('FAQ', "http://www.edaplayground.com", True),
+                     ('EDA Playground ->', "http://www.edaplayground.com", True),
+                     ('FAQ', "http://eda-playground.readthedocs.io/en/latest/faq.html", True),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
