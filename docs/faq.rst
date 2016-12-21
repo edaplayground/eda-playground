@@ -8,7 +8,7 @@ Account Validation and Logging In
 
 How do I validate my account?
 =============================
-ou can reach the `validation page <http://www.edaplayground.com/validate>`_ by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `http://www.edaplayground.com/validate <http://www.edaplayground.com/validate>`_ directly. You will need to supply some additional indentification information, including a company, organisational or institutional email address. 
+ou can reach the `validation page <https://www.edaplayground.com/validate>`_ by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `https://www.edaplayground.com/validate <https://www.edaplayground.com/validate>`_ directly. You will need to supply some additional indentification information, including a company, organisational or institutional email address. 
 
 Enter your details in the form; read the terms and conditions carefully and, if you agree, click **I Agree**. An email will then be sent to the email address you entered. Open that email and click on the link it contains and your account will be validated.
 
@@ -45,7 +45,7 @@ Unfortunately, following some abuse of this privilige on EDA Playground, we have
 
 How do I log in if I don't have a Google or Facebook account?
 =============================================================
-We are working on providing additional ways to sign into ==EDA Playground==. I know it has said this for years, but now we are. We really are. Meanwhile, please create a new Google account at https://accounts.google.com/SignUp and use that to sign in.
+If you have an organisational/company/institutional email address then you can register from the  `login page <https://www.edaplayground.com/login>`_. Click on `Register for a full account <https://www.edaplayground.com/register>`_ or  `No Google or Facebook account? <https://www.edaplayground.com/register>`_.
 
 ********************
 Using EDA Playground
@@ -53,15 +53,38 @@ Using EDA Playground
 
 How do I start a blank playground design?
 =========================================
-When working on code at http://www.edaplayground.com, you can start a blank design by clicking the EDA Playground logo in the top left.
+When working on code at https://www.edaplayground.com, you can start a blank design by clicking the EDA Playground logo in the top left.
 (Before doing that, please ensure that your existing code edits are saved.)
 
 How do I modify one of the examples? How do I modify someone else's playground?
 ===============================================================================
 After making code edits, you can save your own version by clicking ==Copy==.
 
-Why do I need to supply more identification information in order to use some simulators?
-========================================================================================
+How Can I search for one of my Playgrounds?
+===========================================
+Click on your username (top-right) to go to the user pages; the "Playgrounds" tab will be selected. You can see your playgrounds listed and can change the listing order by clicking on one of the headings. 
+
+You can also search for one of your playgrounds by entering search terms in the search box and clicking "Search your playgrounds". The search terms search the Name and Descriptions of each playground. You can narrow down your search by selecting the various menus underneath the search box.
+
+Notice how selecting a menu adds search terms. You can type these in manually if you prefer. 
+
+How can I publish one of my Playgrounds?
+========================================
+Select "Published (will appear in search results)" from the drop-down menu bottom-right of the share tab and then save your playground.
+
+How Can I search for one of someone else's Playgrounds?
+=======================================================
+Click on your username (top-right) to go to the user pages; then select the "Community" tab. You can see your playgrounds listed and can change the listing order by clicking on one of the headings. 
+
+You can also search for one of someone else's  playgrounds by entering search terms in the search box and clicking "Search all playgrounds". The search terms search the Name and Descriptions of each playground. You can narrow down your search by selecting the various menus underneath the search box.
+
+Notice how selecting a menu adds search terms. You can type these in manually if you prefer. 
+
+What if I accidently delete a playground? Can I get it back?
+============================================================
+Playgrounds are never actually deleted from the database. So, if you have linked to one of your playgrounds from some other page you don't need to worry about accidently deleting it - the URL will be preserved. (Deleting a playground simply removes it from your list.)
+
+You can find your deleted playgrounds by adding the search term 'deleted:true' to the search box. Your deleted playgrounds will then be listed and you can undelete any one of them by clicking on the arrow to the right of each one.
 
 What is EPWave?
 ===============
@@ -77,9 +100,9 @@ How do I get updates about new EDA Playground features?
 =======================================================
 New features are frequently being added to EDA Playground. Follow the updates on your favorite social media site:
 
-* `@EDAPlayground on Twitter <https://twitter.com/edaplayground>`_
-* `EDA Playground on Facebook <https://facebook.com/edaplayground>`_
-* `EDA Playground on Google+ <https://plus.google.com/+Edaplayground_EPWave>`_
+* `@EDAPlayground on Twitter <httpss://twitter.com/edaplayground>`_
+* `EDA Playground on Facebook <httpss://facebook.com/edaplayground>`_
+* `EDA Playground on Google+ <httpss://plus.google.com/+Edaplayground_EPWave>`_
 
 What are the resource limits for running my code?
 =================================================
@@ -99,9 +122,9 @@ I'd certainly be interested in hearing about any browser-compatibility issues yo
 I have more questions. How do I get support?
 ============================================
 ==EDA Playground== is actively being improved. If you need help or have suggestions, support is available on
-`EDA Playground forum <https://groups.google.com/forum/#!forum/eda-playground>`_
+`EDA Playground forum <httpss://groups.google.com/forum/#!forum/eda-playground>`_
 
 If you see a bug, however minor, please post on the forum or
-file a new issue at https://github.com/edaplayground/eda-playground/issues (requires GitHub account)
+file a new issue at httpss://github.com/edaplayground/eda-playground/issues (requires GitHub account)
 
 For simulator support, please contact the appropriate simulator vendor.
