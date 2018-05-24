@@ -8,7 +8,7 @@ Settings & Buttons
 Adding Files
 ************
 
-EDA Playground supports up to 10 files. The files may be HDL source files, or text files to be used as inputs to the testbench.
+EDA Playground supports multiple files, up to a total character limit of 1,000,000. The files may be HDL source files, or text files to be used as inputs to the testbench.
 
 .. image:: _static/add_tab.png
 
