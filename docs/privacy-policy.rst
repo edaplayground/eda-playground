@@ -2,7 +2,9 @@
 Privacy Policy
 ##############
 
-**Introduction**
+************
+Introduction
+************
 
 This document refers to personal data, which is defined as information concerning any living person (a natural person) that is not already in the public domain.
 
@@ -10,7 +12,9 @@ This Privacy Policy governs the way Doulos, Ltd (Doulos). collects, uses, mainta
 
 Doulos is pleased to provide the following Privacy Notice:
 
-**Personal Data and how we use it**
+*******************************
+Personal Data and how we use it
+*******************************
 
 We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our Site, register on the Site, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, email address. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.
 
@@ -34,11 +38,15 @@ Doulos, may collect and use Users personal information for the following purpose
 
 *	To send periodic emails: Users may receive emails that may include company news, updates, related product or service information, etc. If at any time the User would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email.
 
-**How we protect your information**
+*******************************
+How we protect your information
+*******************************
 
 We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.
 
-**Sharing your personal information**
+*********************************
+Sharing your personal information
+*********************************
 
 We do not sell or rent Users personal identification information to others. We may share Users personal information with our business partners if User uses the business partner’s product through our Site. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above. We may use third party service providers to help us operate our business and the Site or administer activities on our behalf, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes.
 
@@ -52,39 +60,53 @@ Ads appearing on our Site may be delivered to Users by advertising partners, who
 
 **Web hosting providers**
 
-Cloudflare manage and secure the traffic to some of the Doulos websites. They will log access in accordance with their security policy, and share aggregated data with us.
+Cloudflare manage and secure the traffic to some of the Doulos websites. They will log access in accordance with their `security policy <https://www.cloudflare.com/security-policy/ >`_ , and share aggregated data with us.
 
 **Links**
 
 This site contains links to other websites. We are not responsible for the privacy practices of these and you should read their own privacy policies. The policy described here, applies only to personal data collected by Doulos.
 
-**Legal basis for processing any personal data**
+********************************************
+Legal basis for processing any personal data
+********************************************
 
 To meet Doulos’ contractual obligations to clients and to also respond to marketing enquiries.
 
-**Legitimate interests pursued by Doulos and/or its clients**
+*********************************************************
+Legitimate interests pursued by Doulos and/or its clients
+*********************************************************
 
 To promote the marketing and consulting and training services offered by Doulos and/or to market the services and/or products offered by Doulos’ clients.
 
-**Consent**
+*******
+Consent
+*******
 
 Through agreeing to this privacy notice and by using the Site, you are consenting to Doulos processing your personal data for the purposes outlined. You can withdraw consent at any time by emailing DPO@doulos.com or writing to us, see last section for full contact details.
 
-**Disclosure**
+**********
+Disclosure
+**********
 
 Doulos may on occasions pass your Personal Information to third parties exclusively to process work on its behalf. Doulos requires these parties to agree to process this information based on our instructions and requirements consistent with this Privacy Notice and GDPR. Some data is passed to parties situated outside the EEA. In this case Doulos will ensure they are part of the EU-US Privacy Shield (if a USA entity) or adhere fully to the requirements of GDPR.
 
 Doulos do not broker or pass on information gained from your engagement without your consent. However, Doulos may disclose your Personal Information to meet legal obligations, regulations or valid governmental request. Doulos may also enforce its Terms and Conditions, including investigating potential violations of its Terms and Conditions to detect, prevent or mitigate fraud or security or technical issues; or to protect against imminent harm to the rights, property or safety of Doulos, its clients and/or the wider community.
 
-**Retention Policy**
+****************
+Retention Policy
+****************
 
 Doulos will process personal data during the duration of any contract and will continue to store only the personal data needed for ten years after the contract has expired to meet any legal obligations. After ten years any personal data not needed will be deleted.
 
-**Data storage**
+************
+Data storage
+************
 
 Data is held in the UK and in the USA using different servers. The data held in the USA conforms to the full requirements of GDPR. Data stored in the cloud will be with GDPR compliant suppliers.
 
-**Your rights as a data subject**
+*****************************
+Your rights as a data subject
+*****************************
 
 At any point whilst Doulos is in possession of or processing your personal data, all data subjects have the following rights:
 
@@ -106,7 +128,9 @@ In the event that Doulos refuses your request under rights of access, we will pr
 
 Doulos at your request can confirm what information it holds about you and how it is processed
 
-**You can request the following information:**
+******************************************
+You can request the following information:
+******************************************
 
 *	Identity and the contact details of the person or organisation (Doulos) that has determined how and why to process your data.
 
@@ -134,17 +158,23 @@ Doulos at your request can confirm what information it holds about you and how i
 
 *	Any details and information of automated decision making, such as profiling, and any meaningful information about the logic involved, as well as the significance and expected consequences of such processing.
 
-**To access what personal data is held, identification will be required**
+*********************************************************************
+To access what personal data is held, identification will be required
+*********************************************************************
 
 Doulos will accept the following forms of ID when information on your personal data is requested: a photocopy or scanned image of your national ID card, driving license, passport, birth certificate and a utility bill not older than three months. A minimum of one piece of photographic ID listed above and a supporting document is required. If Doulos is dissatisfied with the quality, further information may be sought before personal data can be released.
 
 All requests should be made to dpo@doulos.com or by writing to us at the address further below.
 
-**Changes to this policy**
+**********************
+Changes to this policy
+**********************
 
 Doulos has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
 
-**Complaints**
+**********
+Complaints
+**********
 
 In the event that you wish to make a compliant about how your personal data is being processed by Doulos or its partners, you have the right to complain to Doulos’ CEO. If you do not get a response within 30 days you can complain to the Data Protection Regulator.
 
