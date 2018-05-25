@@ -60,7 +60,7 @@ Ads appearing on our Site may be delivered to Users by advertising partners, who
 
 **Web hosting providers**
 
-Cloudflare manage and secure the traffic to some of the Doulos websites. They will log access in accordance with their `security policy <https://www.cloudflare.com/security-policy/ >`_ , and share aggregated data with us.
+Cloudflare manage and secure the traffic to some of the Doulos websites. They will log access in accordance with their security policy ( https://www.cloudflare.com/security-policy/ ) and share aggregated data with us.
 
 **Links**
 
