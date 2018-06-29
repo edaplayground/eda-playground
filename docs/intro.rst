@@ -6,13 +6,17 @@ EDA Playground Help
 Quick Start
 ***********
 
-#. `Log in <http://eda-playground.readthedocs.io/en/latest/login.html>`_. Click the **Log in** button (top right) and click either your Google or Facebook.
+#. `Log in <http://eda-playground.readthedocs.io/en/latest/login.html>`_. Click the **Log in** button (top right) Then either
+
+* click on Google or Facebook or 
+* register by clicking on 'Register for a full account' (which enables all the simulators on EDA Playground)
+
 #. Select your language from the **Testbench + Design** menu.
 #. Select your simulator from the **Tools & Simulators** menu. Using certain simulators will require you to supply `additional identifcation information <http://eda-playground.readthedocs.io/en/latest/login.html>`_.
 #. Type in your code in the **testbench** and **design** windows. 
 #. Click **Run**. 
 
-| `Tutorial <http://eda-playground.readthedocs.io/en/latest/tutorial.html>`_
+| `Tutorial <http://eda-playground.readthedocs.io/en/latest/tutorial.html>`
 
 | `EDA Playground on YouTube <https://www.youtube.com/channel/UCP1LfE6VR_YfrcFiYhG_imA>`_ - Tutorials for Verilog, SystemVerilog, UVM, and VHDL, interview questions, news and features, etc.
 
@@ -82,9 +86,14 @@ Simulators
 * `Incisive Specman Elite <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
 
   * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
-  * Works with Icarus Verilog 0.10.0 (contact `Doulos <http://www.doulos.com>`_ regarding EDA Playground support for other simulators)
+  * Works with `Cadence Incisive <http://www.cadence.com/products/fv/enterprise_simulator/pages/default.aspx>`_
   * `Hello e World Video Tutorial <https://www.youtube.com/watch?v=A07FJF0RvH0>`_
 
+* `GHDL <http://ghdl.free.fr/>`_
+
+  * an open-source simulator for the VHDL language
+  * fully supports the 1987, 1993, 2002 versions of the IEEE 1076 VHDL standard and partially the latest 2008 revision (well enough to support fixed_generic_pkg or float_generic_pkg)
+  
 * `Icarus Verilog <http://iverilog.icarus.com/>`_
 
   * Version 0.10.0 (devel) supports several SystemVerilog features.
@@ -111,6 +120,44 @@ NOTE: The synthesis tools will only process code in the right *Design* pane. The
 
 * `The Verilog-to-Routing (VTR) Project <http://code.google.com/p/vtr-verilog-to-routing/>`_
 
+**********
+Frameworks
+**********
+
+For settings and options documentation, see :ref:`Languages & Libraries Options <languages-libraries-options-label>`
+
+Available frameworks:
+
+SystemVerilog and Verilog
+=========================
+
+* `Doulos *Easier UVM* <http://www.doulos.com/knowhow/sysverilog/uvm/easier_uvm_generator/>`_
+
+* `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for Verilog/SystemVerilog
+  modules, classes, etc.
+
+  * `SVUnit on SourceForge <http://sourceforge.net/projects/svunit/>`_
+
+* `TL-Verilog <http://www.redwoodeda.com/>`_ - extends SystemVerilog with new language constructs for pipelines and transactions
+
+Python
+======
+
+* `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
+
+  * `MyHDL Manual <http://www.myhdl.org/doc/current/>`_
+  * `MyHDL on Bitbucket <https://bitbucket.org/jandecaluwe/myhdl>`_
+
+* `Migen <https://migen.readthedocs.org/en/latest>`_ - a Python toolbox for building complex digital hardware
+
+  * `Migen on GitHub <https://github.com/m-labs/migen>`_
+  * `Migen from M-Labs <http://milkymist.org/3/migen.html>`_
+
+* `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - a coroutine based cosimulation library for writing
+  VHDL and Verilog testbenches in Python
+
+  * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
+
 *************************
 Libraries & Methodologies
 *************************
@@ -130,17 +177,10 @@ SystemVerilog and Verilog
 
   * `UVM 1.1d Class Reference <https://verificationacademy.com/verification-methodology-reference/uvm/docs_1.1d/html/>`_
 
-  * `Doulos *Easier UVM* <http://www.doulos.com/knowhow/sysverilog/uvm/easier_uvm_generator/>`_
-
 * `OVM - Open Verification Methodology <https://verificationacademy.com/topics/verification-methodology>`_
 
   * `OVM 2.1.2 Class Reference <https://verificationacademy.com/verification-methodology-reference/ovmworld/docs_2.1.2/html/index.html>`_
   * `OVM 2.1.2 User Guide <http://www.specman-verification.com/source_bank/ovm-2.1.2/ovm-2.1.2/OVM_UserGuide.pdf>`_
-
-* `SVUnit <http://www.agilesoc.com/open-source-projects/svunit/>`_ - unit testing framework for Verilog/SystemVerilog
-  modules, classes, etc.
-
-  * `SVUnit on SourceForge <http://sourceforge.net/projects/svunit/>`_
 
 * OVL - Open Verification Library
 
@@ -169,6 +209,8 @@ VHDL
 
 * `OSVVM <http://osvvm.org/>`_ - Open Source VHDL Verification Methodology
 
+* `UVVM <https://bitvis.no/dev-tools/uvvm/>`_ - Universal VHDL Verification Methodology
+
 C++
 ===
 
@@ -177,23 +219,6 @@ C++
   * `SystemC 2.3.1 Class Reference <_static/systemc-2.3.1/sysc/classes.html>`_
   * `TLM 2.0 Class Reference <_static/systemc-2.3.1/tlm/classes.html>`_
 
-Python
-======
-
-* `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
-
-  * `MyHDL Manual <http://www.myhdl.org/doc/current/>`_
-  * `MyHDL on Bitbucket <https://bitbucket.org/jandecaluwe/myhdl>`_
-
-* `Migen <https://migen.readthedocs.org/en/latest>`_ - a Python toolbox for building complex digital hardware
-
-  * `Migen on GitHub <https://github.com/m-labs/migen>`_
-  * `Migen from M-Labs <http://milkymist.org/3/migen.html>`_
-
-* `cocotb <http://cocotb.readthedocs.org/en/latest/index.html>`_ - a coroutine based cosimulation library for writing
-  VHDL and Verilog testbenches in Python
-
-  * `cocotb on GitHub <https://github.com/potentialventures/cocotb>`_
 
 *********************
 What Users are Saying

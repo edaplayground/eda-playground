@@ -2,9 +2,14 @@
 Tutorial
 ########
 
-This Quick Start is intended for users of http://www.edaplayground.com.
-
 #. In a separate web browser window, log in to **EDA Playground** at: http://www.edaplayground.com
+
+#. `Log in <http://eda-playground.readthedocs.io/en/latest/login.html>`_. Click the **Log in** button (top right) Then either
+
+* click on Google or Facebook or 
+* register by clicking on 'Register for a full account' (which enables all the simulators on EDA Playground)
+
+#. Select 'Aldec Riviera Pro' from the **Tools & Simulators** menu. This selects the Aldec Riviera Pro simulator, which can be used however you logged in. Using certain other simulators will require you to have registered for a full account.
 
 #. In either the *Design* or *Testbench* window pane, type in the following code:
 
@@ -17,12 +22,9 @@ This Quick Start is intended for users of http://www.edaplayground.com.
 
    (Note: The code in the right *Design* pane is compiled first, followed by code in the left *Testbench* pane.)
 
-#. Click
+#. Click **Run** (top left)
 
-   .. image:: https://imageshack.com/scaled/large/842/qxbd.jpg
-      :alt: Run
-
-   Yes, running a sim is as simple as that!
+   Yes, running a simulation is as simple as that!
 
 #. In the bottom pane, you should see real-time results as your code is being compiled and then run.
    A run typically takes 1-5 seconds, depending on network traffic and simulator. Near the bottom of result output, you should see:
@@ -31,15 +33,7 @@ This Quick Start is intended for users of http://www.edaplayground.com.
 
       Hello World!
 
-#. Now, let's save our good work. Type in a descriptive name in the *Details* area on the left.
-
-   .. image:: https://imageshack.com/scaled/large/707/e9zb.jpg
-      :alt: Details-Name
-
-   and click
-
-   .. image:: https://imageshack.com/scaled/large/534/ohfu.jpg
-      :alt: Save
+#. Now, let's save our good work. Click the **Share** tab near in the bottom pane and then type in a name and description. Then click **Save**.
 
 #. The browser page will reload and the browser address bar will change. This is a persistent link to your saved code.
    You can send the link by email, post it on a web page, post it on `Stack Overflow <http://stackoverflow.com/>`_ forums, etc.

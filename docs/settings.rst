@@ -84,30 +84,25 @@ When language is *Verilog/SystemVerilog*, other Verilog libraries can be used fo
 These libraries may be used along with UVM/OVM. Multiple libraries may be selected at the same time.
 *Ctrl+Click* to select multiple libraries. Available libraries:
 
-* OVL 2.8.1
-* SVUnit 2.11
-* ClueLib 0.2.0
-* svlib 0.3
+* OVL 
+* SVUnit 
+* ClueLib 
+* svlib 
+* SVAUnit
 
 Libraries (VHDL)
 ----------------
 
 When language is *VHDL*, the following VHDL libraries can be used for both design and testbench.
 
-* OVL 2.8.1
-* OSVVM 2014.01
+* OVL 
+* OSVVM
+* UVVM
 
 Top entity (VHDL)
 -----------------
 
 When language is *VHDL*, the top entity of the design must be specified before running a simulation.
-
-Specman
--------
-
-When testbench language is *e*, one of the following Specman versions must be used.
-
-* Specman 2014.10
 
 Libraries (C++)
 ---------------
@@ -170,101 +165,18 @@ well as any generated files such as wave dumps, log files, etc.
 
 YouTube video: `How to download code and results from EDA Playground <http://www.youtube.com/watch?v=MZh0-Bz5TwI&hd=1>`_
 
-Riviera-PRO EDU
----------------
+Simulators
+----------
 
 .. image:: _static/riviera-pro.png
    :align: right
 
 Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
 
-The **Run Time** option can be used to specify the number of timesteps for the simulation to run. By default, the simulation runs forever until it hits a breakpoint or *$finish*.
+(If available), the **Run Time** option can be used to specify the number of timesteps for the simulation to run. By default, the simulation runs forever until it hits a breakpoint or *$finish*.
 
-The **Use run.do Tcl file** option is for using a custom *run.do* DO file for specifying simulation commands.
+The **Use run.do Tcl file** option is for using a custom *run.do* DO file for specifying simulation commands. To use a run.do Tcl file, check the option and `add a new file <http://eda-playground.readthedocs.io/en/latest/settings.html#adding-files-label>`_ called 'run.do'.
 
-Riviera-PRO Compile Options for SystemVerilog/Verilog
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For SystemVerilog and Verilog simulations, *Riviera-PRO* compile options are prepopulated with **-timescale 1ns/1ns -sv2k9** and run options are prepopulated with **+access+r**
-
-Riviera-PRO Compile Options for VHDL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For VHDL simulations, *Riviera-PRO* compile options are prepopulated with **-2008**
-
-..
-   ModelSim
-   --------
-
-   .. image:: _static/modelsim.png
-      :align: right
-
-   Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
-
-   The **Run Time** option can be used to specify the number of timesteps for the simulation to run. By default, the simulation runs forever until it hits a breakpoint or *$finish*.
-
-   The **Use run.do Tcl file** option is for using a custom *run.do* DO file for specifying simulation commands. YouTube video: `Using ModelSim DO file <https://www.youtube.com/watch?v=4ItQy0WCdns>`_
-
-   ModelSim Compile Options for SystemVerilog/Verilog
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   For SystemVerilog and Verilog simulations, *ModelSim* compile options are prepopulated with **-timescale 1ns/1ns -mfcu +acc=rmb -sv -suppress 2181** and run options are prepopulated with **-suppress 3829**
-
-   ModelSim Compile Options for VHDL
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   For VHDL simulations, *ModelSim* compile options are prepopulated with **-2008**
-
-Icarus Verilog
---------------
-
-.. image:: _static/icarus_verilog.png
-   :align: right
-
-Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
-
-*Icarus Verilog 0.9.7* and *Icarus Verilog 0.9.6* compile options are pre-populated with **-Wall**
-
-*Icarus Verilog 0.10.0* compile options are prepopulated with **-Wall -g2012**
-
-An example of custom compile and run options is here: http://www.edaplayground.com/s/4/202
-
-Note: When using Migen co-simulation, the compile/run options are not available.
-
-GPL Cver
---------
-
-Currently, no additional options for this simulator are available.
-
-VeriWell
---------
-
-Currently, no additional options for this simulator are available.
-
-C++
----
-
-This is a *g++* Linux compiler for C++. It is used for C++ and SystemC runs.
-
-Additional command-line *compile options* and *run options* may be specified in the bottom textboxes.
-
-Csh
----
-
-This is a standard Csh (C Shell) interpreter.
-Currently, no additional options are available for Csh.
-
-Perl
-----
-
-This is a standard Perl compiler.
-Currently, no additional options are available for Perl.
-
-Python
-------
-
-This is a standard Python compiler. It is only used for MyHDL when both testbench and design are written in *Python*.
-Currently, no additional options are available for Python.
 
 Yosys
 -----
@@ -306,12 +218,11 @@ Currently, no additional options are available for VTR.
 Currently, VTR cannot be used with MyHDL or Migen.
 
 
-Details
-=======
+*********
+Share Tab
+*********
 
-The options in this section are only used when saving the playground.
-
-.. image:: _static/details.png
+You can add a name and description for your playground using the share tab (which can be found in the bottom pane). 
 
 Name
 ----
@@ -321,20 +232,22 @@ A brief name/title of the playground. Visible by others when they open a saved p
 Description
 -----------
 
-A longer description of the playground. Visible by others when they open a saved playground.
+A longer description of the playground. Visible by others when they open a saved playground. You can format your text using `Markdown <https://en.wikipedia.org/wiki/Markdown>`_.
 
-Public
-------
+Visibility
+----------
 
-Whether this playground should be publicly accessible after being saved. When checked, anyone will be able to
-view this playground. When unchecked, only the creator will be able to view the playground.
+You can control the visibility of your playground by selecting one of three options:
+
+  * Private (only your can view)
+  * Public (anyone with the link can view)
+  * Published (will appear in search results)
 
 Examples
 ========
 
-Links to code examples created on EDA Playground. Some examples may have additional documentation provided in the *(docs)* link.
+Links to code examples created on EDA Playground. These generate a search of the EDA Playground database.
 
-.. image:: _static/examples.png
 
 **************************
 Editor Modes and Shortcuts
@@ -405,10 +318,10 @@ The default mode uses the following shortcuts. Note that the shortcuts are diffe
 Buttons
 *******
 
-Log In
-======
+EDA Playground Logo
+===================
 
-The user must be logged in to **save** or **run** playground code. Playground code and results may be viewed without logging in.
+Click on the EDA Playground logo to launch a new playground.
 
 Run
 ===
@@ -439,11 +352,33 @@ The copy will be complitely separate from the original, and it will have its own
 
 If you modified a code example but did not save, you'll see an asterisk in the *Copy* button.
 
-Share
+?
+=
+
+Links to EDA Playground documentation (these pages).
+
+Flask
 =====
 
-This button only shows up for saved playgrounds. It displays a modal pop-up with a static link to the current playground.
-Also, it displays buttons for sharing on Twitter, Facebook, or LinkedIn.
+Shows links to other apps available on EDA Playground, such as EPWave.
+
+Playgrounds
+===========
+
+Gives access to your and others' playgrounds. You can either browse or search.
+
+Log In / Profile
+================
+
+The user must be logged in to **save** or **run** playground code. Playground code and results may be viewed without logging in. If this button says "Log in" then click it to log in.
+
+If this button says "Profile", then you can click it to access your profile and your settings or to log out. 
+
+
+Log In
+======
+
+The user must be logged in to **save** or **run** playground code. Playground code and results may be viewed without logging in.
 
 Collaborate
 ===========
@@ -452,12 +387,17 @@ Allows real-time collaborations where multiple users can edit code simultaneousl
 
 `Real-Time Collaboration Intro <http://www.youtube.com/watch?v=UJ0jIvEU_Fo&hd=1>`_ on YouTube.
 
-About
+Forum
 =====
 
-Links to EDA Playground documentation (these pages).
+A short cut to the EDA Playground Forum.
 
-Apps
-====
+Follow @edaplayground
+=====================
 
-Shows links to other apps available on EDA Playground, such as EPWave.
+Click to follow EDA Playground on Twitter.
+
+
+
+
+
