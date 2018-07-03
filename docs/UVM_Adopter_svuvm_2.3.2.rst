@@ -32,7 +32,7 @@ In brief:
 Links to the course exercises
 *****************************
 
-Here are the links to the solutions for this course:
+Here are the links to the exercises:
 
 `Exercise 1 <https://www.edaplayground.com/x/cS4>`_
              
