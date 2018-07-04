@@ -1,6 +1,6 @@
-#####################
-UVM Adopter Exercises
-#####################
+###############################
+Comprehensive Verilog Exercises
+###############################
 
 version : verilog741
 
