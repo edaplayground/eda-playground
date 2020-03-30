@@ -32,6 +32,8 @@ In brief:
 Links to the course exercises
 *****************************
 
+Here is a link to the `common and DUT files <https://www.edaplayground.com/x/5Bmt>`_
+
 Here are the links to the exercises:
 
 `Exercise 1 <https://www.edaplayground.com/x/cS4>`_
