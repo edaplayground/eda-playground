@@ -4,7 +4,7 @@ Doulos Exercise Links
 
 `Comprehensive SystemVerilog <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.1.1.html>`_ 
 
-`Comprehensive Verilog <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog741.html>`_ 
+`Comprehensive Verilog <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog75.html>`_ 
 
 `Comprehensive VHDL <https://eda-playground.readthedocs.io/en/latest/Comprehensive_VHDL_exercise_links.html>`_ 
 
