@@ -84,11 +84,13 @@ Here are the links to the solutions for this course:
 
 `Exercise 6 ovl <https://www.edaplayground.com/x/5EgC>`_
 
-`Exercise 6 psl Synopsys <https://www.edaplayground.com/x/4jzF>`_
+`Exercise 6 psl Aldec <https://www.edaplayground.com/x/6NKQ>`_
 
 `Exercise 6 psl Cadence <https://www.edaplayground.com/x/5qY2>`_
 
-`Exercise 6 psl Aldec <https://www.edaplayground.com/x/6NKQ>`_
+`Exercise 6 psl Mentor <https://www.edaplayground.com/x/6NmT>`_
+
+`Exercise 6 psl Synopsys <https://www.edaplayground.com/x/4jzF>`_
 
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
