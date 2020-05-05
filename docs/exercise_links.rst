@@ -2,7 +2,7 @@
 Doulos Exercise Links
 #####################
 
-`Comprehensive SystemVerilog <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.1.1.html>`_ 
+`Comprehensive SystemVerilog <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.2.html>`_ 
 
 `Comprehensive Verilog <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog75.html>`_ 
 
