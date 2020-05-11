@@ -104,6 +104,12 @@ Data storage
 
 Data is held in the UK and in the USA using different servers. The data held in the USA conforms to the full requirements of GDPR. Data stored in the cloud will be with GDPR compliant suppliers.
 
+*************
+Backup Policy
+*************
+
+Backups of the EDA Playground database are kept for up to 15 calendar months. Therefore, anything deleted from the database will remain in backed up data for this period. Anonymised records are kept of any deletions so that they can be re-deleted in the event of a restoration from backed up data. 
+
 *****************************
 Your rights as a data subject
 *****************************
@@ -189,4 +195,4 @@ Information Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshir
 Telephone: +44 303 123 1113 or online messaging: https://ico.org.uk/global/contact-us/email
 Or email: registration@ico.org.uk
 
-This document was last updated on 24 May 2018
+This document was last updated on 11 May 2020
