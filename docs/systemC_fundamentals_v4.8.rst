@@ -36,6 +36,8 @@ Here are the links to the exercises:
        
 `Exercise 1 - Simulation Tour <https://www.edaplayground.com/x/2SwA>`_
 
+`Exercise 1-2 : Majority function - if you have time <https://www.edaplayground.com/x/34Rq>`_
+
 `Exercise 2 - Modules <https://www.edaplayground.com/x/5nkM>`_
 
 `Exercise 3 – Processes  <https://www.edaplayground.com/x/4HvN>`_
@@ -52,6 +54,25 @@ Here are the links to the exercises:
 
 `Exercise 9 – Temporal Decoupling  <https://www.edaplayground.com/x/65Ur>`_
 
+
+*******************************
+Links to the exercise solutions
+*******************************
+
+Here are the links to the exercise solutions:
+       
+`Exercise 1-2 <https://www.edaplayground.com/x/6FLF>`_
+`Exercise 2 <https://www.edaplayground.com/x/37pp>`_
+`Exercise 3-1 <https://www.edaplayground.com/x/4CNa>`_
+`Exercise 3-2 <https://edaplayground.com/x/23ut>`_
+`Exercise 3-3 <https://edaplayground.com/x/4sGE>`_
+`Exercise 3-4 <https://edaplayground.com/x/3J_W>`_
+`Exercise 4 <https://edaplayground.com/x/3tsL>`_
+`Exercise 5 <https://edaplayground.com/x/3wwm>`_
+`Exercise 6-1 <https://edaplayground.com/x/3TEq>`_
+`Exercise 7 <https://edaplayground.com/x/2_8z>`_
+`Exercise 8 <https://edaplayground.com/x/2azp>`_
+`Exercise 9 <https://edaplayground.com/x/5ZZd>`_
 
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
