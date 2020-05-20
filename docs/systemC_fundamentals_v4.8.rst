@@ -67,23 +67,23 @@ Here are the links to the exercise solutions:
 
 `Exercise 3-1 <https://www.edaplayground.com/x/4CNa>`_
 
-`Exercise 3-2 <https://edaplayground.com/x/23ut>`_
+`Exercise 3-2 <https://www.edaplayground.com/x/23ut>`_
 
-`Exercise 3-3 <https://edaplayground.com/x/4sGE>`_
+`Exercise 3-3 <https://www.edaplayground.com/x/4sGE>`_
 
-`Exercise 3-4 <https://edaplayground.com/x/3J_W>`_
+`Exercise 3-4 <https://www.edaplayground.com/x/3J_W>`_
 
-`Exercise 4 <https://edaplayground.com/x/3tsL>`_
+`Exercise 4 <https://www.edaplayground.com/x/3tsL>`_
 
-`Exercise 5 <https://edaplayground.com/x/3wwm>`_
+`Exercise 5 <https://www.edaplayground.com/x/3wwm>`_
 
-`Exercise 6-1 <https://edaplayground.com/x/3TEq>`_
+`Exercise 6-1 <https://www.edaplayground.com/x/3TEq>`_
 
-`Exercise 7 <https://edaplayground.com/x/2_8z>`_
+`Exercise 7 <https://www.edaplayground.com/x/2_8z>`_
 
-`Exercise 8 <https://edaplayground.com/x/2azp>`_
+`Exercise 8 <https://www.edaplayground.com/x/2azp>`_
 
-`Exercise 9 <https://edaplayground.com/x/5ZZd>`_
+`Exercise 9 <https://www.edaplayground.com/x/5ZZd>`_
 
 
 
