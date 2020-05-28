@@ -12,7 +12,9 @@ Doulos Exercise Links
 
 `Comprehensive VHDL <https://eda-playground.readthedocs.io/en/latest/Comprehensive_VHDL_exercise_links.html>`_ 
 
-`systemC Fundamentals <https://eda-playground.readthedocs.io/en/latest/systemC_fundamentals_v4.8.html>`_ 
+`systemC Fundamentals <https://eda-playground.readthedocs.io/en/latest/FSC-EDAplayground_v4.9.html>`_ 
+
+`SystemC Modeling with TLM-2.0 <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v17.html>`_
 
 `UVM Adopter <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.3.2.html>`_
 
