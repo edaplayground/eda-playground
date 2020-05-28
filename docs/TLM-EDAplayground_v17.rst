@@ -1,0 +1,65 @@
+.. _header-n0:
+
+SystemC Modeling with TLM-2.0
+=============================
+
+Version 17
+
+Note: When an exercise or solution has several parts, there is a
+hyphenated playground for the respective part. Oddly, some labs may not
+have a part 1 because it is not referred to that way in the workbook.
+
+.. _header-n36:
+
+SystemC TLM-2.0 Exercises
+-------------------------
+
+-  `Exercise 01 : TLM Source Tour <https://edaplayground.com/x/4B7q>`__
+
+-  `Exercise 02 : Initiator and Target
+   Sockets <https://edaplayground.com/x/4Vu_>`__
+
+-  `Exercise 03 : Temporal
+   Decoupling <https://edaplayground.com/x/2Pru>`__
+
+-  `Exercise 04 : Bursts, Streaming and Byte
+   Enables <https://edaplayground.com/x/2zhi>`__
+
+-  `Exercise 05 : nb_transport <https://edaplayground.com/x/yEP>`__
+
+-  `Exercise 06 : Convenience
+   Sockets <https://edaplayground.com/x/3LU3>`__
+
+-  `Exercise 07 : Transport Debug and
+   DMI <https://edaplayground.com/x/2grK>`__
+
+-  `Exercise 08 : Generic Payload
+   Extensions <https://edaplayground.com/x/63fW>`__
+
+-  `Exercise 09 : Width Conversion, Endianess &
+   Protocols <https://edaplayground.com/x/5Bj3>`__
+
+-  `Exercise 09-2 : Width Conversion and
+   Endianess <https://edaplayground.com/x/35gw>`__
+
+-  `Exercise 10 : New Protocols, DMI,
+   Extensions <https://edaplayground.com/x/5Htv>`__
+
+-  `Exercise 11 : Analysis Ports <https://edaplayground.com/x/4KnZ>`__
+
+-  `Exercise 12-1 : TLM-1.0 Request-Response Channels (part
+   1) <https://edaplayground.com/x/5ceR>`__
+
+-  `Exercise 12-2 : TLM-1.0 Request-Response Channels (part
+   2) <https://edaplayground.com/x/3MPf>`__
+
+.. _header-n32:
+
+Exercise Solutions
+------------------
+
+-  Exercise 1-1 is a file-only study -- no executable
+
+-  `Exercise 1-2 Solution <https://www.edaplayground.com/x/6FLF>`__
+
+-  REMAINDER TO BE SUPPLIED LATER
