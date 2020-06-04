@@ -2,21 +2,21 @@
 Doulos Exercise Links
 #####################
 
-`Essential Digital Design Techniques <https://eda-playground.readthedocs.io/en/latest/EDDT_v3.1.1.html>`_ 
+`Essential Digital Design Techniques [EDDT] <https://eda-playground.readthedocs.io/en/latest/EDDT_v3.1.1.html>`_ 
 
 `Expert VHDL <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links.html>`_ 
 
-`Comprehensive SystemVerilog <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.2.html>`_ 
+`Comprehensive SystemVerilog [CSV] <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.2.html>`_ 
 
-`Comprehensive Verilog <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog75.html>`_ 
+`Comprehensive Verilog [CV] <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog75.html>`_ 
 
 `Comprehensive VHDL <https://eda-playground.readthedocs.io/en/latest/Comprehensive_VHDL_exercise_links.html>`_ 
 
-`systemC Fundamentals <https://eda-playground.readthedocs.io/en/latest/FSC-EDAplayground_v4.9.html>`_ 
+`systemC Fundamentals [SCF] <https://eda-playground.readthedocs.io/en/latest/FSC-EDAplayground_v4.9.html>`_ 
 
-`SystemC Modeling with TLM-2.0 <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v17.html>`_
+`SystemC Modeling with TLM-2.0 [SCTLM] <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v17.html>`_
 
-`UVM Adopter <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.3.2.html>`_
+`UVM Adopter [UA] <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.3.2.html>`_
 
 **Note**: more complex courses (Expert VHDL Verification, Comprehensive SystemVerilog and UVM Adopter) rely on many files stored in a common directory. Rather than clutter up the display with zillions of tabs (and rather than take ages loading them up into each exercise playground), all these common files are stored within the docker container. These files are referred to in the _files.f_ tab.
 
