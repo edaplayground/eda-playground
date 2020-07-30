@@ -96,7 +96,7 @@ Doulos do not broker or pass on information gained from your engagement without 
 Retention Policy
 ****************
 
-Doulos will process personal data during the duration of any contract and will continue to store only the personal data needed for ten years after the contract has expired to meet any legal obligations. After ten years any personal data not needed will be deleted.
+Doulos stores Personal Data only for as long as necessary for the purposes for which it was collected, to provide you with products or services, for legitimate business interests including audit and forensics purposes, and where required or permitted by law.
 
 ************
 Data storage
