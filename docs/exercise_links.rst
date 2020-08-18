@@ -16,7 +16,7 @@ Doulos Exercise Links
 
 `SystemC Modeling with TLM-2.0 [SCTLM] <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v17.html>`_
 
-`SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/systemverilog_for_new_designers_v15.html>`_
+`SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_New_Designers_v15.html>`_
 
 `UVM Adopter [UA] <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.4.html>`_
 
