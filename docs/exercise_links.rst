@@ -16,6 +16,8 @@ Doulos Exercise Links
 
 `SystemC Modeling with TLM-2.0 [SCTLM] <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v17.html>`_
 
+`SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/systemverilog_for_new_designers_v15.html>`_
+
 `UVM Adopter [UA] <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.4.html>`_
 
 **Note**: more complex courses (Expert VHDL Verification, Comprehensive SystemVerilog and UVM Adopter) rely on many files stored in a common directory. Rather than clutter up the display with zillions of tabs (and rather than take ages loading them up into each exercise playground), all these common files are stored within the docker container. These files are referred to in the _files.f_ tab.
