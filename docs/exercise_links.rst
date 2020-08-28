@@ -2,21 +2,25 @@
 Doulos Exercise Links
 #####################
 
+`Comprehensive Verilog [CV] <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog75.html>`_ 
+
+`Comprehensive SystemVerilog [CSV] <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.2.html>`_ 
+
+`Comprehensive VHDL <https://eda-playground.readthedocs.io/en/latest/Comprehensive_VHDL_exercise_links.html>`_ 
+
 `Essential Digital Design Techniques [EDDT] <https://eda-playground.readthedocs.io/en/latest/EDDT_v3.1.1.html>`_ 
 
 `Expert VHDL <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links.html>`_ 
 
-`Comprehensive SystemVerilog [CSV] <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.2.html>`_ 
-
-`Comprehensive Verilog [CV] <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog75.html>`_ 
-
-`Comprehensive VHDL <https://eda-playground.readthedocs.io/en/latest/Comprehensive_VHDL_exercise_links.html>`_ 
+`Fast Track Verilog (2 days) [FTV] <https://eda-playground.readthedocs.io/en/latest/Fast_Track_Verilog_ft-verilog15.html>`_ 
 
 `SystemC Fundamentals [SCF] <https://eda-playground.readthedocs.io/en/latest/SystemC_fundamentals_v5.0.html>`_ 
 
 `SystemC Modeling with TLM-2.0 [SCTLM] <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v17.html>`_
 
 `SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_New_Designers_v15.html>`_
+
+`Verilog Primer for SystemVerilog (1 day) [VP4SV] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_Verilog_Primer_v2.0.html>`_
 
 `UVM Adopter [UA] <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.4.html>`_
 
