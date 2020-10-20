@@ -42,7 +42,7 @@ Here are the links to the exercises:
               
 `Exercise  4 <https://www.edaplayground.com/x/2rFU>`_
               
-`Exercise  5 <https://www.edaplayground.com/x/y8s>`_
+`Exercise  5 <https://www.edaplayground.com/x/F7TQ>`_
               
 `Exercise  6 <https://www.edaplayground.com/x/2VvF>`_
               
@@ -89,7 +89,7 @@ Here are the links to the solutions for this course:
               
 `Exercise  4 <https://www.edaplayground.com/x/3gyC>`_
               
-`Exercise  5 <https://www.edaplayground.com/x/4Eja>`_
+`Exercise  5 <https://www.edaplayground.com/x/D6i4>`_
               
 `Exercise  6 <https://www.edaplayground.com/x/5KJM>`_
               
