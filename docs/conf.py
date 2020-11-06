@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'EDA Playground'
-copyright = u'2015, Doulos'
+copyright = u'2020, Doulos'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
