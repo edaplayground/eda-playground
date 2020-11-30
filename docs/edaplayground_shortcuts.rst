@@ -1,5 +1,5 @@
 #################################
-EDA Plagyround Keyboard Shortcuts
+EDA Playground Keyboard Shortcuts
 #################################
 
 ***
