@@ -4,18 +4,7 @@ Essential Digital Design Techniques
 
 version: 3.1.1
 
-*****************************************
-How to Use EDA Playground for this course
-*****************************************
-
-Click on the link to each exercise. **Then click on the "Copy" button near the top left of the window.** Doing this copies the exercise from the master copy to a copy you own. If you do not do this, you will not be able to save and may lose your edits. 
-
-
-************************
-Completing your exercise
-************************
-
-Full instructions on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
+**Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_. Simulator **compile and run options** can be found `here <http://eda-playground.readthedocs.org/en/latest/compile_run_options.html>`_. **Full instructions** on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
 
 In brief:
 
@@ -46,7 +35,7 @@ Here are the links to the exercises for Verilog:
 
 `Exercise 6 - HDMI Switch Controller <https://www.edaplayground.com/x/4sZm>`_
 
-       
+
 *****************************************
 Links to the exercise solutions - Verilog
 *****************************************
@@ -65,7 +54,7 @@ Here are the links to the exercise solutions for Verilog:
 
 `Exercise 6 - HDMI Switch Controller <https://www.edaplayground.com/x/5ZZz>`_
 
-       
+
 ************************************
 Links to the course exercises - VHDL
 ************************************

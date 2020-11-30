@@ -4,18 +4,7 @@ systemC Fundamentals
 
 version: 5.0
 
-*****************************************
-How to Use EDA Playground for this course
-*****************************************
-
-Click on the link to each exercise. **Then click on the "Copy" button near the top left of the window.** Doing this copies the exercise from the master copy to a copy you own. If you do not do this, you will not be able to save and may lose you edits. 
-
-
-************************
-Completing your exercise
-************************
-
-Full instructions on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
+**Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_. **Full instructions** on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
 
 In brief:
 
@@ -33,7 +22,7 @@ Links to the course exercises
 *****************************
 
 Here are the links to the exercises:
-       
+
 `Exercise 1 - Simulation Tour <https://www.edaplayground.com/x/2SwA>`_
 
 `Exercise 1-2 : Majority function - if you have time <https://www.edaplayground.com/x/34Rq>`_
@@ -60,7 +49,7 @@ Links to the exercise solutions
 *******************************
 
 Here are the links to the exercise solutions:
-       
+
 `Exercise 1-2 <https://www.edaplayground.com/x/6FLF>`_
 
 `Exercise 2 <https://www.edaplayground.com/x/37pp>`_

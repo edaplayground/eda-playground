@@ -5,6 +5,8 @@ Fundamentals of SystemC
 
 Version 4.9
 
+**Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_. **Full instructions** on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
+
 Note: When an exercise or solution has several parts, there is a
 hyphenated playground for the respective part. Oddly, some labs may not
 have a part 1 because it is not referred to that way in the workbook.

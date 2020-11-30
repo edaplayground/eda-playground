@@ -4,7 +4,7 @@ Advanced VHDL Exercises
 
 version : advanced243
 
-Keyboard short cuts can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_. Simulator compile and run options `here <http://eda-playground.readthedocs.org/en/latest/compile_run_options.html>`_. Full instructions on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
+**Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_. Simulator **compile and run options** can be found `here <http://eda-playground.readthedocs.org/en/latest/compile_run_options.html>`_. **Full instructions** on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
 
 In brief:
 
