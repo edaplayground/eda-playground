@@ -103,6 +103,8 @@ Formatting
 
   * - Option
     - Description
+  * - CTRL-/
+    - comment/uncomment selection
   * - CTRL-]
     - indent selection
   * - CTRL-[
