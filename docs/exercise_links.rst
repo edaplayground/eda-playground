@@ -14,6 +14,8 @@ Doulos Exercise Links
 
 `Fast Track Verilog (2 days) [FTV] <https://eda-playground.readthedocs.io/en/latest/Fast_Track_Verilog_ft-verilog15.html>`_
 
+`PSL for VHDL [PSLVHDL] <https://eda-playground.readthedocs.io/en/latest/PSLVHDL_nosolutions.html>`_
+
 `SystemC Fundamentals [SCF] <https://eda-playground.readthedocs.io/en/latest/SystemC_fundamentals_v5.0.html>`_
 
 `SystemC Modeling with TLM-2.0 [SCTLM] <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v17.html>`_
