@@ -13,7 +13,7 @@ In brief:
 * Click on "Run" the run the simulation.
 
 * Select "Open EPWave after run" to view waveforms.
- 
+
 
 *****************************
 Links to the course exercises
@@ -25,9 +25,9 @@ Here are the links to the exercises:
 
 `Exercise  2 and 3 <https://www.edaplayground.com/x/fBgm>`_
 
-`Exercise  4 <https://www.edaplayground.com/x/kaUd>`_
+`Exercise  4 <https://www.edaplayground.com/x/hEhx>`_
 
-`Exercise  5 <https://www.edaplayground.com/x/hEhx>`_
+`Exercise  5 <https://www.edaplayground.com/x/rzGV>`_
 
 `Exercise  6 <https://www.edaplayground.com/x/u3Hf>`_
 
