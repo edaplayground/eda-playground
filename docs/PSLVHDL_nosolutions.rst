@@ -13,7 +13,7 @@ In brief:
 * Click on "Run" the run the simulation.
 
 * Select "Open EPWave after run" to view waveforms.
- 
+
 
 *****************************
 Links to the course exercises
