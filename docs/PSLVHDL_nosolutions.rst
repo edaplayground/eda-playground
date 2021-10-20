@@ -21,14 +21,14 @@ Links to the course exercises
 
 Here are the links to the exercises:
 
-`Exercise  1 <https://www.edaplayground.com/x/Zmuv>`_
+`Exercise 1 <https://www.edaplayground.com/x/Zmuv>`_
 
-`Exercise  2 and 3 <https://www.edaplayground.com/x/fBgm>`_
+`Exercise 2 and 3 <https://www.edaplayground.com/x/fBgm>`_
 
-`Exercise  4 <https://www.edaplayground.com/x/hEhx>`_
+`Exercise 4 <https://www.edaplayground.com/x/hEhx>`_
 
-`Exercise  5 <https://www.edaplayground.com/x/rzGV>`_
+`Exercise 5 <https://www.edaplayground.com/x/rzGV>`_
 
-`Exercise  6 <https://www.edaplayground.com/x/u3Hf>`_
+`Exercise 6 <https://www.edaplayground.com/x/u3Hf>`_
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
