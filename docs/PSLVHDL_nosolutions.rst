@@ -27,8 +27,8 @@ Here are the links to the exercises:
 
 `Exercise  4 <https://www.edaplayground.com/x/kaUd>`_
 
-`Exercise  5 <https://www.edaplayground.com/x/rzGV>`_
+`Exercise  5 <https://www.edaplayground.com/x/hEhx>`_
 
-`Exercise  6 <https://www.edaplayground.com/x/8mvM>`_
+`Exercise  6 <https://www.edaplayground.com/x/u3Hf>`_
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
