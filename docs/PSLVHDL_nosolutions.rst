@@ -23,7 +23,7 @@ Here are the links to the exercises:
 
 `Exercise 1 <https://www.edaplayground.com/x/Zmuv>`_
 
-`Exercise 2 and 3 <https://www.edaplayground.com/x/fBgm>`_
+`Exercise 2/3 <https://www.edaplayground.com/x/fBgm>`_
 
 `Exercise 4 <https://www.edaplayground.com/x/hEhx>`_
 
