@@ -16,7 +16,7 @@ Doulos Exercise Links
 
 `PSL for VHDL [PSLVHDL] <https://eda-playground.readthedocs.io/en/latest/PSLVHDL_nosolutions.html>`_
 
-`SystemC Fundamentals [SCF] <https://eda-playground.readthedocs.io/en/latest/SystemC_fundamentals_v5.0.html>`_
+`SystemC Fundamentals [SCF] <https://eda-playground.readthedocs.io/en/latest/systemc_fundamentals_v6.0.html>`_
 
 `SystemC Modeling with TLM-2.0 [SCTLM] <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v22.html>`_
 
