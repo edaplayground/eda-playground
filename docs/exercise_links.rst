@@ -18,7 +18,7 @@ Doulos Exercise Links
 
 `SystemC Fundamentals [SCF] <https://eda-playground.readthedocs.io/en/latest/systemc_fundamentals_v6.0.html>`_
 
-`SystemC Modeling with TLM-2.0 [SCTLM] <https://eda-playground.readthedocs.io/en/latest/TLM-EDAplayground_v22.html>`_
+`SystemC Modeling using TLM-2.0 [TLM] <https://eda-playground.readthedocs.io/en/latest/systemc_tlm_v3.0.html>`_
 
 `SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_New_Designers_v15.html>`_
 
