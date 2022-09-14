@@ -23,29 +23,37 @@ Links to the course exercises
 
 Here are the links to the exercises:
 
-	Exercise
-`Exercise 01	<https://www.edaplayground.com/x/5NXf>`_
+`Exercise 01	<https://www.edaplayground.com/x/ZX3D>`_
 
-`Exercise 02	<https://www.edaplayground.com/x/4tqi>`_
+`Exercise 02	<https://www.edaplayground.com/x/9nFS>`_
 
-`Exercise 03	<https://www.edaplayground.com/x/446f>`_
+`Exercise 03	<https://www.edaplayground.com/x/Rzc2>`_
 
-`Exercise 04	<https://www.edaplayground.com/x/6AAX>`_
+`Exercise 04	<https://www.edaplayground.com/x/hAVG>`_
 
-`Exercise 05	<https://www.edaplayground.com/x/448R>`_
+`Exercise 05	<https://www.edaplayground.com/x/S3gT>`_
 
-`Exercise 06	<https://www.edaplayground.com/x/47Cs>`_
+`Exercise 06	<https://www.edaplayground.com/x/w64U>`_
 
-`Exercise 07	<https://www.edaplayground.com/x/24FC>`_
+`Exercise 07	<https://www.edaplayground.com/x/Hxy4>`_
 
-`Exercise 09	<https://www.edaplayground.com/x/3FtU>`_
+`Exercise 08	<https://www.edaplayground.com/x/nGNy>`_
 
-`Exercise 10	<https://www.edaplayground.com/x/3rjJ>`_
+`Exercise 09	<https://www.edaplayground.com/x/sMgD>`_
 
-`Exercise 11	<https://www.edaplayground.com/x/3R7n>`_
+`Exercise 10	<https://www.edaplayground.com/x/EQSC>`_
 
-`Exercise 12	<https://www.edaplayground.com/x/5dJm>`_
+`Exercise 11	<https://www.edaplayground.com/x/cYN2>`_
 
+`Exercise 12	<https://www.edaplayground.com/x/Fvfx>`_
+
+`Exercise 13	<https://www.edaplayground.com/x/FeG3>`_
+
+`Exercise 14	<https://www.edaplayground.com/x/FyXk>`_
+
+`Exercise 15	<https://www.edaplayground.com/x/F7TQ>`_
+
+`Exercise 16	<https://www.edaplayground.com/x/2VvF>`_
 
 *********************************
 Solutions to the course exercises
@@ -53,31 +61,37 @@ Solutions to the course exercises
 
 Here are the links to the solutions for this course:
 
-Exercise 01	None
+Exercise 01	No solution
 
-`Exercise 02	<https://www.edaplayground.com/x/3GVZ>`_
+`Exercise 02	<https://www.edaplayground.com/x/kh8F>`_
 
-`Exercise 03	<https://www.edaplayground.com/x/5yPV>`_
+`Exercise 03	<https://www.edaplayground.com/x/D6_C>`_
 
-`Exercise 04	<https://www.edaplayground.com/x/3Ka_>`_
+`Exercise 04	<https://www.edaplayground.com/x/hhGe>`_
 
-`Exercise 05	<https://www.edaplayground.com/x/6DEy>`_
+`Exercise 05	<https://www.edaplayground.com/x/pdqu>`_
 
-`Exercise 06	<https://www.edaplayground.com/x/67eD>`_
+`Exercise 06	<https://www.edaplayground.com/x/kR7y>`_
 
-`Exercise 07	<https://www.edaplayground.com/x/67eZ>`_
+`Exercise 07	<https://www.edaplayground.com/x/fZ7V>`_
 
-`Exercise 08	<https://www.edaplayground.com/x/67iF>`_
+`Exercise 08	<https://www.edaplayground.com/x/QfEX>`_
 
-`Exercise 09	<https://www.edaplayground.com/x/2mBX>`_
+`Exercise 09	<https://www.edaplayground.com/x/JVjS>`_
 
-`Exercise 10	<https://www.edaplayground.com/x/4wJ5>`_
+`Exercise 10	<https://www.edaplayground.com/x/npAM>`_
 
-`Exercise 11	<https://www.edaplayground.com/x/68_i>`_
+`Exercise 11	<https://www.edaplayground.com/x/Fzsi>`_
 
-`Exercise 12	<https://www.edaplayground.com/x/67j8>`_
+`Exercise 12	<https://www.edaplayground.com/x/MRZD>`_
 
+`Exercise 13	<https://www.edaplayground.com/x/jByi>`_
 
+`Exercise 14	<https://www.edaplayground.com/x/KyV8>`_
+
+`Exercise 15	<https://www.edaplayground.com/x/D6i4>`_
+
+`Exercise 16	<https://www.edaplayground.com/x/5KJM>`_
 
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
