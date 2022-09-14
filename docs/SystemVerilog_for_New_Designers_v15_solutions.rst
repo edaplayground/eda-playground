@@ -23,31 +23,37 @@ Solutions to the course exercises
 
 Here are the links to the solutions for this course:
 
-Exercise 01	None
+Exercise 01	No solution
 
-`Exercise 02	<https://www.edaplayground.com/x/3GVZ>`_
+`Exercise 02	<https://courses.edaplayground.com/x/kh8F>`_
 
-`Exercise 03	<https://www.edaplayground.com/x/5yPV>`_
+`Exercise 03	<https://courses.edaplayground.com/x/D6_C>`_
 
-`Exercise 04	<https://www.edaplayground.com/x/3Ka_>`_
+`Exercise 04	<https://courses.edaplayground.com/x/hhGe>`_
 
-`Exercise 05	<https://www.edaplayground.com/x/6DEy>`_
+`Exercise 05	<https://courses.edaplayground.com/x/pdqu>`_
 
-`Exercise 06	<https://www.edaplayground.com/x/67eD>`_
+`Exercise 06	<https://courses.edaplayground.com/x/kR7y>`_
 
-`Exercise 07	<https://www.edaplayground.com/x/67eZ>`_
+`Exercise 07	<https://courses.edaplayground.com/x/fZ7V>`_
 
-`Exercise 08	<https://www.edaplayground.com/x/67iF>`_
+`Exercise 08	<https://courses.edaplayground.com/x/QfEX>`_
 
-`Exercise 09	<https://www.edaplayground.com/x/2mBX>`_
+`Exercise 09	<https://courses.edaplayground.com/x/JVjS>`_
 
-`Exercise 10	<https://www.edaplayground.com/x/4wJ5>`_
+`Exercise 10	<https://courses.edaplayground.com/x/npAM>`_
 
-`Exercise 11	<https://www.edaplayground.com/x/68_i>`_
+`Exercise 11	<https://courses.edaplayground.com/x/Fzsi>`_
 
-`Exercise 12	<https://www.edaplayground.com/x/67j8>`_
+`Exercise 12	<https://courses.edaplayground.com/x/MRZD>`_
 
+`Exercise 13	<https://courses.edaplayground.com/x/jByi>`_
 
+`Exercise 14	<https://courses.edaplayground.com/x/KyV8>`_
+
+`Exercise 15	<https://courses.edaplayground.com/x/D6i4>`_
+
+`Exercise 16	<https://courses.edaplayground.com/x/5KJM>`_
 
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
