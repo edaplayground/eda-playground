@@ -16,44 +16,44 @@ have a part 1 because it is not referred to that way in the workbook.
 SystemC TLM-2.0 Exercises
 -------------------------
 
--  `Exercise 01 : TLM Source Tour <https://edaplayground.com/x/4B7q>`__
+-  `Exercise 01 : TLM Source Tour <https://courses.edaplayground.com/x/4B7q>`__
 
 -  `Exercise 02 : Initiator and Target
-   Sockets <https://edaplayground.com/x/tbvv>`__
+   Sockets <https://courses.edaplayground.com/x/tbvv>`__
 
 -  `Exercise 03 : Temporal
-   Decoupling <https://edaplayground.com/x/bxLi>`__
+   Decoupling <https://courses.edaplayground.com/x/bxLi>`__
 
 -  `Exercise 04 : Bursts, Streaming and Byte
-   Enables <https://edaplayground.com/x/cmnd>`__
+   Enables <https://courses.edaplayground.com/x/cmnd>`__
 
--  `Exercise 05 : nb_transport <https://edaplayground.com/x/RgYP>`__
+-  `Exercise 05 : nb_transport <https://courses.edaplayground.com/x/RgYP>`__
 
 -  `Exercise 06 : Convenience
-   Sockets <https://edaplayground.com/x/LqXv>`__
+   Sockets <https://courses.edaplayground.com/x/LqXv>`__
 
 -  `Exercise 07 : Transport Debug and
-   DMI <https://edaplayground.com/x/iRgM>`__
+   DMI <https://courses.edaplayground.com/x/iRgM>`__
 
 -  `Exercise 08 : Generic Payload
-   Extensions <https://edaplayground.com/x/Sm7A>`__
+   Extensions <https://courses.edaplayground.com/x/Sm7A>`__
 
 -  `Exercise 09 : Width Conversion, Endianess &
-   Protocols <https://edaplayground.com/x/TJtY>`__
+   Protocols <https://courses.edaplayground.com/x/TJtY>`__
 
 -  `Exercise 09 endian_conv : Width Conversion and
-   Endianess <https://edaplayground.com/x/jWF8>`__
+   Endianess <https://courses.edaplayground.com/x/jWF8>`__
 
 -  `Exercise 10 : New Protocols, DMI,
-   Extensions <https://edaplayground.com/x/BeJM>`__
+   Extensions <https://courses.edaplayground.com/x/BeJM>`__
 
--  `Exercise 11 : Analysis Ports <https://edaplayground.com/x/bNQX>`__
+-  `Exercise 11 : Analysis Ports <https://courses.edaplayground.com/x/bNQX>`__
 
 -  `Exercise 12 Part 1 : TLM-1.0 Request-Response Channels (part
-   1) <https://edaplayground.com/x/nhkd>`__
+   1) <https://courses.edaplayground.com/x/nhkd>`__
 
 -  `Exercise 12 Part 2 : TLM-1.0 Request-Response Channels (part
-   2) <https://edaplayground.com/x/DW3A>`__
+   2) <https://courses.edaplayground.com/x/DW3A>`__
 
 .. _header-n34:
 
@@ -64,28 +64,28 @@ Exercise Solutions
 
 -  `Exercise 2 Solution <https://courses.edaplayground.com/x/H_wQ>`__
 
--  `Exercise 3 Solution <https://edaplayground.com/x/P_a6>`__
+-  `Exercise 3 Solution <https://courses.edaplayground.com/x/P_a6>`__
 
--  `Exercise 4 Solution <https://edaplayground.com/x/7Lzu>`__
+-  `Exercise 4 Solution <https://courses.edaplayground.com/x/7Lzu>`__
 
--  `Exercise 5 Part 1 Solution <https://edaplayground.com/x/sYHm>`__
+-  `Exercise 5 Part 1 Solution <https://courses.edaplayground.com/x/sYHm>`__
 
--  `Exercise 5 Part 2 Solution <https://edaplayground.com/x/KE8P>`__
+-  `Exercise 5 Part 2 Solution <https://courses.edaplayground.com/x/KE8P>`__
 
--  `Exercise 5 Part 3 Solution <https://edaplayground.com/x/nkr5>`__
+-  `Exercise 5 Part 3 Solution <https://courses.edaplayground.com/x/nkr5>`__
 
--  `Exercise 6 Part 1 Solution <https://edaplayground.com/x/SFFQ>`__
+-  `Exercise 6 Part 1 Solution <https://courses.edaplayground.com/x/SFFQ>`__
 
--  `Exercise 6 Part 2 Solution <https://edaplayground.com/x/prPr>`__
+-  `Exercise 6 Part 2 Solution <https://courses.edaplayground.com/x/prPr>`__
 
--  `Exercise 7 Solution <https://edaplayground.com/x/TKpB>`__
+-  `Exercise 7 Solution <https://courses.edaplayground.com/x/TKpB>`__
 
--  `Exercise 8 Solution <https://edaplayground.com/x/e8Nu>`__
+-  `Exercise 8 Solution <https://courses.edaplayground.com/x/e8Nu>`__
 
--  `Exercise 9 Solution <https://edaplayground.com/x/H5_r>`__
+-  `Exercise 9 Solution <https://courses.edaplayground.com/x/H5_r>`__
 
--  `Exercise 10 Solution <https://edaplayground.com/x/CG5p>`__
+-  `Exercise 10 Solution <https://courses.edaplayground.com/x/CG5p>`__
 
--  `Exercise 11 Solution <https://edaplayground.com/x/s4aq>`__
+-  `Exercise 11 Solution <https://courses.edaplayground.com/x/s4aq>`__
 
--  `Exercise 12 Solution <https://edaplayground.com/x/V_Dm>`__
+-  `Exercise 12 Solution <https://courses.edaplayground.com/x/V_Dm>`__

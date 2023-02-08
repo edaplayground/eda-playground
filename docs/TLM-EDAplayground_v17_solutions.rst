@@ -20,28 +20,28 @@ Exercise Solutions
 
 -  `Exercise 2-1 Solution <https://courses.edaplayground.com/x/6FLF>`__
 
--  `Exercise 3 Solution <https://edaplayground.com/x/6Ak2>`__
+-  `Exercise 3 Solution <https://courses.edaplayground.com/x/6Ak2>`__
 
--  `Exercise 4 Solution <https://edaplayground.com/x/5nCx>`__
+-  `Exercise 4 Solution <https://courses.edaplayground.com/x/5nCx>`__
 
--  `Exercise 5-1 Solution <https://edaplayground.com/x/3ndG>`__
+-  `Exercise 5-1 Solution <https://courses.edaplayground.com/x/3ndG>`__
 
--  `Exercise 5-2 Solution <https://edaplayground.com/x/3rhh>`__
+-  `Exercise 5-2 Solution <https://courses.edaplayground.com/x/3rhh>`__
 
--  `Exercise 5-3 Solution <https://edaplayground.com/x/eAZ>`__
+-  `Exercise 5-3 Solution <https://courses.edaplayground.com/x/eAZ>`__
 
--  `Exercise 6-1 Solution <https://edaplayground.com/x/4YiQ>`__
+-  `Exercise 6-1 Solution <https://courses.edaplayground.com/x/4YiQ>`__
 
--  `Exercise 6-2 Solution <https://edaplayground.com/x/5Ugh>`__
+-  `Exercise 6-2 Solution <https://courses.edaplayground.com/x/5Ugh>`__
 
--  `Exercise 7 Solution <https://edaplayground.com/x/pPt>`__
+-  `Exercise 7 Solution <https://courses.edaplayground.com/x/pPt>`__
 
--  `Exercise 8 Solution <https://edaplayground.com/x/3Rj3>`__
+-  `Exercise 8 Solution <https://courses.edaplayground.com/x/3Rj3>`__
 
--  `Exercise 9 Solution <https://edaplayground.com/x/5dw2>`__
+-  `Exercise 9 Solution <https://courses.edaplayground.com/x/5dw2>`__
 
--  `Exercise 10 Solution <https://edaplayground.com/x/3_7X>`__
+-  `Exercise 10 Solution <https://courses.edaplayground.com/x/3_7X>`__
 
--  `Exercise 11 Solution <https://edaplayground.com/x/5AE5>`__
+-  `Exercise 11 Solution <https://courses.edaplayground.com/x/5AE5>`__
 
--  `Exercise 12-2 Solution <https://edaplayground.com/x/5h_T>`__
+-  `Exercise 12-2 Solution <https://courses.edaplayground.com/x/5h_T>`__
