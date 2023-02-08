@@ -20,16 +20,16 @@ Solutions to the course exercises
 
 Here are the links to the solutions for this course:
 
-`Exercise  1 <https://www.edaplayground.com/x/5KJM>`_
+`Exercise  1 <https://courses.edaplayground.com/x/5KJM>`_
 
-`Exercise  2 <https://www.edaplayground.com/x/2rGB>`_
+`Exercise  2 <https://courses.edaplayground.com/x/2rGB>`_
 
-`Exercise  3 <https://www.edaplayground.com/x/2wXk>`_
+`Exercise  3 <https://courses.edaplayground.com/x/2wXk>`_
 
-`Exercise  AF1 <https://www.edaplayground.com/x/dvza>`_
+`Exercise  AF1 <https://courses.edaplayground.com/x/dvza>`_
 
-`Exercise  AF2 <https://www.edaplayground.com/x/DcxD>`_
+`Exercise  AF2 <https://courses.edaplayground.com/x/DcxD>`_
 
-`Exercise  AF3 <https://www.edaplayground.com/x/n2fN>`_
+`Exercise  AF3 <https://courses.edaplayground.com/x/n2fN>`_
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.

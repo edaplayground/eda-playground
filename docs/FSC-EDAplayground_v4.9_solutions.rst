@@ -16,11 +16,11 @@ have a part 1 because it is not referred to that way in the workbook.
 Fundamentals of SystemC Solutions
 ---------------------------------
 
--  `Exercise 1-2 Solution <https://www.edaplayground.com/x/6FLF>`__
+-  `Exercise 1-2 Solution <https://courses.edaplayground.com/x/6FLF>`__
 
--  `Exercise 2 Solution <https://www.edaplayground.com/x/37pp>`__
+-  `Exercise 2 Solution <https://courses.edaplayground.com/x/37pp>`__
 
--  `Exercise 3-1 Solution <https://www.edaplayground.com/x/4CNa>`__
+-  `Exercise 3-1 Solution <https://courses.edaplayground.com/x/4CNa>`__
 
 -  `Exercise 3-2 Solution <https://edaplayground.com/x/23ut>`__
 

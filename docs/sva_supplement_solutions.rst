@@ -20,10 +20,10 @@ Solutions to the course exercises
 
 Here are the links to the solutions for this course:
 
-`Exercise  AF1 <https://www.edaplayground.com/x/dvza>`_
+`Exercise  AF1 <https://courses.edaplayground.com/x/dvza>`_
 
-`Exercise  AF2 <https://www.edaplayground.com/x/DcxD>`_
+`Exercise  AF2 <https://courses.edaplayground.com/x/DcxD>`_
 
-`Exercise  AF3 <https://www.edaplayground.com/x/n2fN>`_
+`Exercise  AF3 <https://courses.edaplayground.com/x/n2fN>`_
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.

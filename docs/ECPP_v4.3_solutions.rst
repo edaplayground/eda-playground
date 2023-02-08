@@ -23,9 +23,9 @@ Links to the exercise solutions
 
 Here are the links to the exercise solutions:
 
-`Exercise 1 <https://www.edaplayground.com/x/6KPq>`_
+`Exercise 1 <https://courses.edaplayground.com/x/6KPq>`_
 
 
 
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
