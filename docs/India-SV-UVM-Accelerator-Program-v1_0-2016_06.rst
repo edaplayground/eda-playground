@@ -48,66 +48,66 @@ Solutions to the course exercises
 
 Here are the links to the solutions for this course:
 
-`Exercise 1 <http://www.edaplayground.com/x/X_B>`_
+`Exercise 1 <http://courses.edaplayground.com/x/X_B>`_
 
-`Exercise 2 <http://www.edaplayground.com/x/6gC>`_
+`Exercise 2 <http://courses.edaplayground.com/x/6gC>`_
 
-`Exercise 3 <http://www.edaplayground.com/x/9kd>`_
+`Exercise 3 <http://courses.edaplayground.com/x/9kd>`_
 
-`Exercise 4 <http://www.edaplayground.com/x/Cr5>`_
+`Exercise 4 <http://courses.edaplayground.com/x/Cr5>`_
 
-`Exercise 5 <http://www.edaplayground.com/x/FvW>`_
+`Exercise 5 <http://courses.edaplayground.com/x/FvW>`_
 
-`Exercise 6 <http://www.edaplayground.com/x/Jzx>`_
+`Exercise 6 <http://courses.edaplayground.com/x/Jzx>`_
 
-`Exercise 7 <http://www.edaplayground.com/x/R9q>`_
+`Exercise 7 <http://courses.edaplayground.com/x/R9q>`_
 
-`Exercise 8 <http://www.edaplayground.com/x/UEG>`_
+`Exercise 8 <http://courses.edaplayground.com/x/UEG>`_
 
-`Exercise 9 <http://www.edaplayground.com/x/XJh>`_
+`Exercise 9 <http://courses.edaplayground.com/x/XJh>`_
 
-`Exercise 10 <http://www.edaplayground.com/x/JM7>`_
+`Exercise 10 <http://courses.edaplayground.com/x/JM7>`_
 
-`Exercise A1 <http://www.edaplayground.com/x/X_M>`_
+`Exercise A1 <http://courses.edaplayground.com/x/X_M>`_
 
-`Exercise A2 part 1 <http://www.edaplayground.com/x/6zj>`_
+`Exercise A2 part 1 <http://courses.edaplayground.com/x/6zj>`_
 
-`Exercise A2 part 2 <http://www.edaplayground.com/x/A5B>`_
+`Exercise A2 part 2 <http://courses.edaplayground.com/x/A5B>`_
 
-`Exercise C1 <http://www.edaplayground.com/x/D9c>`_
+`Exercise C1 <http://courses.edaplayground.com/x/D9c>`_
 
-`Exercise C2 <http://www.edaplayground.com/x/XGx>`_
+`Exercise C2 <http://courses.edaplayground.com/x/XGx>`_
 
-`Exercise C3 <http://www.edaplayground.com/x/GE4>`_
+`Exercise C3 <http://courses.edaplayground.com/x/GE4>`_
 
-`Exercise C4 <http://www.edaplayground.com/x/KJV>`_
+`Exercise C4 <http://courses.edaplayground.com/x/KJV>`_
 
-`Exercise C5 <http://www.edaplayground.com/x/NNw>`_
+`Exercise C5 <http://courses.edaplayground.com/x/NNw>`_
 
-`Exercise C6 <http://www.edaplayground.com/x/RTN>`_
+`Exercise C6 <http://courses.edaplayground.com/x/RTN>`_
 
-`Exercise U1 <http://www.edaplayground.com/x/7bq>`_
+`Exercise U1 <http://courses.edaplayground.com/x/7bq>`_
 
-`Exercise U2 <http://www.edaplayground.com/x/QEC>`_
+`Exercise U2 <http://courses.edaplayground.com/x/QEC>`_
 
-`Exercise U3 <http://www.edaplayground.com/x/M9k>`_
+`Exercise U3 <http://courses.edaplayground.com/x/M9k>`_
 
-`Exercise U4 <http://www.edaplayground.com/x/J5K>`_
+`Exercise U4 <http://courses.edaplayground.com/x/J5K>`_
 
-`Exercise U5 <http://www.edaplayground.com/x/BvS>`_
+`Exercise U5 <http://courses.edaplayground.com/x/BvS>`_
 
-`Exercise U6 <http://www.edaplayground.com/x/8r_>`_
+`Exercise U6 <http://courses.edaplayground.com/x/8r_>`_
 
-`Exercise U7 <http://www.edaplayground.com/x/5kZ>`_
+`Exercise U7 <http://courses.edaplayground.com/x/5kZ>`_
 
-`Exercise U8 <http://www.edaplayground.com/x/Wze>`_
+`Exercise U8 <http://courses.edaplayground.com/x/Wze>`_
 
-`Exercise U9 <http://www.edaplayground.com/x/W5X>`_
+`Exercise U9 <http://courses.edaplayground.com/x/W5X>`_
 
-`Exercise U10 <http://www.edaplayground.com/x/T_6>`_
+`Exercise U10 <http://courses.edaplayground.com/x/T_6>`_
 
-`Exercise U11 <http://www.edaplayground.com/x/LrD>`_
+`Exercise U11 <http://courses.edaplayground.com/x/LrD>`_
 
 
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.

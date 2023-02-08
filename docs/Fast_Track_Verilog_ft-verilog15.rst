@@ -23,21 +23,21 @@ Links to the course exercises
 
 Here are the links to the exercises:
 
-`Exercise 1 <https://www.edaplayground.com/x/39dg>`_
+`Exercise 1 <https://courses.edaplayground.com/x/39dg>`_
 
-`Exercise 2 <https://www.edaplayground.com/x/5y_3>`_
+`Exercise 2 <https://courses.edaplayground.com/x/5y_3>`_
 
-`Exercise 3 <https://www.edaplayground.com/x/3wtd>`_
+`Exercise 3 <https://courses.edaplayground.com/x/3wtd>`_
 
-`Exercise 4 <https://www.edaplayground.com/x/5ZDn>`_
+`Exercise 4 <https://courses.edaplayground.com/x/5ZDn>`_
 
-`Exercise 5 <https://www.edaplayground.com/x/67_B>`_
+`Exercise 5 <https://courses.edaplayground.com/x/67_B>`_
 
-`Exercise 6 <https://www.edaplayground.com/x/2vQJ>`_
+`Exercise 6 <https://courses.edaplayground.com/x/2vQJ>`_
 
-`Exercise 7 <https://www.edaplayground.com/x/3TBg>`_
+`Exercise 7 <https://courses.edaplayground.com/x/3TBg>`_
 
-`Exercise 8 <https://www.edaplayground.com/x/2yUj>`_
+`Exercise 8 <https://courses.edaplayground.com/x/2yUj>`_
 
 
 *********************************
@@ -46,21 +46,21 @@ Solutions to the course exercises
 
 Here are the links to the solutions for this course:
 
-`Exercise 1 <https://www.edaplayground.com/x/2KYU>`_
+`Exercise 1 <https://courses.edaplayground.com/x/2KYU>`_
 
-`Exercise 2 <https://www.edaplayground.com/x/2sKs>`_
+`Exercise 2 <https://courses.edaplayground.com/x/2sKs>`_
 
-`Exercise 3 <https://www.edaplayground.com/x/2W_y>`_
+`Exercise 3 <https://courses.edaplayground.com/x/2W_y>`_
 
-`Exercise 4 <https://www.edaplayground.com/x/5nki>`_
+`Exercise 4 <https://courses.edaplayground.com/x/5nki>`_
 
-`Exercise 5 <https://www.edaplayground.com/x/b2p>`_
+`Exercise 5 <https://courses.edaplayground.com/x/b2p>`_
 
-`Exercise 6 <https://www.edaplayground.com/x/4Hvj>`_
+`Exercise 6 <https://courses.edaplayground.com/x/4Hvj>`_
 
-`Exercise 7 <https://www.edaplayground.com/x/6D2B>`_
+`Exercise 7 <https://courses.edaplayground.com/x/6D2B>`_
 
-`Exercise 8 <https://www.edaplayground.com/x/3GSQ>`_
+`Exercise 8 <https://courses.edaplayground.com/x/3GSQ>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.

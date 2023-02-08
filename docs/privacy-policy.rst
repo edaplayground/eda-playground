@@ -8,7 +8,7 @@ Introduction
 
 This document refers to personal data, which is defined as information concerning any living person (a natural person) that is not already in the public domain.
 
-This Privacy Policy governs the way Doulos, Ltd (Doulos). collects, uses, maintains and discloses information collected from users (each, a “User” or “Users”, or Data Subject) of the  http://www.edaplayground.com website ("Site").
+This Privacy Policy governs the way Doulos, Ltd (Doulos). collects, uses, maintains and discloses information collected from users (each, a “User” or “Users”, or Data Subject) of the  http://courses.edaplayground.com website ("Site").
 
 Doulos is pleased to provide the following Privacy Notice:
 
@@ -60,7 +60,7 @@ Ads appearing on our Site may be delivered to Users by advertising partners, who
 
 **Web hosting providers**
 
-Cloudflare manage and secure the traffic to some of the Doulos websites. They will log access in accordance with their security policy ( https://www.cloudflare.com/security-policy/ ) and share aggregated data with us.
+Cloudflare manage and secure the traffic to some of the Doulos websites. They will log access in accordance with their security policy ( https://courses.cloudflare.com/security-policy/ ) and share aggregated data with us.
 
 **Links**
 

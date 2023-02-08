@@ -2,9 +2,9 @@
 Quick Start
 ###########
 
-This Quick Start is intended for users of http://www.edaplayground.com.
+This Quick Start is intended for users of http://courses.edaplayground.com.
 
-#. In a separate web browser window, log in to **EDA Playground** at: http://www.edaplayground.com
+#. In a separate web browser window, log in to **EDA Playground** at: http://courses.edaplayground.com
 
 #. In either the *Design* or *Testbench* window pane, type in the following code:
 
@@ -43,9 +43,9 @@ This Quick Start is intended for users of http://www.edaplayground.com.
 
 #. The browser page will reload and the browser address bar will change. This is a persistent link to your saved code.
    You can send the link by email, post it on a web page, post it on `Stack Overflow <http://stackoverflow.com/>`_ forums, etc.
-   Here is what the link looks like for one user's *Hello World!* playground: http://www.edaplayground.com/s/3/12
+   Here is what the link looks like for one user's *Hello World!* playground: http://courses.edaplayground.com/s/3/12
 
-#. Now, let's try modifying existing code. Load the following example: `RAM <http://www.edaplayground.com/s/example/9>`_
+#. Now, let's try modifying existing code. Load the following example: `RAM <http://courses.edaplayground.com/s/example/9>`_
 
 #. On the left editor pane, before the **end** of **initial** block, add the following:
 
@@ -79,7 +79,7 @@ You can run a simulation on EDA Playground and load the resulting waves in EPWav
 Loading Waves for SystemVerilog and Verilog Simulations
 -------------------------------------------------------
 
-* Go to your code on EDA Playground. For example: `RAM Design and Test <http://www.edaplayground.com/s/example/9>`_
+* Go to your code on EDA Playground. For example: `RAM Design and Test <http://courses.edaplayground.com/s/example/9>`_
 * Make sure your code contains appropriate function calls to create a \*.vcd file. For example:
 
   .. code-block:: verilog
@@ -111,4 +111,4 @@ Verilog Synthesis on EDA Playground
 
 .. raw:: html
 
-  <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?list=SPScWdLzHpkAeTnJGDXHupc5WC-8Kjt5Ue&vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="//courses.youtube.com/embed/GpNf6dIx-Kw?list=SPScWdLzHpkAeTnJGDXHupc5WC-8Kjt5Ue&vq=hd720" frameborder="0" allowfullscreen></iframe>

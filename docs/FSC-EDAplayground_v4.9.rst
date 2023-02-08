@@ -17,43 +17,43 @@ Fundamentals of SystemC Exercises
 ---------------------------------
 
 -  `Exercise 1 : Simulation
-   Tour <https://www.edaplayground.com/x/2SwA>`__
+   Tour <https://courses.edaplayground.com/x/2SwA>`__
 
 -  `Exercise 1-2 : Majority function - if you have
-   time <https://www.edaplayground.com/x/34Rq>`__
+   time <https://courses.edaplayground.com/x/34Rq>`__
 
--  `Exercise 2 : Modules <https://www.edaplayground.com/x/5nkM>`__
+-  `Exercise 2 : Modules <https://courses.edaplayground.com/x/5nkM>`__
 
--  `Exercise 3 – Processes <https://www.edaplayground.com/x/4HvN>`__
+-  `Exercise 3 – Processes <https://courses.edaplayground.com/x/4HvN>`__
 
 -  `Exercise 4 – Reporting and
-   Tracing <https://www.edaplayground.com/x/5Z5v>`__
+   Tracing <https://courses.edaplayground.com/x/5Z5v>`__
 
 -  `Exercise 5 – Interfaces and
-   Channels <https://www.edaplayground.com/x/5RYa>`__
+   Channels <https://courses.edaplayground.com/x/5RYa>`__
 
 -  `Exercise 6 – Simple Bus
-   System <https://www.edaplayground.com/x/2mj6>`__
+   System <https://courses.edaplayground.com/x/2mj6>`__
 
 -  `Exercise 7 – Additional
-   Features <https://www.edaplayground.com/x/62QQ>`__
+   Features <https://courses.edaplayground.com/x/62QQ>`__
 
 -  `Exercise 8 – Initiator and Target
-   Sockets <https://www.edaplayground.com/x/4zw5>`__
+   Sockets <https://courses.edaplayground.com/x/4zw5>`__
 
 -  `Exercise 9 – Temporal
-   Decoupling <https://www.edaplayground.com/x/65Ur>`__
+   Decoupling <https://courses.edaplayground.com/x/65Ur>`__
 
 .. _header-n24:
 
 Fundamentals of SystemC Solutions
 ---------------------------------
 
--  `Exercise 1-2 Solution <https://www.edaplayground.com/x/6FLF>`__
+-  `Exercise 1-2 Solution <https://courses.edaplayground.com/x/6FLF>`__
 
--  `Exercise 2 Solution <https://www.edaplayground.com/x/37pp>`__
+-  `Exercise 2 Solution <https://courses.edaplayground.com/x/37pp>`__
 
--  `Exercise 3-1 Solution <https://www.edaplayground.com/x/4CNa>`__
+-  `Exercise 3-1 Solution <https://courses.edaplayground.com/x/4CNa>`__
 
 -  `Exercise 3-2 Solution <https://edaplayground.com/x/23ut>`__
 

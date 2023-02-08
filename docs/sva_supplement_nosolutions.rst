@@ -21,10 +21,10 @@ Links to the course exercises
 
 Here are the links to the exercises:
 
-`Exercise  AF1 <https://www.edaplayground.com/x/a9Xt>`_
+`Exercise  AF1 <https://courses.edaplayground.com/x/a9Xt>`_
 
-`Exercise  AF2 <https://www.edaplayground.com/x/vaZm>`_
+`Exercise  AF2 <https://courses.edaplayground.com/x/vaZm>`_
 
-`Exercise  AF3 <https://www.edaplayground.com/x/MBrc>`_
+`Exercise  AF3 <https://courses.edaplayground.com/x/MBrc>`_
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.

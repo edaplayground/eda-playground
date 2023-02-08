@@ -67,4 +67,4 @@ New features are frequently being added to EDA Playground. Follow the updates on
 Credits
 *******
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.

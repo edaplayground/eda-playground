@@ -62,7 +62,7 @@ Exercise Solutions
 
 -  Exercise 1-1 is a file-only study -- no executable
 
--  `Exercise 2-1 Solution <https://www.edaplayground.com/x/6FLF>`__
+-  `Exercise 2-1 Solution <https://courses.edaplayground.com/x/6FLF>`__
 
 -  `Exercise 3 Solution <https://edaplayground.com/x/6Ak2>`__
 

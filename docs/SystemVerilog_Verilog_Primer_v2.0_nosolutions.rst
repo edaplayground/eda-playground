@@ -23,11 +23,11 @@ Links to the course exercises
 
 Here are the links to the exercises:
 
-`Exercise 1/2 <https://www.edaplayground.com/x/6Be6>`_
+`Exercise 1/2 <https://courses.edaplayground.com/x/6Be6>`_
 
-`Exercise 3 <https://www.edaplayground.com/x/yZt>`_
+`Exercise 3 <https://courses.edaplayground.com/x/yZt>`_
 
-`Exercise 4 <https://www.edaplayground.com/x/6D3Q>`_
+`Exercise 4 <https://courses.edaplayground.com/x/6D3Q>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.

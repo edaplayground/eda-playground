@@ -6,7 +6,7 @@ Logging in
 Logging in with either Google or Facebook
 *****************************************
 
-You can log in very simply using either your Google or your Facebook account. Simply click on either the Google button or the Facebook button on the `log in page <http://www.edaplayground.com/login>`_.
+You can log in very simply using either your Google or your Facebook account. Simply click on either the Google button or the Facebook button on the `log in page <http://courses.edaplayground.com/login>`_.
 
 ***********************
 Validating your Account
@@ -14,7 +14,7 @@ Validating your Account
 
 In order to use certain simulators on EDA Playground (currently Synopsys VCS and Cadence Incisive), you will need to supply some additional indentification information, including a company, organisational or institutional email address. 
 
-You can reach the `validation page <http://www.edaplayground.com/validate>`_ by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `http://www.edaplayground.com/validate <http://www.edaplayground.com/validate>`_ directly. 
+You can reach the `validation page <http://courses.edaplayground.com/validate>`_ by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `http://courses.edaplayground.com/validate <http://courses.edaplayground.com/validate>`_ directly. 
 
 Enter your details in the form; read the terms and conditions carefully and, if you agree, click **I Agree**. An email will then be sent to the email address you entered. Open that email and click on the link it contains and your account will be validated.
 
@@ -30,7 +30,7 @@ FAQ
 
 How do I validate my account?
 =============================
-You can reach the validation page by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `https://www.edaplayground.com/login <https://www.edaplayground.com/login>`_ and clicking on 'Register for a full account'. You will need to supply some additional identification information, including a company, organisational or institutional email address. 
+You can reach the validation page by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `https://courses.edaplayground.com/login <https://courses.edaplayground.com/login>`_ and clicking on 'Register for a full account'. You will need to supply some additional identification information, including a company, organisational or institutional email address. 
 
 Enter your details in the form; read the terms and conditions carefully and, if you agree, click **I Agree**. An email will then be sent to the email address you entered. Open that email and click on the link it contains and your account will be validated.
 
@@ -61,4 +61,4 @@ Unfortunately, following some abuse of this privilige on EDA Playground, we have
 
 How do I log in if I don't have a Google or Facebook account?
 =============================================================
-If you have an organisational/company/institutional email address then you can register from the  `login page <https://www.edaplayground.com/login>`_. Click on `Register for a full account <https://www.edaplayground.com/register>`_ or  `No Google or Facebook account? <https://www.edaplayground.com/register>`_.
+If you have an organisational/company/institutional email address then you can register from the  `login page <https://courses.edaplayground.com/login>`_. Click on `Register for a full account <https://courses.edaplayground.com/register>`_ or  `No Google or Facebook account? <https://courses.edaplayground.com/register>`_.

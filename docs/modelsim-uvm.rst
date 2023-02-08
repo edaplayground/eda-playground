@@ -34,9 +34,9 @@ UVM can be used with ModelSim 10.1d as long as the following coding style adjust
 
 Examples on EDA Playground that you can edit and simulate:
 
-* `Simple UVM Testbench <http://www.edaplayground.com/s/example/546>`_
-* `UVM Sequence-Driver <http://www.edaplayground.com/s/example/564>`_
+* `Simple UVM Testbench <http://courses.edaplayground.com/s/example/546>`_
+* `UVM Sequence-Driver <http://courses.edaplayground.com/s/example/564>`_
 
 .. .. raw:: html
 
-..  <iframe width="1280" height="720" src="//www.youtube.com/embed/8s-NfzfJ__w?vq=hd720" frameborder="0" allowfullscreen></iframe>
+..  <iframe width="1280" height="720" src="//courses.youtube.com/embed/8s-NfzfJ__w?vq=hd720" frameborder="0" allowfullscreen></iframe>
