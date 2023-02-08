@@ -5,24 +5,24 @@ Testbench Languages
 For settings and options documentation, see :ref:`Tools & Simulators Options <tools-simulators-options-label>`
 
 EDA Playground can support many different tools.
-`Contact us <http://courses.doulos.com>`_ to add your EDA tool to EDA Playground.
+`Contact us <http://www.doulos.com>`_ to add your EDA tool to EDA Playground.
 
 **********************
 Commercial e Simulator
 **********************
 
-* `Cadence Specman <http://courses.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
+* `Cadence Specman <http://www.cadence.com/products/fv/enterprise_specman_elite/pages/default.aspx>`_
 
-  * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://courses.cadence.com/products/fv/pages/e_overview.aspx>`_
-  * Works with `Cadence Xcelium <http://courses.cadence.com/products/fv/enterprise_simulator/pages/default.aspx>`_
+  * Commercial simulator that supports `e Verification Language, IEEE 1647 <http://www.cadence.com/products/fv/pages/e_overview.aspx>`_
+  * Works with `Cadence Xcelium <http://www.cadence.com/products/fv/enterprise_simulator/pages/default.aspx>`_
 
 ************************************
 Open-Source Python-based Simulations
 ************************************
 
-* `MyHDL <http://courses.myhdl.org>`_ - a Python based hardware description language (HDL)
+* `MyHDL <http://www.myhdl.org>`_ - a Python based hardware description language (HDL)
 
-  * `MyHDL Manual <http://courses.myhdl.org/doc/current/>`_
+  * `MyHDL Manual <http://www.myhdl.org/doc/current/>`_
   * `MyHDL on Bitbucket <https://bitbucket.org/jandecaluwe/myhdl>`_
 
 * `Migen <https://migen.readthedocs.org/en/latest>`_ - a Python toolbox for building complex digital hardware

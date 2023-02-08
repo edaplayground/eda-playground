@@ -33,7 +33,7 @@ To rename a file, double click the tab name. (The initial *testbench* and *desig
 
 .. raw:: html
 
-  <iframe width="1280" height="720" src="//courses.youtube.com/embed/Cku5JlN6kQ4?vq=hd720" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/Cku5JlN6kQ4?vq=hd720" frameborder="0" allowfullscreen></iframe>
 
 ***************
 Sidebar Options
@@ -163,7 +163,7 @@ well as any generated files such as wave dumps, log files, etc.
 
   .. image:: _static/downloadFilesCheckbox.png
 
-YouTube video: `How to download code and results from EDA Playground <http://courses.youtube.com/watch?v=MZh0-Bz5TwI&hd=1>`_
+YouTube video: `How to download code and results from EDA Playground <http://www.youtube.com/watch?v=MZh0-Bz5TwI&hd=1>`_
 
 Simulators
 ----------
@@ -185,14 +185,14 @@ Yosys
    :align: right
 
 Yosis is a synthesis tool for performing logical synthesis and creating a netlist.
-It supports using `ABC <http://courses.eecs.berkeley.edu/~alanmi/abc/abc.htm>`_ to synthesize for a sample cell library.
+It supports using `ABC <http://www.eecs.berkeley.edu/~alanmi/abc/abc.htm>`_ to synthesize for a sample cell library.
 
 Yosys will only process code in the right *Design* pane. The code in the left *Testbench* pane will be ignored.
 UVM/OVM/Methodology/Libraries selections are also ignored.
 
 The following synthesis options are available:
 
-* *use ABC with cell library* - synthesize for a demo cell library using `ABC <http://courses.eecs.berkeley.edu/~alanmi/abc/abc.htm>`_
+* *use ABC with cell library* - synthesize for a demo cell library using `ABC <http://www.eecs.berkeley.edu/~alanmi/abc/abc.htm>`_
 * *memory -nomap* - skip *memory_map* step
 * *fsm -nomap* - skip *fsm_map* step
 * *skip FSM step*
@@ -385,7 +385,7 @@ Collaborate
 
 Allows real-time collaborations where multiple users can edit code simultaneously.
 
-`Real-Time Collaboration Intro <http://courses.youtube.com/watch?v=UJ0jIvEU_Fo&hd=1>`_ on YouTube.
+`Real-Time Collaboration Intro <http://www.youtube.com/watch?v=UJ0jIvEU_Fo&hd=1>`_ on YouTube.
 
 Forum
 =====

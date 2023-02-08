@@ -93,4 +93,4 @@ Here are the links to the exercise solutions for VHDL:
 `Exercise 6 - HDMI Switch Controller <https://courses.edaplayground.com/x/5BRK>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

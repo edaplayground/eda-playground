@@ -94,4 +94,4 @@ Exercise 01	No solution
 `Exercise 16	<https://courses.edaplayground.com/x/5KJM>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

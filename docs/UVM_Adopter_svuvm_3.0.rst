@@ -93,4 +93,4 @@ Here are the links to the solutions for this course:
 `17 Advanced Register Topics SOLUTION <https://courses.edaplayground.com/x/ijwt>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

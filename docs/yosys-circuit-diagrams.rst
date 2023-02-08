@@ -6,7 +6,7 @@ Yosys Circuit Diagrams
 
 .. image:: _static/fsm-diagram.png
 
-The `Yosys <http://courses.clifford.at/yosys/>`_ synthesis flow can create circuit diagrams.
+The `Yosys <http://www.clifford.at/yosys/>`_ synthesis flow can create circuit diagrams.
 
 * Square boxes are cells. Outputs on the right, inputs and unrecognized ports on the left.
   The first line of text in the box in the cell name, or _<number>_ for internal cells.
@@ -30,4 +30,4 @@ The `Yosys <http://courses.clifford.at/yosys/>`_ synthesis flow can create circu
   on one side and individual connections on the other side. When such boxes are connected to each other or to a
   cell port, the connections have little diamonds on the ends instead of arrows. That's because its not an actual
   connection in the sense of the internal RTLIL netlist format.
-* For a detailed explanation, see `Yosys Application Note 011: Interactive Design Investigation <http://courses.clifford.at/yosys/files/yosys_appnote_011_design_investigation.pdf>`_
+* For a detailed explanation, see `Yosys Application Note 011: Interactive Design Investigation <http://www.clifford.at/yosys/files/yosys_appnote_011_design_investigation.pdf>`_

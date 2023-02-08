@@ -64,4 +64,4 @@ Here are the links to the exercises:
 `Exercise 20 <https://courses.edaplayground.com/x/4BKr>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

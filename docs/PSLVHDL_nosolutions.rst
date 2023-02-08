@@ -31,4 +31,4 @@ Here are the links to the exercises:
 
 `Exercise 6 <https://courses.edaplayground.com/x/u3Hf>`_
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

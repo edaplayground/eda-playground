@@ -39,4 +39,4 @@ Examples on EDA Playground that you can edit and simulate:
 
 .. .. raw:: html
 
-..  <iframe width="1280" height="720" src="//courses.youtube.com/embed/8s-NfzfJ__w?vq=hd720" frameborder="0" allowfullscreen></iframe>
+..  <iframe width="1280" height="720" src="//www.youtube.com/embed/8s-NfzfJ__w?vq=hd720" frameborder="0" allowfullscreen></iframe>

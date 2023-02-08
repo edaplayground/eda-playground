@@ -59,4 +59,4 @@ Here are the links to the solutions for this course:
 `Exercise 6 psl Synopsys <https://courses.edaplayground.com/x/4jzF>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

@@ -30,4 +30,4 @@ Here are the links to the exercises:
 `Exercise 4 <https://courses.edaplayground.com/x/6D3Q>`_
 
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

@@ -32,4 +32,4 @@ Here are the links to the solutions for this course:
 
 `Exercise  AF3 <https://courses.edaplayground.com/x/n2fN>`_
 
-**EDA Playground** is maintained by `Doulos <http://courses.doulos.com>`_.
+**EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
