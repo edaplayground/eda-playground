@@ -2,6 +2,8 @@
 Doulos Exercise Links
 #####################
 
+`Advanced UVM v3.0.1 <https://eda-playground.readthedocs.io/en/latest/Advanced_UVM_svuvm_3.0.1.html>`_
+
 `Comprehensive Verilog [CV] <https://eda-playground.readthedocs.io/en/latest/Comprehensive_Verilog_verilog75.html>`_
 
 `Comprehensive SystemVerilog [CSV] <https://eda-playground.readthedocs.io/en/latest/systemverilog_exercises_v4.2.html>`_
@@ -13,6 +15,8 @@ Doulos Exercise Links
 `Expert VHDL <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links.html>`_
 
 `Fast Track Verilog (2 days) [FTV] <https://eda-playground.readthedocs.io/en/latest/Fast_Track_Verilog_ft-verilog15.html>`_
+
+`Introduction to UVM v3.0.1 <https://eda-playground.readthedocs.io/en/latest/Introduction_to_UVM_svuvm_3.0.1.html>`_
 
 `PSL for VHDL [PSLVHDL] <https://eda-playground.readthedocs.io/en/latest/PSLVHDL_nosolutions.html>`_
 
