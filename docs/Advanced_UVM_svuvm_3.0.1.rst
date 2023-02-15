@@ -52,6 +52,7 @@ Solutions to the course exercises
 *********************************
 
 Here are the links to the solutions for this course:
+
 `2a Advanced Reporting SOLUTION              <https://courses.edaplayground.com/x/EPeJ>`_
 
 `11 Virtual Sequences SOLUTION               <https://courses.edaplayground.com/x/RU2X>`_
