@@ -1,8 +1,8 @@
-#####################
-UVM Adopter Exercises
-#####################
+######################
+Advanced UVM Exercises
+######################
 
-Version 3.0
+Version 3.0.1
 
 **Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_.
 
