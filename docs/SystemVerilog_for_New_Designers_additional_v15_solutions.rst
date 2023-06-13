@@ -1,4 +1,4 @@
-.. _system-verilog-for-new-designers-additions-exercises¶:
+.. _system-verilog-for-new-designers-additions-exercises:
 
 System Verilog for New Designers Additions Exercises\ `¶ <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.4_solutions.html#uvm-adopter-exercises>`__
 ========================================================================================================================================================================
