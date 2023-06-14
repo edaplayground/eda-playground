@@ -1,7 +1,6 @@
-.. _system-verilog-for-new-designers-additions-exercises:
-
-System Verilog for New Designers Additions Exercises\ `¶ <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_2.4_solutions.html#uvm-adopter-exercises>`__
-========================================================================================================================================================================
+====================================================
+System Verilog for New Designers Additions Exercises
+====================================================
 
 version : sv4.2
 
@@ -22,6 +21,7 @@ In brief:
 
 -  Select “Open EPWave after run” to view waveforms.
 
+---------------------------------
 Solutions to the course exercises
 ---------------------------------
 
