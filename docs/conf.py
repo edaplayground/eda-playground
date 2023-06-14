@@ -159,6 +159,8 @@ html_theme_options = {
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
+# (MPAT has commented out the below line because it was causing an error with
+#  the new way of doing things using a .yaml file.)
 #html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name for this set of Sphinx documents.  If None, it defaults to
