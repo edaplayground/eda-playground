@@ -51,9 +51,14 @@ Exercise 01	No solution
 
 `Exercise 14	<https://courses.edaplayground.com/x/KyV8>`_
 
-`Exercise 15	<https://courses.edaplayground.com/x/D6i4>`_
+`Exercise 15	<https://courses.edaplayground.com/x/QQaH>`_
 
-`Exercise 16	<https://courses.edaplayground.com/x/5KJM>`_
+`Exercise 16	<https://courses.edaplayground.com/x/LTkr>`_
+
+`Exercise 17    <https://courses.edaplayground.com/x/MbXU>`_
+
+`Exercise 18    <https://courses.edaplayground.com/x/Ywta>`_
+
 
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

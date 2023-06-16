@@ -51,9 +51,13 @@ Here are the links to the exercises:
 
 `Exercise 14	<https://courses.edaplayground.com/x/FyXk>`_
 
-`Exercise 15	<https://courses.edaplayground.com/x/F7TQ>`_
+`Exercise 15    <https://courses.edaplayground.com/x/HYP3>`_
 
-`Exercise 16	<https://courses.edaplayground.com/x/2VvF>`_
+`Exercise 16    <https://courses.edaplayground.com/x/gksd>`_
+
+`Exercise 17    <https://courses.edaplayground.com/x/q4gP>`_
+
+`Exercise 18    <https://courses.edaplayground.com/x/BLj9>`_
 
 *********************************
 Solutions to the course exercises
@@ -89,9 +93,13 @@ Exercise 01	No solution
 
 `Exercise 14	<https://courses.edaplayground.com/x/KyV8>`_
 
-`Exercise 15	<https://courses.edaplayground.com/x/D6i4>`_
+`Exercise 15    <https://courses.edaplayground.com/x/QQaH>`_
 
-`Exercise 16	<https://courses.edaplayground.com/x/5KJM>`_
+`Exercise 16    <https://courses.edaplayground.com/x/LTkr>`_
+
+`Exercise 17    <https://courses.edaplayground.com/x/MbXU>`_
+
+`Exercise 18    <https://courses.edaplayground.com/x/Ywta>`_
 
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
