@@ -26,6 +26,8 @@ Doulos Exercise Links
 
 `SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_New_Designers_v15.html>`_
 
+`SystemVerilog for Analog Designers [SVAD] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_Analog_Designers_v10.html>`_
+
 `SVA Supplement [SS] <https://eda-playground.readthedocs.io/en/latest/sva_supplement.html>`_
 
 `Verilog Primer for SystemVerilog (1 day) [VP4SV] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_Verilog_Primer_v2.0.html>`_
