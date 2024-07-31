@@ -26,17 +26,19 @@ Our Site may use “cookies” to enhance User experience. User’s web browser 
 
 **How we use collected information**
 
-Doulos, may collect and use Users personal information for the following purposes:
+Doulos may collect and use Users’ personal information for the following purposes:
 
-*	To improve customer service: Information you provide helps us respond to your customer service requests and support needs more efficiently.
+* To improve customer service: Information Users provide helps Doulos respond to customer service requests and support needs more efficiently.
 
-*	To personalize user experience: We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.
+* To personalize the User experience: We may use information in the aggregate to understand how Users, as a group, use the services and resources provided on our Site.
 
-*	To improve our Site: We may use feedback you provide to improve our products and services.
+* To improve our Site: We may use feedback Users provide to make improvements to the Site.
 
-*	To run a promotion, contest, survey or other Site feature: To send Users information they agreed to receive about topics we think will be of interest to them.
+* To send Users information related to their EDA Playground use.
 
-*	To send periodic emails: Users may receive emails that may include company news, updates, related product or service information, etc. If at any time the User would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email.
+* To operate a competition, survey or other Site features.
+
+* To send Users periodic emails that may include EDA Playground news, updates and related service information. If at any time the User would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email.
 
 *******************************
 How we protect your information
