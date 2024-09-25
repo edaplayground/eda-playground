@@ -37,7 +37,7 @@ Here are the links to the solutions for this course:
 
 `10 Sequences SOLUTION                 <https://courses.edaplayground.com/x/EBiF>`_
 
-`16 Register Layer SOLUTION            <https://courses.edaplayground.com/x/RU2X>`_
+`16 Register Layer SOLUTION            <https://courses.edaplayground.com/x/SYaJ>`_
 
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
