@@ -1,6 +1,6 @@
-########
-Tutorial
-########
+######
+Blumph
+######
 
 #. In a separate web browser window, log in to **EDA Playground** at: http://courses.edaplayground.com
 
