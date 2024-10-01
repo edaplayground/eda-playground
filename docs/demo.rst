@@ -113,6 +113,8 @@ Verilog Synthesis on EDA Playground
   
   <iframe width="1280" height="700" src="//haproxy4-nyc1.edaplayground.com/x/9" frameborder="0" allowfullscreen"></iframe>
   
+  <iframe width="1280" height="700" src="https://haproxy4-nyc1.edaplayground.com/x/9" frameborder="0" allowfullscreen"></iframe>
+  
   <iframe name="EDAPlayground" width="100%" height="700" frameborder="0"></iframe>
   <script>window.frames.EDAPlayground.location='//haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1';</script>
 
