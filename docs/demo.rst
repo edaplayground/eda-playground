@@ -107,7 +107,7 @@ Harrumph
 
   <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?list=SPScWdLzHpkAeTnJGDXHupc5WC-8Kjt5Ue&vq=hd720" frameborder="0" allowfullscreen></iframe>
   
-  <iframe width="1280" height="700" src="//test202-nyc1.edaplayground.com/embed/x/9?from=http://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
+  <iframe width="1280" height="700" src="test202-nyc1.edaplayground.com/embed/x/9?from=http://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
   
   <iframe name="EDAPlayground" width="1280" height="700" frameborder="0"></iframe>
   <script>window.frames.EDAPlayground.location='//test202-nyc1.edaplayground.com/embed/x/9?from=http://eda-playground.readthedocs.io&button=run&panes=1';</script>
