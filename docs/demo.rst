@@ -99,9 +99,9 @@ Loading Waves for VHDL Simulations
   * The waves for all signals in the specified **Top entity** and any of its components will be dumped.
   * In EPWave window, click **Get Signals** to select the signals to view.
 
-***********************************
-Verilog Synthesis on EDA Playground
-***********************************
+********
+Harrumph
+********
 
 .. raw:: html
 
