@@ -109,26 +109,5 @@ Harrumph
   
   <iframe width="1280" height="700" src="//test202-nyc1.edaplayground.com/embed/x/9?from=http://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
   
-  <iframe width="1280" height="700" src="http://test202-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="//www.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="https://www.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="//haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="https://haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="http://haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="https://haproxy4-nyc1.edaplayground.com/embed/x/9?from=http://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="http://haproxy4-nyc1.edaplayground.com/embed/x/9?from=http://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="//haproxy4-nyc1.edaplayground.com/x/9" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="https://haproxy4-nyc1.edaplayground.com/x/9" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe name="EDAPlayground" width="100%" height="700" frameborder="0"></iframe>
-  <script>window.frames.EDAPlayground.location='//haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1';</script>
-
+  <iframe name="EDAPlayground" width="1280" height="700" frameborder="0"></iframe>
+  <script>window.frames.EDAPlayground.location='//test202-nyc1.edaplayground.com/embed/x/9?from=http://eda-playground.readthedocs.io&button=run&panes=1';</script>
