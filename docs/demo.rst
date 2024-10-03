@@ -107,7 +107,9 @@ Harrumph
 
   <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?list=SPScWdLzHpkAeTnJGDXHupc5WC-8Kjt5Ue&vq=hd720" frameborder="0" allowfullscreen></iframe>https://rust.godbolt.org/z/88hYc4xeE
   
-    <iframe width="1280" height="720" src="//rust.godbolt.org/z/88hYc4xeE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="//rust.godbolt.org/z/88hYc4xeE" frameborder="0" allowfullscreen></iframe>
+  
+  <iframe width="1280" height="700" src="https://haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
   
   <iframe width="1280" height="700" src="//haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
   
