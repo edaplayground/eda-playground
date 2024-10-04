@@ -105,15 +105,13 @@ Harrumph
 
 .. raw:: html
 
-  <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?list=SPScWdLzHpkAeTnJGDXHupc5WC-8Kjt5Ue&vq=hd720" frameborder="0" allowfullscreen></iframe>https://rust.godbolt.org/z/88hYc4xeE
+  <iframe width="1280" height="720" src="//www.youtube.com/embed/GpNf6dIx-Kw?list=SPScWdLzHpkAeTnJGDXHupc5WC-8Kjt5Ue&vq=hd720" frameborder="0" allowfullscreen></iframe>
   
   <iframe width="1280" height="720" src="//rust.godbolt.org/z/88hYc4xeE" frameborder="0" allowfullscreen></iframe>
   
   <iframe width="1280" height="700" src="https://haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
   
-  <iframe width="1280" height="700" src="//haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
-  
-  <iframe width="1280" height="700" src="//haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://haproxy4-nyc1.edaplayground.com&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
+  <iframe width="1280" height="700" src="https://haproxy4-nyc1.edaplayground.com/x/9" frameborder="0" allowfullscreen"></iframe>
   
   <iframe name="EDAPlayground" width="1280" height="700" frameborder="0"></iframe>
   <script>window.frames.EDAPlayground.location='//test202-nyc1.edaplayground.com/embed/x/9?from=https  <iframe width="1280" height="700" src="//haproxy4-nyc1.edaplayground.com/embed/x/9?from=https://eda-playground.readthedocs.io&button=run&panes=1" frameborder="0" allowfullscreen"></iframe>
