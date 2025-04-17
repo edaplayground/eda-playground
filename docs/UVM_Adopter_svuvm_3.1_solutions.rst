@@ -41,7 +41,7 @@ Here are the links to the solutions for this course:
 
 `14 Events and Barriers SOLUTION <https://courses.edaplayground.com/x/DVnY>`_
 
-`15 Advanced Sequencer Topics SOLUTION <https://courses.edaplayground.com/x/ba2R>`_
+`15 Advanced Sequencer Topics SOLUTION <https://courses.edaplayground.com/x/bA2R>`_
 
 `16 Register Layer SOLUTION <https://courses.edaplayground.com/x/auYs>`_
 
