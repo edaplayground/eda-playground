@@ -41,7 +41,7 @@ Here are the links to the exercises:
 
 `Exercise 8  <https://courses.edaplayground.com/x/4sSf>`_
 
-`Exercise 9  <https://courses.edaplayground.com/x/6EKG>`_
+`Exercise 9  <https://courses.edaplayground.com/x/7UN8>`_
 
 *********************************
 Solutions to the course exercises
