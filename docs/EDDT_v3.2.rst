@@ -2,7 +2,7 @@
 Essential Digital Design Techniques
 ###################################
 
-version: 3.1.1
+version: 3.2
 
 **Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_. Simulator **compile and run options** can be found `here <http://eda-playground.readthedocs.org/en/latest/compile_run_options.html>`_. **Full instructions** on using EDA Playground can be found `here <http://eda-playground.readthedocs.org/en/latest/>`_.
 
