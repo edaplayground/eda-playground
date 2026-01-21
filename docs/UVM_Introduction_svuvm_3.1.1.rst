@@ -1,8 +1,8 @@
 #####################
-UVM Adopter Exercises
+UVM Introduction Exercises
 #####################
 
-Version 3.1
+Version 3.1.1
 
 **Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_.  
 
@@ -37,23 +37,7 @@ Here are the links to the exercises:
 
 `10 Sequences <https://courses.edaplayground.com/x/HqR5>`_
 
-`11 Virtual Sequences <https://courses.edaplayground.com/x/U__v>`_
-
-`11 Virtual Sequences - part 2 (IYHT) <https://courses.edaplayground.com/x/akMs>`_
-
-`12 Layering Sequences and Agents <https://courses.edaplayground.com/x/Sa35>`_
-
-`12 Layering Sequences and Agents - IYHT <https://courses.edaplayground.com/x/HSCS>`_
-
-`13 Responses <https://courses.edaplayground.com/x/6jgq>`_
-
-`14 Events and Barriers <https://courses.edaplayground.com/x/SHFp>`_
-
-`15 Advanced Sequencer Topics <https://courses.edaplayground.com/x/TNbn>`_
-
 `16 Register Layer <https://courses.edaplayground.com/x/LEXz>`_
-
-`17 Additional Register Topics <https://courses.edaplayground.com/x/TZmd>`_
 
 
 *********************************
@@ -82,23 +66,8 @@ Here are the links to the solutions for this course:
 
 `10 Sequences SOLUTION <https://courses.edaplayground.com/x/PECw>`_
 
-`11 Virtual Sequences SOLUTION <https://courses.edaplayground.com/x/ZPnm>`_
-
-`11 Virtual Sequences SOLUTION - part2 (IYHT) <https://courses.edaplayground.com/x/fZHu>`_
-
-`12 Layering Sequences and Agents SOLUTION <https://courses.edaplayground.com/x/wnHf>`_
-
-`12 Layering Sequences and Agents - IYHT SOLUTION <https://courses.edaplayground.com/x/LW5X>`_
-
-`13 Responses SOLUTION <https://courses.edaplayground.com/x/LESu>`_
-
-`14 Events and Barriers SOLUTION <https://courses.edaplayground.com/x/DVnY>`_
-
-`15 Advanced Sequencer Topics SOLUTION <https://courses.edaplayground.com/x/bA2R>`_
-
 `16 Register Layer SOLUTION <https://courses.edaplayground.com/x/TZmd>`_
 
-`17 Additional Register Topics SOLUTION <https://courses.edaplayground.com/x/K6Ud>`_
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
 

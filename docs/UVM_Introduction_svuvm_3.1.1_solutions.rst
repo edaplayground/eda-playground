@@ -1,8 +1,8 @@
 ##############################
-UVM Adopter Exercise Solutions
+UVM Introduction Exercise Solutions
 ##############################
 
-Version 3.1
+Version 3.1.1
 
 **Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_.
 
@@ -33,23 +33,6 @@ Here are the links to the solutions for this course:
 
 `10 Sequences SOLUTION <https://courses.edaplayground.com/x/PECw>`_
 
-`11 Virtual Sequences SOLUTION <https://courses.edaplayground.com/x/ZPnm>`_
-
-`11 Virtual Sequences SOLUTION - Part 2 (IYHT) <https://courses.edaplayground.com/x/fZHu>`_
-
-`12 Layering Sequences and Agents SOLUTION <https://courses.edaplayground.com/x/wnHf>`_
-
-`12 Layering Sequences and Agents - IYHT SOLUTION <https://courses.edaplayground.com/x/LW5X>`_
-
-`13 Responses SOLUTION <https://courses.edaplayground.com/x/LESu>`_
-
-`14 Events and Barriers SOLUTION <https://courses.edaplayground.com/x/DVnY>`_
-
-`15 Advanced Sequencer Topics SOLUTION <https://courses.edaplayground.com/x/bA2R>`_
-
-`16 Register Layer SOLUTION <https://courses.edaplayground.com/x/auYs>`_
-
-`17 Additional Register Topics SOLUTION <https://courses.edaplayground.com/x/K6Ud>`_
-
+`16 Register Layer SOLUTION <https://courses.edaplayground.com/x/TZmd>`_
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

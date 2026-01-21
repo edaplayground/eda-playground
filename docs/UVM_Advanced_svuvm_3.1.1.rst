@@ -1,8 +1,8 @@
 #####################
-UVM Adopter Exercises
+UVM Advanced Exercises
 #####################
 
-Version 3.1
+Version 3.1.1
 
 **Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_.  
 
@@ -19,41 +19,37 @@ Here are the links to the exercises:
 
 `1 Getting Started <https://courses.edaplayground.com/x/wWWM>`_
 
-`2 Reporting <https://courses.edaplayground.com/x/aY_c>`_
-
-`3 Transaction-Level Modeling <https://courses.edaplayground.com/x/CU5s>`_
-
-`4 Testbench Convenience Features <https://courses.edaplayground.com/x/KSQt>`_
-
-`5 Scoreboards <https://courses.edaplayground.com/x/XvRe>`_
-
-`6 The Factory <https://courses.edaplayground.com/x/c2Ka>`_
-
-`7 The Configuration Database <https://courses.edaplayground.com/x/X8p9>`_
-
-`8 Objections <https://courses.edaplayground.com/x/qDLN>`_
-
-`9 Methods of uvm_object <https://courses.edaplayground.com/x/C6Ex>`_
-
-`10 Sequences <https://courses.edaplayground.com/x/HqR5>`_
+`2a Advanced Reporting <https://courses.edaplayground.com/x/VyMU>`_
 
 `11 Virtual Sequences <https://courses.edaplayground.com/x/U__v>`_
 
 `11 Virtual Sequences - part 2 (IYHT) <https://courses.edaplayground.com/x/akMs>`_
 
+`11a Callbacks <https://courses.edaplayground.com/x/cuGi>`_
+
 `12 Layering Sequences and Agents <https://courses.edaplayground.com/x/Sa35>`_
 
 `12 Layering Sequences and Agents - IYHT <https://courses.edaplayground.com/x/HSCS>`_
 
+`12a Hierarchy  <https://courses.edaplayground.com/x/n5YK>`_
+
 `13 Responses <https://courses.edaplayground.com/x/6jgq>`_
 
+`13a Response Using Analysis Ports  <https://courses.edaplayground.com/x/marN>`_
+
 `14 Events and Barriers <https://courses.edaplayground.com/x/SHFp>`_
+
+`14a Sim Events and Control <https://courses.edaplayground.com/x/SjfJ>`_
 
 `15 Advanced Sequencer Topics <https://courses.edaplayground.com/x/TNbn>`_
 
 `16 Register Layer <https://courses.edaplayground.com/x/LEXz>`_
 
 `17 Additional Register Topics <https://courses.edaplayground.com/x/TZmd>`_
+
+`18 Memory Management <https://courses.edaplayground.com/x/qMdB>`_
+
+`19 Phases <https://courses.edaplayground.com/x/Yh3z>`_
 
 
 *********************************
@@ -64,41 +60,38 @@ Here are the links to the solutions for this course:
 
 `1 Getting Started SOLUTION <https://courses.edaplayground.com/x/UYMw>`_
 
-`2 Reporting SOLUTION <https://courses.edaplayground.com/x/U7jR>`_
-
-`3 Transaction-Level Modeling SOLUTION <https://courses.edaplayground.com/x/KSJD>`_
-
-`4 Testbench Convenience Features SOLUTION <https://courses.edaplayground.com/x/KSKy>`_
-
-`5 Scoreboards SOLUTION <https://courses.edaplayground.com/x/FBHg>`_
-
-`6 The Factory SOLUTION <https://courses.edaplayground.com/x/npuJ>`_
-
-`7 The Configuration Database SOLUTION <https://courses.edaplayground.com/x/cXb_>`_
-
-`8 Objections SOLUTION <https://courses.edaplayground.com/x/vc8E>`_
-
-`9 Methods of uvm_object SOLUTION <https://courses.edaplayground.com/x/LWVH>`_
-
-`10 Sequences SOLUTION <https://courses.edaplayground.com/x/PECw>`_
+`2a Advanced Reporting SOLUTION <https://courses.edaplayground.com/x/tZVv>`_
 
 `11 Virtual Sequences SOLUTION <https://courses.edaplayground.com/x/ZPnm>`_
 
 `11 Virtual Sequences SOLUTION - part2 (IYHT) <https://courses.edaplayground.com/x/fZHu>`_
 
+`11a Callbacks <https://courses.edaplayground.com/x/ag7m>`_
+
 `12 Layering Sequences and Agents SOLUTION <https://courses.edaplayground.com/x/wnHf>`_
 
 `12 Layering Sequences and Agents - IYHT SOLUTION <https://courses.edaplayground.com/x/LW5X>`_
 
+`12a Hierarchy  <https://courses.edaplayground.com/x/pA76>`_
+
 `13 Responses SOLUTION <https://courses.edaplayground.com/x/LESu>`_
 
+`13a Response Using Analysis Ports  <https://courses.edaplayground.com/x/giqu>`_
+
 `14 Events and Barriers SOLUTION <https://courses.edaplayground.com/x/DVnY>`_
+
+`14a Sim Events and Control <https://courses.edaplayground.com/x/Mteq>`_
 
 `15 Advanced Sequencer Topics SOLUTION <https://courses.edaplayground.com/x/bA2R>`_
 
 `16 Register Layer SOLUTION <https://courses.edaplayground.com/x/TZmd>`_
 
-`17 Additional Register Topics SOLUTION <https://courses.edaplayground.com/x/K6Ud>`_
+`17 Advanced Register Topics SOLUTION <https://courses.edaplayground.com/x/K6Ud>`_
+
+`18 Memory Management <https://courses.edaplayground.com/x/ixrK>`_
+
+`19 Phases <https://courses.edaplayground.com/x/YksM>`_
+
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.
 
