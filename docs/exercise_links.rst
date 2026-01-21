@@ -12,7 +12,9 @@ Doulos Exercise Links
 
 `Essential Digital Design Techniques [EDDT] <https://eda-playground.readthedocs.io/en/latest/EDDT_v3.1.1.html>`_
 
-`Expert VHDL <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links.html>`_
+`Expert VHDL v4.3 (released 2018 - old OSVVM solution) <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links.html>`_
+
+`Expert VHDL v4.4 (released 2025 - new OSVVM solution) <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links_v4.4.html>`_
 
 `Fast Track Verilog (2 days) [FTV] <https://eda-playground.readthedocs.io/en/latest/Fast_Track_Verilog_ft-verilog15.html>`_
 
