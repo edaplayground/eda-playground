@@ -55,7 +55,7 @@ I didn't receive your email, what can I do?
 ===========================================
 So, first check you spam folder to make sure our email is not stuck there. If not, check the email address you entered was correct (for example, people often seem to add '.com' instead of '.edu'; people often seem to be combining gmail addresses with work, for example people often seem to type something like 'myname1982@somerealcompany.com').
 
-If all that fails, get in touch with me (Matthew) at getedaplayground@gmail.com. 
+If all that fails, get in touch via support@edaplayground.com . 
 
 Why is account validation necessary?
 ====================================
