@@ -2,11 +2,11 @@
 Logging in
 ##########
 
-*****************************************
-Logging in with either Google or Facebook
-*****************************************
+*****************************
+Logging in with either Google
+*****************************
 
-You can log in very simply using either your Google or your Facebook account. Simply click on either the Google button or the Facebook button on the `log in page <http://courses.edaplayground.com/login>`_.
+You can log in very simply using your Google account. Simply click on the Google button on the `log in page <http://courses.edaplayground.com/login>`_.
 
 ***********************
 Validating your Account
@@ -22,7 +22,7 @@ Enter your details in the form; read the terms and conditions carefully and, if 
 Doulos Online Training Customers
 ********************************
 
-If you have purchased a place on a Doulos online training course and have been sent a username and password, you can enter them in the Username and Password boxes and then can log in by clicking on **Login**. You will then be directed to the main EDA Playground page and you will see your training course listed on the left hand side. If you click on that, you will see links to some further instructions and to all the exercises for your training course.
+If you have purchased a place on some Doulos online training courses (and have been sent link to register on a course on EDA Playground), register on this course by cliking on that link. You will then be directed to the main EDA Playground page and you will see your training course listed on the left hand side. If you click on that, you will see links to some further instructions and to all the exercises for your training course.
 
 ***
 FAQ
@@ -42,8 +42,10 @@ Are you sure you need to? Using Aldec Riviera Pro does not require account valid
 
 Which simulators require account validation?
 ============================================
-* Synopsys VCS
 * Cadence Incisive
+* Siemens Questa
+* Siemens Precision RTL
+* Synopsys VCS
 
 What can I do without account validation?
 =========================================
@@ -59,6 +61,6 @@ Why is account validation necessary?
 ====================================
 Unfortunately, following some abuse of this privilige on EDA Playground, we have had to restrict access to some of the simulators. EDA Playground enables you to use some commercial, professional simulators, completely free of charge. In order to use some simulators, asking for some identification information and the agreement not to abuse this privilige doesn't seem much to ask.
 
-How do I log in if I don't have a Google or Facebook account?
+How do I log in if I don't have a Google account?
 =============================================================
-If you have an organisational/company/institutional email address then you can register from the  `login page <https://courses.edaplayground.com/login>`_. Click on `Register for a full account <https://courses.edaplayground.com/register>`_ or  `No Google or Facebook account? <https://courses.edaplayground.com/register>`_.
+If you have an organisational/company/institutional email address then you can register from the  `login page <https://courses.edaplayground.com/login>`_. Click on `Register for a full account <https://courses.edaplayground.com/register>`_ or  `No Google account? <https://courses.edaplayground.com/register>`_.
