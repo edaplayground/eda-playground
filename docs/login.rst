@@ -12,7 +12,7 @@ You can log in very simply using your Google account. Simply click on the Google
 Validating your Account
 ***********************
 
-In order to use certain simulators on EDA Playground (currently Synopsys VCS and Cadence Incisive), you will need to supply some additional indentification information, including a company, organisational or institutional email address. 
+In order to use certain simulators on EDA Playground (Siemens, Cadence and Synopsys products), you will need to supply some additional indentification information, including a company, organisational or institutional email address. 
 
 You can reach the `validation page <http://courses.edaplayground.com/validate>`_ by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `http://courses.edaplayground.com/validate <http://courses.edaplayground.com/validate>`_ directly. 
 
