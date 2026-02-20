@@ -8,7 +8,7 @@ Account Validation and Logging In
 
 How do I validate my account?
 -----------------------------
-You can reach the validation page by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `https://courses.edaplayground.com/login <https://courses.edaplayground.com/login>`_ and clicking on 'Register for a full account'. You will need to supply some additional identification information, including a company, organisational or institutional email address. 
+You can reach the validation page by clicking run whilst having selected either Synopsys VCS or Cadence Incisive from the **Tools & Simulators** menu or by visiting: `https://edaplayground.com/login <https://edaplayground.com/login>`_ and clicking on 'Register for a full account'. You will need to supply some additional identification information, including a company, organisational or institutional email address. 
 
 Enter your details in the form; read the terms and conditions carefully and, if you agree, click **I Agree**. An email will then be sent to the email address you entered. Open that email and click on the link it contains and your account will be validated.
 
@@ -20,26 +20,27 @@ Are you sure you need to? Using Aldec Riviera Pro does not require account valid
 
 Which simulators require account validation?
 --------------------------------------------
+* Cadence Xcelium
+* Siemens QuestaSim and Precision RTL
 * Synopsys VCS
-* Cadence Incisive
 
 What can I do without account validation?
 -----------------------------------------
-Pretty much everything. Using Aldec Riviera Pro does not require account validation: this is a commercial simulator, which supports VHDL, Verilog, System-Verilog and UVM. Using Cadence Specman does not require account validation, either.
+Pretty much everything. Using Aldec Riviera Pro does not require account validation: this is a commercial simulator, which supports VHDL, Verilog, System-Verilog and UVM. 
 
 I didn't receive your email, what can I do?
 -------------------------------------------
 So, first check you spam folder to make sure our email is not stuck there. If not, check the email address you entered was correct (for example, people often seem to add '.com' instead of '.edu'; people often seem to be combining gmail addresses with work, for example people often seem to type something like 'myname1982@somerealcompany.com').
 
-If all that fails, get in touch with me (Matthew) at support@edaplayground.com. 
+If all that fails, get in touch at support@edaplayground.com. 
 
 Why is account validation necessary?
 ------------------------------------
 Unfortunately, following some abuse of this privilige on EDA Playground, we have had to restrict access to some of the simulators. EDA Playground enables you to use some commercial, professional simulators, completely free of charge. In order to use some simulators, asking for some identification information and the agreement not to abuse this privilige doesn't seem much to ask.
 
-How do I log in if I don't have a Google or Facebook account?
--------------------------------------------------------------
-If you have an organisational/company/institutional email address then you can register from the  `login page <https://courses.edaplayground.com/login>`_. Click on `Register for a full account <https://courses.edaplayground.com/register>`_ or  `No Google or Facebook account? <https://courses.edaplayground.com/register>`_.
+How do I log in if I don't have a Google account?
+-------------------------------------------------
+If you have an organisational/company/institutional email address then you can register from the  `login page <https://edaplayground.com/login>`_. Click on `Register for a full account <https://edaplayground.com/register>`_ or  `No Google account? <https://edaplayground.com/register>`_.
 
 *************
 Running Tools
@@ -51,11 +52,11 @@ You can select the testbench and design languages in the 'Testbench + Design' dr
 
 Can I simulate VHDL and Verilog together?
 -----------------------------------------
-Unfortunately not. It's on the ToDo list.
+Yes; you'll have to use the 'Use run.bash' option and write your own commands to run the simulation. (You can get started by copying the command that EDA Playground issues without the run.bash option.)
 
 How can I select OVM or UVM?
 ----------------------------
-You can choose OVM (2.1.2) or UVM (1.1d or 1.2) from the 'UVM/OVM' drop-down menu (in the left pane).
+You can choose OVM or UVM from the 'UVM/OVM' drop-down menu (in the left pane).
 
 How can I select other libraries?
 ---------------------------------
@@ -115,7 +116,7 @@ Managing Playgrounds
 
 How do I start a blank playground design?
 -----------------------------------------
-When working on code at https://courses.edaplayground.com, you can start a blank design by clicking the EDA Playground logo in the top left.
+When working on code at https://edaplayground.com, you can start a blank design by clicking the EDA Playground logo in the top left.
 (Before doing that, please ensure that your existing code edits are saved.)
 
 How can I save a playground?
@@ -175,7 +176,7 @@ To be honest, I wish I could say I support any browser. To me it goes against th
 * Firefox
 * Chrome
 * Safari
-* Internet Explorer 9 or higher
+* Internet Explorer
 
 I'd certainly be interested in hearing about any browser-compatibility issues you come across. 
 
