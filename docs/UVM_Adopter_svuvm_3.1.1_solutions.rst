@@ -2,7 +2,7 @@
 UVM Adopter Exercise Solutions
 ##############################
 
-Version 3.1
+Version 3.1.1
 
 **Keyboard short cuts** can be found `here <http://eda-playground.readthedocs.org/en/latest/edaplayground_shortcuts.html>`_.
 
