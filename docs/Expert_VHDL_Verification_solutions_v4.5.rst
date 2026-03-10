@@ -39,7 +39,7 @@ Here are the links to the solutions for this course:
 
 `Exercise 7  <https://courses.edaplayground.com/x/4iUH>`_
 
-`Exercise 8  <https://courses.edaplayground.com/x/UYCK>`_
+`Exercise 8  <https://courses.edaplayground.com/x/DZc8>`_
 
 `Exercise 9  <https://courses.edaplayground.com/x/K7hf>`_
 
