@@ -18,6 +18,8 @@ Doulos Exercise Links
 
 `Expert VHDL v4.4 (released 2025 - new OSVVM solution) <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links_v4.4.html>`_
 
+`Expert VHDL v4.5 (released 2026 - new UVVM solution) <https://eda-playground.readthedocs.io/en/latest/Expert_VHDL_exercise_links_v4.5.html>`_
+
 `Fast Track Verilog (2 days) [FTV] <https://eda-playground.readthedocs.io/en/latest/Fast_Track_Verilog_ft-verilog15.html>`_
 
 `Introduction to UVM v3.0.1 <https://eda-playground.readthedocs.io/en/latest/Introduction_to_UVM_svuvm_3.0.1.html>`_
