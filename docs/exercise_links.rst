@@ -34,7 +34,7 @@ Doulos Exercise Links
 
 `SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_New_Designers_v15.html>`_
 
-`SystemVerilog Class-Based SPT [] <https://eda-playground.readthedocs.io/en/latest/systemverilog_classbased_v4.2.html>`_
+`SystemVerilog Class-Based SPT [SVCSB-SPT] <https://eda-playground.readthedocs.io/en/latest/systemverilog_classbased_v4.2.html>`_
 
 `SystemVerilog for Analog Designers [SVAD] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_Analog_Designers_v10.html>`_
 
