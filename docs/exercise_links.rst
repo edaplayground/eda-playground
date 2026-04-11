@@ -34,6 +34,8 @@ Doulos Exercise Links
 
 `SystemVerilog for New Designers [SVND] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_New_Designers_v15.html>`_
 
+`SystemVerilog Class-Based SPT [] <https://eda-playground.readthedocs.io/en/latest/systemverilog_classbased_v4.2.html>`_
+
 `SystemVerilog for Analog Designers [SVAD] <https://eda-playground.readthedocs.io/en/latest/SystemVerilog_for_Analog_Designers_v10.html>`_
 
 `SVA Supplement [SS] <https://eda-playground.readthedocs.io/en/latest/sva_supplement.html>`_
@@ -44,7 +46,7 @@ Doulos Exercise Links
 
 `UVM Adopter v3.0 [UVM] <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_3.0.html>`_
 
-`UVM Adopter v3.1 [UVM] <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_3.1.html>`_
+`UVM Adopter v3.1.1 [UVM] <https://eda-playground.readthedocs.io/en/latest/UVM_Adopter_svuvm_3.1.1.html>`_
 
 **Note**: more complex courses (Expert VHDL Verification, Comprehensive SystemVerilog and UVM Adopter) rely on many files stored in a common directory. Rather than clutter up the display with zillions of tabs (and rather than take ages loading them up into each exercise playground), all these common files are stored within the docker container. These files are referred to in the _files.f_ tab.
 
