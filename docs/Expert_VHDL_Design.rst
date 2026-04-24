@@ -29,7 +29,7 @@ Here are the links to the exercises:
 
 `Exercise 3  <https://courses.edaplayground.com/x/2rRJ>`_
 
-`Exercise 4 part2 <https://courses.edaplayground.com/x/icg>`_
+`Exercise 4 parts 1 and 2 <https://courses.edaplayground.com/x/icg>`_
 
 `Exercise 4 part3 <https://courses.edaplayground.com/x/2XnG>`_
 
