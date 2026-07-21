@@ -39,7 +39,7 @@ Here are the links to the solutions for this course:
 
 `Exercise UVM108	<https://courses.edaplayground.com/x/VkH5>`_
 
-`Exercise UVM1V08IYHT	<https://courses.edaplayground.com/x/jhHs>`_
+`Exercise UVM108IYHT	<https://courses.edaplayground.com/x/jhHs>`_
 
 `Exercise UVM109	<https://courses.edaplayground.com/x/TfAb>`_
 
