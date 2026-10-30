@@ -39,7 +39,7 @@ Here are the links to the solutions for this course:
 
 `15 Advanced Sequencer Topics SOLUTION <https://courses.edaplayground.com/x/bA2R>`_
 
-`16 Register Layer SOLUTION <https://courses.edaplayground.com/x/TZmd>`_
+`16 Register Layer SOLUTION <https://courses.edaplayground.com/x/auYs>`_
 
 `17 Advanced Register Topics SOLUTION <https://courses.edaplayground.com/x/K6Ud>`_
 

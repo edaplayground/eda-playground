@@ -33,6 +33,6 @@ Here are the links to the solutions for this course:
 
 `10 Sequences SOLUTION <https://courses.edaplayground.com/x/PECw>`_
 
-`16 Register Layer SOLUTION <https://courses.edaplayground.com/x/TZmd>`_
+`16 Register Layer SOLUTION <https://courses.edaplayground.com/x/auYs>`_
 
 **EDA Playground** is maintained by `Doulos <http://www.doulos.com>`_.

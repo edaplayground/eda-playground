@@ -37,7 +37,7 @@ Here are the links to the solutions for this course:
 
 `11 Virtual Sequences SOLUTION <https://courses.edaplayground.com/x/ZPnm>`_
 
-`11 Virtual Sequences (IYHT)  SOLUTION - Part 2<https://courses.edaplayground.com/x/fZHu>`_
+`11 Virtual Sequences (IYHT)  SOLUTION - Part 2 <https://courses.edaplayground.com/x/fZHu>`_
 
 `12 Layering Sequences and Agents SOLUTION <https://courses.edaplayground.com/x/wnHf>`_
 
